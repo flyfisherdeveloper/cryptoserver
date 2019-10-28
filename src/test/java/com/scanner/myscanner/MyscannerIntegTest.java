@@ -19,7 +19,7 @@ import java.util.stream.Collectors;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 @SpringBootTest
-class MyscannerApplicationTests {
+class MyscannerIntegTest {
 	@Autowired
 	private ExchangeService exchangeService;
 
