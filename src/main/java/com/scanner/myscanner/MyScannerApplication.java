@@ -7,10 +7,10 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
 
 @SpringBootApplication
-public class MyscannerApplication {
+public class MyScannerApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(MyscannerApplication.class, args);
+		SpringApplication.run(MyScannerApplication.class, args);
 	}
 
 	@Bean
