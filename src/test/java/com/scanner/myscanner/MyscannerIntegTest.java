@@ -1,5 +1,6 @@
 package com.scanner.myscanner;
 
+import com.scanner.myscanner.exchange.binance.us.dto.CoinDataFor24Hr;
 import com.scanner.myscanner.exchange.binance.us.dto.CoinTicker;
 import com.scanner.myscanner.exchange.binance.us.dto.ExchangeInfo;
 import com.scanner.myscanner.exchange.binance.us.dto.Symbol;
@@ -11,11 +12,14 @@ import org.springframework.boot.test.context.SpringBootTest;
 import java.time.Instant;
 import java.time.LocalDateTime;
 import java.time.ZoneId;
+import java.time.temporal.ChronoUnit;
+import java.time.temporal.TemporalUnit;
 import java.util.Arrays;
 import java.util.List;
 import java.util.TimeZone;
 import java.util.stream.Collectors;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 @SpringBootTest
@@ -35,11 +39,20 @@ class MyscannerIntegTest {
 	}
 
 	@Test
+	public void test24HrCoinTicker() {
+		CoinDataFor24Hr data = exchangeService.get24HrCoinTicker("LTCUSD");
+		System.out.println(data);
+		assertEquals("LTCUSD", data.getSymbol());
+	}
+
+	@Test
 	public void testCoinTicker() {
-		LocalDateTime now = LocalDateTime.now();
-		LocalDateTime from = now.minusHours(13);
-		long nowLong = now.atZone(ZoneId.systemDefault()).toInstant().toEpochMilli();
-		long fromLong = from.atZone(ZoneId.systemDefault()).toInstant().toEpochMilli();
+		Instant now = Instant.now();
+		Instant from = now.minus(2, ChronoUnit.HOURS);
+		long fromLong = from.toEpochMilli();
+		long nowLong = now.toEpochMilli();
+		//long nowLong = now.atZone(ZoneId.systemDefault()).toInstant().toEpochMilli();
+		//long fromLong = from.atZone(ZoneId.systemDefault()).toInstant().toEpochMilli();
 
 		LocalDateTime fromTime =
 				LocalDateTime.ofInstant(Instant.ofEpochMilli(fromLong),
@@ -50,7 +63,8 @@ class MyscannerIntegTest {
 						TimeZone.getDefault().toZoneId());
 		System.out.println(toTime);
 
-		List<CoinTicker> tickers = exchangeService.getCoinTicker("LTCBTC", "12h", fromLong, nowLong);
+		List<CoinTicker> tickers = exchangeService.getCoinTicker("LTCBTC", "2h", fromLong, nowLong);
+        //List<CoinTicker> tickers = exchangeService.getCoinTicker("LTCBTC", "4h");
 		for (CoinTicker ticker : tickers) {
 			LocalDateTime openTime = LocalDateTime.ofInstant(Instant.ofEpochMilli(ticker.getOpenTime()),
 							TimeZone.getDefault().toZoneId());
