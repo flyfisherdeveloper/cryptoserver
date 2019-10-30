@@ -3,6 +3,7 @@ package com.scanner.myscanner.exchange.binance.us.service;
 import com.scanner.myscanner.exchange.binance.us.dto.CoinDataFor24Hr;
 import com.scanner.myscanner.exchange.binance.us.dto.CoinTicker;
 import com.scanner.myscanner.exchange.binance.us.dto.ExchangeInfo;
+import com.scanner.myscanner.exchange.binance.us.dto.Symbol;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
@@ -26,12 +27,58 @@ public class ExchangeService {
         return info.getBody();
     }
 
+    public ExchangeInfo getMockExchangeInfo() {
+        ExchangeInfo info = new ExchangeInfo();
+        List<Symbol> symbols = new ArrayList<>();
+
+        Symbol coin1 = new Symbol();
+        coin1.setSymbol("BTCUSD");
+        coin1.setBaseAsset("BTC");
+        coin1.setQuoteAsset("USD");
+        symbols.add(coin1);
+
+        Symbol coin2 = new Symbol();
+        coin2.setSymbol("ETHUSD");
+        coin2.setBaseAsset("ETH");
+        coin2.setQuoteAsset("USD");
+        symbols.add(coin2);
+
+        Symbol coin3 = new Symbol();
+        coin3.setSymbol("XRPUSD");
+        coin3.setBaseAsset("XRP");
+        coin3.setQuoteAsset("USD");
+        symbols.add(coin3);
+
+        Symbol coin4 = new Symbol();
+        coin4.setSymbol("LTCUSD");
+        coin4.setBaseAsset("LTC");
+        coin4.setQuoteAsset("USD");
+        symbols.add(coin4);
+
+        info.setSymbols(symbols);
+        return info;
+    }
+
     public List<CoinTicker> getCoinTicker(String symbol, String interval) {
         return callCoinTicker(symbol, interval, null, null);
     }
 
     public List<CoinTicker> getCoinTicker(String symbol, String interval, long startTime, long endTime) {
         return callCoinTicker(symbol, interval, startTime, endTime);
+    }
+
+    public CoinDataFor24Hr getMock24HrCoinTicker(String symbol) {
+        CoinDataFor24Hr coin = new CoinDataFor24Hr();
+        coin.setSymbol("LTCUSD");
+        coin.setPriceChange(-1.2);
+        coin.setPriceChangePercent(-2.023);
+        coin.setHighPrice(61.13);
+        coin.setLowPrice(57.04);
+        coin.setVolume(4050.19611);
+        coin.setQuoteVolume(239099.0);
+        coin.setOpenTime(1572376515329L);
+        coin.setOpenTime(1572462915329L);
+        return coin;
     }
 
     public CoinDataFor24Hr get24HrCoinTicker(String symbol) {

@@ -41,10 +41,8 @@ class MyScannerControllerIntegTest {
         String json = result.getResponse().getContentAsString();
         ObjectMapper mapper = new ObjectMapper();
 
-        ExchangeInfo info = mapper.readValue(json, ExchangeInfo.class);
-        assertNotNull(info);
-        assertNotNull(info.getSymbols());
-        List<Symbol> symbols = info.getSymbols();
+        List<Symbol> symbols = mapper.readValue(json, new TypeReference<>() {
+        });
         assertTrue(symbols.size() > 0);
 
         //verify that bitcoin exists
@@ -69,6 +67,7 @@ class MyScannerControllerIntegTest {
         CoinDataFor24Hr coin = mapper.readValue(json, CoinDataFor24Hr.class);
         assertNotNull(coin);
         assertEquals("LTCUSD", coin.getSymbol());
+        System.out.println(coin);
     }
 
     @Test
