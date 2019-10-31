@@ -34,7 +34,7 @@ class MyScannerControllerIntegTest {
     @Test
     void test_exchangeInfo() throws Exception {
         MvcResult result = mvc.perform(MockMvcRequestBuilders
-                .get("/binance/info")
+                .get("/api/v1/binance/info")
                 .accept(MediaType.APPLICATION_JSON))
                 .andReturn();
 
@@ -57,7 +57,7 @@ class MyScannerControllerIntegTest {
     @Test
     void test_coin_for_24_ticker() throws Exception {
         MvcResult result = mvc.perform(MockMvcRequestBuilders
-                .get("/binance/24HourTicker/LTCUSD")
+                .get("/api/v1/binance/24HourTicker/LTCUSD")
                 .accept(MediaType.APPLICATION_JSON))
                 .andReturn();
 
@@ -73,7 +73,7 @@ class MyScannerControllerIntegTest {
     @Test
     void test_coin_ticker() throws Exception {
         MvcResult result = mvc.perform(MockMvcRequestBuilders
-                .get("/binance/ticker/DOGEUSDT/12h")
+                .get("/api/v1/binance/ticker/DOGEUSDT/12h")
                 .accept(MediaType.APPLICATION_JSON))
                 .andReturn();
 
@@ -87,5 +87,25 @@ class MyScannerControllerIntegTest {
         CoinTicker coinTicker = list.get(0);
         assertNotNull(coinTicker.getVolume());
         assertNotNull(coinTicker.getQuoteAssetVolume());
+    }
+
+    @Test
+    void test_7day_ticker() throws Exception {
+        MvcResult result = mvc.perform(MockMvcRequestBuilders
+                .get("/api/v1/binance/7DayTicker/DOGEUSDT")
+                .accept(MediaType.APPLICATION_JSON))
+                .andReturn();
+
+        String json = result.getResponse().getContentAsString();
+        ObjectMapper mapper = new ObjectMapper();
+
+        List<CoinTicker> list = mapper.readValue(json, new TypeReference<>() {
+        });
+        assertNotNull(list);
+        assertFalse(list.isEmpty());
+        CoinTicker coinTicker = list.get(0);
+        assertNotNull(coinTicker.getVolume());
+        assertNotNull(coinTicker.getQuoteAssetVolume());
+        list.forEach(System.out::println);
     }
 }

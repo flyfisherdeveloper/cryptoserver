@@ -11,7 +11,8 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("binance")
+@CrossOrigin(origins = "http://localhost:3000")
+@RequestMapping("api/v1/binance")
 public class BinanceExchangeController {
     private final ExchangeService service;
 
@@ -20,7 +21,6 @@ public class BinanceExchangeController {
     }
 
     @GetMapping(value = "/info", produces = MediaType.APPLICATION_JSON_VALUE)
-    @CrossOrigin
     public List<Symbol> getExchangeInfo() {
         //return service.getExchangeInfo();
         ExchangeInfo info = service.getMockExchangeInfo();
@@ -28,15 +28,23 @@ public class BinanceExchangeController {
     }
 
     @GetMapping(value = "/24HourTicker/{symbol}", produces = MediaType.APPLICATION_JSON_VALUE)
-    @CrossOrigin
     public CoinDataFor24Hr get24HourTicker(@PathVariable String symbol) {
-        //return service.get24HrCoinTicker(symbol);
-        return service.getMock24HrCoinTicker(symbol);
+        return service.get24HrCoinTicker(symbol);
+    }
+
+    @GetMapping(value = "/24HourTicker", produces = MediaType.APPLICATION_JSON_VALUE)
+    public List<CoinDataFor24Hr> getAll24HourTicker() {
+        return service.getMock24HrCoinTicker();
     }
 
     @GetMapping(value = "/ticker/{symbol}/{interval}", produces = MediaType.APPLICATION_JSON_VALUE)
-    @CrossOrigin
     public List<CoinTicker> getCoinTicker(@PathVariable String symbol, @PathVariable String interval) {
         return service.getCoinTicker(symbol, interval);
+    }
+
+    @GetMapping(value = "/7DayTicker/{symbol}", produces = MediaType.APPLICATION_JSON_VALUE)
+    public List<CoinTicker> get7DayTicker(@PathVariable String symbol) {
+        //return service.get7DayTicker(symbol);
+        return service.getMock7DayTicker(symbol);
     }
 }

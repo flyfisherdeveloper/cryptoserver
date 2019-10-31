@@ -63,8 +63,8 @@ class MyScannerServiceIntegTest {
 						TimeZone.getDefault().toZoneId());
 		System.out.println(toTime);
 
-		List<CoinTicker> tickers = exchangeService.getCoinTicker("LTCBTC", "2h", fromLong, nowLong);
-        //List<CoinTicker> tickers = exchangeService.getCoinTicker("LTCBTC", "4h");
+		//List<CoinTicker> tickers = exchangeService.getCoinTicker("LTCBTC", "2h", fromLong, nowLong);
+        List<CoinTicker> tickers = exchangeService.getCoinTicker("LTCBTC", "12h");
 		for (CoinTicker ticker : tickers) {
 			LocalDateTime openTime = LocalDateTime.ofInstant(Instant.ofEpochMilli(ticker.getOpenTime()),
 							TimeZone.getDefault().toZoneId());
