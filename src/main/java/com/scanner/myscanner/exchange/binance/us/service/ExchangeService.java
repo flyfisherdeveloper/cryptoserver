@@ -19,6 +19,7 @@ public class ExchangeService {
     private String symblolTickerTimeParams = "&startTime={startTime}&endTime={endTime}";
     private String symblolTickerUrl = "https://api.binance.us/api/v3/klines?symbol={symbol}&interval={interval}";
     private String symbol24HrTickerUrl = "https://api.binance.us/api/v3/ticker/24hr?symbol={symbol}";
+    private String symbol24HrAllTickerUrl = "https://api.binance.us/api/v3/ticker/24hr";
     private final RestTemplate restTemplate;
 
     public ExchangeService(RestTemplate restTemplate) {
@@ -112,7 +113,7 @@ public class ExchangeService {
         return list;
     }
 
-    public CoinDataFor24Hr get24HrCoinTicker(String symbol) {
+    public CoinDataFor24Hr call24HrCoinTicker(String symbol) {
         String url = symbol24HrTickerUrl;
         Map<String, Object> params = new HashMap<>();
         params.put("symbol", symbol);
@@ -121,39 +122,42 @@ public class ExchangeService {
         if (body == null) {
             return new CoinDataFor24Hr();
         }
+        return get24HrCoinTicker(body);
+    }
+
+    private CoinDataFor24Hr get24HrCoinTicker(LinkedHashMap map) {
         CoinDataFor24Hr data = new CoinDataFor24Hr();
+        String coin = (String) map.get("symbol");
 
-        String coin = (String) body.get("symbol");
         data.setSymbol(coin);
-
-        String priceChangeStr = (String) body.get("priceChange");
+        String priceChangeStr = (String) map.get("priceChange");
         double priceChange = Double.parseDouble(priceChangeStr);
         data.setPriceChange(priceChange);
 
-        String priceChangePercentStr = (String) body.get("priceChangePercent");
+        String priceChangePercentStr = (String) map.get("priceChangePercent");
         double priceChangePercent = Double.parseDouble(priceChangePercentStr);
         data.setPriceChangePercent(priceChangePercent);
 
-        String highPriceStr = (String) body.get("highPrice");
+        String highPriceStr = (String) map.get("highPrice");
         double highPrice = Double.parseDouble(highPriceStr);
         data.setHighPrice(highPrice);
 
-        String lowPriceStr = (String) body.get("lowPrice");
+        String lowPriceStr = (String) map.get("lowPrice");
         double lowPrice = Double.parseDouble(lowPriceStr);
         data.setLowPrice(lowPrice);
 
-        String volumeStr = (String) body.get("volume");
+        String volumeStr = (String) map.get("volume");
         double volume = Double.parseDouble(volumeStr);
         data.setVolume(volume);
 
-        String quoteVolumeStr = (String) body.get("quoteVolume");
+        String quoteVolumeStr = (String) map.get("quoteVolume");
         double quoteVolume = Double.parseDouble(quoteVolumeStr);
         data.setQuoteVolume(quoteVolume);
 
-        Long openTime = (Long) body.get("openTime");
+        Long openTime = (Long) map.get("openTime");
         data.setOpenTime(openTime);
 
-        Long closeTime = (Long) body.get("closeTime");
+        Long closeTime = (Long) map.get("closeTime");
         data.setCloseTime(closeTime);
 
         return data;
@@ -227,6 +231,22 @@ public class ExchangeService {
         coin3.setQuoteAssetVolume("763.28951510");
         list.add(coin3);
 
+        return list;
+    }
+
+    public List<CoinDataFor24Hr> get24HrAllCoinTicker() {
+        String url = symbol24HrAllTickerUrl;
+        ResponseEntity<LinkedHashMap[]> info = restTemplate.getForEntity(url, LinkedHashMap[].class);
+        LinkedHashMap[] body = info.getBody();
+        if (body == null) {
+            return new ArrayList<>();
+        }
+
+        List<CoinDataFor24Hr> list = new ArrayList<>();
+        for (LinkedHashMap map : body) {
+            CoinDataFor24Hr coin = get24HrCoinTicker(map);
+            list.add(coin);
+        }
         return list;
     }
 }
