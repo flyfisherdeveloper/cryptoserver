@@ -29,11 +29,16 @@ public class BinanceExchangeController {
 
     @GetMapping(value = "/24HourTicker/{symbol}", produces = MediaType.APPLICATION_JSON_VALUE)
     public CoinDataFor24Hr get24HourTicker(@PathVariable String symbol) {
-        return service.get24HrCoinTicker(symbol);
+        return service.call24HrCoinTicker(symbol);
     }
 
     @GetMapping(value = "/24HourTicker", produces = MediaType.APPLICATION_JSON_VALUE)
     public List<CoinDataFor24Hr> getAll24HourTicker() {
+        return service.get24HrAllCoinTicker();
+    }
+
+    @GetMapping(value = "/Mock24HourTicker", produces = MediaType.APPLICATION_JSON_VALUE)
+    public List<CoinDataFor24Hr> getMock24HourTicker() {
         return service.getMock24HrCoinTicker();
     }
 

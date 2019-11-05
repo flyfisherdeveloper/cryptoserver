@@ -11,10 +11,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 import java.time.Instant;
 import java.time.LocalDateTime;
-import java.time.ZoneId;
 import java.time.temporal.ChronoUnit;
-import java.time.temporal.TemporalUnit;
-import java.util.Arrays;
 import java.util.List;
 import java.util.TimeZone;
 import java.util.stream.Collectors;
@@ -40,7 +37,7 @@ class MyScannerServiceIntegTest {
 
 	@Test
 	public void test24HrCoinTicker() {
-		CoinDataFor24Hr data = exchangeService.get24HrCoinTicker("LTCUSD");
+		CoinDataFor24Hr data = exchangeService.call24HrCoinTicker("LTCUSD");
 		System.out.println(data);
 		assertEquals("LTCUSD", data.getSymbol());
 	}
