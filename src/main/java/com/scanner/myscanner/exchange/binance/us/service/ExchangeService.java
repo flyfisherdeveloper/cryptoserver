@@ -183,16 +183,23 @@ public class ExchangeService {
         }
 
         List<CoinTicker> values = new ArrayList<>();
-        for (Object obj : body) {
-            List<Object> list = (List<Object>) obj;
+        for (int index = 0; index < body.length; index++) {
+            //get the close time of the day only - every other one
+            //todo: there might be a more straight-forward way of doing this
+            if (index % 2 != 0) {
+                continue;
+            }
+            List<Object> list = (List<Object>) body[index];
             CoinTicker coinTicker = new CoinTicker();
             coinTicker.setOpenTime((Long) list.get(0));
+            System.out.println("open: " + new Date(coinTicker.getOpenTime()));
             coinTicker.setOpen((String) list.get(1));
             coinTicker.setHigh((String) list.get(2));
             coinTicker.setLow((String) list.get(3));
             coinTicker.setClose((String) list.get(4));
             coinTicker.setVolume((String) list.get(5));
             coinTicker.setCloseTime((Long) list.get(6));
+            System.out.println("close: " + new Date(coinTicker.getCloseTime()));
             coinTicker.setQuoteAssetVolume((String) list.get(7));
             coinTicker.setNumberOfTrades((int) list.get(8));
             values.add(coinTicker);
@@ -213,6 +220,7 @@ public class ExchangeService {
         CoinTicker coin1 = new CoinTicker();
         coin1.setOpenTime(1571961600000L);
         coin1.setCloseTime(1572004799999L);
+        coin1.setCloseDate("12 OCT 2019");
         coin1.setVolume("268404.00000000");
         coin1.setQuoteAssetVolume("671.50380360");
         list.add(coin1);
@@ -220,6 +228,7 @@ public class ExchangeService {
         CoinTicker coin2 = new CoinTicker();
         coin2.setOpenTime(1572220800000L);
         coin2.setCloseTime(1572263999999L);
+        coin2.setCloseDate("13 OCT 2019");
         coin2.setVolume("140122.00000000");
         coin2.setQuoteAssetVolume("373.25104520");
         list.add(coin2);
@@ -227,6 +236,7 @@ public class ExchangeService {
         CoinTicker coin3 = new CoinTicker();
         coin3.setOpenTime(1572523200000L);
         coin3.setCloseTime(1572566399999L);
+        coin3.setCloseDate("14 OCT 2019");
         coin3.setVolume("292904.00000000");
         coin3.setQuoteAssetVolume("763.28951510");
         list.add(coin3);
