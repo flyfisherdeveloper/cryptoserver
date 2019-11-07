@@ -49,7 +49,7 @@ public class BinanceExchangeController {
 
     @GetMapping(value = "/7DayTicker/{symbol}", produces = MediaType.APPLICATION_JSON_VALUE)
     public List<CoinTicker> get7DayTicker(@PathVariable String symbol) {
-        //return service.get7DayTicker(symbol);
-        return service.getMock7DayTicker(symbol);
+        return service.get7DayTicker(symbol);
+        //return service.getMock7DayTicker(symbol);
     }
 }

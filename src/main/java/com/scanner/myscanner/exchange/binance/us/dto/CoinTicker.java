@@ -5,7 +5,9 @@ import lombok.Data;
 @Data
 public class CoinTicker {
     private Long openTime;
+    private String openDate;
     private Long closeTime;
+    private String closeDate;
     private String open;
     private String high;
     private String low;
