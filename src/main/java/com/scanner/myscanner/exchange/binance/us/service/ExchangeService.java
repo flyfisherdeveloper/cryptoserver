@@ -9,7 +9,6 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
 import java.time.Instant;
-import java.time.LocalDateTime;
 import java.time.temporal.ChronoUnit;
 import java.util.*;
 
@@ -165,6 +164,9 @@ public class ExchangeService {
 
     private List<CoinTicker> callCoinTicker(String symbol, String interval, Long startTime, Long endTime) {
         //todo: check that both start time and end time are either both null or both not null
+        if (interval.equals("24h")) {
+            interval = "1d";
+        }
         String url = symblolTickerUrl;
         Map<String, Object> params = new HashMap<>();
         params.put("symbol", symbol);
@@ -183,23 +185,16 @@ public class ExchangeService {
         }
 
         List<CoinTicker> values = new ArrayList<>();
-        for (int index = 0; index < body.length; index++) {
-            //get the close time of the day only - every other one
-            //todo: there might be a more straight-forward way of doing this
-            if (index % 2 != 0) {
-                continue;
-            }
-            List<Object> list = (List<Object>) body[index];
+        for (Object obj : body) {
+            List<Object> list = (List<Object>) obj;
             CoinTicker coinTicker = new CoinTicker();
             coinTicker.setOpenTime((Long) list.get(0));
-            System.out.println("open: " + new Date(coinTicker.getOpenTime()));
             coinTicker.setOpen((String) list.get(1));
             coinTicker.setHigh((String) list.get(2));
             coinTicker.setLow((String) list.get(3));
             coinTicker.setClose((String) list.get(4));
             coinTicker.setVolume((String) list.get(5));
             coinTicker.setCloseTime((Long) list.get(6));
-            System.out.println("close: " + new Date(coinTicker.getCloseTime()));
             coinTicker.setQuoteAssetVolume((String) list.get(7));
             coinTicker.setNumberOfTrades((int) list.get(8));
             values.add(coinTicker);
@@ -208,11 +203,15 @@ public class ExchangeService {
     }
 
     public List<CoinTicker> get7DayTicker(String symbol) {
+        return get7DayTicker(symbol, "12h");
+    }
+
+    public List<CoinTicker> get7DayTicker(String symbol, String interval) {
         Instant now = Instant.now();
         Instant from = now.minus(7, ChronoUnit.DAYS);
         long startTime = from.toEpochMilli();
         long toTime = now.toEpochMilli();
-        return callCoinTicker(symbol, "12h", startTime, toTime);
+        return callCoinTicker(symbol, interval, startTime, toTime);
     }
 
     public List<CoinTicker> getMock7DayTicker(String symbol) {
