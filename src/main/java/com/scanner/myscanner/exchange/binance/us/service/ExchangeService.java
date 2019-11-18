@@ -4,6 +4,7 @@ import com.scanner.myscanner.exchange.binance.us.dto.CoinDataFor24Hr;
 import com.scanner.myscanner.exchange.binance.us.dto.CoinTicker;
 import com.scanner.myscanner.exchange.binance.us.dto.ExchangeInfo;
 import com.scanner.myscanner.exchange.binance.us.dto.Symbol;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
@@ -243,6 +244,7 @@ public class ExchangeService {
         return list;
     }
 
+    @Cacheable(cacheNames = {"All24HourTicker"})
     public List<CoinDataFor24Hr> get24HrAllCoinTicker() {
         String url = symbol24HrAllTickerUrl;
         ResponseEntity<LinkedHashMap[]> info = restTemplate.getForEntity(url, LinkedHashMap[].class);
