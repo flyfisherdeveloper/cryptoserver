@@ -4,6 +4,8 @@ import com.scanner.myscanner.exchange.binance.us.dto.CoinDataFor24Hr;
 import com.scanner.myscanner.exchange.binance.us.dto.CoinTicker;
 import com.scanner.myscanner.exchange.binance.us.dto.ExchangeInfo;
 import com.scanner.myscanner.exchange.binance.us.dto.Symbol;
+import org.springframework.cache.Cache;
+import org.springframework.cache.CacheManager;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
@@ -12,6 +14,7 @@ import org.springframework.web.client.RestTemplate;
 import java.time.Instant;
 import java.time.temporal.ChronoUnit;
 import java.util.*;
+import java.util.concurrent.atomic.AtomicReference;
 
 @Service
 public class ExchangeService {
@@ -21,9 +24,11 @@ public class ExchangeService {
     private String symbol24HrTickerUrl = "https://api.binance.us/api/v3/ticker/24hr?symbol={symbol}";
     private String symbol24HrAllTickerUrl = "https://api.binance.us/api/v3/ticker/24hr";
     private final RestTemplate restTemplate;
+    private final CacheManager cacheManager;
 
-    public ExchangeService(RestTemplate restTemplate) {
+    public ExchangeService(RestTemplate restTemplate, CacheManager cacheManager) {
         this.restTemplate = restTemplate;
+        this.cacheManager = cacheManager;
     }
 
     public ExchangeInfo getExchangeInfo() {
@@ -212,7 +217,24 @@ public class ExchangeService {
         Instant from = now.minus(7, ChronoUnit.DAYS);
         long startTime = from.toEpochMilli();
         long toTime = now.toEpochMilli();
-        return callCoinTicker(symbol, interval, startTime, toTime);
+
+        //Attempt to get the data out of the cache if it is in there.
+        //If not in the cache, then call the service and add the data to the cache.
+        //The data in the cache will expire according to the setup in the CachingConfig configuration.
+        Cache volumeCache = cacheManager.getCache("VolumeCache");
+        String name = symbol + interval;
+        List<CoinTicker> coins;
+        if (volumeCache != null) {
+            Cache.ValueWrapper value = volumeCache.get(name);
+            if (value == null) {
+                coins = callCoinTicker(symbol, interval, startTime, toTime);
+                volumeCache.putIfAbsent(name, coins);
+            } else {
+                coins = (List<CoinTicker>) value.get();
+            }
+            return coins;
+        }
+        return new ArrayList<>();
     }
 
     public List<CoinTicker> getMock7DayTicker(String symbol) {
@@ -244,7 +266,7 @@ public class ExchangeService {
         return list;
     }
 
-    @Cacheable(cacheNames = {"All24HourTicker"})
+    @Cacheable(cacheNames = {"All24HourTicker", "VolumeCache"})
     public List<CoinDataFor24Hr> get24HrAllCoinTicker() {
         String url = symbol24HrAllTickerUrl;
         ResponseEntity<LinkedHashMap[]> info = restTemplate.getForEntity(url, LinkedHashMap[].class);
