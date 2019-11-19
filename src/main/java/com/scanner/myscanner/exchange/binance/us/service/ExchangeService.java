@@ -143,6 +143,10 @@ public class ExchangeService {
         double priceChangePercent = Double.parseDouble(priceChangePercentStr);
         data.setPriceChangePercent(priceChangePercent);
 
+        String lastPriceStr = (String) map.get("lastPrice");
+        double lastPrice = Double.parseDouble(lastPriceStr);
+        data.setLastPrice(lastPrice);
+
         String highPriceStr = (String) map.get("highPrice");
         double highPrice = Double.parseDouble(highPriceStr);
         data.setHighPrice(highPrice);
