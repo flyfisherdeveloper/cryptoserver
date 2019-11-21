@@ -10,11 +10,12 @@ import org.springframework.cache.annotation.Cacheable;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
+import util.IconExtractor;
 
+import java.io.IOException;
 import java.time.Instant;
 import java.time.temporal.ChronoUnit;
 import java.util.*;
-import java.util.concurrent.atomic.AtomicReference;
 
 @Service
 public class ExchangeService {
@@ -81,6 +82,7 @@ public class ExchangeService {
 
         CoinDataFor24Hr coin1 = new CoinDataFor24Hr();
         coin1.setSymbol("LTCUSD");
+        coin1.setLastPrice(56.23);
         coin1.setPriceChange(-1.2);
         coin1.setPriceChangePercent(-2.023);
         coin1.setHighPrice(61.13);
@@ -93,6 +95,7 @@ public class ExchangeService {
 
         CoinDataFor24Hr coin2 = new CoinDataFor24Hr();
         coin2.setSymbol("BTCUSD");
+        coin2.setLastPrice(8243.32);
         coin2.setPriceChange(206.1400);
         coin2.setPriceChangePercent(2.272);
         coin2.setHighPrice(9411.4300);
@@ -105,6 +108,7 @@ public class ExchangeService {
 
         CoinDataFor24Hr coin3 = new CoinDataFor24Hr();
         coin3.setSymbol("ETHUSD");
+        coin3.setLastPrice(124.20);
         coin3.setPriceChange(2.0100);
         coin3.setPriceChangePercent(1.109);
         coin3.setHighPrice(185.4200);
@@ -285,5 +289,23 @@ public class ExchangeService {
             list.add(coin);
         }
         return list;
+    }
+
+    public byte[] getIconBytes(String coin) throws IOException {
+        //Attempt to get the icon out of the cache if it is in there.
+        //If not in the cache, then call the icon extract service and add the icon bytes to the cache.
+        //The data in the cache will expire according to the setup in the CachingConfig configuration.
+        Cache volumeCache = cacheManager.getCache("IconCache");
+        byte[] coins = null;
+        if (volumeCache != null) {
+            Cache.ValueWrapper value = volumeCache.get(coin);
+            if (value == null) {
+                coins = IconExtractor.getIconBytes(coin);
+                volumeCache.putIfAbsent(coin, coins);
+            } else {
+                coins = (byte[]) value.get();
+            }
+        }
+        return coins;
     }
 }

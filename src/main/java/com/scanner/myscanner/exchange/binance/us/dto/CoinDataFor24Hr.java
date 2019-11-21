@@ -4,6 +4,7 @@ import lombok.Data;
 
 @Data
 public class CoinDataFor24Hr {
+    private byte[] icon;
     private String symbol;
     private Double priceChange;
     private Double priceChangePercent;

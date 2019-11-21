@@ -8,7 +8,10 @@ import com.scanner.myscanner.exchange.binance.us.service.ExchangeService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import util.IconExtractor;
 
+import java.io.IOException;
+import java.net.URISyntaxException;
 import java.time.Instant;
 import java.time.LocalDateTime;
 import java.time.temporal.ChronoUnit;
@@ -16,8 +19,7 @@ import java.util.List;
 import java.util.TimeZone;
 import java.util.stream.Collectors;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
 class MyScannerServiceIntegTest {
@@ -44,23 +46,6 @@ class MyScannerServiceIntegTest {
 
 	@Test
 	public void testCoinTicker() {
-		Instant now = Instant.now();
-		Instant from = now.minus(2, ChronoUnit.HOURS);
-		long fromLong = from.toEpochMilli();
-		long nowLong = now.toEpochMilli();
-		//long nowLong = now.atZone(ZoneId.systemDefault()).toInstant().toEpochMilli();
-		//long fromLong = from.atZone(ZoneId.systemDefault()).toInstant().toEpochMilli();
-
-		LocalDateTime fromTime =
-				LocalDateTime.ofInstant(Instant.ofEpochMilli(fromLong),
-						TimeZone.getDefault().toZoneId());
-		System.out.println(fromTime);
-		LocalDateTime toTime =
-				LocalDateTime.ofInstant(Instant.ofEpochMilli(nowLong),
-						TimeZone.getDefault().toZoneId());
-		System.out.println(toTime);
-
-		//List<CoinTicker> tickers = exchangeService.getCoinTicker("LTCBTC", "2h", fromLong, nowLong);
         List<CoinTicker> tickers = exchangeService.getCoinTicker("LTCBTC", "12h");
 		for (CoinTicker ticker : tickers) {
 			LocalDateTime openTime = LocalDateTime.ofInstant(Instant.ofEpochMilli(ticker.getOpenTime()),
@@ -72,5 +57,12 @@ class MyScannerServiceIntegTest {
 			System.out.println(ticker);
 			System.out.println();
 		}
+	}
+
+	@Test
+	public void testExtract() throws IOException, URISyntaxException {
+		byte[] bytes = IconExtractor.getIconBytes("eth");
+		assertNotNull(bytes);
+		assertTrue(bytes.length > 0);
 	}
 }

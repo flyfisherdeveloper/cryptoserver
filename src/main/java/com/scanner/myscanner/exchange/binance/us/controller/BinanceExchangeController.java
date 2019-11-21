@@ -7,7 +7,10 @@ import com.scanner.myscanner.exchange.binance.us.dto.Symbol;
 import com.scanner.myscanner.exchange.binance.us.service.ExchangeService;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
+import util.IconExtractor;
 
+import java.io.IOException;
+import java.net.URISyntaxException;
 import java.util.List;
 
 @RestController
@@ -34,6 +37,7 @@ public class BinanceExchangeController {
 
     @GetMapping(value = "/24HourTicker", produces = MediaType.APPLICATION_JSON_VALUE)
     public List<CoinDataFor24Hr> getAll24HourTicker() {
+        //return service.getMock24HrCoinTicker();
         return service.get24HrAllCoinTicker();
     }
 
@@ -57,5 +61,10 @@ public class BinanceExchangeController {
     @GetMapping(value = "/7DayTicker/{symbol}/{interval}", produces = MediaType.APPLICATION_JSON_VALUE)
     public List<CoinTicker> get7DayTicker(@PathVariable String symbol, @PathVariable String interval) {
         return service.get7DayTicker(symbol, interval);
+    }
+
+    @GetMapping(value = "/icon/{coin}", produces = MediaType.IMAGE_PNG_VALUE)
+    public @ResponseBody byte[] getIcon(@PathVariable String coin) throws IOException {
+        return service.getIconBytes(coin);
     }
 }
