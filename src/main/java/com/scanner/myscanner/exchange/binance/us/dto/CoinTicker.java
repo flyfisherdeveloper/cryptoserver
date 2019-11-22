@@ -8,11 +8,11 @@ public class CoinTicker {
     private String openDate;
     private Long closeTime;
     private String closeDate;
-    private String open;
-    private String high;
-    private String low;
-    private String close;
-    private String volume;
-    private String quoteAssetVolume;
+    private Double open;
+    private Double high;
+    private Double low;
+    private Double close;
+    private Double volume;
+    private Double quoteAssetVolume;
     private Integer numberOfTrades;
 }

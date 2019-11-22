@@ -203,13 +203,13 @@ public class ExchangeService {
             List<Object> list = (List<Object>) obj;
             CoinTicker coinTicker = new CoinTicker();
             coinTicker.setOpenTime((Long) list.get(0));
-            coinTicker.setOpen((String) list.get(1));
-            coinTicker.setHigh((String) list.get(2));
-            coinTicker.setLow((String) list.get(3));
-            coinTicker.setClose((String) list.get(4));
-            coinTicker.setVolume((String) list.get(5));
+            coinTicker.setOpen(Double.valueOf((String) list.get(1)));
+            coinTicker.setHigh(Double.valueOf((String) list.get(2)));
+            coinTicker.setLow(Double.valueOf((String) list.get(3)));
+            coinTicker.setClose(Double.valueOf((String) list.get(4)));
+            coinTicker.setVolume(Double.valueOf((String) list.get(5)));
             coinTicker.setCloseTime((Long) list.get(6));
-            coinTicker.setQuoteAssetVolume((String) list.get(7));
+            coinTicker.setQuoteAssetVolume(Double.valueOf((String) list.get(7)));
             coinTicker.setNumberOfTrades((int) list.get(8));
             values.add(coinTicker);
         }
@@ -251,24 +251,24 @@ public class ExchangeService {
         coin1.setOpenTime(1571961600000L);
         coin1.setCloseTime(1572004799999L);
         coin1.setCloseDate("12 OCT 2019");
-        coin1.setVolume("268404.00000000");
-        coin1.setQuoteAssetVolume("671.50380360");
+        coin1.setVolume(268404.00);
+        coin1.setQuoteAssetVolume(671.50380360);
         list.add(coin1);
 
         CoinTicker coin2 = new CoinTicker();
         coin2.setOpenTime(1572220800000L);
         coin2.setCloseTime(1572263999999L);
         coin2.setCloseDate("13 OCT 2019");
-        coin2.setVolume("140122.00000000");
-        coin2.setQuoteAssetVolume("373.25104520");
+        coin2.setVolume(140122.00);
+        coin2.setQuoteAssetVolume(373.25104520);
         list.add(coin2);
 
         CoinTicker coin3 = new CoinTicker();
         coin3.setOpenTime(1572523200000L);
         coin3.setCloseTime(1572566399999L);
         coin3.setCloseDate("14 OCT 2019");
-        coin3.setVolume("292904.00000000");
-        coin3.setQuoteAssetVolume("763.28951510");
+        coin3.setVolume(292904.00);
+        coin3.setQuoteAssetVolume(763.28951510);
         list.add(coin3);
 
         return list;
