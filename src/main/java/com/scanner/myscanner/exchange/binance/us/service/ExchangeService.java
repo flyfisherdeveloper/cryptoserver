@@ -217,12 +217,19 @@ public class ExchangeService {
     }
 
     public List<CoinTicker> get7DayTicker(String symbol) {
-        return get7DayTicker(symbol, "12h");
+        return getDayTicker(symbol, "12h", "7d");
     }
 
-    public List<CoinTicker> get7DayTicker(String symbol, String interval) {
+    public List<CoinTicker> getDayTicker(String symbol, String interval, String daysOrMonths) {
         Instant now = Instant.now();
-        Instant from = now.minus(7, ChronoUnit.DAYS);
+        Instant from;
+        if (daysOrMonths.endsWith("d")) {
+            int numDays = Integer.parseInt("" + daysOrMonths.charAt(0));
+            from = now.minus(numDays, ChronoUnit.DAYS);
+        } else {
+            //todo: Instand does not support ChronoUnit.MONTHS - use 30 days as a workaround for now
+            from = now.minus(30, ChronoUnit.DAYS);
+        }
         long startTime = from.toEpochMilli();
         long toTime = now.toEpochMilli();
 
@@ -291,7 +298,7 @@ public class ExchangeService {
         return list;
     }
 
-    public byte[] getIconBytes(String coin) throws IOException {
+    public byte[] getIconBytes(String coin) {
         //Attempt to get the icon out of the cache if it is in there.
         //If not in the cache, then call the icon extract service and add the icon bytes to the cache.
         //The data in the cache will expire according to the setup in the CachingConfig configuration.
@@ -300,7 +307,14 @@ public class ExchangeService {
         if (volumeCache != null) {
             Cache.ValueWrapper value = volumeCache.get(coin);
             if (value == null) {
-                coins = IconExtractor.getIconBytes(coin);
+                try {
+                    coins = IconExtractor.getIconBytes(coin);
+                } catch (IOException e) {
+                    e.printStackTrace();
+                    //here, the coin icon wasn't in the zip file -
+                    // add a non-null empty array to the cache so we don't keep trying to extract it from the zip file
+                    coins = new byte[0];
+                }
                 volumeCache.putIfAbsent(coin, coins);
             } else {
                 coins = (byte[]) value.get();

@@ -51,6 +51,7 @@ public class BinanceExchangeController {
         return service.getCoinTicker(symbol, interval);
     }
 
+    @Deprecated
     @GetMapping(value = "/7DayTicker/{symbol}", produces = MediaType.APPLICATION_JSON_VALUE)
     public List<CoinTicker> get7DayTicker(@PathVariable String symbol) {
         //12-hour
@@ -58,13 +59,13 @@ public class BinanceExchangeController {
         //return service.getMock7DayTicker(symbol);
     }
 
-    @GetMapping(value = "/7DayTicker/{symbol}/{interval}", produces = MediaType.APPLICATION_JSON_VALUE)
-    public List<CoinTicker> get7DayTicker(@PathVariable String symbol, @PathVariable String interval) {
-        return service.get7DayTicker(symbol, interval);
+    @GetMapping(value = "/DayTicker/{symbol}/{interval}/{daysOrMonths}", produces = MediaType.APPLICATION_JSON_VALUE)
+    public List<CoinTicker> getDayTicker(@PathVariable String symbol, @PathVariable String interval, @PathVariable String daysOrMonths) {
+        return service.getDayTicker(symbol, interval, daysOrMonths);
     }
 
     @GetMapping(value = "/icon/{coin}", produces = MediaType.IMAGE_PNG_VALUE)
-    public @ResponseBody byte[] getIcon(@PathVariable String coin) throws IOException {
+    public @ResponseBody byte[] getIcon(@PathVariable String coin) {
         return service.getIconBytes(coin);
     }
 }

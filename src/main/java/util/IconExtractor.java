@@ -7,6 +7,12 @@ import java.nio.file.*;
 
 public class IconExtractor {
 
+    /**
+     * Extract a coin icon from a zip file.
+     * @param coin the coin name.
+     * @return a byte array of the png icon file.
+     * @throws IOException on exception (usually when the png is not in the zip file).
+     */
     public static byte[] getIconBytes(String coin) throws IOException {
         URL url = IconExtractor.class.getClassLoader().getResource("cryptocurrency-icons-master.zip");
         assert url != null;
