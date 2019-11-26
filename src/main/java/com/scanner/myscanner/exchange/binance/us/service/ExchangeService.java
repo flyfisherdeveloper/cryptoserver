@@ -237,7 +237,7 @@ public class ExchangeService {
         //If not in the cache, then call the service and add the data to the cache.
         //The data in the cache will expire according to the setup in the CachingConfig configuration.
         Cache volumeCache = cacheManager.getCache("VolumeCache");
-        String name = symbol + interval;
+        String name = symbol + interval + daysOrMonths;
         List<CoinTicker> coins;
         if (volumeCache != null) {
             Cache.ValueWrapper value = volumeCache.get(name);
