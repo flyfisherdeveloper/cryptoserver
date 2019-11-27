@@ -7,10 +7,7 @@ import com.scanner.myscanner.exchange.binance.us.dto.Symbol;
 import com.scanner.myscanner.exchange.binance.us.service.ExchangeService;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
-import util.IconExtractor;
 
-import java.io.IOException;
-import java.net.URISyntaxException;
 import java.util.List;
 
 @RestController
@@ -35,9 +32,13 @@ public class BinanceExchangeController {
         return service.call24HrCoinTicker(symbol);
     }
 
+    /**
+     * Gets all the coins and 24-hour data on the exchange.
+     * NOTE: This call has the heaviest "weight" of all exchange calls: Use sparingly!
+     * @return a list of all coins on the exchange over the past 24 hours.
+     */
     @GetMapping(value = "/24HourTicker", produces = MediaType.APPLICATION_JSON_VALUE)
     public List<CoinDataFor24Hr> getAll24HourTicker() {
-        //return service.getMock24HrCoinTicker();
         return service.get24HrAllCoinTicker();
     }
 
@@ -46,26 +47,14 @@ public class BinanceExchangeController {
         return service.getMock24HrCoinTicker();
     }
 
-    @GetMapping(value = "/ticker/{symbol}/{interval}", produces = MediaType.APPLICATION_JSON_VALUE)
-    public List<CoinTicker> getCoinTicker(@PathVariable String symbol, @PathVariable String interval) {
-        return service.getCoinTicker(symbol, interval);
-    }
-
-    @Deprecated
-    @GetMapping(value = "/7DayTicker/{symbol}", produces = MediaType.APPLICATION_JSON_VALUE)
-    public List<CoinTicker> get7DayTicker(@PathVariable String symbol) {
-        //12-hour
-        return service.get7DayTicker(symbol);
-        //return service.getMock7DayTicker(symbol);
-    }
-
     @GetMapping(value = "/DayTicker/{symbol}/{interval}/{daysOrMonths}", produces = MediaType.APPLICATION_JSON_VALUE)
     public List<CoinTicker> getDayTicker(@PathVariable String symbol, @PathVariable String interval, @PathVariable String daysOrMonths) {
         return service.getDayTicker(symbol, interval, daysOrMonths);
     }
 
     @GetMapping(value = "/icon/{coin}", produces = MediaType.IMAGE_PNG_VALUE)
-    public @ResponseBody byte[] getIcon(@PathVariable String coin) {
+    public @ResponseBody
+    byte[] getIcon(@PathVariable String coin) {
         return service.getIconBytes(coin);
     }
 }

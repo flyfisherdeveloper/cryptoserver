@@ -5,7 +5,6 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.scanner.myscanner.exchange.binance.us.controller.BinanceExchangeController;
 import com.scanner.myscanner.exchange.binance.us.dto.CoinDataFor24Hr;
 import com.scanner.myscanner.exchange.binance.us.dto.CoinTicker;
-import com.scanner.myscanner.exchange.binance.us.dto.ExchangeInfo;
 import com.scanner.myscanner.exchange.binance.us.dto.Symbol;
 import com.scanner.myscanner.exchange.binance.us.service.ExchangeService;
 import org.junit.jupiter.api.Test;
@@ -25,7 +24,7 @@ import java.util.Optional;
 import static org.junit.jupiter.api.Assertions.*;
 
 @AutoConfigureMockMvc
-@ContextConfiguration(classes = {BinanceExchangeController.class, ExchangeService.class, RestTemplate.class})
+@ContextConfiguration(classes = {BinanceExchangeController.class, ExchangeService.class, RestTemplate.class, CachingConfig.class})
 @WebMvcTest
 class MyScannerControllerIntegTest {
     @Autowired
@@ -71,9 +70,9 @@ class MyScannerControllerIntegTest {
     }
 
     @Test
-    void test_coin_ticker() throws Exception {
+    void test_day_ticker() throws Exception {
         MvcResult result = mvc.perform(MockMvcRequestBuilders
-                .get("/api/v1/binance/ticker/DOGEUSDT/12h")
+                .get("/api/v1/binance/DayTicker/DOGEUSDT/12h/1d")
                 .accept(MediaType.APPLICATION_JSON))
                 .andReturn();
 
@@ -90,22 +89,14 @@ class MyScannerControllerIntegTest {
     }
 
     @Test
-    void test_7day_ticker() throws Exception {
+    void test_get_icon() throws Exception {
         MvcResult result = mvc.perform(MockMvcRequestBuilders
-                .get("/api/v1/binance/7DayTicker/DOGEUSDT")
-                .accept(MediaType.APPLICATION_JSON))
+                .get("/api/v1/binance/icon/ltc")
+                .accept(MediaType.IMAGE_PNG_VALUE))
                 .andReturn();
 
-        String json = result.getResponse().getContentAsString();
-        ObjectMapper mapper = new ObjectMapper();
-
-        List<CoinTicker> list = mapper.readValue(json, new TypeReference<>() {
-        });
-        assertNotNull(list);
-        assertFalse(list.isEmpty());
-        CoinTicker coinTicker = list.get(0);
-        assertNotNull(coinTicker.getVolume());
-        assertNotNull(coinTicker.getQuoteAssetVolume());
-        list.forEach(System.out::println);
+        byte[] bytes = result.getResponse().getContentAsByteArray();
+        assertNotNull(bytes);
+        assertTrue(bytes.length > 0);
     }
 }
