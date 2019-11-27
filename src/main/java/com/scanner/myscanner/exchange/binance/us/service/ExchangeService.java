@@ -216,10 +216,6 @@ public class ExchangeService {
         return values;
     }
 
-    public List<CoinTicker> get7DayTicker(String symbol) {
-        return getDayTicker(symbol, "12h", "7d");
-    }
-
     public List<CoinTicker> getDayTicker(String symbol, String interval, String daysOrMonths) {
         Instant now = Instant.now();
         Instant from;

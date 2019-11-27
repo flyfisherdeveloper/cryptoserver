@@ -27,7 +27,7 @@ class MyScannerServiceIntegTest {
 	private ExchangeService exchangeService;
 
 	@Test
-	public void testAllUsdSymbols() {
+	void testAllUsdSymbols() {
 		ExchangeInfo exchangeInfo = exchangeService.getExchangeInfo();
 		List<Symbol> usdSymbols = exchangeInfo.getSymbols().stream()
 				.filter(s -> s.getQuoteAsset().equalsIgnoreCase("USD"))
@@ -38,14 +38,14 @@ class MyScannerServiceIntegTest {
 	}
 
 	@Test
-	public void test24HrCoinTicker() {
+	void test24HrCoinTicker() {
 		CoinDataFor24Hr data = exchangeService.call24HrCoinTicker("LTCUSD");
 		System.out.println(data);
 		assertEquals("LTCUSD", data.getSymbol());
 	}
 
 	@Test
-	public void testCoinTicker() {
+	void testCoinTicker() {
         List<CoinTicker> tickers = exchangeService.getCoinTicker("LTCBTC", "12h");
 		for (CoinTicker ticker : tickers) {
 			LocalDateTime openTime = LocalDateTime.ofInstant(Instant.ofEpochMilli(ticker.getOpenTime()),
@@ -60,7 +60,7 @@ class MyScannerServiceIntegTest {
 	}
 
 	@Test
-	public void testExtract() throws IOException, URISyntaxException {
+	void testExtract() throws IOException, URISyntaxException {
 		byte[] bytes = IconExtractor.getIconBytes("eth");
 		assertNotNull(bytes);
 		assertTrue(bytes.length > 0);
