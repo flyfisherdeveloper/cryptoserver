@@ -9,13 +9,14 @@ import org.springframework.cache.CacheManager;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
-import org.springframework.web.client.RestTemplate;
+import org.springframework.web.client.RestOperations;
 import util.IconExtractor;
 
 import java.io.IOException;
 import java.time.Instant;
 import java.time.temporal.ChronoUnit;
 import java.util.*;
+import java.util.stream.Collectors;
 
 @Service
 public class ExchangeService {
@@ -24,10 +25,10 @@ public class ExchangeService {
     private String symblolTickerUrl = "https://api.binance.us/api/v3/klines?symbol={symbol}&interval={interval}";
     private String symbol24HrTickerUrl = "https://api.binance.us/api/v3/ticker/24hr?symbol={symbol}";
     private String symbol24HrAllTickerUrl = "https://api.binance.us/api/v3/ticker/24hr";
-    private final RestTemplate restTemplate;
+    private final RestOperations restTemplate;
     private final CacheManager cacheManager;
 
-    public ExchangeService(RestTemplate restTemplate, CacheManager cacheManager) {
+    public ExchangeService(RestOperations restTemplate, CacheManager cacheManager) {
         this.restTemplate = restTemplate;
         this.cacheManager = cacheManager;
     }
@@ -202,6 +203,7 @@ public class ExchangeService {
         for (Object obj : body) {
             List<Object> list = (List<Object>) obj;
             CoinTicker coinTicker = new CoinTicker();
+            coinTicker.setSymbol(symbol);
             coinTicker.setOpenTime((Long) list.get(0));
             coinTicker.setOpen(Double.valueOf((String) list.get(1)));
             coinTicker.setHigh(Double.valueOf((String) list.get(2)));
@@ -223,7 +225,7 @@ public class ExchangeService {
             int numDays = Integer.parseInt("" + daysOrMonths.charAt(0));
             from = now.minus(numDays, ChronoUnit.DAYS);
         } else {
-            //todo: Instand does not support ChronoUnit.MONTHS - use 30 days as a workaround for now
+            //todo: Instant does not support ChronoUnit.MONTHS - use 30 days as a workaround for now
             from = now.minus(30, ChronoUnit.DAYS);
         }
         long startTime = from.toEpochMilli();
@@ -277,6 +279,36 @@ public class ExchangeService {
         return list;
     }
 
+    //todo: add unit tests
+    public void add24HrVolumeChange(List<CoinDataFor24Hr> data) {
+        List<String> coins = data.stream().map(CoinDataFor24Hr::getSymbol).collect(Collectors.toList());
+
+        coins.stream().forEach(coin -> {
+            //jeff
+            //here we need to get the past 2 days to compute volume change
+            //however, the api does not allow 2 days, so we use 3 days instead
+            List<CoinTicker> dayTicker = getDayTicker(coin, "15m", "3d");
+            //sort by close time
+            dayTicker = dayTicker.stream().sorted(Comparator.comparingLong(CoinTicker::getCloseTime)).collect(Collectors.toList());
+            long close1 = dayTicker.get(dayTicker.size() - 1).getCloseTime();
+            long close2 = dayTicker.get(dayTicker.size() - 2).getCloseTime();
+            System.out.println(new Date(close1));
+            System.out.println(new Date(close2));
+            double percentChange = 0.0;
+            double prevVolume = dayTicker.get(dayTicker.size() - 1).getVolume();
+            double newVolume = dayTicker.get(dayTicker.size() - 2).getVolume();
+            if (prevVolume < newVolume) {
+                double increase = newVolume - prevVolume;
+                percentChange = (increase / prevVolume) * 100.0;
+            } else if (prevVolume > newVolume) {
+                double decrease = prevVolume - newVolume;
+                percentChange = (decrease / prevVolume) * 100.0;
+            }
+            CoinDataFor24Hr coinDataFor24Hr = data.stream().filter(d -> d.getSymbol().equals(coin)).findFirst().orElse(new CoinDataFor24Hr());
+            coinDataFor24Hr.setVolumeChangePercent(percentChange);
+        });
+    }
+
     @Cacheable(cacheNames = {"All24HourTicker", "VolumeCache"})
     public List<CoinDataFor24Hr> get24HrAllCoinTicker() {
         String url = symbol24HrAllTickerUrl;
@@ -291,6 +323,8 @@ public class ExchangeService {
             CoinDataFor24Hr coin = get24HrCoinTicker(map);
             list.add(coin);
         }
+        //todo: add volume change
+        //add24HrVolumeChange(list);
         return list;
     }
 

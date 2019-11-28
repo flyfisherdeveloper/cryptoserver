@@ -13,6 +13,7 @@ public class CoinDataFor24Hr {
     private Double lowPrice;
     private Double volume;
     private Double quoteVolume;
+    private Double volumeChangePercent;
     private Long openTime;
     private Long closeTime;
 }

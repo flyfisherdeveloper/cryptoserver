@@ -4,6 +4,7 @@ import lombok.Data;
 
 @Data
 public class CoinTicker {
+    private String symbol;
     private Long openTime;
     private String openDate;
     private Long closeTime;
