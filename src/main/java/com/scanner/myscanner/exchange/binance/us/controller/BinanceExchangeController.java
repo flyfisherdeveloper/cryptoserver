@@ -22,8 +22,8 @@ public class BinanceExchangeController {
 
     @GetMapping(value = "/info", produces = MediaType.APPLICATION_JSON_VALUE)
     public List<Symbol> getExchangeInfo() {
-        //return service.getExchangeInfo();
-        ExchangeInfo info = service.getMockExchangeInfo();
+        ExchangeInfo info = service.getExchangeInfo();
+        //ExchangeInfo info = service.getMockExchangeInfo();
         return info.getSymbols();
     }
 
