@@ -13,6 +13,8 @@ import org.springframework.web.client.RestOperations;
 import util.IconExtractor;
 
 import java.io.IOException;
+import java.text.DecimalFormat;
+import java.text.NumberFormat;
 import java.time.Instant;
 import java.time.temporal.ChronoUnit;
 import java.util.*;
@@ -279,33 +281,54 @@ public class ExchangeService {
         return list;
     }
 
+    public Double getPercentChange(double fromValue, double toValue) {
+        double change = toValue - fromValue;
+        return (change / fromValue) * 100.0;
+    }
+
+    //Put the start and end times in an array - from time first, to time second.
+    //Essentially this a "Tuple" or a "Pair", but is simple enough to just use a simple array of two longs.
+    private long[] getStartAndEndTime(int minusHours, int minusMinutes) {
+        Instant now = Instant.now();
+        Instant from = now.minus(minusMinutes, ChronoUnit.MINUTES);
+        from = from.minus(minusHours, ChronoUnit.HOURS);
+        long fromTime = from.toEpochMilli();
+        long toTime = now.toEpochMilli();
+        return new long[]{fromTime, toTime};
+    }
+
     //todo: add unit tests
     public void add24HrVolumeChange(List<CoinDataFor24Hr> data) {
         List<String> coins = data.stream().map(CoinDataFor24Hr::getSymbol).collect(Collectors.toList());
 
-        coins.stream().forEach(coin -> {
-            //jeff
-            //here we need to get the past 2 days to compute volume change
-            //however, the api does not allow 2 days, so we use 3 days instead
-            List<CoinTicker> dayTicker = getDayTicker(coin, "15m", "3d");
+        //jeff
+        //todo: change to parallel stream
+        //the api does not give volume percent change information for intervals
+        //so... a workaround:
+        //here, we go back 2 days and get volume info in 15-minute intervals
+        //then, we calculate the total volume of day 1 and compare to day 2 to get a percent volume change
+        //note: this is for volume change percentage in days; todo: modify for ANY interval, not just days
+        coins.parallelStream().forEach(coin -> {
+            long[] startAndEndTime = getStartAndEndTime(48, 15);
+            //get all the data for 15-min intervals going back 2 days
+            List<CoinTicker> coinTickers = callCoinTicker(coin, "15m", startAndEndTime[0], startAndEndTime[1]);
             //sort by close time
-            dayTicker = dayTicker.stream().sorted(Comparator.comparingLong(CoinTicker::getCloseTime)).collect(Collectors.toList());
-            long close1 = dayTicker.get(dayTicker.size() - 1).getCloseTime();
-            long close2 = dayTicker.get(dayTicker.size() - 2).getCloseTime();
-            System.out.println(new Date(close1));
-            System.out.println(new Date(close2));
-            double percentChange = 0.0;
-            double prevVolume = dayTicker.get(dayTicker.size() - 1).getVolume();
-            double newVolume = dayTicker.get(dayTicker.size() - 2).getVolume();
-            if (prevVolume < newVolume) {
-                double increase = newVolume - prevVolume;
-                percentChange = (increase / prevVolume) * 100.0;
-            } else if (prevVolume > newVolume) {
-                double decrease = prevVolume - newVolume;
-                percentChange = (decrease / prevVolume) * 100.0;
+            coinTickers = coinTickers.stream().sorted(Comparator.comparingLong(CoinTicker::getCloseTime)).collect(Collectors.toList());
+            //now compute the volumes for day 1 and day 2
+            startAndEndTime = getStartAndEndTime(24, 15);
+            long startTime = startAndEndTime[0];
+            //volume for day 1
+            double prevDayVolume = coinTickers.stream().filter(ticker -> ticker.getCloseTime() <= startTime).map(CoinTicker::getVolume).mapToDouble(vol -> vol).sum();
+            //volume for day 2
+            double newDayVolume = coinTickers.stream().filter(ticker -> ticker.getCloseTime() >= startTime).map(CoinTicker::getVolume).mapToDouble(vol -> vol).sum();
+            //if volume is 0.0 then the data is missing (such as a brand new coin with only one day of data)
+            if (prevDayVolume != 0.0) {
+                double percentChange = getPercentChange(prevDayVolume, newDayVolume);
+                CoinDataFor24Hr coinDataFor24Hr = data.stream().filter(d -> d.getSymbol().equals(coin)).findFirst().orElse(new CoinDataFor24Hr());
+                NumberFormat nf = new DecimalFormat("##.##");
+                percentChange = Double.parseDouble(nf.format(percentChange));
+                coinDataFor24Hr.setVolumeChangePercent(percentChange);
             }
-            CoinDataFor24Hr coinDataFor24Hr = data.stream().filter(d -> d.getSymbol().equals(coin)).findFirst().orElse(new CoinDataFor24Hr());
-            coinDataFor24Hr.setVolumeChangePercent(percentChange);
         });
     }
 
@@ -324,7 +347,7 @@ public class ExchangeService {
             list.add(coin);
         }
         //todo: add volume change
-        //add24HrVolumeChange(list);
+        add24HrVolumeChange(list);
         return list;
     }
 
