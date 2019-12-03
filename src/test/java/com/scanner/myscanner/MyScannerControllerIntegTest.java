@@ -65,7 +65,8 @@ class MyScannerControllerIntegTest {
 
         CoinDataFor24Hr coin = mapper.readValue(json, CoinDataFor24Hr.class);
         assertNotNull(coin);
-        assertEquals("LTCUSD", coin.getSymbol());
+        assertEquals("LTC", coin.getCoin());
+        assertEquals("USD", coin.getCurrency());
         System.out.println(coin);
     }
 
