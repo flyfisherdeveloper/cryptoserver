@@ -85,6 +85,8 @@ public class ExchangeService {
 
         CoinDataFor24Hr coin1 = new CoinDataFor24Hr();
         coin1.setSymbol("LTCUSD");
+        coin1.setCoin("LTC");
+        coin1.setCurrency("USD");
         coin1.setLastPrice(56.23);
         coin1.setPriceChange(-1.2);
         coin1.setPriceChangePercent(-2.023);
@@ -98,6 +100,8 @@ public class ExchangeService {
 
         CoinDataFor24Hr coin2 = new CoinDataFor24Hr();
         coin2.setSymbol("BTCUSD");
+        coin2.setCoin("BTC");
+        coin2.setCurrency("USD");
         coin2.setLastPrice(8243.32);
         coin2.setPriceChange(206.1400);
         coin2.setPriceChangePercent(2.272);
@@ -111,6 +115,8 @@ public class ExchangeService {
 
         CoinDataFor24Hr coin3 = new CoinDataFor24Hr();
         coin3.setSymbol("ETHUSD");
+        coin3.setCoin("ETH");
+        coin3.setCurrency("USD");
         coin3.setLastPrice(124.20);
         coin3.setPriceChange(2.0100);
         coin3.setPriceChangePercent(1.109);
@@ -137,11 +143,39 @@ public class ExchangeService {
         return get24HrCoinTicker(body);
     }
 
+    private int getQuoteOffset(String symbol) {
+        var offset = 3;
+        if (symbol.endsWith("USDT")) {
+            offset = 4;
+        }
+        return offset;
+    }
+
+    private int getStartOfQuote(String str) {
+        var end = str.length();
+        var offset = this.getQuoteOffset(str);
+        return end - offset;
+    }
+
+    private String getQuote(String str) {
+        var start = this.getStartOfQuote(str);
+        return str.substring(start);
+    }
+
+    private String getCoin(String str) {
+        var offset = this.getStartOfQuote(str);
+        return str.substring(0, offset);
+    }
+
     private CoinDataFor24Hr get24HrCoinTicker(LinkedHashMap map) {
         CoinDataFor24Hr data = new CoinDataFor24Hr();
-        String coin = (String) map.get("symbol");
+        String symbol = (String) map.get("symbol");
+        String coin = getCoin(symbol);
+        String currency = getQuote(symbol);
 
-        data.setSymbol(coin);
+        data.setSymbol(symbol);
+        data.setCoin(coin);
+        data.setCurrency(currency);
         String priceChangeStr = (String) map.get("priceChange");
         double priceChange = Double.parseDouble(priceChangeStr);
         data.setPriceChange(priceChange);
@@ -175,6 +209,8 @@ public class ExchangeService {
 
         Long closeTime = (Long) map.get("closeTime");
         data.setCloseTime(closeTime);
+
+        data.setupLinks();
 
         return data;
     }
@@ -290,10 +326,10 @@ public class ExchangeService {
     //Essentially this a "Tuple" or a "Pair", but is simple enough to just use a simple array of two longs.
     private long[] getStartAndEndTime(int minusHours, int minusMinutes) {
         Instant now = Instant.now();
-        Instant from = now.minus(minusMinutes, ChronoUnit.MINUTES);
-        from = from.minus(minusHours, ChronoUnit.HOURS);
+        Instant to = now.minus(minusMinutes, ChronoUnit.MINUTES);
+        Instant from = to.minus(minusHours, ChronoUnit.HOURS);
         long fromTime = from.toEpochMilli();
-        long toTime = now.toEpochMilli();
+        long toTime = to.toEpochMilli();
         return new long[]{fromTime, toTime};
     }
 
@@ -315,12 +351,28 @@ public class ExchangeService {
             //sort by close time
             coinTickers = coinTickers.stream().sorted(Comparator.comparingLong(CoinTicker::getCloseTime)).collect(Collectors.toList());
             //now compute the volumes for day 1 and day 2
-            startAndEndTime = getStartAndEndTime(24, 15);
+            startAndEndTime = getStartAndEndTime(24, 0);
             long startTime = startAndEndTime[0];
+
+            //todo: eliminate when debugging is complete
+            /*
+            long count1 = coinTickers.stream().filter(ticker -> ticker.getCloseTime() <= startTime).count();
+            long count2 = coinTickers.stream().filter(ticker -> ticker.getCloseTime() > startTime).count();
+            if (count1 != count2) {
+                throw new RuntimeException("Different numbers of tickers for volume change calculation");
+            }
+             */
+
+            /*
+            System.out.println("start time: " + new Date(startTime));
+            coinTickers.stream().filter(ticker -> ticker.getCloseTime() <= startTime).forEach(c -> System.out.println(new Date(c.getCloseTime())));
+            System.out.println("----------------------------------------------");
+            coinTickers.stream().filter(ticker -> ticker.getCloseTime() > startTime).forEach(c -> System.out.println(new Date(c.getCloseTime())));
+             */
             //volume for day 1
-            double prevDayVolume = coinTickers.stream().filter(ticker -> ticker.getCloseTime() <= startTime).map(CoinTicker::getVolume).mapToDouble(vol -> vol).sum();
+            double prevDayVolume = coinTickers.stream().filter(ticker -> ticker.getCloseTime() <= startTime).map(CoinTicker::getQuoteAssetVolume).mapToDouble(vol -> vol).sum();
             //volume for day 2
-            double newDayVolume = coinTickers.stream().filter(ticker -> ticker.getCloseTime() >= startTime).map(CoinTicker::getVolume).mapToDouble(vol -> vol).sum();
+            double newDayVolume = coinTickers.stream().filter(ticker -> ticker.getCloseTime() > startTime).map(CoinTicker::getQuoteAssetVolume).mapToDouble(vol -> vol).sum();
             //if volume is 0.0 then the data is missing (such as a brand new coin with only one day of data)
             if (prevDayVolume != 0.0) {
                 double percentChange = getPercentChange(prevDayVolume, newDayVolume);
