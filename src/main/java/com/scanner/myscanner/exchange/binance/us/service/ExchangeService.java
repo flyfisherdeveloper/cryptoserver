@@ -3,7 +3,6 @@ package com.scanner.myscanner.exchange.binance.us.service;
 import com.scanner.myscanner.exchange.binance.us.dto.CoinDataFor24Hr;
 import com.scanner.myscanner.exchange.binance.us.dto.CoinTicker;
 import com.scanner.myscanner.exchange.binance.us.dto.ExchangeInfo;
-import com.scanner.myscanner.exchange.binance.us.dto.Symbol;
 import org.springframework.cache.Cache;
 import org.springframework.cache.CacheManager;
 import org.springframework.cache.annotation.Cacheable;
@@ -40,95 +39,8 @@ public class ExchangeService {
         return info.getBody();
     }
 
-    public ExchangeInfo getMockExchangeInfo() {
-        ExchangeInfo info = new ExchangeInfo();
-        List<Symbol> symbols = new ArrayList<>();
-
-        Symbol coin1 = new Symbol();
-        coin1.setSymbol("BTCUSD");
-        coin1.setBaseAsset("BTC");
-        coin1.setQuoteAsset("USD");
-        symbols.add(coin1);
-
-        Symbol coin2 = new Symbol();
-        coin2.setSymbol("ETHUSD");
-        coin2.setBaseAsset("ETH");
-        coin2.setQuoteAsset("USD");
-        symbols.add(coin2);
-
-        Symbol coin3 = new Symbol();
-        coin3.setSymbol("XRPUSD");
-        coin3.setBaseAsset("XRP");
-        coin3.setQuoteAsset("USD");
-        symbols.add(coin3);
-
-        Symbol coin4 = new Symbol();
-        coin4.setSymbol("LTCUSD");
-        coin4.setBaseAsset("LTC");
-        coin4.setQuoteAsset("USD");
-        symbols.add(coin4);
-
-        info.setSymbols(symbols);
-        return info;
-    }
-
     public List<CoinTicker> getCoinTicker(String symbol, String interval) {
         return callCoinTicker(symbol, interval, null, null);
-    }
-
-    public List<CoinTicker> getCoinTicker(String symbol, String interval, long startTime, long endTime) {
-        return callCoinTicker(symbol, interval, startTime, endTime);
-    }
-
-    public List<CoinDataFor24Hr> getMock24HrCoinTicker() {
-        List<CoinDataFor24Hr> list = new ArrayList<>();
-
-        CoinDataFor24Hr coin1 = new CoinDataFor24Hr();
-        coin1.setSymbol("LTCUSD");
-        coin1.setCoin("LTC");
-        coin1.setCurrency("USD");
-        coin1.setLastPrice(56.23);
-        coin1.setPriceChange(-1.2);
-        coin1.setPriceChangePercent(-2.023);
-        coin1.setHighPrice(61.13);
-        coin1.setLowPrice(57.04);
-        coin1.setVolume(4050.19611);
-        coin1.setQuoteVolume(239099.0);
-        coin1.setOpenTime(1572376515329L);
-        coin1.setCloseTime(1572462915329L);
-        list.add(coin1);
-
-        CoinDataFor24Hr coin2 = new CoinDataFor24Hr();
-        coin2.setSymbol("BTCUSD");
-        coin2.setCoin("BTC");
-        coin2.setCurrency("USD");
-        coin2.setLastPrice(8243.32);
-        coin2.setPriceChange(206.1400);
-        coin2.setPriceChangePercent(2.272);
-        coin2.setHighPrice(9411.4300);
-        coin2.setLowPrice(8955.1200);
-        coin2.setVolume(322.83641200);
-        coin2.setQuoteVolume(2952333.2810);
-        coin2.setOpenTime(1572448433844L);
-        coin2.setCloseTime(1572534833844L);
-        list.add(coin2);
-
-        CoinDataFor24Hr coin3 = new CoinDataFor24Hr();
-        coin3.setSymbol("ETHUSD");
-        coin3.setCoin("ETH");
-        coin3.setCurrency("USD");
-        coin3.setLastPrice(124.20);
-        coin3.setPriceChange(2.0100);
-        coin3.setPriceChangePercent(1.109);
-        coin3.setHighPrice(185.4200);
-        coin3.setLowPrice(178.02);
-        coin3.setVolume(1672.33941000);
-        coin3.setQuoteVolume(304078.6850);
-        coin3.setOpenTime(1572448416810L);
-        coin3.setCloseTime(1572534816810L);
-        list.add(coin3);
-
-        return list;
     }
 
     public CoinDataFor24Hr call24HrCoinTicker(String symbol) {
@@ -145,7 +57,7 @@ public class ExchangeService {
 
     private int getQuoteOffset(String symbol) {
         var offset = 3;
-        if (symbol.endsWith("USDT")) {
+        if (symbol.endsWith("USDT") || (symbol.endsWith("BUSD") && !symbol.startsWith("BNB"))) {
             offset = 4;
         }
         return offset;
@@ -286,35 +198,6 @@ public class ExchangeService {
             return coins;
         }
         return new ArrayList<>();
-    }
-
-    public List<CoinTicker> getMock7DayTicker(String symbol) {
-        List<CoinTicker> list = new ArrayList<>();
-        CoinTicker coin1 = new CoinTicker();
-        coin1.setOpenTime(1571961600000L);
-        coin1.setCloseTime(1572004799999L);
-        coin1.setCloseDate("12 OCT 2019");
-        coin1.setVolume(268404.00);
-        coin1.setQuoteAssetVolume(671.50380360);
-        list.add(coin1);
-
-        CoinTicker coin2 = new CoinTicker();
-        coin2.setOpenTime(1572220800000L);
-        coin2.setCloseTime(1572263999999L);
-        coin2.setCloseDate("13 OCT 2019");
-        coin2.setVolume(140122.00);
-        coin2.setQuoteAssetVolume(373.25104520);
-        list.add(coin2);
-
-        CoinTicker coin3 = new CoinTicker();
-        coin3.setOpenTime(1572523200000L);
-        coin3.setCloseTime(1572566399999L);
-        coin3.setCloseDate("14 OCT 2019");
-        coin3.setVolume(292904.00);
-        coin3.setQuoteAssetVolume(763.28951510);
-        list.add(coin3);
-
-        return list;
     }
 
     public Double getPercentChange(double fromValue, double toValue) {

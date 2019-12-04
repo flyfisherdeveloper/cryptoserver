@@ -23,7 +23,6 @@ public class BinanceExchangeController {
     @GetMapping(value = "/info", produces = MediaType.APPLICATION_JSON_VALUE)
     public List<Symbol> getExchangeInfo() {
         ExchangeInfo info = service.getExchangeInfo();
-        //ExchangeInfo info = service.getMockExchangeInfo();
         return info.getSymbols();
     }
 
@@ -35,16 +34,12 @@ public class BinanceExchangeController {
     /**
      * Gets all the coins and 24-hour data on the exchange.
      * NOTE: This call has the heaviest "weight" of all exchange calls: Use sparingly!
+     *
      * @return a list of all coins on the exchange over the past 24 hours.
      */
     @GetMapping(value = "/24HourTicker", produces = MediaType.APPLICATION_JSON_VALUE)
     public List<CoinDataFor24Hr> getAll24HourTicker() {
         return service.get24HrAllCoinTicker();
-    }
-
-    @GetMapping(value = "/Mock24HourTicker", produces = MediaType.APPLICATION_JSON_VALUE)
-    public List<CoinDataFor24Hr> getMock24HourTicker() {
-        return service.getMock24HrCoinTicker();
     }
 
     @GetMapping(value = "/DayTicker/{symbol}/{interval}/{daysOrMonths}", produces = MediaType.APPLICATION_JSON_VALUE)
