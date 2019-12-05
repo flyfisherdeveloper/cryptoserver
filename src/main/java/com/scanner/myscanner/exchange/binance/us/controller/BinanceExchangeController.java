@@ -44,7 +44,7 @@ public class BinanceExchangeController {
 
     @GetMapping(value = "/DayTicker/{symbol}/{interval}/{daysOrMonths}", produces = MediaType.APPLICATION_JSON_VALUE)
     public List<CoinTicker> getDayTicker(@PathVariable String symbol, @PathVariable String interval, @PathVariable String daysOrMonths) {
-        return service.getDayTicker(symbol, interval, daysOrMonths);
+        return service.getTickerData(symbol, interval, daysOrMonths);
     }
 
     @GetMapping(value = "/icon/{coin}", produces = MediaType.IMAGE_PNG_VALUE)

@@ -17,6 +17,8 @@ import java.text.NumberFormat;
 import java.time.Instant;
 import java.time.temporal.ChronoUnit;
 import java.util.*;
+import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.ExecutionException;
 import java.util.stream.Collectors;
 
 @Service
@@ -168,19 +170,61 @@ public class ExchangeService {
         return values;
     }
 
-    public List<CoinTicker> getDayTicker(String symbol, String interval, String daysOrMonths) {
+    private List<CoinTicker> callCoinTicker(String symbol, String interval, String daysOrMonths) {
         Instant now = Instant.now();
         Instant from;
+        long startTime1;
+        long toTime1 = now.toEpochMilli();
+        long startTime2 = 0;
+        long toTime2 = 0;
+        List<CoinTicker> coinTickers = new ArrayList<>();
+
         if (daysOrMonths.endsWith("d")) {
             int numDays = Integer.parseInt("" + daysOrMonths.charAt(0));
             from = now.minus(numDays, ChronoUnit.DAYS);
+            startTime1 = from.toEpochMilli();
         } else {
-            //todo: Instant does not support ChronoUnit.MONTHS - use 30 days as a workaround for now
-            from = now.minus(30, ChronoUnit.DAYS);
+            //If interval is 1-hour over 1-month, we need two calls.
+            //This is because the Binance.us api only brings back 500 data points, but more than that are needed.
+            //Therefore, two calls are needed - go back 15 days for one call, then 15 to 30 days for the other call.
+            //Then, combine the results from the two calls, sorting on the close time.
+            if (interval.equals("1h")) {
+                Instant from15Days = now.minus(15, ChronoUnit.DAYS);
+                startTime1 = from15Days.toEpochMilli();
+                //todo: Instant does not support ChronoUnit.MONTHS - use 30 days as a workaround for now
+                Instant from30Days = now.minus(30, ChronoUnit.DAYS);
+                startTime2 = from30Days.toEpochMilli();
+                toTime2 = startTime1;
+            } else {
+                //todo: Instant does not support ChronoUnit.MONTHS - use 30 days as a workaround for now
+                from = now.minus(30, ChronoUnit.DAYS);
+                startTime1 = from.toEpochMilli();
+            }
         }
-        long startTime = from.toEpochMilli();
-        long toTime = now.toEpochMilli();
+        if (startTime2 != 0) {
+            CompletableFuture<List<CoinTicker>> call1 = CompletableFuture.supplyAsync(() -> callCoinTicker(symbol, interval, startTime1, toTime1));
+            long finalStartTime = startTime2;
+            long finalToTime = toTime2;
+            CompletableFuture<List<CoinTicker>> call2 = CompletableFuture.supplyAsync(() -> callCoinTicker(symbol, interval, finalStartTime, finalToTime));
+            CompletableFuture<Void> allCalls = CompletableFuture.allOf(call1, call2);
+            allCalls.thenRun(() -> {
+                try {
+                    coinTickers.addAll(call1.get());
+                    coinTickers.addAll(call2.get());
+                    //sort the list - since they are run asynchronously, to ensure the final list is in order
+                    coinTickers.sort(Comparator.comparingLong(CoinTicker::getCloseTime));
+                } catch (InterruptedException | ExecutionException e) {
+                    e.printStackTrace();
+                }
+            }).join();
+        } else {
+            coinTickers.addAll(callCoinTicker(symbol, interval, startTime1, toTime1));
+        }
 
+        return coinTickers;
+    }
+
+    public List<CoinTicker> getTickerData(String symbol, String interval, String daysOrMonths) {
         //Attempt to get the data out of the cache if it is in there.
         //If not in the cache, then call the service and add the data to the cache.
         //The data in the cache will expire according to the setup in the CachingConfig configuration.
@@ -190,7 +234,7 @@ public class ExchangeService {
         if (volumeCache != null) {
             Cache.ValueWrapper value = volumeCache.get(name);
             if (value == null) {
-                coins = callCoinTicker(symbol, interval, startTime, toTime);
+                coins = callCoinTicker(symbol, interval, daysOrMonths);
                 volumeCache.putIfAbsent(name, coins);
             } else {
                 coins = (List<CoinTicker>) value.get();
@@ -220,8 +264,6 @@ public class ExchangeService {
     public void add24HrVolumeChange(List<CoinDataFor24Hr> data) {
         List<String> coins = data.stream().map(CoinDataFor24Hr::getSymbol).collect(Collectors.toList());
 
-        //jeff
-        //todo: change to parallel stream
         //the api does not give volume percent change information for intervals
         //so... a workaround:
         //here, we go back 2 days and get volume info in 15-minute intervals
@@ -238,20 +280,12 @@ public class ExchangeService {
             long startTime = startAndEndTime[0];
 
             //todo: eliminate when debugging is complete
-            /*
             long count1 = coinTickers.stream().filter(ticker -> ticker.getCloseTime() <= startTime).count();
             long count2 = coinTickers.stream().filter(ticker -> ticker.getCloseTime() > startTime).count();
             if (count1 != count2) {
                 throw new RuntimeException("Different numbers of tickers for volume change calculation");
             }
-             */
 
-            /*
-            System.out.println("start time: " + new Date(startTime));
-            coinTickers.stream().filter(ticker -> ticker.getCloseTime() <= startTime).forEach(c -> System.out.println(new Date(c.getCloseTime())));
-            System.out.println("----------------------------------------------");
-            coinTickers.stream().filter(ticker -> ticker.getCloseTime() > startTime).forEach(c -> System.out.println(new Date(c.getCloseTime())));
-             */
             //volume for day 1
             double prevDayVolume = coinTickers.stream().filter(ticker -> ticker.getCloseTime() <= startTime).map(CoinTicker::getQuoteAssetVolume).mapToDouble(vol -> vol).sum();
             //volume for day 2
