@@ -18,6 +18,7 @@ import org.springframework.test.web.servlet.MvcResult;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.web.client.RestTemplate;
 
+import java.util.Date;
 import java.util.List;
 import java.util.Optional;
 
@@ -87,6 +88,7 @@ class MyScannerControllerIntegTest {
         CoinTicker coinTicker = list.get(0);
         assertNotNull(coinTicker.getVolume());
         assertNotNull(coinTicker.getQuoteAssetVolume());
+        list.forEach(coin -> System.out.println(new Date(coin.getCloseTime())));
     }
 
     @Test
