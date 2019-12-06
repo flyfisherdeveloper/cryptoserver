@@ -28,7 +28,7 @@ public class CachingConfig extends CachingConfigurerSupport {
             @Override
             protected Cache createConcurrentMapCache(final String name) {
                 //cache for coin pairs, such as BTCUSD
-                if (name.equals("VolumeCache")) {
+                if (name.equals("CoinCache")) {
                     return new ConcurrentMapCache(name, CacheBuilder.newBuilder()
                             .expireAfterWrite(5, TimeUnit.MINUTES)
                             .maximumSize(100)

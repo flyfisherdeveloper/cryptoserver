@@ -129,6 +129,29 @@ public class ExchangeService {
         return data;
     }
 
+    private List<CoinTicker> callCoinTicker(String symbol, String interval, long startTime1, long toTime1, long startTime2, long toTime2) {
+        List<CoinTicker> coinTickers = new ArrayList<>();
+
+        if (startTime2 != 0 && toTime2 != 0) {
+            CompletableFuture<List<CoinTicker>> call1 = CompletableFuture.supplyAsync(() -> callCoinTicker(symbol, interval, startTime1, toTime1));
+            CompletableFuture<List<CoinTicker>> call2 = CompletableFuture.supplyAsync(() -> callCoinTicker(symbol, interval, startTime2, toTime2));
+            CompletableFuture<Void> allCalls = CompletableFuture.allOf(call1, call2);
+            allCalls.thenRun(() -> {
+                try {
+                    coinTickers.addAll(call1.get());
+                    coinTickers.addAll(call2.get());
+                    //sort the list - since they are run asynchronously, to ensure the final list is in order
+                    coinTickers.sort(Comparator.comparingLong(CoinTicker::getCloseTime));
+                } catch (InterruptedException | ExecutionException e) {
+                    e.printStackTrace();
+                }
+            }).join();
+        } else {
+            coinTickers.addAll(callCoinTicker(symbol, interval, startTime1, toTime1));
+        }
+        return coinTickers;
+    }
+
     private List<CoinTicker> callCoinTicker(String symbol, String interval, Long startTime, Long endTime) {
         //todo: check that both start time and end time are either both null or both not null
         if (interval.equals("24h")) {
@@ -170,14 +193,13 @@ public class ExchangeService {
         return values;
     }
 
-    private List<CoinTicker> callCoinTicker(String symbol, String interval, String daysOrMonths) {
+    public List<CoinTicker> callCoinTicker(String symbol, String interval, String daysOrMonths) {
         Instant now = Instant.now();
         Instant from;
         long startTime1;
         long toTime1 = now.toEpochMilli();
         long startTime2 = 0;
         long toTime2 = 0;
-        List<CoinTicker> coinTickers = new ArrayList<>();
 
         if (daysOrMonths.endsWith("d")) {
             int numDays = Integer.parseInt("" + daysOrMonths.charAt(0));
@@ -201,26 +223,7 @@ public class ExchangeService {
                 startTime1 = from.toEpochMilli();
             }
         }
-        if (startTime2 != 0) {
-            CompletableFuture<List<CoinTicker>> call1 = CompletableFuture.supplyAsync(() -> callCoinTicker(symbol, interval, startTime1, toTime1));
-            long finalStartTime = startTime2;
-            long finalToTime = toTime2;
-            CompletableFuture<List<CoinTicker>> call2 = CompletableFuture.supplyAsync(() -> callCoinTicker(symbol, interval, finalStartTime, finalToTime));
-            CompletableFuture<Void> allCalls = CompletableFuture.allOf(call1, call2);
-            allCalls.thenRun(() -> {
-                try {
-                    coinTickers.addAll(call1.get());
-                    coinTickers.addAll(call2.get());
-                    //sort the list - since they are run asynchronously, to ensure the final list is in order
-                    coinTickers.sort(Comparator.comparingLong(CoinTicker::getCloseTime));
-                } catch (InterruptedException | ExecutionException e) {
-                    e.printStackTrace();
-                }
-            }).join();
-        } else {
-            coinTickers.addAll(callCoinTicker(symbol, interval, startTime1, toTime1));
-        }
-
+        List<CoinTicker> coinTickers = callCoinTicker(symbol, interval, startTime1, toTime1, startTime2, toTime2);
         return coinTickers;
     }
 
@@ -228,14 +231,14 @@ public class ExchangeService {
         //Attempt to get the data out of the cache if it is in there.
         //If not in the cache, then call the service and add the data to the cache.
         //The data in the cache will expire according to the setup in the CachingConfig configuration.
-        Cache volumeCache = cacheManager.getCache("VolumeCache");
+        Cache coinCache = cacheManager.getCache("CoinCache");
         String name = symbol + interval + daysOrMonths;
         List<CoinTicker> coins;
-        if (volumeCache != null) {
-            Cache.ValueWrapper value = volumeCache.get(name);
+        if (coinCache != null) {
+            Cache.ValueWrapper value = coinCache.get(name);
             if (value == null) {
                 coins = callCoinTicker(symbol, interval, daysOrMonths);
-                volumeCache.putIfAbsent(name, coins);
+                coinCache.putIfAbsent(name, coins);
             } else {
                 coins = (List<CoinTicker>) value.get();
             }
@@ -283,7 +286,7 @@ public class ExchangeService {
             long count1 = coinTickers.stream().filter(ticker -> ticker.getCloseTime() <= startTime).count();
             long count2 = coinTickers.stream().filter(ticker -> ticker.getCloseTime() > startTime).count();
             if (count1 != count2) {
-                throw new RuntimeException("Different numbers of tickers for volume change calculation");
+                //throw new RuntimeException("Different numbers of tickers for volume change calculation");
             }
 
             //volume for day 1
@@ -301,7 +304,7 @@ public class ExchangeService {
         });
     }
 
-    @Cacheable(cacheNames = {"All24HourTicker", "VolumeCache"})
+    @Cacheable(cacheNames = {"All24HourTicker", "CoinCache"})
     public List<CoinDataFor24Hr> get24HrAllCoinTicker() {
         String url = symbol24HrAllTickerUrl;
         ResponseEntity<LinkedHashMap[]> info = restTemplate.getForEntity(url, LinkedHashMap[].class);
@@ -324,10 +327,10 @@ public class ExchangeService {
         //Attempt to get the icon out of the cache if it is in there.
         //If not in the cache, then call the icon extract service and add the icon bytes to the cache.
         //The data in the cache will expire according to the setup in the CachingConfig configuration.
-        Cache volumeCache = cacheManager.getCache("IconCache");
+        Cache iconCache = cacheManager.getCache("IconCache");
         byte[] coins = null;
-        if (volumeCache != null) {
-            Cache.ValueWrapper value = volumeCache.get(coin);
+        if (iconCache != null) {
+            Cache.ValueWrapper value = iconCache.get(coin);
             if (value == null) {
                 try {
                     coins = IconExtractor.getIconBytes(coin);
@@ -337,7 +340,7 @@ public class ExchangeService {
                     // add a non-null empty array to the cache so we don't keep trying to extract it from the zip file
                     coins = new byte[0];
                 }
-                volumeCache.putIfAbsent(coin, coins);
+                iconCache.putIfAbsent(coin, coins);
             } else {
                 coins = (byte[]) value.get();
             }
