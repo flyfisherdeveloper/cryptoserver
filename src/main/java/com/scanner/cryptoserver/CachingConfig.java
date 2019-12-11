@@ -1,4 +1,4 @@
-package com.scanner.myscanner;
+package com.scanner.cryptoserver;
 
 import com.google.common.cache.CacheBuilder;
 import org.springframework.cache.Cache;

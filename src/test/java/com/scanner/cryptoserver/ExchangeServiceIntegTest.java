@@ -1,10 +1,10 @@
-package com.scanner.myscanner;
+package com.scanner.cryptoserver;
 
-import com.scanner.myscanner.exchange.binance.us.dto.CoinDataFor24Hr;
-import com.scanner.myscanner.exchange.binance.us.dto.CoinTicker;
-import com.scanner.myscanner.exchange.binance.us.dto.ExchangeInfo;
-import com.scanner.myscanner.exchange.binance.us.dto.Symbol;
-import com.scanner.myscanner.exchange.binance.us.service.ExchangeService;
+import com.scanner.cryptoserver.exchange.binance.us.dto.CoinDataFor24Hr;
+import com.scanner.cryptoserver.exchange.binance.us.dto.CoinTicker;
+import com.scanner.cryptoserver.exchange.binance.us.dto.ExchangeInfo;
+import com.scanner.cryptoserver.exchange.binance.us.dto.Symbol;
+import com.scanner.cryptoserver.exchange.binance.us.service.ExchangeService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -21,7 +21,7 @@ import java.util.stream.Collectors;
 import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
-class MyScannerServiceIntegTest {
+class ExchangeServiceIntegTest {
     @Autowired
     private ExchangeService exchangeService;
 

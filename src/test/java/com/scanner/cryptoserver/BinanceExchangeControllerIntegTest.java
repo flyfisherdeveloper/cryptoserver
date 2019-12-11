@@ -1,12 +1,12 @@
-package com.scanner.myscanner;
+package com.scanner.cryptoserver;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.scanner.myscanner.exchange.binance.us.controller.BinanceExchangeController;
-import com.scanner.myscanner.exchange.binance.us.dto.CoinDataFor24Hr;
-import com.scanner.myscanner.exchange.binance.us.dto.CoinTicker;
-import com.scanner.myscanner.exchange.binance.us.dto.Symbol;
-import com.scanner.myscanner.exchange.binance.us.service.ExchangeService;
+import com.scanner.cryptoserver.exchange.binance.us.controller.BinanceExchangeController;
+import com.scanner.cryptoserver.exchange.binance.us.dto.CoinDataFor24Hr;
+import com.scanner.cryptoserver.exchange.binance.us.dto.CoinTicker;
+import com.scanner.cryptoserver.exchange.binance.us.dto.Symbol;
+import com.scanner.cryptoserver.exchange.binance.us.service.ExchangeService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
@@ -27,7 +27,7 @@ import static org.junit.jupiter.api.Assertions.*;
 @AutoConfigureMockMvc
 @ContextConfiguration(classes = {BinanceExchangeController.class, ExchangeService.class, RestTemplate.class, CachingConfig.class})
 @WebMvcTest
-class MyScannerControllerIntegTest {
+class BinanceExchangeControllerIntegTest {
     @Autowired
     private MockMvc mvc;
 

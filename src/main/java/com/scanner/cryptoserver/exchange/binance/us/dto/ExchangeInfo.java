@@ -1,4 +1,4 @@
-package com.scanner.myscanner.exchange.binance.us.dto;
+package com.scanner.cryptoserver.exchange.binance.us.dto;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Data;
