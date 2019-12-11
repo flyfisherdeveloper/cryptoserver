@@ -1,8 +1,8 @@
-package com.scanner.myscanner.exchange.binance.us.service;
+package com.scanner.cryptoserver.exchange.binance.us.service;
 
-import com.scanner.myscanner.exchange.binance.us.dto.CoinDataFor24Hr;
-import com.scanner.myscanner.exchange.binance.us.dto.CoinTicker;
-import com.scanner.myscanner.exchange.binance.us.dto.ExchangeInfo;
+import com.scanner.cryptoserver.exchange.binance.us.dto.CoinDataFor24Hr;
+import com.scanner.cryptoserver.exchange.binance.us.dto.CoinTicker;
+import com.scanner.cryptoserver.exchange.binance.us.dto.ExchangeInfo;
 import org.springframework.cache.Cache;
 import org.springframework.cache.CacheManager;
 import org.springframework.cache.annotation.Cacheable;

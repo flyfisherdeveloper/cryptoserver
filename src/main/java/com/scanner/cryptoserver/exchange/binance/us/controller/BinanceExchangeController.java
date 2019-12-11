@@ -1,10 +1,10 @@
-package com.scanner.myscanner.exchange.binance.us.controller;
+package com.scanner.cryptoserver.exchange.binance.us.controller;
 
-import com.scanner.myscanner.exchange.binance.us.dto.CoinDataFor24Hr;
-import com.scanner.myscanner.exchange.binance.us.dto.CoinTicker;
-import com.scanner.myscanner.exchange.binance.us.dto.ExchangeInfo;
-import com.scanner.myscanner.exchange.binance.us.dto.Symbol;
-import com.scanner.myscanner.exchange.binance.us.service.ExchangeService;
+import com.scanner.cryptoserver.exchange.binance.us.dto.CoinDataFor24Hr;
+import com.scanner.cryptoserver.exchange.binance.us.dto.CoinTicker;
+import com.scanner.cryptoserver.exchange.binance.us.dto.ExchangeInfo;
+import com.scanner.cryptoserver.exchange.binance.us.dto.Symbol;
+import com.scanner.cryptoserver.exchange.binance.us.service.ExchangeService;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 

@@ -1,7 +1,7 @@
-package com.scanner.myscanner.exchange.binance.us
+package com.scanner.cryptoserver.exchange.binance.us
 
-import com.scanner.myscanner.exchange.binance.us.dto.CoinDataFor24Hr
-import com.scanner.myscanner.exchange.binance.us.service.ExchangeService
+import com.scanner.cryptoserver.exchange.binance.us.dto.CoinDataFor24Hr
+import com.scanner.cryptoserver.exchange.binance.us.service.ExchangeService
 import org.spockframework.lang.Wildcard
 import org.springframework.cache.CacheManager
 import org.springframework.http.ResponseEntity
