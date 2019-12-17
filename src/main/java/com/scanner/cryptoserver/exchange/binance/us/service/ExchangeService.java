@@ -3,13 +3,14 @@ package com.scanner.cryptoserver.exchange.binance.us.service;
 import com.scanner.cryptoserver.exchange.binance.us.dto.CoinDataFor24Hr;
 import com.scanner.cryptoserver.exchange.binance.us.dto.CoinTicker;
 import com.scanner.cryptoserver.exchange.binance.us.dto.ExchangeInfo;
+import com.scanner.cryptoserver.util.IconExtractor;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cache.Cache;
 import org.springframework.cache.CacheManager;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestOperations;
-import util.IconExtractor;
 
 import java.io.IOException;
 import java.text.DecimalFormat;
@@ -23,11 +24,16 @@ import java.util.stream.Collectors;
 
 @Service
 public class ExchangeService {
-    private String exchangeInfoUrl = "https://api.binance.us/api/v3/exchangeInfo";
-    private String symblolTickerTimeParams = "&startTime={startTime}&endTime={endTime}";
-    private String symblolTickerUrl = "https://api.binance.us/api/v3/klines?symbol={symbol}&interval={interval}";
-    private String symbol24HrTickerUrl = "https://api.binance.us/api/v3/ticker/24hr?symbol={symbol}";
-    private String symbol24HrAllTickerUrl = "https://api.binance.us/api/v3/ticker/24hr";
+    @Value("${exchanges.binance.info}")
+    private String exchangeInfoUrl;
+    @Value("${exchanges.binance.klines}")
+    private String klinesUrl;
+    @Value("${exchanges.binance.ticker}")
+    private String tickerUrl;
+    @Value("${exchanges.binance.trade}")
+    private String tradeUrl;
+    @Value("${environments.icon}")
+    private String iconUrl;
     private final RestOperations restTemplate;
     private final CacheManager cacheManager;
 
@@ -46,7 +52,7 @@ public class ExchangeService {
     }
 
     public CoinDataFor24Hr call24HrCoinTicker(String symbol) {
-        String url = symbol24HrTickerUrl;
+        String url = tickerUrl + "/24hr?symbol={symbol}";
         Map<String, Object> params = new HashMap<>();
         params.put("symbol", symbol);
         ResponseEntity<LinkedHashMap> info = restTemplate.getForEntity(url, LinkedHashMap.class, params);
@@ -58,7 +64,7 @@ public class ExchangeService {
     }
 
     private int getQuoteOffset(String symbol) {
-        var offset = 3;
+        int offset = 3;
         if (symbol.endsWith("USDT") || (symbol.endsWith("BUSD") && !symbol.startsWith("BNB"))) {
             offset = 4;
         }
@@ -66,18 +72,18 @@ public class ExchangeService {
     }
 
     private int getStartOfQuote(String str) {
-        var end = str.length();
-        var offset = this.getQuoteOffset(str);
+        int end = str.length();
+        int offset = this.getQuoteOffset(str);
         return end - offset;
     }
 
     private String getQuote(String str) {
-        var start = this.getStartOfQuote(str);
+        int start = this.getStartOfQuote(str);
         return str.substring(start);
     }
 
     private String getCoin(String str) {
-        var offset = this.getStartOfQuote(str);
+        int offset = this.getStartOfQuote(str);
         return str.substring(0, offset);
     }
 
@@ -124,7 +130,7 @@ public class ExchangeService {
         Long closeTime = (Long) map.get("closeTime");
         data.setCloseTime(closeTime);
 
-        data.setupLinks();
+        data.setupLinks(tradeUrl, iconUrl);
 
         return data;
     }
@@ -157,13 +163,14 @@ public class ExchangeService {
         if (interval.equals("24h")) {
             interval = "1d";
         }
-        String url = symblolTickerUrl;
+        String url = klinesUrl + "?symbol={symbol}&interval={interval}";
         Map<String, Object> params = new HashMap<>();
         params.put("symbol", symbol);
         params.put("interval", interval);
         if (startTime != null) {
             params.put("startTime", startTime);
-            url += symblolTickerTimeParams;
+            String symbolTickerTimeParams = "&startTime={startTime}&endTime={endTime}";
+            url += symbolTickerTimeParams;
         }
         if (endTime != null) {
             params.put("endTime", endTime);
@@ -306,7 +313,7 @@ public class ExchangeService {
 
     @Cacheable(cacheNames = {"All24HourTicker", "CoinCache"})
     public List<CoinDataFor24Hr> get24HrAllCoinTicker() {
-        String url = symbol24HrAllTickerUrl;
+        String url = tickerUrl + "/24hr";
         ResponseEntity<LinkedHashMap[]> info = restTemplate.getForEntity(url, LinkedHashMap[].class);
         LinkedHashMap[] body = info.getBody();
         if (body == null) {

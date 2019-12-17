@@ -8,7 +8,7 @@ import com.scanner.cryptoserver.exchange.binance.us.service.ExchangeService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import util.IconExtractor;
+import com.scanner.cryptoserver.util.IconExtractor;
 
 import java.io.IOException;
 import java.time.Instant;
