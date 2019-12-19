@@ -4,6 +4,8 @@ import com.scanner.cryptoserver.exchange.binance.us.dto.CoinDataFor24Hr;
 import com.scanner.cryptoserver.exchange.binance.us.dto.CoinTicker;
 import com.scanner.cryptoserver.exchange.binance.us.dto.ExchangeInfo;
 import com.scanner.cryptoserver.util.IconExtractor;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cache.Cache;
 import org.springframework.cache.CacheManager;
@@ -12,7 +14,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestOperations;
 
-import java.io.IOException;
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
 import java.time.Instant;
@@ -24,6 +25,8 @@ import java.util.stream.Collectors;
 
 @Service
 public class ExchangeService {
+    private static final Logger Log = LoggerFactory.getLogger(ExchangeService.class);
+
     @Value("${exchanges.binance.info}")
     private String exchangeInfoUrl;
     @Value("${exchanges.binance.klines}")
@@ -149,7 +152,7 @@ public class ExchangeService {
                     //sort the list - since they are run asynchronously, to ensure the final list is in order
                     coinTickers.sort(Comparator.comparingLong(CoinTicker::getCloseTime));
                 } catch (InterruptedException | ExecutionException e) {
-                    e.printStackTrace();
+                    Log.error("Error: {} " + e.getMessage());
                 }
             }).join();
         } else {
@@ -159,7 +162,6 @@ public class ExchangeService {
     }
 
     private List<CoinTicker> callCoinTicker(String symbol, String interval, Long startTime, Long endTime) {
-        //todo: check that both start time and end time are either both null or both not null
         if (interval.equals("24h")) {
             interval = "1d";
         }
@@ -339,10 +341,8 @@ public class ExchangeService {
         if (iconCache != null) {
             Cache.ValueWrapper value = iconCache.get(coin);
             if (value == null) {
-                try {
-                    coins = IconExtractor.getIconBytes(coin);
-                } catch (IOException e) {
-                    e.printStackTrace();
+                coins = IconExtractor.getIconBytes(coin);
+                if (coins == null) {
                     //here, the coin icon wasn't in the zip file -
                     // add a non-null empty array to the cache so we don't keep trying to extract it from the zip file
                     coins = new byte[0];

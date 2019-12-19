@@ -2,6 +2,11 @@ logging:
   level:
     org.springframework: ERROR
     com.scanner.cryptoserver: DEBUG
+  pattern:
+    console: "%d %-5level %logger : %msg%n"
+    file: "%d %-5level [%thread] %logger : %msg%n"
+  file:
+    name: logs/application-logging.log
 
 environments:
   icon: http://localhost:5000/api/v1/binance/icon/
