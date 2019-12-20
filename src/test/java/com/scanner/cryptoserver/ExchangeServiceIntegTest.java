@@ -5,12 +5,11 @@ import com.scanner.cryptoserver.exchange.binance.us.dto.CoinTicker;
 import com.scanner.cryptoserver.exchange.binance.us.dto.ExchangeInfo;
 import com.scanner.cryptoserver.exchange.binance.us.dto.Symbol;
 import com.scanner.cryptoserver.exchange.binance.us.service.ExchangeService;
+import com.scanner.cryptoserver.util.IconExtractor;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import com.scanner.cryptoserver.util.IconExtractor;
 
-import java.io.IOException;
 import java.time.Instant;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
@@ -60,7 +59,7 @@ class ExchangeServiceIntegTest {
     }
 
     @Test
-    void testExtract() throws IOException {
+    void testExtract() {
         byte[] bytes = IconExtractor.getIconBytes("eth");
         assertNotNull(bytes);
         assertTrue(bytes.length > 0);
