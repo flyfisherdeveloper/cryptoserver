@@ -134,6 +134,8 @@ public class ExchangeService {
         data.setCloseTime(closeTime);
 
         data.setupLinks(tradeUrl, iconUrl);
+        byte[] iconBytes = getIconBytes(coin);
+        data.setIcon(iconBytes);
 
         return data;
     }
@@ -327,7 +329,6 @@ public class ExchangeService {
             CoinDataFor24Hr coin = get24HrCoinTicker(map);
             list.add(coin);
         }
-        //todo: add volume change
         add24HrVolumeChange(list);
         return list;
     }
