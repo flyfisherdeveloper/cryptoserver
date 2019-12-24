@@ -67,7 +67,6 @@ class BinanceExchangeControllerIntegTest {
         assertNotNull(coin);
         assertEquals("LTC", coin.getCoin());
         assertEquals("USD", coin.getCurrency());
-        System.out.println(coin);
     }
 
     @Test

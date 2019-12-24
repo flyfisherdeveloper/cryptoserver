@@ -30,7 +30,6 @@ class ExchangeServiceIntegTest {
         List<Symbol> usdSymbols = exchangeInfo.getSymbols().stream()
                 .filter(s -> s.getQuoteAsset().equalsIgnoreCase("USD"))
                 .collect(Collectors.toList());
-        usdSymbols.forEach(u -> System.out.println(u.getSymbol()));
         boolean allMatch = usdSymbols.stream().allMatch(s -> s.getSymbol().endsWith("USD"));
         assertTrue(allMatch);
     }
@@ -38,7 +37,6 @@ class ExchangeServiceIntegTest {
     @Test
     void test24HrCoinTicker() {
         CoinDataFor24Hr data = exchangeService.call24HrCoinTicker("LTCUSD");
-        System.out.println(data);
         assertEquals("LTC", data.getCoin());
         assertEquals("USD", data.getCurrency());
     }
