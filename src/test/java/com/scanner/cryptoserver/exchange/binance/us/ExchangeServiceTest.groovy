@@ -3,6 +3,7 @@ package com.scanner.cryptoserver.exchange.binance.us
 import com.scanner.cryptoserver.exchange.binance.us.dto.CoinDataFor24Hr
 import com.scanner.cryptoserver.exchange.binance.us.service.ExchangeService
 import org.spockframework.lang.Wildcard
+import org.springframework.cache.Cache
 import org.springframework.cache.CacheManager
 import org.springframework.http.ResponseEntity
 import org.springframework.web.client.RestOperations
@@ -17,10 +18,12 @@ class ExchangeServiceTest extends Specification {
     private ExchangeService service
     private RestOperations restTemplate
     private CacheManager cacheManager
+    private Cache cache
 
     def setup() {
         restTemplate = Mock(RestTemplate)
         cacheManager = Mock(CacheManager)
+        cache = Mock(Cache)
         service = new ExchangeService(restTemplate, cacheManager)
     }
 
@@ -171,6 +174,53 @@ class ExchangeServiceTest extends Specification {
         "BTCUSD" | "1h"     | "1d"
         "BTCUSD" | "1h"     | "1m"
         "BTCUSD" | "4h"     | "1m"
+    }
+
+    @Unroll("Test call of get ticker data with coin cashe exists: #coinCacheExists and coin in cache: #inCache")
+    def "test getTickerData"() {
+        given:
+        def now = LocalDateTime.now()
+        def closeTime1 = now.minusHours(2).toInstant(ZoneOffset.UTC).toEpochMilli()
+        def closeTime2 = now.minusHours(1).toInstant(ZoneOffset.UTC).toEpochMilli()
+        def response1 = getMockCoinTicker(closeTime1, closeTime2)
+
+        def prevDayCloseTime1 = now.minusDays(1).minusHours(2).toInstant(ZoneOffset.UTC).toEpochMilli()
+        def prevDayCloseTime2 = now.minusDays(1).minusHours(1).toInstant(ZoneOffset.UTC).toEpochMilli()
+        def response2 = getMockCoinTicker(prevDayCloseTime1, prevDayCloseTime2)
+
+        def coinTickerList = [response1, response2]
+        def valueWrapper = { -> return coinTickerList }
+
+        when:
+        if (coinCacheExists) {
+            cacheManager.getCache(Wildcard.INSTANCE) >> cache
+        } else {
+            cacheManager.getCache(Wildcard.INSTANCE) >> null
+        }
+        if (inCache) {
+            cache.get(Wildcard.INSTANCE) >> valueWrapper
+        } else {
+            cache.get(Wildcard.INSTANCE) >> null
+            //Here, response1 is the response for the first time the rest template is called; response2 is the second time the rest template is called.
+            restTemplate.getForEntity(Wildcard.INSTANCE, Wildcard.INSTANCE, Wildcard.INSTANCE) >>> [response1, response2]
+        }
+
+        def coins = service.getTickerData(symbol, interval, daysOrMonths)
+
+        then:
+        assert coins != null
+        if (coinCacheExists) {
+            //if we pass this test, then we ensure that the coin was retrieved from the cache
+            assert coins.size() == coinTickerList.size()
+        } else {
+            assert coins.size() == 0
+        }
+
+        where:
+        symbol   | interval | daysOrMonths | coinCacheExists | inCache
+        "BTCUSD" | "4h"     | "7d"         | true            | true
+        "BTCUSD" | "4h"     | "7d"         | false           | false
+        "BTCUSD" | "1h"     | "1d"         | true            | false
     }
 
     ResponseEntity<Object[]> getMockCoinTicker() {
