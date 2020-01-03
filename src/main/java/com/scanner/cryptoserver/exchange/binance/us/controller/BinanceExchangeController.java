@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "https://develop.d3u11owfti6r3u.amplifyapp.com")
 @RequestMapping("api/v1/binance")
 public class BinanceExchangeController {
     private final ExchangeService service;

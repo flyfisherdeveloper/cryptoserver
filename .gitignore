@@ -67,6 +67,10 @@ build/
 # CMake
 cmake-build-*/
 
+#used for Apache SSL configuration - contains email address, so don't want it in source control
+.ebextensions/
+.ebextensions/00_apache_ssl.config
+
 # Mongo Explorer plugin
 .idea/**/mongoSettings.xml
 
