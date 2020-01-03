@@ -46,7 +46,7 @@ public class CachingConfig extends CachingConfigurerSupport {
                 }
                 //cache for list of all coins
                 return new ConcurrentMapCache(name, CacheBuilder.newBuilder()
-                        .expireAfterWrite(30, TimeUnit.MINUTES)
+                        .expireAfterWrite(5, TimeUnit.MINUTES)
                         //the maximum size number is rather arbitrary - the time is really the important issue
                         .maximumSize(5)
                         .build()
