@@ -25,7 +25,7 @@ public class IconExtractor {
         byte[] bytes = null;
 
         //try to get the icon from the resources - known icons are stored there
-        resource = resolver.getResource("classpath:icons/" + coin.toLowerCase() + ".png");
+        resource = resolver.getResource("classpath:images/" + coin.toLowerCase() + ".png");
         try (InputStream stream = resource.getInputStream()) {
             if (stream == null) {
                 Log.error("Cannot load input stream for png file: Coin: {}", coin);
