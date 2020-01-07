@@ -274,7 +274,6 @@ public class ExchangeService {
         return new long[]{fromTime, toTime};
     }
 
-    //todo: add unit tests
     public void add24HrVolumeChange(List<CoinDataFor24Hr> data) {
         List<String> coins = data.stream().map(CoinDataFor24Hr::getSymbol).collect(Collectors.toList());
 
@@ -292,14 +291,6 @@ public class ExchangeService {
             //now compute the volumes for day 1 and day 2
             startAndEndTime = getStartAndEndTime(24, 0);
             long startTime = startAndEndTime[0];
-
-            //todo: eliminate when debugging is complete
-            long count1 = coinTickers.stream().filter(ticker -> ticker.getCloseTime() <= startTime).count();
-            long count2 = coinTickers.stream().filter(ticker -> ticker.getCloseTime() > startTime).count();
-            if (count1 != count2) {
-                //throw new RuntimeException("Different numbers of tickers for volume change calculation");
-            }
-
             //volume for day 1
             double prevDayVolume = coinTickers.stream().filter(ticker -> ticker.getCloseTime() <= startTime).map(CoinTicker::getQuoteAssetVolume).mapToDouble(vol -> vol).sum();
             //volume for day 2
@@ -315,6 +306,12 @@ public class ExchangeService {
         });
     }
 
+    //The cache keeps data as defined in the Cache config. When the data in the cache expires, the call
+    //to extract new data will take place here. This will suffice for now, as the solution is new,
+    //but if the solution and website ever grows, a new solution will be needed. We would need to create a running
+    //thread that extracts data from the exchange api service frequently: for example, once a minute or so.
+    //Since this solution now is just for "starters" and is just a "show and tell" type of solution, we
+    //will avoid calling the exchange api frequently (i.e. once a minute) for now.
     @Cacheable(cacheNames = {"All24HourTicker", "CoinCache"})
     public List<CoinDataFor24Hr> get24HrAllCoinTicker() {
         String url = tickerUrl + "/24hr";
