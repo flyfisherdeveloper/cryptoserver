@@ -1,19 +1,21 @@
 package com.scanner.cryptoserver.exchange.binance.us.controller;
 
+import com.scanner.cryptoserver.exchange.ExchangeService;
 import com.scanner.cryptoserver.exchange.binance.us.dto.CoinDataFor24Hr;
 import com.scanner.cryptoserver.exchange.binance.us.dto.CoinTicker;
 import com.scanner.cryptoserver.exchange.binance.us.dto.ExchangeInfo;
 import com.scanner.cryptoserver.exchange.binance.us.dto.Symbol;
-import com.scanner.cryptoserver.exchange.binance.us.service.ExchangeService;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "https://develop.d3u11owfti6r3u.amplifyapp.com")
 @RequestMapping("api/v1/binance")
 public class BinanceExchangeController {
+    @Qualifier("BinanceUsa")
     private final ExchangeService service;
 
     public BinanceExchangeController(ExchangeService service) {

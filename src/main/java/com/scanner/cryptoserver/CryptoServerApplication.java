@@ -9,12 +9,12 @@ import org.springframework.web.client.RestTemplate;
 @SpringBootApplication
 public class CryptoServerApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(CryptoServerApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(CryptoServerApplication.class, args);
+    }
 
-	@Bean
-	public RestTemplate restTemplate(RestTemplateBuilder builder) {
-		return builder.build();
-	}
+    @Bean
+    public RestTemplate restTemplate(RestTemplateBuilder builder) {
+        return builder.build();
+    }
 }

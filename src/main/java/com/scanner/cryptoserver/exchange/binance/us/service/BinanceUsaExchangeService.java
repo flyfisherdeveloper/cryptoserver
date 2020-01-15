@@ -1,5 +1,6 @@
 package com.scanner.cryptoserver.exchange.binance.us.service;
 
+import com.scanner.cryptoserver.exchange.ExchangeService;
 import com.scanner.cryptoserver.exchange.binance.us.dto.CoinDataFor24Hr;
 import com.scanner.cryptoserver.exchange.binance.us.dto.CoinTicker;
 import com.scanner.cryptoserver.exchange.binance.us.dto.ExchangeInfo;
@@ -23,9 +24,9 @@ import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutionException;
 import java.util.stream.Collectors;
 
-@Service
-public class ExchangeService {
-    private static final Logger Log = LoggerFactory.getLogger(ExchangeService.class);
+@Service("BinanceUsa")
+public class BinanceUsaExchangeService implements ExchangeService {
+    private static final Logger Log = LoggerFactory.getLogger(BinanceUsaExchangeService.class);
 
     @Value("${exchanges.binance.info}")
     private String exchangeInfoUrl;
@@ -40,7 +41,7 @@ public class ExchangeService {
     private final RestOperations restTemplate;
     private final CacheManager cacheManager;
 
-    public ExchangeService(RestOperations restTemplate, CacheManager cacheManager) {
+    public BinanceUsaExchangeService(RestOperations restTemplate, CacheManager cacheManager) {
         this.restTemplate = restTemplate;
         this.cacheManager = cacheManager;
     }

@@ -1,7 +1,7 @@
 package com.scanner.cryptoserver.exchange.binance.us
 
 import com.scanner.cryptoserver.exchange.binance.us.dto.CoinDataFor24Hr
-import com.scanner.cryptoserver.exchange.binance.us.service.ExchangeService
+import com.scanner.cryptoserver.exchange.binance.us.service.BinanceUsaExchangeService
 import org.spockframework.lang.Wildcard
 import org.springframework.cache.Cache
 import org.springframework.cache.CacheManager
@@ -14,8 +14,8 @@ import spock.lang.Unroll
 import java.time.LocalDateTime
 import java.time.ZoneOffset
 
-class ExchangeServiceTest extends Specification {
-    private ExchangeService service
+class BinanceUsaExchangeServiceTest extends Specification {
+    private BinanceUsaExchangeService service
     private RestOperations restTemplate
     private CacheManager cacheManager
     private Cache cache
@@ -24,7 +24,7 @@ class ExchangeServiceTest extends Specification {
         restTemplate = Mock(RestTemplate)
         cacheManager = Mock(CacheManager)
         cache = Mock(Cache)
-        service = new ExchangeService(restTemplate, cacheManager)
+        service = new BinanceUsaExchangeService(restTemplate, cacheManager)
     }
 
     //Here, we do a unit test of the 24Hour price ticker instead of an integration test

@@ -17,7 +17,9 @@ exchanges:
     klines: https://api.binance.us/api/v3/klines
     ticker: https://api.binance.us/api/v3/ticker
     trade: https://www.binance.us/en/trade/
-
+  coinbasepro:
+    base: https://api.pro.coinbase.com/
+    info: https://api.pro.coinbase.com/products
 
 spring:
   profiles:
