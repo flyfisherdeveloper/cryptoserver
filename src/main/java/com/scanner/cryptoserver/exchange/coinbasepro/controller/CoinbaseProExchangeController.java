@@ -1,4 +1,4 @@
-package com.scanner.cryptoserver.exchange.binance.us.controller;
+package com.scanner.cryptoserver.exchange.coinbasepro.controller;
 
 import com.scanner.cryptoserver.exchange.ExchangeService;
 import com.scanner.cryptoserver.exchange.binance.us.dto.CoinDataFor24Hr;
@@ -13,11 +13,11 @@ import java.util.List;
 
 @RestController
 @CrossOrigin(origins = "https://develop.d3u11owfti6r3u.amplifyapp.com")
-@RequestMapping("api/v1/binance")
-public class BinanceExchangeController {
+@RequestMapping("api/v1/coinbasepro")
+public class CoinbaseProExchangeController {
     private final ExchangeService service;
 
-    public BinanceExchangeController(@Qualifier("BinanceUsa") ExchangeService service) {
+    public CoinbaseProExchangeController(@Qualifier("CoinbasePro") ExchangeService service) {
         this.service = service;
     }
 

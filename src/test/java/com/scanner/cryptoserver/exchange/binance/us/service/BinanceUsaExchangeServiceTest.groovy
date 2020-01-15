@@ -1,7 +1,6 @@
-package com.scanner.cryptoserver.exchange.binance.us
+package com.scanner.cryptoserver.exchange.binance.us.service
 
 import com.scanner.cryptoserver.exchange.binance.us.dto.CoinDataFor24Hr
-import com.scanner.cryptoserver.exchange.binance.us.service.BinanceUsaExchangeService
 import org.spockframework.lang.Wildcard
 import org.springframework.cache.Cache
 import org.springframework.cache.CacheManager
@@ -24,7 +23,7 @@ class BinanceUsaExchangeServiceTest extends Specification {
         restTemplate = Mock(RestTemplate)
         cacheManager = Mock(CacheManager)
         cache = Mock(Cache)
-        service = new BinanceUsaExchangeService(restTemplate, cacheManager)
+        service = new BinanceUsaExchangeService(cacheManager, restTemplate)
     }
 
     //Here, we do a unit test of the 24Hour price ticker instead of an integration test

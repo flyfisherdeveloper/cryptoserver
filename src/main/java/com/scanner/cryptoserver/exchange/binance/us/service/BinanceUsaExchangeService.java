@@ -1,14 +1,12 @@
 package com.scanner.cryptoserver.exchange.binance.us.service;
 
-import com.scanner.cryptoserver.exchange.ExchangeService;
+import com.scanner.cryptoserver.exchange.AbstractExchangeService;
 import com.scanner.cryptoserver.exchange.binance.us.dto.CoinDataFor24Hr;
 import com.scanner.cryptoserver.exchange.binance.us.dto.CoinTicker;
 import com.scanner.cryptoserver.exchange.binance.us.dto.ExchangeInfo;
-import com.scanner.cryptoserver.util.IconExtractor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.cache.Cache;
 import org.springframework.cache.CacheManager;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.http.ResponseEntity;
@@ -25,7 +23,7 @@ import java.util.concurrent.ExecutionException;
 import java.util.stream.Collectors;
 
 @Service("BinanceUsa")
-public class BinanceUsaExchangeService implements ExchangeService {
+public class BinanceUsaExchangeService extends AbstractExchangeService {
     private static final Logger Log = LoggerFactory.getLogger(BinanceUsaExchangeService.class);
 
     @Value("${exchanges.binance.info}")
@@ -38,12 +36,9 @@ public class BinanceUsaExchangeService implements ExchangeService {
     private String tradeUrl;
     @Value("${environments.icon}")
     private String iconUrl;
-    private final RestOperations restTemplate;
-    private final CacheManager cacheManager;
 
-    public BinanceUsaExchangeService(RestOperations restTemplate, CacheManager cacheManager) {
-        this.restTemplate = restTemplate;
-        this.cacheManager = cacheManager;
+    protected BinanceUsaExchangeService(CacheManager cacheManager, RestOperations restTemplate) {
+        super(cacheManager, restTemplate);
     }
 
     public ExchangeInfo getExchangeInfo() {
@@ -239,26 +234,6 @@ public class BinanceUsaExchangeService implements ExchangeService {
         return coinTickers;
     }
 
-    public List<CoinTicker> getTickerData(String symbol, String interval, String daysOrMonths) {
-        //Attempt to get the data out of the cache if it is in there.
-        //If not in the cache, then call the service and add the data to the cache.
-        //The data in the cache will expire according to the setup in the CachingConfig configuration.
-        Cache coinCache = cacheManager.getCache("CoinCache");
-        String name = symbol + interval + daysOrMonths;
-        List<CoinTicker> coins;
-        if (coinCache != null) {
-            Cache.ValueWrapper value = coinCache.get(name);
-            if (value == null) {
-                coins = callCoinTicker(symbol, interval, daysOrMonths);
-                coinCache.putIfAbsent(name, coins);
-            } else {
-                coins = (List<CoinTicker>) value.get();
-            }
-            return coins;
-        }
-        return new ArrayList<>();
-    }
-
     public Double getPercentChange(double fromValue, double toValue) {
         double change = toValue - fromValue;
         return (change / fromValue) * 100.0;
@@ -307,6 +282,11 @@ public class BinanceUsaExchangeService implements ExchangeService {
         });
     }
 
+    @Override
+    public List<CoinTicker> getTickerData(String symbol, String interval, String daysOrMonths) {
+        return getTickerData("binanceCoinCache", symbol, interval, daysOrMonths);
+    }
+
     //The cache keeps data as defined in the Cache config. When the data in the cache expires, the call
     //to extract new data will take place here. This will suffice for now, as the solution is new,
     //but if the solution and website ever grows, a new solution will be needed. We would need to create a running
@@ -329,28 +309,5 @@ public class BinanceUsaExchangeService implements ExchangeService {
         }
         add24HrVolumeChange(list);
         return list;
-    }
-
-    public byte[] getIconBytes(String coin) {
-        //Attempt to get the icon out of the cache if it is in there.
-        //If not in the cache, then call the icon extract service and add the icon bytes to the cache.
-        //The data in the cache will expire according to the setup in the CachingConfig configuration.
-        Cache iconCache = cacheManager.getCache("IconCache");
-        byte[] coins = null;
-        if (iconCache != null) {
-            Cache.ValueWrapper value = iconCache.get(coin);
-            if (value == null) {
-                coins = IconExtractor.getIconBytes(coin);
-                if (coins == null) {
-                    //here, the coin icon wasn't in the zip file -
-                    // add a non-null empty array to the cache so we don't keep trying to extract it from the zip file
-                    coins = new byte[0];
-                }
-                iconCache.putIfAbsent(coin, coins);
-            } else {
-                coins = (byte[]) value.get();
-            }
-        }
-        return coins;
     }
 }
