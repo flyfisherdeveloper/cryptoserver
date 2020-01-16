@@ -5,7 +5,6 @@ import com.scanner.cryptoserver.exchange.binance.us.dto.CoinDataFor24Hr;
 import com.scanner.cryptoserver.exchange.binance.us.dto.CoinTicker;
 import com.scanner.cryptoserver.exchange.binance.us.dto.ExchangeInfo;
 import com.scanner.cryptoserver.exchange.binance.us.dto.Symbol;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
@@ -15,21 +14,21 @@ import java.util.List;
 @CrossOrigin(origins = "https://develop.d3u11owfti6r3u.amplifyapp.com")
 @RequestMapping("api/v1/binance")
 public class BinanceExchangeController {
-    private final ExchangeService service;
+    private final ExchangeService binanceUsaService;
 
-    public BinanceExchangeController(@Qualifier("BinanceUsa") ExchangeService service) {
-        this.service = service;
+    public BinanceExchangeController(ExchangeService binanceUsaService) {
+        this.binanceUsaService = binanceUsaService;
     }
 
     @GetMapping(value = "/info", produces = MediaType.APPLICATION_JSON_VALUE)
     public List<Symbol> getExchangeInfo() {
-        ExchangeInfo info = service.getExchangeInfo();
+        ExchangeInfo info = binanceUsaService.getExchangeInfo();
         return info.getSymbols();
     }
 
     @GetMapping(value = "/24HourTicker/{symbol}", produces = MediaType.APPLICATION_JSON_VALUE)
     public CoinDataFor24Hr get24HourTicker(@PathVariable String symbol) {
-        return service.call24HrCoinTicker(symbol);
+        return binanceUsaService.call24HrCoinTicker(symbol);
     }
 
     /**
@@ -40,17 +39,17 @@ public class BinanceExchangeController {
      */
     @GetMapping(value = "/24HourTicker", produces = MediaType.APPLICATION_JSON_VALUE)
     public List<CoinDataFor24Hr> getAll24HourTicker() {
-        return service.get24HrAllCoinTicker();
+        return binanceUsaService.get24HrAllCoinTicker();
     }
 
     @GetMapping(value = "/DayTicker/{symbol}/{interval}/{daysOrMonths}", produces = MediaType.APPLICATION_JSON_VALUE)
     public List<CoinTicker> getDayTicker(@PathVariable String symbol, @PathVariable String interval, @PathVariable String daysOrMonths) {
-        return service.getTickerData(symbol, interval, daysOrMonths);
+        return binanceUsaService.getTickerData(symbol, interval, daysOrMonths);
     }
 
     @GetMapping(value = "/icon/{coin}", produces = MediaType.IMAGE_PNG_VALUE)
     public @ResponseBody
     byte[] getIcon(@PathVariable String coin) {
-        return service.getIconBytes(coin);
+        return binanceUsaService.getIconBytes(coin);
     }
 }

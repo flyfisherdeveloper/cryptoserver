@@ -1,6 +1,5 @@
 package com.scanner.cryptoserver;
 
-import com.scanner.cryptoserver.exchange.ExchangeService;
 import com.scanner.cryptoserver.exchange.binance.us.dto.CoinDataFor24Hr;
 import com.scanner.cryptoserver.exchange.binance.us.dto.CoinTicker;
 import com.scanner.cryptoserver.exchange.binance.us.dto.ExchangeInfo;
@@ -9,7 +8,6 @@ import com.scanner.cryptoserver.exchange.binance.us.service.BinanceUsaExchangeSe
 import com.scanner.cryptoserver.util.IconExtractor;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import java.time.Instant;
@@ -24,12 +22,11 @@ import static org.junit.jupiter.api.Assertions.*;
 @SpringBootTest
 class BinanceUsaExchangeServiceIntegTest {
     @Autowired
-    @Qualifier("BinanceUsa")
-    private ExchangeService binanceUsaExchangeService;
+    private BinanceUsaExchangeService binanceUsaService;
 
     @Test
     void testAllUsdSymbols() {
-        ExchangeInfo exchangeInfo = binanceUsaExchangeService.getExchangeInfo();
+        ExchangeInfo exchangeInfo = binanceUsaService.getExchangeInfo();
         List<Symbol> usdSymbols = exchangeInfo.getSymbols().stream()
                 .filter(s -> s.getQuoteAsset().equalsIgnoreCase("USD"))
                 .collect(Collectors.toList());
@@ -39,14 +36,14 @@ class BinanceUsaExchangeServiceIntegTest {
 
     @Test
     void test24HrCoinTicker() {
-        CoinDataFor24Hr data = binanceUsaExchangeService.call24HrCoinTicker("LTCUSD");
+        CoinDataFor24Hr data = binanceUsaService.call24HrCoinTicker("LTCUSD");
         assertEquals("LTC", data.getCoin());
         assertEquals("USD", data.getCurrency());
     }
 
     @Test
     void testCoinTicker() {
-        List<CoinTicker> tickers = binanceUsaExchangeService.getCoinTicker("LTCBTC", "12h");
+        List<CoinTicker> tickers = binanceUsaService.getCoinTicker("LTCBTC", "12h");
         for (CoinTicker ticker : tickers) {
             LocalDateTime openTime = LocalDateTime.ofInstant(Instant.ofEpochMilli(ticker.getOpenTime()),
                     TimeZone.getDefault().toZoneId());
@@ -73,7 +70,7 @@ class BinanceUsaExchangeServiceIntegTest {
         btc.setSymbol("BTCUSD");
         data.add(btc);
 
-        binanceUsaExchangeService.add24HrVolumeChange(data);
+        binanceUsaService.add24HrVolumeChange(data);
         assertNotNull(btc.getVolumeChangePercent());
     }
 }
