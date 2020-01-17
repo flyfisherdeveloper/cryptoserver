@@ -21,7 +21,9 @@ public class CoinbaseProExchangeServiceAdapter implements ExchangeService {
         List<Symbol> symbols = new ArrayList<>();
         for (CoinbaseProSymbol coinbaseProSymbol : coinbaseProExchangeInfo) {
             Symbol symbol = new Symbol();
-            symbol.setSymbol(coinbaseProSymbol.getId());
+            String coin = coinbaseProSymbol.getId();
+            coin = coin.replace("-", "");
+            symbol.setSymbol(coin);
             symbol.setQuoteAsset(coinbaseProSymbol.getQuote_currency());
             symbol.setBaseAsset(coinbaseProSymbol.getBase_currency());
             symbols.add(symbol);

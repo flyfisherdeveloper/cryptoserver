@@ -23,7 +23,6 @@ import java.time.ZoneId;
 import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
-import java.util.LinkedHashMap;
 import java.util.List;
 
 import static org.springframework.http.HttpMethod.GET;
@@ -44,6 +43,7 @@ public class CoinbaseProExchangeServiceImpl extends AbstractExchangeService impl
         this.exchangeAdapter = new CoinbaseProExchangeServiceAdapter(this);
     }
 
+    //todo: do we need security headers for market info????
     private ResponseEntity<?> callRestGet(String endpoint, Class<?> theClass) {
         try {
             return restTemplate.exchange(exchangeInfoUrl, GET, securityHeaders(endpoint, "GET", ""), theClass);
@@ -54,7 +54,7 @@ public class CoinbaseProExchangeServiceImpl extends AbstractExchangeService impl
     }
 
     public ExchangeInfo getExchangeInfo() {
-        ResponseEntity<CoinbaseProSymbol[]> products = (ResponseEntity<CoinbaseProSymbol[]>) callRestGet("products", CoinbaseProSymbol[].class);
+        ResponseEntity<CoinbaseProSymbol[]> products = restTemplate.getForEntity(exchangeInfoUrl, CoinbaseProSymbol[].class);
         if (products == null) {
             return new ExchangeInfo();
         }
@@ -65,6 +65,17 @@ public class CoinbaseProExchangeServiceImpl extends AbstractExchangeService impl
     @Override
     public List<CoinTicker> getTickerData(String symbol, String interval, String daysOrMonths) {
         return super.getTickerData("coinbaseProCoinCache", symbol, interval, daysOrMonths);
+    }
+
+    /**
+     * Get ISO 8601 time string for the time.
+     *
+     * @param time the time as a long.
+     * @return the String of the time, such as "2018-07-10T12:05:23"
+     */
+    private String getTimeStr(Long time) {
+        ZonedDateTime zonedDateTime = ZonedDateTime.ofInstant(Instant.ofEpochMilli(time), ZoneId.systemDefault());
+        return zonedDateTime.format(DateTimeFormatter.ISO_OFFSET_DATE_TIME);
     }
 
     /*
@@ -82,28 +93,32 @@ public class CoinbaseProExchangeServiceImpl extends AbstractExchangeService impl
     protected List<CoinTicker> callCoinTicker(String symbol, String interval, Long startTime, Long endTime) {
         //todo: what about 1 day?
         //todo: make work for coinbase pro: 24h, 6h, 1h, 15min, 5min, 1min
-        String hoursStr = interval.substring(0, interval.length() - 1);
+        //todo: make work for minutes? That might require multiple calls to the api - we'll do it later if needed.
+        if (interval.endsWith("min")) {
+            return new ArrayList<>();
+        }
+        String timeNumberStr = interval.substring(0, interval.length() - 1);
         String url = exchangeInfoUrl + "/" + symbol + "/candles?";
 
         String startTimeStr = "";
         String endTimeStr = "";
         if (startTime != null) {
-            ZonedDateTime zonedDateTime = ZonedDateTime.ofInstant(Instant.ofEpochMilli(startTime), ZoneId.systemDefault());
-            startTimeStr = zonedDateTime.format(DateTimeFormatter.ISO_OFFSET_DATE_TIME);
+            startTimeStr = getTimeStr(startTime);
         }
         if (endTime != null) {
-            ZonedDateTime zonedDateTime = ZonedDateTime.ofInstant(Instant.ofEpochMilli(endTime), ZoneId.systemDefault());
-            endTimeStr = zonedDateTime.format(DateTimeFormatter.ISO_OFFSET_DATE_TIME);
+            endTimeStr = getTimeStr(endTime);
         }
         if (startTime == null || endTime == null) {
             return new ArrayList<>();
         }
-        int hours = Integer.parseInt(hoursStr);
+        //todo: make work for minutes?
+        int hours = Integer.parseInt(timeNumberStr);
         int seconds = hours * 3600;
         String symbolTickerEnd = String.format("&start=%s&stop=%s&granularity=%s", startTimeStr, endTimeStr, seconds);
         url += symbolTickerEnd;
 
-        ResponseEntity<Object[]> info = (ResponseEntity<Object[]>) callRestGet(url, Object[].class);
+        //ResponseEntity<Object[]> info = (ResponseEntity<Object[]>) callRestGet(url, Object[].class);
+        ResponseEntity<Object[]> info = restTemplate.getForEntity(url, Object[].class);
         if (info == null) {
             return new ArrayList<>();
         }
@@ -114,22 +129,42 @@ public class CoinbaseProExchangeServiceImpl extends AbstractExchangeService impl
 
         List<CoinTicker> values = new ArrayList<>();
         for (Object obj : body) {
-            LinkedHashMap<String, String> list = (LinkedHashMap<String, String>) obj;
+            List<Object> list = (ArrayList<Object>) obj;
+            System.out.println(list);
             CoinTicker coinTicker = new CoinTicker();
             coinTicker.setSymbol(symbol);
-            //todo: figure out open time
-            coinTicker.setOpenTime((Long) list.get(0));
-            coinTicker.setLow(Double.valueOf((String) list.get(1)));
-            coinTicker.setHigh(Double.valueOf((String) list.get(2)));
-            coinTicker.setOpen(Double.valueOf((String) list.get(3)));
-            coinTicker.setClose(Double.valueOf((String) list.get(4)));
-            coinTicker.setVolume(Double.valueOf((String) list.get(5)));
-            //coinTicker.setCloseTime((Long) list.get(6));
+            //todo: results
+            //{id=BTC-USDC, base_currency=BTC, quote_currency=USDC, base_min_size=0.00100000, base_max_size=280.00000000, quote_increment=0.01000000, base_increment=0.00000001, display_name=BTC/USDC, min_market_funds=10, max_market_funds=1000000, margin_enabled=false, post_only=false, limit_only=false, cancel_only=false, status=online, status_message=}
+            Integer openTime = (Integer) list.get(0);
+            coinTicker.setOpenTime(openTime.longValue());
+            coinTicker.setLow(getDouble(list.get(1)));
+            coinTicker.setHigh(getDouble(list.get(2)));
+            coinTicker.setOpen(getDouble(list.get(3)));
+            coinTicker.setClose(getDouble(list.get(4)));
+            coinTicker.setVolume(getDouble(list.get(5)));
+            int closeTime = openTime + seconds * 1000;
+            coinTicker.setCloseTime((long) closeTime);
+            //todo: figure out quote asset volume
             //coinTicker.setQuoteAssetVolume(Double.valueOf((String) list.get(7)));
-            //coinTicker.setNumberOfTrades((int) list.get(8));
             values.add(coinTicker);
         }
         return values;
+    }
+
+    /**
+     * The Coinbase Pro values come back as either integers or doubles.
+     * We want them always as a double.
+     *
+     * @param number The number as an object.
+     * @return the Double value of the number.
+     */
+    private Double getDouble(Object number) {
+        try {
+            return (Double) number;
+        } catch (Exception e) {
+            Integer value = (Integer) number;
+            return Double.valueOf(value);
+        }
     }
 
     @Override
