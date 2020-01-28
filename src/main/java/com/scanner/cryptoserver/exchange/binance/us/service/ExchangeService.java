@@ -106,6 +106,9 @@ public class ExchangeService {
         String priceChangePercentStr = (String) map.get("priceChangePercent");
         double priceChangePercent = Double.parseDouble(priceChangePercentStr);
         data.setPriceChangePercent(priceChangePercent);
+        NumberFormat nf = new DecimalFormat("##.##");
+        priceChangePercent = Double.parseDouble(nf.format(priceChangePercent));
+        data.setPriceChangePercent(priceChangePercent);
 
         String lastPriceStr = (String) map.get("lastPrice");
         double lastPrice = Double.parseDouble(lastPriceStr);
