@@ -19,14 +19,12 @@ public class CoinDataFor24Hr {
     private Long openTime;
     private Long closeTime;
     private String tradeLink;
-    private String iconLink;
 
-    public void setupLinks(String tradeUrl, String iconUrl) {
+    public void setupLinks(String tradeUrl) {
         //get the url of the trading pair - this function only works for USD, USDT, BTC, ETH pairs
         //that is OK for now, but if there is ever a different pairing of 4 letters (such as LTCDOGE),
         //then that link won't work
         String newStr = coin + "_" + currency;
         tradeLink = tradeUrl + newStr;
-        iconLink = iconUrl + coin.toLowerCase();
     }
 }

@@ -35,8 +35,6 @@ public class ExchangeService {
     private String tickerUrl;
     @Value("${exchanges.binance.trade}")
     private String tradeUrl;
-    @Value("${environments.icon}")
-    private String iconUrl;
     private final RestOperations restTemplate;
     private final CacheManager cacheManager;
 
@@ -136,7 +134,7 @@ public class ExchangeService {
         Long closeTime = (Long) map.get("closeTime");
         data.setCloseTime(closeTime);
 
-        data.setupLinks(tradeUrl, iconUrl);
+        data.setupLinks(tradeUrl);
         byte[] iconBytes = getIconBytes(coin);
         data.setIcon(iconBytes);
 

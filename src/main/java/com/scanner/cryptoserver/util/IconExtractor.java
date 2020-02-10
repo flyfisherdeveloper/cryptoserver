@@ -13,7 +13,7 @@ public class IconExtractor {
     private static final Logger Log = LoggerFactory.getLogger(IconExtractor.class);
 
     /**
-     * Extract a coin icon from a zip file.
+     * Extract a coin icon from the resources.
      *
      * @param coin the coin name.
      * @return a byte array of the png icon file.
