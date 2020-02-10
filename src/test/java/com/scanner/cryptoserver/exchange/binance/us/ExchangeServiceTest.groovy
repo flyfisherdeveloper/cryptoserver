@@ -27,6 +27,25 @@ class ExchangeServiceTest extends Specification {
         service = new ExchangeService(restTemplate, cacheManager)
     }
 
+    def "test get24HrAllCoinTicker() when cache has data"() {
+        given:
+        def coinData = new CoinDataFor24Hr()
+        def symbol = "BTCUSD"
+        coinData.setSymbol(symbol)
+
+        def valueWrapper = { -> return [coinData] }
+
+        when:
+        cacheManager.getCache(Wildcard.INSTANCE) >> cache
+        cache.get(Wildcard.INSTANCE) >> valueWrapper
+        def coins = service.get24HrAllCoinTicker()
+
+        then:
+        assert coins
+        assert coins.size() == 1
+        assert coins.get(0).getSymbol() == symbol
+    }
+
     //Here, we do a unit test of the 24Hour price ticker instead of an integration test
     // since an integration test would call the api and use up quota.
     @Unroll("Test that #symbol price info is correct for 24 Hour Coin Ticker service")
@@ -47,6 +66,9 @@ class ExchangeServiceTest extends Specification {
         def response2 = getMockCoinTicker()
 
         when: "mocks are called"
+        cacheManager.getCache(Wildcard.INSTANCE) >> cache
+        //cache returns null so that the call to the rest service can be made
+        cache.get(Wildcard.INSTANCE) >> null
         restTemplate.getForEntity(Wildcard.INSTANCE, Wildcard.INSTANCE,) >> response
         response.getBody() >> coinList
         //note: the following are for making the test work - not testing here, but just needed for the test to run
@@ -70,7 +92,6 @@ class ExchangeServiceTest extends Specification {
             assert allCoins[0].volume == volume as Double
             assert allCoins[0].quoteVolume == quoteVolume as Double
             assert allCoins[0].tradeLink
-            assert allCoins[0].iconLink
         } else {
             assert allCoins.isEmpty()
         }

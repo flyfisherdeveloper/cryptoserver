@@ -19,13 +19,15 @@ import java.text.NumberFormat;
 import java.time.Instant;
 import java.time.temporal.ChronoUnit;
 import java.util.*;
-import java.util.concurrent.CompletableFuture;
-import java.util.concurrent.ExecutionException;
+import java.util.concurrent.*;
 import java.util.stream.Collectors;
 
 @Service
 public class ExchangeService {
     private static final Logger Log = LoggerFactory.getLogger(ExchangeService.class);
+    private static final int ALL_24_HOUR_MAX_COUNT = 15;
+    private static final String ALL_24_HOUR_TICKER = "All24HourTicker";
+    private static final String ALL_TICKERS = "AllTickers";
 
     @Value("${exchanges.binance.info}")
     private String exchangeInfoUrl;
@@ -37,6 +39,8 @@ public class ExchangeService {
     private String tradeUrl;
     private final RestOperations restTemplate;
     private final CacheManager cacheManager;
+    private static ScheduledExecutorService scheduledService;
+    private static int all24HourTickerCount = 0;
 
     public ExchangeService(RestOperations restTemplate, CacheManager cacheManager) {
         this.restTemplate = restTemplate;
@@ -311,10 +315,26 @@ public class ExchangeService {
     //to extract new data will take place here. This will suffice for now, as the solution is new,
     //but if the solution and website ever grows, a new solution will be needed. We would need to create a running
     //thread that extracts data from the exchange api service frequently: for example, once a minute or so.
+    //For now, we do one-minute extractions from the api over a 15-minute interval.
     //Since this solution now is just for "starters" and is just a "show and tell" type of solution, we
-    //will avoid calling the exchange api frequently (i.e. once a minute) for now.
-    @Cacheable(cacheNames = {"All24HourTicker", "CoinCache"})
+    //will avoid calling the exchange api frequently (i.e. once a minute always) for now.
     public List<CoinDataFor24Hr> get24HrAllCoinTicker() {
+        List<CoinDataFor24Hr> coinDataFor24Hrs = new ArrayList<>();
+        Cache cache = cacheManager.getCache(ALL_24_HOUR_TICKER);
+        if (cache != null) {
+            Cache.ValueWrapper value = cache.get(ALL_TICKERS);
+            if (value != null) {
+                return (List<CoinDataFor24Hr>) value.get();
+            }
+            coinDataFor24Hrs = call24HrAllCoinTicker();
+            if (!coinDataFor24Hrs.isEmpty()) {
+                cache.putIfAbsent(ALL_TICKERS, coinDataFor24Hrs);
+            }
+        }
+        return coinDataFor24Hrs;
+    }
+
+    private List<CoinDataFor24Hr> call24HrAllCoinTicker() {
         String url = tickerUrl + "/24hr";
         ResponseEntity<LinkedHashMap[]> info = restTemplate.getForEntity(url, LinkedHashMap[].class);
         LinkedHashMap[] body = info.getBody();
@@ -328,7 +348,41 @@ public class ExchangeService {
             list.add(coin);
         }
         add24HrVolumeChange(list);
+        //since this is the first time (in awhile) we have called the exchange info,
+        //start threads to update every minute for 15 minutes - this way the client gets
+        //updated 24-hour data every minute
+        //we stop at 15 minutes just to prevent too much data from being processed (we are trying to stay in the AWS free zone!)
+        startUpdates();
         return list;
+    }
+
+    //Run the scheduled service call and put the results in the cache. Stop the scheduler after a maximum times of running.
+    private void runScheduled24HrAllCoinTicker() {
+        Cache coinCache = cacheManager.getCache(ALL_24_HOUR_TICKER);
+        if (coinCache != null) {
+            all24HourTickerCount++;
+            if (all24HourTickerCount >= ALL_24_HOUR_MAX_COUNT) {
+                Log.debug("Shutting down scheduler executor");
+                scheduledService.shutdown();
+                scheduledService = null;
+                all24HourTickerCount = 0;
+            }
+            List<CoinDataFor24Hr> tickers = call24HrAllCoinTicker();
+            coinCache.put(ALL_TICKERS, tickers);
+        }
+    }
+
+    //Run a scheduler to update the 24-hour exchange coin ticker.
+    private void startUpdates() {
+        if (scheduledService != null) {
+            //another scheduler is already executing - don't start another
+            return;
+        }
+        Log.debug("Starting scheduler executor");
+        scheduledService = Executors.newScheduledThreadPool(1);
+        Runnable command = this::runScheduled24HrAllCoinTicker;
+        //run every minute - add a second to be sure since the binance.usa api monitors traffic by the minute
+        scheduledService.scheduleAtFixedRate(command, 61, 61, TimeUnit.SECONDS);
     }
 
     public byte[] getIconBytes(String coin) {
