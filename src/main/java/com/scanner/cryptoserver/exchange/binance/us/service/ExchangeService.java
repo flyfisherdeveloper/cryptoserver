@@ -9,7 +9,6 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cache.Cache;
 import org.springframework.cache.CacheManager;
-import org.springframework.cache.annotation.Cacheable;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestOperations;
@@ -222,22 +221,50 @@ public class ExchangeService {
             from = now.minus(numDays, ChronoUnit.DAYS);
             startTime1 = from.toEpochMilli();
         } else {
-            //If interval is 1-hour over 1-month, we need two calls.
-            //This is because the Binance.us api only brings back 500 data points, but more than that are needed.
-            //Therefore, two calls are needed - go back 15 days for one call, then 15 to 30 days for the other call.
-            //Then, combine the results from the two calls, sorting on the close time.
-            if (interval.equals("1h")) {
-                Instant from15Days = now.minus(15, ChronoUnit.DAYS);
-                startTime1 = from15Days.toEpochMilli();
-                //todo: Instant does not support ChronoUnit.MONTHS - use 30 days as a workaround for now
-                Instant from30Days = now.minus(30, ChronoUnit.DAYS);
-                startTime2 = from30Days.toEpochMilli();
-                toTime2 = startTime1;
-            } else {
-                //todo: Instant does not support ChronoUnit.MONTHS - use 30 days as a workaround for now
-                from = now.minus(30, ChronoUnit.DAYS);
-                startTime1 = from.toEpochMilli();
-            }
+            return callCoinTickerForMonths(symbol, interval, daysOrMonths);
+        }
+        List<CoinTicker> coinTickers = callCoinTicker(symbol, interval, startTime1, toTime1, startTime2, toTime2);
+        return coinTickers;
+    }
+
+    private List<CoinTicker> callCoinTickerForMonths(String symbol, String interval, String months) {
+        //todo: we are using 30 days in a month: account for months with 31 days (or 28/29 for February)
+        final int daysInMonth = 30;
+        final int hoursInDay = 24;
+        final int maxDataPoints = 500;
+        Instant now = Instant.now();
+        Instant from;
+        long toTime1 = now.toEpochMilli();
+        long startTime1;
+        long startTime2 = 0;
+        long toTime2 = 0;
+        //we use lower-case letters for hours, and upper-case letters for months (to distinguish from Minutes ("m") if we ever use it)
+        interval = interval.replace("H", "h");
+        months = months.replace("m", "M");
+        int hours = Integer.parseInt(interval.substring(0, interval.indexOf("h")));
+        int numMonths = Integer.parseInt("" + months.substring(0, months.indexOf("M")));
+        int numDataPoints = numMonths * daysInMonth * hoursInDay / hours;
+
+        //we want at most 2 calls in parallel - this is too prevent calling the binance.usa server too much and getting rejected
+        if (numDataPoints > maxDataPoints * 2) {
+            String message = String.format("Too much data requested for %s with interval %s and months %s", symbol, interval, months);
+            throw new RuntimeException(message);
+        }
+
+        //Instant does not support ChronoUnit.MONTHS - use 30 days as a workaround for now
+        from = now.minus(daysInMonth * numMonths, ChronoUnit.DAYS);
+        //If the number of data points required > 500, then we need two calls.
+        //This is because the Binance.us api only brings back 500 data points, but more than that are needed.
+        //Therefore, two calls are needed - go back 15 days for one call, then 15 to 30 days for the other call.
+        //Then, combine the results from the two calls, sorting on the close time.
+        if (numDataPoints >= maxDataPoints) {
+            int midpoint = (daysInMonth * numMonths) / 2;
+            Instant fromMidpoint = now.minus(midpoint, ChronoUnit.DAYS);
+            startTime1 = fromMidpoint.toEpochMilli();
+            startTime2 = from.toEpochMilli();
+            toTime2 = startTime1;
+        } else {
+            startTime1 = from.toEpochMilli();
         }
         List<CoinTicker> coinTickers = callCoinTicker(symbol, interval, startTime1, toTime1, startTime2, toTime2);
         return coinTickers;
