@@ -16,6 +16,7 @@ import org.springframework.web.client.RestOperations;
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
 import java.time.Instant;
+import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
 import java.util.*;
 import java.util.concurrent.*;
@@ -208,6 +209,13 @@ public class ExchangeService {
         return values;
     }
 
+    /**
+     * Call the coin ticker for the symbol using the interval over the days/months specified.
+     * @param symbol The coin, such as "LTCUSDT".
+     * @param interval The interval string such as "12h" (12 hours).
+     * @param daysOrMonths The days or months string, such as "30d" (thirty days) or "3m" (three months).
+     * @return The coin tickers for the interval and period specified.
+     */
     public List<CoinTicker> callCoinTicker(String symbol, String interval, String daysOrMonths) {
         Instant now = Instant.now();
         Instant from;
@@ -227,9 +235,26 @@ public class ExchangeService {
         return coinTickers;
     }
 
+    /**
+     * Get the number of days from today going back a number of months.
+     *
+     * @param months the number of months to go back.
+     * @return the number of days going back.
+     */
+    public int getDaysBetween(int months) {
+        LocalDate now = LocalDate.now();
+        LocalDate start = LocalDate.now().minusMonths(months);
+        return Math.toIntExact(ChronoUnit.DAYS.between(start, now));
+    }
+
+    /**
+     * Call the monthly coin ticker for the symbol using the interval and months.
+     * @param symbol The coin, such as "BTCUSD".
+     * @param interval The interval string, such as "4h" (4 hours).
+     * @param months The months string, such as "3M".
+     * @return The coin tickers for the month period using the interval.
+     */
     private List<CoinTicker> callCoinTickerForMonths(String symbol, String interval, String months) {
-        //todo: we are using 30 days in a month: account for months with 31 days (or 28/29 for February)
-        final int daysInMonth = 30;
         final int hoursInDay = 24;
         final int maxDataPoints = 500;
         Instant now = Instant.now();
@@ -243,7 +268,8 @@ public class ExchangeService {
         months = months.replace("m", "M");
         int hours = Integer.parseInt(interval.substring(0, interval.indexOf("h")));
         int numMonths = Integer.parseInt("" + months.substring(0, months.indexOf("M")));
-        int numDataPoints = numMonths * daysInMonth * hoursInDay / hours;
+        int numberOfDays = getDaysBetween(numMonths);
+        int numDataPoints = numberOfDays * hoursInDay / hours;
 
         //we want at most 2 calls in parallel - this is too prevent calling the binance.usa server too much and getting rejected
         if (numDataPoints > maxDataPoints * 2) {
@@ -251,14 +277,13 @@ public class ExchangeService {
             throw new RuntimeException(message);
         }
 
-        //Instant does not support ChronoUnit.MONTHS - use 30 days as a workaround for now
-        from = now.minus(daysInMonth * numMonths, ChronoUnit.DAYS);
+        from = now.minus(numberOfDays, ChronoUnit.DAYS);
         //If the number of data points required > 500, then we need two calls.
         //This is because the Binance.us api only brings back 500 data points, but more than that are needed.
         //Therefore, two calls are needed - go back 15 days for one call, then 15 to 30 days for the other call.
         //Then, combine the results from the two calls, sorting on the close time.
         if (numDataPoints >= maxDataPoints) {
-            int midpoint = (daysInMonth * numMonths) / 2;
+            int midpoint = numberOfDays / 2;
             Instant fromMidpoint = now.minus(midpoint, ChronoUnit.DAYS);
             startTime1 = fromMidpoint.toEpochMilli();
             startTime2 = from.toEpochMilli();
