@@ -27,6 +27,25 @@ class ExchangeServiceTest extends Specification {
         service = new ExchangeService(restTemplate, cacheManager)
     }
 
+    def "test get24HrAllCoinTicker() when cache has data"() {
+        given:
+        def coinData = new CoinDataFor24Hr()
+        def symbol = "BTCUSD"
+        coinData.setSymbol(symbol)
+
+        def valueWrapper = { -> return [coinData] }
+
+        when:
+        cacheManager.getCache(Wildcard.INSTANCE) >> cache
+        cache.get(Wildcard.INSTANCE) >> valueWrapper
+        def coins = service.get24HrAllCoinTicker()
+
+        then:
+        assert coins
+        assert coins.size() == 1
+        assert coins.get(0).getSymbol() == symbol
+    }
+
     //Here, we do a unit test of the 24Hour price ticker instead of an integration test
     // since an integration test would call the api and use up quota.
     @Unroll("Test that #symbol price info is correct for 24 Hour Coin Ticker service")
@@ -47,6 +66,9 @@ class ExchangeServiceTest extends Specification {
         def response2 = getMockCoinTicker()
 
         when: "mocks are called"
+        cacheManager.getCache(Wildcard.INSTANCE) >> cache
+        //cache returns null so that the call to the rest service can be made
+        cache.get(Wildcard.INSTANCE) >> null
         restTemplate.getForEntity(Wildcard.INSTANCE, Wildcard.INSTANCE,) >> response
         response.getBody() >> coinList
         //note: the following are for making the test work - not testing here, but just needed for the test to run
@@ -70,7 +92,6 @@ class ExchangeServiceTest extends Specification {
             assert allCoins[0].volume == volume as Double
             assert allCoins[0].quoteVolume == quoteVolume as Double
             assert allCoins[0].tradeLink
-            assert allCoins[0].iconLink
         } else {
             assert allCoins.isEmpty()
         }
@@ -144,36 +165,52 @@ class ExchangeServiceTest extends Specification {
         def prevDayCloseTime2 = now.minusDays(1).minusHours(1).toInstant(ZoneOffset.UTC).toEpochMilli()
         def response2 = getMockCoinTicker(prevDayCloseTime1, prevDayCloseTime2)
 
+        def caughtException
+
         when:
         //Here, response1 is the response for the first time the rest template is called; response2 is the second time the rest template is called.
         restTemplate.getForEntity(Wildcard.INSTANCE, Wildcard.INSTANCE, Wildcard.INSTANCE) >>> [response1, response2]
-        def tickers = service.callCoinTicker(symbol, interval, daysOrMonths)
+        def tickers = null
+        //the service call can throw an exception if too much data is requested: account for this
+        try {
+            tickers = service.callCoinTicker(symbol, interval, daysOrMonths)
+        } catch (Exception e) {
+            caughtException = e
+        }
 
         then:
-        assert tickers
-        assert tickers.size() > 0
-        //"it" is a groovy keyword = it is the function parameter for each item in the list
-        tickers.each { assert it.getSymbol() == symbol }
-        //Here, we verify that the service for 1hr/1m makes two asynch calls to get data:
-        //This is because the service needs to make two calls for 1-hour month data, since there is too much data to bring back in one call.
-        //Here, we verify this by checking the size of the returned data: it should be 4 (meaning, both responses in the "when" section were used - two calls).
-        //Otherwise, only two data should be returned.
-        if (interval == "1h" && daysOrMonths == "1m") {
-            assert tickers.size() == 4
-            //also, verify that the tickers are sorted - the service sorts the tickers since the data may come back unpredictably due to asynch calls
-            assert prevDayCloseTime1 == tickers[0].getCloseTime()
-            assert prevDayCloseTime2 == tickers[1].getCloseTime()
-            assert closeTime1 == tickers[2].getCloseTime()
-            assert closeTime2 == tickers[3].getCloseTime()
+        if (exception.expected) {
+            //in this case, too much data is requested: test the exception
+            assert caughtException != null
+            assert exception.type.isInstance(caughtException)
         } else {
-            assert tickers.size() == 2
+            assert caughtException == null
+            assert tickers
+            assert tickers.size() > 0
+            //"it" is a groovy keyword = it is the function parameter for each item in the list
+            tickers.each { assert it.getSymbol() == symbol }
+            //Here, we verify that the service for 1hr/1m makes two asynch calls to get data:
+            //This is because the service needs to make two calls for 1-hour month data, since there is too much data to bring back in one call.
+            //Here, we verify this by checking the size of the returned data: it should be 4 (meaning, both responses in the "when" section were used - two calls).
+            //Otherwise, only two data should be returned.
+            if (interval == "1h" && daysOrMonths == "1m") {
+                assert tickers.size() == 4
+                //also, verify that the tickers are sorted - the service sorts the tickers since the data may come back unpredictably due to asynch calls
+                assert prevDayCloseTime1 == tickers[0].getCloseTime()
+                assert prevDayCloseTime2 == tickers[1].getCloseTime()
+                assert closeTime1 == tickers[2].getCloseTime()
+                assert closeTime2 == tickers[3].getCloseTime()
+            } else {
+                assert tickers.size() == 2
+            }
         }
 
         where:
-        symbol   | interval | daysOrMonths
-        "BTCUSD" | "1h"     | "1d"
-        "BTCUSD" | "1h"     | "1m"
-        "BTCUSD" | "4h"     | "1m"
+        symbol   | interval | daysOrMonths | exception
+        "BTCUSD" | "1h"     | "1d"         | [expected: false]
+        "BTCUSD" | "1h"     | "1m"         | [expected: false]
+        "BTCUSD" | "4h"     | "1m"         | [expected: false]
+        "BTCUSD" | "1h"     | "12m"        | [expected: true, type: RuntimeException]
     }
 
     @Unroll("Test call of get ticker data with coin cashe exists: #coinCacheExists and coin in cache: #inCache")

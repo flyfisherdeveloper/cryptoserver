@@ -31,7 +31,7 @@ class BinanceExchangeControllerIntegTest {
     private MockMvc mvc;
 
     @Test
-    void test_exchangeInfo() throws Exception {
+    void testExchangeInfo() throws Exception {
         MvcResult result = mvc.perform(MockMvcRequestBuilders
                 .get("/api/v1/binance/info")
                 .accept(MediaType.APPLICATION_JSON))
@@ -54,7 +54,7 @@ class BinanceExchangeControllerIntegTest {
     }
 
     @Test
-    void test_coin_for_24_ticker() throws Exception {
+    void testCoinFor24HourTicker() throws Exception {
         MvcResult result = mvc.perform(MockMvcRequestBuilders
                 .get("/api/v1/binance/24HourTicker/LTCUSD")
                 .accept(MediaType.APPLICATION_JSON))
@@ -70,7 +70,7 @@ class BinanceExchangeControllerIntegTest {
     }
 
     @Test
-    void test_day_ticker() throws Exception {
+    void testDayTicker() throws Exception {
         MvcResult result = mvc.perform(MockMvcRequestBuilders
                 .get("/api/v1/binance/DayTicker/DOGEUSDT/12h/1d")
                 .accept(MediaType.APPLICATION_JSON))
@@ -89,7 +89,26 @@ class BinanceExchangeControllerIntegTest {
     }
 
     @Test
-    void test_get_icon() throws Exception {
+    void testDayTickerFor3MonthsAnd4Hours() throws Exception {
+        MvcResult result = mvc.perform(MockMvcRequestBuilders
+                .get("/api/v1/binance/DayTicker/LTCUSD/4h/3m")
+                .accept(MediaType.APPLICATION_JSON))
+                .andReturn();
+
+        String json = result.getResponse().getContentAsString();
+        ObjectMapper mapper = new ObjectMapper();
+
+        List<CoinTicker> list = mapper.readValue(json, new TypeReference<List<CoinTicker>>() {
+        });
+        assertNotNull(list);
+        assertFalse(list.isEmpty());
+        CoinTicker coinTicker = list.get(0);
+        assertNotNull(coinTicker.getVolume());
+        assertNotNull(coinTicker.getQuoteAssetVolume());
+    }
+
+    @Test
+    void testGetIcon() throws Exception {
         MvcResult result = mvc.perform(MockMvcRequestBuilders
                 .get("/api/v1/binance/icon/ltc")
                 .accept(MediaType.IMAGE_PNG_VALUE))

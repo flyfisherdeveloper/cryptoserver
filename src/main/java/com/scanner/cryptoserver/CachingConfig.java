@@ -30,7 +30,7 @@ public class CachingConfig extends CachingConfigurerSupport {
                 //cache for coin pairs, such as BTCUSD
                 if (name.equals("CoinCache")) {
                     return new ConcurrentMapCache(name, CacheBuilder.newBuilder()
-                            .expireAfterWrite(5, TimeUnit.MINUTES)
+                            .expireAfterWrite(61, TimeUnit.SECONDS)
                             .maximumSize(100)
                             .build()
                             .asMap(),
@@ -38,20 +38,24 @@ public class CachingConfig extends CachingConfigurerSupport {
                 }
                 if (name.equals("IconCache")) {
                     return new ConcurrentMapCache(name, CacheBuilder.newBuilder()
-                            .expireAfterWrite(24, TimeUnit.HOURS)
+                            .expireAfterWrite(5, TimeUnit.DAYS)
                             .maximumSize(1000)
                             .build()
                             .asMap(),
                             false);
                 }
                 //cache for list of all coins
-                return new ConcurrentMapCache(name, CacheBuilder.newBuilder()
-                        .expireAfterWrite(5, TimeUnit.MINUTES)
-                        //the maximum size number is rather arbitrary - the time is really the important issue
-                        .maximumSize(5)
-                        .build()
-                        .asMap(),
-                        false);
+                if (name.equals("All24HourTicker")) {
+                    return new ConcurrentMapCache(name, CacheBuilder.newBuilder()
+                            .expireAfterWrite(5, TimeUnit.MINUTES)
+                            //the maximum size number is rather arbitrary - the time is really the important issue
+                            .maximumSize(5)
+                            .build()
+                            .asMap(),
+                            false);
+
+                }
+                return null;
             }
         };
     }

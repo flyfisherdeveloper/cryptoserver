@@ -9,7 +9,6 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cache.Cache;
 import org.springframework.cache.CacheManager;
-import org.springframework.cache.annotation.Cacheable;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestOperations;
@@ -17,15 +16,18 @@ import org.springframework.web.client.RestOperations;
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
 import java.time.Instant;
+import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
 import java.util.*;
-import java.util.concurrent.CompletableFuture;
-import java.util.concurrent.ExecutionException;
+import java.util.concurrent.*;
 import java.util.stream.Collectors;
 
 @Service
 public class ExchangeService {
     private static final Logger Log = LoggerFactory.getLogger(ExchangeService.class);
+    private static final int ALL_24_HOUR_MAX_COUNT = 15;
+    private static final String ALL_24_HOUR_TICKER = "All24HourTicker";
+    private static final String ALL_TICKERS = "AllTickers";
 
     @Value("${exchanges.binance.info}")
     private String exchangeInfoUrl;
@@ -35,10 +37,10 @@ public class ExchangeService {
     private String tickerUrl;
     @Value("${exchanges.binance.trade}")
     private String tradeUrl;
-    @Value("${environments.icon}")
-    private String iconUrl;
     private final RestOperations restTemplate;
     private final CacheManager cacheManager;
+    private static ScheduledExecutorService scheduledService;
+    private static int all24HourTickerCount = 0;
 
     public ExchangeService(RestOperations restTemplate, CacheManager cacheManager) {
         this.restTemplate = restTemplate;
@@ -106,6 +108,9 @@ public class ExchangeService {
         String priceChangePercentStr = (String) map.get("priceChangePercent");
         double priceChangePercent = Double.parseDouble(priceChangePercentStr);
         data.setPriceChangePercent(priceChangePercent);
+        NumberFormat nf = new DecimalFormat("##.##");
+        priceChangePercent = Double.parseDouble(nf.format(priceChangePercent));
+        data.setPriceChangePercent(priceChangePercent);
 
         String lastPriceStr = (String) map.get("lastPrice");
         double lastPrice = Double.parseDouble(lastPriceStr);
@@ -133,7 +138,7 @@ public class ExchangeService {
         Long closeTime = (Long) map.get("closeTime");
         data.setCloseTime(closeTime);
 
-        data.setupLinks(tradeUrl, iconUrl);
+        data.setupLinks(tradeUrl);
         byte[] iconBytes = getIconBytes(coin);
         data.setIcon(iconBytes);
 
@@ -204,6 +209,13 @@ public class ExchangeService {
         return values;
     }
 
+    /**
+     * Call the coin ticker for the symbol using the interval over the days/months specified.
+     * @param symbol The coin, such as "LTCUSDT".
+     * @param interval The interval string such as "12h" (12 hours).
+     * @param daysOrMonths The days or months string, such as "30d" (thirty days) or "3m" (three months).
+     * @return The coin tickers for the interval and period specified.
+     */
     public List<CoinTicker> callCoinTicker(String symbol, String interval, String daysOrMonths) {
         Instant now = Instant.now();
         Instant from;
@@ -217,22 +229,67 @@ public class ExchangeService {
             from = now.minus(numDays, ChronoUnit.DAYS);
             startTime1 = from.toEpochMilli();
         } else {
-            //If interval is 1-hour over 1-month, we need two calls.
-            //This is because the Binance.us api only brings back 500 data points, but more than that are needed.
-            //Therefore, two calls are needed - go back 15 days for one call, then 15 to 30 days for the other call.
-            //Then, combine the results from the two calls, sorting on the close time.
-            if (interval.equals("1h")) {
-                Instant from15Days = now.minus(15, ChronoUnit.DAYS);
-                startTime1 = from15Days.toEpochMilli();
-                //todo: Instant does not support ChronoUnit.MONTHS - use 30 days as a workaround for now
-                Instant from30Days = now.minus(30, ChronoUnit.DAYS);
-                startTime2 = from30Days.toEpochMilli();
-                toTime2 = startTime1;
-            } else {
-                //todo: Instant does not support ChronoUnit.MONTHS - use 30 days as a workaround for now
-                from = now.minus(30, ChronoUnit.DAYS);
-                startTime1 = from.toEpochMilli();
-            }
+            return callCoinTickerForMonths(symbol, interval, daysOrMonths);
+        }
+        List<CoinTicker> coinTickers = callCoinTicker(symbol, interval, startTime1, toTime1, startTime2, toTime2);
+        return coinTickers;
+    }
+
+    /**
+     * Get the number of days from today going back a number of months.
+     *
+     * @param months the number of months to go back.
+     * @return the number of days going back.
+     */
+    public int getDaysBetween(int months) {
+        LocalDate now = LocalDate.now();
+        LocalDate start = LocalDate.now().minusMonths(months);
+        return Math.toIntExact(ChronoUnit.DAYS.between(start, now));
+    }
+
+    /**
+     * Call the monthly coin ticker for the symbol using the interval and months.
+     * @param symbol The coin, such as "BTCUSD".
+     * @param interval The interval string, such as "4h" (4 hours).
+     * @param months The months string, such as "3M".
+     * @return The coin tickers for the month period using the interval.
+     */
+    private List<CoinTicker> callCoinTickerForMonths(String symbol, String interval, String months) {
+        final int hoursInDay = 24;
+        final int maxDataPoints = 500;
+        Instant now = Instant.now();
+        Instant from;
+        long toTime1 = now.toEpochMilli();
+        long startTime1;
+        long startTime2 = 0;
+        long toTime2 = 0;
+        //we use lower-case letters for hours, and upper-case letters for months (to distinguish from Minutes ("m") if we ever use it)
+        interval = interval.replace("H", "h");
+        months = months.replace("m", "M");
+        int hours = Integer.parseInt(interval.substring(0, interval.indexOf("h")));
+        int numMonths = Integer.parseInt("" + months.substring(0, months.indexOf("M")));
+        int numberOfDays = getDaysBetween(numMonths);
+        int numDataPoints = numberOfDays * hoursInDay / hours;
+
+        //we want at most 2 calls in parallel - this is too prevent calling the binance.usa server too much and getting rejected
+        if (numDataPoints > maxDataPoints * 2) {
+            String message = String.format("Too much data requested for %s with interval %s and months %s", symbol, interval, months);
+            throw new RuntimeException(message);
+        }
+
+        from = now.minus(numberOfDays, ChronoUnit.DAYS);
+        //If the number of data points required > 500, then we need two calls.
+        //This is because the Binance.us api only brings back 500 data points, but more than that are needed.
+        //Therefore, two calls are needed - go back 15 days for one call, then 15 to 30 days for the other call.
+        //Then, combine the results from the two calls, sorting on the close time.
+        if (numDataPoints >= maxDataPoints) {
+            int midpoint = numberOfDays / 2;
+            Instant fromMidpoint = now.minus(midpoint, ChronoUnit.DAYS);
+            startTime1 = fromMidpoint.toEpochMilli();
+            startTime2 = from.toEpochMilli();
+            toTime2 = startTime1;
+        } else {
+            startTime1 = from.toEpochMilli();
         }
         List<CoinTicker> coinTickers = callCoinTicker(symbol, interval, startTime1, toTime1, startTime2, toTime2);
         return coinTickers;
@@ -310,10 +367,26 @@ public class ExchangeService {
     //to extract new data will take place here. This will suffice for now, as the solution is new,
     //but if the solution and website ever grows, a new solution will be needed. We would need to create a running
     //thread that extracts data from the exchange api service frequently: for example, once a minute or so.
+    //For now, we do one-minute extractions from the api over a 15-minute interval.
     //Since this solution now is just for "starters" and is just a "show and tell" type of solution, we
-    //will avoid calling the exchange api frequently (i.e. once a minute) for now.
-    @Cacheable(cacheNames = {"All24HourTicker", "CoinCache"})
+    //will avoid calling the exchange api frequently (i.e. once a minute always) for now.
     public List<CoinDataFor24Hr> get24HrAllCoinTicker() {
+        List<CoinDataFor24Hr> coinDataFor24Hrs = new ArrayList<>();
+        Cache cache = cacheManager.getCache(ALL_24_HOUR_TICKER);
+        if (cache != null) {
+            Cache.ValueWrapper value = cache.get(ALL_TICKERS);
+            if (value != null) {
+                return (List<CoinDataFor24Hr>) value.get();
+            }
+            coinDataFor24Hrs = call24HrAllCoinTicker();
+            if (!coinDataFor24Hrs.isEmpty()) {
+                cache.putIfAbsent(ALL_TICKERS, coinDataFor24Hrs);
+            }
+        }
+        return coinDataFor24Hrs;
+    }
+
+    private List<CoinDataFor24Hr> call24HrAllCoinTicker() {
         String url = tickerUrl + "/24hr";
         ResponseEntity<LinkedHashMap[]> info = restTemplate.getForEntity(url, LinkedHashMap[].class);
         LinkedHashMap[] body = info.getBody();
@@ -327,7 +400,41 @@ public class ExchangeService {
             list.add(coin);
         }
         add24HrVolumeChange(list);
+        //since this is the first time (in awhile) we have called the exchange info,
+        //start threads to update every minute for 15 minutes - this way the client gets
+        //updated 24-hour data every minute
+        //we stop at 15 minutes just to prevent too much data from being processed (we are trying to stay in the AWS free zone!)
+        startUpdates();
         return list;
+    }
+
+    //Run the scheduled service call and put the results in the cache. Stop the scheduler after a maximum times of running.
+    private void runScheduled24HrAllCoinTicker() {
+        Cache coinCache = cacheManager.getCache(ALL_24_HOUR_TICKER);
+        if (coinCache != null) {
+            all24HourTickerCount++;
+            if (all24HourTickerCount >= ALL_24_HOUR_MAX_COUNT) {
+                Log.debug("Shutting down scheduler executor");
+                scheduledService.shutdown();
+                scheduledService = null;
+                all24HourTickerCount = 0;
+            }
+            List<CoinDataFor24Hr> tickers = call24HrAllCoinTicker();
+            coinCache.put(ALL_TICKERS, tickers);
+        }
+    }
+
+    //Run a scheduler to update the 24-hour exchange coin ticker.
+    private void startUpdates() {
+        if (scheduledService != null) {
+            //another scheduler is already executing - don't start another
+            return;
+        }
+        Log.debug("Starting scheduler executor");
+        scheduledService = Executors.newScheduledThreadPool(1);
+        Runnable command = this::runScheduled24HrAllCoinTicker;
+        //run every minute - add a second to be sure since the binance.usa api monitors traffic by the minute
+        scheduledService.scheduleAtFixedRate(command, 61, 61, TimeUnit.SECONDS);
     }
 
     public byte[] getIconBytes(String coin) {
