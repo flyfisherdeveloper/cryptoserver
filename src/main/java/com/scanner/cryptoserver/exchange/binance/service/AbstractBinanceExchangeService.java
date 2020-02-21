@@ -3,6 +3,7 @@ package com.scanner.cryptoserver.exchange.binance.service;
 import com.scanner.cryptoserver.exchange.binance.dto.CoinDataFor24Hr;
 import com.scanner.cryptoserver.exchange.binance.dto.CoinTicker;
 import com.scanner.cryptoserver.exchange.binance.dto.ExchangeInfo;
+import com.scanner.cryptoserver.util.CacheUtil;
 import com.scanner.cryptoserver.util.IconExtractor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -18,6 +19,7 @@ import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
 import java.util.*;
 import java.util.concurrent.*;
+import java.util.function.Supplier;
 import java.util.stream.Collectors;
 
 /**
@@ -29,6 +31,8 @@ public abstract class AbstractBinanceExchangeService {
     private static final String ALL_24_HOUR_TICKER = "All24HourTicker";
     private static final String ALL_TICKERS = "AllTickers";
     private static final String EXCHANGE_INFO = "ExchangeInfo";
+    private static final String COIN_CACHE = "CoinCache";
+    private static final String ICON_CACHE = "IconCache";
     private static final int ALL_24_HOUR_MAX_COUNT = 15;
 
     private final RestOperations restTemplate;
@@ -45,27 +49,12 @@ public abstract class AbstractBinanceExchangeService {
      * @return The exchange information.
      */
     public ExchangeInfo getExchangeInfo() {
-        Collection<String> cacheNames = cacheManager.getCacheNames();
-        ExchangeInfo exchangeInfo = null;
-
-        for (String cacheName : cacheNames) {
-            if (cacheName.equals(EXCHANGE_INFO)) {
-                String name = getExchangeName() + "-" + EXCHANGE_INFO;
-                Cache infoCache = cacheManager.getCache(cacheName);
-                if (infoCache != null) {
-                    //jeff
-                    Cache.ValueWrapper value = infoCache.get(name);
-                    if (value == null) {
-                        ResponseEntity<ExchangeInfo> info = restTemplate.getForEntity(getUrlExtractor().getExchangeInfoUrl(), ExchangeInfo.class);
-                        exchangeInfo = info.getBody();
-                        infoCache.put(name, exchangeInfo);
-                    } else {
-                        exchangeInfo = (ExchangeInfo) value.get();
-                    }
-                    return exchangeInfo;
-                }
-            }
-        }
+        String name = getExchangeName() + "-" + EXCHANGE_INFO;
+        Supplier<ExchangeInfo> exchangeInfoSupplier = () -> {
+            ResponseEntity<ExchangeInfo> info = restTemplate.getForEntity(getUrlExtractor().getExchangeInfoUrl(), ExchangeInfo.class);
+            return info.getBody();
+        };
+        ExchangeInfo exchangeInfo = CacheUtil.retrieveFromCache(cacheManager, EXCHANGE_INFO, name, exchangeInfoSupplier);
         return exchangeInfo;
     }
 
@@ -319,20 +308,13 @@ public abstract class AbstractBinanceExchangeService {
         //Attempt to get the data out of the cache if it is in there.
         //If not in the cache, then call the service and add the data to the cache.
         //The data in the cache will expire according to the setup in the CachingConfig configuration.
-        Cache coinCache = cacheManager.getCache("CoinCache");
         String name = getExchangeName() + "-" + symbol + interval + daysOrMonths;
-        List<CoinTicker> coins;
-        if (coinCache != null) {
-            Cache.ValueWrapper value = coinCache.get(name);
-            if (value == null) {
-                coins = callCoinTicker(symbol, interval, daysOrMonths);
-                coinCache.putIfAbsent(name, coins);
-            } else {
-                coins = (List<CoinTicker>) value.get();
-            }
-            return coins;
+        Supplier<List<CoinTicker>> coinTickerSupplier = () -> callCoinTicker(symbol, interval, daysOrMonths);
+        List<CoinTicker> coins = CacheUtil.retrieveFromCache(cacheManager, COIN_CACHE, name, coinTickerSupplier);
+        if (coins == null) {
+            return new ArrayList<>();
         }
-        return new ArrayList<>();
+        return coins;
     }
 
     public Double getPercentChange(double fromValue, double toValue) {
@@ -391,18 +373,9 @@ public abstract class AbstractBinanceExchangeService {
     //Since this solution now is just for "starters" and is just a "show and tell" type of solution, we
     //will avoid calling the exchange api frequently (i.e. once a minute always) for now.
     public List<CoinDataFor24Hr> get24HrAllCoinTicker() {
-        List<CoinDataFor24Hr> coinDataFor24Hrs = new ArrayList<>();
-        Cache cache = cacheManager.getCache(getExchangeName() + "-" + ALL_24_HOUR_TICKER);
-        if (cache != null) {
-            Cache.ValueWrapper value = cache.get(ALL_TICKERS);
-            if (value != null) {
-                return (List<CoinDataFor24Hr>) value.get();
-            }
-            coinDataFor24Hrs = call24HrAllCoinTicker();
-            if (!coinDataFor24Hrs.isEmpty()) {
-                cache.putIfAbsent(ALL_TICKERS, coinDataFor24Hrs);
-            }
-        }
+        String cacheName = getExchangeName() + "-" + ALL_24_HOUR_TICKER;
+        Supplier<List<CoinDataFor24Hr>> allCoinTicker = this::call24HrAllCoinTicker;
+        List<CoinDataFor24Hr> coinDataFor24Hrs = CacheUtil.retrieveFromCache(cacheManager, cacheName, ALL_TICKERS, allCoinTicker);
         return coinDataFor24Hrs;
     }
 
@@ -411,7 +384,7 @@ public abstract class AbstractBinanceExchangeService {
         ResponseEntity<LinkedHashMap[]> info = restTemplate.getForEntity(url, LinkedHashMap[].class);
         LinkedHashMap[] body = info.getBody();
         if (body == null) {
-            return new ArrayList<>();
+            return null;
         }
 
         List<CoinDataFor24Hr> list = new ArrayList<>();
@@ -468,26 +441,20 @@ public abstract class AbstractBinanceExchangeService {
         setScheduledService(scheduledService);
     }
 
-    public byte[] getIconBytes(String coin) {
+    private byte[] getIconBytes(String coin) {
         //Attempt to get the icon out of the cache if it is in there.
         //If not in the cache, then call the icon extract service and add the icon bytes to the cache.
         //The data in the cache will expire according to the setup in the CachingConfig configuration.
-        Cache iconCache = cacheManager.getCache("IconCache");
-        byte[] coins = null;
-        if (iconCache != null) {
-            Cache.ValueWrapper value = iconCache.get(coin);
-            if (value == null) {
-                coins = IconExtractor.getIconBytes(coin);
-                if (coins == null) {
-                    //here, the coin icon wasn't in the images folder
-                    // add a non-null empty array to the cache so we don't keep trying to extract it
-                    coins = new byte[0];
-                }
-                iconCache.putIfAbsent(coin, coins);
-            } else {
-                coins = (byte[]) value.get();
+        Supplier<byte[]> iconExtractor = () -> {
+            byte[] coins = IconExtractor.getIconBytes(coin);
+            if (coins == null) {
+                //here, the coin icon wasn't in the images folder
+                // add a non-null empty array to the cache so we don't keep trying to extract it
+                coins = new byte[0];
             }
-        }
+            return coins;
+        };
+        byte[] coins = CacheUtil.retrieveFromCache(cacheManager, ICON_CACHE, coin, iconExtractor);
         return coins;
     }
 

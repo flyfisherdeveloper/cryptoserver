@@ -6,10 +6,10 @@ import com.scanner.cryptoserver.exchange.binance.controller.BinanceUsaExchangeCo
 import com.scanner.cryptoserver.exchange.binance.dto.CoinDataFor24Hr;
 import com.scanner.cryptoserver.exchange.binance.dto.CoinTicker;
 import com.scanner.cryptoserver.exchange.binance.dto.Symbol;
-import com.scanner.cryptoserver.exchange.binance.service.AbstractBinanceExchangeService;
 import com.scanner.cryptoserver.exchange.binance.service.BinanceUrlExtractor;
 import com.scanner.cryptoserver.exchange.binance.service.BinanceUsaExchangeService;
 import com.scanner.cryptoserver.exchange.binance.service.BinanceUsaUrlExtractor;
+import org.junit.Ignore;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
@@ -19,7 +19,6 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.MvcResult;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
-import org.springframework.web.client.RestOperations;
 import org.springframework.web.client.RestTemplate;
 
 import java.io.IOException;
@@ -39,18 +38,14 @@ import static org.junit.jupiter.api.Assertions.*;
 
 @AutoConfigureMockMvc
 @ContextConfiguration(classes = {BinanceUsaExchangeController.class, BinanceUsaExchangeService.class,
-        AbstractBinanceExchangeService.class, BinanceUsaUrlExtractor.class,
+        BinanceUsaUrlExtractor.class,
         RestTemplate.class, CachingConfig.class, BinanceUrlExtractor.class})
 @WebMvcTest
 class BinanceUsaExchangeControllerIntegTest {
     @Autowired
     private MockMvc mvc;
     @Autowired
-    private RestOperations restTemplate;
-    @Autowired
-    private AbstractBinanceExchangeService service;
-    @Autowired
-    private BinanceUrlExtractor urlExtractor;
+    private BinanceUsaExchangeService binanceUsaService;
 
     @Test
     void testExchangeInfo() throws Exception {
@@ -188,7 +183,7 @@ class BinanceUsaExchangeControllerIntegTest {
 
     //https://api.binance.com/api/v3/klines?symbol=GVTBTC&interval=1m&startTime=1526337202000&endTime=1526337262000
     //def nextTime = LocalDateTime.of(2018, Month.MAY, 14, 22, 34, 22).toInstant(ZoneOffset.UTC).toEpochMilli()
-    @Test
+    @Ignore
     void testDustConverter() throws URISyntaxException, IOException {
         List<DustInfo> dustList = getDust();
         Set<Long> times = new HashSet<>();
@@ -199,7 +194,7 @@ class BinanceUsaExchangeControllerIntegTest {
                 Double openPrice = dustList.stream().filter(d -> d.time == startTime).findFirst().map(d -> d.openPrice).orElse(0.00);
                 dust.openPrice = openPrice;
             } else {
-                List<CoinTicker> coin = service.callCoinTicker("BNBBTC", "1m", startTime, endTime);
+                List<CoinTicker> coin = binanceUsaService.callCoinTicker("BNBBTC", "1m", startTime, endTime);
                 times.add(startTime);
                 dust.openPrice = coin.get(0).getOpen();
             }
