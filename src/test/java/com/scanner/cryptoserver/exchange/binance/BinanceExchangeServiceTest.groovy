@@ -1,7 +1,8 @@
-package com.scanner.cryptoserver.exchange.binance.us
+package com.scanner.cryptoserver.exchange.binance
 
-import com.scanner.cryptoserver.exchange.binance.us.dto.CoinDataFor24Hr
-import com.scanner.cryptoserver.exchange.binance.us.service.ExchangeService
+import com.scanner.cryptoserver.exchange.binance.dto.CoinDataFor24Hr
+import com.scanner.cryptoserver.exchange.binance.service.BinanceExchangeService
+import com.scanner.cryptoserver.exchange.binance.service.BinanceUrlExtractor
 import org.spockframework.lang.Wildcard
 import org.springframework.cache.Cache
 import org.springframework.cache.CacheManager
@@ -14,17 +15,19 @@ import spock.lang.Unroll
 import java.time.LocalDateTime
 import java.time.ZoneOffset
 
-class ExchangeServiceTest extends Specification {
-    private ExchangeService service
+class BinanceExchangeServiceTest extends Specification {
+    private BinanceExchangeService service
     private RestOperations restTemplate
     private CacheManager cacheManager
     private Cache cache
+    private BinanceUrlExtractor urlExtractor
 
     def setup() {
         restTemplate = Mock(RestTemplate)
         cacheManager = Mock(CacheManager)
         cache = Mock(Cache)
-        service = new ExchangeService(restTemplate, cacheManager)
+        urlExtractor = Mock(BinanceUrlExtractor)
+        service = new BinanceExchangeService(restTemplate, cacheManager, urlExtractor)
     }
 
     def "test get24HrAllCoinTicker() when cache has data"() {

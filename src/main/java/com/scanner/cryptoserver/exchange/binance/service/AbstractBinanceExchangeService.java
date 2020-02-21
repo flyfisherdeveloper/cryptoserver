@@ -1,16 +1,14 @@
-package com.scanner.cryptoserver.exchange.binance.us.service;
+package com.scanner.cryptoserver.exchange.binance.service;
 
-import com.scanner.cryptoserver.exchange.binance.us.dto.CoinDataFor24Hr;
-import com.scanner.cryptoserver.exchange.binance.us.dto.CoinTicker;
-import com.scanner.cryptoserver.exchange.binance.us.dto.ExchangeInfo;
+import com.scanner.cryptoserver.exchange.binance.dto.CoinDataFor24Hr;
+import com.scanner.cryptoserver.exchange.binance.dto.CoinTicker;
+import com.scanner.cryptoserver.exchange.binance.dto.ExchangeInfo;
 import com.scanner.cryptoserver.util.IconExtractor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cache.Cache;
 import org.springframework.cache.CacheManager;
 import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestOperations;
 
 import java.text.DecimalFormat;
@@ -22,34 +20,53 @@ import java.util.*;
 import java.util.concurrent.*;
 import java.util.stream.Collectors;
 
-@Service
-public class ExchangeService {
-    private static final Logger Log = LoggerFactory.getLogger(ExchangeService.class);
-    private static final int ALL_24_HOUR_MAX_COUNT = 15;
+/**
+ * This service makes api calls for Binance exchanges: both BinanceUSA and Binance.
+ * Each exchange has its separate URL, which are encapsulated in the BinanceService classes for the respective exchange.
+ */
+public abstract class AbstractBinanceExchangeService {
+    private static final Logger Log = LoggerFactory.getLogger(AbstractBinanceExchangeService.class);
     private static final String ALL_24_HOUR_TICKER = "All24HourTicker";
     private static final String ALL_TICKERS = "AllTickers";
+    private static final String EXCHANGE_INFO = "ExchangeInfo";
+    private static final int ALL_24_HOUR_MAX_COUNT = 15;
 
-    @Value("${exchanges.binance.info}")
-    private String exchangeInfoUrl;
-    @Value("${exchanges.binance.klines}")
-    private String klinesUrl;
-    @Value("${exchanges.binance.ticker}")
-    private String tickerUrl;
-    @Value("${exchanges.binance.trade}")
-    private String tradeUrl;
     private final RestOperations restTemplate;
     private final CacheManager cacheManager;
-    private static ScheduledExecutorService scheduledService;
-    private static int all24HourTickerCount = 0;
 
-    public ExchangeService(RestOperations restTemplate, CacheManager cacheManager) {
+    public AbstractBinanceExchangeService(RestOperations restTemplate, CacheManager cacheManager) {
         this.restTemplate = restTemplate;
         this.cacheManager = cacheManager;
     }
 
+    /**
+     * Get exchange information. Gets the information out of the cache if in there.
+     *
+     * @return The exchange information.
+     */
     public ExchangeInfo getExchangeInfo() {
-        ResponseEntity<ExchangeInfo> info = restTemplate.getForEntity(exchangeInfoUrl, ExchangeInfo.class);
-        return info.getBody();
+        Collection<String> cacheNames = cacheManager.getCacheNames();
+        ExchangeInfo exchangeInfo = null;
+
+        for (String cacheName : cacheNames) {
+            if (cacheName.equals(EXCHANGE_INFO)) {
+                String name = getExchangeName() + "-" + EXCHANGE_INFO;
+                Cache infoCache = cacheManager.getCache(cacheName);
+                if (infoCache != null) {
+                    //jeff
+                    Cache.ValueWrapper value = infoCache.get(name);
+                    if (value == null) {
+                        ResponseEntity<ExchangeInfo> info = restTemplate.getForEntity(getUrlExtractor().getExchangeInfoUrl(), ExchangeInfo.class);
+                        exchangeInfo = info.getBody();
+                        infoCache.put(name, exchangeInfo);
+                    } else {
+                        exchangeInfo = (ExchangeInfo) value.get();
+                    }
+                    return exchangeInfo;
+                }
+            }
+        }
+        return exchangeInfo;
     }
 
     public List<CoinTicker> getCoinTicker(String symbol, String interval) {
@@ -57,7 +74,7 @@ public class ExchangeService {
     }
 
     public CoinDataFor24Hr call24HrCoinTicker(String symbol) {
-        String url = tickerUrl + "/24hr?symbol={symbol}";
+        String url = getUrlExtractor().getTickerUrl() + "/24hr?symbol={symbol}";
         Map<String, Object> params = new HashMap<>();
         params.put("symbol", symbol);
         ResponseEntity<LinkedHashMap> info = restTemplate.getForEntity(url, LinkedHashMap.class, params);
@@ -138,14 +155,15 @@ public class ExchangeService {
         Long closeTime = (Long) map.get("closeTime");
         data.setCloseTime(closeTime);
 
-        data.setupLinks(tradeUrl);
+        data.setupLinks(getUrlExtractor().getTradeUrl());
         byte[] iconBytes = getIconBytes(coin);
         data.setIcon(iconBytes);
 
         return data;
     }
 
-    private List<CoinTicker> callCoinTicker(String symbol, String interval, long startTime1, long toTime1, long startTime2, long toTime2) {
+    private List<CoinTicker> callCoinTicker(String symbol, String interval,
+                                            long startTime1, long toTime1, long startTime2, long toTime2) {
         List<CoinTicker> coinTickers = new ArrayList<>();
 
         if (startTime2 != 0 && toTime2 != 0) {
@@ -168,11 +186,11 @@ public class ExchangeService {
         return coinTickers;
     }
 
-    private List<CoinTicker> callCoinTicker(String symbol, String interval, Long startTime, Long endTime) {
+    public List<CoinTicker> callCoinTicker(String symbol, String interval, Long startTime, Long endTime) {
         if (interval.equals("24h")) {
             interval = "1d";
         }
-        String url = klinesUrl + "?symbol={symbol}&interval={interval}";
+        String url = getUrlExtractor().getKlinesUrl() + "?symbol={symbol}&interval={interval}";
         Map<String, Object> params = new HashMap<>();
         params.put("symbol", symbol);
         params.put("interval", interval);
@@ -211,8 +229,9 @@ public class ExchangeService {
 
     /**
      * Call the coin ticker for the symbol using the interval over the days/months specified.
-     * @param symbol The coin, such as "LTCUSDT".
-     * @param interval The interval string such as "12h" (12 hours).
+     *
+     * @param symbol       The coin, such as "LTCUSDT".
+     * @param interval     The interval string such as "12h" (12 hours).
      * @param daysOrMonths The days or months string, such as "30d" (thirty days) or "3m" (three months).
      * @return The coin tickers for the interval and period specified.
      */
@@ -249,9 +268,10 @@ public class ExchangeService {
 
     /**
      * Call the monthly coin ticker for the symbol using the interval and months.
-     * @param symbol The coin, such as "BTCUSD".
+     *
+     * @param symbol   The coin, such as "BTCUSD".
      * @param interval The interval string, such as "4h" (4 hours).
-     * @param months The months string, such as "3M".
+     * @param months   The months string, such as "3M".
      * @return The coin tickers for the month period using the interval.
      */
     private List<CoinTicker> callCoinTickerForMonths(String symbol, String interval, String months) {
@@ -271,7 +291,7 @@ public class ExchangeService {
         int numberOfDays = getDaysBetween(numMonths);
         int numDataPoints = numberOfDays * hoursInDay / hours;
 
-        //we want at most 2 calls in parallel - this is too prevent calling the binance.usa server too much and getting rejected
+        //we want at most 2 calls in parallel - this is too prevent calling the binance server too much and getting rejected
         if (numDataPoints > maxDataPoints * 2) {
             String message = String.format("Too much data requested for %s with interval %s and months %s", symbol, interval, months);
             throw new RuntimeException(message);
@@ -300,7 +320,7 @@ public class ExchangeService {
         //If not in the cache, then call the service and add the data to the cache.
         //The data in the cache will expire according to the setup in the CachingConfig configuration.
         Cache coinCache = cacheManager.getCache("CoinCache");
-        String name = symbol + interval + daysOrMonths;
+        String name = getExchangeName() + "-" + symbol + interval + daysOrMonths;
         List<CoinTicker> coins;
         if (coinCache != null) {
             Cache.ValueWrapper value = coinCache.get(name);
@@ -372,7 +392,7 @@ public class ExchangeService {
     //will avoid calling the exchange api frequently (i.e. once a minute always) for now.
     public List<CoinDataFor24Hr> get24HrAllCoinTicker() {
         List<CoinDataFor24Hr> coinDataFor24Hrs = new ArrayList<>();
-        Cache cache = cacheManager.getCache(ALL_24_HOUR_TICKER);
+        Cache cache = cacheManager.getCache(getExchangeName() + "-" + ALL_24_HOUR_TICKER);
         if (cache != null) {
             Cache.ValueWrapper value = cache.get(ALL_TICKERS);
             if (value != null) {
@@ -386,8 +406,8 @@ public class ExchangeService {
         return coinDataFor24Hrs;
     }
 
-    private List<CoinDataFor24Hr> call24HrAllCoinTicker() {
-        String url = tickerUrl + "/24hr";
+    public List<CoinDataFor24Hr> call24HrAllCoinTicker() {
+        String url = getUrlExtractor().getTickerUrl() + "/24hr";
         ResponseEntity<LinkedHashMap[]> info = restTemplate.getForEntity(url, LinkedHashMap[].class);
         LinkedHashMap[] body = info.getBody();
         if (body == null) {
@@ -399,7 +419,12 @@ public class ExchangeService {
             CoinDataFor24Hr coin = get24HrCoinTicker(map);
             list.add(coin);
         }
-        add24HrVolumeChange(list);
+        //todo: Binance has MANY coin pairs - this 24HrVolumeChange calls the api too many times and gets rejected
+        //(eventually - too many calls will lead to the api blacklisting the i.p. address calling it)
+        //don't call this in that case
+        if (getAdd24HrVolume()) {
+            add24HrVolumeChange(list);
+        }
         //since this is the first time (in awhile) we have called the exchange info,
         //start threads to update every minute for 15 minutes - this way the client gets
         //updated 24-hour data every minute
@@ -410,31 +435,37 @@ public class ExchangeService {
 
     //Run the scheduled service call and put the results in the cache. Stop the scheduler after a maximum times of running.
     private void runScheduled24HrAllCoinTicker() {
-        Cache coinCache = cacheManager.getCache(ALL_24_HOUR_TICKER);
-        if (coinCache != null) {
-            all24HourTickerCount++;
-            if (all24HourTickerCount >= ALL_24_HOUR_MAX_COUNT) {
-                Log.debug("Shutting down scheduler executor");
-                scheduledService.shutdown();
-                scheduledService = null;
-                all24HourTickerCount = 0;
+        incrementAll24HourTickerCounter();
+        Cache cache = cacheManager.getCache(getExchangeName() + "-" + ALL_24_HOUR_TICKER);
+        if (cache != null) {
+            cache.evictIfPresent(ALL_TICKERS);
+            //call the ticker again, and it will put the data in the cache
+            get24HrAllCoinTicker();
+        }
+        if (getAll24HourTickerCount() >= ALL_24_HOUR_MAX_COUNT) {
+            Log.debug("Shutting down scheduler executor for {} exchange", getExchangeName());
+            if (cache != null) {
+                cache.evictIfPresent(ALL_TICKERS);
             }
-            List<CoinDataFor24Hr> tickers = call24HrAllCoinTicker();
-            coinCache.put(ALL_TICKERS, tickers);
+            shutdownScheduledService();
         }
     }
 
     //Run a scheduler to update the 24-hour exchange coin ticker.
     private void startUpdates() {
+        ScheduledExecutorService scheduledService = getScheduledService();
         if (scheduledService != null) {
             //another scheduler is already executing - don't start another
             return;
         }
-        Log.debug("Starting scheduler executor");
+        Log.debug("Starting scheduler executor for {} exchange", getExchangeName());
+        //todo: should the separate exchanges determine this? If so, it would encapsulate better.
         scheduledService = Executors.newScheduledThreadPool(1);
         Runnable command = this::runScheduled24HrAllCoinTicker;
-        //run every minute - add a second to be sure since the binance.usa api monitors traffic by the minute
+        //run every minute - add a second to be sure since the binance api monitors traffic by the minute
+        //todo: should the separate exchanges determine this? If so, it would encapsulate better.
         scheduledService.scheduleAtFixedRate(command, 61, 61, TimeUnit.SECONDS);
+        setScheduledService(scheduledService);
     }
 
     public byte[] getIconBytes(String coin) {
@@ -448,8 +479,8 @@ public class ExchangeService {
             if (value == null) {
                 coins = IconExtractor.getIconBytes(coin);
                 if (coins == null) {
-                    //here, the coin icon wasn't in the zip file -
-                    // add a non-null empty array to the cache so we don't keep trying to extract it from the zip file
+                    //here, the coin icon wasn't in the images folder
+                    // add a non-null empty array to the cache so we don't keep trying to extract it
                     coins = new byte[0];
                 }
                 iconCache.putIfAbsent(coin, coins);
@@ -459,4 +490,20 @@ public class ExchangeService {
         }
         return coins;
     }
+
+    protected abstract UrlExtractor getUrlExtractor();
+
+    protected abstract String getExchangeName();
+
+    protected abstract boolean getAdd24HrVolume();
+
+    protected abstract int getAll24HourTickerCount();
+
+    protected abstract void incrementAll24HourTickerCounter();
+
+    protected abstract void shutdownScheduledService();
+
+    protected abstract ScheduledExecutorService getScheduledService();
+
+    protected abstract void setScheduledService(ScheduledExecutorService scheduledService);
 }

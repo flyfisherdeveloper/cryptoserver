@@ -1,4 +1,4 @@
-package com.scanner.cryptoserver.exchange.binance.us.dto;
+package com.scanner.cryptoserver.exchange.binance.dto;
 
 import lombok.Data;
 

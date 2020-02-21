@@ -1,10 +1,12 @@
 package com.scanner.cryptoserver;
 
-import com.scanner.cryptoserver.exchange.binance.us.dto.CoinDataFor24Hr;
-import com.scanner.cryptoserver.exchange.binance.us.dto.CoinTicker;
-import com.scanner.cryptoserver.exchange.binance.us.dto.ExchangeInfo;
-import com.scanner.cryptoserver.exchange.binance.us.dto.Symbol;
-import com.scanner.cryptoserver.exchange.binance.us.service.ExchangeService;
+import com.scanner.cryptoserver.exchange.binance.dto.CoinDataFor24Hr;
+import com.scanner.cryptoserver.exchange.binance.dto.CoinTicker;
+import com.scanner.cryptoserver.exchange.binance.dto.ExchangeInfo;
+import com.scanner.cryptoserver.exchange.binance.dto.Symbol;
+import com.scanner.cryptoserver.exchange.binance.service.AbstractBinanceExchangeService;
+import com.scanner.cryptoserver.exchange.binance.service.BinanceUsaExchangeService;
+import com.scanner.cryptoserver.exchange.binance.service.BinanceUsaUrlExtractor;
 import com.scanner.cryptoserver.util.IconExtractor;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,9 +22,13 @@ import java.util.stream.Collectors;
 import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
-class ExchangeServiceIntegTest {
+class BinanceUsaExchangeServiceIntegTest {
     @Autowired
-    private ExchangeService exchangeService;
+    private BinanceUsaExchangeService exchangeService;
+    @Autowired
+    private AbstractBinanceExchangeService binanceExchangeService;
+    @Autowired
+    private BinanceUsaUrlExtractor urlExtractor;
 
     @Test
     void testAllUsdSymbols() {
@@ -70,7 +76,7 @@ class ExchangeServiceIntegTest {
         btc.setSymbol("BTCUSD");
         data.add(btc);
 
-        exchangeService.add24HrVolumeChange(data);
+        binanceExchangeService.add24HrVolumeChange(data);
         assertNotNull(btc.getVolumeChangePercent());
     }
 }

@@ -31,7 +31,7 @@ public class CachingConfig extends CachingConfigurerSupport {
                 if (name.equals("CoinCache")) {
                     return new ConcurrentMapCache(name, CacheBuilder.newBuilder()
                             .expireAfterWrite(61, TimeUnit.SECONDS)
-                            .maximumSize(100)
+                            .maximumSize(1000)
                             .build()
                             .asMap(),
                             false);
@@ -45,7 +45,7 @@ public class CachingConfig extends CachingConfigurerSupport {
                             false);
                 }
                 //cache for list of all coins
-                if (name.equals("All24HourTicker")) {
+                if (name.contains("All24HourTicker")) {
                     return new ConcurrentMapCache(name, CacheBuilder.newBuilder()
                             .expireAfterWrite(5, TimeUnit.MINUTES)
                             //the maximum size number is rather arbitrary - the time is really the important issue
@@ -53,7 +53,15 @@ public class CachingConfig extends CachingConfigurerSupport {
                             .build()
                             .asMap(),
                             false);
-
+                }
+                //cache for exchange information
+                if (name.contains("ExchangeInfo")) {
+                    return new ConcurrentMapCache(name, CacheBuilder.newBuilder()
+                            .expireAfterWrite(1, TimeUnit.DAYS)
+                            .maximumSize(5)
+                            .build()
+                            .asMap(),
+                            false);
                 }
                 return null;
             }

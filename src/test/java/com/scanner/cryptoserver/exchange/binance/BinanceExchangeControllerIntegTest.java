@@ -1,12 +1,14 @@
-package com.scanner.cryptoserver;
+package com.scanner.cryptoserver.exchange.binance;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.scanner.cryptoserver.exchange.binance.us.controller.BinanceExchangeController;
-import com.scanner.cryptoserver.exchange.binance.us.dto.CoinDataFor24Hr;
-import com.scanner.cryptoserver.exchange.binance.us.dto.CoinTicker;
-import com.scanner.cryptoserver.exchange.binance.us.dto.Symbol;
-import com.scanner.cryptoserver.exchange.binance.us.service.ExchangeService;
+import com.scanner.cryptoserver.CachingConfig;
+import com.scanner.cryptoserver.exchange.binance.controller.BinanceExchangeController;
+import com.scanner.cryptoserver.exchange.binance.dto.CoinDataFor24Hr;
+import com.scanner.cryptoserver.exchange.binance.dto.CoinTicker;
+import com.scanner.cryptoserver.exchange.binance.dto.Symbol;
+import com.scanner.cryptoserver.exchange.binance.service.AbstractBinanceExchangeService;
+import com.scanner.cryptoserver.exchange.binance.service.BinanceUrlExtractor;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
@@ -24,7 +26,8 @@ import java.util.Optional;
 import static org.junit.jupiter.api.Assertions.*;
 
 @AutoConfigureMockMvc
-@ContextConfiguration(classes = {BinanceExchangeController.class, ExchangeService.class, RestTemplate.class, CachingConfig.class})
+@ContextConfiguration(classes = {BinanceExchangeController.class, AbstractBinanceExchangeService.class, BinanceUrlExtractor.class,
+        RestTemplate.class, CachingConfig.class})
 @WebMvcTest
 class BinanceExchangeControllerIntegTest {
     @Autowired
@@ -45,18 +48,18 @@ class BinanceExchangeControllerIntegTest {
         assertTrue(symbols.size() > 0);
 
         //verify that bitcoin exists
-        Optional<Symbol> btcUsd = symbols.stream().filter(s -> s.getSymbol().equals("BTCUSD")).findFirst();
-        assertTrue(btcUsd.isPresent());
+        Optional<Symbol> btcUsdt = symbols.stream().filter(s -> s.getSymbol().equals("BTCUSDT")).findFirst();
+        assertTrue(btcUsdt.isPresent());
         //verify that the symbol is indeed bitcoin
-        assertTrue(btcUsd.filter(b -> b.getBaseAsset().equals("BTC")).isPresent());
-        //verify that the symbol is paired with USD
-        assertTrue(btcUsd.filter(b -> b.getQuoteAsset().equals("USD")).isPresent());
+        assertTrue(btcUsdt.filter(b -> b.getBaseAsset().equals("BTC")).isPresent());
+        //verify that the symbol is paired with USDT
+        assertTrue(btcUsdt.filter(b -> b.getQuoteAsset().equals("USDT")).isPresent());
     }
 
     @Test
     void testCoinFor24HourTicker() throws Exception {
         MvcResult result = mvc.perform(MockMvcRequestBuilders
-                .get("/api/v1/binance/24HourTicker/LTCUSD")
+                .get("/api/v1/binance/24HourTicker/LTCUSDT")
                 .accept(MediaType.APPLICATION_JSON))
                 .andReturn();
 
@@ -66,7 +69,7 @@ class BinanceExchangeControllerIntegTest {
         CoinDataFor24Hr coin = mapper.readValue(json, CoinDataFor24Hr.class);
         assertNotNull(coin);
         assertEquals("LTC", coin.getCoin());
-        assertEquals("USD", coin.getCurrency());
+        assertEquals("USDT", coin.getCurrency());
     }
 
     @Test
@@ -91,7 +94,7 @@ class BinanceExchangeControllerIntegTest {
     @Test
     void testDayTickerFor3MonthsAnd4Hours() throws Exception {
         MvcResult result = mvc.perform(MockMvcRequestBuilders
-                .get("/api/v1/binance/DayTicker/LTCUSD/4h/3m")
+                .get("/api/v1/binance/DayTicker/LTCUSDT/4h/3m")
                 .accept(MediaType.APPLICATION_JSON))
                 .andReturn();
 
@@ -105,17 +108,5 @@ class BinanceExchangeControllerIntegTest {
         CoinTicker coinTicker = list.get(0);
         assertNotNull(coinTicker.getVolume());
         assertNotNull(coinTicker.getQuoteAssetVolume());
-    }
-
-    @Test
-    void testGetIcon() throws Exception {
-        MvcResult result = mvc.perform(MockMvcRequestBuilders
-                .get("/api/v1/binance/icon/ltc")
-                .accept(MediaType.IMAGE_PNG_VALUE))
-                .andReturn();
-
-        byte[] bytes = result.getResponse().getContentAsByteArray();
-        assertNotNull(bytes);
-        assertTrue(bytes.length > 0);
     }
 }
