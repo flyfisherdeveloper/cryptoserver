@@ -1,6 +1,8 @@
 package com.scanner.cryptoserver.exchange.binance
 
 import com.scanner.cryptoserver.exchange.binance.dto.CoinDataFor24Hr
+import com.scanner.cryptoserver.exchange.binance.dto.ExchangeInfo
+import com.scanner.cryptoserver.exchange.binance.dto.Symbol
 import com.scanner.cryptoserver.exchange.binance.service.BinanceExchangeService
 import com.scanner.cryptoserver.exchange.binance.service.BinanceUrlExtractor
 import org.spockframework.lang.Wildcard
@@ -49,6 +51,31 @@ class BinanceExchangeServiceTest extends Specification {
         assert coins.get(0).getSymbol() == symbol
     }
 
+    @Unroll
+    def "test getMarkets"() {
+        given:
+        def exchangeInfo = new ExchangeInfo()
+        def symbols = [new Symbol(baseAsset: coin1, quoteAsset: market1), new Symbol(baseAsset: coin2, quoteAsset: market2)]
+        exchangeInfo.setSymbols(symbols)
+
+        Cache.ValueWrapper valueMock = Mock(Cache.ValueWrapper)
+
+        when: "mocks are called"
+        cacheManager.getCache(Wildcard.INSTANCE) >> cache
+        cache.get(Wildcard.INSTANCE) >> valueMock
+        valueMock.get() >> exchangeInfo
+        def markets = service.getMarkets()
+
+        then:
+        assert markets
+        assert markets == expected.toSet()
+
+        where:
+        coin1 | market1 | coin2 | market2 | expected
+        "BTC" | "USD"   | "LTC" | "USDC"  | ["USD", "USDC"]
+        "BTC" | "USD"   | "LTC" | "USD"   | ["USD"]
+    }
+
     //Here, we do a unit test of the 24Hour price ticker instead of an integration test
     // since an integration test would call the api and use up quota.
     @Unroll("Test that #symbol price info is correct for 24 Hour Coin Ticker service")
@@ -65,17 +92,25 @@ class BinanceExchangeServiceTest extends Specification {
         map["quoteVolume"] = quoteVolume
 
         def coinList = serviceHasData ? [map] as LinkedHashMap<String, String>[] : [] as LinkedHashMap<String, String>[]
-        def response = ResponseEntity.of(Optional.of(coinList)) as ResponseEntity<LinkedHashMap[]>
-        def response2 = getMockCoinTicker()
+        def linkedHashMapResponse = ResponseEntity.of(Optional.of(coinList)) as ResponseEntity<LinkedHashMap[]>
+        def mockCoinTickerResponse = getMockCoinTicker()
+
+        def exchangeInfo = new ExchangeInfo()
+        def symbols = [new Symbol(quoteAsset: "BTC"), new Symbol(quoteAsset: "USD"),
+                       new Symbol(quoteAsset: "USDT"), new Symbol(quoteAsset: "BUSD")]
+        exchangeInfo.setSymbols(symbols)
+        def exchangeInfoResposne = ResponseEntity.of(Optional.of(exchangeInfo)) as ResponseEntity<ExchangeInfo>
 
         when: "mocks are called"
         cacheManager.getCache(Wildcard.INSTANCE) >> cache
         //cache returns null so that the call to the rest service can be made
         cache.get(Wildcard.INSTANCE) >> null
-        restTemplate.getForEntity(Wildcard.INSTANCE, Wildcard.INSTANCE,) >> response
-        response.getBody() >> coinList
+        //the following is mocking two calls to a rest service: the array returned contains the results of the two calls
+        //the first item in the array is for the first call, the second item is for the second call
+        restTemplate.getForEntity(Wildcard.INSTANCE, Wildcard.INSTANCE,) >>> [linkedHashMapResponse, exchangeInfoResposne]
+        exchangeInfoResposne.getBody() >> coinList
         //note: the following are for making the test work - not testing here, but just needed for the test to run
-        restTemplate.getForEntity(Wildcard.INSTANCE, Wildcard.INSTANCE, Wildcard.INSTANCE) >> response2
+        restTemplate.getForEntity(Wildcard.INSTANCE, Wildcard.INSTANCE, Wildcard.INSTANCE) >> mockCoinTickerResponse
 
         and: "the service is called"
         def allCoins = service.get24HrAllCoinTicker()
@@ -102,6 +137,7 @@ class BinanceExchangeServiceTest extends Specification {
         where:
         symbol    | coin  | currency | priceChange | priceChangePercent | lastPrice | highPrice | lowPrice  | volume        | quoteVolume | serviceHasData
         "LTCUSD"  | "LTC" | "USD"    | "13.2"      | "1.2"              | "14.3"    | "16.3"    | "11.17"   | "23987.23"    | "54.23"     | true
+        "BTCBUSD" | "BTC" | "BUSD"   | "439.18"    | "4.32"             | "8734.56" | "8902.87" | "8651.23" | "88922330.09" | "10180.18"  | true
         "BTCUSDT" | "BTC" | "USDT"   | "439.18"    | "4.32"             | "8734.56" | "8902.87" | "8651.23" | "88922330.09" | "10180.18"  | true
         //verify that the service handles the case of no data being returned
         null      | null  | null     | null        | null               | null      | null      | null      | null          | null        | false
