@@ -96,10 +96,10 @@ class BinanceExchangeServiceTest extends Specification {
         def mockCoinTickerResponse = getMockCoinTicker()
 
         def exchangeInfo = new ExchangeInfo()
-        def symbols = [new Symbol(quoteAsset: "BTC"), new Symbol(quoteAsset: "USD"),
-                       new Symbol(quoteAsset: "USDT"), new Symbol(quoteAsset: "BUSD")]
+        def symbols = [new Symbol(symbol: symbol, quoteAsset: "BTC", status: status), new Symbol(symbol: symbol, quoteAsset: "USD", status: status),
+                       new Symbol(symbol: symbol, quoteAsset: "USDT", status: status), new Symbol(symbol: symbol, quoteAsset: "BUSD", status: status)]
         exchangeInfo.setSymbols(symbols)
-        def exchangeInfoResposne = ResponseEntity.of(Optional.of(exchangeInfo)) as ResponseEntity<ExchangeInfo>
+        def exchangeInfoResponse = ResponseEntity.of(Optional.of(exchangeInfo)) as ResponseEntity<ExchangeInfo>
 
         when: "mocks are called"
         cacheManager.getCache(Wildcard.INSTANCE) >> cache
@@ -107,8 +107,8 @@ class BinanceExchangeServiceTest extends Specification {
         cache.get(Wildcard.INSTANCE) >> null
         //the following is mocking two calls to a rest service: the array returned contains the results of the two calls
         //the first item in the array is for the first call, the second item is for the second call
-        restTemplate.getForEntity(Wildcard.INSTANCE, Wildcard.INSTANCE,) >>> [linkedHashMapResponse, exchangeInfoResposne]
-        exchangeInfoResposne.getBody() >> coinList
+        restTemplate.getForEntity(Wildcard.INSTANCE, Wildcard.INSTANCE,) >>> [linkedHashMapResponse, exchangeInfoResponse]
+        exchangeInfoResponse.getBody() >> coinList
         //note: the following are for making the test work - not testing here, but just needed for the test to run
         restTemplate.getForEntity(Wildcard.INSTANCE, Wildcard.INSTANCE, Wildcard.INSTANCE) >> mockCoinTickerResponse
 
@@ -117,30 +117,37 @@ class BinanceExchangeServiceTest extends Specification {
 
         then:
         assert allCoins != null
-        assert allCoins.size() == coinList.size()
-        if (serviceHasData) {
-            assert allCoins[0].symbol == symbol
-            assert allCoins[0].coin == coin
-            assert allCoins[0].currency == currency
-            assert allCoins[0].priceChange == priceChange as Double
-            assert allCoins[0].priceChangePercent == priceChangePercent as Double
-            assert allCoins[0].lastPrice == lastPrice as Double
-            assert allCoins[0].highPrice == highPrice as Double
-            assert allCoins[0].lowPrice == lowPrice as Double
-            assert allCoins[0].volume == volume as Double
-            assert allCoins[0].quoteVolume == quoteVolume as Double
-            assert allCoins[0].tradeLink
-        } else {
+        if (status == "BREAK" || currency == "EUR") {
             assert allCoins.isEmpty()
+        } else {
+            assert allCoins.size() == coinList.size()
+            if (serviceHasData) {
+                assert allCoins[0].symbol == symbol
+                assert allCoins[0].coin == coin
+                assert allCoins[0].currency == currency
+                assert allCoins[0].priceChange == priceChange as Double
+                assert allCoins[0].priceChangePercent == priceChangePercent as Double
+                assert allCoins[0].lastPrice == lastPrice as Double
+                assert allCoins[0].highPrice == highPrice as Double
+                assert allCoins[0].lowPrice == lowPrice as Double
+                assert allCoins[0].volume == volume as Double
+                assert allCoins[0].quoteVolume == quoteVolume as Double
+                assert allCoins[0].tradeLink
+            } else {
+                assert allCoins.isEmpty()
+            }
         }
 
         where:
-        symbol    | coin  | currency | priceChange | priceChangePercent | lastPrice | highPrice | lowPrice  | volume        | quoteVolume | serviceHasData
-        "LTCUSD"  | "LTC" | "USD"    | "13.2"      | "1.2"              | "14.3"    | "16.3"    | "11.17"   | "23987.23"    | "54.23"     | true
-        "BTCBUSD" | "BTC" | "BUSD"   | "439.18"    | "4.32"             | "8734.56" | "8902.87" | "8651.23" | "88922330.09" | "10180.18"  | true
-        "BTCUSDT" | "BTC" | "USDT"   | "439.18"    | "4.32"             | "8734.56" | "8902.87" | "8651.23" | "88922330.09" | "10180.18"  | true
+        symbol    | coin  | currency | status    | priceChange | priceChangePercent | lastPrice | highPrice | lowPrice  | volume        | quoteVolume | serviceHasData
+        "LTCUSD"  | "LTC" | "USD"    | "TRADING" | "13.2"      | "1.2"              | "14.3"    | "16.3"    | "11.17"   | "23987.23"    | "54.23"     | true
+        "BTCBUSD" | "BTC" | "BUSD"   | "TRADING" | "439.18"    | "4.32"             | "8734.56" | "8902.87" | "8651.23" | "88922330.09" | "10180.18"  | true
+        "BTCUSDT" | "BTC" | "USDT"   | "TRADING" | "439.18"    | "4.32"             | "8734.56" | "8902.87" | "8651.23" | "88922330.09" | "10180.18"  | true
+        "BTCUSDT" | "BTC" | "USDT"   | "BREAK"   | "439.18"    | "4.32"             | "8734.56" | "8902.87" | "8651.23" | "88922330.09" | "10180.18"  | true
+        //verify that non-USA currencies (EUR) do not get returned
+        "BTCEUR"  | "BTC" | "EUR"    | "TRADING" | "439.18"    | "4.32"             | "8734.56" | "8902.87" | "8651.23" | "88922330.09" | "10180.18"  | true
         //verify that the service handles the case of no data being returned
-        null      | null  | null     | null        | null               | null      | null      | null      | null          | null        | false
+        null      | null  | null     | null      | null        | null               | null      | null      | null      | null          | null        | false
     }
 
     @Unroll("Test that when volume changes from #volume1 to #volume2 that the volume percent change is #percentChange")

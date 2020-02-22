@@ -35,6 +35,8 @@ public abstract class AbstractBinanceExchangeService {
     private static final String COIN_CACHE = "CoinCache";
     private static final String ICON_CACHE = "IconCache";
     private static final int ALL_24_HOUR_MAX_COUNT = 15;
+    private static final String TRADING = "TRADING";
+    private static final List<String> nonUsaMarkets = Arrays.asList("NGN", "RUB", "TRY", "EUR");
 
     private final RestOperations restTemplate;
     private final CacheManager cacheManager;
@@ -52,10 +54,12 @@ public abstract class AbstractBinanceExchangeService {
     public ExchangeInfo getExchangeInfo() {
         String name = getExchangeName() + "-" + EXCHANGE_INFO;
         Supplier<ExchangeInfo> exchangeInfoSupplier = () -> {
-            ResponseEntity<ExchangeInfo> info = restTemplate.getForEntity(getUrlExtractor().getExchangeInfoUrl(), ExchangeInfo.class);
-            return info.getBody();
+            ResponseEntity<ExchangeInfo> response = restTemplate.getForEntity(getUrlExtractor().getExchangeInfoUrl(), ExchangeInfo.class);
+            return response.getBody();
         };
         ExchangeInfo exchangeInfo = CacheUtil.retrieveFromCache(cacheManager, EXCHANGE_INFO, name, exchangeInfoSupplier);
+        //remove currency markets that are not USA-based, such as the Euro ("EUR")
+        exchangeInfo.getSymbols().removeIf(s -> nonUsaMarkets.contains(s.getQuoteAsset()));
         return exchangeInfo;
     }
 
@@ -129,11 +133,24 @@ public abstract class AbstractBinanceExchangeService {
         return str.substring(0, offset);
     }
 
+    private boolean isCoinTrading(String symbol) {
+        ExchangeInfo info = getExchangeInfo();
+        return info.getSymbols().stream()
+                .anyMatch(s -> s.getSymbol().equals(symbol) && s.getStatus().equals(TRADING));
+    }
+
+    private boolean isCoinInUsaMarket(String currency) {
+        return !nonUsaMarkets.contains(currency);
+    }
+
     private CoinDataFor24Hr get24HrCoinTicker(LinkedHashMap map) {
         CoinDataFor24Hr data = new CoinDataFor24Hr();
         String symbol = (String) map.get("symbol");
         String coin = getCoin(symbol);
         String currency = getQuote(symbol);
+        if (!isCoinTrading(symbol) || !isCoinInUsaMarket(currency)) {
+            return null;
+        }
 
         data.setSymbol(symbol);
         data.setCoin(coin);
@@ -421,7 +438,9 @@ public abstract class AbstractBinanceExchangeService {
         List<CoinDataFor24Hr> list = new ArrayList<>();
         for (LinkedHashMap map : body) {
             CoinDataFor24Hr coin = get24HrCoinTicker(map);
-            list.add(coin);
+            if (coin != null) {
+                list.add(coin);
+            }
         }
         //todo: Binance has MANY coin pairs - this 24HrVolumeChange calls the api too many times and gets rejected
         //(eventually - too many calls will lead to the api blacklisting the i.p. address calling it)
