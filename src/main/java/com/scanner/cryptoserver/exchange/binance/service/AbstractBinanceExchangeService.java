@@ -133,10 +133,31 @@ public abstract class AbstractBinanceExchangeService {
         return str.substring(0, offset);
     }
 
+    /**
+     * Exclude coins that are not currently trading, but exist on the exchange.
+     * @param symbol the coin, such as BTCUSDT.
+     * @return true if the coin is actively trading, false otherwise.
+     */
     private boolean isCoinTrading(String symbol) {
         ExchangeInfo info = getExchangeInfo();
         return info.getSymbols().stream()
                 .anyMatch(s -> s.getSymbol().equals(symbol) && s.getStatus().equals(TRADING));
+    }
+
+    /**
+     * Returns true if the symbol is a leveraged token, such as ETHBULL.
+     * A leveraged token is a trading pair based on a regular coin (such as ETH), but is subject
+     * to leveraged trading, and is not an ordinary coin. Therefore, we don't return these to the
+     * client. Unfortunately, it appears there isn't anything definitive from the exchange api
+     * to determine these tokens, other than checking their name for "BULL" or "BEAR", which is
+     * somewhat of a "hack", but is the best available method now due to api limitations.
+     * This will break of course if ever a coin is introduced that includes the name "BULL" or "BEAR".
+     * No such coin exists on the exchanges as of now, however.
+     * @param symbol the trading symbol, such as ETHBTC or BTCUSDT
+     * @return true if the symbol represents a leveraged token; false otherwise.
+     */
+    private boolean isLeveragedToken(String symbol) {
+        return symbol.contains("BULL") || symbol.contains("BEAR");
     }
 
     private boolean isCoinInUsaMarket(String currency) {
@@ -148,7 +169,7 @@ public abstract class AbstractBinanceExchangeService {
         String symbol = (String) map.get("symbol");
         String coin = getCoin(symbol);
         String currency = getQuote(symbol);
-        if (!isCoinTrading(symbol) || !isCoinInUsaMarket(currency)) {
+        if (!isCoinTrading(symbol) || !isCoinInUsaMarket(currency) || isLeveragedToken(symbol)) {
             return null;
         }
 
