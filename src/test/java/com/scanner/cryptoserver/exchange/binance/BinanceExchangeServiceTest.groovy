@@ -91,7 +91,7 @@ class BinanceExchangeServiceTest extends Specification {
         map["volume"] = volume
         map["quoteVolume"] = quoteVolume
 
-        def coinList = serviceHasData ? [map] as LinkedHashMap<String, String>[] : [] as LinkedHashMap<String, String>[]
+        def coinList = (symbol != null) ? [map] as LinkedHashMap<String, String>[] : [] as LinkedHashMap<String, String>[]
         def linkedHashMapResponse = ResponseEntity.of(Optional.of(coinList)) as ResponseEntity<LinkedHashMap[]>
         def mockCoinTickerResponse = getMockCoinTicker()
 
@@ -117,41 +117,37 @@ class BinanceExchangeServiceTest extends Specification {
 
         then:
         assert allCoins != null
-        if (!isCoinValid) {
-            assert allCoins.isEmpty()
-        } else {
+        if (isCoinValid) {
             assert allCoins.size() == coinList.size()
-            if (serviceHasData) {
-                assert allCoins[0].symbol == symbol
-                assert allCoins[0].coin == coin
-                assert allCoins[0].currency == currency
-                assert allCoins[0].priceChange == priceChange as Double
-                assert allCoins[0].priceChangePercent == priceChangePercent as Double
-                assert allCoins[0].lastPrice == lastPrice as Double
-                assert allCoins[0].highPrice == highPrice as Double
-                assert allCoins[0].lowPrice == lowPrice as Double
-                assert allCoins[0].volume == volume as Double
-                assert allCoins[0].quoteVolume == quoteVolume as Double
-                assert allCoins[0].tradeLink
-            } else {
-                assert allCoins.isEmpty()
-            }
+            assert allCoins[0].symbol == symbol
+            assert allCoins[0].coin == coin
+            assert allCoins[0].currency == currency
+            assert allCoins[0].priceChange == priceChange as Double
+            assert allCoins[0].priceChangePercent == priceChangePercent as Double
+            assert allCoins[0].lastPrice == lastPrice as Double
+            assert allCoins[0].highPrice == highPrice as Double
+            assert allCoins[0].lowPrice == lowPrice as Double
+            assert allCoins[0].volume == volume as Double
+            assert allCoins[0].quoteVolume == quoteVolume as Double
+            assert allCoins[0].tradeLink
+        } else {
+            assert allCoins.isEmpty()
         }
 
         where:
-        symbol    | coin  | currency | status    | priceChange | priceChangePercent | lastPrice | highPrice | lowPrice  | volume        | quoteVolume   | serviceHasData | isCoinValid
-        "LTCUSD"  | "LTC" | "USD"    | "TRADING" | "13.2"      | "1.2"              | "14.3"    | "16.3"    | "11.17"   | "23987.23"    | "54.23"       | true           | true
-        "BTCBUSD" | "BTC" | "BUSD"   | "TRADING" | "439.18"    | "4.32"             | "8734.56" | "8902.87" | "8651.23" | "88922330.09" | "10180.18"    | true           | true
-        "BTCUSDT" | "BTC" | "USDT"   | "TRADING" | "439.18"    | "4.32"             | "8734.56" | "8902.87" | "8651.23" | "88922330.09" | "10180.18"    | true           | true
+        symbol    | coin  | currency | status    | priceChange | priceChangePercent | lastPrice | highPrice | lowPrice  | volume        | quoteVolume   | isCoinValid
+        "LTCUSD"  | "LTC" | "USD"    | "TRADING" | "13.2"      | "1.2"              | "14.3"    | "16.3"    | "11.17"   | "23987.23"    | "54.23"       | true
+        "BTCBUSD" | "BTC" | "BUSD"   | "TRADING" | "439.18"    | "4.32"             | "8734.56" | "8902.87" | "8651.23" | "88922330.09" | "10180.18"    | true
+        "BTCUSDT" | "BTC" | "USDT"   | "TRADING" | "439.18"    | "4.32"             | "8734.56" | "8902.87" | "8651.23" | "88922330.09" | "10180.18"    | true
         //verify that coins that are not trading (status is "BREAK") do not get returned from the service
-        "BTCUSDT" | "BTC" | "USDT"   | "BREAK"   | "439.18"    | "4.32"             | "8734.56" | "8902.87" | "8651.23" | "88922330.09" | "10180.18"    | true           | false
+        "BTCUSDT" | "BTC" | "USDT"   | "BREAK"   | "439.18"    | "4.32"             | "8734.56" | "8902.87" | "8651.23" | "88922330.09" | "10180.18"    | false
         //verify that non-USA currencies (EUR) do not get returned from the service
-        "BTCEUR"  | "BTC" | "EUR"    | "TRADING" | "439.18"    | "4.32"             | true      | "8734.56" | "8902.87" | "8651.23"     | "88922330.09" | "10180.18"     | false
+        "BTCEUR"  | "BTC" | "EUR"    | "TRADING" | "439.18"    | "4.32"             | "8823.22" | "8734.56" | "8902.87" | "8651.23"     | "88922330.09" | false
         //verify that leveraged tokens do not get returned from the service
-        "XRPBEAR" | "XRP" | "USD"    | "TRADING" | "439.18"    | "4.32"             | true      | "8734.56" | "8902.87" | "8651.23"     | "88922330.09" | "10180.18"     | false
-        "XRPBULL" | "XRP" | "USD"    | "TRADING" | "439.18"    | "4.32"             | true      | "8734.56" | "8902.87" | "8651.23"     | "88922330.09" | "10180.18"     | false
+        "XRPBEAR" | "XRP" | "USD"    | "TRADING" | "439.18"    | "4.32"             | "0.25"    | "0.28"    | "0.21"    | "8651.23"     | "88922330.09" | false
+        "XRPBULL" | "XRP" | "USD"    | "TRADING" | "439.18"    | "4.32"             | "0.25"    | "0.28"    | "0.21"    | "8651.23"     | "88922330.09" | false
         //verify that the service handles the case of no data being returned
-        null      | null  | null     | null      | null        | null               | null      | null      | null      | null          | null          | false          | false
+        null      | null  | null     | null      | null        | null               | null      | null      | null      | null          | null          | false
     }
 
     @Unroll("Test that when volume changes from #volume1 to #volume2 that the volume percent change is #percentChange")
