@@ -117,7 +117,7 @@ class BinanceExchangeServiceTest extends Specification {
 
         then:
         assert allCoins != null
-        if (status == "BREAK" || currency == "EUR") {
+        if (!isCoinValid) {
             assert allCoins.isEmpty()
         } else {
             assert allCoins.size() == coinList.size()
@@ -139,15 +139,19 @@ class BinanceExchangeServiceTest extends Specification {
         }
 
         where:
-        symbol    | coin  | currency | status    | priceChange | priceChangePercent | lastPrice | highPrice | lowPrice  | volume        | quoteVolume | serviceHasData
-        "LTCUSD"  | "LTC" | "USD"    | "TRADING" | "13.2"      | "1.2"              | "14.3"    | "16.3"    | "11.17"   | "23987.23"    | "54.23"     | true
-        "BTCBUSD" | "BTC" | "BUSD"   | "TRADING" | "439.18"    | "4.32"             | "8734.56" | "8902.87" | "8651.23" | "88922330.09" | "10180.18"  | true
-        "BTCUSDT" | "BTC" | "USDT"   | "TRADING" | "439.18"    | "4.32"             | "8734.56" | "8902.87" | "8651.23" | "88922330.09" | "10180.18"  | true
-        "BTCUSDT" | "BTC" | "USDT"   | "BREAK"   | "439.18"    | "4.32"             | "8734.56" | "8902.87" | "8651.23" | "88922330.09" | "10180.18"  | true
-        //verify that non-USA currencies (EUR) do not get returned
-        "BTCEUR"  | "BTC" | "EUR"    | "TRADING" | "439.18"    | "4.32"             | "8734.56" | "8902.87" | "8651.23" | "88922330.09" | "10180.18"  | true
+        symbol    | coin  | currency | status    | priceChange | priceChangePercent | lastPrice | highPrice | lowPrice  | volume        | quoteVolume   | serviceHasData | isCoinValid
+        "LTCUSD"  | "LTC" | "USD"    | "TRADING" | "13.2"      | "1.2"              | "14.3"    | "16.3"    | "11.17"   | "23987.23"    | "54.23"       | true           | true
+        "BTCBUSD" | "BTC" | "BUSD"   | "TRADING" | "439.18"    | "4.32"             | "8734.56" | "8902.87" | "8651.23" | "88922330.09" | "10180.18"    | true           | true
+        "BTCUSDT" | "BTC" | "USDT"   | "TRADING" | "439.18"    | "4.32"             | "8734.56" | "8902.87" | "8651.23" | "88922330.09" | "10180.18"    | true           | true
+        //verify that coins that are not trading (status is "BREAK") do not get returned from the service
+        "BTCUSDT" | "BTC" | "USDT"   | "BREAK"   | "439.18"    | "4.32"             | "8734.56" | "8902.87" | "8651.23" | "88922330.09" | "10180.18"    | true           | false
+        //verify that non-USA currencies (EUR) do not get returned from the service
+        "BTCEUR"  | "BTC" | "EUR"    | "TRADING" | "439.18"    | "4.32"             | true      | "8734.56" | "8902.87" | "8651.23"     | "88922330.09" | "10180.18"     | false
+        //verify that leveraged tokens do not get returned from the service
+        "XRPBEAR" | "XRP" | "USD"    | "TRADING" | "439.18"    | "4.32"             | true      | "8734.56" | "8902.87" | "8651.23"     | "88922330.09" | "10180.18"     | false
+        "XRPBULL" | "XRP" | "USD"    | "TRADING" | "439.18"    | "4.32"             | true      | "8734.56" | "8902.87" | "8651.23"     | "88922330.09" | "10180.18"     | false
         //verify that the service handles the case of no data being returned
-        null      | null  | null     | null      | null        | null               | null      | null      | null      | null          | null        | false
+        null      | null  | null     | null      | null        | null               | null      | null      | null      | null          | null          | false          | false
     }
 
     @Unroll("Test that when volume changes from #volume1 to #volume2 that the volume percent change is #percentChange")
