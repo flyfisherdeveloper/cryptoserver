@@ -9,11 +9,16 @@ logging:
     name: logs/application-logging.log
 
 exchanges:
-  binance:
+  binanceusa:
     info: https://api.binance.us/api/v3/exchangeInfo
     klines: https://api.binance.us/api/v3/klines
     ticker: https://api.binance.us/api/v3/ticker
     trade: https://www.binance.us/en/trade/
+  binance:
+    info: https://api.binance.com/api/v3/exchangeInfo
+    klines: https://api.binance.com/api/v3/klines
+    ticker: https://api.binance.com/api/v3/ticker
+    trade: https://www.binance.com/en/trade/
 
 spring:
   profiles:
