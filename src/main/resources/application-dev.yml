@@ -19,6 +19,11 @@ exchanges:
     klines: https://api.binance.com/api/v3/klines
     ticker: https://api.binance.com/api/v3/ticker
     trade: https://www.binance.com/en/trade/
+  coinmarketcap:
+    #map: https://pro-api.coinmarketcap.com/v1/cryptocurrency/map
+    map: https://sandbox-api.coinmarketcap.com/v1/cryptocurrency/map
+    info: https://sandbox-api.coinmarketcap.com/v1/cryptocurrency/info
+    listing: https://sandbox-api.coinmarketcap.com/v1/cryptocurrency/listings/latest
 
 spring:
   profiles:

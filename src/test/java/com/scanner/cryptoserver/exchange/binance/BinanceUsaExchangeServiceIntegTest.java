@@ -1,4 +1,4 @@
-package com.scanner.cryptoserver;
+package com.scanner.cryptoserver.exchange.binance;
 
 import com.scanner.cryptoserver.exchange.binance.dto.CoinDataFor24Hr;
 import com.scanner.cryptoserver.exchange.binance.dto.CoinTicker;
