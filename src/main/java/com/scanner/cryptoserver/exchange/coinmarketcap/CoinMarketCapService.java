@@ -3,8 +3,11 @@ package com.scanner.cryptoserver.exchange.coinmarketcap;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.scanner.cryptoserver.exchange.binance.dto.ExchangeInfo;
+import com.scanner.cryptoserver.exchange.binance.dto.Symbol;
 import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapData;
 import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapMap;
+import com.scanner.cryptoserver.util.CacheUtil;
 import org.apache.http.HttpEntity;
 import org.apache.http.NameValuePair;
 import org.apache.http.client.methods.CloseableHttpResponse;
@@ -17,6 +20,7 @@ import org.apache.http.util.EntityUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cache.CacheManager;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.ResponseEntity;
@@ -26,11 +30,15 @@ import org.springframework.web.client.RestOperations;
 import java.io.IOException;
 import java.net.URISyntaxException;
 import java.util.*;
+import java.util.function.Function;
+import java.util.function.Supplier;
 import java.util.stream.Collectors;
 
 @Service
 public class CoinMarketCapService {
     private static final Logger Log = LoggerFactory.getLogger(CoinMarketCapData.class);
+    private static final String MARKET_CAP = "MarketCap";
+    private static final String EXCHANGE_INFO = "ExchangeInfo";
 
     @Value("${exchanges.coinmarketcap.map}")
     private String exchangeMapUrl;
@@ -41,9 +49,11 @@ public class CoinMarketCapService {
     //todo: put this in a safe property
     private String key = "f956ce89-7be3-4542-80c0-50e4a774e123";
     private final RestOperations restTemplate;
+    private final CacheManager cacheManager;
 
-    public CoinMarketCapService(RestOperations restTemplate) {
+    public CoinMarketCapService(RestOperations restTemplate, CacheManager cacheManager) {
         this.restTemplate = restTemplate;
+        this.cacheManager = cacheManager;
     }
 
     public CoinMarketCapMap getCoinMarketCapMap() {
@@ -60,20 +70,25 @@ public class CoinMarketCapService {
     }
 
     public CoinMarketCapMap getCoinMarketCapListing() {
-        List<NameValuePair> paratmers = new ArrayList<NameValuePair>();
-        paratmers.add(new BasicNameValuePair("start", "1"));
-        paratmers.add(new BasicNameValuePair("limit", "2"));
+        Supplier<CoinMarketCapMap> marketCapSupplier = () -> {
+            List<NameValuePair> paratmers = new ArrayList<NameValuePair>();
+            paratmers.add(new BasicNameValuePair("start", "1"));
+            paratmers.add(new BasicNameValuePair("limit", "399"));
 
-        try {
-            String json = makeAPICall(exchangeListingUrl, paratmers);
-            List<CoinMarketCapData> data = parseJsonData(json);
-            CoinMarketCapMap map = new CoinMarketCapMap();
-            map.setData(data);
-            return map;
-        } catch (IOException | URISyntaxException e) {
-            Log.error("Coin Market Cap Listing api call failed: {}", e.getMessage());
-        }
-        return null;
+            CoinMarketCapMap coinMarketCapMap = new CoinMarketCapMap();
+            try {
+                String json = makeAPICall(exchangeListingUrl, paratmers);
+                List<CoinMarketCapData> data = parseJsonData(json);
+                coinMarketCapMap.setData(data);
+                return coinMarketCapMap;
+            } catch (IOException | URISyntaxException e) {
+                Log.error("Coin Market Cap Listing api call failed: {}", e.getMessage());
+                coinMarketCapMap.setData(new ArrayList<>());
+                return coinMarketCapMap;
+            }
+        };
+        CoinMarketCapMap coinMarketCap = CacheUtil.retrieveFromCache(cacheManager, EXCHANGE_INFO, MARKET_CAP, marketCapSupplier);
+        return coinMarketCap;
     }
 
     public CoinMarketCapMap getCoinMarketCapInfo(List<Integer> ids) {

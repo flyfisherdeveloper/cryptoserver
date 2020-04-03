@@ -5,6 +5,7 @@ import org.springframework.cache.CacheManager;
 
 import java.util.function.Supplier;
 
+//todo: change this class to implement an interface so that unit testing is simpler (and better for SOLID principles)
 public class CacheUtil {
 
     /**

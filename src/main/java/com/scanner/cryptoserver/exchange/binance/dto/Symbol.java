@@ -6,8 +6,9 @@ import lombok.Data;
 @Data
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Symbol {
-   private String symbol;
-   private String baseAsset;
-   private String quoteAsset;
-   private String status;
+    private String symbol;
+    private String baseAsset;
+    private String quoteAsset;
+    private String status;
+    private Double marketCap;
 }
