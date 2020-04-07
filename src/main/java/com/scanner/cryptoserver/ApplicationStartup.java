@@ -1,7 +1,6 @@
 package com.scanner.cryptoserver;
 
 import com.scanner.cryptoserver.exchange.binance.dto.ExchangeInfo;
-import com.scanner.cryptoserver.exchange.binance.dto.Symbol;
 import com.scanner.cryptoserver.exchange.binance.service.AbstractBinanceExchangeService;
 import com.scanner.cryptoserver.exchange.coinmarketcap.CoinMarketCapService;
 import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapMap;
@@ -12,6 +11,9 @@ import org.springframework.context.ApplicationListener;
 import org.springframework.stereotype.Component;
 
 import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.TimeUnit;
 
 @Component
 public class ApplicationStartup implements ApplicationListener<ApplicationReadyEvent> {
@@ -19,6 +21,7 @@ public class ApplicationStartup implements ApplicationListener<ApplicationReadyE
     private final AbstractBinanceExchangeService binanceService;
     private final AbstractBinanceExchangeService binanceUsaService;
     private final CoinMarketCapService coinMarketCapService;
+    private ScheduledExecutorService scheduledService;
 
     public ApplicationStartup(AbstractBinanceExchangeService binanceService, AbstractBinanceExchangeService binanceUsaService, CoinMarketCapService coinMarketCapService) {
         super();
@@ -46,8 +49,8 @@ public class ApplicationStartup implements ApplicationListener<ApplicationReadyE
                     //The binance api's do not return market cap info for each coin.
                     //Therefore, the call to the coin market cap exchange will get the market cap for the coins.
                     //Here, we set the binance exchange info market cap for each coin, retrieving it from the coin market cap info.
-                    binanceInfo.getSymbols().forEach(symbol -> addMarketCap(coinMarketCapInfo, symbol));
-                    binanceUsaInfo.getSymbols().forEach(symbol -> addMarketCap(coinMarketCapInfo, symbol));
+                    binanceInfo.getSymbols().forEach(symbol -> symbol.addMarketCap(coinMarketCapInfo));
+                    binanceUsaInfo.getSymbols().forEach(symbol -> symbol.addMarketCap(coinMarketCapInfo));
                     //return value is not needed, as the above future calls will save the data into the cache when called
                     return null;
                 })
@@ -57,16 +60,16 @@ public class ApplicationStartup implements ApplicationListener<ApplicationReadyE
                     } else {
                         Log.error("Retrieval of exchange info error: {}", error.getMessage());
                     }
+                    startCoinMarketCapScheduler();
                 });
     }
 
-    //todo: this needs to be done for every exchange info call, not just on startup
-    private void addMarketCap(CoinMarketCapMap coinMarketCapInfo, Symbol symbol) {
-        //find the symbol (i.e. "BTC") in the coin market cap info, and get the market cap value from it and set it in the exchange symbol
-        coinMarketCapInfo.getData()
-                .stream()
-                .filter(c -> c.getSymbol().equals(symbol.getSymbol()))
-                .findFirst()
-                .ifPresent(cap -> symbol.setMarketCap(cap.getMarketCap()));
+    //Run a scheduler to update the 24-hour coin market cap information.
+    private void startCoinMarketCapScheduler() {
+        Log.debug("Starting scheduler executor for Coin Market Cap exchange");
+        scheduledService = Executors.newScheduledThreadPool(1);
+        Runnable command = coinMarketCapService::getCoinMarketCapListing;
+        //run every day - add a second to be sure we don't overuse quota on Coin Market Cap since that api keeps track of quota by the day
+        scheduledService.scheduleAtFixedRate(command, 86401, 86401, TimeUnit.SECONDS);
     }
 }

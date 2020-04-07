@@ -3,8 +3,6 @@ package com.scanner.cryptoserver.exchange.coinmarketcap;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.scanner.cryptoserver.exchange.binance.dto.ExchangeInfo;
-import com.scanner.cryptoserver.exchange.binance.dto.Symbol;
 import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapData;
 import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapMap;
 import com.scanner.cryptoserver.util.CacheUtil;
@@ -30,7 +28,6 @@ import org.springframework.web.client.RestOperations;
 import java.io.IOException;
 import java.net.URISyntaxException;
 import java.util.*;
-import java.util.function.Function;
 import java.util.function.Supplier;
 import java.util.stream.Collectors;
 

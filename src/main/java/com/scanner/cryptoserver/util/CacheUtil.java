@@ -16,6 +16,9 @@ public class CacheUtil {
      * @param valueName    The name of the value wrapper in the container in the cache manager.
      * @param supplier     The supplier that is used to retrieve objects to be put in the cache.
      *                     This will be called if the object is not in the value wrapper.
+     *                     If null, then it is assumed that the object is always in the cache;
+     *                     If the supplier is null and the object is not in the cache, then the object returned will be null.
+     *                     The client objects using this need to prevent this case.
      * @param <T>          The type of the element in the cache.
      * @return The element in the cache.
      */
@@ -24,10 +27,10 @@ public class CacheUtil {
         Cache cache = cacheManager.getCache(cacheName);
         if (cache != null) {
             Cache.ValueWrapper value = cache.get(valueName);
-            if (value == null) {
+            if (value == null && supplier != null) {
                 cacheObj = supplier.get();
                 cache.put(valueName, cacheObj);
-            } else {
+            } else if (value != null) {
                 cacheObj = (T) value.get();
             }
         }

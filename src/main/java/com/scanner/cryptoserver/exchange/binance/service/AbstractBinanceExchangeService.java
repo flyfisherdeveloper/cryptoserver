@@ -4,6 +4,7 @@ import com.scanner.cryptoserver.exchange.binance.dto.CoinDataFor24Hr;
 import com.scanner.cryptoserver.exchange.binance.dto.CoinTicker;
 import com.scanner.cryptoserver.exchange.binance.dto.ExchangeInfo;
 import com.scanner.cryptoserver.exchange.binance.dto.Symbol;
+import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapMap;
 import com.scanner.cryptoserver.util.CacheUtil;
 import com.scanner.cryptoserver.util.IconExtractor;
 import org.slf4j.Logger;
@@ -51,15 +52,43 @@ public abstract class AbstractBinanceExchangeService {
      *
      * @return The exchange information.
      */
-    public ExchangeInfo getExchangeInfo() {
+    private ExchangeInfo retrieveExchangeInfoFromCache() {
         String name = getExchangeName() + "-" + EXCHANGE_INFO;
         Supplier<ExchangeInfo> exchangeInfoSupplier = () -> {
             ResponseEntity<ExchangeInfo> response = restTemplate.getForEntity(getUrlExtractor().getExchangeInfoUrl(), ExchangeInfo.class);
             return response.getBody();
         };
         ExchangeInfo exchangeInfo = CacheUtil.retrieveFromCache(cacheManager, EXCHANGE_INFO, name, exchangeInfoSupplier);
+        return exchangeInfo;
+    }
+
+    private void setMarketCapForExchangeInfo(ExchangeInfo exchangeInfo) {
+        CoinMarketCapMap coinMarketCap = CacheUtil.retrieveFromCache(cacheManager, EXCHANGE_INFO, "MarketCap", null);
+        if (coinMarketCap != null) {
+            //If the coin market cap data exists, then update each symbol with the market cap value found in the maket cap data.
+            exchangeInfo.getSymbols().forEach(symbol -> symbol.addMarketCap(coinMarketCap));
+        }
+    }
+
+    private void setMarketCapFor24HrData(List<CoinDataFor24Hr> data) {
+        CoinMarketCapMap coinMarketCap = CacheUtil.retrieveFromCache(cacheManager, EXCHANGE_INFO, "MarketCap", null);
+        if (coinMarketCap != null) {
+            data.forEach(d -> d.addMarketCap(coinMarketCap));
+        }
+    }
+
+    /**
+     * Get exchange information. Gets the information out of the cache if in there.
+     * Sets some information in the exchange info for the coins (symbols) in it.
+     *
+     * @return The exchange information.
+     */
+    public ExchangeInfo getExchangeInfo() {
+        ExchangeInfo exchangeInfo = retrieveExchangeInfoFromCache();
         //remove currency markets that are not USA-based, such as the Euro ("EUR")
         exchangeInfo.getSymbols().removeIf(s -> nonUsaMarkets.contains(s.getQuoteAsset()));
+        //Attempt to retrieve the latest coin market cap data to get the market cap for each coin.
+        setMarketCapForExchangeInfo(exchangeInfo);
         return exchangeInfo;
     }
 
@@ -469,6 +498,7 @@ public abstract class AbstractBinanceExchangeService {
         if (getAdd24HrVolume()) {
             add24HrVolumeChange(list);
         }
+        setMarketCapFor24HrData(list);
         //since this is the first time (in awhile) we have called the exchange info,
         //start threads to update every minute for 15 minutes - this way the client gets
         //updated 24-hour data every minute

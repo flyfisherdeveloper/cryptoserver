@@ -57,7 +57,11 @@ public class CachingConfig extends CachingConfigurerSupport {
                 //cache for exchange information
                 if (name.contains("ExchangeInfo")) {
                     return new ConcurrentMapCache(name, CacheBuilder.newBuilder()
-                            .expireAfterWrite(1, TimeUnit.DAYS)
+                            //Keep the exchange info in the cache for one day -
+                            // add a minute to ensure that the coin market cap info is in there
+                            //which gets run by a scheduler on startup every day
+                            //Note: 1440 minutes is a 24-hour time period
+                            .expireAfterWrite(1441, TimeUnit.MINUTES)
                             .maximumSize(5)
                             .build()
                             .asMap(),
