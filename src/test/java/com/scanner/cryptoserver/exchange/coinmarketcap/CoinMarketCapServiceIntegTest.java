@@ -7,7 +7,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import java.util.Arrays;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 import static org.junit.Assert.assertNotNull;
 
@@ -34,7 +36,9 @@ public class CoinMarketCapServiceIntegTest {
 
     @Test
     void testGetCoinMarketCapListing() {
-        CoinMarketCapMap info = service.getCoinMarketCapListing();
+        Set<Integer> idSet = new HashSet<>();
+        idSet.add(1);
+        CoinMarketCapMap info = service.getCoinMarketCapListing(idSet);
         assertNotNull(info);
         info.getData().forEach(System.out::println);
     }

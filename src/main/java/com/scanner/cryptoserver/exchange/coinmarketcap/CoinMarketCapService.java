@@ -41,8 +41,8 @@ public class CoinMarketCapService {
     private String exchangeMapUrl;
     @Value("${exchanges.coinmarketcap.info}")
     private String exchangeInfoUrl;
-    @Value("${exchanges.coinmarketcap.listing}")
-    private String exchangeListingUrl;
+    @Value("${exchanges.coinmarketcap.quotes}")
+    private String exchangeQuotesUrl;
     //todo: put this in a safe property
     private String key = "f956ce89-7be3-4542-80c0-50e4a774e123";
     private final RestOperations restTemplate;
@@ -66,16 +66,17 @@ public class CoinMarketCapService {
         return result.getBody();
     }
 
-    public CoinMarketCapMap getCoinMarketCapListing() {
+    public CoinMarketCapMap getCoinMarketCapListing(Set<Integer> idSet) {
         Supplier<CoinMarketCapMap> marketCapSupplier = () -> {
-            List<NameValuePair> paratmers = new ArrayList<NameValuePair>();
-            paratmers.add(new BasicNameValuePair("start", "1"));
-            paratmers.add(new BasicNameValuePair("limit", "399"));
+            List<NameValuePair> parameters = new ArrayList<NameValuePair>();
+            //convert ids to comma separated String
+            String value = idSet.stream().map(String::valueOf).collect(Collectors.joining(","));
+            parameters.add(new BasicNameValuePair("id", value));
 
             CoinMarketCapMap coinMarketCapMap = new CoinMarketCapMap();
             try {
-                String json = makeAPICall(exchangeListingUrl, paratmers);
-                List<CoinMarketCapData> data = parseJsonData(json);
+                String json = makeAPICall(exchangeQuotesUrl, parameters);
+                List<CoinMarketCapData> data = parseJsonData(json, idSet);
                 coinMarketCapMap.setData(data);
                 return coinMarketCapMap;
             } catch (IOException | URISyntaxException e) {
@@ -118,7 +119,7 @@ public class CoinMarketCapService {
         return Optional.ofNullable(data);
     }
 
-    private List<CoinMarketCapData> parseJsonData(String json) {
+    private List<CoinMarketCapData> parseJsonData(String json, Set<Integer> idSet) {
         Optional<JsonNode> jsonNode = parseJson(json);
         if (!jsonNode.isPresent()) {
             return new ArrayList<>();
@@ -126,8 +127,8 @@ public class CoinMarketCapService {
         JsonNode data = jsonNode.get();
         List<CoinMarketCapData> list = new ArrayList<>();
 
-        for (int num = 0; num < data.size(); num++) {
-            JsonNode node = data.get(num);
+        idSet.forEach(idNum -> {
+            JsonNode node = data.get(String.valueOf(idNum));
             JsonNode idNode = node.get("id");
             int id = idNode.asInt();
             JsonNode nameNode = node.get("name");
@@ -145,7 +146,7 @@ public class CoinMarketCapService {
             d.setSymbol(symbol);
             d.setMarketCap(marketCap);
             list.add(d);
-        }
+        });
         return list;
     }
 

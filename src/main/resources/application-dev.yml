@@ -23,7 +23,7 @@ exchanges:
     #map: https://pro-api.coinmarketcap.com/v1/cryptocurrency/map
     map: https://sandbox-api.coinmarketcap.com/v1/cryptocurrency/map
     info: https://sandbox-api.coinmarketcap.com/v1/cryptocurrency/info
-    listing: https://sandbox-api.coinmarketcap.com/v1/cryptocurrency/listings/latest
+    quotes: https://sandbox-api.coinmarketcap.com/v1/cryptocurrency/quotes/latest
 
 spring:
   profiles:
