@@ -3,6 +3,9 @@ package com.scanner.cryptoserver.exchange.coinmarketcap;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.scanner.cryptoserver.exchange.binance.dto.ExchangeInfo;
+import com.scanner.cryptoserver.exchange.binance.dto.Symbol;
+import com.scanner.cryptoserver.exchange.binance.service.AbstractBinanceExchangeService;
 import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapData;
 import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapMap;
 import com.scanner.cryptoserver.util.CacheUtil;
@@ -28,6 +31,7 @@ import org.springframework.web.client.RestOperations;
 import java.io.IOException;
 import java.net.URISyntaxException;
 import java.util.*;
+import java.util.function.Function;
 import java.util.function.Supplier;
 import java.util.stream.Collectors;
 
@@ -47,10 +51,14 @@ public class CoinMarketCapService {
     private String key = "f956ce89-7be3-4542-80c0-50e4a774e123";
     private final RestOperations restTemplate;
     private final CacheManager cacheManager;
+    private final AbstractBinanceExchangeService binanceService;
+    private final AbstractBinanceExchangeService binanceUsaService;
 
-    public CoinMarketCapService(RestOperations restTemplate, CacheManager cacheManager) {
+    public CoinMarketCapService(RestOperations restTemplate, CacheManager cacheManager, AbstractBinanceExchangeService binanceService, AbstractBinanceExchangeService binanceUsaService) {
         this.restTemplate = restTemplate;
         this.cacheManager = cacheManager;
+        this.binanceService = binanceService;
+        this.binanceUsaService = binanceUsaService;
     }
 
     public CoinMarketCapMap getCoinMarketCapMap() {
@@ -66,9 +74,42 @@ public class CoinMarketCapService {
         return result.getBody();
     }
 
+    /**
+     * Get a set of IDs that represent coins. Use the exchange info from the Binance services to get the coin names.
+     *
+     * @return a Set of IDs.
+     */
+    public Set<Integer> getIdSet() {
+        //get the exchange info for both Binance exchanges - this is to get a list of coins to retrieve the market cap for each coin
+        String name = binanceService.getExchangeName() + "-" + EXCHANGE_INFO;
+        ExchangeInfo binanceInfo = CacheUtil.retrieveFromCache(cacheManager, EXCHANGE_INFO, name, null);
+        name = binanceUsaService.getExchangeName() + "-" + EXCHANGE_INFO;
+        ExchangeInfo binanceUsaInfo = CacheUtil.retrieveFromCache(cacheManager, EXCHANGE_INFO, name, null);
+
+        //get a set of all the coin names
+        Set<String> coinSet = binanceInfo.getSymbols().stream().map(Symbol::getBaseAsset).collect(Collectors.toSet());
+        Set<String> usaSet = binanceUsaInfo.getSymbols().stream().map(Symbol::getBaseAsset).collect(Collectors.toSet());
+        coinSet.addAll(usaSet);
+        CoinMarketCapMap map = getCoinMarketCapMap();
+
+        //now get a set of ids for the coins in the exchanges
+        Function<String, Integer> findCoinId = (coin) -> map.getData()
+                .stream()
+                .filter(c -> c.getSymbol().equals(coin))
+                .map(CoinMarketCapData::getId).findFirst().orElse(1);
+        Set<Integer> idSet = coinSet.stream().map(findCoinId).collect(Collectors.toSet());
+        return idSet;
+    }
+
+    public CoinMarketCapMap getCoinMarketCapListing() {
+        Set<Integer> idSet = getIdSet();
+        return getCoinMarketCapListing(idSet);
+    }
+
     public CoinMarketCapMap getCoinMarketCapListing(Set<Integer> idSet) {
         Supplier<CoinMarketCapMap> marketCapSupplier = () -> {
-            List<NameValuePair> parameters = new ArrayList<NameValuePair>();
+            List<NameValuePair> parameters = new ArrayList<>();
+
             //convert ids to comma separated String
             String value = idSet.stream().map(String::valueOf).collect(Collectors.joining(","));
             parameters.add(new BasicNameValuePair("id", value));

@@ -12,6 +12,7 @@ import java.util.List;
 import java.util.Set;
 
 import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertTrue;
 
 @SpringBootTest
 public class CoinMarketCapServiceIntegTest {
@@ -24,6 +25,8 @@ public class CoinMarketCapServiceIntegTest {
         assertNotNull(map);
         List<CoinMarketCapData> data = map.getData();
         data.forEach(System.out::println);
+        boolean ltcFound = data.stream().anyMatch(d -> d.getSymbol().equals("LTC"));
+        assertTrue(ltcFound);
     }
 
     @Test
@@ -32,6 +35,8 @@ public class CoinMarketCapServiceIntegTest {
         CoinMarketCapMap info = service.getCoinMarketCapInfo(ids);
         assertNotNull(info);
         info.getData().forEach(System.out::println);
+        boolean btcFound = info.getData().stream().anyMatch(d -> d.getSymbol().equals("BTC"));
+        assertTrue(btcFound);
     }
 
     @Test
@@ -39,7 +44,9 @@ public class CoinMarketCapServiceIntegTest {
         Set<Integer> idSet = new HashSet<>();
         idSet.add(1);
         CoinMarketCapMap info = service.getCoinMarketCapListing(idSet);
-        assertNotNull(info);
         info.getData().forEach(System.out::println);
+        assertNotNull(info);
+        boolean btcFound = info.getData().stream().anyMatch(d -> d.getSymbol().equals("BTC"));
+        assertTrue(btcFound);
     }
 }

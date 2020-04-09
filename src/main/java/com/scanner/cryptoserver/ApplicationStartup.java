@@ -4,7 +4,6 @@ import com.scanner.cryptoserver.exchange.binance.dto.ExchangeInfo;
 import com.scanner.cryptoserver.exchange.binance.dto.Symbol;
 import com.scanner.cryptoserver.exchange.binance.service.AbstractBinanceExchangeService;
 import com.scanner.cryptoserver.exchange.coinmarketcap.CoinMarketCapService;
-import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapData;
 import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapMap;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -14,7 +13,6 @@ import org.springframework.stereotype.Component;
 
 import java.util.Set;
 import java.util.concurrent.*;
-import java.util.function.Function;
 import java.util.stream.Collectors;
 
 @Component
@@ -49,21 +47,13 @@ public class ApplicationStartup implements ApplicationListener<ApplicationReadyE
                     Set<String> set = binanceInfo.getSymbols().stream().map(Symbol::getBaseAsset).collect(Collectors.toSet());
                     Set<String> usaSet = binanceUsaInfo.getSymbols().stream().map(Symbol::getBaseAsset).collect(Collectors.toSet());
                     set.addAll(usaSet);
-                    //return value is not needed, as the above future calls will save the data into the cache when called
                     return set;
                 })
                 .whenCompleteAsync((coinSet, error) -> {
                     //call the api to get a list of coins ids
-                    CoinMarketCapMap map = coinMarketCapService.getCoinMarketCapMap();
-
-                    //now get a set of ids for the coins in the exchanges
-                    Function<String, Integer> findCoinId = (coin) -> map.getData()
-                            .stream()
-                            .filter(c -> c.getSymbol().equals(coin))
-                            .map(CoinMarketCapData::getId).findFirst().orElse(1);
-                    Set<Integer> idSet = coinSet.stream().map(findCoinId).collect(Collectors.toSet());
+                    Set<Integer> idSet = coinMarketCapService.getIdSet();
                     //now get the market cap value for each coin
-                    CoinMarketCapMap coinMarketCapInfo = coinMarketCapService.getCoinMarketCapListing(idSet);
+                    CoinMarketCapMap coinMarketCapInfo = coinMarketCapService.getCoinMarketCapListing();
 
                     //The binance api's do not return market cap info for each coin.
                     //Therefore, the call to the coin market cap exchange will get the market cap for the coins.
@@ -74,7 +64,7 @@ public class ApplicationStartup implements ApplicationListener<ApplicationReadyE
                     } catch (InterruptedException | ExecutionException e) {
                         Log.error("Could not access exchange future for adding market cap: {}", e.getMessage());
                     }
-                    startCoinMarketCapScheduler(idSet);
+                    startCoinMarketCapScheduler();
                 })
                 .whenCompleteAsync((a, error) -> {
                     if (error == null) {
@@ -86,10 +76,10 @@ public class ApplicationStartup implements ApplicationListener<ApplicationReadyE
     }
 
     //Run a scheduler to update the 24-hour coin market cap information.
-    private void startCoinMarketCapScheduler(Set<Integer> idSet) {
+    private void startCoinMarketCapScheduler() {
         Log.debug("Starting scheduler executor for Coin Market Cap exchange");
         scheduledService = Executors.newScheduledThreadPool(1);
-        Runnable command = () -> coinMarketCapService.getCoinMarketCapListing(idSet);
+        Runnable command = coinMarketCapService::getCoinMarketCapListing;
         //run every day - add a second to be sure we don't overuse quota on Coin Market Cap since that api keeps track of quota by the day
         scheduledService.scheduleAtFixedRate(command, 86401, 86401, TimeUnit.SECONDS);
     }

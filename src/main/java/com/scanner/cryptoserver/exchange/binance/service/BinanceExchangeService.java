@@ -25,7 +25,7 @@ public class BinanceExchangeService extends AbstractBinanceExchangeService {
     }
 
     @Override
-    protected String getExchangeName() {
+    public String getExchangeName() {
         return EXCHANGE_NAME;
     }
 

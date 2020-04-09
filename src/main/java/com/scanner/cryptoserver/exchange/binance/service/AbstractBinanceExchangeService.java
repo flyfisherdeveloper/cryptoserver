@@ -560,7 +560,7 @@ public abstract class AbstractBinanceExchangeService {
 
     protected abstract UrlExtractor getUrlExtractor();
 
-    protected abstract String getExchangeName();
+    public abstract String getExchangeName();
 
     protected abstract boolean getAdd24HrVolume();
 
