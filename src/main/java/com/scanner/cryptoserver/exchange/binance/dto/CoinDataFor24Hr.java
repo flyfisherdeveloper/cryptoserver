@@ -9,7 +9,9 @@ import java.text.NumberFormat;
 @Data
 public class CoinDataFor24Hr {
     private byte[] icon;
+    //symbol of the coin, which includes the market (quote) such as LTCUSD, or BTCUSDT
     private String symbol;
+    //the coin such as BTC, or ETH
     private String coin;
     private Double marketCap = 0.0;
     private String currency;

@@ -50,8 +50,6 @@ public class ApplicationStartup implements ApplicationListener<ApplicationReadyE
                     return set;
                 })
                 .whenCompleteAsync((coinSet, error) -> {
-                    //call the api to get a list of coins ids
-                    Set<Integer> idSet = coinMarketCapService.getIdSet();
                     //now get the market cap value for each coin
                     CoinMarketCapMap coinMarketCapInfo = coinMarketCapService.getCoinMarketCapListing();
 

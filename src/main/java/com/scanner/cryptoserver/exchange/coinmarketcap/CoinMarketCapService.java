@@ -5,7 +5,6 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.scanner.cryptoserver.exchange.binance.dto.ExchangeInfo;
 import com.scanner.cryptoserver.exchange.binance.dto.Symbol;
-import com.scanner.cryptoserver.exchange.binance.service.AbstractBinanceExchangeService;
 import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapData;
 import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapMap;
 import com.scanner.cryptoserver.util.CacheUtil;
@@ -51,14 +50,12 @@ public class CoinMarketCapService {
     private String key = "f956ce89-7be3-4542-80c0-50e4a774e123";
     private final RestOperations restTemplate;
     private final CacheManager cacheManager;
-    private final AbstractBinanceExchangeService binanceService;
-    private final AbstractBinanceExchangeService binanceUsaService;
+    private final CacheUtil cacheUtil;
 
-    public CoinMarketCapService(RestOperations restTemplate, CacheManager cacheManager, AbstractBinanceExchangeService binanceService, AbstractBinanceExchangeService binanceUsaService) {
+    public CoinMarketCapService(RestOperations restTemplate, CacheManager cacheManager, CacheUtil cacheUtil) {
         this.restTemplate = restTemplate;
         this.cacheManager = cacheManager;
-        this.binanceService = binanceService;
-        this.binanceUsaService = binanceUsaService;
+        this.cacheUtil = cacheUtil;
     }
 
     public CoinMarketCapMap getCoinMarketCapMap() {
@@ -80,16 +77,13 @@ public class CoinMarketCapService {
      * @return a Set of IDs.
      */
     public Set<Integer> getIdSet() {
+        Set<String> coinSet = new HashSet<>();
         //get the exchange info for both Binance exchanges - this is to get a list of coins to retrieve the market cap for each coin
-        String name = binanceService.getExchangeName() + "-" + EXCHANGE_INFO;
-        ExchangeInfo binanceInfo = CacheUtil.retrieveFromCache(cacheManager, EXCHANGE_INFO, name, null);
-        name = binanceUsaService.getExchangeName() + "-" + EXCHANGE_INFO;
-        ExchangeInfo binanceUsaInfo = CacheUtil.retrieveFromCache(cacheManager, EXCHANGE_INFO, name, null);
-
-        //get a set of all the coin names
-        Set<String> coinSet = binanceInfo.getSymbols().stream().map(Symbol::getBaseAsset).collect(Collectors.toSet());
-        Set<String> usaSet = binanceUsaInfo.getSymbols().stream().map(Symbol::getBaseAsset).collect(Collectors.toSet());
-        coinSet.addAll(usaSet);
+        cacheUtil.getExchangeNames().forEach(exchange -> {
+            String name = exchange + "-" + EXCHANGE_INFO;
+            ExchangeInfo exchangeInfo = cacheUtil.retrieveFromCache(EXCHANGE_INFO, name, null);
+            coinSet.addAll(exchangeInfo.getSymbols().stream().map(Symbol::getBaseAsset).collect(Collectors.toSet()));
+        });
         CoinMarketCapMap map = getCoinMarketCapMap();
 
         //now get a set of ids for the coins in the exchanges
@@ -126,7 +120,7 @@ public class CoinMarketCapService {
                 return coinMarketCapMap;
             }
         };
-        CoinMarketCapMap coinMarketCap = CacheUtil.retrieveFromCache(cacheManager, EXCHANGE_INFO, MARKET_CAP, marketCapSupplier);
+        CoinMarketCapMap coinMarketCap = cacheUtil.retrieveFromCache(EXCHANGE_INFO, MARKET_CAP, marketCapSupplier);
         return coinMarketCap;
     }
 

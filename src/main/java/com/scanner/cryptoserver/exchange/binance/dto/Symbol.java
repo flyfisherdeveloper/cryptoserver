@@ -7,10 +7,15 @@ import lombok.Data;
 @Data
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Symbol {
+    //the symbol of the coin, such as BTCUSDT, or LTCUSD
     private String symbol;
+    //the base asset, such as BTC, or LTC
     private String baseAsset;
+    //the market, or quote, of the asset such as USDT or USD
     private String quoteAsset;
+    //status - whether the coin is trading, etc.
     private String status;
+    //the market cap in $USD
     private Double marketCap = 0.0;
 
     /**

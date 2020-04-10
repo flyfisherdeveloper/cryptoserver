@@ -9,8 +9,6 @@ import com.scanner.cryptoserver.util.CacheUtil;
 import com.scanner.cryptoserver.util.IconExtractor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.cache.Cache;
-import org.springframework.cache.CacheManager;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.client.RestOperations;
 
@@ -40,11 +38,11 @@ public abstract class AbstractBinanceExchangeService {
     private static final List<String> nonUsaMarkets = Arrays.asList("NGN", "RUB", "TRY", "EUR");
 
     private final RestOperations restTemplate;
-    private final CacheManager cacheManager;
+    private final CacheUtil cacheUtil;
 
-    public AbstractBinanceExchangeService(RestOperations restTemplate, CacheManager cacheManager) {
+    public AbstractBinanceExchangeService(RestOperations restTemplate, CacheUtil cacheUtil) {
         this.restTemplate = restTemplate;
-        this.cacheManager = cacheManager;
+        this.cacheUtil = cacheUtil;
     }
 
     /**
@@ -58,12 +56,12 @@ public abstract class AbstractBinanceExchangeService {
             ResponseEntity<ExchangeInfo> response = restTemplate.getForEntity(getUrlExtractor().getExchangeInfoUrl(), ExchangeInfo.class);
             return response.getBody();
         };
-        ExchangeInfo exchangeInfo = CacheUtil.retrieveFromCache(cacheManager, EXCHANGE_INFO, name, exchangeInfoSupplier);
+        ExchangeInfo exchangeInfo = cacheUtil.retrieveFromCache(EXCHANGE_INFO, name, exchangeInfoSupplier);
         return exchangeInfo;
     }
 
     private void setMarketCapForExchangeInfo(ExchangeInfo exchangeInfo) {
-        CoinMarketCapMap coinMarketCap = CacheUtil.retrieveFromCache(cacheManager, EXCHANGE_INFO, "MarketCap", null);
+        CoinMarketCapMap coinMarketCap = cacheUtil.retrieveFromCache(EXCHANGE_INFO, "MarketCap", null);
         if (coinMarketCap != null) {
             //If the coin market cap data exists, then update each symbol with the market cap value found in the maket cap data.
             exchangeInfo.getSymbols().forEach(symbol -> symbol.addMarketCap(coinMarketCap));
@@ -71,7 +69,7 @@ public abstract class AbstractBinanceExchangeService {
     }
 
     private void setMarketCapFor24HrData(List<CoinDataFor24Hr> data) {
-        CoinMarketCapMap coinMarketCap = CacheUtil.retrieveFromCache(cacheManager, EXCHANGE_INFO, "MarketCap", null);
+        CoinMarketCapMap coinMarketCap = cacheUtil.retrieveFromCache(EXCHANGE_INFO, "MarketCap", null);
         if (coinMarketCap != null) {
             data.forEach(d -> d.addMarketCap(coinMarketCap));
         }
@@ -164,6 +162,7 @@ public abstract class AbstractBinanceExchangeService {
 
     /**
      * Exclude coins that are not currently trading, but exist on the exchange.
+     *
      * @param symbol the coin, such as BTCUSDT.
      * @return true if the coin is actively trading, false otherwise.
      */
@@ -182,6 +181,7 @@ public abstract class AbstractBinanceExchangeService {
      * somewhat of a "hack", but is the best available method now due to api limitations.
      * This will break of course if ever a coin is introduced that includes the name "BULL" or "BEAR".
      * No such coin exists on the exchanges as of now, however.
+     *
      * @param symbol the trading symbol, such as ETHBTC or BTCUSDT
      * @return true if the symbol represents a leveraged token; false otherwise.
      */
@@ -408,7 +408,7 @@ public abstract class AbstractBinanceExchangeService {
         //The data in the cache will expire according to the setup in the CachingConfig configuration.
         String name = getExchangeName() + "-" + symbol + interval + daysOrMonths;
         Supplier<List<CoinTicker>> coinTickerSupplier = () -> callCoinTicker(symbol, interval, daysOrMonths);
-        List<CoinTicker> coins = CacheUtil.retrieveFromCache(cacheManager, COIN_CACHE, name, coinTickerSupplier);
+        List<CoinTicker> coins = cacheUtil.retrieveFromCache(COIN_CACHE, name, coinTickerSupplier);
         if (coins == null) {
             return new ArrayList<>();
         }
@@ -473,7 +473,7 @@ public abstract class AbstractBinanceExchangeService {
     public List<CoinDataFor24Hr> get24HrAllCoinTicker() {
         String cacheName = getExchangeName() + "-" + ALL_24_HOUR_TICKER;
         Supplier<List<CoinDataFor24Hr>> allCoinTicker = this::call24HrAllCoinTicker;
-        List<CoinDataFor24Hr> coinDataFor24Hrs = CacheUtil.retrieveFromCache(cacheManager, cacheName, ALL_TICKERS, allCoinTicker);
+        List<CoinDataFor24Hr> coinDataFor24Hrs = cacheUtil.retrieveFromCache(cacheName, ALL_TICKERS, allCoinTicker);
         return coinDataFor24Hrs;
     }
 
@@ -502,7 +502,8 @@ public abstract class AbstractBinanceExchangeService {
         //since this is the first time (in awhile) we have called the exchange info,
         //start threads to update every minute for 15 minutes - this way the client gets
         //updated 24-hour data every minute
-        //we stop at 15 minutes just to prevent too much data from being processed (we are trying to stay in the AWS free zone!)
+        //We stop at 15 minutes just to prevent too much data from being processed (we are trying to stay in the AWS free zone!),
+        // and we are trying to not go over quota on extracting exchange data.
         startUpdates();
         return list;
     }
@@ -510,18 +511,14 @@ public abstract class AbstractBinanceExchangeService {
     //Run the scheduled service call and put the results in the cache. Stop the scheduler after a maximum times of running.
     private void runScheduled24HrAllCoinTicker() {
         incrementAll24HourTickerCounter();
-        Cache cache = cacheManager.getCache(getExchangeName() + "-" + ALL_24_HOUR_TICKER);
-        if (cache != null) {
-            cache.evictIfPresent(ALL_TICKERS);
-            //call the ticker again, and it will put the data in the cache
-            get24HrAllCoinTicker();
-        }
+        String cacheName = getExchangeName() + "-" + ALL_24_HOUR_TICKER;
         if (getAll24HourTickerCount() >= ALL_24_HOUR_MAX_COUNT) {
             Log.debug("Shutting down scheduler executor for {} exchange", getExchangeName());
-            if (cache != null) {
-                cache.evictIfPresent(ALL_TICKERS);
-            }
+            cacheUtil.evict(cacheName, ALL_TICKERS);
             shutdownScheduledService();
+        } else {
+            Supplier<?> supplier = this::get24HrAllCoinTicker;
+            cacheUtil.evictAndAdd(cacheName, ALL_TICKERS, supplier);
         }
     }
 
@@ -554,7 +551,7 @@ public abstract class AbstractBinanceExchangeService {
             }
             return coins;
         };
-        byte[] coins = CacheUtil.retrieveFromCache(cacheManager, ICON_CACHE, coin, iconExtractor);
+        byte[] coins = cacheUtil.retrieveFromCache(ICON_CACHE, coin, iconExtractor);
         return coins;
     }
 
