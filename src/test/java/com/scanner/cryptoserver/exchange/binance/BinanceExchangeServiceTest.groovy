@@ -9,7 +9,6 @@ import com.scanner.cryptoserver.exchange.binance.service.BinanceUrlExtractor
 import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapData
 import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapMap
 import com.scanner.cryptoserver.util.CacheUtil
-import org.spockframework.lang.Wildcard
 import org.springframework.http.ResponseEntity
 import org.springframework.web.client.RestOperations
 import org.springframework.web.client.RestTemplate
@@ -39,10 +38,12 @@ class BinanceExchangeServiceTest extends Specification {
           coinData.setSymbol(symbol)
 
         when:
-          cacheUtil.retrieveFromCache(Wildcard.INSTANCE, Wildcard.INSTANCE, Wildcard.INSTANCE) >> [coinData]
-          def coins = service.get24HrAllCoinTicker()
+          cacheUtil.retrieveFromCache(*_) >> [coinData]
 
         then:
+          def coins = service.get24HrAllCoinTicker()
+
+        expect:
           assert coins
           assert coins.size() == 1
           assert coins.get(0).getSymbol() == symbol
@@ -64,10 +65,12 @@ class BinanceExchangeServiceTest extends Specification {
           coinMarketCapMap.setData([data1, data2])
 
         when: "mocks are called"
-          cacheUtil.retrieveFromCache(Wildcard.INSTANCE, Wildcard.INSTANCE, Wildcard.INSTANCE) >>> [exchangeInfo, coinMarketCapMap]
-          def markets = service.getMarkets()
+          cacheUtil.retrieveFromCache(*_) >>> [exchangeInfo, coinMarketCapMap]
 
         then:
+          def markets = service.getMarkets()
+
+        expect:
           assert markets
           assert markets == expectedMarkets.toSet()
           //verify that the market caps were set in the exchange symbols
@@ -118,14 +121,14 @@ class BinanceExchangeServiceTest extends Specification {
           coinMarketCapMap.setData([data1, data2, data3, data4])
 
         when: "mocks are called"
-          cacheUtil.retrieveFromCache(Wildcard.INSTANCE, "binance-ExchangeInfo", Wildcard.INSTANCE) >>> [exchangeInfo, exchangeInfo]
-          cacheUtil.retrieveFromCache(Wildcard.INSTANCE, "MarketCap", Wildcard.INSTANCE) >>> [coinMarketCapMap]
-          restTemplate.getForEntity(Wildcard.INSTANCE, Wildcard.INSTANCE,) >>> [linkedHashMapResponse, exchangeInfoResponse]
+          cacheUtil.retrieveFromCache(_, "binance-ExchangeInfo", _) >>> [exchangeInfo, exchangeInfo]
+          cacheUtil.retrieveFromCache(_, "MarketCap", _) >>> [coinMarketCapMap]
+          restTemplate.getForEntity(*_,) >>> [linkedHashMapResponse, exchangeInfoResponse]
 
-        and: "the service is called"
+        then: "the service is called"
           def allCoins = service.call24HrAllCoinTicker()
 
-        then:
+        expect:
           assert allCoins != null
           if (isCoinValid) {
               assert allCoins.size() == coinList.size()
@@ -195,13 +198,13 @@ class BinanceExchangeServiceTest extends Specification {
           def response = ResponseEntity.of(Optional.of(coinData)) as ResponseEntity<Object[]>
 
         when: "mocks are called"
-          restTemplate.getForEntity(Wildcard.INSTANCE, Wildcard.INSTANCE, Wildcard.INSTANCE) >> response
+          restTemplate.getForEntity(*_) >> response
           response.getBody() >> coinData
 
-        and: "the service is called"
+        then: "the service is called"
           service.add24HrVolumeChange(coinList)
 
-        then:
+        expect:
           assert coinList[0].getVolumeChangePercent() == expectedVolumePercentChange
 
         where:
@@ -226,7 +229,9 @@ class BinanceExchangeServiceTest extends Specification {
 
         when:
           //Here, response1 is the response for the first time the rest template is called; response2 is the second time the rest template is called.
-          restTemplate.getForEntity(Wildcard.INSTANCE, Wildcard.INSTANCE, Wildcard.INSTANCE) >>> [response1, response2]
+          restTemplate.getForEntity(*_) >>> [response1, response2]
+
+        then:
           def tickers = null
           //the service call can throw an exception if too much data is requested: account for this
           try {
@@ -235,7 +240,7 @@ class BinanceExchangeServiceTest extends Specification {
               caughtException = e
           }
 
-        then:
+        expect:
           if (exception.expected) {
               //in this case, too much data is requested: test the exception
               assert caughtException != null
@@ -279,14 +284,15 @@ class BinanceExchangeServiceTest extends Specification {
 
         when:
           if (inCache) {
-              cacheUtil.retrieveFromCache(Wildcard.INSTANCE, Wildcard.INSTANCE, Wildcard.INSTANCE) >> coinTickerList
+              cacheUtil.retrieveFromCache(*_) >> coinTickerList
           } else {
-              cacheUtil.retrieveFromCache(Wildcard.INSTANCE, Wildcard.INSTANCE, Wildcard.INSTANCE) >> null
+              cacheUtil.retrieveFromCache(*_) >> null
           }
 
+        then:
           def coins = service.getTickerData(symbol, interval, daysOrMonths)
 
-        then:
+        expect:
           assert coins != null
           if (inCache) {
               //if we pass this test, then we ensure that the coin was retrieved from the cache
