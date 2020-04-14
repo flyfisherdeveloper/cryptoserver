@@ -39,7 +39,7 @@ public class CoinMarketCapServiceIntegTest {
 
     @Test
     void testGetMarketCapInfo() {
-        List<Integer> ids = Arrays.asList(1, 1027);
+        Set<Integer> ids = new HashSet<>(Arrays.asList(1, 1027));
         CoinMarketCapMap info = service.getCoinMarketCapInfo(ids);
         assertNotNull(info);
         info.getData().forEach(System.out::println);

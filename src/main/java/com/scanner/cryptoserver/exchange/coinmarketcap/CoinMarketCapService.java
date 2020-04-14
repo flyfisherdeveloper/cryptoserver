@@ -81,12 +81,11 @@ public class CoinMarketCapService {
         return coinMarketCap;
     }
 
-    public CoinMarketCapMap getCoinMarketCapInfo(List<Integer> ids) {
+    public CoinMarketCapMap getCoinMarketCapInfo(Set<Integer> ids) {
         List<NameValuePair> paratmers = new ArrayList<>();
         String value = ids.stream().map(String::valueOf).collect(Collectors.joining(","));
         paratmers.add(new BasicNameValuePair("id", value));
-        String json = "";
-        json = coinMarketCapApiService.makeExchangeInfoApiCall(paratmers);
+        String json = coinMarketCapApiService.makeExchangeInfoApiCall(paratmers);
 
         List<CoinMarketCapData> data = parseJsonInfo(json, ids);
         CoinMarketCapMap map = new CoinMarketCapMap();
@@ -138,7 +137,7 @@ public class CoinMarketCapService {
         return list;
     }
 
-    private List<CoinMarketCapData> parseJsonInfo(String json, List<Integer> ids) {
+    private List<CoinMarketCapData> parseJsonInfo(String json, Set<Integer> ids) {
         Optional<JsonNode> jsonNode = parseJson(json);
         if (!jsonNode.isPresent()) {
             return new ArrayList<>();
