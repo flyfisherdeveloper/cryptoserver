@@ -20,10 +20,9 @@ exchanges:
     ticker: https://api.binance.com/api/v3/ticker
     trade: https://www.binance.com/en/trade/
   coinmarketcap:
-    #map: https://pro-api.coinmarketcap.com/v1/cryptocurrency/map
-    map: https://sandbox-api.coinmarketcap.com/v1/cryptocurrency/map
-    info: https://sandbox-api.coinmarketcap.com/v1/cryptocurrency/info
-    quotes: https://sandbox-api.coinmarketcap.com/v1/cryptocurrency/quotes/latest
+    map: https://pro-api.coinmarketcap.com/v1/cryptocurrency/map
+    info: https://pro-api.coinmarketcap.com/v1/cryptocurrency/info
+    quotes: https://pro-api.coinmarketcap.com/v1/cryptocurrency/quotes/latest
 
 spring:
   profiles:

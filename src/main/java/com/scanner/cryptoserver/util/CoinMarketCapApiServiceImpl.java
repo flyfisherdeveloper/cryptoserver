@@ -40,7 +40,6 @@ public class CoinMarketCapApiServiceImpl implements CoinMarketCapApiService {
     private String exchangeInfoUrl;
     @Value("${exchanges.coinmarketcap.quotes}")
     private String exchangeQuotesUrl;
-    private String key = "f956ce89-7be3-4542-80c0-50e4a774e123";
     private final RestOperations restTemplate;
 
     public CoinMarketCapApiServiceImpl(RestOperations restTemplate) {
@@ -54,7 +53,7 @@ public class CoinMarketCapApiServiceImpl implements CoinMarketCapApiService {
         //here, we add parameters to bring back only what we want
         params.put("aux", Arrays.asList("id", "name", "symbol"));
         HttpHeaders headers = new HttpHeaders();
-        headers.set("X-CMC_PRO_API_KEY", key);
+        headers.set("X-CMC_PRO_API_KEY", getKey());
         org.springframework.http.HttpEntity<CoinMarketCapMap> requestEntity = new org.springframework.http.HttpEntity<>(null, headers);
         Log.info("Calling coin market cap map: {}", exchangeMapUrl);
         //this api call is simple enough that a normal Spring Rest Operations call can be made, rather than the more complex Http calls
@@ -101,7 +100,7 @@ public class CoinMarketCapApiServiceImpl implements CoinMarketCapApiService {
         CloseableHttpClient client = HttpClients.createDefault();
         HttpGet request = new HttpGet(query.build());
         request.setHeader(HttpHeaders.ACCEPT, "application/json");
-        request.addHeader("X-CMC_PRO_API_KEY", key);
+        request.addHeader("X-CMC_PRO_API_KEY", getKey());
 
         try (CloseableHttpResponse response = client.execute(request)) {
             HttpEntity entity = response.getEntity();
@@ -110,5 +109,9 @@ public class CoinMarketCapApiServiceImpl implements CoinMarketCapApiService {
         }
 
         return responseContent;
+    }
+
+    private String getKey() {
+        return System.getenv("CoinMarketCapKey");
     }
 }
