@@ -1,4 +1,4 @@
-package com.scanner.cryptoserver.util;
+package com.scanner.cryptoserver.exchange.coinmarketcap;
 
 import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapMap;
 import org.apache.http.HttpEntity;
@@ -33,7 +33,6 @@ import java.util.Map;
 @Service(value = "coinMarketApiCapService")
 public class CoinMarketCapApiServiceImpl implements CoinMarketCapApiService {
     private static final Logger Log = LoggerFactory.getLogger(CoinMarketCapApiServiceImpl.class);
-    //todo: put this in a safe property
     @Value("${exchanges.coinmarketcap.map}")
     private String exchangeMapUrl;
     @Value("${exchanges.coinmarketcap.info}")

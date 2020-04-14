@@ -2,7 +2,6 @@ package com.scanner.cryptoserver.exchange.coinmarketcap;
 
 import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapData;
 import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapMap;
-import com.scanner.cryptoserver.util.CoinMarketCapApiService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;

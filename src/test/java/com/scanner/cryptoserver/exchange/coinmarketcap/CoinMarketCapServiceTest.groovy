@@ -5,7 +5,6 @@ import com.scanner.cryptoserver.exchange.binance.dto.Symbol
 import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapData
 import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapMap
 import com.scanner.cryptoserver.util.CacheUtil
-import com.scanner.cryptoserver.util.CoinMarketCapApiService
 import spock.lang.Specification
 import spock.lang.Unroll
 

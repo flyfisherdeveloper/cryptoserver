@@ -1,4 +1,4 @@
-package com.scanner.cryptoserver.util;
+package com.scanner.cryptoserver.exchange.coinmarketcap;
 
 import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapMap;
 import org.apache.http.NameValuePair;
