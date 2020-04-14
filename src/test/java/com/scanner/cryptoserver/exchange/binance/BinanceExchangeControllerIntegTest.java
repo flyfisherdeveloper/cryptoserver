@@ -9,6 +9,7 @@ import com.scanner.cryptoserver.exchange.binance.dto.CoinTicker;
 import com.scanner.cryptoserver.exchange.binance.dto.Symbol;
 import com.scanner.cryptoserver.exchange.binance.service.BinanceExchangeService;
 import com.scanner.cryptoserver.exchange.binance.service.BinanceUrlExtractor;
+import com.scanner.cryptoserver.util.CacheUtilImpl;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
@@ -27,7 +28,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 @AutoConfigureMockMvc
 @ContextConfiguration(classes = {BinanceExchangeController.class, BinanceExchangeService.class, BinanceUrlExtractor.class,
-        RestTemplate.class, CachingConfig.class})
+        RestTemplate.class, CachingConfig.class, CacheUtilImpl.class})
 @WebMvcTest
 class BinanceExchangeControllerIntegTest {
     @Autowired

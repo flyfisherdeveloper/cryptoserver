@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.scanner</groupId>
     <artifactId>cryptoserver</artifactId>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
     <packaging>jar</packaging>
     <name>cryptoserver</name>
     <description>Crypto scanner project</description>
@@ -60,6 +60,11 @@
             <artifactId>spock-core</artifactId>
             <version>1.3-groovy-2.5</version>
             <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>4.5.12</version>
         </dependency>
 
 

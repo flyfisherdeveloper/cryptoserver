@@ -1,12 +1,19 @@
 package com.scanner.cryptoserver.exchange.binance.dto;
 
+import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapMap;
 import lombok.Data;
+
+import java.text.DecimalFormat;
+import java.text.NumberFormat;
 
 @Data
 public class CoinDataFor24Hr {
     private byte[] icon;
+    //symbol of the coin, which includes the market (quote) such as LTCUSD, or BTCUSDT
     private String symbol;
+    //the coin such as BTC, or ETH
     private String coin;
+    private Double marketCap = 0.0;
     private String currency;
     private Double priceChange;
     private Double priceChangePercent;
@@ -26,5 +33,19 @@ public class CoinDataFor24Hr {
         //then that link won't work
         String newStr = coin + "_" + currency;
         tradeLink = tradeUrl + newStr;
+    }
+
+    private Double getMarketCapFormattedValue(Double marketCap) {
+        NumberFormat nf = new DecimalFormat("##.##");
+        return Double.parseDouble(nf.format(marketCap));
+    }
+
+    public void addMarketCap(CoinMarketCapMap coinMarketCapInfo) {
+        //find the symbol (i.e. "BTC") in the coin market cap info, and get the market cap value from it and set it in the market cap field
+        coinMarketCapInfo.getData()
+                .stream()
+                .filter(c -> c.getSymbol().equals(getCoin()))
+                .findFirst()
+                .ifPresent(cap -> setMarketCap(getMarketCapFormattedValue(cap.getMarketCap())));
     }
 }

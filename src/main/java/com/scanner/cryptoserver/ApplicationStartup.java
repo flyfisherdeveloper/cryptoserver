@@ -1,24 +1,33 @@
 package com.scanner.cryptoserver;
 
+import com.scanner.cryptoserver.exchange.binance.dto.ExchangeInfo;
+import com.scanner.cryptoserver.exchange.binance.dto.Symbol;
 import com.scanner.cryptoserver.exchange.binance.service.AbstractBinanceExchangeService;
+import com.scanner.cryptoserver.exchange.coinmarketcap.CoinMarketCapService;
+import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapMap;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.context.event.ApplicationReadyEvent;
 import org.springframework.context.ApplicationListener;
 import org.springframework.stereotype.Component;
 
-import java.util.concurrent.CompletableFuture;
+import java.util.Set;
+import java.util.concurrent.*;
+import java.util.stream.Collectors;
 
 @Component
 public class ApplicationStartup implements ApplicationListener<ApplicationReadyEvent> {
     private static final Logger Log = LoggerFactory.getLogger(ApplicationStartup.class);
     private final AbstractBinanceExchangeService binanceService;
     private final AbstractBinanceExchangeService binanceUsaService;
+    private final CoinMarketCapService coinMarketCapService;
+    private ScheduledExecutorService scheduledService;
 
-    public ApplicationStartup(AbstractBinanceExchangeService binanceService, AbstractBinanceExchangeService binanceUsaService) {
+    public ApplicationStartup(AbstractBinanceExchangeService binanceService, AbstractBinanceExchangeService binanceUsaService, CoinMarketCapService coinMarketCapService) {
         super();
         this.binanceService = binanceService;
         this.binanceUsaService = binanceUsaService;
+        this.coinMarketCapService = coinMarketCapService;
     }
 
     /**
@@ -27,16 +36,49 @@ public class ApplicationStartup implements ApplicationListener<ApplicationReadyE
      */
     @Override
     public void onApplicationEvent(final ApplicationReadyEvent event) {
-        CompletableFuture<Void> future1 = CompletableFuture.runAsync(binanceService::getExchangeInfo);
-        CompletableFuture<Void> future2 = CompletableFuture.runAsync(binanceUsaService::getExchangeInfo);
-        CompletableFuture<Void> allCalls = CompletableFuture.allOf(future1, future2);
-        allCalls.thenRunAsync(() -> {
-        }).whenCompleteAsync((a, error) -> {
-            if (error == null) {
-                Log.info("Successfully completed retrieval of exchange info");
-            } else {
-                Log.error("Retrieval of exchange info error: {}", error.getMessage());
-            }
-        });
+        //Asynchronously get the exchange information on startup.
+        CompletableFuture<ExchangeInfo> futureBinance = CompletableFuture.supplyAsync(binanceService::getExchangeInfo);
+        CompletableFuture<ExchangeInfo> futureBinanceUsa = CompletableFuture.supplyAsync(binanceUsaService::getExchangeInfo);
+        CompletableFuture.allOf(futureBinance, futureBinanceUsa)
+                .thenApplyAsync(dummy -> {
+                    ExchangeInfo binanceInfo = futureBinance.join();
+                    ExchangeInfo binanceUsaInfo = futureBinanceUsa.join();
+
+                    Set<String> set = binanceInfo.getSymbols().stream().map(Symbol::getBaseAsset).collect(Collectors.toSet());
+                    Set<String> usaSet = binanceUsaInfo.getSymbols().stream().map(Symbol::getBaseAsset).collect(Collectors.toSet());
+                    set.addAll(usaSet);
+                    return set;
+                })
+                .whenCompleteAsync((coinSet, error) -> {
+                    //now get the market cap value for each coin
+                    CoinMarketCapMap coinMarketCapInfo = coinMarketCapService.getCoinMarketCapListing();
+
+                    //The binance api's do not return market cap info for each coin.
+                    //Therefore, the call to the coin market cap exchange will get the market cap for the coins.
+                    //Here, we set the binance exchange info market cap for each coin, retrieving it from the coin market cap info.
+                    try {
+                        futureBinance.get().getSymbols().forEach(symbol -> symbol.addMarketCap(coinMarketCapInfo));
+                        futureBinanceUsa.get().getSymbols().forEach(symbol -> symbol.addMarketCap(coinMarketCapInfo));
+                    } catch (InterruptedException | ExecutionException e) {
+                        Log.error("Could not access exchange future for adding market cap: {}", e.getMessage());
+                    }
+                    startCoinMarketCapScheduler();
+                })
+                .whenCompleteAsync((a, error) -> {
+                    if (error == null) {
+                        Log.info("Successfully completed retrieval of exchange info");
+                    } else {
+                        Log.error("Retrieval of exchange info error: {}", error.getMessage());
+                    }
+                });
+    }
+
+    //Run a scheduler to update the 24-hour coin market cap information.
+    private void startCoinMarketCapScheduler() {
+        Log.debug("Starting scheduler executor for Coin Market Cap exchange");
+        scheduledService = Executors.newScheduledThreadPool(1);
+        Runnable command = coinMarketCapService::getCoinMarketCapListing;
+        //run every day - add a second to be sure we don't overuse quota on Coin Market Cap since that api keeps track of quota by the day
+        scheduledService.scheduleAtFixedRate(command, 86401, 86401, TimeUnit.SECONDS);
     }
 }

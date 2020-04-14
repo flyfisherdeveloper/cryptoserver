@@ -1,6 +1,6 @@
 package com.scanner.cryptoserver.exchange.binance.service;
 
-import org.springframework.cache.CacheManager;
+import com.scanner.cryptoserver.util.CacheUtil;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestOperations;
 
@@ -14,9 +14,10 @@ public class BinanceUsaExchangeService extends AbstractBinanceExchangeService {
     private int tickerCounter = 0;
     private ScheduledExecutorService scheduledService;
 
-    public BinanceUsaExchangeService(RestOperations restTemplate, CacheManager cacheManager, BinanceUsaUrlExtractor urlExtractor) {
-        super(restTemplate, cacheManager);
+    public BinanceUsaExchangeService(RestOperations restTemplate, BinanceUsaUrlExtractor urlExtractor, CacheUtil cacheUtil) {
+        super(restTemplate, cacheUtil);
         this.urlExtractor = urlExtractor;
+        cacheUtil.addExchangeName(getExchangeName());
     }
 
     @Override
@@ -25,7 +26,7 @@ public class BinanceUsaExchangeService extends AbstractBinanceExchangeService {
     }
 
     @Override
-    protected String getExchangeName() {
+    public String getExchangeName() {
         return EXCHANGE_NAME;
     }
 
