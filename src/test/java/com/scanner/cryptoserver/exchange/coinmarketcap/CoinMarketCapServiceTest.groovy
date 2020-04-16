@@ -32,8 +32,9 @@ class CoinMarketCapServiceTest extends Specification {
 
         when:
           cacheUtil.getExchangeNames() >> exchangeNameList
-          cacheUtil.retrieveFromCache(*_) >> exchangeInfo
-          apiService.getCoinMarketCapMap() >> map
+          cacheUtil.retrieveFromCache("ExchangeInfo", _, _) >> exchangeInfo
+          cacheUtil.retrieveFromCache("CoinMarketCap", _, _) >> map
+          //apiService.getCoinMarketCapMap() >> map
 
         then:
           def idSet = service.getIdSet()

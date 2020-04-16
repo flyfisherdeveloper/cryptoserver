@@ -6,6 +6,7 @@ import com.scanner.cryptoserver.exchange.binance.dto.ExchangeInfo
 import com.scanner.cryptoserver.exchange.binance.dto.Symbol
 import com.scanner.cryptoserver.exchange.binance.service.BinanceExchangeService
 import com.scanner.cryptoserver.exchange.binance.service.BinanceUrlExtractor
+import com.scanner.cryptoserver.exchange.coinmarketcap.CoinMarketCapService
 import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapData
 import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapMap
 import com.scanner.cryptoserver.util.CacheUtil
@@ -22,13 +23,15 @@ class BinanceExchangeServiceTest extends Specification {
     private BinanceExchangeService service
     private RestOperations restTemplate
     private BinanceUrlExtractor urlExtractor
+    private CoinMarketCapService coinMarketCapService
     private CacheUtil cacheUtil
 
     def setup() {
         restTemplate = Mock(RestTemplate)
         urlExtractor = Mock(BinanceUrlExtractor)
+        coinMarketCapService = Mock(CoinMarketCapService)
         cacheUtil = Mock(CacheUtil)
-        service = new BinanceExchangeService(restTemplate, urlExtractor, cacheUtil)
+        service = new BinanceExchangeService(restTemplate, urlExtractor, cacheUtil, coinMarketCapService)
     }
 
     def "test get24HrAllCoinTicker() when cache has data"() {
@@ -65,7 +68,8 @@ class BinanceExchangeServiceTest extends Specification {
           coinMarketCapMap.setData([data1, data2])
 
         when: "mocks are called"
-          cacheUtil.retrieveFromCache(*_) >>> [exchangeInfo, coinMarketCapMap]
+          cacheUtil.retrieveFromCache(*_) >> exchangeInfo
+          coinMarketCapService.getCoinMarketCapListing() >> coinMarketCapMap
 
         then:
           def markets = service.getMarkets()
@@ -122,7 +126,7 @@ class BinanceExchangeServiceTest extends Specification {
 
         when: "mocks are called"
           cacheUtil.retrieveFromCache(_, "binance-ExchangeInfo", _) >>> [exchangeInfo, exchangeInfo]
-          cacheUtil.retrieveFromCache(_, "MarketCap", _) >>> [coinMarketCapMap]
+          coinMarketCapService.getCoinMarketCapListing() >> coinMarketCapMap
           restTemplate.getForEntity(*_,) >>> [linkedHashMapResponse, exchangeInfoResponse]
 
         then: "the service is called"
