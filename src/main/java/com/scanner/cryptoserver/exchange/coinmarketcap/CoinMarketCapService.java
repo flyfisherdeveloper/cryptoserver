@@ -22,7 +22,9 @@ import java.util.stream.Collectors;
 @Service
 public class CoinMarketCapService {
     private static final Logger Log = LoggerFactory.getLogger(CoinMarketCapData.class);
-    private static final String MARKET_CAP = "MarketCap";
+    private static final String MARKET_CAP_MAP = "MarketCap";
+    private static final String COIN_MARKET_CAP = "CoinMarketCap";
+    private static final String LISTING = "Listing";
     private static final String EXCHANGE_INFO = "ExchangeInfo";
 
     private final CoinMarketCapApiService coinMarketCapApiService;
@@ -44,12 +46,15 @@ public class CoinMarketCapService {
         cacheUtil.getExchangeNames().forEach(exchange -> {
             String name = exchange + "-" + EXCHANGE_INFO;
             ExchangeInfo exchangeInfo = cacheUtil.retrieveFromCache(EXCHANGE_INFO, name, null);
-            coinSet.addAll(exchangeInfo.getSymbols().stream().map(Symbol::getBaseAsset).collect(Collectors.toSet()));
+            if (exchangeInfo != null) {
+                coinSet.addAll(exchangeInfo.getSymbols().stream().map(Symbol::getBaseAsset).collect(Collectors.toSet()));
+            }
         });
-        CoinMarketCapMap map = coinMarketCapApiService.getCoinMarketCapMap();
+        Supplier<CoinMarketCapMap> supplier = coinMarketCapApiService::getCoinMarketCapMap;
+        CoinMarketCapMap coinMarketCap = cacheUtil.retrieveFromCache(COIN_MARKET_CAP, MARKET_CAP_MAP, supplier);
 
         //now get a set of ids for the coins in the exchanges
-        Function<String, Integer> findCoinId = (coin) -> map.getData()
+        Function<String, Integer> findCoinId = (coin) -> coinMarketCap.getData()
                 .stream()
                 .filter(c -> c.getSymbol().equals(coin))
                 .map(CoinMarketCapData::getId).findFirst().orElse(1);
@@ -76,7 +81,7 @@ public class CoinMarketCapService {
             coinMarketCapMap.setData(data);
             return coinMarketCapMap;
         };
-        CoinMarketCapMap coinMarketCap = cacheUtil.retrieveFromCache(EXCHANGE_INFO, MARKET_CAP, marketCapSupplier);
+        CoinMarketCapMap coinMarketCap = cacheUtil.retrieveFromCache(COIN_MARKET_CAP, LISTING, marketCapSupplier);
         return coinMarketCap;
     }
 

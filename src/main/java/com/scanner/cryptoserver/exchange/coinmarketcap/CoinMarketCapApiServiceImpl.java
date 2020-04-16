@@ -101,6 +101,7 @@ public class CoinMarketCapApiServiceImpl implements CoinMarketCapApiService {
         request.setHeader(HttpHeaders.ACCEPT, "application/json");
         request.addHeader("X-CMC_PRO_API_KEY", getKey());
 
+        Log.info("Calling coin market cap api: {}", uri);
         try (CloseableHttpResponse response = client.execute(request)) {
             HttpEntity entity = response.getEntity();
             responseContent = EntityUtils.toString(entity);

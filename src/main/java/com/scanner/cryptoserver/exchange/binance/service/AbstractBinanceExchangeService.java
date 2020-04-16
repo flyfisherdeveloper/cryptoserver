@@ -4,6 +4,7 @@ import com.scanner.cryptoserver.exchange.binance.dto.CoinDataFor24Hr;
 import com.scanner.cryptoserver.exchange.binance.dto.CoinTicker;
 import com.scanner.cryptoserver.exchange.binance.dto.ExchangeInfo;
 import com.scanner.cryptoserver.exchange.binance.dto.Symbol;
+import com.scanner.cryptoserver.exchange.coinmarketcap.CoinMarketCapService;
 import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapMap;
 import com.scanner.cryptoserver.util.CacheUtil;
 import com.scanner.cryptoserver.util.IconExtractor;
@@ -38,10 +39,12 @@ public abstract class AbstractBinanceExchangeService {
     private static final List<String> nonUsaMarkets = Arrays.asList("NGN", "RUB", "TRY", "EUR");
 
     private final RestOperations restTemplate;
+    private final CoinMarketCapService coinMarketCapService;
     private final CacheUtil cacheUtil;
 
-    public AbstractBinanceExchangeService(RestOperations restTemplate, CacheUtil cacheUtil) {
+    public AbstractBinanceExchangeService(RestOperations restTemplate, CoinMarketCapService coinMarketCapService, CacheUtil cacheUtil) {
         this.restTemplate = restTemplate;
+        this.coinMarketCapService = coinMarketCapService;
         this.cacheUtil = cacheUtil;
     }
 
@@ -61,7 +64,7 @@ public abstract class AbstractBinanceExchangeService {
     }
 
     private void setMarketCapForExchangeInfo(ExchangeInfo exchangeInfo) {
-        CoinMarketCapMap coinMarketCap = cacheUtil.retrieveFromCache(EXCHANGE_INFO, "MarketCap", null);
+        CoinMarketCapMap coinMarketCap = coinMarketCapService.getCoinMarketCapListing();
         if (coinMarketCap != null) {
             //If the coin market cap data exists, then update each symbol with the market cap value found in the maket cap data.
             exchangeInfo.getSymbols().forEach(symbol -> symbol.addMarketCap(coinMarketCap));
@@ -69,7 +72,8 @@ public abstract class AbstractBinanceExchangeService {
     }
 
     private void setMarketCapFor24HrData(List<CoinDataFor24Hr> data) {
-        CoinMarketCapMap coinMarketCap = cacheUtil.retrieveFromCache(EXCHANGE_INFO, "MarketCap", null);
+        CoinMarketCapMap coinMarketCap = coinMarketCapService.getCoinMarketCapListing();
+        //If the coin market cap data exists, then update each symbol with the market cap value found in the maket cap data.
         if (coinMarketCap != null) {
             data.forEach(d -> d.addMarketCap(coinMarketCap));
         }
@@ -82,11 +86,22 @@ public abstract class AbstractBinanceExchangeService {
      * @return The exchange information.
      */
     public ExchangeInfo getExchangeInfo() {
+        ExchangeInfo exchangeInfo = getExchangeInfoWithoutMarketCap();
+        setMarketCapForExchangeInfo(exchangeInfo);
+        return exchangeInfo;
+    }
+
+    /**
+     * Get exchange information. Gets the information out of the cache if in there.
+     * Does NOT make a call to supply the market cap info.
+     *
+     * @return The exchange information.
+     */
+    public ExchangeInfo getExchangeInfoWithoutMarketCap() {
         ExchangeInfo exchangeInfo = retrieveExchangeInfoFromCache();
         //remove currency markets that are not USA-based, such as the Euro ("EUR")
         exchangeInfo.getSymbols().removeIf(s -> nonUsaMarkets.contains(s.getQuoteAsset()));
         //Attempt to retrieve the latest coin market cap data to get the market cap for each coin.
-        setMarketCapForExchangeInfo(exchangeInfo);
         return exchangeInfo;
     }
 

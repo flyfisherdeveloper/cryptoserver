@@ -12,7 +12,8 @@ import org.springframework.context.ApplicationListener;
 import org.springframework.stereotype.Component;
 
 import java.util.Set;
-import java.util.concurrent.*;
+import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.ExecutionException;
 import java.util.stream.Collectors;
 
 @Component
@@ -21,7 +22,6 @@ public class ApplicationStartup implements ApplicationListener<ApplicationReadyE
     private final AbstractBinanceExchangeService binanceService;
     private final AbstractBinanceExchangeService binanceUsaService;
     private final CoinMarketCapService coinMarketCapService;
-    private ScheduledExecutorService scheduledService;
 
     public ApplicationStartup(AbstractBinanceExchangeService binanceService, AbstractBinanceExchangeService binanceUsaService, CoinMarketCapService coinMarketCapService) {
         super();
@@ -37,8 +37,10 @@ public class ApplicationStartup implements ApplicationListener<ApplicationReadyE
     @Override
     public void onApplicationEvent(final ApplicationReadyEvent event) {
         //Asynchronously get the exchange information on startup.
-        CompletableFuture<ExchangeInfo> futureBinance = CompletableFuture.supplyAsync(binanceService::getExchangeInfo);
-        CompletableFuture<ExchangeInfo> futureBinanceUsa = CompletableFuture.supplyAsync(binanceUsaService::getExchangeInfo);
+        //Do not include the calls that fill the market cap, since that data hasn't been retrieved yet,
+        //and will be retrieved when the threads finish retrieving the exchange info.
+        CompletableFuture<ExchangeInfo> futureBinance = CompletableFuture.supplyAsync(binanceService::getExchangeInfoWithoutMarketCap);
+        CompletableFuture<ExchangeInfo> futureBinanceUsa = CompletableFuture.supplyAsync(binanceUsaService::getExchangeInfoWithoutMarketCap);
         CompletableFuture.allOf(futureBinance, futureBinanceUsa)
                 .thenApplyAsync(dummy -> {
                     ExchangeInfo binanceInfo = futureBinance.join();
@@ -49,12 +51,11 @@ public class ApplicationStartup implements ApplicationListener<ApplicationReadyE
                     set.addAll(usaSet);
                     return set;
                 })
-                .whenCompleteAsync((coinSet, error) -> {
+                .whenComplete((coinSet, error) -> {
                     //now get the market cap value for each coin
                     CoinMarketCapMap coinMarketCapInfo = coinMarketCapService.getCoinMarketCapListing();
 
-                    //The binance api's do not return market cap info for each coin.
-                    //Therefore, the call to the coin market cap exchange will get the market cap for the coins.
+                    //Now fill the market cap for each coin on the exchanges.
                     //Here, we set the binance exchange info market cap for each coin, retrieving it from the coin market cap info.
                     try {
                         futureBinance.get().getSymbols().forEach(symbol -> symbol.addMarketCap(coinMarketCapInfo));
@@ -62,23 +63,13 @@ public class ApplicationStartup implements ApplicationListener<ApplicationReadyE
                     } catch (InterruptedException | ExecutionException e) {
                         Log.error("Could not access exchange future for adding market cap: {}", e.getMessage());
                     }
-                    startCoinMarketCapScheduler();
                 })
-                .whenCompleteAsync((a, error) -> {
+                .whenComplete((a, error) -> {
                     if (error == null) {
                         Log.info("Successfully completed retrieval of exchange info");
                     } else {
                         Log.error("Retrieval of exchange info error: {}", error.getMessage());
                     }
                 });
-    }
-
-    //Run a scheduler to update the 24-hour coin market cap information.
-    private void startCoinMarketCapScheduler() {
-        Log.debug("Starting scheduler executor for Coin Market Cap exchange");
-        scheduledService = Executors.newScheduledThreadPool(1);
-        Runnable command = coinMarketCapService::getCoinMarketCapListing;
-        //run every day - add a second to be sure we don't overuse quota on Coin Market Cap since that api keeps track of quota by the day
-        scheduledService.scheduleAtFixedRate(command, 86401, 86401, TimeUnit.SECONDS);
     }
 }

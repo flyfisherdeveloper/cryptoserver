@@ -67,6 +67,15 @@ public class CachingConfig extends CachingConfigurerSupport {
                             .asMap(),
                             false);
                 }
+                if (name.contains("CoinMarketCap")) {
+                    return new ConcurrentMapCache(name, CacheBuilder.newBuilder()
+                            //Keep the market cap listing for two hours
+                            .expireAfterWrite(2, TimeUnit.HOURS)
+                            .maximumSize(5)
+                            .build()
+                            .asMap(),
+                            false);
+                }
                 return null;
             }
         };
