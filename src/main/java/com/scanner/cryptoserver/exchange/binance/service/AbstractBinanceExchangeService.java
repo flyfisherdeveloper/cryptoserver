@@ -519,7 +519,10 @@ public abstract class AbstractBinanceExchangeService {
         //updated 24-hour data every minute
         //We stop at 15 minutes just to prevent too much data from being processed (we are trying to stay in the AWS free zone!),
         // and we are trying to not go over quota on extracting exchange data.
-        startUpdates();
+
+        //April 15, 2020: todo: this scheduler is possibly calling the api too many times
+        //take it out for now in order to investigate later
+        //startUpdates();
         return list;
     }
 

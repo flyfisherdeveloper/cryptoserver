@@ -55,7 +55,7 @@ class BinanceExchangeServiceTest extends Specification {
     @Unroll
     def "test getMarkets() returns expected markets"() {
         given:
-          //note that the market cap is not being set in the symbols here, but is being verified in the "then" section:
+          //note that the market cap is not being set in the symbols here, but is being verified in the "expect" section:
           //the service will set the symbol market cap based on what is returned in the coinMarketCapMap object in the "when" section
           def symbol1 = new Symbol(baseAsset: coin1, quoteAsset: market1)
           def symbol2 = new Symbol(baseAsset: coin2, quoteAsset: market2)
