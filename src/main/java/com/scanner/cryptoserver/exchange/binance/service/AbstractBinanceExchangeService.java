@@ -34,7 +34,8 @@ public abstract class AbstractBinanceExchangeService {
     private static final String EXCHANGE_INFO = "ExchangeInfo";
     private static final String COIN_CACHE = "CoinCache";
     private static final String ICON_CACHE = "IconCache";
-    private static final int ALL_24_HOUR_MAX_COUNT = 15;
+    private static final int ALL_24_HOUR_MAX_COUNT = 6;
+    private static final int ALL_24_HOUR_DELAY = 151;
     private static final String TRADING = "TRADING";
     private static final List<String> nonUsaMarkets = Arrays.asList("NGN", "RUB", "TRY", "EUR");
 
@@ -520,9 +521,7 @@ public abstract class AbstractBinanceExchangeService {
         //We stop at 15 minutes just to prevent too much data from being processed (we are trying to stay in the AWS free zone!),
         // and we are trying to not go over quota on extracting exchange data.
 
-        //April 15, 2020: todo: this scheduler is possibly calling the api too many times
-        //take it out for now in order to investigate later
-        //startUpdates();
+        startUpdates();
         return list;
     }
 
@@ -530,6 +529,8 @@ public abstract class AbstractBinanceExchangeService {
     private void runScheduled24HrAllCoinTicker() {
         incrementAll24HourTickerCounter();
         String cacheName = getExchangeName() + "-" + ALL_24_HOUR_TICKER;
+        //the number of times it is run * the delay interval is about 15 minutes
+        //so, after 15 minutes, the process will be shutdown
         if (getAll24HourTickerCount() >= ALL_24_HOUR_MAX_COUNT) {
             Log.debug("Shutting down scheduler executor for {} exchange", getExchangeName());
             cacheUtil.evict(cacheName, ALL_TICKERS);
@@ -541,6 +542,8 @@ public abstract class AbstractBinanceExchangeService {
     }
 
     //Run a scheduler to update the 24-hour exchange coin ticker.
+    //The purpose of this is to extract data every 2.5 minutes, and save it in the cache.
+    //This goes for 15 minutes - we would do longer, but the API's severely limit how much data can be extracted.
     private void startUpdates() {
         ScheduledExecutorService scheduledService = getScheduledService();
         if (scheduledService != null) {
@@ -551,8 +554,8 @@ public abstract class AbstractBinanceExchangeService {
         //todo: should the separate exchanges determine this? If so, it would encapsulate better.
         scheduledService = Executors.newScheduledThreadPool(1);
         Runnable command = this::runScheduled24HrAllCoinTicker;
-        //run every minute - add a second to be sure since the binance api monitors traffic by the minute
-        scheduledService.scheduleAtFixedRate(command, 61, 61, TimeUnit.SECONDS);
+        //run every 2.5 minutes - add a second to be sure since the binance api monitors traffic by the minute
+        scheduledService.scheduleAtFixedRate(command, ALL_24_HOUR_DELAY, ALL_24_HOUR_DELAY, TimeUnit.SECONDS);
         setScheduledService(scheduledService);
     }
 

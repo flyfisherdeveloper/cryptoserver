@@ -34,7 +34,7 @@ class BinanceExchangeServiceTest extends Specification {
         service = new BinanceExchangeService(restTemplate, urlExtractor, cacheUtil, coinMarketCapService)
     }
 
-    def "test get24HrAllCoinTicker() when cache has data"() {
+    def "test get24HrAllCoinTicker when cache has data"() {
         given:
           def coinData = new CoinDataFor24Hr()
           def symbol = "BTCUSD"
@@ -53,7 +53,7 @@ class BinanceExchangeServiceTest extends Specification {
     }
 
     @Unroll
-    def "test getMarkets() returns expected markets"() {
+    def "test getMarkets returns expected markets"() {
         given:
           //note that the market cap is not being set in the symbols here, but is being verified in the "expect" section:
           //the service will set the symbol market cap based on what is returned in the coinMarketCapMap object in the "when" section
