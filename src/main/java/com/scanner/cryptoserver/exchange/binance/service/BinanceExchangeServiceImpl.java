@@ -7,15 +7,15 @@ import org.springframework.web.client.RestOperations;
 
 import java.util.concurrent.ScheduledExecutorService;
 
-@Service(value = "binanceUsaService")
-public class BinanceUsaExchangeService extends AbstractBinanceExchangeService {
-    private static final String EXCHANGE_NAME = "binanceusa";
+@Service(value = "binanceService")
+public class BinanceExchangeServiceImpl extends AbstractBinanceExchangeService {
+    private static final String EXCHANGE_NAME = "binance";
 
-    private final BinanceUsaUrlExtractor urlExtractor;
+    private final BinanceUrlExtractor urlExtractor;
     private int tickerCounter = 0;
     private ScheduledExecutorService scheduledService;
 
-    public BinanceUsaExchangeService(RestOperations restTemplate, BinanceUsaUrlExtractor urlExtractor, CacheUtil cacheUtil, CoinMarketCapService coinMarketCapService) {
+    public BinanceExchangeServiceImpl(RestOperations restTemplate, BinanceUrlExtractor urlExtractor, CacheUtil cacheUtil, CoinMarketCapService coinMarketCapService) {
         super(restTemplate, coinMarketCapService, cacheUtil);
         this.urlExtractor = urlExtractor;
         cacheUtil.addExchangeName(getExchangeName());
@@ -33,7 +33,7 @@ public class BinanceUsaExchangeService extends AbstractBinanceExchangeService {
 
     @Override
     protected boolean getAdd24HrVolume() {
-        return true;
+        return false;
     }
 
     @Override

@@ -5,7 +5,6 @@ import com.scanner.cryptoserver.exchange.binance.dto.CoinTicker;
 import com.scanner.cryptoserver.exchange.binance.dto.ExchangeInfo;
 import com.scanner.cryptoserver.exchange.binance.dto.Symbol;
 import com.scanner.cryptoserver.exchange.binance.service.BinanceExchangeService;
-import com.scanner.cryptoserver.util.SandboxUtil;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
@@ -14,27 +13,23 @@ import java.util.List;
 @RestController
 //@CrossOrigin(origins = "https://develop.d2vswqrfiywrsc.amplifyapp.com")
 @CrossOrigin(origins = "http://localhost:3000")
-@RequestMapping("api/v1/binance")
-public class BinanceExchangeController {
-    private final BinanceExchangeService binanceService;
+@RequestMapping("sandbox-api/v1/binanceusa")
+public class SandboxBinanceUsaExchangeController {
+    private final BinanceExchangeService sandboxBinanceUsaService;
 
-    public BinanceExchangeController(BinanceExchangeService binanceService) {
-        this.binanceService = binanceService;
+    public SandboxBinanceUsaExchangeController(BinanceExchangeService sandboxBinanceUsaService) {
+        this.sandboxBinanceUsaService = sandboxBinanceUsaService;
     }
 
     @GetMapping(value = "/info", produces = MediaType.APPLICATION_JSON_VALUE)
     public List<Symbol> getExchangeInfo() {
-        ExchangeInfo info = binanceService.getExchangeInfo();
-        SandboxUtil sandboxUtil = new SandboxUtil();
-        sandboxUtil.createMock("binance-exchangeInfo", info);
+        ExchangeInfo info = sandboxBinanceUsaService.getExchangeInfo();
         return info.getSymbols();
     }
 
     @GetMapping(value = "/24HourTicker/{symbol}", produces = MediaType.APPLICATION_JSON_VALUE)
     public CoinDataFor24Hr get24HourTicker(@PathVariable String symbol) {
-        SandboxUtil sandboxUtil = new SandboxUtil();
-        CoinDataFor24Hr data = binanceService.call24HrCoinTicker(symbol);
-        sandboxUtil.createMock("binance-24HourTicker" + "-" + symbol, data);
+        CoinDataFor24Hr data = sandboxBinanceUsaService.call24HrCoinTicker(symbol);
         return data;
     }
 
@@ -46,17 +41,13 @@ public class BinanceExchangeController {
      */
     @GetMapping(value = "/24HourTicker", produces = MediaType.APPLICATION_JSON_VALUE)
     public List<CoinDataFor24Hr> getAll24HourTicker() {
-        List<CoinDataFor24Hr> data = binanceService.get24HrAllCoinTicker();
-        SandboxUtil sandboxUtil = new SandboxUtil();
-        sandboxUtil.createMock("binance-24HourTicker", data);
+        List<CoinDataFor24Hr> data = sandboxBinanceUsaService.get24HrAllCoinTicker();
         return data;
     }
 
     @GetMapping(value = "/DayTicker/{symbol}/{interval}/{daysOrMonths}", produces = MediaType.APPLICATION_JSON_VALUE)
     public List<CoinTicker> getDayTicker(@PathVariable String symbol, @PathVariable String interval, @PathVariable String daysOrMonths) {
-        List<CoinTicker> data = binanceService.getTickerData(symbol, interval, daysOrMonths);
-        SandboxUtil sandboxUtil = new SandboxUtil();
-        sandboxUtil.createMock("binance-dayTicker" + "-" + symbol + "-" + interval + "-" + daysOrMonths, data);
+        List<CoinTicker> data = sandboxBinanceUsaService.getTickerData(symbol, interval, daysOrMonths);
         return data;
     }
 }

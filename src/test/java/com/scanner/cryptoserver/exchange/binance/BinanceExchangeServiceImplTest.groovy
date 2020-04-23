@@ -4,7 +4,7 @@ import com.scanner.cryptoserver.exchange.binance.dto.CoinDataFor24Hr
 import com.scanner.cryptoserver.exchange.binance.dto.CoinTicker
 import com.scanner.cryptoserver.exchange.binance.dto.ExchangeInfo
 import com.scanner.cryptoserver.exchange.binance.dto.Symbol
-import com.scanner.cryptoserver.exchange.binance.service.BinanceExchangeService
+import com.scanner.cryptoserver.exchange.binance.service.BinanceExchangeServiceImpl
 import com.scanner.cryptoserver.exchange.binance.service.BinanceUrlExtractor
 import com.scanner.cryptoserver.exchange.coinmarketcap.CoinMarketCapService
 import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapData
@@ -19,8 +19,8 @@ import spock.lang.Unroll
 import java.time.LocalDateTime
 import java.time.ZoneOffset
 
-class BinanceExchangeServiceTest extends Specification {
-    private BinanceExchangeService service
+class BinanceExchangeServiceImplTest extends Specification {
+    private BinanceExchangeServiceImpl service
     private RestOperations restTemplate
     private BinanceUrlExtractor urlExtractor
     private CoinMarketCapService coinMarketCapService
@@ -31,7 +31,7 @@ class BinanceExchangeServiceTest extends Specification {
         urlExtractor = Mock(BinanceUrlExtractor)
         coinMarketCapService = Mock(CoinMarketCapService)
         cacheUtil = Mock(CacheUtil)
-        service = new BinanceExchangeService(restTemplate, urlExtractor, cacheUtil, coinMarketCapService)
+        service = new BinanceExchangeServiceImpl(restTemplate, urlExtractor, cacheUtil, coinMarketCapService)
     }
 
     def "test get24HrAllCoinTicker when cache has data"() {

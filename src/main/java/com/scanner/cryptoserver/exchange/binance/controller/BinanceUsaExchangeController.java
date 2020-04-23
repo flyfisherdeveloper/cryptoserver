@@ -4,8 +4,8 @@ import com.scanner.cryptoserver.exchange.binance.dto.CoinDataFor24Hr;
 import com.scanner.cryptoserver.exchange.binance.dto.CoinTicker;
 import com.scanner.cryptoserver.exchange.binance.dto.ExchangeInfo;
 import com.scanner.cryptoserver.exchange.binance.dto.Symbol;
-import com.scanner.cryptoserver.exchange.binance.service.AbstractBinanceExchangeService;
-import com.scanner.cryptoserver.util.MockUtil;
+import com.scanner.cryptoserver.exchange.binance.service.BinanceExchangeService;
+import com.scanner.cryptoserver.util.SandboxUtil;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
@@ -16,25 +16,25 @@ import java.util.List;
 @CrossOrigin(origins = "http://localhost:3000")
 @RequestMapping("api/v1/binanceusa")
 public class BinanceUsaExchangeController {
-    private final AbstractBinanceExchangeService binanceUsaService;
+    private final BinanceExchangeService binanceUsaService;
 
-    public BinanceUsaExchangeController(AbstractBinanceExchangeService binanceUsaService) {
+    public BinanceUsaExchangeController(BinanceExchangeService binanceUsaService) {
         this.binanceUsaService = binanceUsaService;
     }
 
     @GetMapping(value = "/info", produces = MediaType.APPLICATION_JSON_VALUE)
     public List<Symbol> getExchangeInfo() {
         ExchangeInfo info = binanceUsaService.getExchangeInfo();
-        MockUtil mockUtil = new MockUtil();
-        mockUtil.createMock( "binanceusa-exchangeInfo", info);
+        SandboxUtil sandboxUtil = new SandboxUtil();
+        sandboxUtil.createMock("binanceusa-exchangeInfo", info);
         return info.getSymbols();
     }
 
     @GetMapping(value = "/24HourTicker/{symbol}", produces = MediaType.APPLICATION_JSON_VALUE)
     public CoinDataFor24Hr get24HourTicker(@PathVariable String symbol) {
-        MockUtil mockUtil = new MockUtil();
+        SandboxUtil sandboxUtil = new SandboxUtil();
         CoinDataFor24Hr data = binanceUsaService.call24HrCoinTicker(symbol);
-        mockUtil.createMock( "binanceusa-24HourTicker" + "-" + symbol, data);
+        sandboxUtil.createMock("binanceusa-24HourTicker" + "-" + symbol, data);
         return data;
     }
 
@@ -47,16 +47,16 @@ public class BinanceUsaExchangeController {
     @GetMapping(value = "/24HourTicker", produces = MediaType.APPLICATION_JSON_VALUE)
     public List<CoinDataFor24Hr> getAll24HourTicker() {
         List<CoinDataFor24Hr> data = binanceUsaService.get24HrAllCoinTicker();
-        MockUtil mockUtil = new MockUtil();
-        mockUtil.createMock( "binanceusa-24HourTicker", data);
+        SandboxUtil sandboxUtil = new SandboxUtil();
+        sandboxUtil.createMock("binanceusa-24HourTicker", data);
         return data;
     }
 
     @GetMapping(value = "/DayTicker/{symbol}/{interval}/{daysOrMonths}", produces = MediaType.APPLICATION_JSON_VALUE)
     public List<CoinTicker> getDayTicker(@PathVariable String symbol, @PathVariable String interval, @PathVariable String daysOrMonths) {
         List<CoinTicker> data = binanceUsaService.getTickerData(symbol, interval, daysOrMonths);
-        MockUtil mockUtil = new MockUtil();
-        mockUtil.createMock("binanceusa-dayTicker" + "-" + symbol + "-" + interval + "-" + daysOrMonths, data);
+        SandboxUtil sandboxUtil = new SandboxUtil();
+        sandboxUtil.createMock("binanceusa-dayTicker" + "-" + symbol + "-" + interval + "-" + daysOrMonths, data);
         return data;
     }
 }

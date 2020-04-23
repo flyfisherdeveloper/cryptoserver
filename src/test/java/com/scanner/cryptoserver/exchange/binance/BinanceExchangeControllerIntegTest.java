@@ -7,7 +7,7 @@ import com.scanner.cryptoserver.exchange.binance.controller.BinanceExchangeContr
 import com.scanner.cryptoserver.exchange.binance.dto.CoinDataFor24Hr;
 import com.scanner.cryptoserver.exchange.binance.dto.CoinTicker;
 import com.scanner.cryptoserver.exchange.binance.dto.Symbol;
-import com.scanner.cryptoserver.exchange.binance.service.BinanceExchangeService;
+import com.scanner.cryptoserver.exchange.binance.service.BinanceExchangeServiceImpl;
 import com.scanner.cryptoserver.exchange.binance.service.BinanceUrlExtractor;
 import com.scanner.cryptoserver.exchange.coinmarketcap.CoinMarketCapApiServiceImpl;
 import com.scanner.cryptoserver.exchange.coinmarketcap.CoinMarketCapService;
@@ -31,7 +31,7 @@ import static org.junit.jupiter.api.Assertions.*;
 @AutoConfigureMockMvc
 //Here, we load only the components needed - this prevents a full Spring Boot test from running, as only certain components are needed.
 //For example, startup initialization threads are not needed, etc.
-@ContextConfiguration(classes = {BinanceExchangeController.class, BinanceExchangeService.class, BinanceUrlExtractor.class,
+@ContextConfiguration(classes = {BinanceExchangeController.class, BinanceExchangeServiceImpl.class, BinanceUrlExtractor.class,
         RestTemplate.class, CachingConfig.class, CacheUtilImpl.class, CoinMarketCapApiServiceImpl.class, CoinMarketCapService.class})
 @WebMvcTest
 class BinanceExchangeControllerIntegTest {

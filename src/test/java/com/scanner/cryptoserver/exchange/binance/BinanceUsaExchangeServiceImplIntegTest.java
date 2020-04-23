@@ -20,7 +20,7 @@ import java.util.stream.Collectors;
 import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
-class BinanceUsaExchangeServiceIntegTest {
+class BinanceUsaExchangeServiceImplIntegTest {
     @Autowired
     private AbstractBinanceExchangeService binanceUsaService;
 

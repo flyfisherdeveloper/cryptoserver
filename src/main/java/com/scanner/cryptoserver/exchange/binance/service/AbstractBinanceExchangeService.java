@@ -8,7 +8,7 @@ import com.scanner.cryptoserver.exchange.coinmarketcap.CoinMarketCapService;
 import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapMap;
 import com.scanner.cryptoserver.util.CacheUtil;
 import com.scanner.cryptoserver.util.IconExtractor;
-import com.scanner.cryptoserver.util.MockUtil;
+import com.scanner.cryptoserver.util.SandboxUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.ResponseEntity;
@@ -28,7 +28,7 @@ import java.util.stream.Collectors;
  * This service makes api calls for Binance exchanges: both BinanceUSA and Binance.
  * Each exchange has its separate URL, which are encapsulated in the BinanceService classes for the respective exchange.
  */
-public abstract class AbstractBinanceExchangeService {
+public abstract class AbstractBinanceExchangeService implements BinanceExchangeService {
     private static final Logger Log = LoggerFactory.getLogger(AbstractBinanceExchangeService.class);
     private static final String ALL_24_HOUR_TICKER = "All24HourTicker";
     private static final String ALL_TICKERS = "AllTickers";
@@ -59,9 +59,9 @@ public abstract class AbstractBinanceExchangeService {
         String name = getExchangeName() + "-" + EXCHANGE_INFO;
         Supplier<ExchangeInfo> exchangeInfoSupplier = () -> {
             ResponseEntity<ExchangeInfo> response = restTemplate.getForEntity(getUrlExtractor().getExchangeInfoUrl(), ExchangeInfo.class);
-            MockUtil mockUtil = new MockUtil();
+            SandboxUtil sandboxUtil = new SandboxUtil();
             ExchangeInfo info = response.getBody();
-            mockUtil.createMock(getExchangeName() + "-exchangeInfo", info);
+            sandboxUtil.createMock(getExchangeName() + "-exchangeInfo", info);
             return info;
         };
         ExchangeInfo exchangeInfo = cacheUtil.retrieveFromCache(EXCHANGE_INFO, name, exchangeInfoSupplier);
