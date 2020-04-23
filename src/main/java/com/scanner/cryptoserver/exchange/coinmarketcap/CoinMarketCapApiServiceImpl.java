@@ -1,6 +1,7 @@
 package com.scanner.cryptoserver.exchange.coinmarketcap;
 
 import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapMap;
+import com.scanner.cryptoserver.util.MockUtil;
 import org.apache.http.HttpEntity;
 import org.apache.http.NameValuePair;
 import org.apache.http.client.methods.CloseableHttpResponse;
@@ -57,13 +58,19 @@ public class CoinMarketCapApiServiceImpl implements CoinMarketCapApiService {
         Log.info("Calling coin market cap map: {}", exchangeMapUrl);
         //this api call is simple enough that a normal Spring Rest Operations call can be made, rather than the more complex Http calls
         ResponseEntity<CoinMarketCapMap> result = restTemplate.exchange(exchangeMapUrl, HttpMethod.GET, requestEntity, CoinMarketCapMap.class, params);
-        return result.getBody();
+        MockUtil mockUtil = new MockUtil();
+        CoinMarketCapMap map = result.getBody();
+        mockUtil.createMock("coinmarketcap-map", map);
+        return map;
     }
 
     @Override
     public String makeExchangeInfoApiCall(List<NameValuePair> paratmers) {
         try {
-            return makeAPICall(exchangeInfoUrl, paratmers);
+            MockUtil mockUtil = new MockUtil();
+            String value = makeAPICall(exchangeInfoUrl, paratmers);
+            mockUtil.createMock("coinmarketcap-exchangeinfo", value);
+            return value;
         } catch (URISyntaxException | IOException e) {
             Log.error("Cannot make coin market cap exchange info api call: {}", e.getMessage());
         }

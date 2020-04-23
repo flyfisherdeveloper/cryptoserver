@@ -8,6 +8,7 @@ import com.scanner.cryptoserver.exchange.binance.dto.Symbol;
 import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapData;
 import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapMap;
 import com.scanner.cryptoserver.util.CacheUtil;
+import com.scanner.cryptoserver.util.MockUtil;
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
 import org.slf4j.Logger;
@@ -79,6 +80,8 @@ public class CoinMarketCapService {
             String json = coinMarketCapApiService.makeExchangeQuotesApiCall(parameters);
             List<CoinMarketCapData> data = parseJsonData(json, idSet);
             coinMarketCapMap.setData(data);
+            MockUtil mockUtil = new MockUtil();
+            mockUtil.createMock("coinmarketcap-exchangequotes", coinMarketCapMap);
             return coinMarketCapMap;
         };
         CoinMarketCapMap coinMarketCap = cacheUtil.retrieveFromCache(COIN_MARKET_CAP, LISTING, marketCapSupplier);
