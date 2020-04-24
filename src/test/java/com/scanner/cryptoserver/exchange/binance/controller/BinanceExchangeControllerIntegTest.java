@@ -1,4 +1,4 @@
-package com.scanner.cryptoserver.exchange.binance;
+package com.scanner.cryptoserver.exchange.binance.controller;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;

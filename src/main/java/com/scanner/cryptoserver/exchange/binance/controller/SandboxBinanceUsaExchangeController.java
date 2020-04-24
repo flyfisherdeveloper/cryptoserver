@@ -10,6 +10,14 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+/**
+ * The purpose of a Sandbox exchange is to return data for Binance USA but without
+ * calling the Binance USA exchange. This is done to avoid using Binance USA API quotas.
+ * For example, if the client is making lots of changes and the client doesn't need up-to-date data,
+ * then it would be wise to use the Sandbox data so that API calls are prevented.
+ * The data in the Sandbox is actual data from a past API call to Binance USA that is stored in files.
+ * The Sandbox data never changes - it is static.
+ */
 @RestController
 //@CrossOrigin(origins = "https://develop.d2vswqrfiywrsc.amplifyapp.com")
 @CrossOrigin(origins = "http://localhost:3000")

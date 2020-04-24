@@ -33,6 +33,7 @@ public class SandboxUtil {
     }
 
     private void writeToFile(String json, String fileName) {
+        //arbitrary path - the files will eventually get copied to the Resources folder
         Path path = Paths.get("C:\\dev\\mocks", fileName + ".txt");
         try {
             Files.write(path, json.getBytes(), StandardOpenOption.CREATE, StandardOpenOption.WRITE);
@@ -43,6 +44,7 @@ public class SandboxUtil {
 
     /**
      * Get the JSON from the sandbox file.
+     *
      * @param name the name of the sandbox file (without the .txt extension).
      * @return the JSON if the file can be read; return an empty string otherwise.
      */
