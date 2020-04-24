@@ -36,6 +36,12 @@ public class ApplicationStartup implements ApplicationListener<ApplicationReadyE
      */
     @Override
     public void onApplicationEvent(final ApplicationReadyEvent event) {
+        String[] args = event.getArgs();
+        if (args[0] != null && args[0].equals("sandbox")) {
+            //run in sandbox mode - do not call exchange info here
+            Log.info("Running Spring Boot applicatoin in Sandbox mode.");
+            return;
+        }
         //Asynchronously get the exchange information on startup.
         //Do not include the calls that fill the market cap, since that data hasn't been retrieved yet,
         //and will be retrieved when the threads finish retrieving the exchange info.

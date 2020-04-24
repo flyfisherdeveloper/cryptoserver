@@ -11,6 +11,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -53,9 +54,9 @@ public class SandboxBinanceUsaExchangeService implements BinanceExchangeService 
         try {
             list = objectMapper.readValue(json, itemType);
         } catch (JsonProcessingException e) {
-            Log.error("Error trying to parse Binance USA Sandbox data: {} error: {}", name, e.getMessage());
+            Log.error("Error trying to parse Binance USA Sandbox list data: {} error: {}", name, e.getMessage());
         }
-        return list;
+        return list == null ? new ArrayList<>() : list;
     }
 
     @Override

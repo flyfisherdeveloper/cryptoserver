@@ -1,8 +1,8 @@
 package com.scanner.cryptoserver.exchange.binance.service
 
-
 import com.scanner.cryptoserver.util.SandboxUtil
 import spock.lang.Specification
+import spock.lang.Unroll
 
 class SandboxBinanceUsaExchangeServiceTest extends Specification {
     private SandboxBinanceUsaExchangeService service
@@ -43,23 +43,31 @@ class SandboxBinanceUsaExchangeServiceTest extends Specification {
           assert zrxUsd.getCurrency() == "USD"
     }
 
+    @Unroll
     def "test getTickerData"() {
-        given:
-          def symbol = "BTCUSDT"
-
         when:
           def tickerList = service.getTickerData(symbol, "12h", "3d")
 
         then:
-          assert tickerList
-          assert tickerList.size() > 0
-          def ticker = tickerList.get(0)
-          assert ticker.getSymbol() == symbol
-          assert ticker.getOpenTime()
-          assert ticker.getCloseTime()
-          assert ticker.getOpen() != 0.0
-          assert ticker.getHigh() != 0.0
-          assert ticker.getLow() != 0.0
-          assert ticker.getVolume() != 0.0
+          if (exception) {
+              assert tickerList != null
+              assert tickerList.size() == 0
+          } else {
+              assert tickerList
+              assert tickerList.size() > 0
+              def ticker = tickerList.get(0)
+              assert ticker.getSymbol() == symbol
+              assert ticker.getOpenTime()
+              assert ticker.getCloseTime()
+              assert ticker.getOpen() != 0.0
+              assert ticker.getHigh() != 0.0
+              assert ticker.getLow() != 0.0
+              assert ticker.getVolume() != 0.0
+          }
+
+        where:
+          symbol     | exception
+          "BTCUSDT"  | false
+          "junkCoin" | true
     }
 }
