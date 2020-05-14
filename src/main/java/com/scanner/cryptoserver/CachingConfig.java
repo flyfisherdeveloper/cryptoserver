@@ -30,7 +30,7 @@ public class CachingConfig extends CachingConfigurerSupport {
                 //cache for coin pairs, such as BTCUSD
                 if (name.equals("CoinCache")) {
                     return new ConcurrentMapCache(name, CacheBuilder.newBuilder()
-                            .expireAfterWrite(61, TimeUnit.SECONDS)
+                            .expireAfterWrite(5, TimeUnit.MINUTES)
                             .maximumSize(1000)
                             .build()
                             .asMap(),
@@ -47,7 +47,7 @@ public class CachingConfig extends CachingConfigurerSupport {
                 //cache for list of all coins
                 if (name.contains("All24HourTicker")) {
                     return new ConcurrentMapCache(name, CacheBuilder.newBuilder()
-                            .expireAfterWrite(5, TimeUnit.MINUTES)
+                            .expireAfterWrite(15, TimeUnit.MINUTES)
                             //the maximum size number is rather arbitrary - the time is really the important issue
                             .maximumSize(5)
                             .build()

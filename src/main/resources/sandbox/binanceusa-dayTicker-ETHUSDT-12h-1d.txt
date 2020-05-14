@@ -1,0 +1,27 @@
+[ {
+  "symbol" : "ETHUSDT",
+  "openTime" : 1587600000000,
+  "openDate" : null,
+  "closeTime" : 1587643199999,
+  "closeDate" : null,
+  "open" : 183.09,
+  "high" : 186.88,
+  "low" : 178.41,
+  "close" : 183.45,
+  "volume" : 1185.87209,
+  "quoteAssetVolume" : 216982.555223,
+  "numberOfTrades" : 630
+}, {
+  "symbol" : "ETHUSDT",
+  "openTime" : 1587643200000,
+  "openDate" : null,
+  "closeTime" : 1587686399999,
+  "closeDate" : null,
+  "open" : 184.26,
+  "high" : 193.55,
+  "low" : 183.13,
+  "close" : 189.67,
+  "volume" : 2128.63624,
+  "quoteAssetVolume" : 401545.5393401,
+  "numberOfTrades" : 1189
+} ]
