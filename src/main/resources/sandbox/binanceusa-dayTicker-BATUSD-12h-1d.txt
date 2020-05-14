@@ -1,0 +1,27 @@
+[ {
+  "symbol" : "BATUSD",
+  "openTime" : 1587600000000,
+  "openDate" : null,
+  "closeTime" : 1587643199999,
+  "closeDate" : null,
+  "open" : 0.1658,
+  "high" : 0.1663,
+  "low" : 0.1624,
+  "close" : 0.1657,
+  "volume" : 105028.9,
+  "quoteAssetVolume" : 17228.4482,
+  "numberOfTrades" : 196
+}, {
+  "symbol" : "BATUSD",
+  "openTime" : 1587643200000,
+  "openDate" : null,
+  "closeTime" : 1587686399999,
+  "closeDate" : null,
+  "open" : 0.1668,
+  "high" : 0.1756,
+  "low" : 0.1668,
+  "close" : 0.1718,
+  "volume" : 105617.42,
+  "quoteAssetVolume" : 18097.3393,
+  "numberOfTrades" : 245
+} ]

@@ -1,0 +1,27 @@
+[ {
+  "symbol" : "ETCUSD",
+  "openTime" : 1587600000000,
+  "openDate" : null,
+  "closeTime" : 1587643199999,
+  "closeDate" : null,
+  "open" : 5.3911,
+  "high" : 5.4521,
+  "low" : 5.3052,
+  "close" : 5.4224,
+  "volume" : 713.77,
+  "quoteAssetVolume" : 3850.1345,
+  "numberOfTrades" : 71
+}, {
+  "symbol" : "ETCUSD",
+  "openTime" : 1587643200000,
+  "openDate" : null,
+  "closeTime" : 1587686399999,
+  "closeDate" : null,
+  "open" : 5.4229,
+  "high" : 5.78,
+  "low" : 5.4229,
+  "close" : 5.7385,
+  "volume" : 5656.96,
+  "quoteAssetVolume" : 32248.4895,
+  "numberOfTrades" : 130
+} ]
