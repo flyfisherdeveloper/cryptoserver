@@ -37,9 +37,9 @@ public class ApplicationStartup implements ApplicationListener<ApplicationReadyE
     @Override
     public void onApplicationEvent(final ApplicationReadyEvent event) {
         String[] args = event.getArgs();
-        if (args[0] != null && args[0].equals("sandbox")) {
+        if (args != null && args.length > 0 && args[0] != null && args[0].equals("sandbox")) {
             //run in sandbox mode - do not call exchange info here
-            Log.info("Running Spring Boot applicatoin in Sandbox mode.");
+            Log.info("Running Spring Boot application in Sandbox mode.");
             return;
         }
         //Asynchronously get the exchange information on startup.

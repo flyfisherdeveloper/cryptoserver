@@ -558,7 +558,7 @@ public abstract class AbstractBinanceExchangeService implements BinanceExchangeS
         //todo: should the separate exchanges determine this? If so, it would encapsulate better.
         scheduledService = Executors.newScheduledThreadPool(1);
         Runnable command = this::runScheduled24HrAllCoinTicker;
-        //run every 2.5 minutes - add a second to be sure since the binance api monitors traffic by the minute
+        //run every 2.5 minutes
         scheduledService.scheduleAtFixedRate(command, ALL_24_HOUR_DELAY, ALL_24_HOUR_DELAY, TimeUnit.SECONDS);
         setScheduledService(scheduledService);
     }

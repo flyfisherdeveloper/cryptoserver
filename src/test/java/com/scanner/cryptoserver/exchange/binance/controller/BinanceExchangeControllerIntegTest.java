@@ -3,7 +3,6 @@ package com.scanner.cryptoserver.exchange.binance.controller;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.scanner.cryptoserver.CachingConfig;
-import com.scanner.cryptoserver.exchange.binance.controller.BinanceExchangeController;
 import com.scanner.cryptoserver.exchange.binance.dto.CoinDataFor24Hr;
 import com.scanner.cryptoserver.exchange.binance.dto.CoinTicker;
 import com.scanner.cryptoserver.exchange.binance.dto.Symbol;
