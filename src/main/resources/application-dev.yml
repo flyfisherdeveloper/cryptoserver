@@ -15,9 +15,9 @@ exchanges:
     ticker: https://api.binance.us/api/v3/ticker
     trade: https://www.binance.us/en/trade/
   binance:
-    info: https://api.binance.com/api/v3/exchangeInfo
-    klines: https://api.binance.com/api/v3/klines
-    ticker: https://api.binance.com/api/v3/ticker
+    info: https://api.binance.com/api/v1/exchangeInfo
+    klines: https://api.binance.com/api/v1/klines
+    ticker: https://api.binance.com/api/v1/ticker
     trade: https://www.binance.com/en/trade/
   coinmarketcap:
     map: https://pro-api.coinmarketcap.com/v1/cryptocurrency/map

@@ -1,0 +1,27 @@
+[ {
+  "symbol" : "DOGEUSDT",
+  "openTime" : 1589414400000,
+  "openDate" : null,
+  "closeTime" : 1589457599999,
+  "closeDate" : null,
+  "open" : 0.0025191,
+  "high" : 0.00265,
+  "low" : 0.0025,
+  "close" : 0.0025724,
+  "volume" : 1.11617313E8,
+  "quoteAssetVolume" : 286991.528792,
+  "numberOfTrades" : 1842
+}, {
+  "symbol" : "DOGEUSDT",
+  "openTime" : 1589457600000,
+  "openDate" : null,
+  "closeTime" : 1589500799999,
+  "closeDate" : null,
+  "open" : 0.002573,
+  "high" : 0.0026145,
+  "low" : 0.0025202,
+  "close" : 0.0025669,
+  "volume" : 2.03257215E8,
+  "quoteAssetVolume" : 522886.3475691,
+  "numberOfTrades" : 2122
+} ]

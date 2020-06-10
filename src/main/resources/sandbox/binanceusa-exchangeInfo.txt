@@ -353,5 +353,46 @@
     "quoteAsset" : "BUSD",
     "status" : "TRADING",
     "marketCap" : 0.0
+  }, {
+    "symbol" : "HBARUSD",
+    "baseAsset" : "HBAR",
+    "quoteAsset" : "USD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "HBARBUSD",
+    "baseAsset" : "HBAR",
+    "quoteAsset" : "BUSD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "OMGUSD",
+    "baseAsset" : "OMG",
+    "quoteAsset" : "USD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "OMGBUSD",
+    "baseAsset" : "OMG",
+    "quoteAsset" : "BUSD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "MATICUSD",
+    "baseAsset" : "MATIC",
+    "quoteAsset" : "USD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "MATICBUSD",
+    "baseAsset" : "MATIC",
+    "quoteAsset" : "BUSD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  } ]
+}set" : "XTZ",
+    "quoteAsset" : "BUSD",
+    "status" : "TRADING",
+    "marketCap" : 1.8003195628781786E9
   } ]
 }
