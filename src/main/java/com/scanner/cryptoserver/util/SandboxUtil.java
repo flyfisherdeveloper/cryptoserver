@@ -58,10 +58,6 @@ public class SandboxUtil {
         //try to get the data from the sandbox
         resource = resolver.getResource("classpath:sandbox/" + fileName);
         try (InputStream stream = resource.getInputStream()) {
-            if (stream == null) {
-                Log.error("Cannot load input stream for sandbox file: {}", fileName);
-                return null;
-            }
             bytes = new byte[stream.available()];
             stream.read(bytes);
         } catch (IOException e) {
