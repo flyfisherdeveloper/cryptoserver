@@ -61,11 +61,6 @@ public abstract class AbstractSandboxBinanceExchangeService implements BinanceEx
 
     @Override
     public List<CoinDataFor24Hr> get24HrAllCoinTicker() {
-        try {
-            Thread.sleep(5000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
         return getDataList(getDataName("24HourTicker"), CoinDataFor24Hr.class);
     }
 
