@@ -1197,6 +1197,13 @@
     "description" : null,
     "marketCap" : null
   }, {
+    "id" : 990,
+    "name" : "Bitzeny",
+    "symbol" : "ZNY",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : null
+  }, {
     "id" : 993,
     "name" : "BowsCoin",
     "symbol" : "BSC",
@@ -4725,13 +4732,6 @@
     "description" : null,
     "marketCap" : null
   }, {
-    "id" : 2308,
-    "name" : "Single Collateral DAI ",
-    "symbol" : "SAI",
-    "logo" : null,
-    "description" : null,
-    "marketCap" : null
-  }, {
     "id" : 2309,
     "name" : "SophiaTX",
     "symbol" : "SPHTX",
@@ -5685,7 +5685,7 @@
     "marketCap" : null
   }, {
     "id" : 2480,
-    "name" : "Qitmeer",
+    "name" : "HalalChain",
     "symbol" : "HLC",
     "logo" : null,
     "description" : null,
@@ -11012,7 +11012,7 @@
     "marketCap" : null
   }, {
     "id" : 3598,
-    "name" : "Optimal Shelf Availability Token",
+    "name" : "OSA Token",
     "symbol" : "OSA",
     "logo" : null,
     "description" : null,
@@ -15155,13 +15155,6 @@
     "description" : null,
     "marketCap" : null
   }, {
-    "id" : 4598,
-    "name" : "Acash Coin",
-    "symbol" : "ACA",
-    "logo" : null,
-    "description" : null,
-    "marketCap" : null
-  }, {
     "id" : 4620,
     "name" : "CYBR Token",
     "symbol" : "CYBR",
@@ -15617,6 +15610,13 @@
     "description" : null,
     "marketCap" : null
   }, {
+    "id" : 4794,
+    "name" : "FinexboxToken",
+    "symbol" : "FNB",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : null
+  }, {
     "id" : 4797,
     "name" : "Swapcoinz",
     "symbol" : "SPAZ",
@@ -15795,6 +15795,13 @@
     "id" : 4850,
     "name" : "LINKA",
     "symbol" : "LINKA",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : null
+  }, {
+    "id" : 4858,
+    "name" : "BITFXT COIN",
+    "symbol" : "BXT",
     "logo" : null,
     "description" : null,
     "marketCap" : null
@@ -16024,7 +16031,7 @@
     "marketCap" : null
   }, {
     "id" : 4943,
-    "name" : "Multi-collateral DAI",
+    "name" : "Dai",
     "symbol" : "DAI",
     "logo" : null,
     "description" : null,
@@ -16401,6 +16408,13 @@
     "description" : null,
     "marketCap" : null
   }, {
+    "id" : 5049,
+    "name" : "VerusCoin",
+    "symbol" : "VRSC",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : null
+  }, {
     "id" : 5050,
     "name" : "Baz Token",
     "symbol" : "BAZT",
@@ -16551,6 +16565,13 @@
     "id" : 5085,
     "name" : "Building Cities Beyond Blockchain",
     "symbol" : "BCB",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : null
+  }, {
+    "id" : 5086,
+    "name" : "Pawtocol",
+    "symbol" : "UPI",
     "logo" : null,
     "description" : null,
     "marketCap" : null
@@ -18403,6 +18424,13 @@
     "description" : null,
     "marketCap" : null
   }, {
+    "id" : 5611,
+    "name" : "AZBI CORE",
+    "symbol" : "AZBI",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : null
+  }, {
     "id" : 5612,
     "name" : "SOMESING",
     "symbol" : "SSX",
@@ -18585,6 +18613,13 @@
     "description" : null,
     "marketCap" : null
   }, {
+    "id" : 5661,
+    "name" : "Fanaticos Cash",
+    "symbol" : "FCH",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : null
+  }, {
     "id" : 5662,
     "name" : "Sylo",
     "symbol" : "SYLO",
@@ -18658,6 +18693,27 @@
     "id" : 5679,
     "name" : "PLAAS FARMERS TOKEN",
     "symbol" : "PLAAS",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : null
+  }, {
+    "id" : 5685,
+    "name" : "Barkis Network",
+    "symbol" : "BKS",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : null
+  }, {
+    "id" : 5686,
+    "name" : "Vectorium",
+    "symbol" : "VCTP",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : null
+  }, {
+    "id" : 5690,
+    "name" : "Render Token",
+    "symbol" : "RNDR",
     "logo" : null,
     "description" : null,
     "marketCap" : null

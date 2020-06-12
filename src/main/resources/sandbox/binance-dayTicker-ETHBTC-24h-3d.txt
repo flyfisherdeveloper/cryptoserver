@@ -1,0 +1,40 @@
+[ {
+  "symbol" : "ETHBTC",
+  "openTime" : 1591747200000,
+  "openDate" : null,
+  "closeTime" : 1591833599999,
+  "closeDate" : null,
+  "open" : 0.024948,
+  "high" : 0.025152,
+  "low" : 0.02482,
+  "close" : 0.025067,
+  "volume" : 194762.077,
+  "quoteAssetVolume" : 4866.09543398,
+  "numberOfTrades" : 104199
+}, {
+  "symbol" : "ETHBTC",
+  "openTime" : 1591833600000,
+  "openDate" : null,
+  "closeTime" : 1591919999999,
+  "closeDate" : null,
+  "open" : 0.025067,
+  "high" : 0.025191,
+  "low" : 0.024574,
+  "close" : 0.024837,
+  "volume" : 257166.348,
+  "quoteAssetVolume" : 6433.14242753,
+  "numberOfTrades" : 140802
+}, {
+  "symbol" : "ETHBTC",
+  "openTime" : 1591920000000,
+  "openDate" : null,
+  "closeTime" : 1592006399999,
+  "closeDate" : null,
+  "open" : 0.024842,
+  "high" : 0.0252,
+  "low" : 0.024682,
+  "close" : 0.025115,
+  "volume" : 147524.459,
+  "quoteAssetVolume" : 3685.2269746,
+  "numberOfTrades" : 86804
+} ]

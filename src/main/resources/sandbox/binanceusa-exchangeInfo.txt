@@ -389,10 +389,29 @@
     "quoteAsset" : "BUSD",
     "status" : "TRADING",
     "marketCap" : 0.0
-  } ]
-}set" : "XTZ",
+  }, {
+    "symbol" : "XTZBTC",
+    "baseAsset" : "XTZ",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ADABTC",
+    "baseAsset" : "ADA",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "REPBUSD",
+    "baseAsset" : "REP",
     "quoteAsset" : "BUSD",
     "status" : "TRADING",
-    "marketCap" : 1.8003195628781786E9
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "REPUSD",
+    "baseAsset" : "REP",
+    "quoteAsset" : "USD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
   } ]
 }

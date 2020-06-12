@@ -987,7 +987,7 @@
     "symbol" : "BCDETH",
     "baseAsset" : "BCD",
     "quoteAsset" : "ETH",
-    "status" : "TRADING",
+    "status" : "BREAK",
     "marketCap" : 0.0
   }, {
     "symbol" : "DGDBTC",
@@ -2481,7 +2481,7 @@
     "symbol" : "EOSPAX",
     "baseAsset" : "EOS",
     "quoteAsset" : "PAX",
-    "status" : "TRADING",
+    "status" : "BREAK",
     "marketCap" : 0.0
   }, {
     "symbol" : "XLMPAX",
@@ -2613,7 +2613,7 @@
     "symbol" : "USDCPAX",
     "baseAsset" : "USDC",
     "quoteAsset" : "PAX",
-    "status" : "TRADING",
+    "status" : "BREAK",
     "marketCap" : 0.0
   }, {
     "symbol" : "LINKUSDT",
@@ -2661,7 +2661,7 @@
     "symbol" : "WAVESUSDC",
     "baseAsset" : "WAVES",
     "quoteAsset" : "USDC",
-    "status" : "TRADING",
+    "status" : "BREAK",
     "marketCap" : 0.0
   }, {
     "symbol" : "BCHABCTUSD",
@@ -2907,7 +2907,7 @@
     "symbol" : "ZECTUSD",
     "baseAsset" : "ZEC",
     "quoteAsset" : "TUSD",
-    "status" : "TRADING",
+    "status" : "BREAK",
     "marketCap" : 0.0
   }, {
     "symbol" : "ZECUSDC",
@@ -4877,62 +4877,68 @@
     "quoteAsset" : "USDT",
     "status" : "TRADING",
     "marketCap" : 0.0
+  }, {
+    "symbol" : "STMXBNB",
+    "baseAsset" : "STMX",
+    "quoteAsset" : "BNB",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "STMXBTC",
+    "baseAsset" : "STMX",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "STMXETH",
+    "baseAsset" : "STMX",
+    "quoteAsset" : "ETH",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "STMXUSDT",
+    "baseAsset" : "STMX",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "KNCBUSD",
+    "baseAsset" : "KNC",
+    "quoteAsset" : "BUSD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "KNCUSDT",
+    "baseAsset" : "KNC",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "REPBUSD",
+    "baseAsset" : "REP",
+    "quoteAsset" : "BUSD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "REPUSDT",
+    "baseAsset" : "REP",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "LRCBUSD",
+    "baseAsset" : "LRC",
+    "quoteAsset" : "BUSD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "LRCUSDT",
+    "baseAsset" : "LRC",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
   } ]
-}uoteAsset" : "BTC",
-    "status" : "TRADING",
-    "marketCap" : 9143797.396108964
-  }, {
-    "symbol" : "COTIUSDT",
-    "baseAsset" : "COTI",
-    "quoteAsset" : "USDT",
-    "status" : "TRADING",
-    "marketCap" : 9143797.396108964
-  }, {
-    "symbol" : "ALGOBUSD",
-    "baseAsset" : "ALGO",
-    "quoteAsset" : "BUSD",
-    "status" : "TRADING",
-    "marketCap" : 1.3967624385781476E8
-  }, {
-    "symbol" : "BTTBUSD",
-    "baseAsset" : "BTT",
-    "quoteAsset" : "BUSD",
-    "status" : "TRADING",
-    "marketCap" : 1618176.595445703
-  }, {
-    "symbol" : "TOMOBUSD",
-    "baseAsset" : "TOMO",
-    "quoteAsset" : "BUSD",
-    "status" : "TRADING",
-    "marketCap" : 2.683102235736256E7
-  }, {
-    "symbol" : "XMRBUSD",
-    "baseAsset" : "XMR",
-    "quoteAsset" : "BUSD",
-    "status" : "TRADING",
-    "marketCap" : 1.143124406212434E9
-  }, {
-    "symbol" : "ZECBUSD",
-    "baseAsset" : "ZEC",
-    "quoteAsset" : "BUSD",
-    "status" : "TRADING",
-    "marketCap" : 3.957784332672285E8
-  }, {
-    "symbol" : "BNBBULLUSDT",
-    "baseAsset" : "BNBBULL",
-    "quoteAsset" : "USDT",
-    "status" : "BREAK",
-    "marketCap" : 0.0
-  }, {
-    "symbol" : "BNBBULLBUSD",
-    "baseAsset" : "BNBBULL",
-    "quoteAsset" : "BUSD",
-    "status" : "BREAK",
-    "marketCap" : 0.0
-  }, {
-    "symbol" : "BNBBEARUSDT",
-    "baseAsset" : "BNBBEAR",
-    "quoteAsset" : "USDT",
+}quoteAsset" : "USDT",
     "status" : "BREAK",
     "marketCap" : 0.0
   }, {
