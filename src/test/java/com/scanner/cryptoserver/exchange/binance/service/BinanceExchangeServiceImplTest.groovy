@@ -4,8 +4,6 @@ import com.scanner.cryptoserver.exchange.binance.dto.CoinDataFor24Hr
 import com.scanner.cryptoserver.exchange.binance.dto.CoinTicker
 import com.scanner.cryptoserver.exchange.binance.dto.ExchangeInfo
 import com.scanner.cryptoserver.exchange.binance.dto.Symbol
-import com.scanner.cryptoserver.exchange.binance.service.BinanceExchangeServiceImpl
-import com.scanner.cryptoserver.exchange.binance.service.BinanceUrlExtractor
 import com.scanner.cryptoserver.exchange.coinmarketcap.CoinMarketCapService
 import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapData
 import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapMap
@@ -130,7 +128,7 @@ class BinanceExchangeServiceImplTest extends Specification {
           restTemplate.getForEntity(*_,) >>> [linkedHashMapResponse, exchangeInfoResponse]
 
         then: "the service is called"
-          def allCoins = service.call24HrAllCoinTicker()
+          def allCoins = service.get24HrCoinData()
 
         expect:
           assert allCoins != null

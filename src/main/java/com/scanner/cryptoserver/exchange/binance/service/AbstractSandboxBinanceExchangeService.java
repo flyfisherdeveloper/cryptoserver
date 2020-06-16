@@ -11,6 +11,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public abstract class AbstractSandboxBinanceExchangeService implements BinanceExchangeService {
@@ -55,13 +56,30 @@ public abstract class AbstractSandboxBinanceExchangeService implements BinanceEx
     }
 
     @Override
-    public CoinDataFor24Hr call24HrCoinTicker(String symbol) {
+    public CoinDataFor24Hr get24HourCoinData(String symbol) {
         return getData(getDataName("24HourTicker-" + symbol), CoinDataFor24Hr.class);
     }
 
     @Override
     public List<CoinDataFor24Hr> get24HrAllCoinTicker() {
         return getDataList(getDataName("24HourTicker"), CoinDataFor24Hr.class);
+    }
+
+    @Override
+    public List<CoinDataFor24Hr> get24HrAllCoinTicker(int page, int pageSize) {
+        List<CoinDataFor24Hr> coins = get24HrAllCoinTicker();
+        if (page < 0) {
+            return coins;
+        }
+        int start = page * pageSize;
+        int end = page * pageSize + pageSize;
+        if (start > coins.size()) {
+            return Collections.emptyList();
+        }
+        if (end > coins.size()) {
+            end = coins.size();
+        }
+        return coins.subList(start, end);
     }
 
     @Override

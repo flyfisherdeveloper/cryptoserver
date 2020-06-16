@@ -9,9 +9,11 @@ import java.util.List;
 public interface BinanceExchangeService {
     ExchangeInfo getExchangeInfo();
 
-    CoinDataFor24Hr call24HrCoinTicker(String symbol);
+    CoinDataFor24Hr get24HourCoinData(String symbol);
 
     List<CoinDataFor24Hr> get24HrAllCoinTicker();
+
+    List<CoinDataFor24Hr> get24HrAllCoinTicker(int page, int pageSize);
 
     List<CoinTicker> getTickerData(String symbol, String interval, String daysOrMonths);
 }

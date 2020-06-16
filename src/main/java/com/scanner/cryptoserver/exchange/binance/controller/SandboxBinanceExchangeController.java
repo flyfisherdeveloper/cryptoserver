@@ -37,7 +37,7 @@ public class SandboxBinanceExchangeController {
 
     @GetMapping(value = "/24HourTicker/{symbol}", produces = MediaType.APPLICATION_JSON_VALUE)
     public CoinDataFor24Hr get24HourTicker(@PathVariable String symbol) {
-        CoinDataFor24Hr data = sandboxBinanceService.call24HrCoinTicker(symbol);
+        CoinDataFor24Hr data = sandboxBinanceService.get24HourCoinData(symbol);
         return data;
     }
 

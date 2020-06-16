@@ -33,7 +33,7 @@ public class BinanceExchangeController {
     @GetMapping(value = "/24HourTicker/{symbol}", produces = MediaType.APPLICATION_JSON_VALUE)
     public CoinDataFor24Hr get24HourTicker(@PathVariable String symbol) {
         SandboxUtil sandboxUtil = new SandboxUtil();
-        CoinDataFor24Hr data = binanceService.call24HrCoinTicker(symbol);
+        CoinDataFor24Hr data = binanceService.get24HourCoinData(symbol);
         sandboxUtil.createMock("binance-24HourTicker" + "-" + symbol, data);
         return data;
     }

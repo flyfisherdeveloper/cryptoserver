@@ -120,7 +120,7 @@ public abstract class AbstractBinanceExchangeService implements BinanceExchangeS
         return callCoinTicker(symbol, interval, null, null);
     }
 
-    public CoinDataFor24Hr call24HrCoinTicker(String symbol) {
+    public CoinDataFor24Hr get24HourCoinData(String symbol) {
         String url = getUrlExtractor().getTickerUrl() + "/24hr?symbol={symbol}";
         Map<String, Object> params = new HashMap<>();
         params.put("symbol", symbol);
@@ -492,22 +492,43 @@ public abstract class AbstractBinanceExchangeService implements BinanceExchangeS
     //will avoid calling the exchange api frequently (i.e. once a minute always) for now.
     public List<CoinDataFor24Hr> get24HrAllCoinTicker() {
         String cacheName = getExchangeName() + "-" + ALL_24_HOUR_TICKER;
-        Supplier<List<CoinDataFor24Hr>> allCoinTicker = this::call24HrAllCoinTicker;
+        Supplier<List<CoinDataFor24Hr>> allCoinTicker = this::get24HrCoinData;
         List<CoinDataFor24Hr> coinDataFor24Hrs = cacheUtil.retrieveFromCache(cacheName, ALL_TICKERS, allCoinTicker);
         return coinDataFor24Hrs;
     }
 
-    public List<CoinDataFor24Hr> call24HrAllCoinTicker() {
+    public List<CoinDataFor24Hr> get24HrAllCoinTicker(int page, int pageSize) {
+        String cacheName = getExchangeName() + "-" + ALL_24_HOUR_TICKER;
+        //jeff
+        Supplier<LinkedHashMap[]> allCoinTicker = this::get24HrData;
+        LinkedHashMap[] data = cacheUtil.retrieveFromCache(cacheName, ALL_TICKERS, allCoinTicker);
+        return get24HrCoinData(data, page, pageSize);
+    }
+
+    public LinkedHashMap[] get24HrData() {
         String url = getUrlExtractor().getTickerUrl() + "/24hr";
         ResponseEntity<LinkedHashMap[]> info = restTemplate.getForEntity(url, LinkedHashMap[].class);
         LinkedHashMap[] body = info.getBody();
-        if (body == null) {
-            return null;
+        return body;
+    }
+
+    public List<CoinDataFor24Hr> get24HrCoinData(LinkedHashMap[] data, int page, int pageSize) {
+        if (data == null) {
+            data = get24HrData();
+            if (data == null) {
+                return null;
+            }
         }
 
+        //go through the data array, and return those in the page
         List<CoinDataFor24Hr> list = new ArrayList<>();
-        for (LinkedHashMap map : body) {
-            CoinDataFor24Hr coin = get24HrCoinTicker(map);
+        int lastIndex = page * pageSize;
+        if (page == -1) {
+            lastIndex = data.length;
+            pageSize = 0;
+        }
+        for (int index = lastIndex - pageSize; index < (Math.min(lastIndex, data.length)); index++) {
+            CoinDataFor24Hr coin = get24HrCoinTicker(data[index]);
             if (coin != null) {
                 list.add(coin);
             }
@@ -527,6 +548,10 @@ public abstract class AbstractBinanceExchangeService implements BinanceExchangeS
 
         startUpdates();
         return list;
+    }
+
+    public List<CoinDataFor24Hr> get24HrCoinData() {
+        return get24HrCoinData(null, -1, -1);
     }
 
     //Run the scheduled service call and put the results in the cache. Stop the scheduler after a maximum times of running.
