@@ -8,7 +8,6 @@ import com.scanner.cryptoserver.exchange.coinmarketcap.CoinMarketCapService;
 import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapMap;
 import com.scanner.cryptoserver.util.CacheUtil;
 import com.scanner.cryptoserver.util.IconExtractor;
-import com.scanner.cryptoserver.util.SandboxUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.ResponseEntity;
@@ -21,6 +20,7 @@ import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
 import java.util.*;
 import java.util.concurrent.*;
+import java.util.function.Function;
 import java.util.function.Supplier;
 import java.util.stream.Collectors;
 
@@ -59,9 +59,7 @@ public abstract class AbstractBinanceExchangeService implements BinanceExchangeS
         String name = getExchangeName() + "-" + EXCHANGE_INFO;
         Supplier<ExchangeInfo> exchangeInfoSupplier = () -> {
             ResponseEntity<ExchangeInfo> response = restTemplate.getForEntity(getUrlExtractor().getExchangeInfoUrl(), ExchangeInfo.class);
-            SandboxUtil sandboxUtil = new SandboxUtil();
             ExchangeInfo info = response.getBody();
-            sandboxUtil.createMock(getExchangeName() + "-exchangeInfo", info);
             return info;
         };
         ExchangeInfo exchangeInfo = cacheUtil.retrieveFromCache(EXCHANGE_INFO, name, exchangeInfoSupplier);
@@ -107,6 +105,7 @@ public abstract class AbstractBinanceExchangeService implements BinanceExchangeS
         //remove currency markets that are not USA-based, such as the Euro ("EUR")
         exchangeInfo.getSymbols().removeIf(s -> nonUsaMarkets.contains(s.getQuoteAsset()));
         //Attempt to retrieve the latest coin market cap data to get the market cap for each coin.
+        //jeff
         return exchangeInfo;
     }
 
@@ -171,13 +170,31 @@ public abstract class AbstractBinanceExchangeService implements BinanceExchangeS
     }
 
     private String getQuote(String str) {
-        int start = this.getStartOfQuote(str);
-        return str.substring(start);
+        ExchangeInfo exchangeInfo = retrieveExchangeInfoFromCache();
+        Supplier<String> parseCoin = () -> {
+            int start = this.getStartOfQuote(str);
+            return str.substring(start);
+        };
+        String quote = exchangeInfo.getSymbols().stream()
+                .filter(sym -> sym.getSymbol().equals(str))
+                .findFirst()
+                .map(Symbol::getQuoteAsset)
+                .orElseGet(parseCoin);
+        return quote;
     }
 
     private String getCoin(String str) {
-        int offset = this.getStartOfQuote(str);
-        return str.substring(0, offset);
+        ExchangeInfo exchangeInfo = retrieveExchangeInfoFromCache();
+        Supplier<String> parseCoin = () -> {
+            int offset = this.getStartOfQuote(str);
+            return str.substring(0, offset);
+        };
+        String coin = exchangeInfo.getSymbols().stream()
+                .filter(sym -> sym.getSymbol().equals(str))
+                .findFirst()
+                .map(Symbol::getBaseAsset)
+                .orElseGet(parseCoin);
+        return coin;
     }
 
     /**
@@ -216,8 +233,12 @@ public abstract class AbstractBinanceExchangeService implements BinanceExchangeS
     private CoinDataFor24Hr get24HrCoinTicker(LinkedHashMap map) {
         CoinDataFor24Hr data = new CoinDataFor24Hr();
         String symbol = (String) map.get("symbol");
+        long start = System.currentTimeMillis();
         String coin = getCoin(symbol);
+        //jeff
+        System.out.println("get Coin " + (System.currentTimeMillis() - start));
         String currency = getQuote(symbol);
+        System.out.println("get quote " + (System.currentTimeMillis() - start));
         if (!isCoinTrading(symbol) || !isCoinInUsaMarket(currency) || isLeveragedToken(symbol)) {
             return null;
         }
@@ -225,6 +246,7 @@ public abstract class AbstractBinanceExchangeService implements BinanceExchangeS
         data.setSymbol(symbol);
         data.setCoin(coin);
         data.setCurrency(currency);
+
         String priceChangeStr = (String) map.get("priceChange");
         double priceChange = Double.parseDouble(priceChangeStr);
         data.setPriceChange(priceChange);
@@ -525,14 +547,16 @@ public abstract class AbstractBinanceExchangeService implements BinanceExchangeS
         int lastIndex = page * pageSize;
         if (page == -1) {
             lastIndex = data.length;
-            pageSize = 0;
+            pageSize = data.length;
         }
+        long start = System.currentTimeMillis();
         for (int index = lastIndex - pageSize; index < (Math.min(lastIndex, data.length)); index++) {
             CoinDataFor24Hr coin = get24HrCoinTicker(data[index]);
             if (coin != null) {
                 list.add(coin);
             }
         }
+        System.out.println("end time!!!!!!!!!!!!!!!!! " + (System.currentTimeMillis() - start));
         //todo: Binance has MANY coin pairs - this 24HrVolumeChange calls the api too many times and gets rejected
         //(eventually - too many calls will lead to the api blacklisting the i.p. address calling it)
         //don't call this in that case

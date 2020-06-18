@@ -53,6 +53,17 @@ public class SandboxBinanceUsaExchangeController {
         return data;
     }
 
+    /**
+     * Gets the coins for 24-hour data on the exchange in a page.
+     *
+     * @return a list of coins for a page on the exchange over the past 24 hours.
+     */
+    @GetMapping(value = "/24HourTicker/{page}/{pageSize}", produces = MediaType.APPLICATION_JSON_VALUE)
+    public List<CoinDataFor24Hr> getAll24HourTicker(@PathVariable int page, @PathVariable int pageSize) {
+        List<CoinDataFor24Hr> data = sandboxBinanceUsaService.get24HrAllCoinTicker(page, pageSize);
+        return data;
+    }
+
     @GetMapping(value = "/DayTicker/{symbol}/{interval}/{daysOrMonths}", produces = MediaType.APPLICATION_JSON_VALUE)
     public List<CoinTicker> getDayTicker(@PathVariable String symbol, @PathVariable String interval, @PathVariable String daysOrMonths) {
         List<CoinTicker> data = sandboxBinanceUsaService.getTickerData(symbol, interval, daysOrMonths);
