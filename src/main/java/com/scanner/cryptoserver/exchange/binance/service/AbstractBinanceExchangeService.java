@@ -105,7 +105,6 @@ public abstract class AbstractBinanceExchangeService implements BinanceExchangeS
         //remove currency markets that are not USA-based, such as the Euro ("EUR")
         exchangeInfo.getSymbols().removeIf(s -> nonUsaMarkets.contains(s.getQuoteAsset()));
         //Attempt to retrieve the latest coin market cap data to get the market cap for each coin.
-        //jeff
         return exchangeInfo;
     }
 
@@ -169,7 +168,7 @@ public abstract class AbstractBinanceExchangeService implements BinanceExchangeS
         return end - offset;
     }
 
-    private String getQuote(String str) {
+    public String getQuote(String str) {
         ExchangeInfo exchangeInfo = retrieveExchangeInfoFromCache();
         Supplier<String> parseCoin = () -> {
             int start = this.getStartOfQuote(str);
@@ -183,14 +182,14 @@ public abstract class AbstractBinanceExchangeService implements BinanceExchangeS
         return quote;
     }
 
-    private String getCoin(String str) {
+    public String getCoin(String str) {
         ExchangeInfo exchangeInfo = retrieveExchangeInfoFromCache();
         Supplier<String> parseCoin = () -> {
             int offset = this.getStartOfQuote(str);
             return str.substring(0, offset);
         };
         String coin = exchangeInfo.getSymbols().stream()
-                .filter(sym -> sym.getSymbol().equals(str))
+                .filter(sym -> sym.getSymbol() != null && sym.getSymbol().equals(str))
                 .findFirst()
                 .map(Symbol::getBaseAsset)
                 .orElseGet(parseCoin);
@@ -233,12 +232,8 @@ public abstract class AbstractBinanceExchangeService implements BinanceExchangeS
     private CoinDataFor24Hr get24HrCoinTicker(LinkedHashMap map) {
         CoinDataFor24Hr data = new CoinDataFor24Hr();
         String symbol = (String) map.get("symbol");
-        long start = System.currentTimeMillis();
         String coin = getCoin(symbol);
-        //jeff
-        System.out.println("get Coin " + (System.currentTimeMillis() - start));
         String currency = getQuote(symbol);
-        System.out.println("get quote " + (System.currentTimeMillis() - start));
         if (!isCoinTrading(symbol) || !isCoinInUsaMarket(currency) || isLeveragedToken(symbol)) {
             return null;
         }
@@ -521,7 +516,6 @@ public abstract class AbstractBinanceExchangeService implements BinanceExchangeS
 
     public List<CoinDataFor24Hr> get24HrAllCoinTicker(int page, int pageSize) {
         String cacheName = getExchangeName() + "-" + ALL_24_HOUR_TICKER;
-        //jeff
         Supplier<LinkedHashMap[]> allCoinTicker = this::get24HrData;
         LinkedHashMap[] data = cacheUtil.retrieveFromCache(cacheName, ALL_TICKERS, allCoinTicker);
         return get24HrCoinData(data, page, pageSize);

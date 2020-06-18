@@ -106,12 +106,9 @@ class BinanceExchangeServiceImplTest extends Specification {
 
           //the following represents exchange information - metadata about coins on an exchange
           def exchangeInfo = new ExchangeInfo()
-          def symbol1 = new Symbol(symbol: symbol, quoteAsset: "BTC", status: status)
-          def symbol2 = new Symbol(symbol: symbol, quoteAsset: "USD", status: status)
-          def symbol3 = new Symbol(symbol: symbol, quoteAsset: "USDT", status: status)
-          def symbol4 = new Symbol(symbol: symbol, quoteAsset: "BUSD", status: status)
-          def symbols = [symbol1, symbol2, symbol3, symbol4]
-          exchangeInfo.setSymbols(symbols)
+          def exchangeSymbol = new Symbol(symbol: symbol, quoteAsset: currency, status: status)
+          def exchangeSymbols = [exchangeSymbol]
+          exchangeInfo.setSymbols(exchangeSymbols)
           def exchangeInfoResponse = ResponseEntity.of(Optional.of(exchangeInfo)) as ResponseEntity<ExchangeInfo>
 
           //the following represents coin market cap data for certain coins
@@ -308,6 +305,40 @@ class BinanceExchangeServiceImplTest extends Specification {
           "BTCUSD" | "4h"     | "7d"         | true
           "BTCUSD" | "4h"     | "7d"         | false
           "BTCUSD" | "1h"     | "1d"         | false
+    }
+
+    @Unroll("test that getCoin() returns #expectedCoin for #symbol")
+    def "test getCoin"() {
+        given:
+          //the following represents exchange information - metadata about coins on an exchange
+          def exchangeInfo = new ExchangeInfo()
+          def exchangeSymbol1 = new Symbol(symbol: symbol, quoteAsset: currency)
+          def exchangeSymbol2 = new Symbol(symbol: "XRPUSD", quoteAsset: "USD")
+          def exchangeSymbols
+          if (exchangeHasSymbol) {
+              exchangeSymbols = [exchangeSymbol1, exchangeSymbol2]
+          } else {
+              //test the rare case when the exchange doesn't have the symbol
+              // (if a coin is added just recently since the exchange information was called before being put in the cache)
+              exchangeSymbols = [exchangeSymbol2]
+          }
+          exchangeInfo.setSymbols(exchangeSymbols)
+
+        when:
+          cacheUtil.retrieveFromCache(_, _, _) >> exchangeInfo
+
+        then:
+          def coin = service.getCoin(symbol)
+
+        expect:
+          coin == expectedCoin
+
+        where:
+          symbol    | currency | expectedCoin | exchangeHasSymbol
+          "BTCUSD"  | "USD"    | "BTC"        | true
+          "LTCUSDT" | "USDT"   | "LTC"        | true
+          "ETHUSD"  | "USD"    | "ETH"        | false
+
     }
 
     ResponseEntity<Object[]> getMockCoinTicker() {
