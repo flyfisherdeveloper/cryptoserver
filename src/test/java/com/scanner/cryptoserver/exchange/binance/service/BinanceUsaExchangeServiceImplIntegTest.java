@@ -35,7 +35,7 @@ class BinanceUsaExchangeServiceImplIntegTest {
 
     @Test
     void test24HrCoinTicker() {
-        CoinDataFor24Hr data = binanceUsaService.call24HrCoinTicker("LTCUSD");
+        CoinDataFor24Hr data = binanceUsaService.get24HourCoinData("LTCUSD");
         assertEquals("LTC", data.getCoin());
         assertEquals("USD", data.getCurrency());
     }

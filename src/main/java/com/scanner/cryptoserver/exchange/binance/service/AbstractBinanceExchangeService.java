@@ -8,7 +8,6 @@ import com.scanner.cryptoserver.exchange.coinmarketcap.CoinMarketCapService;
 import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapMap;
 import com.scanner.cryptoserver.util.CacheUtil;
 import com.scanner.cryptoserver.util.IconExtractor;
-import com.scanner.cryptoserver.util.SandboxUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.ResponseEntity;
@@ -38,7 +37,7 @@ public abstract class AbstractBinanceExchangeService implements BinanceExchangeS
     private static final int ALL_24_HOUR_MAX_COUNT = 6;
     private static final int ALL_24_HOUR_DELAY = 151;
     private static final String TRADING = "TRADING";
-    private static final List<String> nonUsaMarkets = Arrays.asList("NGN", "RUB", "TRY", "EUR");
+    private static final List<String> nonUsaMarkets = Arrays.asList("NGN", "RUB", "TRY", "EUR", "ZAR", "BKRW", "IDRT");
 
     private final RestOperations restTemplate;
     private final CoinMarketCapService coinMarketCapService;
@@ -59,9 +58,7 @@ public abstract class AbstractBinanceExchangeService implements BinanceExchangeS
         String name = getExchangeName() + "-" + EXCHANGE_INFO;
         Supplier<ExchangeInfo> exchangeInfoSupplier = () -> {
             ResponseEntity<ExchangeInfo> response = restTemplate.getForEntity(getUrlExtractor().getExchangeInfoUrl(), ExchangeInfo.class);
-            SandboxUtil sandboxUtil = new SandboxUtil();
             ExchangeInfo info = response.getBody();
-            sandboxUtil.createMock(getExchangeName() + "-exchangeInfo", info);
             return info;
         };
         ExchangeInfo exchangeInfo = cacheUtil.retrieveFromCache(EXCHANGE_INFO, name, exchangeInfoSupplier);
@@ -120,7 +117,7 @@ public abstract class AbstractBinanceExchangeService implements BinanceExchangeS
         return callCoinTicker(symbol, interval, null, null);
     }
 
-    public CoinDataFor24Hr call24HrCoinTicker(String symbol) {
+    public CoinDataFor24Hr get24HourCoinData(String symbol) {
         String url = getUrlExtractor().getTickerUrl() + "/24hr?symbol={symbol}";
         Map<String, Object> params = new HashMap<>();
         params.put("symbol", symbol);
@@ -170,14 +167,32 @@ public abstract class AbstractBinanceExchangeService implements BinanceExchangeS
         return end - offset;
     }
 
-    private String getQuote(String str) {
-        int start = this.getStartOfQuote(str);
-        return str.substring(start);
+    public String getQuote(String str) {
+        ExchangeInfo exchangeInfo = retrieveExchangeInfoFromCache();
+        Supplier<String> parseQuote = () -> {
+            int start = this.getStartOfQuote(str);
+            return str.substring(start);
+        };
+        String quote = exchangeInfo.getSymbols().stream()
+                .filter(sym -> sym.getSymbol() != null && sym.getSymbol().equals(str))
+                .findFirst()
+                .map(Symbol::getQuoteAsset)
+                .orElseGet(parseQuote);
+        return quote;
     }
 
-    private String getCoin(String str) {
-        int offset = this.getStartOfQuote(str);
-        return str.substring(0, offset);
+    public String getCoin(String str) {
+        ExchangeInfo exchangeInfo = retrieveExchangeInfoFromCache();
+        Supplier<String> parseCoin = () -> {
+            int offset = this.getStartOfQuote(str);
+            return str.substring(0, offset);
+        };
+        String coin = exchangeInfo.getSymbols().stream()
+                .filter(sym -> sym.getSymbol() != null && sym.getSymbol().equals(str))
+                .findFirst()
+                .map(Symbol::getBaseAsset)
+                .orElseGet(parseCoin);
+        return coin;
     }
 
     /**
@@ -225,6 +240,7 @@ public abstract class AbstractBinanceExchangeService implements BinanceExchangeS
         data.setSymbol(symbol);
         data.setCoin(coin);
         data.setCurrency(currency);
+
         String priceChangeStr = (String) map.get("priceChange");
         double priceChange = Double.parseDouble(priceChangeStr);
         data.setPriceChange(priceChange);
@@ -492,22 +508,42 @@ public abstract class AbstractBinanceExchangeService implements BinanceExchangeS
     //will avoid calling the exchange api frequently (i.e. once a minute always) for now.
     public List<CoinDataFor24Hr> get24HrAllCoinTicker() {
         String cacheName = getExchangeName() + "-" + ALL_24_HOUR_TICKER;
-        Supplier<List<CoinDataFor24Hr>> allCoinTicker = this::call24HrAllCoinTicker;
+        Supplier<List<CoinDataFor24Hr>> allCoinTicker = this::get24HrCoinData;
         List<CoinDataFor24Hr> coinDataFor24Hrs = cacheUtil.retrieveFromCache(cacheName, ALL_TICKERS, allCoinTicker);
         return coinDataFor24Hrs;
     }
 
-    public List<CoinDataFor24Hr> call24HrAllCoinTicker() {
+    public List<CoinDataFor24Hr> get24HrAllCoinTicker(int page, int pageSize) {
+        String cacheName = getExchangeName() + "-" + ALL_24_HOUR_TICKER;
+        Supplier<LinkedHashMap[]> allCoinTicker = this::get24HrData;
+        LinkedHashMap[] data = cacheUtil.retrieveFromCache(cacheName, ALL_TICKERS, allCoinTicker);
+        return get24HrCoinData(data, page, pageSize);
+    }
+
+    public LinkedHashMap[] get24HrData() {
         String url = getUrlExtractor().getTickerUrl() + "/24hr";
         ResponseEntity<LinkedHashMap[]> info = restTemplate.getForEntity(url, LinkedHashMap[].class);
         LinkedHashMap[] body = info.getBody();
-        if (body == null) {
-            return null;
+        return body;
+    }
+
+    public List<CoinDataFor24Hr> get24HrCoinData(LinkedHashMap[] data, int page, int pageSize) {
+        if (data == null) {
+            data = get24HrData();
+            if (data == null) {
+                return null;
+            }
         }
 
+        //go through the data array, and return those in the page
         List<CoinDataFor24Hr> list = new ArrayList<>();
-        for (LinkedHashMap map : body) {
-            CoinDataFor24Hr coin = get24HrCoinTicker(map);
+        int lastIndex = page * pageSize;
+        if (page == -1) {
+            lastIndex = data.length;
+            pageSize = data.length;
+        }
+        for (int index = lastIndex - pageSize; index < (Math.min(lastIndex, data.length)); index++) {
+            CoinDataFor24Hr coin = get24HrCoinTicker(data[index]);
             if (coin != null) {
                 list.add(coin);
             }
@@ -527,6 +563,10 @@ public abstract class AbstractBinanceExchangeService implements BinanceExchangeS
 
         startUpdates();
         return list;
+    }
+
+    public List<CoinDataFor24Hr> get24HrCoinData() {
+        return get24HrCoinData(null, -1, -1);
     }
 
     //Run the scheduled service call and put the results in the cache. Stop the scheduler after a maximum times of running.
