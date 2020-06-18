@@ -307,7 +307,7 @@ class BinanceExchangeServiceImplTest extends Specification {
           "BTCUSD" | "1h"     | "1d"         | false
     }
 
-    @Unroll("test that getCoin() returns #expectedCoin for #symbol")
+    @Unroll("test that #symbol has #expectedCoin for coin")
     def "test getCoin"() {
         given:
           //the following represents exchange information - metadata about coins on an exchange
@@ -338,6 +338,40 @@ class BinanceExchangeServiceImplTest extends Specification {
           "BTCUSD"  | "USD"    | "BTC"        | true
           "LTCUSDT" | "USDT"   | "LTC"        | true
           "ETHUSD"  | "USD"    | "ETH"        | false
+
+    }
+
+    @Unroll("test that #symbol has #expectedQuote for quote")
+    def "test getQuote"() {
+        given:
+          //the following represents exchange information - metadata about coins on an exchange
+          def exchangeInfo = new ExchangeInfo()
+          def exchangeSymbol1 = new Symbol(symbol: symbol, quoteAsset: currency)
+          def exchangeSymbol2 = new Symbol(symbol: "XRPUSD", quoteAsset: "USD")
+          def exchangeSymbols
+          if (exchangeHasSymbol) {
+              exchangeSymbols = [exchangeSymbol1, exchangeSymbol2]
+          } else {
+              //test the rare case when the exchange doesn't have the symbol
+              // (if a coin is added just recently since the exchange information was called before being put in the cache)
+              exchangeSymbols = [exchangeSymbol2]
+          }
+          exchangeInfo.setSymbols(exchangeSymbols)
+
+        when:
+          cacheUtil.retrieveFromCache(_, _, _) >> exchangeInfo
+
+        then:
+          def quote = service.getQuote(symbol)
+
+        expect:
+          quote == expectedQuote
+
+        where:
+          symbol    | currency | expectedQuote | exchangeHasSymbol
+          "BTCUSD"  | "USD"    | "USD"         | true
+          "LTCUSDT" | "USDT"   | "USDT"        | true
+          "ETHUSD"  | "USD"    | "USD"         | false
 
     }
 

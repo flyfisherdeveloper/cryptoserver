@@ -20,7 +20,6 @@ import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
 import java.util.*;
 import java.util.concurrent.*;
-import java.util.function.Function;
 import java.util.function.Supplier;
 import java.util.stream.Collectors;
 
@@ -170,15 +169,15 @@ public abstract class AbstractBinanceExchangeService implements BinanceExchangeS
 
     public String getQuote(String str) {
         ExchangeInfo exchangeInfo = retrieveExchangeInfoFromCache();
-        Supplier<String> parseCoin = () -> {
+        Supplier<String> parseQuote = () -> {
             int start = this.getStartOfQuote(str);
             return str.substring(start);
         };
         String quote = exchangeInfo.getSymbols().stream()
-                .filter(sym -> sym.getSymbol().equals(str))
+                .filter(sym -> sym.getSymbol() != null && sym.getSymbol().equals(str))
                 .findFirst()
                 .map(Symbol::getQuoteAsset)
-                .orElseGet(parseCoin);
+                .orElseGet(parseQuote);
         return quote;
     }
 
