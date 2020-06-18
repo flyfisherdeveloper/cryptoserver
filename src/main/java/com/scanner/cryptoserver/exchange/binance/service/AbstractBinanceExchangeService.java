@@ -542,14 +542,12 @@ public abstract class AbstractBinanceExchangeService implements BinanceExchangeS
             lastIndex = data.length;
             pageSize = data.length;
         }
-        long start = System.currentTimeMillis();
         for (int index = lastIndex - pageSize; index < (Math.min(lastIndex, data.length)); index++) {
             CoinDataFor24Hr coin = get24HrCoinTicker(data[index]);
             if (coin != null) {
                 list.add(coin);
             }
         }
-        System.out.println("end time!!!!!!!!!!!!!!!!! " + (System.currentTimeMillis() - start));
         //todo: Binance has MANY coin pairs - this 24HrVolumeChange calls the api too many times and gets rejected
         //(eventually - too many calls will lead to the api blacklisting the i.p. address calling it)
         //don't call this in that case
