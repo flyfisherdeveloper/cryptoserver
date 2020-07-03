@@ -68,7 +68,7 @@ class SandboxBinanceUsaExchangeServiceTest extends Specification {
     @Unroll
     def "test getTickerData"() {
         when:
-          def tickerList = service.getTickerData(symbol, "12h", "3d")
+          def tickerList = service.getTickerData(symbol, "12h", "7d")
 
         then:
           if (exception) {
@@ -89,7 +89,7 @@ class SandboxBinanceUsaExchangeServiceTest extends Specification {
 
         where:
           symbol     | exception
-          "BTCUSDT"  | false
+          "BTCUSD"  | false
           "junkCoin" | true
     }
 }
