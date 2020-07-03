@@ -23,12 +23,14 @@ class CoinMarketCapServiceTest extends Specification {
         given:
           def exchangeNameList = ["binance", "binanceUsa"]
           def baseAsset1 = "BTC"
+          def name1 = "Bitcoin"
           def baseAsset2 = "ETH"
+          def name2 = "Ether"
           def id1 = 1
           def id2 = 2
 
           def exchangeInfo = new ExchangeInfo(symbols: [new Symbol(baseAsset: baseAsset1), new Symbol(baseAsset: baseAsset2)])
-          def map = new CoinMarketCapMap(data: [new CoinMarketCapData(symbol: baseAsset1, id: id1), new CoinMarketCapData(symbol: baseAsset2, id: id2)])
+          def map = new CoinMarketCapMap(data: [new CoinMarketCapData(symbol: baseAsset1, id: id1, name: name1), new CoinMarketCapData(symbol: baseAsset2, id: id2, name: name2)])
 
         when:
           cacheUtil.getExchangeNames() >> exchangeNameList
