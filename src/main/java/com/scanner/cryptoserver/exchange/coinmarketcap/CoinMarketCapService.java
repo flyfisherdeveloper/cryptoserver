@@ -56,7 +56,7 @@ public class CoinMarketCapService {
         //now get a set of ids for the coins in the exchanges
         Function<String, Integer> findCoinId = (coin) -> coinMarketCap.getData()
                 .stream()
-                .filter(c -> c.getSymbol().equals(coin))
+                .filter(c -> c.isCoin(coin))
                 .map(CoinMarketCapData::getId).findFirst().orElse(1);
         Set<Integer> idSet = coinSet.stream().map(findCoinId).collect(Collectors.toSet());
         return idSet;
