@@ -451,6 +451,11 @@ public abstract class AbstractBinanceExchangeService implements BinanceExchangeS
         return coins;
     }
 
+    @Override
+    public double getRsi(List<CoinTicker> tickers) {
+        return 0;
+    }
+
     public Double getPercentChange(double fromValue, double toValue) {
         double change = toValue - fromValue;
         return (change / fromValue) * 100.0;

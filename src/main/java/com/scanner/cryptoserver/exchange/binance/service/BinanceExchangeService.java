@@ -16,5 +16,7 @@ public interface BinanceExchangeService {
     List<CoinDataFor24Hr> get24HrAllCoinTicker(int page, int pageSize);
 
     List<CoinTicker> getTickerData(String symbol, String interval, String daysOrMonths);
+
+    double getRsi(List<CoinTicker> tickers);
 }
 

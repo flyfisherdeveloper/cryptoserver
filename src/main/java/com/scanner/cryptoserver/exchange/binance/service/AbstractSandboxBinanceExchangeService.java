@@ -6,6 +6,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.scanner.cryptoserver.exchange.binance.dto.CoinDataFor24Hr;
 import com.scanner.cryptoserver.exchange.binance.dto.CoinTicker;
 import com.scanner.cryptoserver.exchange.binance.dto.ExchangeInfo;
+import com.scanner.cryptoserver.util.Rsi;
 import com.scanner.cryptoserver.util.SandboxUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -85,6 +86,13 @@ public abstract class AbstractSandboxBinanceExchangeService implements BinanceEx
     @Override
     public List<CoinTicker> getTickerData(String symbol, String interval, String daysOrMonths) {
         return getDataList(getDataName("dayTicker-" + symbol + "-" + interval + "-" + daysOrMonths), CoinTicker.class);
+    }
+
+    @Override
+    public double getRsi(List<CoinTicker> tickers) {
+        Rsi rsi = new Rsi(tickers);
+        double value = rsi.calculate(5);
+        return value;
     }
 
     private String getDataName(String name) {

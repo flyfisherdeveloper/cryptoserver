@@ -89,7 +89,36 @@ class SandboxBinanceUsaExchangeServiceTest extends Specification {
 
         where:
           symbol     | exception
-          "BTCUSD"  | false
+          "BTCUSD"   | false
+          "junkCoin" | true
+    }
+
+    @Unroll
+    def "test getRsi"() {
+        when:
+          def tickerList = service.getTickerData(symbol, "12h", "7d")
+          def rsi = service.getRsi(tickerList)
+
+        then:
+          if (exception) {
+              assert tickerList != null
+              assert tickerList.size() == 0
+          } else {
+              assert tickerList
+              assert tickerList.size() > 0
+              def ticker = tickerList.get(0)
+              assert ticker.getSymbol() == symbol
+              assert ticker.getOpenTime()
+              assert ticker.getCloseTime()
+              assert ticker.getOpen() != 0.0
+              assert ticker.getHigh() != 0.0
+              assert ticker.getLow() != 0.0
+              assert ticker.getVolume() != 0.0
+          }
+
+        where:
+          symbol     | exception
+          "BTCUSD"   | false
           "junkCoin" | true
     }
 }
