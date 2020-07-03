@@ -1,0 +1,27 @@
+[ {
+  "symbol" : "LTCBTC",
+  "openTime" : 1591920000000,
+  "openDate" : null,
+  "closeTime" : 1591963199999,
+  "closeDate" : null,
+  "open" : 0.004658,
+  "high" : 0.004688,
+  "low" : 0.004626,
+  "close" : 0.004679,
+  "volume" : 48619.94,
+  "quoteAssetVolume" : 226.83631515,
+  "numberOfTrades" : 7325
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1591963200000,
+  "openDate" : null,
+  "closeTime" : 1592006399999,
+  "closeDate" : null,
+  "open" : 0.004681,
+  "high" : 0.004783,
+  "low" : 0.004679,
+  "close" : 0.00473,
+  "volume" : 35417.9,
+  "quoteAssetVolume" : 167.99799589,
+  "numberOfTrades" : 6085
+} ]
