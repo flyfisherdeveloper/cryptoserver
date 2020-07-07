@@ -6,7 +6,6 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.scanner.cryptoserver.exchange.binance.dto.CoinDataFor24Hr;
 import com.scanner.cryptoserver.exchange.binance.dto.CoinTicker;
 import com.scanner.cryptoserver.exchange.binance.dto.ExchangeInfo;
-import com.scanner.cryptoserver.util.Rsi;
 import com.scanner.cryptoserver.util.RsiCalc;
 import com.scanner.cryptoserver.util.SandboxUtil;
 import org.slf4j.Logger;
@@ -91,8 +90,6 @@ public abstract class AbstractSandboxBinanceExchangeService implements BinanceEx
 
     @Override
     public void setRsiForTickers(List<CoinTicker> tickers, int periodLength) {
-        //Rsi rsi = new Rsi();
-        //rsi.setRsi(tickers, periodLength);
         RsiCalc rsi = new RsiCalc(periodLength);
         rsi.calculateRsiForTickers(tickers, periodLength);
     }
