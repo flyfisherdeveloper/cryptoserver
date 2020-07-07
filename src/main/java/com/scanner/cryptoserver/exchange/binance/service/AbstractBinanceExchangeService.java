@@ -452,8 +452,7 @@ public abstract class AbstractBinanceExchangeService implements BinanceExchangeS
     }
 
     @Override
-    public double getRsi(List<CoinTicker> tickers) {
-        return 0;
+    public void setRsiForTickers(List<CoinTicker> tickers, int periodLength) {
     }
 
     public Double getPercentChange(double fromValue, double toValue) {

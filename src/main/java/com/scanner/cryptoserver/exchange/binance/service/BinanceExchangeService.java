@@ -17,6 +17,6 @@ public interface BinanceExchangeService {
 
     List<CoinTicker> getTickerData(String symbol, String interval, String daysOrMonths);
 
-    double getRsi(List<CoinTicker> tickers);
+    void setRsiForTickers(List<CoinTicker> tickers, int periodLength);
 }
 
