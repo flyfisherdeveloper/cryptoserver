@@ -22,8 +22,7 @@ class RsiCalc(val periodLength: Int) {
         losses = Math.max(0.0, -delta)
         if (avgList.isEmpty()) {
             for (bar in firstPrice + 1..lastPrice) {
-                val change = (prices[bar].close
-                        - prices[bar - 1].close)
+                val change = (prices[bar].close - prices[bar - 1].close)
                 gains += Math.max(0.0, change)
                 losses += Math.max(0.0, -change)
             }
@@ -55,5 +54,4 @@ class RsiCalc(val periodLength: Int) {
     }
 
     private class Averages(val avgUp: Double, val avgDown: Double)
-
 }
