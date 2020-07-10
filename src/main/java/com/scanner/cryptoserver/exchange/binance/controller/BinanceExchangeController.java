@@ -4,7 +4,7 @@ import com.scanner.cryptoserver.exchange.binance.dto.CoinDataFor24Hr;
 import com.scanner.cryptoserver.exchange.binance.dto.CoinTicker;
 import com.scanner.cryptoserver.exchange.binance.dto.ExchangeInfo;
 import com.scanner.cryptoserver.exchange.binance.dto.Symbol;
-import com.scanner.cryptoserver.exchange.binance.service.BinanceExchangeService;
+import com.scanner.cryptoserver.exchange.service.ExchangeService;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
@@ -15,9 +15,9 @@ import java.util.List;
 //@CrossOrigin(origins = "http://localhost:3000")
 @RequestMapping("api/v1/binance")
 public class BinanceExchangeController {
-    private final BinanceExchangeService binanceService;
+    private final ExchangeService binanceService;
 
-    public BinanceExchangeController(BinanceExchangeService binanceService) {
+    public BinanceExchangeController(ExchangeService binanceService) {
         this.binanceService = binanceService;
     }
 

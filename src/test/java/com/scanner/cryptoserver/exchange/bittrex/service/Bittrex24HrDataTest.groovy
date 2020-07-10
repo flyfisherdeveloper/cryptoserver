@@ -16,7 +16,13 @@ class Bittrex24HrDataTest extends Specification {
           def percentChange = 0.10
           def quoteVolume = 150.10
           def volume = 1000000
-          def bittrexCoin = new Bittrex24HrData(symbol, high, low, volume, quoteVolume, percentChange, "")
+          def bittrexCoin = new Bittrex24HrData()
+          bittrexCoin.setSymbol(symbol)
+          bittrexCoin.setHigh(high)
+          bittrexCoin.setLow(low)
+          bittrexCoin.setVolume(volume)
+          bittrexCoin.setQuoteVolume(quoteVolume)
+          bittrexCoin.setPercentChange(percentChange)
 
         when:
           def coin24Hr = bittrexCoin.coinDataAdapter()

@@ -1,5 +1,6 @@
 package com.scanner.cryptoserver.exchange.binance.service;
 
+import com.scanner.cryptoserver.exchange.service.AbstractSandboxExchangeService;
 import com.scanner.cryptoserver.util.SandboxUtil;
 import org.springframework.stereotype.Service;
 
@@ -12,7 +13,7 @@ import org.springframework.stereotype.Service;
  * The Sandbox data never changes - it is static.
  */
 @Service(value = "sandboxBinanceUsaService")
-public class SandboxBinanceUsaExchangeService extends AbstractSandboxBinanceExchangeService {
+public class SandboxBinanceUsaExchangeService extends AbstractSandboxExchangeService {
     private static final String sandboxName = "binanceusa";
 
     public SandboxBinanceUsaExchangeService(SandboxUtil sandboxUtil) {

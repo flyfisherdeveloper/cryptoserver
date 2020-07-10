@@ -1,7 +1,13 @@
 package com.scanner.cryptoserver.exchange.binance.dto
 
-data class Bittrex24HrData(val symbol: String, val high: Double, val low: Double, val volume: Double,
-                           val quoteVolume: Double, val percentChange: Double, val updatedAt: String) {
+class Bittrex24HrData {
+    var symbol: String = ""
+    var high: Double = 0.0
+    var low: Double = 0.0
+    var volume: Double = 0.0
+    var quoteVolume: Double = 0.0
+    var percentChange: Double = 0.0
+    var updatedAt: String = ""
 
     public fun coinDataAdapter(): CoinDataFor24Hr {
         val coin = CoinDataFor24Hr()

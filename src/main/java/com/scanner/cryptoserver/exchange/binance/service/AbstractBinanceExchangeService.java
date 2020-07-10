@@ -6,6 +6,7 @@ import com.scanner.cryptoserver.exchange.binance.dto.ExchangeInfo;
 import com.scanner.cryptoserver.exchange.binance.dto.Symbol;
 import com.scanner.cryptoserver.exchange.coinmarketcap.CoinMarketCapService;
 import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapMap;
+import com.scanner.cryptoserver.exchange.service.ExchangeService;
 import com.scanner.cryptoserver.util.CacheUtil;
 import com.scanner.cryptoserver.util.IconExtractor;
 import org.slf4j.Logger;
@@ -27,7 +28,7 @@ import java.util.stream.Collectors;
  * This service makes api calls for Binance exchanges: both BinanceUSA and Binance.
  * Each exchange has its separate URL, which are encapsulated in the BinanceService classes for the respective exchange.
  */
-public abstract class AbstractBinanceExchangeService implements BinanceExchangeService {
+public abstract class AbstractBinanceExchangeService implements ExchangeService {
     private static final Logger Log = LoggerFactory.getLogger(AbstractBinanceExchangeService.class);
     private static final String ALL_24_HOUR_TICKER = "All24HourTicker";
     private static final String ALL_TICKERS = "AllTickers";
