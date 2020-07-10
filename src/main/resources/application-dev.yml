@@ -23,6 +23,8 @@ exchanges:
     map: https://pro-api.coinmarketcap.com/v1/cryptocurrency/map
     info: https://pro-api.coinmarketcap.com/v1/cryptocurrency/info
     quotes: https://pro-api.coinmarketcap.com/v1/cryptocurrency/quotes/latest
+  bittrex:
+    market: https://api.bittrex.com/v3/markets/summaries
 
 spring:
   profiles:

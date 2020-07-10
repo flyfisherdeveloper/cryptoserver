@@ -1,7 +1,8 @@
-package com.scanner.cryptoserver.exchange.binance.service
+package com.scanner.cryptoserver.exchange.bittrex.service
 
 import com.scanner.cryptoserver.CachingConfig
 import com.scanner.cryptoserver.util.CacheUtilImpl
+import junit.framework.Assert.assertNotNull
 import org.junit.jupiter.api.Test
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest
@@ -17,7 +18,8 @@ internal class BittrexServiceImplIntegTest(@Autowired private val service: Bittr
     fun testMarkets() {
         val coins = service.get24HrAllCoinTicker()
         //find one of the coins that we know should be there
-        val mtlBtc = coins!!.first { it!!.symbol == "MTL-BTC" }
+        val mtlBtc = coins.first { it.symbol == "MTL-BTC" }
         println(mtlBtc)
+        assertNotNull(mtlBtc.symbol)
     }
 }
