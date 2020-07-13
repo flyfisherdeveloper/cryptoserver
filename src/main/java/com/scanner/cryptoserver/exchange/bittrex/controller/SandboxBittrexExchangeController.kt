@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController
 @RestController
 //@CrossOrigin(origins = ["https://develop.d2vswqrfiywrsc.amplifyapp.com"])
 @CrossOrigin(origins = ["http://localhost:3000"])
-@RequestMapping("api/v1/bittrex")
+@RequestMapping("sandbox-api/v1/bittrex")
 class SandboxBittrexExchangeController(val sandboxBittrexExchangeService: ExchangeService) {
 
     /**

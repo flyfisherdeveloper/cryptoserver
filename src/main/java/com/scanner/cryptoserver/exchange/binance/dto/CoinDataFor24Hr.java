@@ -5,6 +5,7 @@ import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapMap;
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
 
+//This data class is used by Kotlin code - therefore Lombok annotations cannot be used.
 public class CoinDataFor24Hr {
     private byte[] icon;
     //symbol of the coin, which includes the market (quote) such as LTCUSD, or BTCUSDT

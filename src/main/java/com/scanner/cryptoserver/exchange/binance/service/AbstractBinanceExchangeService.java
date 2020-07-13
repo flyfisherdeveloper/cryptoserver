@@ -74,14 +74,6 @@ public abstract class AbstractBinanceExchangeService implements ExchangeService 
         }
     }
 
-    private void setMarketCapFor24HrData(List<CoinDataFor24Hr> data) {
-        CoinMarketCapMap coinMarketCap = coinMarketCapService.getCoinMarketCapListing();
-        //If the coin market cap data exists, then update each symbol with the market cap value found in the maket cap data.
-        if (coinMarketCap != null) {
-            data.forEach(d -> d.addMarketCap(coinMarketCap));
-        }
-    }
-
     /**
      * Get exchange information. Gets the information out of the cache if in there.
      * Sets some information in the exchange info for the coins (symbols) in it.
@@ -559,7 +551,7 @@ public abstract class AbstractBinanceExchangeService implements ExchangeService 
         if (getAdd24HrVolume()) {
             add24HrVolumeChange(list);
         }
-        setMarketCapFor24HrData(list);
+        coinMarketCapService.setMarketCapFor24HrData(list);
         //since this is the first time (in awhile) we have called the exchange info,
         //start threads to update every minute for 15 minutes - this way the client gets
         //updated 24-hour data every minute

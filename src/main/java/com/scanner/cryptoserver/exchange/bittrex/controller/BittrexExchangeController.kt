@@ -2,6 +2,7 @@ package com.scanner.cryptoserver.exchange.bittrex.controller
 
 import com.scanner.cryptoserver.exchange.binance.dto.CoinDataFor24Hr
 import com.scanner.cryptoserver.exchange.bittrex.service.BittrexServiceImpl
+import com.scanner.cryptoserver.util.SandboxUtil
 import org.springframework.http.MediaType
 import org.springframework.web.bind.annotation.CrossOrigin
 import org.springframework.web.bind.annotation.GetMapping
@@ -22,6 +23,9 @@ class BittrexExchangeController(val service: BittrexServiceImpl) {
      */
     @GetMapping(value = ["/24HourTicker"], produces = [MediaType.APPLICATION_JSON_VALUE])
     fun getAll24HourTicker(): List<CoinDataFor24Hr> {
-        return service.get24HrAllCoinTicker()
+        val tickers = service.get24HrAllCoinTicker()
+        val util = SandboxUtil()
+        util.createMock("bittrex-24HourTicker.txt", tickers)
+        return tickers
     }
 }
