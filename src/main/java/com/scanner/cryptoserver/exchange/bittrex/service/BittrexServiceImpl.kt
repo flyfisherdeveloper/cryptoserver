@@ -6,12 +6,12 @@ import com.scanner.cryptoserver.exchange.binance.dto.Bittrex24HrData
 import com.scanner.cryptoserver.exchange.binance.dto.CoinDataFor24Hr
 import com.scanner.cryptoserver.exchange.coinmarketcap.CoinMarketCapService
 import com.scanner.cryptoserver.util.CacheUtil
+import com.scanner.cryptoserver.util.UrlReader
 import org.springframework.beans.factory.annotation.Value
 import org.springframework.stereotype.Service
-import java.net.URL
 
 @Service
-class BittrexServiceImpl(private val cacheUtil: CacheUtil, private val coinMarketCapService: CoinMarketCapService) {
+class BittrexServiceImpl(private val cacheUtil: CacheUtil, private val coinMarketCapService: CoinMarketCapService, private val url: UrlReader) {
     private val exchangeName = "bittrex"
     private val all24HrTicker = "All24HourTicker"
     private val allTickers = "AllTickers"
@@ -19,10 +19,16 @@ class BittrexServiceImpl(private val cacheUtil: CacheUtil, private val coinMarke
     @Value("\${exchanges.bittrex.market}")
     private val marketSummariesUrl: String? = null
 
+    @Value("\${exchanges.bittrex.trade}")
+    private val tradeUrl: String? = null
+
     fun get24HrAllCoinTicker(): List<CoinDataFor24Hr> {
         val coins = getExchangeInfo()
         coinMarketCapService.setMarketCapFor24HrData(coins)
-        coins.forEach { it.icon = cacheUtil.getIconBytes(it.coin) }
+        coins.forEach {
+            it.icon = cacheUtil.getIconBytes(it.coin)
+            it.tradeLink = tradeUrl + it.symbol
+        }
         return coins
     }
 
@@ -32,7 +38,11 @@ class BittrexServiceImpl(private val cacheUtil: CacheUtil, private val coinMarke
     }
 
     private fun getMarkets(): List<Bittrex24HrData> {
-        val results = URL(marketSummariesUrl).readText()
+        val results: String = if (marketSummariesUrl == null) {
+            url.readFromUrl()
+        } else {
+            url.readFromUrl(marketSummariesUrl)
+        }
         val mapper = jacksonObjectMapper()
         return mapper.readValue(results)
     }

@@ -25,6 +25,7 @@ exchanges:
     quotes: https://pro-api.coinmarketcap.com/v1/cryptocurrency/quotes/latest
   bittrex:
     market: https://api.bittrex.com/v3/markets/summaries
+    trade: https://bittrex.com/Market/Index?MarketName=
 
 spring:
   profiles:
