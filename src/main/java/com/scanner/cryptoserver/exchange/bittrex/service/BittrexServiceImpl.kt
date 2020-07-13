@@ -22,6 +22,7 @@ class BittrexServiceImpl(private val cacheUtil: CacheUtil, private val coinMarke
     fun get24HrAllCoinTicker(): List<CoinDataFor24Hr> {
         val coins = getExchangeInfo()
         coinMarketCapService.setMarketCapFor24HrData(coins)
+        coins.forEach { it.icon = cacheUtil.getIconBytes(it.coin) }
         return coins
     }
 

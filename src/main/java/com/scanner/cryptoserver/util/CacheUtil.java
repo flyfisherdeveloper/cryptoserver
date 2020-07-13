@@ -10,6 +10,8 @@ public interface CacheUtil {
 
     void evict(String cacheName, String objectToEvict);
 
+    byte[] getIconBytes(String coin);
+
     void addExchangeName(String exchangeName);
 
     List<String> getExchangeNames();

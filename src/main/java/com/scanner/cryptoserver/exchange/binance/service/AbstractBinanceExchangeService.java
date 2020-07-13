@@ -8,7 +8,6 @@ import com.scanner.cryptoserver.exchange.coinmarketcap.CoinMarketCapService;
 import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapMap;
 import com.scanner.cryptoserver.exchange.service.ExchangeService;
 import com.scanner.cryptoserver.util.CacheUtil;
-import com.scanner.cryptoserver.util.IconExtractor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.ResponseEntity;
@@ -34,7 +33,6 @@ public abstract class AbstractBinanceExchangeService implements ExchangeService 
     private static final String ALL_TICKERS = "AllTickers";
     private static final String EXCHANGE_INFO = "ExchangeInfo";
     private static final String COIN_CACHE = "CoinCache";
-    private static final String ICON_CACHE = "IconCache";
     private static final int ALL_24_HOUR_MAX_COUNT = 6;
     private static final int ALL_24_HOUR_DELAY = 151;
     private static final String TRADING = "TRADING";
@@ -272,7 +270,7 @@ public abstract class AbstractBinanceExchangeService implements ExchangeService 
         data.setCloseTime(closeTime);
 
         data.setupLinks(getUrlExtractor().getTradeUrl());
-        byte[] iconBytes = getIconBytes(coin);
+        byte[] iconBytes = cacheUtil.getIconBytes(coin);
         data.setIcon(iconBytes);
 
         return data;
@@ -598,23 +596,6 @@ public abstract class AbstractBinanceExchangeService implements ExchangeService 
         //run every 2.5 minutes
         scheduledService.scheduleAtFixedRate(command, ALL_24_HOUR_DELAY, ALL_24_HOUR_DELAY, TimeUnit.SECONDS);
         setScheduledService(scheduledService);
-    }
-
-    private byte[] getIconBytes(String coin) {
-        //Attempt to get the icon out of the cache if it is in there.
-        //If not in the cache, then call the icon extract service and add the icon bytes to the cache.
-        //The data in the cache will expire according to the setup in the CachingConfig configuration.
-        Supplier<byte[]> iconExtractor = () -> {
-            byte[] coins = IconExtractor.getIconBytes(coin);
-            if (coins == null) {
-                //here, the coin icon wasn't in the images folder
-                // add a non-null empty array to the cache so we don't keep trying to extract it
-                coins = new byte[0];
-            }
-            return coins;
-        };
-        byte[] coins = cacheUtil.retrieveFromCache(ICON_CACHE, coin, iconExtractor);
-        return coins;
     }
 
     protected abstract UrlExtractor getUrlExtractor();
