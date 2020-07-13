@@ -123,6 +123,12 @@ class BinanceExchangeServiceImplTest extends Specification {
           cacheUtil.retrieveFromCache(_, "binance-ExchangeInfo", _) >>> [exchangeInfo, exchangeInfo]
           coinMarketCapService.getCoinMarketCapListing() >> coinMarketCapMap
           restTemplate.getForEntity(*_,) >>> [linkedHashMapResponse, exchangeInfoResponse]
+          //here, we mock the call to the market cap service that sets the market cap
+          //this ensures that the service makes the call to set the market cap
+          coinMarketCapService.setMarketCapFor24HrData(*_) >> { args ->
+              def list = args.get(0) as List<CoinDataFor24Hr>
+              list.forEach { it.setMarketCap(marketCap) }
+          }
 
         then: "the service is called"
           def allCoins = service.get24HrCoinData()
