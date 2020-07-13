@@ -1,5 +1,6 @@
 package com.scanner.cryptoserver.exchange.coinmarketcap
 
+import com.scanner.cryptoserver.exchange.binance.dto.CoinDataFor24Hr
 import com.scanner.cryptoserver.exchange.binance.dto.ExchangeInfo
 import com.scanner.cryptoserver.exchange.binance.dto.Symbol
 import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapData
@@ -119,6 +120,36 @@ class CoinMarketCapServiceTest extends Specification {
           getJson()  | false
           "bad json" | true
 
+    }
+
+    def "test setMarketCapFor24HrData"() {
+        given:
+          def exchangeNameList = ["binance", "binanceUsa"]
+          def exchangeInfo = new ExchangeInfo(symbols: [new Symbol(baseAsset: "BTC"), new Symbol(baseAsset: "ETH")])
+
+          def map = new CoinMarketCapMap()
+          def btcCap = 121000000
+          def data1 = new CoinMarketCapData(name: "BTC", marketCap: btcCap, symbol: "BTCUSD", id: 1)
+
+          def ethCap = 22000000
+          def data2 = new CoinMarketCapData(name: "ETH", marketCap: ethCap, symbol: "ETHUSD", id: 2)
+          map.setData([data1, data2])
+
+          def coin1 = new CoinDataFor24Hr(coin: "BTC", symbol: "BTCUSD")
+          def coin2 = new CoinDataFor24Hr(coin: "ETH", symbol: "ETHUSD")
+          def data = [coin1, coin2]
+
+        when:
+          cacheUtil.getExchangeNames() >> exchangeNameList
+          cacheUtil.retrieveFromCache("ExchangeInfo", _, _) >> exchangeInfo
+          cacheUtil.retrieveFromCache("CoinMarketCap", _, _) >> map
+
+        then:
+          service.setMarketCapFor24HrData(data)
+
+        expect:
+          assert data.find { it.getCoin() == "BTC" }.getMarketCap() == btcCap
+          assert data.find { it.getCoin() == "ETH" }.getMarketCap() == ethCap
     }
 
     def getJson() {
