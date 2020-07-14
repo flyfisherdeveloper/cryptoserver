@@ -10,7 +10,7 @@ import java.util.function.Supplier;
 
 @Service(value = "cacheUtil")
 public class CacheUtilImpl implements CacheUtil {
-    private List<String> exchangeNames = new ArrayList<>();
+    private final List<String> exchangeNames = new ArrayList<>();
     private final CacheManager cacheManager;
     private static final String ICON_CACHE = "IconCache";
 
@@ -65,7 +65,8 @@ public class CacheUtilImpl implements CacheUtil {
 
     /**
      * Evict from the cache if present.
-     * @param cacheName The name of the cache.
+     *
+     * @param cacheName     The name of the cache.
      * @param objectToEvict The object to evict.
      */
     @Override

@@ -2,8 +2,10 @@ package com.scanner.cryptoserver.util
 
 import com.scanner.cryptoserver.exchange.binance.dto.CoinTicker
 import java.util.*
-import kotlin.math.roundToInt
 
+/**
+ * Class used to calculate the relative strength for a list of tickers.
+ */
 class RsiCalc(val periodLength: Int) {
     private val avgList: Stack<Averages> = Stack()
 

@@ -1,7 +1,9 @@
 package com.scanner.cryptoserver.exchange.bittrex.dto
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties
 import com.scanner.cryptoserver.exchange.binance.dto.CoinDataFor24Hr
 
+@JsonIgnoreProperties(ignoreUnknown = true)
 class Bittrex24HrData {
     var symbol: String = ""
     var high: Double = 0.0
@@ -9,7 +11,6 @@ class Bittrex24HrData {
     var volume: Double = 0.0
     var quoteVolume: Double = 0.0
     var percentChange: Double = 0.0
-    var updatedAt: String = ""
 
     fun coinDataAdapter(): CoinDataFor24Hr {
         val coin = CoinDataFor24Hr()
