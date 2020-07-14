@@ -25,7 +25,7 @@ class BittrexExchangeController(val service: BittrexServiceImpl) {
     fun getAll24HourTicker(): List<CoinDataFor24Hr> {
         val tickers = service.get24HrAllCoinTicker()
         val util = SandboxUtil()
-        util.createMock("bittrex-24HourTicker.txt", tickers)
+        util.createMock("bittrex-24HourTicker", tickers)
         return tickers
     }
 }

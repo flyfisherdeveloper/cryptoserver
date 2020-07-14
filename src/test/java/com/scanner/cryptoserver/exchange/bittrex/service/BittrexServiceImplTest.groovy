@@ -47,6 +47,11 @@ class BittrexServiceImplTest extends Specification {
           assert btc
           //getting the value from the json - "lastTradeRate" is converted to "lastPrice"
           assert btc.lastPrice == 9834.33
+
+          //note: the full trade link is null in the service for a unit test, but the service adds the symbol
+          //to the end of the trade link with the currency-coin pair
+          //just test to ensure that the pair is added to the end of the trade link
+          assert btc.tradeLink.endsWith("USD-BTC")
     }
 
     def getMarketsJson() {
