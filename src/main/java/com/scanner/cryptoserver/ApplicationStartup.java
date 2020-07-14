@@ -86,6 +86,7 @@ public class ApplicationStartup implements ApplicationListener<ApplicationReadyE
                         Log.info("Successfully completed retrieval of exchange info");
                     } else {
                         Log.error("Retrieval of exchange info error: {}", error.getMessage());
+                        error.printStackTrace();
                     }
                 });
     }

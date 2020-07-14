@@ -1,6 +1,5 @@
 package com.scanner.cryptoserver.exchange.bittrex.service
 
-import com.scanner.cryptoserver.exchange.binance.dto.Bittrex24HrData
 import com.scanner.cryptoserver.exchange.binance.dto.CoinDataFor24Hr
 import com.scanner.cryptoserver.exchange.service.AbstractSandboxExchangeService
 import com.scanner.cryptoserver.util.SandboxUtil
@@ -23,7 +22,6 @@ class SandboxBittrexExchangeService(sandboxUtil: SandboxUtil) : AbstractSandboxE
     }
 
     override fun get24HrAllCoinTicker(): List<CoinDataFor24Hr> {
-        val data = getDataList<Bittrex24HrData>(getDataName("24HourTicker"), Bittrex24HrData::class.java)
-        return data.map { it.coinDataAdapter() }
+        return getDataList<CoinDataFor24Hr>(getDataName("24HourTicker"), CoinDataFor24Hr::class.java)
     }
 }

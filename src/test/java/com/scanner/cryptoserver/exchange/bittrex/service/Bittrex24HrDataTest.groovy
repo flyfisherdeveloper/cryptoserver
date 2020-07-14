@@ -1,6 +1,6 @@
 package com.scanner.cryptoserver.exchange.bittrex.service
 
-import com.scanner.cryptoserver.exchange.binance.dto.Bittrex24HrData
+import com.scanner.cryptoserver.exchange.bittrex.dto.Bittrex24HrData
 import spock.lang.Specification
 
 

@@ -26,6 +26,7 @@ exchanges:
   bittrex:
     market: https://api.bittrex.com/v3/markets/summaries
     trade: https://bittrex.com/Market/Index?MarketName=
+    tickers: https://api.bittrex.com/v3/markets/tickers
 
 spring:
   profiles:

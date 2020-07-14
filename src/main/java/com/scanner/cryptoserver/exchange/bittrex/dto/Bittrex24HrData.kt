@@ -1,4 +1,6 @@
-package com.scanner.cryptoserver.exchange.binance.dto
+package com.scanner.cryptoserver.exchange.bittrex.dto
+
+import com.scanner.cryptoserver.exchange.binance.dto.CoinDataFor24Hr
 
 class Bittrex24HrData {
     var symbol: String = ""
@@ -9,7 +11,7 @@ class Bittrex24HrData {
     var percentChange: Double = 0.0
     var updatedAt: String = ""
 
-    public fun coinDataAdapter(): CoinDataFor24Hr {
+    fun coinDataAdapter(): CoinDataFor24Hr {
         val coin = CoinDataFor24Hr()
         coin.lowPrice = low
         coin.highPrice = high
