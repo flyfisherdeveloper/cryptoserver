@@ -5,6 +5,8 @@ import com.scanner.cryptoserver.util.CacheUtil
 import com.scanner.cryptoserver.util.UrlReader
 import spock.lang.Specification
 
+import java.util.function.Supplier
+
 
 class BittrexServiceImplTest extends Specification {
     private UrlReader urlReader
@@ -22,6 +24,11 @@ class BittrexServiceImplTest extends Specification {
     def "test getExchangeInfo"() {
         when:
           urlReader.readFromUrl() >> getMarketsJson()
+          //here, we mock the cache util, and use the supplier passed in as an argument
+          cacheUtil.retrieveFromCache(*_) >> { args ->
+              Supplier supplier = args.get(2)
+              return supplier.get()
+          }
 
         then:
           def markets = service.getExchangeInfo()
@@ -37,6 +44,11 @@ class BittrexServiceImplTest extends Specification {
     def "test get24HrAllCoinTicker"() {
         when:
           urlReader.readFromUrl() >>> [getMarketsJson(), getTickersJson()]
+          //here, we mock the cache util, and use the supplier passed in as an argument
+          cacheUtil.retrieveFromCache(*_) >> { args ->
+              Supplier supplier = args.get(2)
+              return supplier.get()
+          }
 
         then:
           def coins = service.get24HrAllCoinTicker()
