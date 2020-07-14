@@ -1,8 +1,10 @@
 package com.scanner.cryptoserver;
 
+import com.scanner.cryptoserver.exchange.binance.dto.CoinDataFor24Hr;
 import com.scanner.cryptoserver.exchange.binance.dto.ExchangeInfo;
 import com.scanner.cryptoserver.exchange.binance.dto.Symbol;
 import com.scanner.cryptoserver.exchange.binance.service.AbstractBinanceExchangeService;
+import com.scanner.cryptoserver.exchange.bittrex.service.BittrexServiceImpl;
 import com.scanner.cryptoserver.exchange.coinmarketcap.CoinMarketCapService;
 import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapMap;
 import org.slf4j.Logger;
@@ -11,6 +13,7 @@ import org.springframework.boot.context.event.ApplicationReadyEvent;
 import org.springframework.context.ApplicationListener;
 import org.springframework.stereotype.Component;
 
+import java.util.List;
 import java.util.Set;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutionException;
@@ -21,12 +24,15 @@ public class ApplicationStartup implements ApplicationListener<ApplicationReadyE
     private static final Logger Log = LoggerFactory.getLogger(ApplicationStartup.class);
     private final AbstractBinanceExchangeService binanceService;
     private final AbstractBinanceExchangeService binanceUsaService;
+    private final BittrexServiceImpl bittrexService;
     private final CoinMarketCapService coinMarketCapService;
 
-    public ApplicationStartup(AbstractBinanceExchangeService binanceService, AbstractBinanceExchangeService binanceUsaService, CoinMarketCapService coinMarketCapService) {
+    public ApplicationStartup(AbstractBinanceExchangeService binanceService, AbstractBinanceExchangeService binanceUsaService, BittrexServiceImpl bittrexService,
+                              CoinMarketCapService coinMarketCapService) {
         super();
         this.binanceService = binanceService;
         this.binanceUsaService = binanceUsaService;
+        this.bittrexService = bittrexService;
         this.coinMarketCapService = coinMarketCapService;
     }
 
@@ -47,25 +53,30 @@ public class ApplicationStartup implements ApplicationListener<ApplicationReadyE
         //and will be retrieved when the threads finish retrieving the exchange info.
         CompletableFuture<ExchangeInfo> futureBinance = CompletableFuture.supplyAsync(binanceService::getExchangeInfoWithoutMarketCap);
         CompletableFuture<ExchangeInfo> futureBinanceUsa = CompletableFuture.supplyAsync(binanceUsaService::getExchangeInfoWithoutMarketCap);
-        CompletableFuture.allOf(futureBinance, futureBinanceUsa)
+        CompletableFuture<List<CoinDataFor24Hr>> futureBittrex = CompletableFuture.supplyAsync(bittrexService::getExchangeInfo);
+        CompletableFuture.allOf(futureBinance, futureBinanceUsa, futureBittrex)
                 .thenApplyAsync(dummy -> {
                     ExchangeInfo binanceInfo = futureBinance.join();
                     ExchangeInfo binanceUsaInfo = futureBinanceUsa.join();
+                    List<CoinDataFor24Hr> bittrexInfo = futureBittrex.join();
 
                     Set<String> set = binanceInfo.getSymbols().stream().map(Symbol::getBaseAsset).collect(Collectors.toSet());
                     Set<String> usaSet = binanceUsaInfo.getSymbols().stream().map(Symbol::getBaseAsset).collect(Collectors.toSet());
+                    Set<String> bittrexSet = bittrexInfo.stream().map(CoinDataFor24Hr::getCoin).collect(Collectors.toSet());
                     set.addAll(usaSet);
+                    set.addAll(bittrexSet);
                     return set;
                 })
                 .whenComplete((coinSet, error) -> {
                     //now get the market cap value for each coin
-                    CoinMarketCapMap coinMarketCapInfo = coinMarketCapService.getCoinMarketCapListing();
+                    CoinMarketCapMap coinMarketCapInfo = coinMarketCapService.getCoinMarketCapListingWithCoinSet(coinSet);
 
                     //Now fill the market cap for each coin on the exchanges.
-                    //Here, we set the binance exchange info market cap for each coin, retrieving it from the coin market cap info.
+                    //Here, we set the exchange info market cap for each coin, retrieving it from the coin market cap info.
                     try {
                         futureBinance.get().getSymbols().forEach(symbol -> symbol.addMarketCap(coinMarketCapInfo));
                         futureBinanceUsa.get().getSymbols().forEach(symbol -> symbol.addMarketCap(coinMarketCapInfo));
+                        futureBittrex.get().forEach(coin -> coin.addMarketCap(coinMarketCapInfo));
                     } catch (InterruptedException | ExecutionException e) {
                         Log.error("Could not access exchange future for adding market cap: {}", e.getMessage());
                     }
@@ -75,6 +86,7 @@ public class ApplicationStartup implements ApplicationListener<ApplicationReadyE
                         Log.info("Successfully completed retrieval of exchange info");
                     } else {
                         Log.error("Retrieval of exchange info error: {}", error.getMessage());
+                        error.printStackTrace();
                     }
                 });
     }

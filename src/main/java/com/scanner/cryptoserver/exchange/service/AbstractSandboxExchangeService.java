@@ -1,4 +1,4 @@
-package com.scanner.cryptoserver.exchange.binance.service;
+package com.scanner.cryptoserver.exchange.service;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JavaType;
@@ -6,6 +6,8 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.scanner.cryptoserver.exchange.binance.dto.CoinDataFor24Hr;
 import com.scanner.cryptoserver.exchange.binance.dto.CoinTicker;
 import com.scanner.cryptoserver.exchange.binance.dto.ExchangeInfo;
+import com.scanner.cryptoserver.exchange.binance.service.SandboxBinanceUsaExchangeService;
+import com.scanner.cryptoserver.util.RsiCalc;
 import com.scanner.cryptoserver.util.SandboxUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -14,17 +16,17 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public abstract class AbstractSandboxBinanceExchangeService implements BinanceExchangeService {
+public abstract class AbstractSandboxExchangeService implements ExchangeService {
     private static final Logger Log = LoggerFactory.getLogger(SandboxBinanceUsaExchangeService.class);
     private final SandboxUtil sandboxUtil;
     private final ObjectMapper objectMapper;
 
-    public AbstractSandboxBinanceExchangeService(SandboxUtil sandboxUtil) {
+    public AbstractSandboxExchangeService(SandboxUtil sandboxUtil) {
         this.sandboxUtil = sandboxUtil;
         objectMapper = new ObjectMapper();
     }
 
-    private <T> T getData(String name, Class<T> theClass) {
+    protected <T> T getData(String name, Class<T> theClass) {
         String json = sandboxUtil.getJson(name);
         T data = null;
 
@@ -37,7 +39,7 @@ public abstract class AbstractSandboxBinanceExchangeService implements BinanceEx
         return data;
     }
 
-    private <T> List<T> getDataList(String name, Class<T> listClass) {
+    protected <T> List<T> getDataList(String name, Class<T> listClass) {
         String json = sandboxUtil.getJson(name);
         List<T> list = null;
 
@@ -87,7 +89,13 @@ public abstract class AbstractSandboxBinanceExchangeService implements BinanceEx
         return getDataList(getDataName("dayTicker-" + symbol + "-" + interval + "-" + daysOrMonths), CoinTicker.class);
     }
 
-    private String getDataName(String name) {
+    @Override
+    public void setRsiForTickers(List<CoinTicker> tickers, int periodLength) {
+        RsiCalc rsi = new RsiCalc(periodLength);
+        rsi.calculateRsiForTickers(tickers, periodLength);
+    }
+
+    protected String getDataName(String name) {
         return getSandboxName() + "-" + name;
     }
 

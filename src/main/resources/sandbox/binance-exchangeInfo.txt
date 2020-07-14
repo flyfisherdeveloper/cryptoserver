@@ -1,0 +1,5161 @@
+{
+  "symbols" : [ {
+    "symbol" : "ETHBTC",
+    "baseAsset" : "ETH",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "LTCBTC",
+    "baseAsset" : "LTC",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BNBBTC",
+    "baseAsset" : "BNB",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "NEOBTC",
+    "baseAsset" : "NEO",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "QTUMETH",
+    "baseAsset" : "QTUM",
+    "quoteAsset" : "ETH",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "EOSETH",
+    "baseAsset" : "EOS",
+    "quoteAsset" : "ETH",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "SNTETH",
+    "baseAsset" : "SNT",
+    "quoteAsset" : "ETH",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BNTETH",
+    "baseAsset" : "BNT",
+    "quoteAsset" : "ETH",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BCCBTC",
+    "baseAsset" : "BCC",
+    "quoteAsset" : "BTC",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "GASBTC",
+    "baseAsset" : "GAS",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BNBETH",
+    "baseAsset" : "BNB",
+    "quoteAsset" : "ETH",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BTCUSDT",
+    "baseAsset" : "BTC",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ETHUSDT",
+    "baseAsset" : "ETH",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "HSRBTC",
+    "baseAsset" : "HSR",
+    "quoteAsset" : "BTC",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "OAXETH",
+    "baseAsset" : "OAX",
+    "quoteAsset" : "ETH",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "DNTETH",
+    "baseAsset" : "DNT",
+    "quoteAsset" : "ETH",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "MCOETH",
+    "baseAsset" : "MCO",
+    "quoteAsset" : "ETH",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ICNETH",
+    "baseAsset" : "ICN",
+    "quoteAsset" : "ETH",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "MCOBTC",
+    "baseAsset" : "MCO",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "WTCBTC",
+    "baseAsset" : "WTC",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "WTCETH",
+    "baseAsset" : "WTC",
+    "quoteAsset" : "ETH",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "LRCBTC",
+    "baseAsset" : "LRC",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "LRCETH",
+    "baseAsset" : "LRC",
+    "quoteAsset" : "ETH",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "QTUMBTC",
+    "baseAsset" : "QTUM",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "YOYOBTC",
+    "baseAsset" : "YOYO",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "OMGBTC",
+    "baseAsset" : "OMG",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "OMGETH",
+    "baseAsset" : "OMG",
+    "quoteAsset" : "ETH",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ZRXBTC",
+    "baseAsset" : "ZRX",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ZRXETH",
+    "baseAsset" : "ZRX",
+    "quoteAsset" : "ETH",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "STRATBTC",
+    "baseAsset" : "STRAT",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "STRATETH",
+    "baseAsset" : "STRAT",
+    "quoteAsset" : "ETH",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "SNGLSBTC",
+    "baseAsset" : "SNGLS",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "SNGLSETH",
+    "baseAsset" : "SNGLS",
+    "quoteAsset" : "ETH",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BQXBTC",
+    "baseAsset" : "BQX",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BQXETH",
+    "baseAsset" : "BQX",
+    "quoteAsset" : "ETH",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "KNCBTC",
+    "baseAsset" : "KNC",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "KNCETH",
+    "baseAsset" : "KNC",
+    "quoteAsset" : "ETH",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "FUNBTC",
+    "baseAsset" : "FUN",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "FUNETH",
+    "baseAsset" : "FUN",
+    "quoteAsset" : "ETH",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "SNMBTC",
+    "baseAsset" : "SNM",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "SNMETH",
+    "baseAsset" : "SNM",
+    "quoteAsset" : "ETH",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "NEOETH",
+    "baseAsset" : "NEO",
+    "quoteAsset" : "ETH",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "IOTABTC",
+    "baseAsset" : "IOTA",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "IOTAETH",
+    "baseAsset" : "IOTA",
+    "quoteAsset" : "ETH",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "LINKBTC",
+    "baseAsset" : "LINK",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "LINKETH",
+    "baseAsset" : "LINK",
+    "quoteAsset" : "ETH",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "XVGBTC",
+    "baseAsset" : "XVG",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "XVGETH",
+    "baseAsset" : "XVG",
+    "quoteAsset" : "ETH",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "SALTBTC",
+    "baseAsset" : "SALT",
+    "quoteAsset" : "BTC",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "SALTETH",
+    "baseAsset" : "SALT",
+    "quoteAsset" : "ETH",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "MDABTC",
+    "baseAsset" : "MDA",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "MDAETH",
+    "baseAsset" : "MDA",
+    "quoteAsset" : "ETH",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "MTLBTC",
+    "baseAsset" : "MTL",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "MTLETH",
+    "baseAsset" : "MTL",
+    "quoteAsset" : "ETH",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "SUBBTC",
+    "baseAsset" : "SUB",
+    "quoteAsset" : "BTC",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "SUBETH",
+    "baseAsset" : "SUB",
+    "quoteAsset" : "ETH",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "EOSBTC",
+    "baseAsset" : "EOS",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "SNTBTC",
+    "baseAsset" : "SNT",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ETCETH",
+    "baseAsset" : "ETC",
+    "quoteAsset" : "ETH",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ETCBTC",
+    "baseAsset" : "ETC",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "MTHBTC",
+    "baseAsset" : "MTH",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "MTHETH",
+    "baseAsset" : "MTH",
+    "quoteAsset" : "ETH",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ENGBTC",
+    "baseAsset" : "ENG",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ENGETH",
+    "baseAsset" : "ENG",
+    "quoteAsset" : "ETH",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "DNTBTC",
+    "baseAsset" : "DNT",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ZECBTC",
+    "baseAsset" : "ZEC",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ZECETH",
+    "baseAsset" : "ZEC",
+    "quoteAsset" : "ETH",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BNTBTC",
+    "baseAsset" : "BNT",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ASTBTC",
+    "baseAsset" : "AST",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ASTETH",
+    "baseAsset" : "AST",
+    "quoteAsset" : "ETH",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "DASHBTC",
+    "baseAsset" : "DASH",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "DASHETH",
+    "baseAsset" : "DASH",
+    "quoteAsset" : "ETH",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "OAXBTC",
+    "baseAsset" : "OAX",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ICNBTC",
+    "baseAsset" : "ICN",
+    "quoteAsset" : "BTC",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BTGBTC",
+    "baseAsset" : "BTG",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BTGETH",
+    "baseAsset" : "BTG",
+    "quoteAsset" : "ETH",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "EVXBTC",
+    "baseAsset" : "EVX",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "EVXETH",
+    "baseAsset" : "EVX",
+    "quoteAsset" : "ETH",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "REQBTC",
+    "baseAsset" : "REQ",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "REQETH",
+    "baseAsset" : "REQ",
+    "quoteAsset" : "ETH",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "VIBBTC",
+    "baseAsset" : "VIB",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "VIBETH",
+    "baseAsset" : "VIB",
+    "quoteAsset" : "ETH",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "HSRETH",
+    "baseAsset" : "HSR",
+    "quoteAsset" : "ETH",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "TRXBTC",
+    "baseAsset" : "TRX",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "TRXETH",
+    "baseAsset" : "TRX",
+    "quoteAsset" : "ETH",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "POWRBTC",
+    "baseAsset" : "POWR",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "POWRETH",
+    "baseAsset" : "POWR",
+    "quoteAsset" : "ETH",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ARKBTC",
+    "baseAsset" : "ARK",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ARKETH",
+    "baseAsset" : "ARK",
+    "quoteAsset" : "ETH",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "YOYOETH",
+    "baseAsset" : "YOYO",
+    "quoteAsset" : "ETH",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "XRPBTC",
+    "baseAsset" : "XRP",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "XRPETH",
+    "baseAsset" : "XRP",
+    "quoteAsset" : "ETH",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "MODBTC",
+    "baseAsset" : "MOD",
+    "quoteAsset" : "BTC",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "MODETH",
+    "baseAsset" : "MOD",
+    "quoteAsset" : "ETH",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ENJBTC",
+    "baseAsset" : "ENJ",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ENJETH",
+    "baseAsset" : "ENJ",
+    "quoteAsset" : "ETH",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "STORJBTC",
+    "baseAsset" : "STORJ",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "STORJETH",
+    "baseAsset" : "STORJ",
+    "quoteAsset" : "ETH",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BNBUSDT",
+    "baseAsset" : "BNB",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "VENBNB",
+    "baseAsset" : "VEN",
+    "quoteAsset" : "BNB",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "YOYOBNB",
+    "baseAsset" : "YOYO",
+    "quoteAsset" : "BNB",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "POWRBNB",
+    "baseAsset" : "POWR",
+    "quoteAsset" : "BNB",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "VENBTC",
+    "baseAsset" : "VEN",
+    "quoteAsset" : "BTC",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "VENETH",
+    "baseAsset" : "VEN",
+    "quoteAsset" : "ETH",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "KMDBTC",
+    "baseAsset" : "KMD",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "KMDETH",
+    "baseAsset" : "KMD",
+    "quoteAsset" : "ETH",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "NULSBNB",
+    "baseAsset" : "NULS",
+    "quoteAsset" : "BNB",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "RCNBTC",
+    "baseAsset" : "RCN",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "RCNETH",
+    "baseAsset" : "RCN",
+    "quoteAsset" : "ETH",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "RCNBNB",
+    "baseAsset" : "RCN",
+    "quoteAsset" : "BNB",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "NULSBTC",
+    "baseAsset" : "NULS",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "NULSETH",
+    "baseAsset" : "NULS",
+    "quoteAsset" : "ETH",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "RDNBTC",
+    "baseAsset" : "RDN",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "RDNETH",
+    "baseAsset" : "RDN",
+    "quoteAsset" : "ETH",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "RDNBNB",
+    "baseAsset" : "RDN",
+    "quoteAsset" : "BNB",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "XMRBTC",
+    "baseAsset" : "XMR",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "XMRETH",
+    "baseAsset" : "XMR",
+    "quoteAsset" : "ETH",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "DLTBNB",
+    "baseAsset" : "DLT",
+    "quoteAsset" : "BNB",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "WTCBNB",
+    "baseAsset" : "WTC",
+    "quoteAsset" : "BNB",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "DLTBTC",
+    "baseAsset" : "DLT",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "DLTETH",
+    "baseAsset" : "DLT",
+    "quoteAsset" : "ETH",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "AMBBTC",
+    "baseAsset" : "AMB",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "AMBETH",
+    "baseAsset" : "AMB",
+    "quoteAsset" : "ETH",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "AMBBNB",
+    "baseAsset" : "AMB",
+    "quoteAsset" : "BNB",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BCCETH",
+    "baseAsset" : "BCC",
+    "quoteAsset" : "ETH",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BCCUSDT",
+    "baseAsset" : "BCC",
+    "quoteAsset" : "USDT",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BCCBNB",
+    "baseAsset" : "BCC",
+    "quoteAsset" : "BNB",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BATBTC",
+    "baseAsset" : "BAT",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BATETH",
+    "baseAsset" : "BAT",
+    "quoteAsset" : "ETH",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BATBNB",
+    "baseAsset" : "BAT",
+    "quoteAsset" : "BNB",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BCPTBTC",
+    "baseAsset" : "BCPT",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BCPTETH",
+    "baseAsset" : "BCPT",
+    "quoteAsset" : "ETH",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BCPTBNB",
+    "baseAsset" : "BCPT",
+    "quoteAsset" : "BNB",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ARNBTC",
+    "baseAsset" : "ARN",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ARNETH",
+    "baseAsset" : "ARN",
+    "quoteAsset" : "ETH",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "GVTBTC",
+    "baseAsset" : "GVT",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "GVTETH",
+    "baseAsset" : "GVT",
+    "quoteAsset" : "ETH",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "CDTBTC",
+    "baseAsset" : "CDT",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "CDTETH",
+    "baseAsset" : "CDT",
+    "quoteAsset" : "ETH",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "GXSBTC",
+    "baseAsset" : "GXS",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "GXSETH",
+    "baseAsset" : "GXS",
+    "quoteAsset" : "ETH",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "NEOUSDT",
+    "baseAsset" : "NEO",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "NEOBNB",
+    "baseAsset" : "NEO",
+    "quoteAsset" : "BNB",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "POEBTC",
+    "baseAsset" : "POE",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "POEETH",
+    "baseAsset" : "POE",
+    "quoteAsset" : "ETH",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "QSPBTC",
+    "baseAsset" : "QSP",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "QSPETH",
+    "baseAsset" : "QSP",
+    "quoteAsset" : "ETH",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "QSPBNB",
+    "baseAsset" : "QSP",
+    "quoteAsset" : "BNB",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BTSBTC",
+    "baseAsset" : "BTS",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BTSETH",
+    "baseAsset" : "BTS",
+    "quoteAsset" : "ETH",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BTSBNB",
+    "baseAsset" : "BTS",
+    "quoteAsset" : "BNB",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "XZCBTC",
+    "baseAsset" : "XZC",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "XZCETH",
+    "baseAsset" : "XZC",
+    "quoteAsset" : "ETH",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "XZCBNB",
+    "baseAsset" : "XZC",
+    "quoteAsset" : "BNB",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "LSKBTC",
+    "baseAsset" : "LSK",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "LSKETH",
+    "baseAsset" : "LSK",
+    "quoteAsset" : "ETH",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "LSKBNB",
+    "baseAsset" : "LSK",
+    "quoteAsset" : "BNB",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "TNTBTC",
+    "baseAsset" : "TNT",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "TNTETH",
+    "baseAsset" : "TNT",
+    "quoteAsset" : "ETH",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "FUELBTC",
+    "baseAsset" : "FUEL",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "FUELETH",
+    "baseAsset" : "FUEL",
+    "quoteAsset" : "ETH",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "MANABTC",
+    "baseAsset" : "MANA",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "MANAETH",
+    "baseAsset" : "MANA",
+    "quoteAsset" : "ETH",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BCDBTC",
+    "baseAsset" : "BCD",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BCDETH",
+    "baseAsset" : "BCD",
+    "quoteAsset" : "ETH",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "DGDBTC",
+    "baseAsset" : "DGD",
+    "quoteAsset" : "BTC",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "DGDETH",
+    "baseAsset" : "DGD",
+    "quoteAsset" : "ETH",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "IOTABNB",
+    "baseAsset" : "IOTA",
+    "quoteAsset" : "BNB",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ADXBTC",
+    "baseAsset" : "ADX",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ADXETH",
+    "baseAsset" : "ADX",
+    "quoteAsset" : "ETH",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ADXBNB",
+    "baseAsset" : "ADX",
+    "quoteAsset" : "BNB",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ADABTC",
+    "baseAsset" : "ADA",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ADAETH",
+    "baseAsset" : "ADA",
+    "quoteAsset" : "ETH",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "PPTBTC",
+    "baseAsset" : "PPT",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "PPTETH",
+    "baseAsset" : "PPT",
+    "quoteAsset" : "ETH",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "CMTBTC",
+    "baseAsset" : "CMT",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "CMTETH",
+    "baseAsset" : "CMT",
+    "quoteAsset" : "ETH",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "CMTBNB",
+    "baseAsset" : "CMT",
+    "quoteAsset" : "BNB",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "XLMBTC",
+    "baseAsset" : "XLM",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "XLMETH",
+    "baseAsset" : "XLM",
+    "quoteAsset" : "ETH",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "XLMBNB",
+    "baseAsset" : "XLM",
+    "quoteAsset" : "BNB",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "CNDBTC",
+    "baseAsset" : "CND",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "CNDETH",
+    "baseAsset" : "CND",
+    "quoteAsset" : "ETH",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "CNDBNB",
+    "baseAsset" : "CND",
+    "quoteAsset" : "BNB",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "LENDBTC",
+    "baseAsset" : "LEND",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "LENDETH",
+    "baseAsset" : "LEND",
+    "quoteAsset" : "ETH",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "WABIBTC",
+    "baseAsset" : "WABI",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "WABIETH",
+    "baseAsset" : "WABI",
+    "quoteAsset" : "ETH",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "WABIBNB",
+    "baseAsset" : "WABI",
+    "quoteAsset" : "BNB",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "LTCETH",
+    "baseAsset" : "LTC",
+    "quoteAsset" : "ETH",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "LTCUSDT",
+    "baseAsset" : "LTC",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "LTCBNB",
+    "baseAsset" : "LTC",
+    "quoteAsset" : "BNB",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "TNBBTC",
+    "baseAsset" : "TNB",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "TNBETH",
+    "baseAsset" : "TNB",
+    "quoteAsset" : "ETH",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "WAVESBTC",
+    "baseAsset" : "WAVES",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "WAVESETH",
+    "baseAsset" : "WAVES",
+    "quoteAsset" : "ETH",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "WAVESBNB",
+    "baseAsset" : "WAVES",
+    "quoteAsset" : "BNB",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "GTOBTC",
+    "baseAsset" : "GTO",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "GTOETH",
+    "baseAsset" : "GTO",
+    "quoteAsset" : "ETH",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "GTOBNB",
+    "baseAsset" : "GTO",
+    "quoteAsset" : "BNB",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ICXBTC",
+    "baseAsset" : "ICX",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ICXETH",
+    "baseAsset" : "ICX",
+    "quoteAsset" : "ETH",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ICXBNB",
+    "baseAsset" : "ICX",
+    "quoteAsset" : "BNB",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "OSTBTC",
+    "baseAsset" : "OST",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "OSTETH",
+    "baseAsset" : "OST",
+    "quoteAsset" : "ETH",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "OSTBNB",
+    "baseAsset" : "OST",
+    "quoteAsset" : "BNB",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ELFBTC",
+    "baseAsset" : "ELF",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ELFETH",
+    "baseAsset" : "ELF",
+    "quoteAsset" : "ETH",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "AIONBTC",
+    "baseAsset" : "AION",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "AIONETH",
+    "baseAsset" : "AION",
+    "quoteAsset" : "ETH",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "AIONBNB",
+    "baseAsset" : "AION",
+    "quoteAsset" : "BNB",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "NEBLBTC",
+    "baseAsset" : "NEBL",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "NEBLETH",
+    "baseAsset" : "NEBL",
+    "quoteAsset" : "ETH",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "NEBLBNB",
+    "baseAsset" : "NEBL",
+    "quoteAsset" : "BNB",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BRDBTC",
+    "baseAsset" : "BRD",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BRDETH",
+    "baseAsset" : "BRD",
+    "quoteAsset" : "ETH",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BRDBNB",
+    "baseAsset" : "BRD",
+    "quoteAsset" : "BNB",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "MCOBNB",
+    "baseAsset" : "MCO",
+    "quoteAsset" : "BNB",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "EDOBTC",
+    "baseAsset" : "EDO",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "EDOETH",
+    "baseAsset" : "EDO",
+    "quoteAsset" : "ETH",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "WINGSBTC",
+    "baseAsset" : "WINGS",
+    "quoteAsset" : "BTC",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "WINGSETH",
+    "baseAsset" : "WINGS",
+    "quoteAsset" : "ETH",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "NAVBTC",
+    "baseAsset" : "NAV",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "NAVETH",
+    "baseAsset" : "NAV",
+    "quoteAsset" : "ETH",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "NAVBNB",
+    "baseAsset" : "NAV",
+    "quoteAsset" : "BNB",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "LUNBTC",
+    "baseAsset" : "LUN",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "LUNETH",
+    "baseAsset" : "LUN",
+    "quoteAsset" : "ETH",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "TRIGBTC",
+    "baseAsset" : "TRIG",
+    "quoteAsset" : "BTC",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "TRIGETH",
+    "baseAsset" : "TRIG",
+    "quoteAsset" : "ETH",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "TRIGBNB",
+    "baseAsset" : "TRIG",
+    "quoteAsset" : "BNB",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "APPCBTC",
+    "baseAsset" : "APPC",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "APPCETH",
+    "baseAsset" : "APPC",
+    "quoteAsset" : "ETH",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "APPCBNB",
+    "baseAsset" : "APPC",
+    "quoteAsset" : "BNB",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "VIBEBTC",
+    "baseAsset" : "VIBE",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "VIBEETH",
+    "baseAsset" : "VIBE",
+    "quoteAsset" : "ETH",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "RLCBTC",
+    "baseAsset" : "RLC",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "RLCETH",
+    "baseAsset" : "RLC",
+    "quoteAsset" : "ETH",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "RLCBNB",
+    "baseAsset" : "RLC",
+    "quoteAsset" : "BNB",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "INSBTC",
+    "baseAsset" : "INS",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "INSETH",
+    "baseAsset" : "INS",
+    "quoteAsset" : "ETH",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "PIVXBTC",
+    "baseAsset" : "PIVX",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "PIVXETH",
+    "baseAsset" : "PIVX",
+    "quoteAsset" : "ETH",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "PIVXBNB",
+    "baseAsset" : "PIVX",
+    "quoteAsset" : "BNB",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "IOSTBTC",
+    "baseAsset" : "IOST",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "IOSTETH",
+    "baseAsset" : "IOST",
+    "quoteAsset" : "ETH",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "CHATBTC",
+    "baseAsset" : "CHAT",
+    "quoteAsset" : "BTC",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "CHATETH",
+    "baseAsset" : "CHAT",
+    "quoteAsset" : "ETH",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "STEEMBTC",
+    "baseAsset" : "STEEM",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "STEEMETH",
+    "baseAsset" : "STEEM",
+    "quoteAsset" : "ETH",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "STEEMBNB",
+    "baseAsset" : "STEEM",
+    "quoteAsset" : "BNB",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "NANOBTC",
+    "baseAsset" : "NANO",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "NANOETH",
+    "baseAsset" : "NANO",
+    "quoteAsset" : "ETH",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "NANOBNB",
+    "baseAsset" : "NANO",
+    "quoteAsset" : "BNB",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "VIABTC",
+    "baseAsset" : "VIA",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "VIAETH",
+    "baseAsset" : "VIA",
+    "quoteAsset" : "ETH",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "VIABNB",
+    "baseAsset" : "VIA",
+    "quoteAsset" : "BNB",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BLZBTC",
+    "baseAsset" : "BLZ",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BLZETH",
+    "baseAsset" : "BLZ",
+    "quoteAsset" : "ETH",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BLZBNB",
+    "baseAsset" : "BLZ",
+    "quoteAsset" : "BNB",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "AEBTC",
+    "baseAsset" : "AE",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "AEETH",
+    "baseAsset" : "AE",
+    "quoteAsset" : "ETH",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "AEBNB",
+    "baseAsset" : "AE",
+    "quoteAsset" : "BNB",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "RPXBTC",
+    "baseAsset" : "RPX",
+    "quoteAsset" : "BTC",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "RPXETH",
+    "baseAsset" : "RPX",
+    "quoteAsset" : "ETH",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "RPXBNB",
+    "baseAsset" : "RPX",
+    "quoteAsset" : "BNB",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "NCASHBTC",
+    "baseAsset" : "NCASH",
+    "quoteAsset" : "BTC",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "NCASHETH",
+    "baseAsset" : "NCASH",
+    "quoteAsset" : "ETH",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "NCASHBNB",
+    "baseAsset" : "NCASH",
+    "quoteAsset" : "BNB",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "POABTC",
+    "baseAsset" : "POA",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "POAETH",
+    "baseAsset" : "POA",
+    "quoteAsset" : "ETH",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "POABNB",
+    "baseAsset" : "POA",
+    "quoteAsset" : "BNB",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ZILBTC",
+    "baseAsset" : "ZIL",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ZILETH",
+    "baseAsset" : "ZIL",
+    "quoteAsset" : "ETH",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ZILBNB",
+    "baseAsset" : "ZIL",
+    "quoteAsset" : "BNB",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ONTBTC",
+    "baseAsset" : "ONT",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ONTETH",
+    "baseAsset" : "ONT",
+    "quoteAsset" : "ETH",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ONTBNB",
+    "baseAsset" : "ONT",
+    "quoteAsset" : "BNB",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "STORMBTC",
+    "baseAsset" : "STORM",
+    "quoteAsset" : "BTC",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "STORMETH",
+    "baseAsset" : "STORM",
+    "quoteAsset" : "ETH",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "STORMBNB",
+    "baseAsset" : "STORM",
+    "quoteAsset" : "BNB",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "QTUMBNB",
+    "baseAsset" : "QTUM",
+    "quoteAsset" : "BNB",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "QTUMUSDT",
+    "baseAsset" : "QTUM",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "XEMBTC",
+    "baseAsset" : "XEM",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "XEMETH",
+    "baseAsset" : "XEM",
+    "quoteAsset" : "ETH",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "XEMBNB",
+    "baseAsset" : "XEM",
+    "quoteAsset" : "BNB",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "WANBTC",
+    "baseAsset" : "WAN",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "WANETH",
+    "baseAsset" : "WAN",
+    "quoteAsset" : "ETH",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "WANBNB",
+    "baseAsset" : "WAN",
+    "quoteAsset" : "BNB",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "WPRBTC",
+    "baseAsset" : "WPR",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "WPRETH",
+    "baseAsset" : "WPR",
+    "quoteAsset" : "ETH",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "QLCBTC",
+    "baseAsset" : "QLC",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "QLCETH",
+    "baseAsset" : "QLC",
+    "quoteAsset" : "ETH",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "SYSBTC",
+    "baseAsset" : "SYS",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "SYSETH",
+    "baseAsset" : "SYS",
+    "quoteAsset" : "ETH",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "SYSBNB",
+    "baseAsset" : "SYS",
+    "quoteAsset" : "BNB",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "QLCBNB",
+    "baseAsset" : "QLC",
+    "quoteAsset" : "BNB",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "GRSBTC",
+    "baseAsset" : "GRS",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "GRSETH",
+    "baseAsset" : "GRS",
+    "quoteAsset" : "ETH",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ADAUSDT",
+    "baseAsset" : "ADA",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ADABNB",
+    "baseAsset" : "ADA",
+    "quoteAsset" : "BNB",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "CLOAKBTC",
+    "baseAsset" : "CLOAK",
+    "quoteAsset" : "BTC",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "CLOAKETH",
+    "baseAsset" : "CLOAK",
+    "quoteAsset" : "ETH",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "GNTBTC",
+    "baseAsset" : "GNT",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "GNTETH",
+    "baseAsset" : "GNT",
+    "quoteAsset" : "ETH",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "GNTBNB",
+    "baseAsset" : "GNT",
+    "quoteAsset" : "BNB",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "LOOMBTC",
+    "baseAsset" : "LOOM",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "LOOMETH",
+    "baseAsset" : "LOOM",
+    "quoteAsset" : "ETH",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "LOOMBNB",
+    "baseAsset" : "LOOM",
+    "quoteAsset" : "BNB",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "XRPUSDT",
+    "baseAsset" : "XRP",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BCNBTC",
+    "baseAsset" : "BCN",
+    "quoteAsset" : "BTC",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BCNETH",
+    "baseAsset" : "BCN",
+    "quoteAsset" : "ETH",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BCNBNB",
+    "baseAsset" : "BCN",
+    "quoteAsset" : "BNB",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "REPBTC",
+    "baseAsset" : "REP",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "REPETH",
+    "baseAsset" : "REP",
+    "quoteAsset" : "ETH",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "REPBNB",
+    "baseAsset" : "REP",
+    "quoteAsset" : "BNB",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BTCTUSD",
+    "baseAsset" : "BTC",
+    "quoteAsset" : "TUSD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "TUSDBTC",
+    "baseAsset" : "TUSD",
+    "quoteAsset" : "BTC",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ETHTUSD",
+    "baseAsset" : "ETH",
+    "quoteAsset" : "TUSD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "TUSDETH",
+    "baseAsset" : "TUSD",
+    "quoteAsset" : "ETH",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "TUSDBNB",
+    "baseAsset" : "TUSD",
+    "quoteAsset" : "BNB",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ZENBTC",
+    "baseAsset" : "ZEN",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ZENETH",
+    "baseAsset" : "ZEN",
+    "quoteAsset" : "ETH",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ZENBNB",
+    "baseAsset" : "ZEN",
+    "quoteAsset" : "BNB",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "SKYBTC",
+    "baseAsset" : "SKY",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "SKYETH",
+    "baseAsset" : "SKY",
+    "quoteAsset" : "ETH",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "SKYBNB",
+    "baseAsset" : "SKY",
+    "quoteAsset" : "BNB",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "EOSUSDT",
+    "baseAsset" : "EOS",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "EOSBNB",
+    "baseAsset" : "EOS",
+    "quoteAsset" : "BNB",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "CVCBTC",
+    "baseAsset" : "CVC",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "CVCETH",
+    "baseAsset" : "CVC",
+    "quoteAsset" : "ETH",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "CVCBNB",
+    "baseAsset" : "CVC",
+    "quoteAsset" : "BNB",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "THETABTC",
+    "baseAsset" : "THETA",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "THETAETH",
+    "baseAsset" : "THETA",
+    "quoteAsset" : "ETH",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "THETABNB",
+    "baseAsset" : "THETA",
+    "quoteAsset" : "BNB",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "XRPBNB",
+    "baseAsset" : "XRP",
+    "quoteAsset" : "BNB",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "TUSDUSDT",
+    "baseAsset" : "TUSD",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "IOTAUSDT",
+    "baseAsset" : "IOTA",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "XLMUSDT",
+    "baseAsset" : "XLM",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "IOTXBTC",
+    "baseAsset" : "IOTX",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "IOTXETH",
+    "baseAsset" : "IOTX",
+    "quoteAsset" : "ETH",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "QKCBTC",
+    "baseAsset" : "QKC",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "QKCETH",
+    "baseAsset" : "QKC",
+    "quoteAsset" : "ETH",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "AGIBTC",
+    "baseAsset" : "AGI",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "AGIETH",
+    "baseAsset" : "AGI",
+    "quoteAsset" : "ETH",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "AGIBNB",
+    "baseAsset" : "AGI",
+    "quoteAsset" : "BNB",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "NXSBTC",
+    "baseAsset" : "NXS",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "NXSETH",
+    "baseAsset" : "NXS",
+    "quoteAsset" : "ETH",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "NXSBNB",
+    "baseAsset" : "NXS",
+    "quoteAsset" : "BNB",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ENJBNB",
+    "baseAsset" : "ENJ",
+    "quoteAsset" : "BNB",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "DATABTC",
+    "baseAsset" : "DATA",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "DATAETH",
+    "baseAsset" : "DATA",
+    "quoteAsset" : "ETH",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ONTUSDT",
+    "baseAsset" : "ONT",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "TRXBNB",
+    "baseAsset" : "TRX",
+    "quoteAsset" : "BNB",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "TRXUSDT",
+    "baseAsset" : "TRX",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ETCUSDT",
+    "baseAsset" : "ETC",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ETCBNB",
+    "baseAsset" : "ETC",
+    "quoteAsset" : "BNB",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ICXUSDT",
+    "baseAsset" : "ICX",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "SCBTC",
+    "baseAsset" : "SC",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "SCETH",
+    "baseAsset" : "SC",
+    "quoteAsset" : "ETH",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "SCBNB",
+    "baseAsset" : "SC",
+    "quoteAsset" : "BNB",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "NPXSBTC",
+    "baseAsset" : "NPXS",
+    "quoteAsset" : "BTC",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "NPXSETH",
+    "baseAsset" : "NPXS",
+    "quoteAsset" : "ETH",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "VENUSDT",
+    "baseAsset" : "VEN",
+    "quoteAsset" : "USDT",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "KEYBTC",
+    "baseAsset" : "KEY",
+    "quoteAsset" : "BTC",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "KEYETH",
+    "baseAsset" : "KEY",
+    "quoteAsset" : "ETH",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "NASBTC",
+    "baseAsset" : "NAS",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "NASETH",
+    "baseAsset" : "NAS",
+    "quoteAsset" : "ETH",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "NASBNB",
+    "baseAsset" : "NAS",
+    "quoteAsset" : "BNB",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "MFTBTC",
+    "baseAsset" : "MFT",
+    "quoteAsset" : "BTC",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "MFTETH",
+    "baseAsset" : "MFT",
+    "quoteAsset" : "ETH",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "MFTBNB",
+    "baseAsset" : "MFT",
+    "quoteAsset" : "BNB",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "DENTBTC",
+    "baseAsset" : "DENT",
+    "quoteAsset" : "BTC",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "DENTETH",
+    "baseAsset" : "DENT",
+    "quoteAsset" : "ETH",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ARDRBTC",
+    "baseAsset" : "ARDR",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ARDRETH",
+    "baseAsset" : "ARDR",
+    "quoteAsset" : "ETH",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ARDRBNB",
+    "baseAsset" : "ARDR",
+    "quoteAsset" : "BNB",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "NULSUSDT",
+    "baseAsset" : "NULS",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "HOTBTC",
+    "baseAsset" : "HOT",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "HOTETH",
+    "baseAsset" : "HOT",
+    "quoteAsset" : "ETH",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "VETBTC",
+    "baseAsset" : "VET",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "VETETH",
+    "baseAsset" : "VET",
+    "quoteAsset" : "ETH",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "VETUSDT",
+    "baseAsset" : "VET",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "VETBNB",
+    "baseAsset" : "VET",
+    "quoteAsset" : "BNB",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "DOCKBTC",
+    "baseAsset" : "DOCK",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "DOCKETH",
+    "baseAsset" : "DOCK",
+    "quoteAsset" : "ETH",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "POLYBTC",
+    "baseAsset" : "POLY",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "POLYBNB",
+    "baseAsset" : "POLY",
+    "quoteAsset" : "BNB",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "PHXBTC",
+    "baseAsset" : "PHX",
+    "quoteAsset" : "BTC",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "PHXETH",
+    "baseAsset" : "PHX",
+    "quoteAsset" : "ETH",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "PHXBNB",
+    "baseAsset" : "PHX",
+    "quoteAsset" : "BNB",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "HCBTC",
+    "baseAsset" : "HC",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "HCETH",
+    "baseAsset" : "HC",
+    "quoteAsset" : "ETH",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "GOBTC",
+    "baseAsset" : "GO",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "GOBNB",
+    "baseAsset" : "GO",
+    "quoteAsset" : "BNB",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "PAXBTC",
+    "baseAsset" : "PAX",
+    "quoteAsset" : "BTC",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "PAXBNB",
+    "baseAsset" : "PAX",
+    "quoteAsset" : "BNB",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "PAXUSDT",
+    "baseAsset" : "PAX",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "PAXETH",
+    "baseAsset" : "PAX",
+    "quoteAsset" : "ETH",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "RVNBTC",
+    "baseAsset" : "RVN",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "RVNBNB",
+    "baseAsset" : "RVN",
+    "quoteAsset" : "BNB",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "DCRBTC",
+    "baseAsset" : "DCR",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "DCRBNB",
+    "baseAsset" : "DCR",
+    "quoteAsset" : "BNB",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "USDCBNB",
+    "baseAsset" : "USDC",
+    "quoteAsset" : "BNB",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "MITHBTC",
+    "baseAsset" : "MITH",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "MITHBNB",
+    "baseAsset" : "MITH",
+    "quoteAsset" : "BNB",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BCHABCBTC",
+    "baseAsset" : "BCHABC",
+    "quoteAsset" : "BTC",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BCHSVBTC",
+    "baseAsset" : "BCHSV",
+    "quoteAsset" : "BTC",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BCHABCUSDT",
+    "baseAsset" : "BCHABC",
+    "quoteAsset" : "USDT",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BCHSVUSDT",
+    "baseAsset" : "BCHSV",
+    "quoteAsset" : "USDT",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BNBPAX",
+    "baseAsset" : "BNB",
+    "quoteAsset" : "PAX",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BTCPAX",
+    "baseAsset" : "BTC",
+    "quoteAsset" : "PAX",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ETHPAX",
+    "baseAsset" : "ETH",
+    "quoteAsset" : "PAX",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "XRPPAX",
+    "baseAsset" : "XRP",
+    "quoteAsset" : "PAX",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "EOSPAX",
+    "baseAsset" : "EOS",
+    "quoteAsset" : "PAX",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "XLMPAX",
+    "baseAsset" : "XLM",
+    "quoteAsset" : "PAX",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "RENBTC",
+    "baseAsset" : "REN",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "RENBNB",
+    "baseAsset" : "REN",
+    "quoteAsset" : "BNB",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BNBTUSD",
+    "baseAsset" : "BNB",
+    "quoteAsset" : "TUSD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "XRPTUSD",
+    "baseAsset" : "XRP",
+    "quoteAsset" : "TUSD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "EOSTUSD",
+    "baseAsset" : "EOS",
+    "quoteAsset" : "TUSD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "XLMTUSD",
+    "baseAsset" : "XLM",
+    "quoteAsset" : "TUSD",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BNBUSDC",
+    "baseAsset" : "BNB",
+    "quoteAsset" : "USDC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BTCUSDC",
+    "baseAsset" : "BTC",
+    "quoteAsset" : "USDC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ETHUSDC",
+    "baseAsset" : "ETH",
+    "quoteAsset" : "USDC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "XRPUSDC",
+    "baseAsset" : "XRP",
+    "quoteAsset" : "USDC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "EOSUSDC",
+    "baseAsset" : "EOS",
+    "quoteAsset" : "USDC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "XLMUSDC",
+    "baseAsset" : "XLM",
+    "quoteAsset" : "USDC",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "USDCUSDT",
+    "baseAsset" : "USDC",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ADATUSD",
+    "baseAsset" : "ADA",
+    "quoteAsset" : "TUSD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "TRXTUSD",
+    "baseAsset" : "TRX",
+    "quoteAsset" : "TUSD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "NEOTUSD",
+    "baseAsset" : "NEO",
+    "quoteAsset" : "TUSD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "TRXXRP",
+    "baseAsset" : "TRX",
+    "quoteAsset" : "XRP",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "XZCXRP",
+    "baseAsset" : "XZC",
+    "quoteAsset" : "XRP",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "PAXTUSD",
+    "baseAsset" : "PAX",
+    "quoteAsset" : "TUSD",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "USDCTUSD",
+    "baseAsset" : "USDC",
+    "quoteAsset" : "TUSD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "USDCPAX",
+    "baseAsset" : "USDC",
+    "quoteAsset" : "PAX",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "LINKUSDT",
+    "baseAsset" : "LINK",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "LINKTUSD",
+    "baseAsset" : "LINK",
+    "quoteAsset" : "TUSD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "LINKPAX",
+    "baseAsset" : "LINK",
+    "quoteAsset" : "PAX",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "LINKUSDC",
+    "baseAsset" : "LINK",
+    "quoteAsset" : "USDC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "WAVESUSDT",
+    "baseAsset" : "WAVES",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "WAVESTUSD",
+    "baseAsset" : "WAVES",
+    "quoteAsset" : "TUSD",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "WAVESPAX",
+    "baseAsset" : "WAVES",
+    "quoteAsset" : "PAX",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "WAVESUSDC",
+    "baseAsset" : "WAVES",
+    "quoteAsset" : "USDC",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BCHABCTUSD",
+    "baseAsset" : "BCHABC",
+    "quoteAsset" : "TUSD",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BCHABCPAX",
+    "baseAsset" : "BCHABC",
+    "quoteAsset" : "PAX",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BCHABCUSDC",
+    "baseAsset" : "BCHABC",
+    "quoteAsset" : "USDC",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BCHSVTUSD",
+    "baseAsset" : "BCHSV",
+    "quoteAsset" : "TUSD",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BCHSVPAX",
+    "baseAsset" : "BCHSV",
+    "quoteAsset" : "PAX",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BCHSVUSDC",
+    "baseAsset" : "BCHSV",
+    "quoteAsset" : "USDC",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "LTCTUSD",
+    "baseAsset" : "LTC",
+    "quoteAsset" : "TUSD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "LTCPAX",
+    "baseAsset" : "LTC",
+    "quoteAsset" : "PAX",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "LTCUSDC",
+    "baseAsset" : "LTC",
+    "quoteAsset" : "USDC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "TRXPAX",
+    "baseAsset" : "TRX",
+    "quoteAsset" : "PAX",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "TRXUSDC",
+    "baseAsset" : "TRX",
+    "quoteAsset" : "USDC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BTTBTC",
+    "baseAsset" : "BTT",
+    "quoteAsset" : "BTC",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BTTBNB",
+    "baseAsset" : "BTT",
+    "quoteAsset" : "BNB",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BTTUSDT",
+    "baseAsset" : "BTT",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BNBUSDS",
+    "baseAsset" : "BNB",
+    "quoteAsset" : "USDS",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BTCUSDS",
+    "baseAsset" : "BTC",
+    "quoteAsset" : "USDS",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "USDSUSDT",
+    "baseAsset" : "USDS",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "USDSPAX",
+    "baseAsset" : "USDS",
+    "quoteAsset" : "PAX",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "USDSTUSD",
+    "baseAsset" : "USDS",
+    "quoteAsset" : "TUSD",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "USDSUSDC",
+    "baseAsset" : "USDS",
+    "quoteAsset" : "USDC",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BTTPAX",
+    "baseAsset" : "BTT",
+    "quoteAsset" : "PAX",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BTTTUSD",
+    "baseAsset" : "BTT",
+    "quoteAsset" : "TUSD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BTTUSDC",
+    "baseAsset" : "BTT",
+    "quoteAsset" : "USDC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ONGBNB",
+    "baseAsset" : "ONG",
+    "quoteAsset" : "BNB",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ONGBTC",
+    "baseAsset" : "ONG",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ONGUSDT",
+    "baseAsset" : "ONG",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "HOTBNB",
+    "baseAsset" : "HOT",
+    "quoteAsset" : "BNB",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "HOTUSDT",
+    "baseAsset" : "HOT",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ZILUSDT",
+    "baseAsset" : "ZIL",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ZRXBNB",
+    "baseAsset" : "ZRX",
+    "quoteAsset" : "BNB",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ZRXUSDT",
+    "baseAsset" : "ZRX",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "FETBNB",
+    "baseAsset" : "FET",
+    "quoteAsset" : "BNB",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "FETBTC",
+    "baseAsset" : "FET",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "FETUSDT",
+    "baseAsset" : "FET",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BATUSDT",
+    "baseAsset" : "BAT",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "XMRBNB",
+    "baseAsset" : "XMR",
+    "quoteAsset" : "BNB",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "XMRUSDT",
+    "baseAsset" : "XMR",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ZECBNB",
+    "baseAsset" : "ZEC",
+    "quoteAsset" : "BNB",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ZECUSDT",
+    "baseAsset" : "ZEC",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ZECPAX",
+    "baseAsset" : "ZEC",
+    "quoteAsset" : "PAX",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ZECTUSD",
+    "baseAsset" : "ZEC",
+    "quoteAsset" : "TUSD",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ZECUSDC",
+    "baseAsset" : "ZEC",
+    "quoteAsset" : "USDC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "IOSTBNB",
+    "baseAsset" : "IOST",
+    "quoteAsset" : "BNB",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "IOSTUSDT",
+    "baseAsset" : "IOST",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "CELRBNB",
+    "baseAsset" : "CELR",
+    "quoteAsset" : "BNB",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "CELRBTC",
+    "baseAsset" : "CELR",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "CELRUSDT",
+    "baseAsset" : "CELR",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ADAPAX",
+    "baseAsset" : "ADA",
+    "quoteAsset" : "PAX",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ADAUSDC",
+    "baseAsset" : "ADA",
+    "quoteAsset" : "USDC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "NEOPAX",
+    "baseAsset" : "NEO",
+    "quoteAsset" : "PAX",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "NEOUSDC",
+    "baseAsset" : "NEO",
+    "quoteAsset" : "USDC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "DASHBNB",
+    "baseAsset" : "DASH",
+    "quoteAsset" : "BNB",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "DASHUSDT",
+    "baseAsset" : "DASH",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "NANOUSDT",
+    "baseAsset" : "NANO",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "OMGBNB",
+    "baseAsset" : "OMG",
+    "quoteAsset" : "BNB",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "OMGUSDT",
+    "baseAsset" : "OMG",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "THETAUSDT",
+    "baseAsset" : "THETA",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ENJUSDT",
+    "baseAsset" : "ENJ",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "MITHUSDT",
+    "baseAsset" : "MITH",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "MATICBNB",
+    "baseAsset" : "MATIC",
+    "quoteAsset" : "BNB",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "MATICBTC",
+    "baseAsset" : "MATIC",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "MATICUSDT",
+    "baseAsset" : "MATIC",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ATOMBNB",
+    "baseAsset" : "ATOM",
+    "quoteAsset" : "BNB",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ATOMBTC",
+    "baseAsset" : "ATOM",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ATOMUSDT",
+    "baseAsset" : "ATOM",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ATOMUSDC",
+    "baseAsset" : "ATOM",
+    "quoteAsset" : "USDC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ATOMPAX",
+    "baseAsset" : "ATOM",
+    "quoteAsset" : "PAX",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ATOMTUSD",
+    "baseAsset" : "ATOM",
+    "quoteAsset" : "TUSD",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ETCUSDC",
+    "baseAsset" : "ETC",
+    "quoteAsset" : "USDC",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ETCPAX",
+    "baseAsset" : "ETC",
+    "quoteAsset" : "PAX",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ETCTUSD",
+    "baseAsset" : "ETC",
+    "quoteAsset" : "TUSD",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BATUSDC",
+    "baseAsset" : "BAT",
+    "quoteAsset" : "USDC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BATPAX",
+    "baseAsset" : "BAT",
+    "quoteAsset" : "PAX",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BATTUSD",
+    "baseAsset" : "BAT",
+    "quoteAsset" : "TUSD",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "PHBBNB",
+    "baseAsset" : "PHB",
+    "quoteAsset" : "BNB",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "PHBBTC",
+    "baseAsset" : "PHB",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "PHBUSDC",
+    "baseAsset" : "PHB",
+    "quoteAsset" : "USDC",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "PHBTUSD",
+    "baseAsset" : "PHB",
+    "quoteAsset" : "TUSD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "PHBPAX",
+    "baseAsset" : "PHB",
+    "quoteAsset" : "PAX",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "TFUELBNB",
+    "baseAsset" : "TFUEL",
+    "quoteAsset" : "BNB",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "TFUELBTC",
+    "baseAsset" : "TFUEL",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "TFUELUSDT",
+    "baseAsset" : "TFUEL",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "TFUELUSDC",
+    "baseAsset" : "TFUEL",
+    "quoteAsset" : "USDC",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "TFUELTUSD",
+    "baseAsset" : "TFUEL",
+    "quoteAsset" : "TUSD",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "TFUELPAX",
+    "baseAsset" : "TFUEL",
+    "quoteAsset" : "PAX",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ONEBNB",
+    "baseAsset" : "ONE",
+    "quoteAsset" : "BNB",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ONEBTC",
+    "baseAsset" : "ONE",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ONEUSDT",
+    "baseAsset" : "ONE",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ONETUSD",
+    "baseAsset" : "ONE",
+    "quoteAsset" : "TUSD",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ONEPAX",
+    "baseAsset" : "ONE",
+    "quoteAsset" : "PAX",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ONEUSDC",
+    "baseAsset" : "ONE",
+    "quoteAsset" : "USDC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "FTMBNB",
+    "baseAsset" : "FTM",
+    "quoteAsset" : "BNB",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "FTMBTC",
+    "baseAsset" : "FTM",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "FTMUSDT",
+    "baseAsset" : "FTM",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "FTMTUSD",
+    "baseAsset" : "FTM",
+    "quoteAsset" : "TUSD",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "FTMPAX",
+    "baseAsset" : "FTM",
+    "quoteAsset" : "PAX",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "FTMUSDC",
+    "baseAsset" : "FTM",
+    "quoteAsset" : "USDC",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BTCBBTC",
+    "baseAsset" : "BTCB",
+    "quoteAsset" : "BTC",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BCPTTUSD",
+    "baseAsset" : "BCPT",
+    "quoteAsset" : "TUSD",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BCPTPAX",
+    "baseAsset" : "BCPT",
+    "quoteAsset" : "PAX",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BCPTUSDC",
+    "baseAsset" : "BCPT",
+    "quoteAsset" : "USDC",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ALGOBNB",
+    "baseAsset" : "ALGO",
+    "quoteAsset" : "BNB",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ALGOBTC",
+    "baseAsset" : "ALGO",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ALGOUSDT",
+    "baseAsset" : "ALGO",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ALGOTUSD",
+    "baseAsset" : "ALGO",
+    "quoteAsset" : "TUSD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ALGOPAX",
+    "baseAsset" : "ALGO",
+    "quoteAsset" : "PAX",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ALGOUSDC",
+    "baseAsset" : "ALGO",
+    "quoteAsset" : "USDC",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "USDSBUSDT",
+    "baseAsset" : "USDSB",
+    "quoteAsset" : "USDT",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "USDSBUSDS",
+    "baseAsset" : "USDSB",
+    "quoteAsset" : "USDS",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "GTOUSDT",
+    "baseAsset" : "GTO",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "GTOPAX",
+    "baseAsset" : "GTO",
+    "quoteAsset" : "PAX",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "GTOTUSD",
+    "baseAsset" : "GTO",
+    "quoteAsset" : "TUSD",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "GTOUSDC",
+    "baseAsset" : "GTO",
+    "quoteAsset" : "USDC",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ERDBNB",
+    "baseAsset" : "ERD",
+    "quoteAsset" : "BNB",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ERDBTC",
+    "baseAsset" : "ERD",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ERDUSDT",
+    "baseAsset" : "ERD",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ERDPAX",
+    "baseAsset" : "ERD",
+    "quoteAsset" : "PAX",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ERDUSDC",
+    "baseAsset" : "ERD",
+    "quoteAsset" : "USDC",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "DOGEBNB",
+    "baseAsset" : "DOGE",
+    "quoteAsset" : "BNB",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "DOGEBTC",
+    "baseAsset" : "DOGE",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "DOGEUSDT",
+    "baseAsset" : "DOGE",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "DOGEPAX",
+    "baseAsset" : "DOGE",
+    "quoteAsset" : "PAX",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "DOGEUSDC",
+    "baseAsset" : "DOGE",
+    "quoteAsset" : "USDC",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "DUSKBNB",
+    "baseAsset" : "DUSK",
+    "quoteAsset" : "BNB",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "DUSKBTC",
+    "baseAsset" : "DUSK",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "DUSKUSDT",
+    "baseAsset" : "DUSK",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "DUSKUSDC",
+    "baseAsset" : "DUSK",
+    "quoteAsset" : "USDC",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "DUSKPAX",
+    "baseAsset" : "DUSK",
+    "quoteAsset" : "PAX",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BGBPUSDC",
+    "baseAsset" : "BGBP",
+    "quoteAsset" : "USDC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ANKRBNB",
+    "baseAsset" : "ANKR",
+    "quoteAsset" : "BNB",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ANKRBTC",
+    "baseAsset" : "ANKR",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ANKRUSDT",
+    "baseAsset" : "ANKR",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ANKRTUSD",
+    "baseAsset" : "ANKR",
+    "quoteAsset" : "TUSD",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ANKRPAX",
+    "baseAsset" : "ANKR",
+    "quoteAsset" : "PAX",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ANKRUSDC",
+    "baseAsset" : "ANKR",
+    "quoteAsset" : "USDC",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ONTPAX",
+    "baseAsset" : "ONT",
+    "quoteAsset" : "PAX",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ONTUSDC",
+    "baseAsset" : "ONT",
+    "quoteAsset" : "USDC",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "WINBNB",
+    "baseAsset" : "WIN",
+    "quoteAsset" : "BNB",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "WINBTC",
+    "baseAsset" : "WIN",
+    "quoteAsset" : "BTC",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "WINUSDT",
+    "baseAsset" : "WIN",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "WINUSDC",
+    "baseAsset" : "WIN",
+    "quoteAsset" : "USDC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "COSBNB",
+    "baseAsset" : "COS",
+    "quoteAsset" : "BNB",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "COSBTC",
+    "baseAsset" : "COS",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "COSUSDT",
+    "baseAsset" : "COS",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "TUSDBTUSD",
+    "baseAsset" : "TUSDB",
+    "quoteAsset" : "TUSD",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "NPXSUSDT",
+    "baseAsset" : "NPXS",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "NPXSUSDC",
+    "baseAsset" : "NPXS",
+    "quoteAsset" : "USDC",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "COCOSBNB",
+    "baseAsset" : "COCOS",
+    "quoteAsset" : "BNB",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "COCOSBTC",
+    "baseAsset" : "COCOS",
+    "quoteAsset" : "BTC",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "COCOSUSDT",
+    "baseAsset" : "COCOS",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "MTLUSDT",
+    "baseAsset" : "MTL",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "TOMOBNB",
+    "baseAsset" : "TOMO",
+    "quoteAsset" : "BNB",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "TOMOBTC",
+    "baseAsset" : "TOMO",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "TOMOUSDT",
+    "baseAsset" : "TOMO",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "TOMOUSDC",
+    "baseAsset" : "TOMO",
+    "quoteAsset" : "USDC",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "PERLBNB",
+    "baseAsset" : "PERL",
+    "quoteAsset" : "BNB",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "PERLBTC",
+    "baseAsset" : "PERL",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "PERLUSDC",
+    "baseAsset" : "PERL",
+    "quoteAsset" : "USDC",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "PERLUSDT",
+    "baseAsset" : "PERL",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "DENTUSDT",
+    "baseAsset" : "DENT",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "MFTUSDT",
+    "baseAsset" : "MFT",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "KEYUSDT",
+    "baseAsset" : "KEY",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "STORMUSDT",
+    "baseAsset" : "STORM",
+    "quoteAsset" : "USDT",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "DOCKUSDT",
+    "baseAsset" : "DOCK",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "WANUSDT",
+    "baseAsset" : "WAN",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "FUNUSDT",
+    "baseAsset" : "FUN",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "CVCUSDT",
+    "baseAsset" : "CVC",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BTTTRX",
+    "baseAsset" : "BTT",
+    "quoteAsset" : "TRX",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "WINTRX",
+    "baseAsset" : "WIN",
+    "quoteAsset" : "TRX",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "CHZBNB",
+    "baseAsset" : "CHZ",
+    "quoteAsset" : "BNB",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "CHZBTC",
+    "baseAsset" : "CHZ",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "CHZUSDT",
+    "baseAsset" : "CHZ",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BANDBNB",
+    "baseAsset" : "BAND",
+    "quoteAsset" : "BNB",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BANDBTC",
+    "baseAsset" : "BAND",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BANDUSDT",
+    "baseAsset" : "BAND",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BNBBUSD",
+    "baseAsset" : "BNB",
+    "quoteAsset" : "BUSD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BTCBUSD",
+    "baseAsset" : "BTC",
+    "quoteAsset" : "BUSD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BUSDUSDT",
+    "baseAsset" : "BUSD",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BEAMBNB",
+    "baseAsset" : "BEAM",
+    "quoteAsset" : "BNB",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BEAMBTC",
+    "baseAsset" : "BEAM",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BEAMUSDT",
+    "baseAsset" : "BEAM",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "XTZBNB",
+    "baseAsset" : "XTZ",
+    "quoteAsset" : "BNB",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "XTZBTC",
+    "baseAsset" : "XTZ",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "XTZUSDT",
+    "baseAsset" : "XTZ",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "RENUSDT",
+    "baseAsset" : "REN",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "RVNUSDT",
+    "baseAsset" : "RVN",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "HCUSDT",
+    "baseAsset" : "HC",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "HBARBNB",
+    "baseAsset" : "HBAR",
+    "quoteAsset" : "BNB",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "HBARBTC",
+    "baseAsset" : "HBAR",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "HBARUSDT",
+    "baseAsset" : "HBAR",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "NKNBNB",
+    "baseAsset" : "NKN",
+    "quoteAsset" : "BNB",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "NKNBTC",
+    "baseAsset" : "NKN",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "NKNUSDT",
+    "baseAsset" : "NKN",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "XRPBUSD",
+    "baseAsset" : "XRP",
+    "quoteAsset" : "BUSD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ETHBUSD",
+    "baseAsset" : "ETH",
+    "quoteAsset" : "BUSD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BCHABCBUSD",
+    "baseAsset" : "BCHABC",
+    "quoteAsset" : "BUSD",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "LTCBUSD",
+    "baseAsset" : "LTC",
+    "quoteAsset" : "BUSD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "LINKBUSD",
+    "baseAsset" : "LINK",
+    "quoteAsset" : "BUSD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ETCBUSD",
+    "baseAsset" : "ETC",
+    "quoteAsset" : "BUSD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "STXBNB",
+    "baseAsset" : "STX",
+    "quoteAsset" : "BNB",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "STXBTC",
+    "baseAsset" : "STX",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "STXUSDT",
+    "baseAsset" : "STX",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "KAVABNB",
+    "baseAsset" : "KAVA",
+    "quoteAsset" : "BNB",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "KAVABTC",
+    "baseAsset" : "KAVA",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "KAVAUSDT",
+    "baseAsset" : "KAVA",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BUSDNGN",
+    "baseAsset" : "BUSD",
+    "quoteAsset" : "NGN",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BNBNGN",
+    "baseAsset" : "BNB",
+    "quoteAsset" : "NGN",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BTCNGN",
+    "baseAsset" : "BTC",
+    "quoteAsset" : "NGN",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ARPABNB",
+    "baseAsset" : "ARPA",
+    "quoteAsset" : "BNB",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ARPABTC",
+    "baseAsset" : "ARPA",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ARPAUSDT",
+    "baseAsset" : "ARPA",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "TRXBUSD",
+    "baseAsset" : "TRX",
+    "quoteAsset" : "BUSD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "EOSBUSD",
+    "baseAsset" : "EOS",
+    "quoteAsset" : "BUSD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "IOTXUSDT",
+    "baseAsset" : "IOTX",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "RLCUSDT",
+    "baseAsset" : "RLC",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "MCOUSDT",
+    "baseAsset" : "MCO",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "XLMBUSD",
+    "baseAsset" : "XLM",
+    "quoteAsset" : "BUSD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ADABUSD",
+    "baseAsset" : "ADA",
+    "quoteAsset" : "BUSD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "CTXCBNB",
+    "baseAsset" : "CTXC",
+    "quoteAsset" : "BNB",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "CTXCBTC",
+    "baseAsset" : "CTXC",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "CTXCUSDT",
+    "baseAsset" : "CTXC",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BCHBNB",
+    "baseAsset" : "BCH",
+    "quoteAsset" : "BNB",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BCHBTC",
+    "baseAsset" : "BCH",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BCHUSDT",
+    "baseAsset" : "BCH",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BCHUSDC",
+    "baseAsset" : "BCH",
+    "quoteAsset" : "USDC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BCHTUSD",
+    "baseAsset" : "BCH",
+    "quoteAsset" : "TUSD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BCHPAX",
+    "baseAsset" : "BCH",
+    "quoteAsset" : "PAX",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BCHBUSD",
+    "baseAsset" : "BCH",
+    "quoteAsset" : "BUSD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BTCRUB",
+    "baseAsset" : "BTC",
+    "quoteAsset" : "RUB",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ETHRUB",
+    "baseAsset" : "ETH",
+    "quoteAsset" : "RUB",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "XRPRUB",
+    "baseAsset" : "XRP",
+    "quoteAsset" : "RUB",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BNBRUB",
+    "baseAsset" : "BNB",
+    "quoteAsset" : "RUB",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "TROYBNB",
+    "baseAsset" : "TROY",
+    "quoteAsset" : "BNB",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "TROYBTC",
+    "baseAsset" : "TROY",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "TROYUSDT",
+    "baseAsset" : "TROY",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BUSDRUB",
+    "baseAsset" : "BUSD",
+    "quoteAsset" : "RUB",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "QTUMBUSD",
+    "baseAsset" : "QTUM",
+    "quoteAsset" : "BUSD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "VETBUSD",
+    "baseAsset" : "VET",
+    "quoteAsset" : "BUSD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "VITEBNB",
+    "baseAsset" : "VITE",
+    "quoteAsset" : "BNB",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "VITEBTC",
+    "baseAsset" : "VITE",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "VITEUSDT",
+    "baseAsset" : "VITE",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "FTTBNB",
+    "baseAsset" : "FTT",
+    "quoteAsset" : "BNB",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "FTTBTC",
+    "baseAsset" : "FTT",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "FTTUSDT",
+    "baseAsset" : "FTT",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BTCTRY",
+    "baseAsset" : "BTC",
+    "quoteAsset" : "TRY",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BNBTRY",
+    "baseAsset" : "BNB",
+    "quoteAsset" : "TRY",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BUSDTRY",
+    "baseAsset" : "BUSD",
+    "quoteAsset" : "TRY",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ETHTRY",
+    "baseAsset" : "ETH",
+    "quoteAsset" : "TRY",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "XRPTRY",
+    "baseAsset" : "XRP",
+    "quoteAsset" : "TRY",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "USDTTRY",
+    "baseAsset" : "USDT",
+    "quoteAsset" : "TRY",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "USDTRUB",
+    "baseAsset" : "USDT",
+    "quoteAsset" : "RUB",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BTCEUR",
+    "baseAsset" : "BTC",
+    "quoteAsset" : "EUR",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ETHEUR",
+    "baseAsset" : "ETH",
+    "quoteAsset" : "EUR",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BNBEUR",
+    "baseAsset" : "BNB",
+    "quoteAsset" : "EUR",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "XRPEUR",
+    "baseAsset" : "XRP",
+    "quoteAsset" : "EUR",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "EURBUSD",
+    "baseAsset" : "EUR",
+    "quoteAsset" : "BUSD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "EURUSDT",
+    "baseAsset" : "EUR",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "OGNBNB",
+    "baseAsset" : "OGN",
+    "quoteAsset" : "BNB",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "OGNBTC",
+    "baseAsset" : "OGN",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "OGNUSDT",
+    "baseAsset" : "OGN",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "DREPBNB",
+    "baseAsset" : "DREP",
+    "quoteAsset" : "BNB",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "DREPBTC",
+    "baseAsset" : "DREP",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "DREPUSDT",
+    "baseAsset" : "DREP",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BULLUSDT",
+    "baseAsset" : "BULL",
+    "quoteAsset" : "USDT",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BULLBUSD",
+    "baseAsset" : "BULL",
+    "quoteAsset" : "BUSD",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BEARUSDT",
+    "baseAsset" : "BEAR",
+    "quoteAsset" : "USDT",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BEARBUSD",
+    "baseAsset" : "BEAR",
+    "quoteAsset" : "BUSD",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ETHBULLUSDT",
+    "baseAsset" : "ETHBULL",
+    "quoteAsset" : "USDT",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ETHBULLBUSD",
+    "baseAsset" : "ETHBULL",
+    "quoteAsset" : "BUSD",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ETHBEARUSDT",
+    "baseAsset" : "ETHBEAR",
+    "quoteAsset" : "USDT",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ETHBEARBUSD",
+    "baseAsset" : "ETHBEAR",
+    "quoteAsset" : "BUSD",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "TCTBNB",
+    "baseAsset" : "TCT",
+    "quoteAsset" : "BNB",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "TCTBTC",
+    "baseAsset" : "TCT",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "TCTUSDT",
+    "baseAsset" : "TCT",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "WRXBNB",
+    "baseAsset" : "WRX",
+    "quoteAsset" : "BNB",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "WRXBTC",
+    "baseAsset" : "WRX",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "WRXUSDT",
+    "baseAsset" : "WRX",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ICXBUSD",
+    "baseAsset" : "ICX",
+    "quoteAsset" : "BUSD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BTSUSDT",
+    "baseAsset" : "BTS",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BTSBUSD",
+    "baseAsset" : "BTS",
+    "quoteAsset" : "BUSD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "LSKUSDT",
+    "baseAsset" : "LSK",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BNTUSDT",
+    "baseAsset" : "BNT",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BNTBUSD",
+    "baseAsset" : "BNT",
+    "quoteAsset" : "BUSD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "LTOBNB",
+    "baseAsset" : "LTO",
+    "quoteAsset" : "BNB",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "LTOBTC",
+    "baseAsset" : "LTO",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "LTOUSDT",
+    "baseAsset" : "LTO",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ATOMBUSD",
+    "baseAsset" : "ATOM",
+    "quoteAsset" : "BUSD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "DASHBUSD",
+    "baseAsset" : "DASH",
+    "quoteAsset" : "BUSD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "NEOBUSD",
+    "baseAsset" : "NEO",
+    "quoteAsset" : "BUSD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "WAVESBUSD",
+    "baseAsset" : "WAVES",
+    "quoteAsset" : "BUSD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "XTZBUSD",
+    "baseAsset" : "XTZ",
+    "quoteAsset" : "BUSD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "EOSBULLUSDT",
+    "baseAsset" : "EOSBULL",
+    "quoteAsset" : "USDT",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "EOSBULLBUSD",
+    "baseAsset" : "EOSBULL",
+    "quoteAsset" : "BUSD",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "EOSBEARUSDT",
+    "baseAsset" : "EOSBEAR",
+    "quoteAsset" : "USDT",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "EOSBEARBUSD",
+    "baseAsset" : "EOSBEAR",
+    "quoteAsset" : "BUSD",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "XRPBULLUSDT",
+    "baseAsset" : "XRPBULL",
+    "quoteAsset" : "USDT",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "XRPBULLBUSD",
+    "baseAsset" : "XRPBULL",
+    "quoteAsset" : "BUSD",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "XRPBEARUSDT",
+    "baseAsset" : "XRPBEAR",
+    "quoteAsset" : "USDT",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "XRPBEARBUSD",
+    "baseAsset" : "XRPBEAR",
+    "quoteAsset" : "BUSD",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BATBUSD",
+    "baseAsset" : "BAT",
+    "quoteAsset" : "BUSD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ENJBUSD",
+    "baseAsset" : "ENJ",
+    "quoteAsset" : "BUSD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "NANOBUSD",
+    "baseAsset" : "NANO",
+    "quoteAsset" : "BUSD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ONTBUSD",
+    "baseAsset" : "ONT",
+    "quoteAsset" : "BUSD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "RVNBUSD",
+    "baseAsset" : "RVN",
+    "quoteAsset" : "BUSD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "STRATBUSD",
+    "baseAsset" : "STRAT",
+    "quoteAsset" : "BUSD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "STRATBNB",
+    "baseAsset" : "STRAT",
+    "quoteAsset" : "BNB",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "STRATUSDT",
+    "baseAsset" : "STRAT",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "AIONBUSD",
+    "baseAsset" : "AION",
+    "quoteAsset" : "BUSD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "AIONUSDT",
+    "baseAsset" : "AION",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "MBLBNB",
+    "baseAsset" : "MBL",
+    "quoteAsset" : "BNB",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "MBLBTC",
+    "baseAsset" : "MBL",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "MBLUSDT",
+    "baseAsset" : "MBL",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "COTIBNB",
+    "baseAsset" : "COTI",
+    "quoteAsset" : "BNB",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "COTIBTC",
+    "baseAsset" : "COTI",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "COTIUSDT",
+    "baseAsset" : "COTI",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ALGOBUSD",
+    "baseAsset" : "ALGO",
+    "quoteAsset" : "BUSD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BTTBUSD",
+    "baseAsset" : "BTT",
+    "quoteAsset" : "BUSD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "TOMOBUSD",
+    "baseAsset" : "TOMO",
+    "quoteAsset" : "BUSD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "XMRBUSD",
+    "baseAsset" : "XMR",
+    "quoteAsset" : "BUSD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ZECBUSD",
+    "baseAsset" : "ZEC",
+    "quoteAsset" : "BUSD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BNBBULLUSDT",
+    "baseAsset" : "BNBBULL",
+    "quoteAsset" : "USDT",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BNBBULLBUSD",
+    "baseAsset" : "BNBBULL",
+    "quoteAsset" : "BUSD",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BNBBEARUSDT",
+    "baseAsset" : "BNBBEAR",
+    "quoteAsset" : "USDT",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BNBBEARBUSD",
+    "baseAsset" : "BNBBEAR",
+    "quoteAsset" : "BUSD",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "STPTBNB",
+    "baseAsset" : "STPT",
+    "quoteAsset" : "BNB",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "STPTBTC",
+    "baseAsset" : "STPT",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "STPTUSDT",
+    "baseAsset" : "STPT",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BTCZAR",
+    "baseAsset" : "BTC",
+    "quoteAsset" : "ZAR",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ETHZAR",
+    "baseAsset" : "ETH",
+    "quoteAsset" : "ZAR",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BNBZAR",
+    "baseAsset" : "BNB",
+    "quoteAsset" : "ZAR",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "USDTZAR",
+    "baseAsset" : "USDT",
+    "quoteAsset" : "ZAR",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BUSDZAR",
+    "baseAsset" : "BUSD",
+    "quoteAsset" : "ZAR",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BTCBKRW",
+    "baseAsset" : "BTC",
+    "quoteAsset" : "BKRW",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ETHBKRW",
+    "baseAsset" : "ETH",
+    "quoteAsset" : "BKRW",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BNBBKRW",
+    "baseAsset" : "BNB",
+    "quoteAsset" : "BKRW",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "WTCUSDT",
+    "baseAsset" : "WTC",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "DATABUSD",
+    "baseAsset" : "DATA",
+    "quoteAsset" : "BUSD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "DATAUSDT",
+    "baseAsset" : "DATA",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "XZCUSDT",
+    "baseAsset" : "XZC",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "SOLBNB",
+    "baseAsset" : "SOL",
+    "quoteAsset" : "BNB",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "SOLBTC",
+    "baseAsset" : "SOL",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "SOLBUSD",
+    "baseAsset" : "SOL",
+    "quoteAsset" : "BUSD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BTCIDRT",
+    "baseAsset" : "BTC",
+    "quoteAsset" : "IDRT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BNBIDRT",
+    "baseAsset" : "BNB",
+    "quoteAsset" : "IDRT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "USDTIDRT",
+    "baseAsset" : "USDT",
+    "quoteAsset" : "IDRT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BUSDIDRT",
+    "baseAsset" : "BUSD",
+    "quoteAsset" : "IDRT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "CTSIBTC",
+    "baseAsset" : "CTSI",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "CTSIUSDT",
+    "baseAsset" : "CTSI",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "CTSIBNB",
+    "baseAsset" : "CTSI",
+    "quoteAsset" : "BNB",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "CTSIBUSD",
+    "baseAsset" : "CTSI",
+    "quoteAsset" : "BUSD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "HIVEBNB",
+    "baseAsset" : "HIVE",
+    "quoteAsset" : "BNB",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "HIVEBTC",
+    "baseAsset" : "HIVE",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "HIVEUSDT",
+    "baseAsset" : "HIVE",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "CHRBNB",
+    "baseAsset" : "CHR",
+    "quoteAsset" : "BNB",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "CHRBTC",
+    "baseAsset" : "CHR",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "CHRUSDT",
+    "baseAsset" : "CHR",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BTCUPUSDT",
+    "baseAsset" : "BTCUP",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BTCDOWNUSDT",
+    "baseAsset" : "BTCDOWN",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "GXSUSDT",
+    "baseAsset" : "GXS",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ARDRUSDT",
+    "baseAsset" : "ARDR",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ERDBUSD",
+    "baseAsset" : "ERD",
+    "quoteAsset" : "BUSD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "LENDUSDT",
+    "baseAsset" : "LEND",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "HBARBUSD",
+    "baseAsset" : "HBAR",
+    "quoteAsset" : "BUSD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "MATICBUSD",
+    "baseAsset" : "MATIC",
+    "quoteAsset" : "BUSD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "WRXBUSD",
+    "baseAsset" : "WRX",
+    "quoteAsset" : "BUSD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ZILBUSD",
+    "baseAsset" : "ZIL",
+    "quoteAsset" : "BUSD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "MDTBNB",
+    "baseAsset" : "MDT",
+    "quoteAsset" : "BNB",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "MDTBTC",
+    "baseAsset" : "MDT",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "MDTUSDT",
+    "baseAsset" : "MDT",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "STMXBNB",
+    "baseAsset" : "STMX",
+    "quoteAsset" : "BNB",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "STMXBTC",
+    "baseAsset" : "STMX",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "STMXETH",
+    "baseAsset" : "STMX",
+    "quoteAsset" : "ETH",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "STMXUSDT",
+    "baseAsset" : "STMX",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "KNCBUSD",
+    "baseAsset" : "KNC",
+    "quoteAsset" : "BUSD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "KNCUSDT",
+    "baseAsset" : "KNC",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "REPBUSD",
+    "baseAsset" : "REP",
+    "quoteAsset" : "BUSD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "REPUSDT",
+    "baseAsset" : "REP",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "LRCBUSD",
+    "baseAsset" : "LRC",
+    "quoteAsset" : "BUSD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "LRCUSDT",
+    "baseAsset" : "LRC",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  } ]
+}quoteAsset" : "USDT",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BNBBEARBUSD",
+    "baseAsset" : "BNBBEAR",
+    "quoteAsset" : "BUSD",
+    "status" : "BREAK",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "STPTBNB",
+    "baseAsset" : "STPT",
+    "quoteAsset" : "BNB",
+    "status" : "TRADING",
+    "marketCap" : 7106516.748860705
+  }, {
+    "symbol" : "STPTBTC",
+    "baseAsset" : "STPT",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 7106516.748860705
+  }, {
+    "symbol" : "STPTUSDT",
+    "baseAsset" : "STPT",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 7106516.748860705
+  }, {
+    "symbol" : "BTCZAR",
+    "baseAsset" : "BTC",
+    "quoteAsset" : "ZAR",
+    "status" : "TRADING",
+    "marketCap" : 1.789720800941368E11
+  }, {
+    "symbol" : "ETHZAR",
+    "baseAsset" : "ETH",
+    "quoteAsset" : "ZAR",
+    "status" : "TRADING",
+    "marketCap" : 2.2519049629795525E10
+  }, {
+    "symbol" : "BNBZAR",
+    "baseAsset" : "BNB",
+    "quoteAsset" : "ZAR",
+    "status" : "TRADING",
+    "marketCap" : 2.540555677988176E9
+  }, {
+    "symbol" : "USDTZAR",
+    "baseAsset" : "USDT",
+    "quoteAsset" : "ZAR",
+    "status" : "TRADING",
+    "marketCap" : 8.787586848848179E9
+  }, {
+    "symbol" : "BUSDZAR",
+    "baseAsset" : "BUSD",
+    "quoteAsset" : "ZAR",
+    "status" : "TRADING",
+    "marketCap" : 1.774611668445138E8
+  }, {
+    "symbol" : "BTCBKRW",
+    "baseAsset" : "BTC",
+    "quoteAsset" : "BKRW",
+    "status" : "TRADING",
+    "marketCap" : 1.789720800941368E11
+  }, {
+    "symbol" : "ETHBKRW",
+    "baseAsset" : "ETH",
+    "quoteAsset" : "BKRW",
+    "status" : "TRADING",
+    "marketCap" : 2.2519049629795525E10
+  }, {
+    "symbol" : "BNBBKRW",
+    "baseAsset" : "BNB",
+    "quoteAsset" : "BKRW",
+    "status" : "TRADING",
+    "marketCap" : 2.540555677988176E9
+  }, {
+    "symbol" : "WTCUSDT",
+    "baseAsset" : "WTC",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 1.8257580412732817E7
+  }, {
+    "symbol" : "DATABUSD",
+    "baseAsset" : "DATA",
+    "quoteAsset" : "BUSD",
+    "status" : "TRADING",
+    "marketCap" : 4.907661417007432E7
+  }, {
+    "symbol" : "DATAUSDT",
+    "baseAsset" : "DATA",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 4.907661417007432E7
+  }, {
+    "symbol" : "XZCUSDT",
+    "baseAsset" : "XZC",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 4.084122107805847E7
+  }, {
+    "symbol" : "SOLBNB",
+    "baseAsset" : "SOL",
+    "quoteAsset" : "BNB",
+    "status" : "TRADING",
+    "marketCap" : 16518.538271415386
+  }, {
+    "symbol" : "SOLBTC",
+    "baseAsset" : "SOL",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 16518.538271415386
+  }, {
+    "symbol" : "SOLBUSD",
+    "baseAsset" : "SOL",
+    "quoteAsset" : "BUSD",
+    "status" : "TRADING",
+    "marketCap" : 16518.538271415386
+  }, {
+    "symbol" : "BTCIDRT",
+    "baseAsset" : "BTC",
+    "quoteAsset" : "IDRT",
+    "status" : "TRADING",
+    "marketCap" : 1.789720800941368E11
+  }, {
+    "symbol" : "BNBIDRT",
+    "baseAsset" : "BNB",
+    "quoteAsset" : "IDRT",
+    "status" : "TRADING",
+    "marketCap" : 2.540555677988176E9
+  }, {
+    "symbol" : "USDTIDRT",
+    "baseAsset" : "USDT",
+    "quoteAsset" : "IDRT",
+    "status" : "TRADING",
+    "marketCap" : 8.787586848848179E9
+  }, {
+    "symbol" : "BUSDIDRT",
+    "baseAsset" : "BUSD",
+    "quoteAsset" : "IDRT",
+    "status" : "TRADING",
+    "marketCap" : 1.774611668445138E8
+  }, {
+    "symbol" : "CTSIBTC",
+    "baseAsset" : "CTSI",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 3872310.4814430247
+  }, {
+    "symbol" : "CTSIUSDT",
+    "baseAsset" : "CTSI",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 3872310.4814430247
+  }, {
+    "symbol" : "CTSIBNB",
+    "baseAsset" : "CTSI",
+    "quoteAsset" : "BNB",
+    "status" : "TRADING",
+    "marketCap" : 3872310.4814430247
+  }, {
+    "symbol" : "CTSIBUSD",
+    "baseAsset" : "CTSI",
+    "quoteAsset" : "BUSD",
+    "status" : "TRADING",
+    "marketCap" : 3872310.4814430247
+  }, {
+    "symbol" : "HIVEBNB",
+    "baseAsset" : "HIVE",
+    "quoteAsset" : "BNB",
+    "status" : "TRADING",
+    "marketCap" : 9.608093898964918E7
+  }, {
+    "symbol" : "HIVEBTC",
+    "baseAsset" : "HIVE",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 9.608093898964918E7
+  }, {
+    "symbol" : "HIVEUSDT",
+    "baseAsset" : "HIVE",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 9.608093898964918E7
+  }, {
+    "symbol" : "CHRBNB",
+    "baseAsset" : "CHR",
+    "quoteAsset" : "BNB",
+    "status" : "TRADING",
+    "marketCap" : 5753057.097318007
+  }, {
+    "symbol" : "CHRBTC",
+    "baseAsset" : "CHR",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 5753057.097318007
+  }, {
+    "symbol" : "CHRUSDT",
+    "baseAsset" : "CHR",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 5753057.097318007
+  }, {
+    "symbol" : "BTCUPUSDT",
+    "baseAsset" : "BTCUP",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BTCDOWNUSDT",
+    "baseAsset" : "BTCDOWN",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "GXSUSDT",
+    "baseAsset" : "GXS",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  } ]
+}

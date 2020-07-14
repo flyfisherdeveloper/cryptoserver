@@ -10,8 +10,9 @@ import java.util.function.Supplier;
 
 @Service(value = "cacheUtil")
 public class CacheUtilImpl implements CacheUtil {
-    private List<String> exchangeNames = new ArrayList<>();
+    private final List<String> exchangeNames = new ArrayList<>();
     private final CacheManager cacheManager;
+    private static final String ICON_CACHE = "IconCache";
 
     public CacheUtilImpl(CacheManager cacheManager) {
         this.cacheManager = cacheManager;
@@ -64,7 +65,8 @@ public class CacheUtilImpl implements CacheUtil {
 
     /**
      * Evict from the cache if present.
-     * @param cacheName The name of the cache.
+     *
+     * @param cacheName     The name of the cache.
      * @param objectToEvict The object to evict.
      */
     @Override
@@ -73,6 +75,24 @@ public class CacheUtilImpl implements CacheUtil {
         if (cache != null) {
             cache.evictIfPresent(objectToEvict);
         }
+    }
+
+    @Override
+    public byte[] getIconBytes(String coin) {
+        //Attempt to get the icon out of the cache if it is in there.
+        //If not in the cache, then call the icon extract service and add the icon bytes to the cache.
+        //The data in the cache will expire according to the setup in the CachingConfig configuration.
+        Supplier<byte[]> iconExtractor = () -> {
+            byte[] coins = IconExtractor.getIconBytes(coin);
+            if (coins == null) {
+                //here, the coin icon wasn't in the images folder
+                // add a non-null empty array to the cache so we don't keep trying to extract it
+                coins = new byte[0];
+            }
+            return coins;
+        };
+        byte[] coins = retrieveFromCache(ICON_CACHE, coin, iconExtractor);
+        return coins;
     }
 
     @Override

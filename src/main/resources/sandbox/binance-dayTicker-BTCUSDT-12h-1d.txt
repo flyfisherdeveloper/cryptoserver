@@ -1,0 +1,27 @@
+[ {
+  "symbol" : "BTCUSDT",
+  "openTime" : 1591920000000,
+  "openDate" : null,
+  "closeTime" : 1591963199999,
+  "closeDate" : null,
+  "open" : 9278.88,
+  "high" : 9516.95,
+  "low" : 9232.51,
+  "close" : 9495.6,
+  "volume" : 25905.622891,
+  "quoteAssetVolume" : 2.4357611955554467E8,
+  "numberOfTrades" : 310036
+}, {
+  "symbol" : "BTCUSDT",
+  "openTime" : 1591963200000,
+  "openDate" : null,
+  "closeTime" : 1592006399999,
+  "closeDate" : null,
+  "open" : 9495.6,
+  "high" : 9557.12,
+  "low" : 9301.0,
+  "close" : 9434.2,
+  "volume" : 21906.894479,
+  "quoteAssetVolume" : 2.0661492007281646E8,
+  "numberOfTrades" : 204365
+} ]

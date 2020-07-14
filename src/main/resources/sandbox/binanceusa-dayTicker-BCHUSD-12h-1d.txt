@@ -1,0 +1,27 @@
+[ {
+  "symbol" : "BCHUSD",
+  "openTime" : 1591920000000,
+  "openDate" : null,
+  "closeTime" : 1591963199999,
+  "closeDate" : null,
+  "open" : 234.55,
+  "high" : 241.38,
+  "low" : 233.6,
+  "close" : 241.38,
+  "volume" : 786.28003,
+  "quoteAssetVolume" : 186555.5277,
+  "numberOfTrades" : 617
+}, {
+  "symbol" : "BCHUSD",
+  "openTime" : 1591963200000,
+  "openDate" : null,
+  "closeTime" : 1592006399999,
+  "closeDate" : null,
+  "open" : 241.04,
+  "high" : 243.0,
+  "low" : 238.51,
+  "close" : 239.84,
+  "volume" : 61.10278,
+  "quoteAssetVolume" : 14666.8299,
+  "numberOfTrades" : 91
+} ]

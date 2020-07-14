@@ -6,8 +6,8 @@ import com.scanner.cryptoserver.exchange.binance.dto.ExchangeInfo;
 import com.scanner.cryptoserver.exchange.binance.dto.Symbol;
 import com.scanner.cryptoserver.exchange.coinmarketcap.CoinMarketCapService;
 import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapMap;
+import com.scanner.cryptoserver.exchange.service.ExchangeService;
 import com.scanner.cryptoserver.util.CacheUtil;
-import com.scanner.cryptoserver.util.IconExtractor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.ResponseEntity;
@@ -27,13 +27,12 @@ import java.util.stream.Collectors;
  * This service makes api calls for Binance exchanges: both BinanceUSA and Binance.
  * Each exchange has its separate URL, which are encapsulated in the BinanceService classes for the respective exchange.
  */
-public abstract class AbstractBinanceExchangeService implements BinanceExchangeService {
+public abstract class AbstractBinanceExchangeService implements ExchangeService {
     private static final Logger Log = LoggerFactory.getLogger(AbstractBinanceExchangeService.class);
     private static final String ALL_24_HOUR_TICKER = "All24HourTicker";
     private static final String ALL_TICKERS = "AllTickers";
     private static final String EXCHANGE_INFO = "ExchangeInfo";
     private static final String COIN_CACHE = "CoinCache";
-    private static final String ICON_CACHE = "IconCache";
     private static final int ALL_24_HOUR_MAX_COUNT = 6;
     private static final int ALL_24_HOUR_DELAY = 151;
     private static final String TRADING = "TRADING";
@@ -70,14 +69,6 @@ public abstract class AbstractBinanceExchangeService implements BinanceExchangeS
         if (coinMarketCap != null) {
             //If the coin market cap data exists, then update each symbol with the market cap value found in the maket cap data.
             exchangeInfo.getSymbols().forEach(symbol -> symbol.addMarketCap(coinMarketCap));
-        }
-    }
-
-    private void setMarketCapFor24HrData(List<CoinDataFor24Hr> data) {
-        CoinMarketCapMap coinMarketCap = coinMarketCapService.getCoinMarketCapListing();
-        //If the coin market cap data exists, then update each symbol with the market cap value found in the maket cap data.
-        if (coinMarketCap != null) {
-            data.forEach(d -> d.addMarketCap(coinMarketCap));
         }
     }
 
@@ -279,7 +270,7 @@ public abstract class AbstractBinanceExchangeService implements BinanceExchangeS
         data.setCloseTime(closeTime);
 
         data.setupLinks(getUrlExtractor().getTradeUrl());
-        byte[] iconBytes = getIconBytes(coin);
+        byte[] iconBytes = cacheUtil.getIconBytes(coin);
         data.setIcon(iconBytes);
 
         return data;
@@ -451,6 +442,10 @@ public abstract class AbstractBinanceExchangeService implements BinanceExchangeS
         return coins;
     }
 
+    @Override
+    public void setRsiForTickers(List<CoinTicker> tickers, int periodLength) {
+    }
+
     public Double getPercentChange(double fromValue, double toValue) {
         double change = toValue - fromValue;
         return (change / fromValue) * 100.0;
@@ -554,7 +549,7 @@ public abstract class AbstractBinanceExchangeService implements BinanceExchangeS
         if (getAdd24HrVolume()) {
             add24HrVolumeChange(list);
         }
-        setMarketCapFor24HrData(list);
+        coinMarketCapService.setMarketCapFor24HrData(list);
         //since this is the first time (in awhile) we have called the exchange info,
         //start threads to update every minute for 15 minutes - this way the client gets
         //updated 24-hour data every minute
@@ -601,23 +596,6 @@ public abstract class AbstractBinanceExchangeService implements BinanceExchangeS
         //run every 2.5 minutes
         scheduledService.scheduleAtFixedRate(command, ALL_24_HOUR_DELAY, ALL_24_HOUR_DELAY, TimeUnit.SECONDS);
         setScheduledService(scheduledService);
-    }
-
-    private byte[] getIconBytes(String coin) {
-        //Attempt to get the icon out of the cache if it is in there.
-        //If not in the cache, then call the icon extract service and add the icon bytes to the cache.
-        //The data in the cache will expire according to the setup in the CachingConfig configuration.
-        Supplier<byte[]> iconExtractor = () -> {
-            byte[] coins = IconExtractor.getIconBytes(coin);
-            if (coins == null) {
-                //here, the coin icon wasn't in the images folder
-                // add a non-null empty array to the cache so we don't keep trying to extract it
-                coins = new byte[0];
-            }
-            return coins;
-        };
-        byte[] coins = cacheUtil.retrieveFromCache(ICON_CACHE, coin, iconExtractor);
-        return coins;
     }
 
     protected abstract UrlExtractor getUrlExtractor();

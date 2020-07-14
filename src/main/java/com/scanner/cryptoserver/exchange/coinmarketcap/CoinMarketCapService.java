@@ -3,6 +3,7 @@ package com.scanner.cryptoserver.exchange.coinmarketcap;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.scanner.cryptoserver.exchange.binance.dto.CoinDataFor24Hr;
 import com.scanner.cryptoserver.exchange.binance.dto.ExchangeInfo;
 import com.scanner.cryptoserver.exchange.binance.dto.Symbol;
 import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapData;
@@ -50,13 +51,17 @@ public class CoinMarketCapService {
                 coinSet.addAll(exchangeInfo.getSymbols().stream().map(Symbol::getBaseAsset).collect(Collectors.toSet()));
             }
         });
+        return getIdSet(coinSet);
+    }
+
+    public Set<Integer> getIdSet(Set<String> coinSet) {
         Supplier<CoinMarketCapMap> supplier = coinMarketCapApiService::getCoinMarketCapMap;
         CoinMarketCapMap coinMarketCap = cacheUtil.retrieveFromCache(COIN_MARKET_CAP, MARKET_CAP_MAP, supplier);
 
         //now get a set of ids for the coins in the exchanges
         Function<String, Integer> findCoinId = (coin) -> coinMarketCap.getData()
                 .stream()
-                .filter(c -> c.getSymbol().equals(coin))
+                .filter(c -> c.isCoin(coin))
                 .map(CoinMarketCapData::getId).findFirst().orElse(1);
         Set<Integer> idSet = coinSet.stream().map(findCoinId).collect(Collectors.toSet());
         return idSet;
@@ -65,6 +70,19 @@ public class CoinMarketCapService {
     public CoinMarketCapMap getCoinMarketCapListing() {
         Set<Integer> idSet = getIdSet();
         return getCoinMarketCapListing(idSet);
+    }
+
+    public CoinMarketCapMap getCoinMarketCapListingWithCoinSet(Set<String> coinSet) {
+        Set<Integer> idSet = getIdSet(coinSet);
+        return getCoinMarketCapListing(idSet);
+    }
+
+    public void setMarketCapFor24HrData(List<CoinDataFor24Hr> data) {
+        CoinMarketCapMap coinMarketCap = getCoinMarketCapListing();
+        //If the coin market cap data exists, then update each symbol with the market cap value found in the maket cap data.
+        if (coinMarketCap != null) {
+            data.forEach(d -> d.addMarketCap(coinMarketCap));
+        }
     }
 
     public CoinMarketCapMap getCoinMarketCapListing(Set<Integer> idSet) {

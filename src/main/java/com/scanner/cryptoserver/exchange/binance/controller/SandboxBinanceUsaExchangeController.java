@@ -4,7 +4,7 @@ import com.scanner.cryptoserver.exchange.binance.dto.CoinDataFor24Hr;
 import com.scanner.cryptoserver.exchange.binance.dto.CoinTicker;
 import com.scanner.cryptoserver.exchange.binance.dto.ExchangeInfo;
 import com.scanner.cryptoserver.exchange.binance.dto.Symbol;
-import com.scanner.cryptoserver.exchange.binance.service.BinanceExchangeService;
+import com.scanner.cryptoserver.exchange.service.ExchangeService;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
@@ -19,13 +19,12 @@ import java.util.List;
  * The Sandbox data never changes - it is static.
  */
 @RestController
-@CrossOrigin(origins = "https://develop.d2vswqrfiywrsc.amplifyapp.com")
-//@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "http://localhost:3000")
 @RequestMapping("sandbox-api/v1/binanceusa")
 public class SandboxBinanceUsaExchangeController {
-    private final BinanceExchangeService sandboxBinanceUsaService;
+    private final ExchangeService sandboxBinanceUsaService;
 
-    public SandboxBinanceUsaExchangeController(BinanceExchangeService sandboxBinanceUsaService) {
+    public SandboxBinanceUsaExchangeController(ExchangeService sandboxBinanceUsaService) {
         this.sandboxBinanceUsaService = sandboxBinanceUsaService;
     }
 

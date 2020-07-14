@@ -1,0 +1,417 @@
+{
+  "symbols" : [ {
+    "symbol" : "BTCUSD",
+    "baseAsset" : "BTC",
+    "quoteAsset" : "USD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ETHUSD",
+    "baseAsset" : "ETH",
+    "quoteAsset" : "USD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "XRPUSD",
+    "baseAsset" : "XRP",
+    "quoteAsset" : "USD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BCHUSD",
+    "baseAsset" : "BCH",
+    "quoteAsset" : "USD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "LTCUSD",
+    "baseAsset" : "LTC",
+    "quoteAsset" : "USD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "USDTUSD",
+    "baseAsset" : "USDT",
+    "quoteAsset" : "USD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BTCUSDT",
+    "baseAsset" : "BTC",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ETHUSDT",
+    "baseAsset" : "ETH",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "XRPUSDT",
+    "baseAsset" : "XRP",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BCHUSDT",
+    "baseAsset" : "BCH",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "LTCUSDT",
+    "baseAsset" : "LTC",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BNBUSD",
+    "baseAsset" : "BNB",
+    "quoteAsset" : "USD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BNBUSDT",
+    "baseAsset" : "BNB",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ETHBTC",
+    "baseAsset" : "ETH",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "XRPBTC",
+    "baseAsset" : "XRP",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BNBBTC",
+    "baseAsset" : "BNB",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "LTCBTC",
+    "baseAsset" : "LTC",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BCHBTC",
+    "baseAsset" : "BCH",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ADAUSD",
+    "baseAsset" : "ADA",
+    "quoteAsset" : "USD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BATUSD",
+    "baseAsset" : "BAT",
+    "quoteAsset" : "USD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ETCUSD",
+    "baseAsset" : "ETC",
+    "quoteAsset" : "USD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "XLMUSD",
+    "baseAsset" : "XLM",
+    "quoteAsset" : "USD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ZRXUSD",
+    "baseAsset" : "ZRX",
+    "quoteAsset" : "USD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ADAUSDT",
+    "baseAsset" : "ADA",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BATUSDT",
+    "baseAsset" : "BAT",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ETCUSDT",
+    "baseAsset" : "ETC",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "XLMUSDT",
+    "baseAsset" : "XLM",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ZRXUSDT",
+    "baseAsset" : "ZRX",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "LINKUSD",
+    "baseAsset" : "LINK",
+    "quoteAsset" : "USD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "RVNUSD",
+    "baseAsset" : "RVN",
+    "quoteAsset" : "USD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "DASHUSD",
+    "baseAsset" : "DASH",
+    "quoteAsset" : "USD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ZECUSD",
+    "baseAsset" : "ZEC",
+    "quoteAsset" : "USD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ALGOUSD",
+    "baseAsset" : "ALGO",
+    "quoteAsset" : "USD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "IOTAUSD",
+    "baseAsset" : "IOTA",
+    "quoteAsset" : "USD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BUSDUSD",
+    "baseAsset" : "BUSD",
+    "quoteAsset" : "USD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BTCBUSD",
+    "baseAsset" : "BTC",
+    "quoteAsset" : "BUSD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "DOGEUSDT",
+    "baseAsset" : "DOGE",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "WAVESUSD",
+    "baseAsset" : "WAVES",
+    "quoteAsset" : "USD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ATOMUSDT",
+    "baseAsset" : "ATOM",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ATOMUSD",
+    "baseAsset" : "ATOM",
+    "quoteAsset" : "USD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "NEOUSDT",
+    "baseAsset" : "NEO",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "NEOUSD",
+    "baseAsset" : "NEO",
+    "quoteAsset" : "USD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "VETUSDT",
+    "baseAsset" : "VET",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "QTUMUSDT",
+    "baseAsset" : "QTUM",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "QTUMUSD",
+    "baseAsset" : "QTUM",
+    "quoteAsset" : "USD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "NANOUSD",
+    "baseAsset" : "NANO",
+    "quoteAsset" : "USD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ICXUSD",
+    "baseAsset" : "ICX",
+    "quoteAsset" : "USD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ENJUSD",
+    "baseAsset" : "ENJ",
+    "quoteAsset" : "USD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ONTUSD",
+    "baseAsset" : "ONT",
+    "quoteAsset" : "USD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ONTUSDT",
+    "baseAsset" : "ONT",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ZILUSD",
+    "baseAsset" : "ZIL",
+    "quoteAsset" : "USD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ZILBUSD",
+    "baseAsset" : "ZIL",
+    "quoteAsset" : "BUSD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "VETUSD",
+    "baseAsset" : "VET",
+    "quoteAsset" : "USD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "BNBBUSD",
+    "baseAsset" : "BNB",
+    "quoteAsset" : "BUSD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "XRPBUSD",
+    "baseAsset" : "XRP",
+    "quoteAsset" : "BUSD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ETHBUSD",
+    "baseAsset" : "ETH",
+    "quoteAsset" : "BUSD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ALGOBUSD",
+    "baseAsset" : "ALGO",
+    "quoteAsset" : "BUSD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "XTZUSD",
+    "baseAsset" : "XTZ",
+    "quoteAsset" : "USD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "XTZBUSD",
+    "baseAsset" : "XTZ",
+    "quoteAsset" : "BUSD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "HBARUSD",
+    "baseAsset" : "HBAR",
+    "quoteAsset" : "USD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "HBARBUSD",
+    "baseAsset" : "HBAR",
+    "quoteAsset" : "BUSD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "OMGUSD",
+    "baseAsset" : "OMG",
+    "quoteAsset" : "USD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "OMGBUSD",
+    "baseAsset" : "OMG",
+    "quoteAsset" : "BUSD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "MATICUSD",
+    "baseAsset" : "MATIC",
+    "quoteAsset" : "USD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "MATICBUSD",
+    "baseAsset" : "MATIC",
+    "quoteAsset" : "BUSD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "XTZBTC",
+    "baseAsset" : "XTZ",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "ADABTC",
+    "baseAsset" : "ADA",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "REPBUSD",
+    "baseAsset" : "REP",
+    "quoteAsset" : "BUSD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  }, {
+    "symbol" : "REPUSD",
+    "baseAsset" : "REP",
+    "quoteAsset" : "USD",
+    "status" : "TRADING",
+    "marketCap" : 0.0
+  } ]
+}
