@@ -36,8 +36,8 @@ class BittrexServiceImpl(private val cacheUtil: CacheUtil, private val coinMarke
         coins.forEach {
             it.icon = cacheUtil.getIconBytes(it.coin)
             it.tradeLink = tradeUrl + it.currency + "-" + it.coin
-            val ticker = tickers.find { ticker -> ticker.symbol == it.symbol }
-            it.lastPrice = ticker!!.lastTradeRate
+            val lastTradeRate = tickers.find { ticker -> ticker.symbol == it.symbol }?.lastTradeRate
+            it.lastPrice = lastTradeRate
         }
         return coins
     }
