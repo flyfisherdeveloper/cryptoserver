@@ -1,10 +1,8 @@
-package com.scanner.cryptoserver.exchange.binance.dto;
+package com.scanner.cryptoserver.util.dto;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapMap;
-import lombok.Data;
 
-@Data
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Symbol {
     //the symbol of the coin, such as BTCUSDT, or LTCUSD
@@ -17,6 +15,46 @@ public class Symbol {
     private String status;
     //the market cap in $USD
     private Double marketCap = 0.0;
+
+    public String getSymbol() {
+        return symbol;
+    }
+
+    public void setSymbol(String symbol) {
+        this.symbol = symbol;
+    }
+
+    public String getBaseAsset() {
+        return baseAsset;
+    }
+
+    public void setBaseAsset(String baseAsset) {
+        this.baseAsset = baseAsset;
+    }
+
+    public String getQuoteAsset() {
+        return quoteAsset;
+    }
+
+    public void setQuoteAsset(String quoteAsset) {
+        this.quoteAsset = quoteAsset;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
+    public Double getMarketCap() {
+        return marketCap;
+    }
+
+    public void setMarketCap(Double marketCap) {
+        this.marketCap = marketCap;
+    }
 
     /**
      * Add the market cap value from the coin market cap to the symbol.

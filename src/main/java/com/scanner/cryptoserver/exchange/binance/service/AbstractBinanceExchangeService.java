@@ -2,8 +2,8 @@ package com.scanner.cryptoserver.exchange.binance.service;
 
 import com.scanner.cryptoserver.exchange.binance.dto.CoinDataFor24Hr;
 import com.scanner.cryptoserver.exchange.binance.dto.CoinTicker;
-import com.scanner.cryptoserver.exchange.binance.dto.ExchangeInfo;
-import com.scanner.cryptoserver.exchange.binance.dto.Symbol;
+import com.scanner.cryptoserver.exchange.coinmarketcap.dto.ExchangeInfo;
+import com.scanner.cryptoserver.util.dto.Symbol;
 import com.scanner.cryptoserver.exchange.coinmarketcap.CoinMarketCapService;
 import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapMap;
 import com.scanner.cryptoserver.exchange.service.ExchangeService;

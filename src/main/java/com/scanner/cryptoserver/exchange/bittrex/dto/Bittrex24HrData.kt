@@ -2,6 +2,7 @@ package com.scanner.cryptoserver.exchange.bittrex.dto
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties
 import com.scanner.cryptoserver.exchange.binance.dto.CoinDataFor24Hr
+import com.scanner.cryptoserver.util.dto.Symbol
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 class Bittrex24HrData {
@@ -25,5 +26,14 @@ class Bittrex24HrData {
         coin.volume = volume
         //todo: updated time
         return coin
+    }
+
+    fun symbolAdapter(): Symbol {
+        val sym = Symbol()
+        val values = symbol.split("-")
+        sym.baseAsset = values[0]
+        sym.quoteAsset = values[1]
+        sym.symbol = symbol
+        return sym
     }
 }

@@ -5,7 +5,7 @@ import com.fasterxml.jackson.databind.JavaType;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.scanner.cryptoserver.exchange.binance.dto.CoinDataFor24Hr;
 import com.scanner.cryptoserver.exchange.binance.dto.CoinTicker;
-import com.scanner.cryptoserver.exchange.binance.dto.ExchangeInfo;
+import com.scanner.cryptoserver.exchange.coinmarketcap.dto.ExchangeInfo;
 import com.scanner.cryptoserver.exchange.binance.service.SandboxBinanceUsaExchangeService;
 import com.scanner.cryptoserver.util.RsiCalc;
 import com.scanner.cryptoserver.util.SandboxUtil;

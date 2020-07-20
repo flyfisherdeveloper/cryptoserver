@@ -2,7 +2,7 @@ package com.scanner.cryptoserver.exchange.service;
 
 import com.scanner.cryptoserver.exchange.binance.dto.CoinDataFor24Hr;
 import com.scanner.cryptoserver.exchange.binance.dto.CoinTicker;
-import com.scanner.cryptoserver.exchange.binance.dto.ExchangeInfo;
+import com.scanner.cryptoserver.exchange.coinmarketcap.dto.ExchangeInfo;
 
 import java.util.List;
 

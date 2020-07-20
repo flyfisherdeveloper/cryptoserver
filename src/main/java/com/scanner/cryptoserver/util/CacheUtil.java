@@ -15,4 +15,6 @@ public interface CacheUtil {
     void addExchangeName(String exchangeName);
 
     List<String> getExchangeNames();
+
+    void putInCache(String cacheName, String valueName, Object cacheObject);
 }

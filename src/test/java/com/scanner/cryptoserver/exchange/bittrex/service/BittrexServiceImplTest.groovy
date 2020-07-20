@@ -31,7 +31,7 @@ class BittrexServiceImplTest extends Specification {
           }
 
         then:
-          def markets = service.getExchangeInfo()
+          def markets = service.getCoinDataFor24Hour()
 
         expect:
           assert markets

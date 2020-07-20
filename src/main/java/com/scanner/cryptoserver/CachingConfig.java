@@ -45,7 +45,7 @@ public class CachingConfig extends CachingConfigurerSupport {
                             false);
                 }
                 //cache for list of all coins
-                if (name.contains("All24HourTicker")) {
+                if (name.contains("All24HourTicker") || name.contains("AllMarkets")) {
                     return new ConcurrentMapCache(name, CacheBuilder.newBuilder()
                             .expireAfterWrite(15, TimeUnit.MINUTES)
                             //the maximum size number is rather arbitrary - the time is really the important issue
