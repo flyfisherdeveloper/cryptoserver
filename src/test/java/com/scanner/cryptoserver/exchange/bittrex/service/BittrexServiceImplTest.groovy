@@ -1,5 +1,6 @@
 package com.scanner.cryptoserver.exchange.bittrex.service
 
+import com.scanner.cryptoserver.exchange.binance.dto.CoinDataFor24Hr
 import com.scanner.cryptoserver.exchange.bittrex.dto.Bittrex24HrData
 import com.scanner.cryptoserver.exchange.coinmarketcap.CoinMarketCapService
 import com.scanner.cryptoserver.util.CacheUtil
@@ -41,6 +42,26 @@ class BittrexServiceImplTest extends Specification {
           assert btc.volume == 1120.23
     }
 
+    def "test get24HourCoinData"() {
+        given:
+          def symbol = "BTC-USD"
+
+        when:
+          urlReader.readFromUrl() >> getMarketsJson()
+          //here, we mock the cache util, and use the supplier passed in as an argument
+          cacheUtil.retrieveFromCache(*_) >> { args ->
+              Supplier supplier = args.get(2)
+              return supplier.get()
+          }
+
+        then:
+          def coin = service.get24HourCoinData(symbol)
+
+        expect:
+          assert coin
+          assert coin.symbol == symbol
+    }
+
     def "test get24HrAllCoinTicker"() {
         when:
           urlReader.readFromUrl() >>> [getMarketsJson(), getTickersJson()]
@@ -48,6 +69,12 @@ class BittrexServiceImplTest extends Specification {
           cacheUtil.retrieveFromCache(*_) >> { args ->
               Supplier supplier = args.get(2)
               return supplier.get()
+          }
+          //mock the call to set the market cap for each coin
+          //sets the market cap to an arbitrary, non-zero value
+          coinMarketCapService.setMarketCapFor24HrData(_) >> { args ->
+              def list = args.get(0) as List<CoinDataFor24Hr>
+              list.each { it.setMarketCap(10000.0) }
           }
 
         then:

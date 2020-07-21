@@ -38,10 +38,11 @@ class BittrexServiceImpl(private val cacheUtil: CacheUtil, private val coinMarke
     }
 
     override fun get24HrAllCoinTicker(): List<CoinDataFor24Hr> {
-        val coins = getCoinDataFor24Hour()
+        var coins = getCoinDataFor24Hour()
         //we need to make another api call to get the "current price", which is "lastTradeRate" in the json
         val tickers = getTickersFromCache()
         coinMarketCapService.setMarketCapFor24HrData(coins)
+        coins = coins.filter { it.marketCap > 0.0 }
         coins.forEach {
             it.icon = cacheUtil.getIconBytes(it.coin)
             it.tradeLink = tradeUrl + it.currency + "-" + it.coin
@@ -81,7 +82,6 @@ class BittrexServiceImpl(private val cacheUtil: CacheUtil, private val coinMarke
     }
 
     override fun get24HourCoinData(symbol: String?): CoinDataFor24Hr {
-        //todo: unit test this
         return getCoinDataFor24Hour().find { it.symbol == symbol }!!
     }
 
