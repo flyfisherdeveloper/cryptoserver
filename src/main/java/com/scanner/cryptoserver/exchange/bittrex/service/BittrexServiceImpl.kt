@@ -15,7 +15,7 @@ import org.springframework.beans.factory.annotation.Value
 import org.springframework.stereotype.Service
 import java.util.function.Supplier
 
-@Service
+@Service(value = "bittrexService")
 class BittrexServiceImpl(private val cacheUtil: CacheUtil, private val coinMarketCapService: CoinMarketCapService, private val urlReader: UrlReader) : ExchangeService {
     private val EXCHANGE_NAME = "bittrex"
     private val ALL_24_HR_TICKER = "All24HourTicker"
