@@ -1,12 +1,12 @@
 package com.scanner.cryptoserver.exchange.bittrex.service
 
+import com.scanner.cryptoserver.exchange.bittrex.dto.Bittrex24HrData
 import com.scanner.cryptoserver.exchange.coinmarketcap.CoinMarketCapService
 import com.scanner.cryptoserver.util.CacheUtil
 import com.scanner.cryptoserver.util.UrlReader
 import spock.lang.Specification
 
 import java.util.function.Supplier
-
 
 class BittrexServiceImplTest extends Specification {
     private UrlReader urlReader
@@ -21,7 +21,7 @@ class BittrexServiceImplTest extends Specification {
         service = new BittrexServiceImpl(cacheUtil, coinMarketCapService, urlReader)
     }
 
-    def "test getExchangeInfo"() {
+    def "test getCoinDataFor24Hour"() {
         when:
           urlReader.readFromUrl() >> getMarketsJson()
           //here, we mock the cache util, and use the supplier passed in as an argument
@@ -64,6 +64,38 @@ class BittrexServiceImplTest extends Specification {
           //to the end of the trade link with the currency-coin pair
           //just test to ensure that the pair is added to the end of the trade link
           assert btc.tradeLink.endsWith("USD-BTC")
+    }
+
+    def "test getExchangeInfo"() {
+        given:
+          def symbolBtc = "BTC-USD"
+          def symbolEth = "ETH-USD"
+          def bittrex24HrData1 = new Bittrex24HrData(symbol: symbolBtc)
+          def bittrex24HrData2 = new Bittrex24HrData(symbol: symbolEth)
+          def marketList = [bittrex24HrData1, bittrex24HrData2]
+
+        when:
+          cacheUtil.retrieveFromCache(*_) >> marketList
+
+        then:
+          def exchangeInfo = service.getExchangeInfo()
+
+        expect:
+          assert exchangeInfo
+          assert exchangeInfo.getSymbols()
+          assert exchangeInfo.getSymbols().size() == marketList.size()
+
+          def btc = exchangeInfo.getSymbols().find { it.symbol == symbolBtc }
+          assert btc
+          assert btc.symbol == symbolBtc
+          assert btc.quoteAsset == "USD"
+          assert btc.baseAsset == "BTC"
+
+          def eth = exchangeInfo.getSymbols().find { it.symbol == symbolEth }
+          assert eth
+          assert eth.symbol == symbolEth
+          assert eth.quoteAsset == "USD"
+          assert eth.baseAsset == "ETH"
     }
 
     def getMarketsJson() {
