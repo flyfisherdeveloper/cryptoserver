@@ -3,10 +3,12 @@ package com.scanner.cryptoserver.exchange.bittrex.service
 import com.fasterxml.jackson.module.kotlin.jacksonObjectMapper
 import com.fasterxml.jackson.module.kotlin.readValue
 import com.scanner.cryptoserver.exchange.binance.dto.CoinDataFor24Hr
+import com.scanner.cryptoserver.exchange.binance.dto.CoinTicker
 import com.scanner.cryptoserver.exchange.bittrex.dto.Bittrex24HrData
 import com.scanner.cryptoserver.exchange.bittrex.dto.BittrexTicker
 import com.scanner.cryptoserver.exchange.coinmarketcap.CoinMarketCapService
 import com.scanner.cryptoserver.exchange.coinmarketcap.dto.ExchangeInfo
+import com.scanner.cryptoserver.exchange.service.ExchangeService
 import com.scanner.cryptoserver.util.CacheUtil
 import com.scanner.cryptoserver.util.UrlReader
 import org.springframework.beans.factory.annotation.Value
@@ -14,7 +16,7 @@ import org.springframework.stereotype.Service
 import java.util.function.Supplier
 
 @Service
-class BittrexServiceImpl(private val cacheUtil: CacheUtil, private val coinMarketCapService: CoinMarketCapService, private val urlReader: UrlReader) {
+class BittrexServiceImpl(private val cacheUtil: CacheUtil, private val coinMarketCapService: CoinMarketCapService, private val urlReader: UrlReader) : ExchangeService {
     private val EXCHANGE_NAME = "bittrex"
     private val ALL_24_HR_TICKER = "All24HourTicker"
     private val ALL_MARKET_TICKERS = "AllMarketTickers"
@@ -35,7 +37,7 @@ class BittrexServiceImpl(private val cacheUtil: CacheUtil, private val coinMarke
         cacheUtil.addExchangeName(EXCHANGE_NAME)
     }
 
-    fun get24HrAllCoinTicker(): List<CoinDataFor24Hr> {
+    override fun get24HrAllCoinTicker(): List<CoinDataFor24Hr> {
         val coins = getCoinDataFor24Hour()
         //we need to make another api call to get the "current price", which is "lastTradeRate" in the json
         val tickers = getTickersFromCache()
@@ -48,6 +50,10 @@ class BittrexServiceImpl(private val cacheUtil: CacheUtil, private val coinMarke
             it.lastPrice = lastTradeRate
         }
         return coins
+    }
+
+    override fun get24HrAllCoinTicker(page: Int, pageSize: Int): MutableList<CoinDataFor24Hr> {
+        TODO("Not yet implemented")
     }
 
     fun getCoinDataFor24Hour(): List<CoinDataFor24Hr> {
@@ -66,7 +72,20 @@ class BittrexServiceImpl(private val cacheUtil: CacheUtil, private val coinMarke
         return mapper.readValue(results) as List<Bittrex24HrData>
     }
 
-    fun getExchangeInfo(): ExchangeInfo {
+    override fun getTickerData(symbol: String?, interval: String?, daysOrMonths: String?): MutableList<CoinTicker> {
+        TODO("Not yet implemented")
+    }
+
+    override fun setRsiForTickers(tickers: MutableList<CoinTicker>?, periodLength: Int) {
+        TODO("Not yet implemented")
+    }
+
+    override fun get24HourCoinData(symbol: String?): CoinDataFor24Hr {
+        //todo: unit test this
+        return getCoinDataFor24Hour().find { it.symbol == symbol }!!
+    }
+
+    override fun getExchangeInfo(): ExchangeInfo {
         val cacheName = "$EXCHANGE_NAME-$ALL_MARKETS"
         //get the markets from the Bittrex API
         val markets = cacheUtil.retrieveFromCache(cacheName, ALL_MARKETS) { getMarkets() }
