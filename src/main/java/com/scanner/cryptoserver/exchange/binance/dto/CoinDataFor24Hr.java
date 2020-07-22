@@ -1,6 +1,6 @@
 package com.scanner.cryptoserver.exchange.binance.dto;
 
-import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapMap;
+import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapListing;
 
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
@@ -167,7 +167,7 @@ public class CoinDataFor24Hr {
         return Double.parseDouble(nf.format(marketCap));
     }
 
-    public void addMarketCap(CoinMarketCapMap coinMarketCapInfo) {
+    public void addMarketCap(CoinMarketCapListing coinMarketCapInfo) {
         //find the symbol (i.e. "BTC") in the coin market cap info, and get the market cap value from it and set it in the market cap field
         coinMarketCapInfo.getData()
                 .stream()

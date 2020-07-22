@@ -3,7 +3,7 @@ package com.scanner.cryptoserver;
 import com.scanner.cryptoserver.exchange.binance.service.AbstractBinanceExchangeService;
 import com.scanner.cryptoserver.exchange.bittrex.service.BittrexServiceImpl;
 import com.scanner.cryptoserver.exchange.coinmarketcap.CoinMarketCapService;
-import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapMap;
+import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapListing;
 import com.scanner.cryptoserver.exchange.coinmarketcap.dto.ExchangeInfo;
 import com.scanner.cryptoserver.util.dto.Symbol;
 import org.slf4j.Logger;
@@ -67,7 +67,7 @@ public class ApplicationStartup implements ApplicationListener<ApplicationReadyE
                 })
                 .whenComplete((coinSet, error) -> {
                     //now get the market cap value for each coin
-                    CoinMarketCapMap coinMarketCapInfo = coinMarketCapService.getCoinMarketCapListingWithCoinSet(coinSet);
+                    CoinMarketCapListing coinMarketCapInfo = coinMarketCapService.getCoinMarketCapListingWithCoinSet(coinSet);
 
                     //Now fill the market cap for each coin on the exchanges.
                     //Here, we set the exchange info market cap for each coin, retrieving it from the coin market cap info.

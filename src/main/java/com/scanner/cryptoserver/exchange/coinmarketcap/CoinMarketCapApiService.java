@@ -1,12 +1,12 @@
 package com.scanner.cryptoserver.exchange.coinmarketcap;
 
-import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapMap;
+import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapListing;
 import org.apache.http.NameValuePair;
 
 import java.util.List;
 
 public interface CoinMarketCapApiService {
-    CoinMarketCapMap getCoinMarketCapMap();
+    CoinMarketCapListing getCoinMarketCapMap();
 
     String makeExchangeInfoApiCall(List<NameValuePair> paratmers);
 

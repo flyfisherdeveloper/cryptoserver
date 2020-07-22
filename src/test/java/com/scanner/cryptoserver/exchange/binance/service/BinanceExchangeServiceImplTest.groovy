@@ -6,7 +6,7 @@ import com.scanner.cryptoserver.exchange.coinmarketcap.dto.ExchangeInfo
 import com.scanner.cryptoserver.util.dto.Symbol
 import com.scanner.cryptoserver.exchange.coinmarketcap.CoinMarketCapService
 import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapData
-import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapMap
+import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapListing
 import com.scanner.cryptoserver.util.CacheUtil
 import org.springframework.http.ResponseEntity
 import org.springframework.web.client.RestOperations
@@ -60,7 +60,7 @@ class BinanceExchangeServiceImplTest extends Specification {
           def exchangeInfo = new ExchangeInfo()
           exchangeInfo.setSymbols([symbol1, symbol2])
 
-          def coinMarketCapMap = new CoinMarketCapMap()
+          def coinMarketCapMap = new CoinMarketCapListing()
           def data1 = new CoinMarketCapData(symbol: coin1, marketCap: marketCap1)
           def data2 = new CoinMarketCapData(symbol: coin2, marketCap: marketCap2)
           coinMarketCapMap.setData([data1, data2])
@@ -112,7 +112,7 @@ class BinanceExchangeServiceImplTest extends Specification {
           def exchangeInfoResponse = ResponseEntity.of(Optional.of(exchangeInfo)) as ResponseEntity<ExchangeInfo>
 
           //the following represents coin market cap data for certain coins
-          def coinMarketCapMap = new CoinMarketCapMap()
+          def coinMarketCapMap = new CoinMarketCapListing()
           def data1 = new CoinMarketCapData(symbol: coin, marketCap: marketCap)
           def data2 = new CoinMarketCapData(symbol: coin, marketCap: marketCap)
           def data3 = new CoinMarketCapData(symbol: coin, marketCap: marketCap)

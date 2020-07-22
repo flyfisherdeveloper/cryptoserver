@@ -1,7 +1,7 @@
 package com.scanner.cryptoserver.exchange.coinmarketcap;
 
 import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapData;
-import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapMap;
+import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapListing;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -28,7 +28,7 @@ public class CoinMarketCapServiceIntegTest {
 
     @Test
     void testGetMarketCapMap() {
-        CoinMarketCapMap map = apiService.getCoinMarketCapMap();
+        CoinMarketCapListing map = apiService.getCoinMarketCapMap();
         assertNotNull(map);
         List<CoinMarketCapData> data = map.getData();
         data.forEach(System.out::println);
@@ -39,7 +39,7 @@ public class CoinMarketCapServiceIntegTest {
     @Test
     void testGetMarketCapInfo() {
         Set<Integer> ids = new HashSet<>(Arrays.asList(1, 1027));
-        CoinMarketCapMap info = service.getCoinMarketCapInfo(ids);
+        CoinMarketCapListing info = service.getCoinMarketCapInfo(ids);
         assertNotNull(info);
         info.getData().forEach(System.out::println);
         boolean btcFound = info.getData().stream().anyMatch(d -> d.getSymbol().equals("BTC"));
@@ -50,7 +50,7 @@ public class CoinMarketCapServiceIntegTest {
     void testGetCoinMarketCapListing() {
         Set<Integer> idSet = new HashSet<>();
         idSet.add(1);
-        CoinMarketCapMap info = service.getCoinMarketCapListing(idSet);
+        CoinMarketCapListing info = service.getCoinMarketCapListing(idSet);
         info.getData().forEach(System.out::println);
         assertNotNull(info);
         boolean btcFound = info.getData().stream().anyMatch(d -> d.getSymbol().equals("BTC"));

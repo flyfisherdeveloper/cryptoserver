@@ -4,7 +4,7 @@ import com.scanner.cryptoserver.exchange.binance.dto.CoinDataFor24Hr
 import com.scanner.cryptoserver.exchange.coinmarketcap.dto.ExchangeInfo
 import com.scanner.cryptoserver.util.dto.Symbol
 import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapData
-import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapMap
+import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapListing
 import com.scanner.cryptoserver.util.CacheUtil
 import spock.lang.Specification
 import spock.lang.Unroll
@@ -31,7 +31,7 @@ class CoinMarketCapServiceTest extends Specification {
           def id2 = 2
 
           def exchangeInfo = new ExchangeInfo(symbols: [new Symbol(baseAsset: baseAsset1), new Symbol(baseAsset: baseAsset2)])
-          def map = new CoinMarketCapMap(data: [new CoinMarketCapData(symbol: baseAsset1, id: id1, name: name1), new CoinMarketCapData(symbol: baseAsset2, id: id2, name: name2)])
+          def map = new CoinMarketCapListing(data: [new CoinMarketCapData(symbol: baseAsset1, id: id1, name: name1), new CoinMarketCapData(symbol: baseAsset2, id: id2, name: name2)])
 
         when:
           cacheUtil.getExchangeNames() >> exchangeNameList
@@ -127,7 +127,7 @@ class CoinMarketCapServiceTest extends Specification {
           def exchangeNameList = ["binance", "binanceUsa"]
           def exchangeInfo = new ExchangeInfo(symbols: [new Symbol(baseAsset: "BTC"), new Symbol(baseAsset: "ETH")])
 
-          def map = new CoinMarketCapMap()
+          def map = new CoinMarketCapListing()
           def btcCap = 121000000
           def data1 = new CoinMarketCapData(name: "BTC", marketCap: btcCap, symbol: "BTCUSD", id: 1)
 

@@ -5,6 +5,6 @@ import lombok.Data;
 import java.util.List;
 
 @Data
-public class CoinMarketCapMap {
+public class CoinMarketCapListing {
     List<CoinMarketCapData> data;
 }

@@ -1,6 +1,6 @@
 package com.scanner.cryptoserver.exchange.coinmarketcap;
 
-import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapMap;
+import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapListing;
 import org.apache.http.HttpEntity;
 import org.apache.http.NameValuePair;
 import org.apache.http.client.methods.CloseableHttpResponse;
@@ -46,18 +46,18 @@ public class CoinMarketCapApiServiceImpl implements CoinMarketCapApiService {
     }
 
     @Override
-    public CoinMarketCapMap getCoinMarketCapMap() {
+    public CoinMarketCapListing getCoinMarketCapMap() {
         Map<String, List<String>> params = new HashMap<>();
 
         //here, we add parameters to bring back only what we want
         params.put("aux", Arrays.asList("id", "name", "symbol"));
         HttpHeaders headers = new HttpHeaders();
         headers.set("X-CMC_PRO_API_KEY", getKey());
-        org.springframework.http.HttpEntity<CoinMarketCapMap> requestEntity = new org.springframework.http.HttpEntity<>(null, headers);
+        org.springframework.http.HttpEntity<CoinMarketCapListing> requestEntity = new org.springframework.http.HttpEntity<>(null, headers);
         Log.info("Calling coin market cap map: {}", exchangeMapUrl);
         //this api call is simple enough that a normal Spring Rest Operations call can be made, rather than the more complex Http calls
-        ResponseEntity<CoinMarketCapMap> result = restTemplate.exchange(exchangeMapUrl, HttpMethod.GET, requestEntity, CoinMarketCapMap.class, params);
-        CoinMarketCapMap map = result.getBody();
+        ResponseEntity<CoinMarketCapListing> result = restTemplate.exchange(exchangeMapUrl, HttpMethod.GET, requestEntity, CoinMarketCapListing.class, params);
+        CoinMarketCapListing map = result.getBody();
         return map;
     }
 

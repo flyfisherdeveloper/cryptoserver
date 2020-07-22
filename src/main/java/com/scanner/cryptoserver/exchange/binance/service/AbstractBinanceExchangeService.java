@@ -2,12 +2,12 @@ package com.scanner.cryptoserver.exchange.binance.service;
 
 import com.scanner.cryptoserver.exchange.binance.dto.CoinDataFor24Hr;
 import com.scanner.cryptoserver.exchange.binance.dto.CoinTicker;
-import com.scanner.cryptoserver.exchange.coinmarketcap.dto.ExchangeInfo;
-import com.scanner.cryptoserver.util.dto.Symbol;
 import com.scanner.cryptoserver.exchange.coinmarketcap.CoinMarketCapService;
-import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapMap;
+import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapListing;
+import com.scanner.cryptoserver.exchange.coinmarketcap.dto.ExchangeInfo;
 import com.scanner.cryptoserver.exchange.service.ExchangeService;
 import com.scanner.cryptoserver.util.CacheUtil;
+import com.scanner.cryptoserver.util.dto.Symbol;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.ResponseEntity;
@@ -65,7 +65,8 @@ public abstract class AbstractBinanceExchangeService implements ExchangeService 
     }
 
     private void setMarketCapForExchangeInfo(ExchangeInfo exchangeInfo) {
-        CoinMarketCapMap coinMarketCap = coinMarketCapService.getCoinMarketCapListing();
+        CoinMarketCapListing coinMarketCap = coinMarketCapService.getCoinMarketCapListing();
+
         if (coinMarketCap != null) {
             //If the coin market cap data exists, then update each symbol with the market cap value found in the maket cap data.
             exchangeInfo.getSymbols().forEach(symbol -> symbol.addMarketCap(coinMarketCap));
@@ -194,8 +195,9 @@ public abstract class AbstractBinanceExchangeService implements ExchangeService 
      */
     private boolean isCoinTrading(String symbol) {
         ExchangeInfo info = getExchangeInfo();
-        return info.getSymbols().stream()
+        boolean trading = info.getSymbols().stream()
                 .anyMatch(s -> s.getSymbol().equals(symbol) && s.getStatus().equals(TRADING));
+        return trading;
     }
 
     /**
@@ -444,6 +446,7 @@ public abstract class AbstractBinanceExchangeService implements ExchangeService 
 
     @Override
     public void setRsiForTickers(List<CoinTicker> tickers, int periodLength) {
+        //todo
     }
 
     public Double getPercentChange(double fromValue, double toValue) {
@@ -549,6 +552,7 @@ public abstract class AbstractBinanceExchangeService implements ExchangeService 
         if (getAdd24HrVolume()) {
             add24HrVolumeChange(list);
         }
+
         coinMarketCapService.setMarketCapFor24HrData(list);
         //since this is the first time (in awhile) we have called the exchange info,
         //start threads to update every minute for 15 minutes - this way the client gets
