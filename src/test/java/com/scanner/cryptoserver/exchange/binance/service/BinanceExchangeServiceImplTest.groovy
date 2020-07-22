@@ -2,12 +2,12 @@ package com.scanner.cryptoserver.exchange.binance.service
 
 import com.scanner.cryptoserver.exchange.binance.dto.CoinDataFor24Hr
 import com.scanner.cryptoserver.exchange.binance.dto.CoinTicker
-import com.scanner.cryptoserver.exchange.coinmarketcap.dto.ExchangeInfo
-import com.scanner.cryptoserver.util.dto.Symbol
 import com.scanner.cryptoserver.exchange.coinmarketcap.CoinMarketCapService
 import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapData
 import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapListing
+import com.scanner.cryptoserver.exchange.coinmarketcap.dto.ExchangeInfo
 import com.scanner.cryptoserver.util.CacheUtil
+import com.scanner.cryptoserver.util.dto.Symbol
 import org.springframework.http.ResponseEntity
 import org.springframework.web.client.RestOperations
 import org.springframework.web.client.RestTemplate
@@ -60,14 +60,17 @@ class BinanceExchangeServiceImplTest extends Specification {
           def exchangeInfo = new ExchangeInfo()
           exchangeInfo.setSymbols([symbol1, symbol2])
 
-          def coinMarketCapMap = new CoinMarketCapListing()
+          def listing = new CoinMarketCapListing()
           def data1 = new CoinMarketCapData(symbol: coin1, marketCap: marketCap1)
           def data2 = new CoinMarketCapData(symbol: coin2, marketCap: marketCap2)
-          coinMarketCapMap.setData([data1, data2])
+          def dataMap = [:] as HashMap<String, CoinMarketCapData>
+          dataMap.put(coin1, data1)
+          dataMap.put(coin2, data2)
+          listing.setData(dataMap)
 
         when: "mocks are called"
           cacheUtil.retrieveFromCache(*_) >> exchangeInfo
-          coinMarketCapService.getCoinMarketCapListing() >> coinMarketCapMap
+          coinMarketCapService.getCoinMarketCapListing() >> listing
 
         then:
           def markets = service.getMarkets()
@@ -113,11 +116,8 @@ class BinanceExchangeServiceImplTest extends Specification {
 
           //the following represents coin market cap data for certain coins
           def coinMarketCapMap = new CoinMarketCapListing()
-          def data1 = new CoinMarketCapData(symbol: coin, marketCap: marketCap)
-          def data2 = new CoinMarketCapData(symbol: coin, marketCap: marketCap)
-          def data3 = new CoinMarketCapData(symbol: coin, marketCap: marketCap)
-          def data4 = new CoinMarketCapData(symbol: coin, marketCap: marketCap)
-          coinMarketCapMap.setData([data1, data2, data3, data4])
+          def data = new CoinMarketCapData(symbol: coin, marketCap: marketCap)
+          coinMarketCapMap.setData(coin: data)
 
         when: "mocks are called"
           cacheUtil.retrieveFromCache(_, "binance-ExchangeInfo", _) >>> [exchangeInfo, exchangeInfo]
