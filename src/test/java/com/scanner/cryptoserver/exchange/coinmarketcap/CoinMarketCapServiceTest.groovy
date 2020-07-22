@@ -1,11 +1,11 @@
 package com.scanner.cryptoserver.exchange.coinmarketcap
 
 import com.scanner.cryptoserver.exchange.binance.dto.CoinDataFor24Hr
-import com.scanner.cryptoserver.exchange.coinmarketcap.dto.ExchangeInfo
-import com.scanner.cryptoserver.util.dto.Symbol
 import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapData
 import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapListing
+import com.scanner.cryptoserver.exchange.coinmarketcap.dto.ExchangeInfo
 import com.scanner.cryptoserver.util.CacheUtil
+import com.scanner.cryptoserver.util.dto.Symbol
 import spock.lang.Specification
 import spock.lang.Unroll
 
@@ -31,7 +31,11 @@ class CoinMarketCapServiceTest extends Specification {
           def id2 = 2
 
           def exchangeInfo = new ExchangeInfo(symbols: [new Symbol(baseAsset: baseAsset1), new Symbol(baseAsset: baseAsset2)])
-          def listing = new CoinMarketCapListing(data: [new CoinMarketCapData(symbol: baseAsset1, id: id1, name: name1), new CoinMarketCapData(symbol: baseAsset2, id: id2, name: name2)])
+          def data = [:] as HashMap<String, CoinMarketCapData>
+          data.put(baseAsset1, new CoinMarketCapData(symbol: baseAsset1, id: id1, name: name1))
+          data.put(baseAsset2, new CoinMarketCapData(symbol: baseAsset2, id: id2, name: name2))
+          def listing = new CoinMarketCapListing()
+          listing.setData(data)
 
         when:
           cacheUtil.getExchangeNames() >> exchangeNameList
@@ -75,11 +79,10 @@ class CoinMarketCapServiceTest extends Specification {
               assert listing.getData().size() == 0
           } else {
               assert listing.getData().size() == 1
-              assert listing.getData().get(0) != null
-              assert listing.getData().get(0).getId() == 1
-              assert listing.getData().get(0).getSymbol() == "BTC"
-              assert listing.getData().get(0).getName() == "Bitcoin"
-              assert listing.getData().get(0).getMarketCap() == 10000000.35;
+              def btc = listing.getData().get("BTC")
+              assert btc.getId() == 1
+              assert btc.getName() == "Bitcoin"
+              assert btc.getMarketCap() == 10000000.35;
           }
 
         where:
@@ -107,12 +110,12 @@ class CoinMarketCapServiceTest extends Specification {
               assert listing.getData().size() == 0
           } else {
               assert listing.getData().size() == 1
-              assert listing.getData().get(0) != null
-              assert listing.getData().get(0).getId() == 1
-              assert listing.getData().get(0).getSymbol() == "BTC"
-              assert listing.getData().get(0).getName() == "Bitcoin"
+              assert listing.getData().size() == 1
+              def btc = listing.getData().get("BTC")
+              assert btc.getId() == 1
+              assert btc.getName() == "Bitcoin"
               //the market cap is null since the endpoint being tested does not retrieve it
-              assert listing.getData().get(0).getMarketCap() == null
+              assert btc.getMarketCap() == null
           }
 
         where:
@@ -133,11 +136,14 @@ class CoinMarketCapServiceTest extends Specification {
 
           def ethCap = 22000000
           def data2 = new CoinMarketCapData(name: "ETH", marketCap: ethCap, symbol: "ETHUSD", id: 2)
-          listing.setData([data1, data2])
+          def data = [:] as HashMap<String, CoinMarketCapData>
+          data.put(data1.getName(), data1)
+          data.put(data2.getName(), data2)
+          listing.setData(data)
 
           def coin1 = new CoinDataFor24Hr(coin: "BTC", symbol: "BTCUSD")
           def coin2 = new CoinDataFor24Hr(coin: "ETH", symbol: "ETHUSD")
-          def data = [coin1, coin2]
+          def coinList = [coin1, coin2]
 
         when:
           cacheUtil.getExchangeNames() >> exchangeNameList
@@ -145,11 +151,11 @@ class CoinMarketCapServiceTest extends Specification {
           cacheUtil.retrieveFromCache("CoinMarketCap", _, _) >> listing
 
         then:
-          service.setMarketCapFor24HrData(data)
+          service.setMarketCapFor24HrData(coinList)
 
         expect:
-          assert data.find { it.getCoin() == "BTC" }.getMarketCap() == btcCap
-          assert data.find { it.getCoin() == "ETH" }.getMarketCap() == ethCap
+          data.get("BTC").getMarketCap() == btcCap
+          data.get("ETH").getMarketCap() == ethCap
     }
 
     def getJson() {
