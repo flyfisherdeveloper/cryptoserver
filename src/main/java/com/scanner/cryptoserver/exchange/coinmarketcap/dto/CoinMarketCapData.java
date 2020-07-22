@@ -16,6 +16,14 @@ public class CoinMarketCapData {
     //the market cap value in $USD for the coin
     private Double marketCap;
 
+    public CoinMarketCapData() {
+
+    }
+
+    public CoinMarketCapData(String symbol) {
+        this.symbol = symbol;
+    }
+
     /**
      * Encapsulate a method to determine if a coin equals a coin symbol.
      * This is necessary since some coins have a symbol/currency pair different
@@ -23,6 +31,7 @@ public class CoinMarketCapData {
      * but the name is IOTA, while the pair is IOTA/BTC, or IOTA/USD, for example.
      * Usually, checking the coin symbol suffices. But if that fails, we need to check
      * for an exact match on the name.
+     *
      * @param coinSymbol The coin symbol, such as "BTC" OR "IOTA".
      * @return true if this coin is equal to the coin symbol.
      */

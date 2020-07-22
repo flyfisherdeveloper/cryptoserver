@@ -2,9 +2,9 @@ package com.scanner.cryptoserver.exchange.coinmarketcap.dto;
 
 import lombok.Data;
 
-import java.util.List;
+import java.util.Map;
 
 @Data
 public class CoinMarketCapListing {
-    List<CoinMarketCapData> data;
+    Map<String, CoinMarketCapData> data;
 }

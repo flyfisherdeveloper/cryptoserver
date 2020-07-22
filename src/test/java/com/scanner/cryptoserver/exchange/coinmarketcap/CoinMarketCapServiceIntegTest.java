@@ -8,11 +8,9 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 import java.util.Arrays;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 
 import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertTrue;
 
 /**
  * Integration test for calling Coin Market Cap api calls.
@@ -28,12 +26,10 @@ public class CoinMarketCapServiceIntegTest {
 
     @Test
     void testGetMarketCapMap() {
-        CoinMarketCapListing map = apiService.getCoinMarketCapMap();
-        assertNotNull(map);
-        List<CoinMarketCapData> data = map.getData();
-        data.forEach(System.out::println);
-        boolean ltcFound = data.stream().anyMatch(d -> d.getSymbol().equals("LTC"));
-        assertTrue(ltcFound);
+        CoinMarketCapListing listing = apiService.getCoinMarketCapMap();
+        assertNotNull(listing);
+        CoinMarketCapData ltc = listing.getData().get("LTC");
+        assertNotNull(ltc);
     }
 
     @Test
@@ -41,9 +37,8 @@ public class CoinMarketCapServiceIntegTest {
         Set<Integer> ids = new HashSet<>(Arrays.asList(1, 1027));
         CoinMarketCapListing info = service.getCoinMarketCapInfo(ids);
         assertNotNull(info);
-        info.getData().forEach(System.out::println);
-        boolean btcFound = info.getData().stream().anyMatch(d -> d.getSymbol().equals("BTC"));
-        assertTrue(btcFound);
+        CoinMarketCapData btc = info.getData().get("BTC");
+        assertNotNull(btc);
     }
 
     @Test
@@ -51,9 +46,8 @@ public class CoinMarketCapServiceIntegTest {
         Set<Integer> idSet = new HashSet<>();
         idSet.add(1);
         CoinMarketCapListing info = service.getCoinMarketCapListing(idSet);
-        info.getData().forEach(System.out::println);
         assertNotNull(info);
-        boolean btcFound = info.getData().stream().anyMatch(d -> d.getSymbol().equals("BTC"));
-        assertTrue(btcFound);
+        CoinMarketCapData btc = info.getData().get("BTC");
+        assertNotNull(btc);
     }
 }

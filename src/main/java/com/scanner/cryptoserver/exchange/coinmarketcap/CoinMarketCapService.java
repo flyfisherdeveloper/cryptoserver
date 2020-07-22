@@ -4,11 +4,11 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.scanner.cryptoserver.exchange.binance.dto.CoinDataFor24Hr;
-import com.scanner.cryptoserver.exchange.coinmarketcap.dto.ExchangeInfo;
-import com.scanner.cryptoserver.util.dto.Symbol;
 import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapData;
 import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapListing;
+import com.scanner.cryptoserver.exchange.coinmarketcap.dto.ExchangeInfo;
 import com.scanner.cryptoserver.util.CacheUtil;
+import com.scanner.cryptoserver.util.dto.Symbol;
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
 import org.slf4j.Logger;
@@ -60,10 +60,17 @@ public class CoinMarketCapService {
 
         long start = System.currentTimeMillis();
         //now get a set of ids for the coins in the exchanges
-        Function<String, Integer> findCoinId = (coin) -> coinMarketCap.getData()
-                .stream()
-                .filter(c -> c.isCoin(coin))
-                .map(CoinMarketCapData::getId).findFirst().orElse(1);
+        Function<String, Integer> findCoinId = (coin) -> {
+            CoinMarketCapData data = coinMarketCap.getData().get(coin);
+            //99% of the time the coin is in the map based on its symbol.
+            //If not, do a search in the map in the values to find it based on its name instead of symbol.
+            if (data == null) {
+                return coinMarketCap.getData().values().stream()
+                        .filter(c -> c.isCoin(coin))
+                        .map(CoinMarketCapData::getId).findFirst().orElse(1);
+            }
+            return data.getId();
+        };
         Set<Integer> idSet = coinSet.stream().map(findCoinId).collect(Collectors.toSet());
         System.out.println("getIdSet() 2: " + (System.currentTimeMillis() - start));
         return idSet;
@@ -88,6 +95,26 @@ public class CoinMarketCapService {
         }
     }
 
+    /**
+     * Convert a coin market cap data list to a coin market cap listing.
+     * The purpose of this is to put the list of data in a Map for better lookup performance.
+     *
+     * @param data the list of coin market cap data - usually parsed from Json.
+     * @return the listing with the map.
+     */
+    private CoinMarketCapListing convertToCoinMarketCapListing(List<CoinMarketCapData> data) {
+        Function<String, CoinMarketCapData> valueMapper = sym -> data.stream()
+                .filter(d -> d.isCoin(sym))
+                .findFirst()
+                //Here, we create an empty data object in case it can't be found.
+                //This shouldn't happen, but do so just in case to prevent null pointer errors.
+                .orElse(new CoinMarketCapData(""));
+        Map<String, CoinMarketCapData> map = data.stream().map(CoinMarketCapData::getSymbol).collect(Collectors.toMap(sym -> sym, valueMapper));
+        CoinMarketCapListing coinMarketCapListing = new CoinMarketCapListing();
+        coinMarketCapListing.setData(map);
+        return coinMarketCapListing;
+    }
+
     public CoinMarketCapListing getCoinMarketCapListing(Set<Integer> idSet) {
         Supplier<CoinMarketCapListing> marketCapSupplier = () -> {
             List<NameValuePair> parameters = new ArrayList<>();
@@ -96,10 +123,9 @@ public class CoinMarketCapService {
             String value = idSet.stream().map(String::valueOf).collect(Collectors.joining(","));
             parameters.add(new BasicNameValuePair("id", value));
 
-            CoinMarketCapListing coinMarketCapListing = new CoinMarketCapListing();
             String json = coinMarketCapApiService.makeExchangeQuotesApiCall(parameters);
             List<CoinMarketCapData> data = parseJsonData(json, idSet);
-            coinMarketCapListing.setData(data);
+            CoinMarketCapListing coinMarketCapListing = convertToCoinMarketCapListing(data);
             return coinMarketCapListing;
         };
         CoinMarketCapListing coinMarketCap = cacheUtil.retrieveFromCache(COIN_MARKET_CAP, LISTING, marketCapSupplier);
@@ -113,9 +139,8 @@ public class CoinMarketCapService {
         String json = coinMarketCapApiService.makeExchangeInfoApiCall(paratmers);
 
         List<CoinMarketCapData> data = parseJsonInfo(json, ids);
-        CoinMarketCapListing map = new CoinMarketCapListing();
-        map.setData(data);
-        return map;
+        CoinMarketCapListing listing = convertToCoinMarketCapListing(data);
+        return listing;
     }
 
     private Optional<JsonNode> parseJson(String json) {

@@ -1,6 +1,7 @@
 package com.scanner.cryptoserver.util.dto;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapData;
 import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapListing;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
@@ -63,10 +64,9 @@ public class Symbol {
      */
     public void addMarketCap(CoinMarketCapListing coinMarketCapInfo) {
         //find the symbol (i.e. "BTC") in the coin market cap info, and get the market cap value from it and set it in the exchange symbol
-        coinMarketCapInfo.getData()
-                .stream()
-                .filter(c -> c.getSymbol().equals(getBaseAsset()))
-                .findFirst()
-                .ifPresent(cap -> setMarketCap(cap.getMarketCap()));
+        CoinMarketCapData data = coinMarketCapInfo.getData().get(getBaseAsset());
+        if (data != null) {
+            setMarketCap(data.getMarketCap());
+        }
     }
 }
