@@ -31,19 +31,19 @@ class CoinMarketCapServiceTest extends Specification {
           def id2 = 2
 
           def exchangeInfo = new ExchangeInfo(symbols: [new Symbol(baseAsset: baseAsset1), new Symbol(baseAsset: baseAsset2)])
-          def map = new CoinMarketCapListing(data: [new CoinMarketCapData(symbol: baseAsset1, id: id1, name: name1), new CoinMarketCapData(symbol: baseAsset2, id: id2, name: name2)])
+          def listing = new CoinMarketCapListing(data: [new CoinMarketCapData(symbol: baseAsset1, id: id1, name: name1), new CoinMarketCapData(symbol: baseAsset2, id: id2, name: name2)])
 
         when:
           cacheUtil.getExchangeNames() >> exchangeNameList
           cacheUtil.retrieveFromCache("ExchangeInfo", _, _) >> exchangeInfo
-          cacheUtil.retrieveFromCache("CoinMarketCap", _, _) >> map
+          cacheUtil.retrieveFromCache("CoinMarketCap", _, _) >> listing
 
         then:
           def idSet = service.getIdSet()
 
         expect:
           assert idSet
-          assert idSet.size() == map.getData().size()
+          assert idSet.size() == listing.getData().size()
           //"it" is a Groovy keyword: it is the name of the function parameter
           assert idSet.find { it == id1 } == 1
           assert idSet.find { it == id2 } == 2
@@ -127,13 +127,13 @@ class CoinMarketCapServiceTest extends Specification {
           def exchangeNameList = ["binance", "binanceUsa"]
           def exchangeInfo = new ExchangeInfo(symbols: [new Symbol(baseAsset: "BTC"), new Symbol(baseAsset: "ETH")])
 
-          def map = new CoinMarketCapListing()
+          def listing = new CoinMarketCapListing()
           def btcCap = 121000000
           def data1 = new CoinMarketCapData(name: "BTC", marketCap: btcCap, symbol: "BTCUSD", id: 1)
 
           def ethCap = 22000000
           def data2 = new CoinMarketCapData(name: "ETH", marketCap: ethCap, symbol: "ETHUSD", id: 2)
-          map.setData([data1, data2])
+          listing.setData([data1, data2])
 
           def coin1 = new CoinDataFor24Hr(coin: "BTC", symbol: "BTCUSD")
           def coin2 = new CoinDataFor24Hr(coin: "ETH", symbol: "ETHUSD")
@@ -142,7 +142,7 @@ class CoinMarketCapServiceTest extends Specification {
         when:
           cacheUtil.getExchangeNames() >> exchangeNameList
           cacheUtil.retrieveFromCache("ExchangeInfo", _, _) >> exchangeInfo
-          cacheUtil.retrieveFromCache("CoinMarketCap", _, _) >> map
+          cacheUtil.retrieveFromCache("CoinMarketCap", _, _) >> listing
 
         then:
           service.setMarketCapFor24HrData(data)
