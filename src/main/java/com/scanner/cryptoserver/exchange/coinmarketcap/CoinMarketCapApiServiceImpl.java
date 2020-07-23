@@ -21,8 +21,10 @@ import org.springframework.web.client.RestOperations;
 
 import java.io.IOException;
 import java.net.URISyntaxException;
-import java.util.*;
-import java.util.stream.Collectors;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * Service class to encapsulate API http calls.
@@ -71,11 +73,6 @@ public class CoinMarketCapApiServiceImpl implements CoinMarketCapApiService {
         CoinMarketCapObj data = result.getBody();
         CoinMarketCapListing listing = new CoinMarketCapListing();
         if (data != null) {
-            Set<String> uniques = new HashSet<>();
-            Set<CoinMarketCapData> set = data.getData().stream()
-                    .filter(e -> !uniques.add(e.getSymbol()))
-                    .collect(Collectors.toSet());
-            set.forEach(c -> System.out.println("symbol: " + c.getSymbol() + " name: " + c.getName() + " id: " + c.getId()));
             listing = listing.convertToCoinMarketCapListing(data.getData());
         }
         return listing;
