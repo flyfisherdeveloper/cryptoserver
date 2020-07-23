@@ -20,8 +20,8 @@ public class CoinMarketCapData {
 
     }
 
-    public CoinMarketCapData(String symbol) {
-        this.symbol = symbol;
+    public CoinMarketCapData(Integer id) {
+        this.id = id;
     }
 
     /**

@@ -1,5 +1,6 @@
 package com.scanner.cryptoserver.exchange.coinmarketcap;
 
+import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapData;
 import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapListing;
 import org.apache.http.HttpEntity;
 import org.apache.http.NameValuePair;
@@ -20,10 +21,8 @@ import org.springframework.web.client.RestOperations;
 
 import java.io.IOException;
 import java.net.URISyntaxException;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
+import java.util.stream.Collectors;
 
 /**
  * Service class to encapsulate API http calls.
@@ -45,6 +44,14 @@ public class CoinMarketCapApiServiceImpl implements CoinMarketCapApiService {
         this.restTemplate = restTemplate;
     }
 
+    private static class CoinMarketCapObj {
+        private List<CoinMarketCapData> data;
+
+        public List<CoinMarketCapData> getData() {
+            return data;
+        }
+    }
+
     @Override
     public CoinMarketCapListing getCoinMarketCapMap() {
         Map<String, List<String>> params = new HashMap<>();
@@ -56,9 +63,19 @@ public class CoinMarketCapApiServiceImpl implements CoinMarketCapApiService {
         org.springframework.http.HttpEntity<CoinMarketCapListing> requestEntity = new org.springframework.http.HttpEntity<>(null, headers);
         Log.info("Calling coin market cap map: {}", exchangeMapUrl);
         //this api call is simple enough that a normal Spring Rest Operations call can be made, rather than the more complex Http calls
-        ResponseEntity<CoinMarketCapListing> result = restTemplate.exchange(exchangeMapUrl, HttpMethod.GET, requestEntity, CoinMarketCapListing.class, params);
-        CoinMarketCapListing map = result.getBody();
-        return map;
+        ResponseEntity<CoinMarketCapObj> result = restTemplate.exchange(exchangeMapUrl, HttpMethod.GET,
+                requestEntity, CoinMarketCapObj.class, params);
+        CoinMarketCapObj data = result.getBody();
+        CoinMarketCapListing listing = new CoinMarketCapListing();
+        if (data != null) {
+            Set<String> uniques = new HashSet<>();
+            Set<CoinMarketCapData> set = data.getData().stream()
+                    .filter(e -> !uniques.add(e.getSymbol()))
+                    .collect(Collectors.toSet());
+            set.forEach(c -> System.out.println("symbol: " + c.getSymbol() + " name: " + c.getName() + " id: " + c.getId()));
+            listing = listing.convertToCoinMarketCapListing(data.getData());
+        }
+        return listing;
     }
 
     @Override

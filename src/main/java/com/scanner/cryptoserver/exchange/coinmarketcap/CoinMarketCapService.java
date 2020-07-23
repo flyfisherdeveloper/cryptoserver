@@ -95,26 +95,6 @@ public class CoinMarketCapService {
         }
     }
 
-    /**
-     * Convert a coin market cap data list to a coin market cap listing.
-     * The purpose of this is to put the list of data in a Map for better lookup performance.
-     *
-     * @param data the list of coin market cap data - usually parsed from Json.
-     * @return the listing with the map.
-     */
-    private CoinMarketCapListing convertToCoinMarketCapListing(List<CoinMarketCapData> data) {
-        Function<String, CoinMarketCapData> valueMapper = sym -> data.stream()
-                .filter(d -> d.isCoin(sym))
-                .findFirst()
-                //Here, we create an empty data object in case it can't be found.
-                //This shouldn't happen, but do so just in case to prevent null pointer errors.
-                .orElse(new CoinMarketCapData(""));
-        Map<String, CoinMarketCapData> map = data.stream().map(CoinMarketCapData::getSymbol).collect(Collectors.toMap(sym -> sym, valueMapper));
-        CoinMarketCapListing coinMarketCapListing = new CoinMarketCapListing();
-        coinMarketCapListing.setData(map);
-        return coinMarketCapListing;
-    }
-
     public CoinMarketCapListing getCoinMarketCapListing(Set<Integer> idSet) {
         Supplier<CoinMarketCapListing> marketCapSupplier = () -> {
             List<NameValuePair> parameters = new ArrayList<>();
@@ -125,7 +105,8 @@ public class CoinMarketCapService {
 
             String json = coinMarketCapApiService.makeExchangeQuotesApiCall(parameters);
             List<CoinMarketCapData> data = parseJsonData(json, idSet);
-            CoinMarketCapListing coinMarketCapListing = convertToCoinMarketCapListing(data);
+            CoinMarketCapListing coinMarketCapListing = new CoinMarketCapListing();
+            coinMarketCapListing = coinMarketCapListing.convertToCoinMarketCapListing(data);
             return coinMarketCapListing;
         };
         CoinMarketCapListing coinMarketCap = cacheUtil.retrieveFromCache(COIN_MARKET_CAP, LISTING, marketCapSupplier);
@@ -139,7 +120,8 @@ public class CoinMarketCapService {
         String json = coinMarketCapApiService.makeExchangeInfoApiCall(paratmers);
 
         List<CoinMarketCapData> data = parseJsonInfo(json, ids);
-        CoinMarketCapListing listing = convertToCoinMarketCapListing(data);
+        CoinMarketCapListing listing = new CoinMarketCapListing();
+        listing = listing.convertToCoinMarketCapListing(data);
         return listing;
     }
 
