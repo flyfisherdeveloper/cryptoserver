@@ -21,7 +21,7 @@ import org.springframework.web.client.RestTemplate
 internal class BittrexServiceImplIntegTest(@Autowired private val service: BittrexServiceImpl) {
 
     @Test
-    fun testMarkets() {
+    fun testGet24HrAllCoinTicker() {
         val coins = service.get24HrAllCoinTicker()
         //find one of the coins that we know should be there
         val mtlBtc = coins.first { it.symbol == "MTL-BTC" }

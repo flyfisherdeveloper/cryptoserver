@@ -72,7 +72,7 @@ class BittrexServiceImplTest extends Specification {
           }
           //mock the call to set the market cap for each coin
           //sets the market cap to an arbitrary, non-zero value
-          coinMarketCapService.setMarketCapFor24HrData(_) >> { args ->
+          coinMarketCapService.setMarketCapAndIdFor24HrData(_) >> { args ->
               def list = args.get(0) as List<CoinDataFor24Hr>
               list.each { it.setMarketCap(10000.0) }
           }

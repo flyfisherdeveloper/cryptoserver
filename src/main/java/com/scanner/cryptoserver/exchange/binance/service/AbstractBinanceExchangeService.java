@@ -118,7 +118,9 @@ public abstract class AbstractBinanceExchangeService implements ExchangeService 
         if (body == null) {
             return new CoinDataFor24Hr();
         }
-        return get24HrCoinTicker(body);
+        CoinDataFor24Hr coin = get24HrCoinTicker(body);
+        coinMarketCapService.setMarketCapAndIdFor24HrData(coin);
+        return coin;
     }
 
     /**
@@ -553,7 +555,7 @@ public abstract class AbstractBinanceExchangeService implements ExchangeService 
             add24HrVolumeChange(list);
         }
 
-        coinMarketCapService.setMarketCapFor24HrData(list);
+        coinMarketCapService.setMarketCapAndIdFor24HrData(list);
         //since this is the first time (in awhile) we have called the exchange info,
         //start threads to update every minute for 15 minutes - this way the client gets
         //updated 24-hour data every minute

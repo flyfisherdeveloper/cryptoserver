@@ -73,14 +73,13 @@ class CoinMarketCapServiceTest extends Specification {
 
         expect:
           listing != null
-          assert listing.getData() != null
           if (badData) {
               //make sure we handle bad data effectively, without exceptions
-              assert listing.getData().size() == 0
+              assert listing.getData() == null
           } else {
               assert listing.getData().size() == 1
-              def btc = listing.getData().get("BTC")
-              assert btc.getId() == 1
+              def btc = listing.getData().get(1)
+              assert btc.getSymbol() == "BTC"
               assert btc.getName() == "Bitcoin"
               assert btc.getMarketCap() == 10000000.35;
           }
@@ -104,15 +103,14 @@ class CoinMarketCapServiceTest extends Specification {
 
         expect:
           assert listing != null
-          assert listing.getData() != null
           if (badData) {
               //make sure we handle bad data effectively, without exceptions
-              assert listing.getData().size() == 0
+              assert listing.getData() == null
           } else {
               assert listing.getData().size() == 1
               assert listing.getData().size() == 1
-              def btc = listing.getData().get("BTC")
-              assert btc.getId() == 1
+              def btc = listing.getData().get(1)
+              assert btc.getSymbol() == "BTC"
               assert btc.getName() == "Bitcoin"
               //the market cap is null since the endpoint being tested does not retrieve it
               assert btc.getMarketCap() == null
@@ -125,7 +123,7 @@ class CoinMarketCapServiceTest extends Specification {
 
     }
 
-    def "test setMarketCapFor24HrData"() {
+    def "test setMarketCapAndIdFor24HrData"() {
         given:
           def exchangeNameList = ["binance", "binanceUsa"]
           def exchangeInfo = new ExchangeInfo(symbols: [new Symbol(baseAsset: "BTC"), new Symbol(baseAsset: "ETH")])
@@ -136,7 +134,7 @@ class CoinMarketCapServiceTest extends Specification {
 
           def ethCap = 22000000
           def data2 = new CoinMarketCapData(name: "ETH", marketCap: ethCap, symbol: "ETHUSD", id: 2)
-          def data = [:] as HashMap<String, CoinMarketCapData>
+          def data = [:] as Map<String, CoinMarketCapData>
           data.put(data1.getName(), data1)
           data.put(data2.getName(), data2)
           listing.setData(data)
@@ -151,7 +149,7 @@ class CoinMarketCapServiceTest extends Specification {
           cacheUtil.retrieveFromCache("CoinMarketCap", _, _) >> listing
 
         then:
-          service.setMarketCapFor24HrData(coinList)
+          service.setMarketCapAndIdFor24HrData(coinList)
 
         expect:
           data.get("BTC").getMarketCap() == btcCap

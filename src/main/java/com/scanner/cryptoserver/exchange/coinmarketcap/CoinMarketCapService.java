@@ -60,17 +60,9 @@ public class CoinMarketCapService {
 
         long start = System.currentTimeMillis();
         //now get a set of ids for the coins in the exchanges
-        Function<String, Integer> findCoinId = (coin) -> {
-            CoinMarketCapData data = coinMarketCap.getData().get(coin);
-            //99% of the time the coin is in the map based on its symbol.
-            //If not, do a search in the map in the values to find it based on its name instead of symbol.
-            if (data == null) {
-                return coinMarketCap.getData().values().stream()
-                        .filter(c -> c.isCoin(coin))
-                        .map(CoinMarketCapData::getId).findFirst().orElse(1);
-            }
-            return data.getId();
-        };
+        Function<String, Integer> findCoinId = (coin) -> coinMarketCap.getData().values().stream()
+                .filter(c -> c.isCoin(coin))
+                .map(CoinMarketCapData::getId).findFirst().orElse(1);
         Set<Integer> idSet = coinSet.stream().map(findCoinId).collect(Collectors.toSet());
         System.out.println("getIdSet() 2: " + (System.currentTimeMillis() - start));
         return idSet;
@@ -87,12 +79,17 @@ public class CoinMarketCapService {
         return listing;
     }
 
-    public void setMarketCapFor24HrData(List<CoinDataFor24Hr> data) {
+    public void setMarketCapAndIdFor24HrData(List<CoinDataFor24Hr> data) {
         CoinMarketCapListing coinMarketCap = getCoinMarketCapListing();
         //If the coin market cap data exists, then update each symbol with the market cap value found in the maket cap data.
         if (coinMarketCap != null) {
-            data.forEach(d -> d.addMarketCap(coinMarketCap));
+            data.forEach(d -> d.addMarketCapAndId(coinMarketCap));
         }
+    }
+
+    public void setMarketCapAndIdFor24HrData(CoinDataFor24Hr coin) {
+        //jeff unit test this
+        setMarketCapAndIdFor24HrData(Collections.singletonList(coin));
     }
 
     public CoinMarketCapListing getCoinMarketCapListing(Set<Integer> idSet) {

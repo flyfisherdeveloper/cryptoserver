@@ -44,6 +44,9 @@ public class CoinMarketCapApiServiceImpl implements CoinMarketCapApiService {
         this.restTemplate = restTemplate;
     }
 
+    /**
+     * Convienience class used only for deserializing Json.
+     */
     private static class CoinMarketCapObj {
         private List<CoinMarketCapData> data;
 
