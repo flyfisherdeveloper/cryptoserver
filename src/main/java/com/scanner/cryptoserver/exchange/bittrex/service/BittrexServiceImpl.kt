@@ -4,6 +4,7 @@ import com.fasterxml.jackson.module.kotlin.jacksonObjectMapper
 import com.fasterxml.jackson.module.kotlin.readValue
 import com.scanner.cryptoserver.exchange.binance.dto.CoinDataFor24Hr
 import com.scanner.cryptoserver.exchange.binance.dto.CoinTicker
+import com.scanner.cryptoserver.exchange.binance.service.AbstractBinanceExchangeService
 import com.scanner.cryptoserver.exchange.bittrex.dto.Bittrex24HrData
 import com.scanner.cryptoserver.exchange.bittrex.dto.BittrexTicker
 import com.scanner.cryptoserver.exchange.coinmarketcap.CoinMarketCapService
@@ -11,12 +12,14 @@ import com.scanner.cryptoserver.exchange.coinmarketcap.dto.ExchangeInfo
 import com.scanner.cryptoserver.exchange.service.ExchangeService
 import com.scanner.cryptoserver.util.CacheUtil
 import com.scanner.cryptoserver.util.UrlReader
+import org.slf4j.LoggerFactory
 import org.springframework.beans.factory.annotation.Value
 import org.springframework.stereotype.Service
 import java.util.function.Supplier
 
 @Service(value = "bittrexService")
 class BittrexServiceImpl(private val cacheUtil: CacheUtil, private val coinMarketCapService: CoinMarketCapService, private val urlReader: UrlReader) : ExchangeService {
+    private val Log = LoggerFactory.getLogger(BittrexServiceImpl::class.java)
     private val EXCHANGE_NAME = "bittrex"
     private val ALL_24_HR_TICKER = "All24HourTicker"
     private val ALL_MARKET_TICKERS = "AllMarketTickers"
@@ -68,6 +71,7 @@ class BittrexServiceImpl(private val cacheUtil: CacheUtil, private val coinMarke
         val results: String = if (marketSummariesUrl == null) {
             urlReader.readFromUrl()
         } else {
+            Log.debug("Retrieving markets for Bittrex exchange: {}", marketSummariesUrl)
             urlReader.readFromUrl(marketSummariesUrl)
         }
         val mapper = jacksonObjectMapper()
@@ -117,6 +121,7 @@ class BittrexServiceImpl(private val cacheUtil: CacheUtil, private val coinMarke
         val results: String = if (tickersUrl == null) {
             urlReader.readFromUrl()
         } else {
+            Log.debug("Retrieving tickers for Bittrex exchange: {}", tickersUrl)
             urlReader.readFromUrl(tickersUrl)
         }
         val mapper = jacksonObjectMapper()

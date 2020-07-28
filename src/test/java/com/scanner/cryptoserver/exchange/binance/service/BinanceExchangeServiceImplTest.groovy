@@ -382,12 +382,12 @@ class BinanceExchangeServiceImplTest extends Specification {
           assert info
           assert info.getSymbols()
 
-          def coinBtc = info.getSymbols().find { it.getSymbol() == symbolBtc }
+          def coinBtc = info.getSymbols().find { it.symbol == symbolBtc }
           assert coinBtc
           assert coinBtc.id == idBtc
           assert coinBtc.marketCap == marketCapBtc
 
-          def coinLtc = info.getSymbols().find { it.getSymbol() == symbolLtc }
+          def coinLtc = info.getSymbols().find { it.symbol == symbolLtc }
           assert coinLtc
           assert coinLtc.id == idLtc
           assert coinLtc.marketCap == marketCapLtc

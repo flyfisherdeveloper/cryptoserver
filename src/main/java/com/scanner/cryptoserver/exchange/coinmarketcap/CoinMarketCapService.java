@@ -58,13 +58,11 @@ public class CoinMarketCapService {
         Supplier<CoinMarketCapListing> supplier = coinMarketCapApiService::getCoinMarketCapMap;
         CoinMarketCapListing coinMarketCap = cacheUtil.retrieveFromCache(COIN_MARKET_CAP, MARKET_CAP_MAP, supplier);
 
-        long start = System.currentTimeMillis();
         //now get a set of ids for the coins in the exchanges
         Function<String, Integer> findCoinId = (coin) -> coinMarketCap.getData().values().stream()
                 .filter(c -> c.isCoin(coin))
                 .map(CoinMarketCapData::getId).findFirst().orElse(1);
         Set<Integer> idSet = coinSet.stream().map(findCoinId).collect(Collectors.toSet());
-        System.out.println("getIdSet() 2: " + (System.currentTimeMillis() - start));
         return idSet;
     }
 
@@ -80,7 +78,6 @@ public class CoinMarketCapService {
     }
 
     public void setMarketCapAndIdFor24HrData(List<CoinDataFor24Hr> data) {
-        //todo: jeff cache this coin market cap listing - it calls getIdSet() over and over
         CoinMarketCapListing coinMarketCap = getCoinMarketCapListing();
         //If the coin market cap data exists, then update each symbol with the market cap value found in the maket cap data.
         if (coinMarketCap != null) {
