@@ -4,7 +4,6 @@ import com.fasterxml.jackson.module.kotlin.jacksonObjectMapper
 import com.fasterxml.jackson.module.kotlin.readValue
 import com.scanner.cryptoserver.exchange.binance.dto.CoinDataFor24Hr
 import com.scanner.cryptoserver.exchange.binance.dto.CoinTicker
-import com.scanner.cryptoserver.exchange.binance.service.AbstractBinanceExchangeService
 import com.scanner.cryptoserver.exchange.bittrex.dto.Bittrex24HrData
 import com.scanner.cryptoserver.exchange.bittrex.dto.BittrexTicker
 import com.scanner.cryptoserver.exchange.coinmarketcap.CoinMarketCapService
