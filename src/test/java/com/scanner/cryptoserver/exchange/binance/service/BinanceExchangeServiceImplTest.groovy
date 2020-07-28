@@ -53,16 +53,14 @@ class BinanceExchangeServiceImplTest extends Specification {
     @Unroll
     def "test getMarkets returns expected markets"() {
         given:
-          //note that the market cap is not being set in the symbols here, but is being verified in the "expect" section:
-          //the service will set the symbol market cap based on what is returned in the coinMarketCapMap object in the "when" section
           def symbol1 = new Symbol(baseAsset: coin1, quoteAsset: market1)
           def symbol2 = new Symbol(baseAsset: coin2, quoteAsset: market2)
           def exchangeInfo = new ExchangeInfo()
           exchangeInfo.setSymbols([symbol1, symbol2])
 
           def listing = new CoinMarketCapListing()
-          def data1 = new CoinMarketCapData(symbol: coin1, marketCap: marketCap1)
-          def data2 = new CoinMarketCapData(symbol: coin2, marketCap: marketCap2)
+          def data1 = new CoinMarketCapData(symbol: coin1)
+          def data2 = new CoinMarketCapData(symbol: coin2)
           def dataMap = [:] as HashMap<String, CoinMarketCapData>
           dataMap.put(coin1, data1)
           dataMap.put(coin2, data2)
@@ -78,14 +76,11 @@ class BinanceExchangeServiceImplTest extends Specification {
         expect:
           assert markets
           assert markets == expectedMarkets.toSet()
-          //verify that the market caps were set in the exchange symbols
-          assert exchangeInfo.getSymbols().get(0).getMarketCap() == marketCap1
-          assert exchangeInfo.getSymbols().get(1).getMarketCap() == marketCap2
 
         where:
-          coin1 | market1 | coin2 | market2 | marketCap1  | marketCap2 | expectedMarkets
-          "BTC" | "USD"   | "LTC" | "USDC"  | 17000000000 | 2000000    | ["USD", "USDC"]
-          "BTC" | "USD"   | "LTC" | "USD"   | 18000000000 | 30000000   | ["USD"]
+          coin1 | market1 | coin2 | market2 | expectedMarkets
+          "BTC" | "USD"   | "LTC" | "USDC"  | ["USD", "USDC"]
+          "BTC" | "USD"   | "LTC" | "USD"   | ["USD"]
     }
 
     //Here, we do a unit test of the 24Hour price ticker instead of an integration test
