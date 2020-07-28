@@ -7,7 +7,20 @@ import com.scanner.cryptoserver.exchange.coinmarketcap.dto.ExchangeInfo;
 import java.util.List;
 
 public interface ExchangeService {
+    /**
+     * Get the exchange info by calling the exchange API.
+     *
+     * @return the exchange info.
+     */
     ExchangeInfo getExchangeInfo();
+
+    /**
+     * Retrieve the exchange info from the cache.
+     * It is assumed that the exchange info is already in the cache.
+     *
+     * @return the exchange info.
+     */
+    ExchangeInfo retrieveExchangeInfoFromCache();
 
     CoinDataFor24Hr get24HourCoinData(String symbol);
 

@@ -37,7 +37,7 @@ public class CoinMarketCapService {
     }
 
     /**
-     * Get a set of IDs that represent coins. Use the exchange info from the Binance services to get the coin names.
+     * Get a set of IDs that represent coins. Use the exchange info from the exchange services to get the coin names.
      *
      * @return a Set of IDs.
      */
@@ -80,6 +80,7 @@ public class CoinMarketCapService {
     }
 
     public void setMarketCapAndIdFor24HrData(List<CoinDataFor24Hr> data) {
+        //todo: jeff cache this coin market cap listing - it calls getIdSet() over and over
         CoinMarketCapListing coinMarketCap = getCoinMarketCapListing();
         //If the coin market cap data exists, then update each symbol with the market cap value found in the maket cap data.
         if (coinMarketCap != null) {
@@ -88,7 +89,6 @@ public class CoinMarketCapService {
     }
 
     public void setMarketCapAndIdFor24HrData(CoinDataFor24Hr coin) {
-        //jeff unit test this
         setMarketCapAndIdFor24HrData(Collections.singletonList(coin));
     }
 

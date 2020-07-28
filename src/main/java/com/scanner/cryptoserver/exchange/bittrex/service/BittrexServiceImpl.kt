@@ -101,6 +101,12 @@ class BittrexServiceImpl(private val cacheUtil: CacheUtil, private val coinMarke
         return exchangeInfo
     }
 
+    override fun retrieveExchangeInfoFromCache(): ExchangeInfo {
+        val name = "$EXCHANGE_NAME-$EXCHANGE_INFO"
+        val exchangeInfo = cacheUtil.retrieveFromCache<ExchangeInfo>(EXCHANGE_INFO, name, null)
+        return exchangeInfo
+    }
+
     private fun getTickersFromCache(): List<BittrexTicker> {
         val cacheName = "$EXCHANGE_NAME-$ALL_24_HR_TICKER"
         val tickers = Supplier { getTickers() }

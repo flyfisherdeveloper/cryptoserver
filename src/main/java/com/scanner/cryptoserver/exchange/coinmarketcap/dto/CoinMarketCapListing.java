@@ -4,6 +4,7 @@ import lombok.Data;
 
 import java.util.List;
 import java.util.Map;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 @Data
@@ -25,5 +26,16 @@ public class CoinMarketCapListing {
         Map<Integer, CoinMarketCapData> map = dataList.stream().collect(Collectors.toMap(CoinMarketCapData::getId, d -> d));
         coinMarketCapListing.setData(map);
         return coinMarketCapListing;
+    }
+
+    /**
+     * Find the coin market cap data using the symbol (i.e. "BTC").
+     * The purpose of this method is to find the data when an id is not available.
+     *
+     * @param symbol the symbol - such as "ETH" or "LTC"
+     * @return return the coin market cap data, if found.
+     */
+    public Optional<CoinMarketCapData> findData(String symbol) {
+        return data.values().stream().filter(d -> d.getSymbol().equals(symbol)).findFirst();
     }
 }

@@ -53,7 +53,8 @@ public abstract class AbstractBinanceExchangeService implements ExchangeService 
      *
      * @return The exchange information.
      */
-    private ExchangeInfo retrieveExchangeInfoFromCache() {
+    @Override
+    public ExchangeInfo retrieveExchangeInfoFromCache() {
         String name = getExchangeName() + "-" + EXCHANGE_INFO;
         Supplier<ExchangeInfo> exchangeInfoSupplier = () -> {
             ResponseEntity<ExchangeInfo> response = restTemplate.getForEntity(getUrlExtractor().getExchangeInfoUrl(), ExchangeInfo.class);
@@ -69,7 +70,7 @@ public abstract class AbstractBinanceExchangeService implements ExchangeService 
 
         if (coinMarketCap != null) {
             //If the coin market cap data exists, then update each symbol with the market cap value found in the maket cap data.
-            exchangeInfo.getSymbols().forEach(symbol -> symbol.addMarketCap(coinMarketCap));
+            exchangeInfo.getSymbols().forEach(symbol -> symbol.addMarketCapAndId(coinMarketCap));
         }
     }
 
@@ -100,7 +101,7 @@ public abstract class AbstractBinanceExchangeService implements ExchangeService 
     }
 
     public Set<String> getMarkets() {
-        ExchangeInfo exchangeInfo = getExchangeInfo();
+        ExchangeInfo exchangeInfo = retrieveExchangeInfoFromCache();
         Set<String> set = exchangeInfo.getSymbols().stream().map(Symbol::getQuoteAsset).collect(Collectors.toSet());
         return set;
     }
@@ -196,7 +197,7 @@ public abstract class AbstractBinanceExchangeService implements ExchangeService 
      * @return true if the coin is actively trading, false otherwise.
      */
     private boolean isCoinTrading(String symbol) {
-        ExchangeInfo info = getExchangeInfo();
+        ExchangeInfo info = retrieveExchangeInfoFromCache();
         boolean trading = info.getSymbols().stream()
                 .anyMatch(s -> s.getSymbol().equals(symbol) && s.getStatus().equals(TRADING));
         return trading;

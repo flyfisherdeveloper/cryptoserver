@@ -1,6 +1,7 @@
 package com.scanner.cryptoserver.exchange.bittrex.service
 
 import com.scanner.cryptoserver.exchange.binance.dto.CoinDataFor24Hr
+import com.scanner.cryptoserver.exchange.coinmarketcap.dto.ExchangeInfo
 import com.scanner.cryptoserver.exchange.service.AbstractSandboxExchangeService
 import com.scanner.cryptoserver.util.SandboxUtil
 import org.springframework.stereotype.Service

@@ -72,9 +72,9 @@ public class ApplicationStartup implements ApplicationListener<ApplicationReadyE
                     //Now fill the market cap for each coin on the exchanges.
                     //Here, we set the exchange info market cap for each coin, retrieving it from the coin market cap info.
                     try {
-                        futureBinance.get().getSymbols().forEach(symbol -> symbol.addMarketCap(coinMarketCapInfo));
-                        futureBinanceUsa.get().getSymbols().forEach(symbol -> symbol.addMarketCap(coinMarketCapInfo));
-                        futureBittrex.get().getSymbols().forEach(symbol -> symbol.addMarketCap(coinMarketCapInfo));
+                        futureBinance.get().getSymbols().forEach(symbol -> symbol.addMarketCapAndId(coinMarketCapInfo));
+                        futureBinanceUsa.get().getSymbols().forEach(symbol -> symbol.addMarketCapAndId(coinMarketCapInfo));
+                        futureBittrex.get().getSymbols().forEach(symbol -> symbol.addMarketCapAndId(coinMarketCapInfo));
                     } catch (InterruptedException | ExecutionException e) {
                         Log.error("Could not access exchange future for adding market cap: {}", e.getMessage());
                     }

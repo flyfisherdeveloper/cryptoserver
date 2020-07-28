@@ -5,8 +5,8 @@ import com.fasterxml.jackson.databind.JavaType;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.scanner.cryptoserver.exchange.binance.dto.CoinDataFor24Hr;
 import com.scanner.cryptoserver.exchange.binance.dto.CoinTicker;
-import com.scanner.cryptoserver.exchange.coinmarketcap.dto.ExchangeInfo;
 import com.scanner.cryptoserver.exchange.binance.service.SandboxBinanceUsaExchangeService;
+import com.scanner.cryptoserver.exchange.coinmarketcap.dto.ExchangeInfo;
 import com.scanner.cryptoserver.util.RsiCalc;
 import com.scanner.cryptoserver.util.SandboxUtil;
 import org.slf4j.Logger;
@@ -56,6 +56,12 @@ public abstract class AbstractSandboxExchangeService implements ExchangeService 
     public ExchangeInfo getExchangeInfo() {
         return getData(getDataName("exchangeInfo"), ExchangeInfo.class);
     }
+
+    @Override
+    public ExchangeInfo retrieveExchangeInfoFromCache() {
+        return getExchangeInfo();
+    }
+
 
     @Override
     public CoinDataFor24Hr get24HourCoinData(String symbol) {
