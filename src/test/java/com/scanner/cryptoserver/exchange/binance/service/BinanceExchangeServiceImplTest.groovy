@@ -325,20 +325,20 @@ class BinanceExchangeServiceImplTest extends Specification {
           assert info
           assert info.getSymbols()
           if (inExchangeInfo1) {
-              def coin = info.getSymbols().find { it.symbol == symbol1 }
+              def coin = info.getSymbols().find { it.getSymbol() == symbol1 }
               assert coin
               assert coin.getQuoteAsset() == quote1
           } else {
               //test that the coin is not returned, since its currency "quote asset" is prohibited
-              def coin = info.getSymbols().find { it.symbol == symbol1 }
+              def coin = info.getSymbols().find { it.getSymbol() == symbol1 }
               assert !coin
           }
           if (inExchangeInfo2) {
-              def coin = info.getSymbols().find { it.symbol == symbol2 }
+              def coin = info.getSymbols().find { it.getSymbol() == symbol2 }
               assert coin
               assert coin.getQuoteAsset() == quote2
           } else {
-              def coin = info.getSymbols().find { it.symbol == symbol2 }
+              def coin = info.getSymbols().find { it.getSymbol() == symbol2 }
               assert !coin
           }
 
@@ -347,6 +347,50 @@ class BinanceExchangeServiceImplTest extends Specification {
           "BTC"   | "USDT" | true            | "LTC"   | "USDC" | true
           //"EUR" is a non-supported quote (currency), so it won't get added to the exchange info
           "BTC"   | "EUR"  | false           | "LTC"   | "USDC" | true
+    }
+
+    def "test getExchangeInfo adds market cap and id"() {
+        given:
+          def symbolBtc = "BTC"
+          def symbolLtc = "LTC"
+          def marketCapBtc = 10000000
+          def marketCapLtc = 300000
+          def idBtc = 1
+          def idLtc = 2
+
+          def exchangeInfo = new ExchangeInfo()
+          def symbols = [new Symbol(symbol: symbolBtc, id: idBtc, marketCap: marketCapBtc),
+                         new Symbol(symbol: symbolLtc, id: idLtc, marketCap: marketCapLtc)]
+          exchangeInfo.setSymbols(symbols)
+
+          def coinMarketCapListing = new CoinMarketCapListing()
+          def dataBtc = new CoinMarketCapData(symbol: symbolBtc)
+          def dataLtc = new CoinMarketCapData(symbol: symbolLtc)
+          def dataMap = [:] as HashMap<String, CoinMarketCapData>
+          dataMap.put(symbolBtc, dataBtc)
+          dataMap.put(symbolLtc, dataLtc)
+          coinMarketCapListing.setData(dataMap)
+
+        when:
+          cacheUtil.retrieveFromCache(*_) >> exchangeInfo
+          coinMarketCapService.getCoinMarketCapListing() >> coinMarketCapListing
+
+        then:
+          def info = service.getExchangeInfoWithoutMarketCap()
+
+        expect:
+          assert info
+          assert info.getSymbols()
+
+          def coinBtc = info.getSymbols().find { it.getSymbol() == symbolBtc }
+          assert coinBtc
+          assert coinBtc.id == idBtc
+          assert coinBtc.marketCap == marketCapBtc
+
+          def coinLtc = info.getSymbols().find { it.getSymbol() == symbolLtc }
+          assert coinLtc
+          assert coinLtc.id == idLtc
+          assert coinLtc.marketCap == marketCapLtc
     }
 
     @Unroll("test that #symbol has #expectedCoin for coin")

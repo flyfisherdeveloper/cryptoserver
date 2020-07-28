@@ -69,7 +69,7 @@ public abstract class AbstractBinanceExchangeService implements ExchangeService 
         CoinMarketCapListing coinMarketCap = coinMarketCapService.getCoinMarketCapListing();
 
         if (coinMarketCap != null) {
-            //If the coin market cap data exists, then update each symbol with the market cap value found in the maket cap data.
+            //If the coin market cap data exists, then update each symbol with the market cap value found in the market cap data.
             exchangeInfo.getSymbols().forEach(symbol -> symbol.addMarketCapAndId(coinMarketCap));
         }
     }
