@@ -1,15 +1,19 @@
 package com.scanner.cryptoserver.exchange.binance.dto;
 
-import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapMap;
+import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapData;
+import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapListing;
 
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
+import java.util.Map;
+import java.util.Optional;
 
 //This data class is used by Kotlin code - therefore Lombok annotations cannot be used.
 public class CoinDataFor24Hr {
     private byte[] icon;
     //symbol of the coin, which includes the market (quote) such as LTCUSD, or BTCUSDT
     private String symbol;
+    private Integer id;
     //the coin such as BTC, or ETH
     private String coin;
     private Double marketCap = 0.0;
@@ -40,6 +44,14 @@ public class CoinDataFor24Hr {
 
     public void setSymbol(String symbol) {
         this.symbol = symbol;
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
     }
 
     public String getCoin() {
@@ -167,12 +179,23 @@ public class CoinDataFor24Hr {
         return Double.parseDouble(nf.format(marketCap));
     }
 
-    public void addMarketCap(CoinMarketCapMap coinMarketCapInfo) {
-        //find the symbol (i.e. "BTC") in the coin market cap info, and get the market cap value from it and set it in the market cap field
-        coinMarketCapInfo.getData()
-                .stream()
-                .filter(c -> c.isCoin(coin))
-                .findFirst()
-                .ifPresent(cap -> setMarketCap(getMarketCapFormattedValue(cap.getMarketCap())));
+    /**
+     * Find this coin in the coin market cap listing. If found, set the market cap and id.
+     *
+     * @param coinMarketCapListing the coin market cap listing - contains all the coin market cap data.
+     */
+    public void addMarketCapAndId(CoinMarketCapListing coinMarketCapListing) {
+        Optional<CoinMarketCapData> data;
+        if (id != null) {
+            data = Optional.of(coinMarketCapListing.getData().get(id));
+        } else {
+            data = coinMarketCapListing.getData().entrySet().stream()
+                    .filter(e -> e.getValue().isCoin(this.coin))
+                    .findFirst().map(Map.Entry::getValue);
+        }
+        data.ifPresent(coinMarketCapData -> {
+            setMarketCap(getMarketCapFormattedValue(coinMarketCapData.getMarketCap()));
+            setId(coinMarketCapData.getId());
+        });
     }
 }

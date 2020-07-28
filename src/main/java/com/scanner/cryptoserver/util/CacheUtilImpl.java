@@ -104,4 +104,12 @@ public class CacheUtilImpl implements CacheUtil {
     public List<String> getExchangeNames() {
         return exchangeNames;
     }
+
+    @Override
+    public void putInCache(String cacheName, String valueName, Object cacheObject) {
+        Cache cache = cacheManager.getCache(cacheName);
+        if (cache != null) {
+            cache.put(valueName, cacheObject);
+        }
+    }
 }

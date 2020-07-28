@@ -5,7 +5,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.scanner.cryptoserver.CachingConfig;
 import com.scanner.cryptoserver.exchange.binance.dto.CoinDataFor24Hr;
 import com.scanner.cryptoserver.exchange.binance.dto.CoinTicker;
-import com.scanner.cryptoserver.exchange.binance.dto.Symbol;
+import com.scanner.cryptoserver.util.dto.Symbol;
 import com.scanner.cryptoserver.exchange.binance.service.BinanceExchangeServiceImpl;
 import com.scanner.cryptoserver.exchange.binance.service.BinanceUrlExtractor;
 import com.scanner.cryptoserver.exchange.coinmarketcap.CoinMarketCapApiServiceImpl;

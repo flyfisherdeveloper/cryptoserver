@@ -2,12 +2,12 @@ package com.scanner.cryptoserver.exchange.binance.service
 
 import com.scanner.cryptoserver.exchange.binance.dto.CoinDataFor24Hr
 import com.scanner.cryptoserver.exchange.binance.dto.CoinTicker
-import com.scanner.cryptoserver.exchange.binance.dto.ExchangeInfo
-import com.scanner.cryptoserver.exchange.binance.dto.Symbol
 import com.scanner.cryptoserver.exchange.coinmarketcap.CoinMarketCapService
 import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapData
-import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapMap
+import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapListing
+import com.scanner.cryptoserver.exchange.coinmarketcap.dto.ExchangeInfo
 import com.scanner.cryptoserver.util.CacheUtil
+import com.scanner.cryptoserver.util.dto.Symbol
 import org.springframework.http.ResponseEntity
 import org.springframework.web.client.RestOperations
 import org.springframework.web.client.RestTemplate
@@ -53,21 +53,22 @@ class BinanceExchangeServiceImplTest extends Specification {
     @Unroll
     def "test getMarkets returns expected markets"() {
         given:
-          //note that the market cap is not being set in the symbols here, but is being verified in the "expect" section:
-          //the service will set the symbol market cap based on what is returned in the coinMarketCapMap object in the "when" section
           def symbol1 = new Symbol(baseAsset: coin1, quoteAsset: market1)
           def symbol2 = new Symbol(baseAsset: coin2, quoteAsset: market2)
           def exchangeInfo = new ExchangeInfo()
           exchangeInfo.setSymbols([symbol1, symbol2])
 
-          def coinMarketCapMap = new CoinMarketCapMap()
-          def data1 = new CoinMarketCapData(symbol: coin1, marketCap: marketCap1)
-          def data2 = new CoinMarketCapData(symbol: coin2, marketCap: marketCap2)
-          coinMarketCapMap.setData([data1, data2])
+          def listing = new CoinMarketCapListing()
+          def data1 = new CoinMarketCapData(symbol: coin1)
+          def data2 = new CoinMarketCapData(symbol: coin2)
+          def dataMap = [:] as HashMap<String, CoinMarketCapData>
+          dataMap.put(coin1, data1)
+          dataMap.put(coin2, data2)
+          listing.setData(dataMap)
 
         when: "mocks are called"
           cacheUtil.retrieveFromCache(*_) >> exchangeInfo
-          coinMarketCapService.getCoinMarketCapListing() >> coinMarketCapMap
+          coinMarketCapService.getCoinMarketCapListing() >> listing
 
         then:
           def markets = service.getMarkets()
@@ -75,14 +76,11 @@ class BinanceExchangeServiceImplTest extends Specification {
         expect:
           assert markets
           assert markets == expectedMarkets.toSet()
-          //verify that the market caps were set in the exchange symbols
-          assert exchangeInfo.getSymbols().get(0).getMarketCap() == marketCap1
-          assert exchangeInfo.getSymbols().get(1).getMarketCap() == marketCap2
 
         where:
-          coin1 | market1 | coin2 | market2 | marketCap1  | marketCap2 | expectedMarkets
-          "BTC" | "USD"   | "LTC" | "USDC"  | 17000000000 | 2000000    | ["USD", "USDC"]
-          "BTC" | "USD"   | "LTC" | "USD"   | 18000000000 | 30000000   | ["USD"]
+          coin1 | market1 | coin2 | market2 | expectedMarkets
+          "BTC" | "USD"   | "LTC" | "USDC"  | ["USD", "USDC"]
+          "BTC" | "USD"   | "LTC" | "USD"   | ["USD"]
     }
 
     //Here, we do a unit test of the 24Hour price ticker instead of an integration test
@@ -112,12 +110,9 @@ class BinanceExchangeServiceImplTest extends Specification {
           def exchangeInfoResponse = ResponseEntity.of(Optional.of(exchangeInfo)) as ResponseEntity<ExchangeInfo>
 
           //the following represents coin market cap data for certain coins
-          def coinMarketCapMap = new CoinMarketCapMap()
-          def data1 = new CoinMarketCapData(symbol: coin, marketCap: marketCap)
-          def data2 = new CoinMarketCapData(symbol: coin, marketCap: marketCap)
-          def data3 = new CoinMarketCapData(symbol: coin, marketCap: marketCap)
-          def data4 = new CoinMarketCapData(symbol: coin, marketCap: marketCap)
-          coinMarketCapMap.setData([data1, data2, data3, data4])
+          def coinMarketCapMap = new CoinMarketCapListing()
+          def data = new CoinMarketCapData(symbol: coin, marketCap: marketCap)
+          coinMarketCapMap.setData(coin: data)
 
         when: "mocks are called"
           cacheUtil.retrieveFromCache(_, "binance-ExchangeInfo", _) >>> [exchangeInfo, exchangeInfo]
@@ -125,7 +120,7 @@ class BinanceExchangeServiceImplTest extends Specification {
           restTemplate.getForEntity(*_,) >>> [linkedHashMapResponse, exchangeInfoResponse]
           //here, we mock the call to the market cap service that sets the market cap
           //this ensures that the service makes the call to set the market cap
-          coinMarketCapService.setMarketCapFor24HrData(*_) >> { args ->
+          coinMarketCapService.setMarketCapAndIdFor24HrData(*_) >> { args ->
               def list = args.get(0) as List<CoinDataFor24Hr>
               list.forEach { it.setMarketCap(marketCap) }
           }
@@ -311,6 +306,91 @@ class BinanceExchangeServiceImplTest extends Specification {
           "BTCUSD" | "4h"     | "7d"         | true
           "BTCUSD" | "4h"     | "7d"         | false
           "BTCUSD" | "1h"     | "1d"         | false
+    }
+
+    @Unroll
+    def "test getExchangeInfoWithoutMarketCap"() {
+        given:
+          def exchangeInfo = new ExchangeInfo()
+          def symbols = [new Symbol(symbol: symbol1, quoteAsset: quote1), new Symbol(symbol: symbol2, quoteAsset: quote2)]
+          exchangeInfo.setSymbols(symbols)
+
+        when:
+          cacheUtil.retrieveFromCache(*_) >> exchangeInfo
+
+        then:
+          def info = service.getExchangeInfoWithoutMarketCap()
+
+        expect:
+          assert info
+          assert info.getSymbols()
+          if (inExchangeInfo1) {
+              def coin = info.getSymbols().find { it.getSymbol() == symbol1 }
+              assert coin
+              assert coin.getQuoteAsset() == quote1
+          } else {
+              //test that the coin is not returned, since its currency "quote asset" is prohibited
+              def coin = info.getSymbols().find { it.getSymbol() == symbol1 }
+              assert !coin
+          }
+          if (inExchangeInfo2) {
+              def coin = info.getSymbols().find { it.getSymbol() == symbol2 }
+              assert coin
+              assert coin.getQuoteAsset() == quote2
+          } else {
+              def coin = info.getSymbols().find { it.getSymbol() == symbol2 }
+              assert !coin
+          }
+
+        where:
+          symbol1 | quote1 | inExchangeInfo1 | symbol2 | quote2 | inExchangeInfo2
+          "BTC"   | "USDT" | true            | "LTC"   | "USDC" | true
+          //"EUR" is a non-supported quote (currency), so it won't get added to the exchange info
+          "BTC"   | "EUR"  | false           | "LTC"   | "USDC" | true
+    }
+
+    def "test getExchangeInfo adds market cap and id"() {
+        given:
+          def symbolBtc = "BTC"
+          def symbolLtc = "LTC"
+          def marketCapBtc = 10000000
+          def marketCapLtc = 300000
+          def idBtc = 1
+          def idLtc = 2
+
+          def exchangeInfo = new ExchangeInfo()
+          def symbols = [new Symbol(symbol: symbolBtc, id: idBtc, marketCap: marketCapBtc),
+                         new Symbol(symbol: symbolLtc, id: idLtc, marketCap: marketCapLtc)]
+          exchangeInfo.setSymbols(symbols)
+
+          def coinMarketCapListing = new CoinMarketCapListing()
+          def dataBtc = new CoinMarketCapData(symbol: symbolBtc)
+          def dataLtc = new CoinMarketCapData(symbol: symbolLtc)
+          def dataMap = [:] as HashMap<String, CoinMarketCapData>
+          dataMap.put(symbolBtc, dataBtc)
+          dataMap.put(symbolLtc, dataLtc)
+          coinMarketCapListing.setData(dataMap)
+
+        when:
+          cacheUtil.retrieveFromCache(*_) >> exchangeInfo
+          coinMarketCapService.getCoinMarketCapListing() >> coinMarketCapListing
+
+        then:
+          def info = service.getExchangeInfoWithoutMarketCap()
+
+        expect:
+          assert info
+          assert info.getSymbols()
+
+          def coinBtc = info.getSymbols().find { it.symbol == symbolBtc }
+          assert coinBtc
+          assert coinBtc.id == idBtc
+          assert coinBtc.marketCap == marketCapBtc
+
+          def coinLtc = info.getSymbols().find { it.symbol == symbolLtc }
+          assert coinLtc
+          assert coinLtc.id == idLtc
+          assert coinLtc.marketCap == marketCapLtc
     }
 
     @Unroll("test that #symbol has #expectedCoin for coin")

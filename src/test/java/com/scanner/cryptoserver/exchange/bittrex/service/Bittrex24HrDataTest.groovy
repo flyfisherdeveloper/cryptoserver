@@ -38,4 +38,22 @@ class Bittrex24HrDataTest extends Specification {
           assert coin24Hr.getPriceChangePercent() == percentChange
           assert coin24Hr.getQuoteVolume() == quoteVolume
     }
+
+    def "test symbolAdapter"() {
+        given:
+          def symbol = "BTC-USD"
+          def coin = "BTC"
+          def currency = "USD"
+          def bittrexCoin = new Bittrex24HrData()
+          bittrexCoin.setSymbol(symbol)
+
+        when:
+          def theSymbol = bittrexCoin.symbolAdapter()
+
+        then:
+          assert theSymbol
+          assert theSymbol.baseAsset == coin
+          assert theSymbol.quoteAsset == currency
+          assert theSymbol.symbol == symbol
+    }
 }
