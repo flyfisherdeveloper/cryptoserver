@@ -88,7 +88,7 @@ public abstract class AbstractBinanceExchangeService implements ExchangeService 
 
     /**
      * Get exchange information. Gets the information out of the cache if in there.
-     * Does NOT make a call to supply the market cap info.
+     * Does NOT make a call to supply the market cap info - when the exchange info is in the cache, the market cap is already set.
      *
      * @return The exchange information.
      */

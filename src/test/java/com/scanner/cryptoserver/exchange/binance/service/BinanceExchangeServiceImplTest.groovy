@@ -308,6 +308,47 @@ class BinanceExchangeServiceImplTest extends Specification {
           "BTCUSD" | "1h"     | "1d"         | false
     }
 
+    @Unroll
+    def "test getExchangeInfoWithoutMarketCap"() {
+        given:
+          def exchangeInfo = new ExchangeInfo()
+          def symbols = [new Symbol(symbol: symbol1, quoteAsset: quote1), new Symbol(symbol: symbol2, quoteAsset: quote2)]
+          exchangeInfo.setSymbols(symbols)
+
+        when:
+          cacheUtil.retrieveFromCache(*_) >> exchangeInfo
+
+        then:
+          def info = service.getExchangeInfoWithoutMarketCap()
+
+        expect:
+          assert info
+          assert info.getSymbols()
+          if (inExchangeInfo1) {
+              def coin = info.getSymbols().find { it.symbol == symbol1 }
+              assert coin
+              assert coin.getQuoteAsset() == quote1
+          } else {
+              //test that the coin is not returned, since its currency "quote asset" is prohibited
+              def coin = info.getSymbols().find { it.symbol == symbol1 }
+              assert !coin
+          }
+          if (inExchangeInfo2) {
+              def coin = info.getSymbols().find { it.symbol == symbol2 }
+              assert coin
+              assert coin.getQuoteAsset() == quote2
+          } else {
+              def coin = info.getSymbols().find { it.symbol == symbol2 }
+              assert !coin
+          }
+
+        where:
+          symbol1 | quote1 | inExchangeInfo1 | symbol2 | quote2 | inExchangeInfo2
+          "BTC"   | "USDT" | true            | "LTC"   | "USDC" | true
+          //"EUR" is a non-supported quote (currency), so it won't get added to the exchange info
+          "BTC"   | "EUR"  | false           | "LTC"   | "USDC" | true
+    }
+
     @Unroll("test that #symbol has #expectedCoin for coin")
     def "test getCoin"() {
         given:
