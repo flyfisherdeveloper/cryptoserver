@@ -164,55 +164,6 @@ class BinanceExchangeServiceImplTest extends Specification {
           null      | null  | null     | null      | null        | null               | null      | null      | null      | null          | null          | null      | false
     }
 
-    @Unroll("Test that when volume changes from #volume1 to #volume2 that the volume percent change is #percentChange")
-    def "test getPercentChange"() {
-        when:
-          def change = service.getPercentChange(volume1, volume2)
-
-        then:
-          assert change == percentChange
-
-        where:
-          volume1 | volume2 | percentChange
-          10.0    | 20.0    | 100.0
-          10.0    | 5.0     | -50.0
-    }
-
-    @Unroll("Test that when #symbol volume changes from #quoteVolumePrevious to #quoteVolueNew that the expected volume percent change is #expectedVolumePercentChange%")
-    def "test add24HrVolumeChange"() {
-        given:
-          def now = LocalDateTime.now()
-          def closeTime1 = now.minusDays(1).minusHours(1)
-
-          def coin = new CoinDataFor24Hr()
-          coin.setSymbol(symbol)
-          def coinList = [coin]
-
-          //The zeroes are just filler data - not needed for the test, but are necessary for the test to complete.
-          def coinDataList1 = [0L, "0.0", "0.0", "0.0", "0.0", "0.0", closeTime1.toInstant(ZoneOffset.UTC).toEpochMilli(), quoteVolumePrevious.toString(), 0]
-          def coinDataList2 = [0L, "0.0", "0.0", "0.0", "0.0", "0.0", now.toInstant(ZoneOffset.UTC).toEpochMilli(), quoteVolueNew.toString(), 0]
-
-          def coinData = new Object[2]
-          coinData[0] = coinDataList1
-          coinData[1] = coinDataList2
-          def response = ResponseEntity.of(Optional.of(coinData)) as ResponseEntity<Object[]>
-
-        when: "mocks are called"
-          restTemplate.getForEntity(*_) >> response
-          response.getBody() >> coinData
-
-        then: "the service is called"
-          service.add24HrVolumeChange(coinList)
-
-        expect:
-          assert coinList[0].getVolumeChangePercent() == expectedVolumePercentChange
-
-        where:
-          symbol   | quoteVolueNew | quoteVolumePrevious | expectedVolumePercentChange
-          "BTCUSD" | 20.0          | 10.0                | 100.0
-          "LTCUSD" | 10.0          | 20.0                | -50.0
-    }
-
     @Unroll("Test call of coin ticker for #symbol for #interval and #daysOrMonths")
     def "test callCoinTicker"() {
         given:
