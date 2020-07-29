@@ -32,11 +32,6 @@ public class BinanceExchangeServiceImpl extends AbstractBinanceExchangeService {
     }
 
     @Override
-    protected boolean getAdd24HrVolume() {
-        return false;
-    }
-
-    @Override
     protected int getAll24HourTickerCount() {
         return tickerCounter;
     }
