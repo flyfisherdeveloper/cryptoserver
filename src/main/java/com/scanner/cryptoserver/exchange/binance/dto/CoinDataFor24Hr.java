@@ -183,17 +183,17 @@ public class CoinDataFor24Hr {
         tradeLink = tradeUrl + newStr;
     }
 
-    private Double getNumberFormattedVallue(Double marketCap) {
+    private Double getNumberFormattedValue(Double marketCap) {
         NumberFormat nf = new DecimalFormat("##.##");
         return Double.parseDouble(nf.format(marketCap));
     }
 
     /**
-     * Find this coin in the coin market cap listing. If found, set the market cap and id.
+     * Find this coin in the coin market cap listing. If found, set the market cap, id, and 24-Hr all exchange volume.
      *
      * @param coinMarketCapListing the coin market cap listing - contains all the coin market cap data.
      */
-    public void addMarketCapAndId(CoinMarketCapListing coinMarketCapListing) {
+    public void addMarketCapData(CoinMarketCapListing coinMarketCapListing) {
         Optional<CoinMarketCapData> data;
         if (id != null) {
             data = Optional.of(coinMarketCapListing.getData().get(id));
@@ -203,9 +203,9 @@ public class CoinDataFor24Hr {
                     .findFirst().map(Map.Entry::getValue);
         }
         data.ifPresent(coinMarketCapData -> {
-            setMarketCap(getNumberFormattedVallue(coinMarketCapData.getMarketCap()));
+            setMarketCap(getNumberFormattedValue(coinMarketCapData.getMarketCap()));
             setId(coinMarketCapData.getId());
-            setVolume24HrUsd(getNumberFormattedVallue(coinMarketCapData.getVolume24HrUsd()));
+            setVolume24HrUsd(getNumberFormattedValue(coinMarketCapData.getVolume24HrUsd()));
         });
     }
 }

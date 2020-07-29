@@ -43,7 +43,7 @@ class BittrexServiceImpl(private val cacheUtil: CacheUtil, private val coinMarke
         var coins = getCoinDataFor24Hour()
         //we need to make another api call to get the "current price", which is "lastTradeRate" in the json
         val tickers = getTickersFromCache()
-        coinMarketCapService.setMarketCapAndIdFor24HrData(coins)
+        coinMarketCapService.setMarketCapDataFor24HrData(coins)
         //exclude coins that don't have a market cap - they are probably old coins that the exchange doesn't support anymore
         coins = coins.filter { it.marketCap > 0.0 }
         coins.forEach {
