@@ -183,7 +183,7 @@ public class CoinDataFor24Hr {
         tradeLink = tradeUrl + newStr;
     }
 
-    private Double getMarketCapFormattedValue(Double marketCap) {
+    private Double getNumberFormattedVallue(Double marketCap) {
         NumberFormat nf = new DecimalFormat("##.##");
         return Double.parseDouble(nf.format(marketCap));
     }
@@ -203,9 +203,9 @@ public class CoinDataFor24Hr {
                     .findFirst().map(Map.Entry::getValue);
         }
         data.ifPresent(coinMarketCapData -> {
-            setMarketCap(getMarketCapFormattedValue(coinMarketCapData.getMarketCap()));
+            setMarketCap(getNumberFormattedVallue(coinMarketCapData.getMarketCap()));
             setId(coinMarketCapData.getId());
-            setVolume24HrUsd(coinMarketCapData.getVolume24HrUsd());
+            setVolume24HrUsd(getNumberFormattedVallue(coinMarketCapData.getVolume24HrUsd()));
         });
     }
 }
