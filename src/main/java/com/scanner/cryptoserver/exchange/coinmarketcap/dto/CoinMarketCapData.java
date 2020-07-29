@@ -20,10 +20,6 @@ public class CoinMarketCapData {
 
     }
 
-    public CoinMarketCapData(Integer id) {
-        this.id = id;
-    }
-
     /**
      * Encapsulate a method to determine if a coin equals a coin symbol.
      * This is necessary since some coins have a symbol/currency pair different

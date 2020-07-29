@@ -6,7 +6,10 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import java.util.*;
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Optional;
+import java.util.Set;
 
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
@@ -27,7 +30,7 @@ public class CoinMarketCapServiceIntegTest {
     void testGetMarketCapMap() {
         CoinMarketCapListing listing = apiService.getCoinMarketCapMap();
         assertNotNull(listing);
-        Optional<CoinMarketCapData> ltc = findCoin(listing, "LTC");
+        Optional<CoinMarketCapData> ltc = listing.findData("LTC");
         assertTrue(ltc.isPresent());
     }
 
@@ -36,7 +39,7 @@ public class CoinMarketCapServiceIntegTest {
         Set<Integer> ids = new HashSet<>(Arrays.asList(1, 1027));
         CoinMarketCapListing listing = service.getCoinMarketCapInfo(ids);
         assertNotNull(listing);
-        Optional<CoinMarketCapData> btc = findCoin(listing, "BTC");
+        Optional<CoinMarketCapData> btc = listing.findData("BTC");
         assertTrue(btc.isPresent());
     }
 
@@ -46,14 +49,7 @@ public class CoinMarketCapServiceIntegTest {
         idSet.add(1);
         CoinMarketCapListing listing = service.getCoinMarketCapListing(idSet);
         assertNotNull(listing);
-        Optional<CoinMarketCapData> btc = findCoin(listing, "BTC");
+        Optional<CoinMarketCapData> btc = listing.findData("BTC");
         assertTrue(btc.isPresent());
-    }
-
-    private Optional<CoinMarketCapData> findCoin(CoinMarketCapListing listing, String coin) {
-        return listing.getData().entrySet().stream()
-                .filter(entry -> entry.getValue().isCoin(coin))
-                .findFirst()
-                .map(Map.Entry::getValue);
     }
 }

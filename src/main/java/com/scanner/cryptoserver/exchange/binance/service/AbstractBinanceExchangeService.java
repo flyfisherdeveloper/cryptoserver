@@ -96,7 +96,6 @@ public abstract class AbstractBinanceExchangeService implements ExchangeService 
         ExchangeInfo exchangeInfo = retrieveExchangeInfoFromCache();
         //remove currency markets that are not USA-based, such as the Euro ("EUR")
         exchangeInfo.getSymbols().removeIf(s -> nonUsaMarkets.contains(s.getQuoteAsset()));
-        //Attempt to retrieve the latest coin market cap data to get the market cap for each coin.
         return exchangeInfo;
     }
 
