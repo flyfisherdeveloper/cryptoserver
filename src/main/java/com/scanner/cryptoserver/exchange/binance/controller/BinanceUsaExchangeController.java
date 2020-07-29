@@ -3,9 +3,8 @@ package com.scanner.cryptoserver.exchange.binance.controller;
 import com.scanner.cryptoserver.exchange.binance.dto.CoinDataFor24Hr;
 import com.scanner.cryptoserver.exchange.binance.dto.CoinTicker;
 import com.scanner.cryptoserver.exchange.coinmarketcap.dto.ExchangeInfo;
-import com.scanner.cryptoserver.util.SandboxUtil;
-import com.scanner.cryptoserver.util.dto.Symbol;
 import com.scanner.cryptoserver.exchange.service.ExchangeService;
+import com.scanner.cryptoserver.util.dto.Symbol;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
@@ -25,16 +24,12 @@ public class BinanceUsaExchangeController {
     @GetMapping(value = "/info", produces = MediaType.APPLICATION_JSON_VALUE)
     public List<Symbol> getExchangeInfo() {
         ExchangeInfo info = binanceUsaService.getExchangeInfo();
-        SandboxUtil sandboxUtil = new SandboxUtil();
-        sandboxUtil.createMock("binanceusa-exchangeInfo", info);
         return info.getSymbols();
     }
 
     @GetMapping(value = "/24HourTicker/{symbol}", produces = MediaType.APPLICATION_JSON_VALUE)
     public CoinDataFor24Hr get24HourTicker(@PathVariable String symbol) {
-        SandboxUtil sandboxUtil = new SandboxUtil();
         CoinDataFor24Hr data = binanceUsaService.get24HourCoinData(symbol);
-        sandboxUtil.createMock("binanceusa-24HourTicker" + "-" + symbol, data);
         return data;
     }
 
@@ -47,16 +42,12 @@ public class BinanceUsaExchangeController {
     @GetMapping(value = "/24HourTicker", produces = MediaType.APPLICATION_JSON_VALUE)
     public List<CoinDataFor24Hr> getAll24HourTicker() {
         List<CoinDataFor24Hr> data = binanceUsaService.get24HrAllCoinTicker();
-        SandboxUtil sandboxUtil = new SandboxUtil();
-        sandboxUtil.createMock("binanceusa-24HourTicker", data);
         return data;
     }
 
     @GetMapping(value = "/DayTicker/{symbol}/{interval}/{daysOrMonths}", produces = MediaType.APPLICATION_JSON_VALUE)
     public List<CoinTicker> getDayTicker(@PathVariable String symbol, @PathVariable String interval, @PathVariable String daysOrMonths) {
         List<CoinTicker> data = binanceUsaService.getTickerData(symbol, interval, daysOrMonths);
-        SandboxUtil sandboxUtil = new SandboxUtil();
-        sandboxUtil.createMock("binanceusa-dayTicker" + "-" + symbol + "-" + interval + "-" + daysOrMonths, data);
         return data;
     }
 }
