@@ -1,0 +1,15 @@
+[ {
+  "symbol" : "LTCUSD",
+  "openTime" : 1595980800000,
+  "openDate" : null,
+  "closeTime" : 1596067199999,
+  "closeDate" : null,
+  "open" : 55.89,
+  "high" : 56.81,
+  "low" : 54.81,
+  "close" : 56.27,
+  "volume" : 5733.67971,
+  "quoteAssetVolume" : 320189.0021,
+  "numberOfTrades" : 1094,
+  "rsi" : 0.0
+} ]

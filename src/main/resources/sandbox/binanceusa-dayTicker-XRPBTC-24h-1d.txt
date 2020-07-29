@@ -1,0 +1,15 @@
+[ {
+  "symbol" : "XRPBTC",
+  "openTime" : 1595980800000,
+  "openDate" : null,
+  "closeTime" : 1596067199999,
+  "closeDate" : null,
+  "open" : 2.111E-5,
+  "high" : 2.226E-5,
+  "low" : 2.111E-5,
+  "close" : 2.198E-5,
+  "volume" : 1315808.0,
+  "quoteAssetVolume" : 28.57415974,
+  "numberOfTrades" : 1476,
+  "rsi" : 0.0
+} ]

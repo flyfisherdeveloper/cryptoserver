@@ -1,28 +1,29 @@
 [ {
   "symbol" : "ETHUSD",
-  "openTime" : 1591920000000,
+  "openTime" : 1595980800000,
   "openDate" : null,
-  "closeTime" : 1591963199999,
+  "closeTime" : 1596023999999,
   "closeDate" : null,
-  "open" : 230.0,
-  "high" : 237.6,
-  "low" : 228.36,
-  "close" : 237.54,
-  "volume" : 3892.38467,
-  "quoteAssetVolume" : 908949.1266,
-  "numberOfTrades" : 1397
+  "open" : 317.88,
+  "high" : 325.32,
+  "low" : 313.0,
+  "close" : 323.17,
+  "volume" : 3382.8339,
+  "quoteAssetVolume" : 1077267.197,
+  "numberOfTrades" : 2360,
+  "rsi" : 0.0
 }, {
   "symbol" : "ETHUSD",
-  "openTime" : 1591963200000,
+  "openTime" : 1596024000000,
   "openDate" : null,
-  "closeTime" : 1592006399999,
+  "closeTime" : 1596067199999,
   "closeDate" : null,
-  "open" : 237.34,
-  "high" : 239.08,
-  "low" : 234.0,
-  "close" : 237.57,
-  "volume" : 1361.899,
-  "quoteAssetVolume" : 321841.4581,
-  "numberOfTrades" : 623
-} ]6
+  "open" : 323.21,
+  "high" : 325.25,
+  "low" : 319.15,
+  "close" : 324.0,
+  "volume" : 3016.52874,
+  "quoteAssetVolume" : 973359.6975,
+  "numberOfTrades" : 1604,
+  "rsi" : 0.0
 } ]

@@ -29,6 +29,7 @@ public class CoinDataFor24Hr {
     private Long openTime;
     private Long closeTime;
     private String tradeLink;
+    private Double volume24HrUsd;
 
     public byte[] getIcon() {
         return icon;
@@ -138,6 +139,14 @@ public class CoinDataFor24Hr {
         return volumeChangePercent;
     }
 
+    public void setVolume24HrUsd(Double volume24HrUsd) {
+        this.volume24HrUsd = volume24HrUsd;
+    }
+
+    public Double getVolume24HrUsd() {
+        return volume24HrUsd;
+    }
+
     public void setVolumeChangePercent(Double volumeChangePercent) {
         this.volumeChangePercent = volumeChangePercent;
     }
@@ -196,6 +205,7 @@ public class CoinDataFor24Hr {
         data.ifPresent(coinMarketCapData -> {
             setMarketCap(getMarketCapFormattedValue(coinMarketCapData.getMarketCap()));
             setId(coinMarketCapData.getId());
+            setVolume24HrUsd(coinMarketCapData.getVolume24HrUsd());
         });
     }
 }

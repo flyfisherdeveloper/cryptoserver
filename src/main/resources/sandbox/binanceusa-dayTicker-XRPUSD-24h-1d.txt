@@ -1,14 +1,15 @@
 [ {
   "symbol" : "XRPUSD",
-  "openTime" : 1591920000000,
+  "openTime" : 1595980800000,
   "openDate" : null,
-  "closeTime" : 1592006399999,
+  "closeTime" : 1596067199999,
   "closeDate" : null,
-  "open" : 0.1882,
-  "high" : 0.195,
-  "low" : 0.1868,
-  "close" : 0.1931,
-  "volume" : 1665241.1,
-  "quoteAssetVolume" : 319870.0677,
-  "numberOfTrades" : 1106
+  "open" : 0.2307,
+  "high" : 0.25,
+  "low" : 0.2299,
+  "close" : 0.2484,
+  "volume" : 9840641.2,
+  "quoteAssetVolume" : 2373192.8811,
+  "numberOfTrades" : 5612,
+  "rsi" : 0.0
 } ]

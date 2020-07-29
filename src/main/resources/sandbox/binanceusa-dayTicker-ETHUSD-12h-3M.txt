@@ -1,1253 +1,5 @@
 [ {
   "symbol" : "ETHUSD",
-  "openTime" : 1584057600000,
-  "openDate" : null,
-  "closeTime" : 1584100799999,
-  "closeDate" : null,
-  "open" : 108.56,
-  "high" : 138.82,
-  "low" : 83.49,
-  "close" : 128.2,
-  "volume" : 9938.21241,
-  "quoteAssetVolume" : 1125547.66,
-  "numberOfTrades" : 6614
-}, {
-  "symbol" : "ETHUSD",
-  "openTime" : 1584100800000,
-  "openDate" : null,
-  "closeTime" : 1584143999999,
-  "closeDate" : null,
-  "open" : 128.12,
-  "high" : 140.6,
-  "low" : 115.42,
-  "close" : 135.23,
-  "volume" : 14607.72418,
-  "quoteAssetVolume" : 1830309.4067,
-  "numberOfTrades" : 3359
-}, {
-  "symbol" : "ETHUSD",
-  "openTime" : 1584144000000,
-  "openDate" : null,
-  "closeTime" : 1584187199999,
-  "closeDate" : null,
-  "open" : 135.43,
-  "high" : 136.58,
-  "low" : 125.89,
-  "close" : 129.72,
-  "volume" : 2913.49044,
-  "quoteAssetVolume" : 384958.6484,
-  "numberOfTrades" : 733
-}, {
-  "symbol" : "ETHUSD",
-  "openTime" : 1584187200000,
-  "openDate" : null,
-  "closeTime" : 1584230399999,
-  "closeDate" : null,
-  "open" : 129.72,
-  "high" : 130.33,
-  "low" : 120.72,
-  "close" : 122.3,
-  "volume" : 4498.69489,
-  "quoteAssetVolume" : 566030.3269,
-  "numberOfTrades" : 1816
-}, {
-  "symbol" : "ETHUSD",
-  "openTime" : 1584230400000,
-  "openDate" : null,
-  "closeTime" : 1584273599999,
-  "closeDate" : null,
-  "open" : 122.15,
-  "high" : 127.42,
-  "low" : 120.51,
-  "close" : 126.18,
-  "volume" : 2673.26699,
-  "quoteAssetVolume" : 327417.2392,
-  "numberOfTrades" : 950
-}, {
-  "symbol" : "ETHUSD",
-  "openTime" : 1584273600000,
-  "openDate" : null,
-  "closeTime" : 1584316799999,
-  "closeDate" : null,
-  "open" : 126.14,
-  "high" : 134.01,
-  "low" : 120.0,
-  "close" : 123.39,
-  "volume" : 6308.26941,
-  "quoteAssetVolume" : 792056.2857,
-  "numberOfTrades" : 1425
-}, {
-  "symbol" : "ETHUSD",
-  "openTime" : 1584316800000,
-  "openDate" : null,
-  "closeTime" : 1584359999999,
-  "closeDate" : null,
-  "open" : 122.0,
-  "high" : 123.69,
-  "low" : 100.82,
-  "close" : 104.72,
-  "volume" : 8566.54122,
-  "quoteAssetVolume" : 962352.5545,
-  "numberOfTrades" : 1420
-}, {
-  "symbol" : "ETHUSD",
-  "openTime" : 1584360000000,
-  "openDate" : null,
-  "closeTime" : 1584403199999,
-  "closeDate" : null,
-  "open" : 104.0,
-  "high" : 116.08,
-  "low" : 102.3,
-  "close" : 111.0,
-  "volume" : 8274.06554,
-  "quoteAssetVolume" : 910728.5357,
-  "numberOfTrades" : 1600
-}, {
-  "symbol" : "ETHUSD",
-  "openTime" : 1584403200000,
-  "openDate" : null,
-  "closeTime" : 1584446399999,
-  "closeDate" : null,
-  "open" : 111.2,
-  "high" : 121.99,
-  "low" : 109.6,
-  "close" : 116.96,
-  "volume" : 3558.61755,
-  "quoteAssetVolume" : 413617.2928,
-  "numberOfTrades" : 620
-}, {
-  "symbol" : "ETHUSD",
-  "openTime" : 1584446400000,
-  "openDate" : null,
-  "closeTime" : 1584489599999,
-  "closeDate" : null,
-  "open" : 116.28,
-  "high" : 120.0,
-  "low" : 112.69,
-  "close" : 116.37,
-  "volume" : 3168.01959,
-  "quoteAssetVolume" : 371914.7155,
-  "numberOfTrades" : 777
-}, {
-  "symbol" : "ETHUSD",
-  "openTime" : 1584489600000,
-  "openDate" : null,
-  "closeTime" : 1584532799999,
-  "closeDate" : null,
-  "open" : 116.17,
-  "high" : 118.99,
-  "low" : 110.75,
-  "close" : 113.14,
-  "volume" : 3879.04778,
-  "quoteAssetVolume" : 448476.1748,
-  "numberOfTrades" : 871
-}, {
-  "symbol" : "ETHUSD",
-  "openTime" : 1584532800000,
-  "openDate" : null,
-  "closeTime" : 1584575999999,
-  "closeDate" : null,
-  "open" : 112.6,
-  "high" : 118.82,
-  "low" : 110.37,
-  "close" : 118.59,
-  "volume" : 5136.17069,
-  "quoteAssetVolume" : 595190.7483,
-  "numberOfTrades" : 1193
-}, {
-  "symbol" : "ETHUSD",
-  "openTime" : 1584576000000,
-  "openDate" : null,
-  "closeTime" : 1584619199999,
-  "closeDate" : null,
-  "open" : 118.71,
-  "high" : 125.57,
-  "low" : 115.98,
-  "close" : 124.36,
-  "volume" : 2172.59916,
-  "quoteAssetVolume" : 260524.9699,
-  "numberOfTrades" : 651
-}, {
-  "symbol" : "ETHUSD",
-  "openTime" : 1584619200000,
-  "openDate" : null,
-  "closeTime" : 1584662399999,
-  "closeDate" : null,
-  "open" : 124.99,
-  "high" : 143.51,
-  "low" : 124.5,
-  "close" : 137.2,
-  "volume" : 9930.75566,
-  "quoteAssetVolume" : 1338688.9411,
-  "numberOfTrades" : 2322
-}, {
-  "symbol" : "ETHUSD",
-  "openTime" : 1584662400000,
-  "openDate" : null,
-  "closeTime" : 1584705599999,
-  "closeDate" : null,
-  "open" : 137.13,
-  "high" : 153.16,
-  "low" : 133.88,
-  "close" : 145.77,
-  "volume" : 6187.86156,
-  "quoteAssetVolume" : 886876.4577,
-  "numberOfTrades" : 1344
-}, {
-  "symbol" : "ETHUSD",
-  "openTime" : 1584705600000,
-  "openDate" : null,
-  "closeTime" : 1584748799999,
-  "closeDate" : null,
-  "open" : 145.91,
-  "high" : 145.91,
-  "low" : 117.64,
-  "close" : 133.68,
-  "volume" : 10304.43043,
-  "quoteAssetVolume" : 1388332.3467,
-  "numberOfTrades" : 4175
-}, {
-  "symbol" : "ETHUSD",
-  "openTime" : 1584748800000,
-  "openDate" : null,
-  "closeTime" : 1584791999999,
-  "closeDate" : null,
-  "open" : 133.5,
-  "high" : 137.46,
-  "low" : 125.93,
-  "close" : 130.39,
-  "volume" : 2843.41596,
-  "quoteAssetVolume" : 374811.6024,
-  "numberOfTrades" : 1476
-}, {
-  "symbol" : "ETHUSD",
-  "openTime" : 1584792000000,
-  "openDate" : null,
-  "closeTime" : 1584835199999,
-  "closeDate" : null,
-  "open" : 130.37,
-  "high" : 137.5,
-  "low" : 128.86,
-  "close" : 132.81,
-  "volume" : 3780.36295,
-  "quoteAssetVolume" : 503173.5541,
-  "numberOfTrades" : 1141
-}, {
-  "symbol" : "ETHUSD",
-  "openTime" : 1584835200000,
-  "openDate" : null,
-  "closeTime" : 1584878399999,
-  "closeDate" : null,
-  "open" : 132.5,
-  "high" : 137.03,
-  "low" : 130.62,
-  "close" : 130.62,
-  "volume" : 3075.94608,
-  "quoteAssetVolume" : 412926.9001,
-  "numberOfTrades" : 707
-}, {
-  "symbol" : "ETHUSD",
-  "openTime" : 1584878400000,
-  "openDate" : null,
-  "closeTime" : 1584921599999,
-  "closeDate" : null,
-  "open" : 130.62,
-  "high" : 130.62,
-  "low" : 121.07,
-  "close" : 122.35,
-  "volume" : 7346.67,
-  "quoteAssetVolume" : 924146.2862,
-  "numberOfTrades" : 2642
-}, {
-  "symbol" : "ETHUSD",
-  "openTime" : 1584921600000,
-  "openDate" : null,
-  "closeTime" : 1584964799999,
-  "closeDate" : null,
-  "open" : 121.91,
-  "high" : 126.42,
-  "low" : 119.47,
-  "close" : 122.95,
-  "volume" : 3101.93616,
-  "quoteAssetVolume" : 382488.7627,
-  "numberOfTrades" : 908
-}, {
-  "symbol" : "ETHUSD",
-  "openTime" : 1584964800000,
-  "openDate" : null,
-  "closeTime" : 1585007999999,
-  "closeDate" : null,
-  "open" : 123.3,
-  "high" : 138.16,
-  "low" : 123.27,
-  "close" : 136.37,
-  "volume" : 6656.10914,
-  "quoteAssetVolume" : 879255.3417,
-  "numberOfTrades" : 1915
-}, {
-  "symbol" : "ETHUSD",
-  "openTime" : 1585008000000,
-  "openDate" : null,
-  "closeTime" : 1585051199999,
-  "closeDate" : null,
-  "open" : 136.8,
-  "high" : 144.18,
-  "low" : 133.0,
-  "close" : 141.23,
-  "volume" : 5822.63315,
-  "quoteAssetVolume" : 799341.0858,
-  "numberOfTrades" : 1543
-}, {
-  "symbol" : "ETHUSD",
-  "openTime" : 1585051200000,
-  "openDate" : null,
-  "closeTime" : 1585094399999,
-  "closeDate" : null,
-  "open" : 140.91,
-  "high" : 140.91,
-  "low" : 134.94,
-  "close" : 138.89,
-  "volume" : 5698.4637,
-  "quoteAssetVolume" : 789489.0118,
-  "numberOfTrades" : 1999
-}, {
-  "symbol" : "ETHUSD",
-  "openTime" : 1585094400000,
-  "openDate" : null,
-  "closeTime" : 1585137599999,
-  "closeDate" : null,
-  "open" : 138.5,
-  "high" : 142.65,
-  "low" : 133.02,
-  "close" : 134.68,
-  "volume" : 4366.76635,
-  "quoteAssetVolume" : 602167.9014,
-  "numberOfTrades" : 1460
-}, {
-  "symbol" : "ETHUSD",
-  "openTime" : 1585137600000,
-  "openDate" : null,
-  "closeTime" : 1585180799999,
-  "closeDate" : null,
-  "open" : 134.65,
-  "high" : 138.18,
-  "low" : 133.76,
-  "close" : 136.41,
-  "volume" : 2939.16198,
-  "quoteAssetVolume" : 399515.6611,
-  "numberOfTrades" : 925
-}, {
-  "symbol" : "ETHUSD",
-  "openTime" : 1585180800000,
-  "openDate" : null,
-  "closeTime" : 1585223999999,
-  "closeDate" : null,
-  "open" : 136.3,
-  "high" : 138.68,
-  "low" : 134.32,
-  "close" : 135.01,
-  "volume" : 2848.5156,
-  "quoteAssetVolume" : 388728.5914,
-  "numberOfTrades" : 698
-}, {
-  "symbol" : "ETHUSD",
-  "openTime" : 1585224000000,
-  "openDate" : null,
-  "closeTime" : 1585267199999,
-  "closeDate" : null,
-  "open" : 134.67,
-  "high" : 139.72,
-  "low" : 133.5,
-  "close" : 138.96,
-  "volume" : 3466.9933,
-  "quoteAssetVolume" : 472789.4052,
-  "numberOfTrades" : 831
-}, {
-  "symbol" : "ETHUSD",
-  "openTime" : 1585267200000,
-  "openDate" : null,
-  "closeTime" : 1585310399999,
-  "closeDate" : null,
-  "open" : 139.0,
-  "high" : 141.68,
-  "low" : 135.25,
-  "close" : 136.13,
-  "volume" : 3518.89231,
-  "quoteAssetVolume" : 489145.7634,
-  "numberOfTrades" : 1216
-}, {
-  "symbol" : "ETHUSD",
-  "openTime" : 1585310400000,
-  "openDate" : null,
-  "closeTime" : 1585353599999,
-  "closeDate" : null,
-  "open" : 135.69,
-  "high" : 137.79,
-  "low" : 130.25,
-  "close" : 131.46,
-  "volume" : 3648.60061,
-  "quoteAssetVolume" : 493404.0346,
-  "numberOfTrades" : 1405
-}, {
-  "symbol" : "ETHUSD",
-  "openTime" : 1585353600000,
-  "openDate" : null,
-  "closeTime" : 1585396799999,
-  "closeDate" : null,
-  "open" : 131.46,
-  "high" : 131.46,
-  "low" : 125.0,
-  "close" : 128.11,
-  "volume" : 4526.15272,
-  "quoteAssetVolume" : 582097.2221,
-  "numberOfTrades" : 1497
-}, {
-  "symbol" : "ETHUSD",
-  "openTime" : 1585396800000,
-  "openDate" : null,
-  "closeTime" : 1585439999999,
-  "closeDate" : null,
-  "open" : 128.23,
-  "high" : 133.1,
-  "low" : 125.56,
-  "close" : 131.46,
-  "volume" : 4156.59714,
-  "quoteAssetVolume" : 535151.9382,
-  "numberOfTrades" : 1382
-}, {
-  "symbol" : "ETHUSD",
-  "openTime" : 1585440000000,
-  "openDate" : null,
-  "closeTime" : 1585483199999,
-  "closeDate" : null,
-  "open" : 131.42,
-  "high" : 131.91,
-  "low" : 128.16,
-  "close" : 129.19,
-  "volume" : 1099.04647,
-  "quoteAssetVolume" : 142872.5169,
-  "numberOfTrades" : 477
-}, {
-  "symbol" : "ETHUSD",
-  "openTime" : 1585483200000,
-  "openDate" : null,
-  "closeTime" : 1585526399999,
-  "closeDate" : null,
-  "open" : 128.81,
-  "high" : 129.51,
-  "low" : 124.0,
-  "close" : 124.38,
-  "volume" : 4063.39564,
-  "quoteAssetVolume" : 513047.5127,
-  "numberOfTrades" : 1018
-}, {
-  "symbol" : "ETHUSD",
-  "openTime" : 1585526400000,
-  "openDate" : null,
-  "closeTime" : 1585569599999,
-  "closeDate" : null,
-  "open" : 124.84,
-  "high" : 134.5,
-  "low" : 124.08,
-  "close" : 133.87,
-  "volume" : 3888.59552,
-  "quoteAssetVolume" : 498145.049,
-  "numberOfTrades" : 848
-}, {
-  "symbol" : "ETHUSD",
-  "openTime" : 1585569600000,
-  "openDate" : null,
-  "closeTime" : 1585612799999,
-  "closeDate" : null,
-  "open" : 133.95,
-  "high" : 135.51,
-  "low" : 131.35,
-  "close" : 132.37,
-  "volume" : 2341.73061,
-  "quoteAssetVolume" : 312982.986,
-  "numberOfTrades" : 713
-}, {
-  "symbol" : "ETHUSD",
-  "openTime" : 1585612800000,
-  "openDate" : null,
-  "closeTime" : 1585655999999,
-  "closeDate" : null,
-  "open" : 132.35,
-  "high" : 134.11,
-  "low" : 130.71,
-  "close" : 132.04,
-  "volume" : 2365.82866,
-  "quoteAssetVolume" : 313565.4622,
-  "numberOfTrades" : 558
-}, {
-  "symbol" : "ETHUSD",
-  "openTime" : 1585656000000,
-  "openDate" : null,
-  "closeTime" : 1585699199999,
-  "closeDate" : null,
-  "open" : 132.03,
-  "high" : 135.22,
-  "low" : 131.28,
-  "close" : 133.1,
-  "volume" : 2005.70854,
-  "quoteAssetVolume" : 267785.5795,
-  "numberOfTrades" : 561
-}, {
-  "symbol" : "ETHUSD",
-  "openTime" : 1585699200000,
-  "openDate" : null,
-  "closeTime" : 1585742399999,
-  "closeDate" : null,
-  "open" : 133.1,
-  "high" : 133.53,
-  "low" : 131.17,
-  "close" : 132.24,
-  "volume" : 2050.64428,
-  "quoteAssetVolume" : 271218.1695,
-  "numberOfTrades" : 424
-}, {
-  "symbol" : "ETHUSD",
-  "openTime" : 1585742400000,
-  "openDate" : null,
-  "closeTime" : 1585785599999,
-  "closeDate" : null,
-  "open" : 132.75,
-  "high" : 137.0,
-  "low" : 128.97,
-  "close" : 136.18,
-  "volume" : 4629.83679,
-  "quoteAssetVolume" : 616954.9307,
-  "numberOfTrades" : 995
-}, {
-  "symbol" : "ETHUSD",
-  "openTime" : 1585785600000,
-  "openDate" : null,
-  "closeTime" : 1585828799999,
-  "closeDate" : null,
-  "open" : 136.12,
-  "high" : 138.5,
-  "low" : 135.5,
-  "close" : 138.01,
-  "volume" : 2115.61255,
-  "quoteAssetVolume" : 289277.2129,
-  "numberOfTrades" : 668
-}, {
-  "symbol" : "ETHUSD",
-  "openTime" : 1585828800000,
-  "openDate" : null,
-  "closeTime" : 1585871999999,
-  "closeDate" : null,
-  "open" : 138.5,
-  "high" : 150.0,
-  "low" : 136.42,
-  "close" : 141.36,
-  "volume" : 7732.62792,
-  "quoteAssetVolume" : 1106309.6135,
-  "numberOfTrades" : 1729
-}, {
-  "symbol" : "ETHUSD",
-  "openTime" : 1585872000000,
-  "openDate" : null,
-  "closeTime" : 1585915199999,
-  "closeDate" : null,
-  "open" : 140.94,
-  "high" : 146.74,
-  "low" : 140.54,
-  "close" : 146.34,
-  "volume" : 2334.15341,
-  "quoteAssetVolume" : 335632.9311,
-  "numberOfTrades" : 516
-}, {
-  "symbol" : "ETHUSD",
-  "openTime" : 1585915200000,
-  "openDate" : null,
-  "closeTime" : 1585958399999,
-  "closeDate" : null,
-  "open" : 146.12,
-  "high" : 146.46,
-  "low" : 138.03,
-  "close" : 141.36,
-  "volume" : 2730.20806,
-  "quoteAssetVolume" : 388119.4574,
-  "numberOfTrades" : 824
-}, {
-  "symbol" : "ETHUSD",
-  "openTime" : 1585958400000,
-  "openDate" : null,
-  "closeTime" : 1586001599999,
-  "closeDate" : null,
-  "open" : 141.25,
-  "high" : 144.27,
-  "low" : 139.14,
-  "close" : 140.93,
-  "volume" : 1407.98369,
-  "quoteAssetVolume" : 199484.5131,
-  "numberOfTrades" : 455
-}, {
-  "symbol" : "ETHUSD",
-  "openTime" : 1586001600000,
-  "openDate" : null,
-  "closeTime" : 1586044799999,
-  "closeDate" : null,
-  "open" : 141.56,
-  "high" : 146.5,
-  "low" : 140.37,
-  "close" : 144.24,
-  "volume" : 2620.1596,
-  "quoteAssetVolume" : 376300.5008,
-  "numberOfTrades" : 694
-}, {
-  "symbol" : "ETHUSD",
-  "openTime" : 1586044800000,
-  "openDate" : null,
-  "closeTime" : 1586087999999,
-  "closeDate" : null,
-  "open" : 144.74,
-  "high" : 145.82,
-  "low" : 142.41,
-  "close" : 143.3,
-  "volume" : 924.76207,
-  "quoteAssetVolume" : 133176.351,
-  "numberOfTrades" : 368
-}, {
-  "symbol" : "ETHUSD",
-  "openTime" : 1586088000000,
-  "openDate" : null,
-  "closeTime" : 1586131199999,
-  "closeDate" : null,
-  "open" : 143.0,
-  "high" : 144.25,
-  "low" : 141.0,
-  "close" : 142.91,
-  "volume" : 1331.92411,
-  "quoteAssetVolume" : 190408.0292,
-  "numberOfTrades" : 476
-}, {
-  "symbol" : "ETHUSD",
-  "openTime" : 1586131200000,
-  "openDate" : null,
-  "closeTime" : 1586174399999,
-  "closeDate" : null,
-  "open" : 143.35,
-  "high" : 155.7,
-  "low" : 143.09,
-  "close" : 154.55,
-  "volume" : 4258.66828,
-  "quoteAssetVolume" : 630465.6674,
-  "numberOfTrades" : 1098
-}, {
-  "symbol" : "ETHUSD",
-  "openTime" : 1586174400000,
-  "openDate" : null,
-  "closeTime" : 1586217599999,
-  "closeDate" : null,
-  "open" : 154.9,
-  "high" : 171.95,
-  "low" : 154.0,
-  "close" : 171.7,
-  "volume" : 12160.85429,
-  "quoteAssetVolume" : 1994235.8598,
-  "numberOfTrades" : 2991
-}, {
-  "symbol" : "ETHUSD",
-  "openTime" : 1586217600000,
-  "openDate" : null,
-  "closeTime" : 1586260799999,
-  "closeDate" : null,
-  "open" : 171.7,
-  "high" : 176.25,
-  "low" : 167.85,
-  "close" : 172.87,
-  "volume" : 7235.11838,
-  "quoteAssetVolume" : 1247698.1561,
-  "numberOfTrades" : 2777
-}, {
-  "symbol" : "ETHUSD",
-  "openTime" : 1586260800000,
-  "openDate" : null,
-  "closeTime" : 1586303999999,
-  "closeDate" : null,
-  "open" : 173.02,
-  "high" : 175.0,
-  "low" : 162.05,
-  "close" : 164.71,
-  "volume" : 7009.63414,
-  "quoteAssetVolume" : 1172135.7772,
-  "numberOfTrades" : 1775
-}, {
-  "symbol" : "ETHUSD",
-  "openTime" : 1586304000000,
-  "openDate" : null,
-  "closeTime" : 1586347199999,
-  "closeDate" : null,
-  "open" : 164.8,
-  "high" : 174.54,
-  "low" : 163.84,
-  "close" : 168.81,
-  "volume" : 3311.89295,
-  "quoteAssetVolume" : 561815.4716,
-  "numberOfTrades" : 964
-}, {
-  "symbol" : "ETHUSD",
-  "openTime" : 1586347200000,
-  "openDate" : null,
-  "closeTime" : 1586390399999,
-  "closeDate" : null,
-  "open" : 168.94,
-  "high" : 173.73,
-  "low" : 166.84,
-  "close" : 173.14,
-  "volume" : 2372.86338,
-  "quoteAssetVolume" : 404884.7984,
-  "numberOfTrades" : 1032
-}, {
-  "symbol" : "ETHUSD",
-  "openTime" : 1586390400000,
-  "openDate" : null,
-  "closeTime" : 1586433599999,
-  "closeDate" : null,
-  "open" : 173.19,
-  "high" : 173.55,
-  "low" : 167.36,
-  "close" : 168.03,
-  "volume" : 2408.54632,
-  "quoteAssetVolume" : 412291.8441,
-  "numberOfTrades" : 1005
-}, {
-  "symbol" : "ETHUSD",
-  "openTime" : 1586433600000,
-  "openDate" : null,
-  "closeTime" : 1586476799999,
-  "closeDate" : null,
-  "open" : 168.03,
-  "high" : 172.6,
-  "low" : 166.0,
-  "close" : 169.99,
-  "volume" : 3015.76093,
-  "quoteAssetVolume" : 512342.8521,
-  "numberOfTrades" : 1491
-}, {
-  "symbol" : "ETHUSD",
-  "openTime" : 1586476800000,
-  "openDate" : null,
-  "closeTime" : 1586519999999,
-  "closeDate" : null,
-  "open" : 169.9,
-  "high" : 169.98,
-  "low" : 156.2,
-  "close" : 158.31,
-  "volume" : 3178.5365,
-  "quoteAssetVolume" : 514762.6064,
-  "numberOfTrades" : 2168
-}, {
-  "symbol" : "ETHUSD",
-  "openTime" : 1586520000000,
-  "openDate" : null,
-  "closeTime" : 1586563199999,
-  "closeDate" : null,
-  "open" : 157.89,
-  "high" : 161.0,
-  "low" : 152.69,
-  "close" : 158.03,
-  "volume" : 3453.27882,
-  "quoteAssetVolume" : 544365.1263,
-  "numberOfTrades" : 1171
-}, {
-  "symbol" : "ETHUSD",
-  "openTime" : 1586563200000,
-  "openDate" : null,
-  "closeTime" : 1586606399999,
-  "closeDate" : null,
-  "open" : 158.25,
-  "high" : 161.78,
-  "low" : 157.25,
-  "close" : 159.42,
-  "volume" : 1396.99922,
-  "quoteAssetVolume" : 223042.4095,
-  "numberOfTrades" : 831
-}, {
-  "symbol" : "ETHUSD",
-  "openTime" : 1586606400000,
-  "openDate" : null,
-  "closeTime" : 1586649599999,
-  "closeDate" : null,
-  "open" : 159.45,
-  "high" : 159.45,
-  "low" : 154.16,
-  "close" : 158.4,
-  "volume" : 1433.50388,
-  "quoteAssetVolume" : 224599.991,
-  "numberOfTrades" : 968
-}, {
-  "symbol" : "ETHUSD",
-  "openTime" : 1586649600000,
-  "openDate" : null,
-  "closeTime" : 1586692799999,
-  "closeDate" : null,
-  "open" : 158.79,
-  "high" : 159.66,
-  "low" : 155.48,
-  "close" : 158.55,
-  "volume" : 746.13086,
-  "quoteAssetVolume" : 117489.4269,
-  "numberOfTrades" : 594
-}, {
-  "symbol" : "ETHUSD",
-  "openTime" : 1586692800000,
-  "openDate" : null,
-  "closeTime" : 1586735999999,
-  "closeDate" : null,
-  "open" : 158.35,
-  "high" : 165.35,
-  "low" : 158.35,
-  "close" : 158.77,
-  "volume" : 3333.60639,
-  "quoteAssetVolume" : 542146.5304,
-  "numberOfTrades" : 1918
-}, {
-  "symbol" : "ETHUSD",
-  "openTime" : 1586736000000,
-  "openDate" : null,
-  "closeTime" : 1586779199999,
-  "closeDate" : null,
-  "open" : 158.59,
-  "high" : 158.59,
-  "low" : 150.0,
-  "close" : 155.75,
-  "volume" : 2799.19378,
-  "quoteAssetVolume" : 429914.0292,
-  "numberOfTrades" : 1392
-}, {
-  "symbol" : "ETHUSD",
-  "openTime" : 1586779200000,
-  "openDate" : null,
-  "closeTime" : 1586822399999,
-  "closeDate" : null,
-  "open" : 155.61,
-  "high" : 159.44,
-  "low" : 151.49,
-  "close" : 156.85,
-  "volume" : 1957.14412,
-  "quoteAssetVolume" : 303443.8591,
-  "numberOfTrades" : 881
-}, {
-  "symbol" : "ETHUSD",
-  "openTime" : 1586822400000,
-  "openDate" : null,
-  "closeTime" : 1586865599999,
-  "closeDate" : null,
-  "open" : 156.8,
-  "high" : 159.2,
-  "low" : 155.78,
-  "close" : 156.85,
-  "volume" : 1868.38209,
-  "quoteAssetVolume" : 293855.6809,
-  "numberOfTrades" : 862
-}, {
-  "symbol" : "ETHUSD",
-  "openTime" : 1586865600000,
-  "openDate" : null,
-  "closeTime" : 1586908799999,
-  "closeDate" : null,
-  "open" : 156.49,
-  "high" : 162.16,
-  "low" : 156.35,
-  "close" : 158.59,
-  "volume" : 2818.47528,
-  "quoteAssetVolume" : 450556.4353,
-  "numberOfTrades" : 1284
-}, {
-  "symbol" : "ETHUSD",
-  "openTime" : 1586908800000,
-  "openDate" : null,
-  "closeTime" : 1586951999999,
-  "closeDate" : null,
-  "open" : 157.93,
-  "high" : 162.35,
-  "low" : 156.15,
-  "close" : 157.84,
-  "volume" : 1423.21717,
-  "quoteAssetVolume" : 226848.5512,
-  "numberOfTrades" : 714
-}, {
-  "symbol" : "ETHUSD",
-  "openTime" : 1586952000000,
-  "openDate" : null,
-  "closeTime" : 1586995199999,
-  "closeDate" : null,
-  "open" : 157.57,
-  "high" : 158.5,
-  "low" : 152.13,
-  "close" : 153.01,
-  "volume" : 1883.92886,
-  "quoteAssetVolume" : 292979.2927,
-  "numberOfTrades" : 1145
-}, {
-  "symbol" : "ETHUSD",
-  "openTime" : 1586995200000,
-  "openDate" : null,
-  "closeTime" : 1587038399999,
-  "closeDate" : null,
-  "open" : 153.01,
-  "high" : 174.86,
-  "low" : 148.61,
-  "close" : 169.96,
-  "volume" : 5847.3998,
-  "quoteAssetVolume" : 957634.9487,
-  "numberOfTrades" : 2219
-}, {
-  "symbol" : "ETHUSD",
-  "openTime" : 1587038400000,
-  "openDate" : null,
-  "closeTime" : 1587081599999,
-  "closeDate" : null,
-  "open" : 170.37,
-  "high" : 175.36,
-  "low" : 168.59,
-  "close" : 172.8,
-  "volume" : 6973.07085,
-  "quoteAssetVolume" : 1198333.9523,
-  "numberOfTrades" : 2126
-}, {
-  "symbol" : "ETHUSD",
-  "openTime" : 1587081600000,
-  "openDate" : null,
-  "closeTime" : 1587124799999,
-  "closeDate" : null,
-  "open" : 172.69,
-  "high" : 173.5,
-  "low" : 168.51,
-  "close" : 170.06,
-  "volume" : 1973.31884,
-  "quoteAssetVolume" : 338085.5604,
-  "numberOfTrades" : 768
-}, {
-  "symbol" : "ETHUSD",
-  "openTime" : 1587124800000,
-  "openDate" : null,
-  "closeTime" : 1587167999999,
-  "closeDate" : null,
-  "open" : 169.67,
-  "high" : 175.0,
-  "low" : 169.32,
-  "close" : 170.77,
-  "volume" : 3228.29889,
-  "quoteAssetVolume" : 552615.3476,
-  "numberOfTrades" : 1173
-}, {
-  "symbol" : "ETHUSD",
-  "openTime" : 1587168000000,
-  "openDate" : null,
-  "closeTime" : 1587211199999,
-  "closeDate" : null,
-  "open" : 170.76,
-  "high" : 174.42,
-  "low" : 170.73,
-  "close" : 174.42,
-  "volume" : 1422.32019,
-  "quoteAssetVolume" : 246607.4297,
-  "numberOfTrades" : 623
-}, {
-  "symbol" : "ETHUSD",
-  "openTime" : 1587211200000,
-  "openDate" : null,
-  "closeTime" : 1587254399999,
-  "closeDate" : null,
-  "open" : 174.54,
-  "high" : 189.65,
-  "low" : 173.68,
-  "close" : 188.14,
-  "volume" : 6876.04861,
-  "quoteAssetVolume" : 1264668.3291,
-  "numberOfTrades" : 2587
-}, {
-  "symbol" : "ETHUSD",
-  "openTime" : 1587254400000,
-  "openDate" : null,
-  "closeTime" : 1587297599999,
-  "closeDate" : null,
-  "open" : 188.37,
-  "high" : 188.5,
-  "low" : 177.62,
-  "close" : 182.82,
-  "volume" : 2745.1909,
-  "quoteAssetVolume" : 505982.3564,
-  "numberOfTrades" : 1382
-}, {
-  "symbol" : "ETHUSD",
-  "openTime" : 1587297600000,
-  "openDate" : null,
-  "closeTime" : 1587340799999,
-  "closeDate" : null,
-  "open" : 182.96,
-  "high" : 184.01,
-  "low" : 176.5,
-  "close" : 180.54,
-  "volume" : 3343.64625,
-  "quoteAssetVolume" : 604443.2068,
-  "numberOfTrades" : 1672
-}, {
-  "symbol" : "ETHUSD",
-  "openTime" : 1587340800000,
-  "openDate" : null,
-  "closeTime" : 1587383999999,
-  "closeDate" : null,
-  "open" : 180.42,
-  "high" : 186.5,
-  "low" : 175.3,
-  "close" : 176.04,
-  "volume" : 2380.22634,
-  "quoteAssetVolume" : 434046.2957,
-  "numberOfTrades" : 1061
-}, {
-  "symbol" : "ETHUSD",
-  "openTime" : 1587384000000,
-  "openDate" : null,
-  "closeTime" : 1587427199999,
-  "closeDate" : null,
-  "open" : 176.0,
-  "high" : 180.54,
-  "low" : 167.0,
-  "close" : 170.66,
-  "volume" : 7632.27536,
-  "quoteAssetVolume" : 1326955.2551,
-  "numberOfTrades" : 2882
-}, {
-  "symbol" : "ETHUSD",
-  "openTime" : 1587427200000,
-  "openDate" : null,
-  "closeTime" : 1587470399999,
-  "closeDate" : null,
-  "open" : 170.28,
-  "high" : 174.97,
-  "low" : 168.42,
-  "close" : 169.22,
-  "volume" : 1786.59413,
-  "quoteAssetVolume" : 307176.0904,
-  "numberOfTrades" : 937
-}, {
-  "symbol" : "ETHUSD",
-  "openTime" : 1587470400000,
-  "openDate" : null,
-  "closeTime" : 1587513599999,
-  "closeDate" : null,
-  "open" : 169.54,
-  "high" : 174.53,
-  "low" : 169.52,
-  "close" : 170.78,
-  "volume" : 4036.36079,
-  "quoteAssetVolume" : 694065.422,
-  "numberOfTrades" : 1585
-}, {
-  "symbol" : "ETHUSD",
-  "openTime" : 1587513600000,
-  "openDate" : null,
-  "closeTime" : 1587556799999,
-  "closeDate" : null,
-  "open" : 170.91,
-  "high" : 176.27,
-  "low" : 170.11,
-  "close" : 175.99,
-  "volume" : 2652.56279,
-  "quoteAssetVolume" : 460136.3035,
-  "numberOfTrades" : 1241
-}, {
-  "symbol" : "ETHUSD",
-  "openTime" : 1587556800000,
-  "openDate" : null,
-  "closeTime" : 1587599999999,
-  "closeDate" : null,
-  "open" : 176.0,
-  "high" : 184.26,
-  "low" : 175.0,
-  "close" : 183.1,
-  "volume" : 7157.51625,
-  "quoteAssetVolume" : 1299480.2215,
-  "numberOfTrades" : 2472
-}, {
-  "symbol" : "ETHUSD",
-  "openTime" : 1587600000000,
-  "openDate" : null,
-  "closeTime" : 1587643199999,
-  "closeDate" : null,
-  "open" : 183.08,
-  "high" : 187.07,
-  "low" : 178.55,
-  "close" : 183.58,
-  "volume" : 5531.505,
-  "quoteAssetVolume" : 1010904.8689,
-  "numberOfTrades" : 1576
-}, {
-  "symbol" : "ETHUSD",
-  "openTime" : 1587643200000,
-  "openDate" : null,
-  "closeTime" : 1587686399999,
-  "closeDate" : null,
-  "open" : 183.67,
-  "high" : 194.58,
-  "low" : 183.37,
-  "close" : 185.48,
-  "volume" : 7778.9252,
-  "quoteAssetVolume" : 1460704.8195,
-  "numberOfTrades" : 2397
-}, {
-  "symbol" : "ETHUSD",
-  "openTime" : 1587686400000,
-  "openDate" : null,
-  "closeTime" : 1587729599999,
-  "closeDate" : null,
-  "open" : 185.75,
-  "high" : 190.01,
-  "low" : 185.7,
-  "close" : 186.32,
-  "volume" : 2082.90897,
-  "quoteAssetVolume" : 391213.4312,
-  "numberOfTrades" : 1215
-}, {
-  "symbol" : "ETHUSD",
-  "openTime" : 1587729600000,
-  "openDate" : null,
-  "closeTime" : 1587772799999,
-  "closeDate" : null,
-  "open" : 186.0,
-  "high" : 189.32,
-  "low" : 185.11,
-  "close" : 187.61,
-  "volume" : 2165.7242,
-  "quoteAssetVolume" : 406334.7123,
-  "numberOfTrades" : 1219
-}, {
-  "symbol" : "ETHUSD",
-  "openTime" : 1587772800000,
-  "openDate" : null,
-  "closeTime" : 1587815999999,
-  "closeDate" : null,
-  "open" : 187.5,
-  "high" : 196.99,
-  "low" : 186.15,
-  "close" : 193.59,
-  "volume" : 2753.67058,
-  "quoteAssetVolume" : 529008.7382,
-  "numberOfTrades" : 1374
-}, {
-  "symbol" : "ETHUSD",
-  "openTime" : 1587816000000,
-  "openDate" : null,
-  "closeTime" : 1587859199999,
-  "closeDate" : null,
-  "open" : 194.17,
-  "high" : 198.21,
-  "low" : 192.0,
-  "close" : 194.65,
-  "volume" : 2453.66832,
-  "quoteAssetVolume" : 477422.8393,
-  "numberOfTrades" : 1426
-}, {
-  "symbol" : "ETHUSD",
-  "openTime" : 1587859200000,
-  "openDate" : null,
-  "closeTime" : 1587902399999,
-  "closeDate" : null,
-  "open" : 194.18,
-  "high" : 198.0,
-  "low" : 192.66,
-  "close" : 196.93,
-  "volume" : 1621.60402,
-  "quoteAssetVolume" : 316785.6261,
-  "numberOfTrades" : 772
-}, {
-  "symbol" : "ETHUSD",
-  "openTime" : 1587902400000,
-  "openDate" : null,
-  "closeTime" : 1587945599999,
-  "closeDate" : null,
-  "open" : 197.32,
-  "high" : 200.0,
-  "low" : 194.0,
-  "close" : 197.69,
-  "volume" : 2767.98216,
-  "quoteAssetVolume" : 543171.5753,
-  "numberOfTrades" : 1425
-}, {
-  "symbol" : "ETHUSD",
-  "openTime" : 1587945600000,
-  "openDate" : null,
-  "closeTime" : 1587988799999,
-  "closeDate" : null,
-  "open" : 197.84,
-  "high" : 199.13,
-  "low" : 192.99,
-  "close" : 195.98,
-  "volume" : 4772.67868,
-  "quoteAssetVolume" : 937220.4589,
-  "numberOfTrades" : 1443
-}, {
-  "symbol" : "ETHUSD",
-  "openTime" : 1587988800000,
-  "openDate" : null,
-  "closeTime" : 1588031999999,
-  "closeDate" : null,
-  "open" : 196.23,
-  "high" : 197.6,
-  "low" : 190.0,
-  "close" : 196.72,
-  "volume" : 3329.5928,
-  "quoteAssetVolume" : 644761.8425,
-  "numberOfTrades" : 1552
-}, {
-  "symbol" : "ETHUSD",
-  "openTime" : 1588032000000,
-  "openDate" : null,
-  "closeTime" : 1588075199999,
-  "closeDate" : null,
-  "open" : 196.75,
-  "high" : 196.75,
-  "low" : 192.93,
-  "close" : 194.5,
-  "volume" : 430.05071,
-  "quoteAssetVolume" : 83583.0679,
-  "numberOfTrades" : 295
-}, {
-  "symbol" : "ETHUSD",
-  "openTime" : 1588075200000,
-  "openDate" : null,
-  "closeTime" : 1588118399999,
-  "closeDate" : null,
-  "open" : 194.46,
-  "high" : 197.7,
-  "low" : 194.39,
-  "close" : 196.98,
-  "volume" : 2198.39457,
-  "quoteAssetVolume" : 431561.6373,
-  "numberOfTrades" : 1069
-}, {
-  "symbol" : "ETHUSD",
-  "openTime" : 1588118400000,
-  "openDate" : null,
-  "closeTime" : 1588161599999,
-  "closeDate" : null,
-  "open" : 196.67,
-  "high" : 209.99,
-  "low" : 196.67,
-  "close" : 207.67,
-  "volume" : 4873.83374,
-  "quoteAssetVolume" : 987396.7176,
-  "numberOfTrades" : 1662
-}, {
-  "symbol" : "ETHUSD",
-  "openTime" : 1588161600000,
-  "openDate" : null,
-  "closeTime" : 1588204799999,
-  "closeDate" : null,
-  "open" : 208.04,
-  "high" : 219.26,
-  "low" : 207.85,
-  "close" : 215.85,
-  "volume" : 6009.9744,
-  "quoteAssetVolume" : 1284428.2357,
-  "numberOfTrades" : 2752
-}, {
-  "symbol" : "ETHUSD",
   "openTime" : 1588204800000,
   "openDate" : null,
   "closeTime" : 1588247999999,
@@ -1258,7 +10,8 @@
   "close" : 212.02,
   "volume" : 9456.46646,
   "quoteAssetVolume" : 2072730.1804,
-  "numberOfTrades" : 3669
+  "numberOfTrades" : 3669,
+  "rsi" : 0.0
 }, {
   "symbol" : "ETHUSD",
   "openTime" : 1588248000000,
@@ -1271,7 +24,8 @@
   "close" : 206.34,
   "volume" : 5596.9397,
   "quoteAssetVolume" : 1169935.3115,
-  "numberOfTrades" : 2005
+  "numberOfTrades" : 2005,
+  "rsi" : 0.0
 }, {
   "symbol" : "ETHUSD",
   "openTime" : 1588291200000,
@@ -1284,7 +38,8 @@
   "close" : 215.31,
   "volume" : 3909.18384,
   "quoteAssetVolume" : 831309.5445,
-  "numberOfTrades" : 1398
+  "numberOfTrades" : 1398,
+  "rsi" : 0.0
 }, {
   "symbol" : "ETHUSD",
   "openTime" : 1588334400000,
@@ -1297,7 +52,8 @@
   "close" : 211.78,
   "volume" : 2514.2793,
   "quoteAssetVolume" : 531020.4975,
-  "numberOfTrades" : 1328
+  "numberOfTrades" : 1328,
+  "rsi" : 0.0
 }, {
   "symbol" : "ETHUSD",
   "openTime" : 1588377600000,
@@ -1310,7 +66,8 @@
   "close" : 212.5,
   "volume" : 1984.92353,
   "quoteAssetVolume" : 422413.7594,
-  "numberOfTrades" : 1037
+  "numberOfTrades" : 1037,
+  "rsi" : 0.0
 }, {
   "symbol" : "ETHUSD",
   "openTime" : 1588420800000,
@@ -1323,7 +80,8 @@
   "close" : 214.18,
   "volume" : 2030.87924,
   "quoteAssetVolume" : 433785.9241,
-  "numberOfTrades" : 801
+  "numberOfTrades" : 801,
+  "rsi" : 0.0
 }, {
   "symbol" : "ETHUSD",
   "openTime" : 1588464000000,
@@ -1336,7 +94,8 @@
   "close" : 214.22,
   "volume" : 3099.59013,
   "quoteAssetVolume" : 670906.6259,
-  "numberOfTrades" : 1085
+  "numberOfTrades" : 1085,
+  "rsi" : 0.0
 }, {
   "symbol" : "ETHUSD",
   "openTime" : 1588507200000,
@@ -1349,7 +108,8 @@
   "close" : 209.9,
   "volume" : 2712.07645,
   "quoteAssetVolume" : 568738.1402,
-  "numberOfTrades" : 1172
+  "numberOfTrades" : 1172,
+  "rsi" : 0.0
 }, {
   "symbol" : "ETHUSD",
   "openTime" : 1588550400000,
@@ -1362,7 +122,8 @@
   "close" : 199.74,
   "volume" : 4237.03985,
   "quoteAssetVolume" : 852486.2247,
-  "numberOfTrades" : 1854
+  "numberOfTrades" : 1854,
+  "rsi" : 0.0
 }, {
   "symbol" : "ETHUSD",
   "openTime" : 1588593600000,
@@ -1375,7 +136,8 @@
   "close" : 206.65,
   "volume" : 2797.31638,
   "quoteAssetVolume" : 575209.0981,
-  "numberOfTrades" : 1518
+  "numberOfTrades" : 1518,
+  "rsi" : 0.0
 }, {
   "symbol" : "ETHUSD",
   "openTime" : 1588636800000,
@@ -1388,7 +150,8 @@
   "close" : 203.55,
   "volume" : 2306.97681,
   "quoteAssetVolume" : 475911.614,
-  "numberOfTrades" : 962
+  "numberOfTrades" : 962,
+  "rsi" : 0.0
 }, {
   "symbol" : "ETHUSD",
   "openTime" : 1588680000000,
@@ -1401,7 +164,8 @@
   "close" : 205.75,
   "volume" : 1860.72132,
   "quoteAssetVolume" : 380342.6277,
-  "numberOfTrades" : 1044
+  "numberOfTrades" : 1044,
+  "rsi" : 0.0
 }, {
   "symbol" : "ETHUSD",
   "openTime" : 1588723200000,
@@ -1414,7 +178,8 @@
   "close" : 210.57,
   "volume" : 2038.08994,
   "quoteAssetVolume" : 421650.8467,
-  "numberOfTrades" : 1216
+  "numberOfTrades" : 1216,
+  "rsi" : 0.0
 }, {
   "symbol" : "ETHUSD",
   "openTime" : 1588766400000,
@@ -1427,7 +192,8 @@
   "close" : 198.88,
   "volume" : 4153.32251,
   "quoteAssetVolume" : 859706.4519,
-  "numberOfTrades" : 2548
+  "numberOfTrades" : 2548,
+  "rsi" : 0.0
 }, {
   "symbol" : "ETHUSD",
   "openTime" : 1588809600000,
@@ -1440,7 +206,8 @@
   "close" : 204.31,
   "volume" : 2693.66906,
   "quoteAssetVolume" : 550782.0033,
-  "numberOfTrades" : 1626
+  "numberOfTrades" : 1626,
+  "rsi" : 0.0
 }, {
   "symbol" : "ETHUSD",
   "openTime" : 1588852800000,
@@ -1453,7 +220,8 @@
   "close" : 212.37,
   "volume" : 7891.96997,
   "quoteAssetVolume" : 1663911.8083,
-  "numberOfTrades" : 3968
+  "numberOfTrades" : 3968,
+  "rsi" : 0.0
 }, {
   "symbol" : "ETHUSD",
   "openTime" : 1588896000000,
@@ -1466,7 +234,8 @@
   "close" : 211.41,
   "volume" : 2796.18474,
   "quoteAssetVolume" : 594377.9386,
-  "numberOfTrades" : 1948
+  "numberOfTrades" : 1948,
+  "rsi" : 0.0
 }, {
   "symbol" : "ETHUSD",
   "openTime" : 1588939200000,
@@ -1479,7 +248,8 @@
   "close" : 211.66,
   "volume" : 3021.296,
   "quoteAssetVolume" : 645080.2006,
-  "numberOfTrades" : 1778
+  "numberOfTrades" : 1778,
+  "rsi" : 0.0
 }, {
   "symbol" : "ETHUSD",
   "openTime" : 1588982400000,
@@ -1492,7 +262,8 @@
   "close" : 210.31,
   "volume" : 1943.67018,
   "quoteAssetVolume" : 411119.5246,
-  "numberOfTrades" : 1031
+  "numberOfTrades" : 1031,
+  "rsi" : 0.0
 }, {
   "symbol" : "ETHUSD",
   "openTime" : 1589025600000,
@@ -1505,7 +276,8 @@
   "close" : 210.03,
   "volume" : 2654.63627,
   "quoteAssetVolume" : 565076.9258,
-  "numberOfTrades" : 1307
+  "numberOfTrades" : 1307,
+  "rsi" : 0.0
 }, {
   "symbol" : "ETHUSD",
   "openTime" : 1589068800000,
@@ -1518,7 +290,8 @@
   "close" : 189.81,
   "volume" : 7856.79792,
   "quoteAssetVolume" : 1500293.4875,
-  "numberOfTrades" : 4980
+  "numberOfTrades" : 4980,
+  "rsi" : 0.0
 }, {
   "symbol" : "ETHUSD",
   "openTime" : 1589112000000,
@@ -1531,7 +304,8 @@
   "close" : 188.08,
   "volume" : 3461.77281,
   "quoteAssetVolume" : 648397.9091,
-  "numberOfTrades" : 2089
+  "numberOfTrades" : 2089,
+  "rsi" : 0.0
 }, {
   "symbol" : "ETHUSD",
   "openTime" : 1589155200000,
@@ -1544,7 +318,8 @@
   "close" : 189.11,
   "volume" : 1842.07125,
   "quoteAssetVolume" : 346829.2335,
-  "numberOfTrades" : 1100
+  "numberOfTrades" : 1100,
+  "rsi" : 0.0
 }, {
   "symbol" : "ETHUSD",
   "openTime" : 1589198400000,
@@ -1557,7 +332,8 @@
   "close" : 186.03,
   "volume" : 5558.3201,
   "quoteAssetVolume" : 1029233.0464,
-  "numberOfTrades" : 1829
+  "numberOfTrades" : 1829,
+  "rsi" : 0.0
 }, {
   "symbol" : "ETHUSD",
   "openTime" : 1589241600000,
@@ -1570,7 +346,8 @@
   "close" : 190.75,
   "volume" : 1250.75066,
   "quoteAssetVolume" : 235637.7786,
-  "numberOfTrades" : 830
+  "numberOfTrades" : 830,
+  "rsi" : 0.0
 }, {
   "symbol" : "ETHUSD",
   "openTime" : 1589284800000,
@@ -1583,7 +360,8 @@
   "close" : 189.35,
   "volume" : 2084.99099,
   "quoteAssetVolume" : 397086.3143,
-  "numberOfTrades" : 892
+  "numberOfTrades" : 892,
+  "rsi" : 0.0
 }, {
   "symbol" : "ETHUSD",
   "openTime" : 1589328000000,
@@ -1596,7 +374,8 @@
   "close" : 191.2,
   "volume" : 667.97294,
   "quoteAssetVolume" : 127310.4482,
-  "numberOfTrades" : 419
+  "numberOfTrades" : 419,
+  "rsi" : 0.0
 }, {
   "symbol" : "ETHUSD",
   "openTime" : 1589371200000,
@@ -1609,7 +388,8 @@
   "close" : 200.04,
   "volume" : 2712.55254,
   "quoteAssetVolume" : 535344.7641,
-  "numberOfTrades" : 1091
+  "numberOfTrades" : 1091,
+  "rsi" : 0.0
 }, {
   "symbol" : "ETHUSD",
   "openTime" : 1589414400000,
@@ -1622,7 +402,8 @@
   "close" : 202.51,
   "volume" : 2235.26904,
   "quoteAssetVolume" : 449072.2769,
-  "numberOfTrades" : 1279
+  "numberOfTrades" : 1279,
+  "rsi" : 0.0
 }, {
   "symbol" : "ETHUSD",
   "openTime" : 1589457600000,
@@ -1635,7 +416,8 @@
   "close" : 203.46,
   "volume" : 3301.27006,
   "quoteAssetVolume" : 666052.1575,
-  "numberOfTrades" : 1507
+  "numberOfTrades" : 1507,
+  "rsi" : 0.0
 }, {
   "symbol" : "ETHUSD",
   "openTime" : 1589500800000,
@@ -1648,7 +430,8 @@
   "close" : 200.77,
   "volume" : 2043.85786,
   "quoteAssetVolume" : 408653.3876,
-  "numberOfTrades" : 979
+  "numberOfTrades" : 979,
+  "rsi" : 0.0
 }, {
   "symbol" : "ETHUSD",
   "openTime" : 1589544000000,
@@ -1661,7 +444,8 @@
   "close" : 194.75,
   "volume" : 2862.55295,
   "quoteAssetVolume" : 561950.1347,
-  "numberOfTrades" : 1078
+  "numberOfTrades" : 1078,
+  "rsi" : 0.0
 }, {
   "symbol" : "ETHUSD",
   "openTime" : 1589587200000,
@@ -1674,7 +458,8 @@
   "close" : 200.71,
   "volume" : 1834.59623,
   "quoteAssetVolume" : 365923.1351,
-  "numberOfTrades" : 708
+  "numberOfTrades" : 708,
+  "rsi" : 0.0
 }, {
   "symbol" : "ETHUSD",
   "openTime" : 1589630400000,
@@ -1687,7 +472,8 @@
   "close" : 200.52,
   "volume" : 1343.62012,
   "quoteAssetVolume" : 269565.1984,
-  "numberOfTrades" : 625
+  "numberOfTrades" : 625,
+  "rsi" : 0.0
 }, {
   "symbol" : "ETHUSD",
   "openTime" : 1589673600000,
@@ -1700,7 +486,8 @@
   "close" : 201.14,
   "volume" : 1658.81897,
   "quoteAssetVolume" : 333779.0785,
-  "numberOfTrades" : 654
+  "numberOfTrades" : 654,
+  "rsi" : 0.0
 }, {
   "symbol" : "ETHUSD",
   "openTime" : 1589716800000,
@@ -1713,7 +500,8 @@
   "close" : 207.09,
   "volume" : 3606.01879,
   "quoteAssetVolume" : 747889.9594,
-  "numberOfTrades" : 1238
+  "numberOfTrades" : 1238,
+  "rsi" : 0.0
 }, {
   "symbol" : "ETHUSD",
   "openTime" : 1589760000000,
@@ -1726,7 +514,8 @@
   "close" : 212.1,
   "volume" : 3054.84449,
   "quoteAssetVolume" : 650591.8294,
-  "numberOfTrades" : 1254
+  "numberOfTrades" : 1254,
+  "rsi" : 0.0
 }, {
   "symbol" : "ETHUSD",
   "openTime" : 1589803200000,
@@ -1739,7 +528,8 @@
   "close" : 214.86,
   "volume" : 1844.40277,
   "quoteAssetVolume" : 391619.0592,
-  "numberOfTrades" : 841
+  "numberOfTrades" : 841,
+  "rsi" : 0.0
 }, {
   "symbol" : "ETHUSD",
   "openTime" : 1589846400000,
@@ -1752,7 +542,8 @@
   "close" : 212.73,
   "volume" : 1586.17681,
   "quoteAssetVolume" : 336757.4856,
-  "numberOfTrades" : 875
+  "numberOfTrades" : 875,
+  "rsi" : 0.0
 }, {
   "symbol" : "ETHUSD",
   "openTime" : 1589889600000,
@@ -1765,7 +556,8 @@
   "close" : 214.76,
   "volume" : 1943.52982,
   "quoteAssetVolume" : 412739.809,
-  "numberOfTrades" : 773
+  "numberOfTrades" : 773,
+  "rsi" : 0.0
 }, {
   "symbol" : "ETHUSD",
   "openTime" : 1589932800000,
@@ -1778,7 +570,8 @@
   "close" : 213.0,
   "volume" : 899.53938,
   "quoteAssetVolume" : 192159.5559,
-  "numberOfTrades" : 503
+  "numberOfTrades" : 503,
+  "rsi" : 0.0
 }, {
   "symbol" : "ETHUSD",
   "openTime" : 1589976000000,
@@ -1791,7 +584,8 @@
   "close" : 209.91,
   "volume" : 3033.6753,
   "quoteAssetVolume" : 636509.2554,
-  "numberOfTrades" : 1365
+  "numberOfTrades" : 1365,
+  "rsi" : 0.0
 }, {
   "symbol" : "ETHUSD",
   "openTime" : 1590019200000,
@@ -1804,7 +598,8 @@
   "close" : 207.41,
   "volume" : 2057.08665,
   "quoteAssetVolume" : 428660.047,
-  "numberOfTrades" : 656
+  "numberOfTrades" : 656,
+  "rsi" : 0.0
 }, {
   "symbol" : "ETHUSD",
   "openTime" : 1590062400000,
@@ -1817,7 +612,8 @@
   "close" : 198.3,
   "volume" : 6260.43371,
   "quoteAssetVolume" : 1246853.039,
-  "numberOfTrades" : 2236
+  "numberOfTrades" : 2236,
+  "rsi" : 0.0
 }, {
   "symbol" : "ETHUSD",
   "openTime" : 1590105600000,
@@ -1830,7 +626,8 @@
   "close" : 203.2,
   "volume" : 1521.49244,
   "quoteAssetVolume" : 303743.1766,
-  "numberOfTrades" : 845
+  "numberOfTrades" : 845,
+  "rsi" : 0.0
 }, {
   "symbol" : "ETHUSD",
   "openTime" : 1590148800000,
@@ -1843,7 +640,8 @@
   "close" : 207.27,
   "volume" : 1738.64036,
   "quoteAssetVolume" : 358666.4562,
-  "numberOfTrades" : 964
+  "numberOfTrades" : 964,
+  "rsi" : 0.0
 }, {
   "symbol" : "ETHUSD",
   "openTime" : 1590192000000,
@@ -1856,7 +654,8 @@
   "close" : 207.48,
   "volume" : 1761.56808,
   "quoteAssetVolume" : 367901.018,
-  "numberOfTrades" : 1017
+  "numberOfTrades" : 1017,
+  "rsi" : 0.0
 }, {
   "symbol" : "ETHUSD",
   "openTime" : 1590235200000,
@@ -1869,7 +668,8 @@
   "close" : 206.5,
   "volume" : 1344.73754,
   "quoteAssetVolume" : 277921.5406,
-  "numberOfTrades" : 795
+  "numberOfTrades" : 795,
+  "rsi" : 0.0
 }, {
   "symbol" : "ETHUSD",
   "openTime" : 1590278400000,
@@ -1882,7 +682,8 @@
   "close" : 205.9,
   "volume" : 1859.14685,
   "quoteAssetVolume" : 388322.3073,
-  "numberOfTrades" : 934
+  "numberOfTrades" : 934,
+  "rsi" : 0.0
 }, {
   "symbol" : "ETHUSD",
   "openTime" : 1590321600000,
@@ -1895,7 +696,8 @@
   "close" : 199.55,
   "volume" : 3421.46544,
   "quoteAssetVolume" : 698809.9523,
-  "numberOfTrades" : 1473
+  "numberOfTrades" : 1473,
+  "rsi" : 0.0
 }, {
   "symbol" : "ETHUSD",
   "openTime" : 1590364800000,
@@ -1908,7 +710,8 @@
   "close" : 202.48,
   "volume" : 1272.60041,
   "quoteAssetVolume" : 257212.5089,
-  "numberOfTrades" : 660
+  "numberOfTrades" : 660,
+  "rsi" : 0.0
 }, {
   "symbol" : "ETHUSD",
   "openTime" : 1590408000000,
@@ -1921,7 +724,8 @@
   "close" : 204.11,
   "volume" : 1761.09814,
   "quoteAssetVolume" : 359456.5405,
-  "numberOfTrades" : 718
+  "numberOfTrades" : 718,
+  "rsi" : 0.0
 }, {
   "symbol" : "ETHUSD",
   "openTime" : 1590451200000,
@@ -1934,7 +738,8 @@
   "close" : 202.63,
   "volume" : 1074.86151,
   "quoteAssetVolume" : 218714.2602,
-  "numberOfTrades" : 543
+  "numberOfTrades" : 543,
+  "rsi" : 0.0
 }, {
   "symbol" : "ETHUSD",
   "openTime" : 1590494400000,
@@ -1947,7 +752,8 @@
   "close" : 201.03,
   "volume" : 2123.81308,
   "quoteAssetVolume" : 425329.7767,
-  "numberOfTrades" : 1084
+  "numberOfTrades" : 1084,
+  "rsi" : 0.0
 }, {
   "symbol" : "ETHUSD",
   "openTime" : 1590537600000,
@@ -1960,7 +766,8 @@
   "close" : 206.41,
   "volume" : 1004.2835,
   "quoteAssetVolume" : 205016.6312,
-  "numberOfTrades" : 562
+  "numberOfTrades" : 562,
+  "rsi" : 0.0
 }, {
   "symbol" : "ETHUSD",
   "openTime" : 1590580800000,
@@ -1973,7 +780,8 @@
   "close" : 208.29,
   "volume" : 1568.2531,
   "quoteAssetVolume" : 323953.374,
-  "numberOfTrades" : 891
+  "numberOfTrades" : 891,
+  "rsi" : 0.0
 }, {
   "symbol" : "ETHUSD",
   "openTime" : 1590624000000,
@@ -1986,7 +794,8 @@
   "close" : 207.5,
   "volume" : 1790.72946,
   "quoteAssetVolume" : 370075.4765,
-  "numberOfTrades" : 594
+  "numberOfTrades" : 594,
+  "rsi" : 0.0
 }, {
   "symbol" : "ETHUSD",
   "openTime" : 1590667200000,
@@ -1999,7 +808,8 @@
   "close" : 220.47,
   "volume" : 4024.02096,
   "quoteAssetVolume" : 862076.5692,
-  "numberOfTrades" : 1645
+  "numberOfTrades" : 1645,
+  "rsi" : 0.0
 }, {
   "symbol" : "ETHUSD",
   "openTime" : 1590710400000,
@@ -2012,7 +822,8 @@
   "close" : 219.03,
   "volume" : 2022.26471,
   "quoteAssetVolume" : 447555.9589,
-  "numberOfTrades" : 1244
+  "numberOfTrades" : 1244,
+  "rsi" : 0.0
 }, {
   "symbol" : "ETHUSD",
   "openTime" : 1590753600000,
@@ -2025,7 +836,8 @@
   "close" : 220.58,
   "volume" : 1807.37725,
   "quoteAssetVolume" : 397513.4365,
-  "numberOfTrades" : 851
+  "numberOfTrades" : 851,
+  "rsi" : 0.0
 }, {
   "symbol" : "ETHUSD",
   "openTime" : 1590796800000,
@@ -2038,7 +850,8 @@
   "close" : 236.89,
   "volume" : 3103.20802,
   "quoteAssetVolume" : 709641.8846,
-  "numberOfTrades" : 1427
+  "numberOfTrades" : 1427,
+  "rsi" : 0.0
 }, {
   "symbol" : "ETHUSD",
   "openTime" : 1590840000000,
@@ -2051,7 +864,8 @@
   "close" : 243.37,
   "volume" : 4635.39298,
   "quoteAssetVolume" : 1109926.7685,
-  "numberOfTrades" : 2101
+  "numberOfTrades" : 2101,
+  "rsi" : 0.0
 }, {
   "symbol" : "ETHUSD",
   "openTime" : 1590883200000,
@@ -2064,7 +878,8 @@
   "close" : 238.92,
   "volume" : 3375.87161,
   "quoteAssetVolume" : 807921.6318,
-  "numberOfTrades" : 1688
+  "numberOfTrades" : 1688,
+  "rsi" : 0.0
 }, {
   "symbol" : "ETHUSD",
   "openTime" : 1590926400000,
@@ -2077,7 +892,8 @@
   "close" : 231.54,
   "volume" : 3472.19517,
   "quoteAssetVolume" : 814171.6334,
-  "numberOfTrades" : 1479
+  "numberOfTrades" : 1479,
+  "rsi" : 0.0
 }, {
   "symbol" : "ETHUSD",
   "openTime" : 1590969600000,
@@ -2090,7 +906,8 @@
   "close" : 236.57,
   "volume" : 2049.24707,
   "quoteAssetVolume" : 487682.209,
-  "numberOfTrades" : 1112
+  "numberOfTrades" : 1112,
+  "rsi" : 0.0
 }, {
   "symbol" : "ETHUSD",
   "openTime" : 1591012800000,
@@ -2103,7 +920,8 @@
   "close" : 248.63,
   "volume" : 4436.61927,
   "quoteAssetVolume" : 1086186.9135,
-  "numberOfTrades" : 2842
+  "numberOfTrades" : 2842,
+  "rsi" : 0.0
 }, {
   "symbol" : "ETHUSD",
   "openTime" : 1591056000000,
@@ -2116,7 +934,8 @@
   "close" : 251.81,
   "volume" : 2794.48646,
   "quoteAssetVolume" : 694444.9431,
-  "numberOfTrades" : 1707
+  "numberOfTrades" : 1707,
+  "rsi" : 0.0
 }, {
   "symbol" : "ETHUSD",
   "openTime" : 1591099200000,
@@ -2129,7 +948,8 @@
   "close" : 237.52,
   "volume" : 5352.35821,
   "quoteAssetVolume" : 1270805.3205,
-  "numberOfTrades" : 3214
+  "numberOfTrades" : 3214,
+  "rsi" : 0.0
 }, {
   "symbol" : "ETHUSD",
   "openTime" : 1591142400000,
@@ -2142,7 +962,8 @@
   "close" : 239.69,
   "volume" : 1977.62067,
   "quoteAssetVolume" : 467925.2429,
-  "numberOfTrades" : 1138
+  "numberOfTrades" : 1138,
+  "rsi" : 0.0
 }, {
   "symbol" : "ETHUSD",
   "openTime" : 1591185600000,
@@ -2155,7 +976,8 @@
   "close" : 244.37,
   "volume" : 2325.80048,
   "quoteAssetVolume" : 560067.6083,
-  "numberOfTrades" : 1288
+  "numberOfTrades" : 1288,
+  "rsi" : 0.0
 }, {
   "symbol" : "ETHUSD",
   "openTime" : 1591228800000,
@@ -2168,7 +990,8 @@
   "close" : 243.2,
   "volume" : 2451.87425,
   "quoteAssetVolume" : 593660.2511,
-  "numberOfTrades" : 1303
+  "numberOfTrades" : 1303,
+  "rsi" : 0.0
 }, {
   "symbol" : "ETHUSD",
   "openTime" : 1591272000000,
@@ -2181,7 +1004,8 @@
   "close" : 243.22,
   "volume" : 1865.15747,
   "quoteAssetVolume" : 452532.0557,
-  "numberOfTrades" : 1161
+  "numberOfTrades" : 1161,
+  "rsi" : 0.0
 }, {
   "symbol" : "ETHUSD",
   "openTime" : 1591315200000,
@@ -2194,7 +1018,8 @@
   "close" : 243.04,
   "volume" : 1603.04516,
   "quoteAssetVolume" : 391001.6713,
-  "numberOfTrades" : 997
+  "numberOfTrades" : 997,
+  "rsi" : 0.0
 }, {
   "symbol" : "ETHUSD",
   "openTime" : 1591358400000,
@@ -2207,7 +1032,8 @@
   "close" : 240.09,
   "volume" : 2101.04601,
   "quoteAssetVolume" : 507199.2362,
-  "numberOfTrades" : 1021
+  "numberOfTrades" : 1021,
+  "rsi" : 0.0
 }, {
   "symbol" : "ETHUSD",
   "openTime" : 1591401600000,
@@ -2220,7 +1046,8 @@
   "close" : 243.05,
   "volume" : 1539.28556,
   "quoteAssetVolume" : 369544.1879,
-  "numberOfTrades" : 665
+  "numberOfTrades" : 665,
+  "rsi" : 0.0
 }, {
   "symbol" : "ETHUSD",
   "openTime" : 1591444800000,
@@ -2233,7 +1060,8 @@
   "close" : 242.22,
   "volume" : 1453.73298,
   "quoteAssetVolume" : 351361.118,
-  "numberOfTrades" : 825
+  "numberOfTrades" : 825,
+  "rsi" : 0.0
 }, {
   "symbol" : "ETHUSD",
   "openTime" : 1591488000000,
@@ -2246,7 +1074,8 @@
   "close" : 238.82,
   "volume" : 1973.32446,
   "quoteAssetVolume" : 475228.2523,
-  "numberOfTrades" : 767
+  "numberOfTrades" : 767,
+  "rsi" : 0.0
 }, {
   "symbol" : "ETHUSD",
   "openTime" : 1591531200000,
@@ -2259,7 +1088,8 @@
   "close" : 244.72,
   "volume" : 3661.97804,
   "quoteAssetVolume" : 876394.7917,
-  "numberOfTrades" : 1905
+  "numberOfTrades" : 1905,
+  "rsi" : 0.0
 }, {
   "symbol" : "ETHUSD",
   "openTime" : 1591574400000,
@@ -2272,7 +1102,8 @@
   "close" : 243.6,
   "volume" : 1202.73097,
   "quoteAssetVolume" : 293526.0544,
-  "numberOfTrades" : 709
+  "numberOfTrades" : 709,
+  "rsi" : 0.0
 }, {
   "symbol" : "ETHUSD",
   "openTime" : 1591617600000,
@@ -2285,7 +1116,8 @@
   "close" : 246.49,
   "volume" : 1628.81336,
   "quoteAssetVolume" : 398083.0395,
-  "numberOfTrades" : 838
+  "numberOfTrades" : 838,
+  "rsi" : 0.0
 }, {
   "symbol" : "ETHUSD",
   "openTime" : 1591660800000,
@@ -2298,7 +1130,8 @@
   "close" : 243.36,
   "volume" : 2385.40981,
   "quoteAssetVolume" : 584170.0828,
-  "numberOfTrades" : 1040
+  "numberOfTrades" : 1040,
+  "rsi" : 0.0
 }, {
   "symbol" : "ETHUSD",
   "openTime" : 1591704000000,
@@ -2311,7 +1144,8 @@
   "close" : 244.04,
   "volume" : 1888.56079,
   "quoteAssetVolume" : 459489.5128,
-  "numberOfTrades" : 878
+  "numberOfTrades" : 878,
+  "rsi" : 0.0
 }, {
   "symbol" : "ETHUSD",
   "openTime" : 1591747200000,
@@ -2324,7 +1158,8 @@
   "close" : 242.65,
   "volume" : 1048.01646,
   "quoteAssetVolume" : 255250.2076,
-  "numberOfTrades" : 539
+  "numberOfTrades" : 539,
+  "rsi" : 0.0
 }, {
   "symbol" : "ETHUSD",
   "openTime" : 1591790400000,
@@ -2337,7 +1172,8 @@
   "close" : 248.18,
   "volume" : 3623.41582,
   "quoteAssetVolume" : 892619.5316,
-  "numberOfTrades" : 1508
+  "numberOfTrades" : 1508,
+  "rsi" : 0.0
 }, {
   "symbol" : "ETHUSD",
   "openTime" : 1591833600000,
@@ -2350,7 +1186,8 @@
   "close" : 245.33,
   "volume" : 2118.02612,
   "quoteAssetVolume" : 523379.0406,
-  "numberOfTrades" : 1044
+  "numberOfTrades" : 1044,
+  "rsi" : 0.0
 }, {
   "symbol" : "ETHUSD",
   "openTime" : 1591876800000,
@@ -2363,7 +1200,8 @@
   "close" : 230.13,
   "volume" : 5919.24164,
   "quoteAssetVolume" : 1387619.5718,
-  "numberOfTrades" : 2502
+  "numberOfTrades" : 2502,
+  "rsi" : 0.0
 }, {
   "symbol" : "ETHUSD",
   "openTime" : 1591920000000,
@@ -2376,7 +1214,8 @@
   "close" : 237.54,
   "volume" : 3892.38467,
   "quoteAssetVolume" : 908949.1266,
-  "numberOfTrades" : 1397
+  "numberOfTrades" : 1397,
+  "rsi" : 0.0
 }, {
   "symbol" : "ETHUSD",
   "openTime" : 1591963200000,
@@ -2386,8 +1225,1325 @@
   "open" : 237.34,
   "high" : 239.08,
   "low" : 234.0,
-  "close" : 237.57,
-  "volume" : 1361.899,
-  "quoteAssetVolume" : 321841.4581,
-  "numberOfTrades" : 623
+  "close" : 237.62,
+  "volume" : 1457.68514,
+  "quoteAssetVolume" : 344571.0718,
+  "numberOfTrades" : 713,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHUSD",
+  "openTime" : 1592006400000,
+  "openDate" : null,
+  "closeTime" : 1592049599999,
+  "closeDate" : null,
+  "open" : 237.9,
+  "high" : 237.9,
+  "low" : 234.29,
+  "close" : 235.36,
+  "volume" : 733.17021,
+  "quoteAssetVolume" : 173150.4366,
+  "numberOfTrades" : 456,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHUSD",
+  "openTime" : 1592049600000,
+  "openDate" : null,
+  "closeTime" : 1592092799999,
+  "closeDate" : null,
+  "open" : 235.29,
+  "high" : 238.87,
+  "low" : 235.29,
+  "close" : 238.16,
+  "volume" : 932.75716,
+  "quoteAssetVolume" : 221304.439,
+  "numberOfTrades" : 549,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHUSD",
+  "openTime" : 1592092800000,
+  "openDate" : null,
+  "closeTime" : 1592135999999,
+  "closeDate" : null,
+  "open" : 238.15,
+  "high" : 238.41,
+  "low" : 233.44,
+  "close" : 236.3,
+  "volume" : 555.83984,
+  "quoteAssetVolume" : 131272.6196,
+  "numberOfTrades" : 410,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHUSD",
+  "openTime" : 1592136000000,
+  "openDate" : null,
+  "closeTime" : 1592179199999,
+  "closeDate" : null,
+  "open" : 236.3,
+  "high" : 236.32,
+  "low" : 229.92,
+  "close" : 231.56,
+  "volume" : 1362.34149,
+  "quoteAssetVolume" : 318385.4572,
+  "numberOfTrades" : 800,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHUSD",
+  "openTime" : 1592179200000,
+  "openDate" : null,
+  "closeTime" : 1592222399999,
+  "closeDate" : null,
+  "open" : 231.37,
+  "high" : 232.08,
+  "low" : 218.25,
+  "close" : 223.27,
+  "volume" : 2569.49396,
+  "quoteAssetVolume" : 579071.978,
+  "numberOfTrades" : 1684,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHUSD",
+  "openTime" : 1592222400000,
+  "openDate" : null,
+  "closeTime" : 1592265599999,
+  "closeDate" : null,
+  "open" : 223.73,
+  "high" : 233.55,
+  "low" : 220.33,
+  "close" : 230.75,
+  "volume" : 2442.83999,
+  "quoteAssetVolume" : 556552.0517,
+  "numberOfTrades" : 1508,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHUSD",
+  "openTime" : 1592265600000,
+  "openDate" : null,
+  "closeTime" : 1592308799999,
+  "closeDate" : null,
+  "open" : 230.99,
+  "high" : 235.33,
+  "low" : 228.87,
+  "close" : 234.47,
+  "volume" : 1257.71985,
+  "quoteAssetVolume" : 292434.7615,
+  "numberOfTrades" : 853,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHUSD",
+  "openTime" : 1592308800000,
+  "openDate" : null,
+  "closeTime" : 1592351999999,
+  "closeDate" : null,
+  "open" : 234.36,
+  "high" : 235.96,
+  "low" : 231.57,
+  "close" : 235.37,
+  "volume" : 1287.2932,
+  "quoteAssetVolume" : 301330.9835,
+  "numberOfTrades" : 713,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHUSD",
+  "openTime" : 1592352000000,
+  "openDate" : null,
+  "closeTime" : 1592395199999,
+  "closeDate" : null,
+  "open" : 235.48,
+  "high" : 235.73,
+  "low" : 232.17,
+  "close" : 233.9,
+  "volume" : 730.64264,
+  "quoteAssetVolume" : 170731.0973,
+  "numberOfTrades" : 543,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHUSD",
+  "openTime" : 1592395200000,
+  "openDate" : null,
+  "closeTime" : 1592438399999,
+  "closeDate" : null,
+  "open" : 233.65,
+  "high" : 237.89,
+  "low" : 227.92,
+  "close" : 233.66,
+  "volume" : 1926.44704,
+  "quoteAssetVolume" : 447907.5028,
+  "numberOfTrades" : 1166,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHUSD",
+  "openTime" : 1592438400000,
+  "openDate" : null,
+  "closeTime" : 1592481599999,
+  "closeDate" : null,
+  "open" : 233.71,
+  "high" : 234.45,
+  "low" : 232.11,
+  "close" : 233.06,
+  "volume" : 880.78272,
+  "quoteAssetVolume" : 205319.0201,
+  "numberOfTrades" : 653,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHUSD",
+  "openTime" : 1592481600000,
+  "openDate" : null,
+  "closeTime" : 1592524799999,
+  "closeDate" : null,
+  "open" : 232.76,
+  "high" : 233.2,
+  "low" : 226.87,
+  "close" : 231.24,
+  "volume" : 1476.0705,
+  "quoteAssetVolume" : 340017.4406,
+  "numberOfTrades" : 844,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHUSD",
+  "openTime" : 1592524800000,
+  "openDate" : null,
+  "closeTime" : 1592567999999,
+  "closeDate" : null,
+  "open" : 231.18,
+  "high" : 231.2,
+  "low" : 226.53,
+  "close" : 229.9,
+  "volume" : 945.70855,
+  "quoteAssetVolume" : 216246.9951,
+  "numberOfTrades" : 706,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHUSD",
+  "openTime" : 1592568000000,
+  "openDate" : null,
+  "closeTime" : 1592611199999,
+  "closeDate" : null,
+  "open" : 230.42,
+  "high" : 231.72,
+  "low" : 227.8,
+  "close" : 228.65,
+  "volume" : 800.40082,
+  "quoteAssetVolume" : 183527.1403,
+  "numberOfTrades" : 560,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHUSD",
+  "openTime" : 1592611200000,
+  "openDate" : null,
+  "closeTime" : 1592654399999,
+  "closeDate" : null,
+  "open" : 228.86,
+  "high" : 230.46,
+  "low" : 225.25,
+  "close" : 228.86,
+  "volume" : 764.77139,
+  "quoteAssetVolume" : 175222.6388,
+  "numberOfTrades" : 460,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHUSD",
+  "openTime" : 1592654400000,
+  "openDate" : null,
+  "closeTime" : 1592697599999,
+  "closeDate" : null,
+  "open" : 228.77,
+  "high" : 229.51,
+  "low" : 225.63,
+  "close" : 228.91,
+  "volume" : 571.8611,
+  "quoteAssetVolume" : 130043.5021,
+  "numberOfTrades" : 548,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHUSD",
+  "openTime" : 1592697600000,
+  "openDate" : null,
+  "closeTime" : 1592740799999,
+  "closeDate" : null,
+  "open" : 229.33,
+  "high" : 231.24,
+  "low" : 228.72,
+  "close" : 230.07,
+  "volume" : 775.80767,
+  "quoteAssetVolume" : 178249.1086,
+  "numberOfTrades" : 466,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHUSD",
+  "openTime" : 1592740800000,
+  "openDate" : null,
+  "closeTime" : 1592783999999,
+  "closeDate" : null,
+  "open" : 229.88,
+  "high" : 230.72,
+  "low" : 227.17,
+  "close" : 227.83,
+  "volume" : 677.96243,
+  "quoteAssetVolume" : 155421.0096,
+  "numberOfTrades" : 519,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHUSD",
+  "openTime" : 1592784000000,
+  "openDate" : null,
+  "closeTime" : 1592827199999,
+  "closeDate" : null,
+  "open" : 227.52,
+  "high" : 236.7,
+  "low" : 227.33,
+  "close" : 236.67,
+  "volume" : 1406.40681,
+  "quoteAssetVolume" : 328476.2172,
+  "numberOfTrades" : 850,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHUSD",
+  "openTime" : 1592827200000,
+  "openDate" : null,
+  "closeTime" : 1592870399999,
+  "closeDate" : null,
+  "open" : 236.8,
+  "high" : 247.48,
+  "low" : 236.57,
+  "close" : 243.44,
+  "volume" : 2681.40772,
+  "quoteAssetVolume" : 651301.1581,
+  "numberOfTrades" : 1260,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHUSD",
+  "openTime" : 1592870400000,
+  "openDate" : null,
+  "closeTime" : 1592913599999,
+  "closeDate" : null,
+  "open" : 243.8,
+  "high" : 244.5,
+  "low" : 240.65,
+  "close" : 243.61,
+  "volume" : 1343.71838,
+  "quoteAssetVolume" : 325958.3162,
+  "numberOfTrades" : 741,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHUSD",
+  "openTime" : 1592913600000,
+  "openDate" : null,
+  "closeTime" : 1592956799999,
+  "closeDate" : null,
+  "open" : 243.33,
+  "high" : 244.89,
+  "low" : 241.59,
+  "close" : 243.23,
+  "volume" : 1592.59419,
+  "quoteAssetVolume" : 387751.6748,
+  "numberOfTrades" : 874,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHUSD",
+  "openTime" : 1592956800000,
+  "openDate" : null,
+  "closeTime" : 1592999999999,
+  "closeDate" : null,
+  "open" : 243.01,
+  "high" : 249.0,
+  "low" : 237.0,
+  "close" : 238.12,
+  "volume" : 2750.70757,
+  "quoteAssetVolume" : 669829.0988,
+  "numberOfTrades" : 1265,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHUSD",
+  "openTime" : 1593000000000,
+  "openDate" : null,
+  "closeTime" : 1593043199999,
+  "closeDate" : null,
+  "open" : 237.59,
+  "high" : 240.65,
+  "low" : 231.0,
+  "close" : 234.63,
+  "volume" : 3436.67281,
+  "quoteAssetVolume" : 806028.9506,
+  "numberOfTrades" : 1846,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHUSD",
+  "openTime" : 1593043200000,
+  "openDate" : null,
+  "closeTime" : 1593086399999,
+  "closeDate" : null,
+  "open" : 234.49,
+  "high" : 235.0,
+  "low" : 227.23,
+  "close" : 234.22,
+  "volume" : 2379.82615,
+  "quoteAssetVolume" : 551531.0524,
+  "numberOfTrades" : 990,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHUSD",
+  "openTime" : 1593086400000,
+  "openDate" : null,
+  "closeTime" : 1593129599999,
+  "closeDate" : null,
+  "open" : 234.36,
+  "high" : 234.89,
+  "low" : 231.16,
+  "close" : 232.53,
+  "volume" : 1364.32987,
+  "quoteAssetVolume" : 318114.6123,
+  "numberOfTrades" : 708,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHUSD",
+  "openTime" : 1593129600000,
+  "openDate" : null,
+  "closeTime" : 1593172799999,
+  "closeDate" : null,
+  "open" : 232.17,
+  "high" : 233.25,
+  "low" : 228.09,
+  "close" : 230.24,
+  "volume" : 892.06734,
+  "quoteAssetVolume" : 205678.0952,
+  "numberOfTrades" : 656,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHUSD",
+  "openTime" : 1593172800000,
+  "openDate" : null,
+  "closeTime" : 1593215999999,
+  "closeDate" : null,
+  "open" : 230.6,
+  "high" : 231.81,
+  "low" : 227.48,
+  "close" : 229.5,
+  "volume" : 1119.09654,
+  "quoteAssetVolume" : 257090.4322,
+  "numberOfTrades" : 767,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHUSD",
+  "openTime" : 1593216000000,
+  "openDate" : null,
+  "closeTime" : 1593259199999,
+  "closeDate" : null,
+  "open" : 229.45,
+  "high" : 230.8,
+  "low" : 228.33,
+  "close" : 229.93,
+  "volume" : 398.38326,
+  "quoteAssetVolume" : 91361.9069,
+  "numberOfTrades" : 403,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHUSD",
+  "openTime" : 1593259200000,
+  "openDate" : null,
+  "closeTime" : 1593302399999,
+  "closeDate" : null,
+  "open" : 229.52,
+  "high" : 229.83,
+  "low" : 216.03,
+  "close" : 220.79,
+  "volume" : 2169.26686,
+  "quoteAssetVolume" : 480603.7286,
+  "numberOfTrades" : 1633,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHUSD",
+  "openTime" : 1593302400000,
+  "openDate" : null,
+  "closeTime" : 1593345599999,
+  "closeDate" : null,
+  "open" : 220.54,
+  "high" : 224.55,
+  "low" : 217.69,
+  "close" : 223.21,
+  "volume" : 1259.15028,
+  "quoteAssetVolume" : 277545.6095,
+  "numberOfTrades" : 720,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHUSD",
+  "openTime" : 1593345600000,
+  "openDate" : null,
+  "closeTime" : 1593388799999,
+  "closeDate" : null,
+  "open" : 223.21,
+  "high" : 228.96,
+  "low" : 222.13,
+  "close" : 224.81,
+  "volume" : 1138.18563,
+  "quoteAssetVolume" : 256708.5422,
+  "numberOfTrades" : 801,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHUSD",
+  "openTime" : 1593388800000,
+  "openDate" : null,
+  "closeTime" : 1593431999999,
+  "closeDate" : null,
+  "open" : 225.04,
+  "high" : 226.67,
+  "low" : 221.0,
+  "close" : 223.49,
+  "volume" : 1273.66649,
+  "quoteAssetVolume" : 284998.461,
+  "numberOfTrades" : 693,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHUSD",
+  "openTime" : 1593432000000,
+  "openDate" : null,
+  "closeTime" : 1593475199999,
+  "closeDate" : null,
+  "open" : 223.49,
+  "high" : 229.95,
+  "low" : 221.48,
+  "close" : 228.2,
+  "volume" : 1229.60191,
+  "quoteAssetVolume" : 277273.3932,
+  "numberOfTrades" : 772,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHUSD",
+  "openTime" : 1593475200000,
+  "openDate" : null,
+  "closeTime" : 1593518399999,
+  "closeDate" : null,
+  "open" : 228.07,
+  "high" : 228.64,
+  "low" : 225.8,
+  "close" : 227.47,
+  "volume" : 557.72028,
+  "quoteAssetVolume" : 126673.5296,
+  "numberOfTrades" : 470,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHUSD",
+  "openTime" : 1593518400000,
+  "openDate" : null,
+  "closeTime" : 1593561599999,
+  "closeDate" : null,
+  "open" : 227.37,
+  "high" : 227.37,
+  "low" : 223.0,
+  "close" : 225.5,
+  "volume" : 935.94361,
+  "quoteAssetVolume" : 210742.036,
+  "numberOfTrades" : 582,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHUSD",
+  "openTime" : 1593561600000,
+  "openDate" : null,
+  "closeTime" : 1593604799999,
+  "closeDate" : null,
+  "open" : 225.51,
+  "high" : 228.81,
+  "low" : 224.19,
+  "close" : 227.63,
+  "volume" : 582.33717,
+  "quoteAssetVolume" : 131604.8481,
+  "numberOfTrades" : 547,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHUSD",
+  "openTime" : 1593604800000,
+  "openDate" : null,
+  "closeTime" : 1593647999999,
+  "closeDate" : null,
+  "open" : 227.8,
+  "high" : 232.69,
+  "low" : 226.97,
+  "close" : 231.13,
+  "volume" : 1731.91341,
+  "quoteAssetVolume" : 399550.3381,
+  "numberOfTrades" : 1034,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHUSD",
+  "openTime" : 1593648000000,
+  "openDate" : null,
+  "closeTime" : 1593691199999,
+  "closeDate" : null,
+  "open" : 231.14,
+  "high" : 232.3,
+  "low" : 227.17,
+  "close" : 228.05,
+  "volume" : 1183.04666,
+  "quoteAssetVolume" : 272395.8089,
+  "numberOfTrades" : 697,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHUSD",
+  "openTime" : 1593691200000,
+  "openDate" : null,
+  "closeTime" : 1593734399999,
+  "closeDate" : null,
+  "open" : 228.07,
+  "high" : 231.17,
+  "low" : 222.76,
+  "close" : 226.61,
+  "volume" : 2576.03997,
+  "quoteAssetVolume" : 584640.9604,
+  "numberOfTrades" : 1424,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHUSD",
+  "openTime" : 1593734400000,
+  "openDate" : null,
+  "closeTime" : 1593777599999,
+  "closeDate" : null,
+  "open" : 226.43,
+  "high" : 228.0,
+  "low" : 225.74,
+  "close" : 227.09,
+  "volume" : 552.26431,
+  "quoteAssetVolume" : 125240.7508,
+  "numberOfTrades" : 502,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHUSD",
+  "openTime" : 1593777600000,
+  "openDate" : null,
+  "closeTime" : 1593820799999,
+  "closeDate" : null,
+  "open" : 227.15,
+  "high" : 228.44,
+  "low" : 224.46,
+  "close" : 224.98,
+  "volume" : 1536.60307,
+  "quoteAssetVolume" : 348503.7772,
+  "numberOfTrades" : 892,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHUSD",
+  "openTime" : 1593820800000,
+  "openDate" : null,
+  "closeTime" : 1593863999999,
+  "closeDate" : null,
+  "open" : 224.84,
+  "high" : 226.82,
+  "low" : 224.84,
+  "close" : 225.59,
+  "volume" : 504.93213,
+  "quoteAssetVolume" : 114109.1224,
+  "numberOfTrades" : 381,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHUSD",
+  "openTime" : 1593864000000,
+  "openDate" : null,
+  "closeTime" : 1593907199999,
+  "closeDate" : null,
+  "open" : 225.57,
+  "high" : 230.76,
+  "low" : 225.19,
+  "close" : 229.25,
+  "volume" : 1408.21976,
+  "quoteAssetVolume" : 320737.583,
+  "numberOfTrades" : 760,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHUSD",
+  "openTime" : 1593907200000,
+  "openDate" : null,
+  "closeTime" : 1593950399999,
+  "closeDate" : null,
+  "open" : 229.56,
+  "high" : 229.85,
+  "low" : 223.46,
+  "close" : 225.14,
+  "volume" : 2006.39527,
+  "quoteAssetVolume" : 456742.4409,
+  "numberOfTrades" : 1143,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHUSD",
+  "openTime" : 1593950400000,
+  "openDate" : null,
+  "closeTime" : 1593993599999,
+  "closeDate" : null,
+  "open" : 225.14,
+  "high" : 228.13,
+  "low" : 223.48,
+  "close" : 228.06,
+  "volume" : 1268.9332,
+  "quoteAssetVolume" : 286537.3059,
+  "numberOfTrades" : 773,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHUSD",
+  "openTime" : 1593993600000,
+  "openDate" : null,
+  "closeTime" : 1594036799999,
+  "closeDate" : null,
+  "open" : 227.55,
+  "high" : 235.93,
+  "low" : 226.86,
+  "close" : 235.86,
+  "volume" : 1643.19379,
+  "quoteAssetVolume" : 378857.0565,
+  "numberOfTrades" : 1040,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHUSD",
+  "openTime" : 1594036800000,
+  "openDate" : null,
+  "closeTime" : 1594079999999,
+  "closeDate" : null,
+  "open" : 235.93,
+  "high" : 241.98,
+  "low" : 234.8,
+  "close" : 241.78,
+  "volume" : 2364.81235,
+  "quoteAssetVolume" : 563794.4429,
+  "numberOfTrades" : 1184,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHUSD",
+  "openTime" : 1594080000000,
+  "openDate" : null,
+  "closeTime" : 1594123199999,
+  "closeDate" : null,
+  "open" : 241.57,
+  "high" : 243.57,
+  "low" : 234.27,
+  "close" : 237.7,
+  "volume" : 1895.73903,
+  "quoteAssetVolume" : 453204.4811,
+  "numberOfTrades" : 1062,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHUSD",
+  "openTime" : 1594123200000,
+  "openDate" : null,
+  "closeTime" : 1594166399999,
+  "closeDate" : null,
+  "open" : 237.64,
+  "high" : 240.24,
+  "low" : 236.19,
+  "close" : 238.95,
+  "volume" : 1879.89311,
+  "quoteAssetVolume" : 447743.1874,
+  "numberOfTrades" : 1004,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHUSD",
+  "openTime" : 1594166400000,
+  "openDate" : null,
+  "closeTime" : 1594209599999,
+  "closeDate" : null,
+  "open" : 239.39,
+  "high" : 244.48,
+  "low" : 237.82,
+  "close" : 244.2,
+  "volume" : 2352.52611,
+  "quoteAssetVolume" : 567261.1519,
+  "numberOfTrades" : 1258,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHUSD",
+  "openTime" : 1594209600000,
+  "openDate" : null,
+  "closeTime" : 1594252799999,
+  "closeDate" : null,
+  "open" : 244.25,
+  "high" : 248.99,
+  "low" : 241.29,
+  "close" : 247.0,
+  "volume" : 2921.05974,
+  "quoteAssetVolume" : 718542.7338,
+  "numberOfTrades" : 1429,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHUSD",
+  "openTime" : 1594252800000,
+  "openDate" : null,
+  "closeTime" : 1594295999999,
+  "closeDate" : null,
+  "open" : 246.74,
+  "high" : 246.92,
+  "low" : 244.6,
+  "close" : 244.98,
+  "volume" : 360.30707,
+  "quoteAssetVolume" : 88467.7799,
+  "numberOfTrades" : 195,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHUSD",
+  "openTime" : 1594296000000,
+  "openDate" : null,
+  "closeTime" : 1594339199999,
+  "closeDate" : null,
+  "open" : 244.79,
+  "high" : 247.56,
+  "low" : 238.0,
+  "close" : 242.1,
+  "volume" : 1934.6835,
+  "quoteAssetVolume" : 467204.9036,
+  "numberOfTrades" : 1187,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHUSD",
+  "openTime" : 1594339200000,
+  "openDate" : null,
+  "closeTime" : 1594382399999,
+  "closeDate" : null,
+  "open" : 242.13,
+  "high" : 242.13,
+  "low" : 236.0,
+  "close" : 237.69,
+  "volume" : 1916.08782,
+  "quoteAssetVolume" : 457715.6502,
+  "numberOfTrades" : 1256,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHUSD",
+  "openTime" : 1594382400000,
+  "openDate" : null,
+  "closeTime" : 1594425599999,
+  "closeDate" : null,
+  "open" : 238.05,
+  "high" : 241.59,
+  "low" : 237.9,
+  "close" : 241.24,
+  "volume" : 1280.40208,
+  "quoteAssetVolume" : 306563.8103,
+  "numberOfTrades" : 802,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHUSD",
+  "openTime" : 1594425600000,
+  "openDate" : null,
+  "closeTime" : 1594468799999,
+  "closeDate" : null,
+  "open" : 241.32,
+  "high" : 241.55,
+  "low" : 237.76,
+  "close" : 238.65,
+  "volume" : 980.83536,
+  "quoteAssetVolume" : 235897.7403,
+  "numberOfTrades" : 678,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHUSD",
+  "openTime" : 1594468800000,
+  "openDate" : null,
+  "closeTime" : 1594511999999,
+  "closeDate" : null,
+  "open" : 238.53,
+  "high" : 240.53,
+  "low" : 237.7,
+  "close" : 239.31,
+  "volume" : 1491.30275,
+  "quoteAssetVolume" : 356777.7888,
+  "numberOfTrades" : 842,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHUSD",
+  "openTime" : 1594512000000,
+  "openDate" : null,
+  "closeTime" : 1594555199999,
+  "closeDate" : null,
+  "open" : 239.31,
+  "high" : 241.54,
+  "low" : 239.25,
+  "close" : 239.8,
+  "volume" : 1065.92915,
+  "quoteAssetVolume" : 256341.4128,
+  "numberOfTrades" : 645,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHUSD",
+  "openTime" : 1594555200000,
+  "openDate" : null,
+  "closeTime" : 1594598399999,
+  "closeDate" : null,
+  "open" : 239.68,
+  "high" : 244.44,
+  "low" : 236.23,
+  "close" : 242.94,
+  "volume" : 2692.37061,
+  "quoteAssetVolume" : 644441.6602,
+  "numberOfTrades" : 1495,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHUSD",
+  "openTime" : 1594598400000,
+  "openDate" : null,
+  "closeTime" : 1594641599999,
+  "closeDate" : null,
+  "open" : 242.76,
+  "high" : 245.06,
+  "low" : 241.32,
+  "close" : 244.67,
+  "volume" : 2114.98864,
+  "quoteAssetVolume" : 512915.9181,
+  "numberOfTrades" : 1404,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHUSD",
+  "openTime" : 1594641600000,
+  "openDate" : null,
+  "closeTime" : 1594684799999,
+  "closeDate" : null,
+  "open" : 244.73,
+  "high" : 245.09,
+  "low" : 237.25,
+  "close" : 239.63,
+  "volume" : 3133.06542,
+  "quoteAssetVolume" : 754651.4971,
+  "numberOfTrades" : 1807,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHUSD",
+  "openTime" : 1594684800000,
+  "openDate" : null,
+  "closeTime" : 1594727999999,
+  "closeDate" : null,
+  "open" : 239.29,
+  "high" : 240.51,
+  "low" : 236.82,
+  "close" : 240.15,
+  "volume" : 928.54477,
+  "quoteAssetVolume" : 221649.2201,
+  "numberOfTrades" : 698,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHUSD",
+  "openTime" : 1594728000000,
+  "openDate" : null,
+  "closeTime" : 1594771199999,
+  "closeDate" : null,
+  "open" : 240.54,
+  "high" : 242.12,
+  "low" : 238.57,
+  "close" : 240.5,
+  "volume" : 2147.65072,
+  "quoteAssetVolume" : 517349.6546,
+  "numberOfTrades" : 1379,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHUSD",
+  "openTime" : 1594771200000,
+  "openDate" : null,
+  "closeTime" : 1594814399999,
+  "closeDate" : null,
+  "open" : 240.51,
+  "high" : 241.36,
+  "low" : 238.04,
+  "close" : 239.07,
+  "volume" : 1430.98692,
+  "quoteAssetVolume" : 342923.099,
+  "numberOfTrades" : 926,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHUSD",
+  "openTime" : 1594814400000,
+  "openDate" : null,
+  "closeTime" : 1594857599999,
+  "closeDate" : null,
+  "open" : 239.02,
+  "high" : 240.0,
+  "low" : 236.7,
+  "close" : 238.51,
+  "volume" : 1166.15139,
+  "quoteAssetVolume" : 278161.3705,
+  "numberOfTrades" : 794,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHUSD",
+  "openTime" : 1594857600000,
+  "openDate" : null,
+  "closeTime" : 1594900799999,
+  "closeDate" : null,
+  "open" : 238.49,
+  "high" : 239.21,
+  "low" : 229.7,
+  "close" : 231.5,
+  "volume" : 1763.85728,
+  "quoteAssetVolume" : 413084.0401,
+  "numberOfTrades" : 1114,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHUSD",
+  "openTime" : 1594900800000,
+  "openDate" : null,
+  "closeTime" : 1594943999999,
+  "closeDate" : null,
+  "open" : 231.32,
+  "high" : 234.33,
+  "low" : 231.32,
+  "close" : 233.55,
+  "volume" : 1693.37316,
+  "quoteAssetVolume" : 394158.3285,
+  "numberOfTrades" : 1087,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHUSD",
+  "openTime" : 1594944000000,
+  "openDate" : null,
+  "closeTime" : 1594987199999,
+  "closeDate" : null,
+  "open" : 233.55,
+  "high" : 234.15,
+  "low" : 231.49,
+  "close" : 233.14,
+  "volume" : 829.11897,
+  "quoteAssetVolume" : 193273.0637,
+  "numberOfTrades" : 606,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHUSD",
+  "openTime" : 1594987200000,
+  "openDate" : null,
+  "closeTime" : 1595030399999,
+  "closeDate" : null,
+  "open" : 233.35,
+  "high" : 234.53,
+  "low" : 232.47,
+  "close" : 232.98,
+  "volume" : 1247.35785,
+  "quoteAssetVolume" : 291036.9474,
+  "numberOfTrades" : 860,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHUSD",
+  "openTime" : 1595030400000,
+  "openDate" : null,
+  "closeTime" : 1595073599999,
+  "closeDate" : null,
+  "open" : 232.8,
+  "high" : 235.7,
+  "low" : 232.36,
+  "close" : 234.94,
+  "volume" : 1025.7092,
+  "quoteAssetVolume" : 239734.6237,
+  "numberOfTrades" : 675,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHUSD",
+  "openTime" : 1595073600000,
+  "openDate" : null,
+  "closeTime" : 1595116799999,
+  "closeDate" : null,
+  "open" : 235.08,
+  "high" : 236.93,
+  "low" : 234.33,
+  "close" : 235.88,
+  "volume" : 1547.73555,
+  "quoteAssetVolume" : 364551.9156,
+  "numberOfTrades" : 906,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHUSD",
+  "openTime" : 1595116800000,
+  "openDate" : null,
+  "closeTime" : 1595159999999,
+  "closeDate" : null,
+  "open" : 235.79,
+  "high" : 236.4,
+  "low" : 233.5,
+  "close" : 233.89,
+  "volume" : 681.98158,
+  "quoteAssetVolume" : 160232.0545,
+  "numberOfTrades" : 490,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHUSD",
+  "openTime" : 1595160000000,
+  "openDate" : null,
+  "closeTime" : 1595203199999,
+  "closeDate" : null,
+  "open" : 233.87,
+  "high" : 239.9,
+  "low" : 233.44,
+  "close" : 239.12,
+  "volume" : 2625.51616,
+  "quoteAssetVolume" : 620168.6629,
+  "numberOfTrades" : 1256,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHUSD",
+  "openTime" : 1595203200000,
+  "openDate" : null,
+  "closeTime" : 1595246399999,
+  "closeDate" : null,
+  "open" : 239.12,
+  "high" : 239.88,
+  "low" : 237.36,
+  "close" : 237.81,
+  "volume" : 1691.72545,
+  "quoteAssetVolume" : 404239.8206,
+  "numberOfTrades" : 1181,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHUSD",
+  "openTime" : 1595246400000,
+  "openDate" : null,
+  "closeTime" : 1595289599999,
+  "closeDate" : null,
+  "open" : 237.8,
+  "high" : 238.95,
+  "low" : 233.6,
+  "close" : 236.18,
+  "volume" : 3861.35241,
+  "quoteAssetVolume" : 913399.7363,
+  "numberOfTrades" : 1425,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHUSD",
+  "openTime" : 1595289600000,
+  "openDate" : null,
+  "closeTime" : 1595332799999,
+  "closeDate" : null,
+  "open" : 235.99,
+  "high" : 243.5,
+  "low" : 235.64,
+  "close" : 243.13,
+  "volume" : 1900.78528,
+  "quoteAssetVolume" : 454961.1394,
+  "numberOfTrades" : 1154,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHUSD",
+  "openTime" : 1595332800000,
+  "openDate" : null,
+  "closeTime" : 1595375999999,
+  "closeDate" : null,
+  "open" : 243.62,
+  "high" : 246.95,
+  "low" : 243.18,
+  "close" : 245.8,
+  "volume" : 3574.53543,
+  "quoteAssetVolume" : 874856.9966,
+  "numberOfTrades" : 1719,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHUSD",
+  "openTime" : 1595376000000,
+  "openDate" : null,
+  "closeTime" : 1595419199999,
+  "closeDate" : null,
+  "open" : 245.61,
+  "high" : 246.04,
+  "low" : 241.81,
+  "close" : 244.48,
+  "volume" : 1295.32737,
+  "quoteAssetVolume" : 316499.6064,
+  "numberOfTrades" : 1055,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHUSD",
+  "openTime" : 1595419200000,
+  "openDate" : null,
+  "closeTime" : 1595462399999,
+  "closeDate" : null,
+  "open" : 244.29,
+  "high" : 269.63,
+  "low" : 243.16,
+  "close" : 264.5,
+  "volume" : 5341.71396,
+  "quoteAssetVolume" : 1370262.6048,
+  "numberOfTrades" : 2989,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHUSD",
+  "openTime" : 1595462400000,
+  "openDate" : null,
+  "closeTime" : 1595505599999,
+  "closeDate" : null,
+  "open" : 264.76,
+  "high" : 267.0,
+  "low" : 259.94,
+  "close" : 264.51,
+  "volume" : 3407.79022,
+  "quoteAssetVolume" : 900316.5692,
+  "numberOfTrades" : 1610,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHUSD",
+  "openTime" : 1595505600000,
+  "openDate" : null,
+  "closeTime" : 1595548799999,
+  "closeDate" : null,
+  "open" : 264.7,
+  "high" : 280.15,
+  "low" : 262.37,
+  "close" : 275.86,
+  "volume" : 7551.3257,
+  "quoteAssetVolume" : 2056916.1277,
+  "numberOfTrades" : 3747,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHUSD",
+  "openTime" : 1595548800000,
+  "openDate" : null,
+  "closeTime" : 1595591999999,
+  "closeDate" : null,
+  "open" : 275.33,
+  "high" : 276.64,
+  "low" : 268.52,
+  "close" : 275.45,
+  "volume" : 2706.2257,
+  "quoteAssetVolume" : 740180.6418,
+  "numberOfTrades" : 1394,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHUSD",
+  "openTime" : 1595592000000,
+  "openDate" : null,
+  "closeTime" : 1595635199999,
+  "closeDate" : null,
+  "open" : 275.4,
+  "high" : 288.06,
+  "low" : 272.62,
+  "close" : 279.78,
+  "volume" : 7629.87758,
+  "quoteAssetVolume" : 2139401.8547,
+  "numberOfTrades" : 4884,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHUSD",
+  "openTime" : 1595635200000,
+  "openDate" : null,
+  "closeTime" : 1595678399999,
+  "closeDate" : null,
+  "open" : 279.8,
+  "high" : 286.25,
+  "low" : 279.66,
+  "close" : 283.08,
+  "volume" : 3082.69809,
+  "quoteAssetVolume" : 873043.2222,
+  "numberOfTrades" : 1718,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHUSD",
+  "openTime" : 1595678400000,
+  "openDate" : null,
+  "closeTime" : 1595721599999,
+  "closeDate" : null,
+  "open" : 283.06,
+  "high" : 309.52,
+  "low" : 282.45,
+  "close" : 305.95,
+  "volume" : 14162.66821,
+  "quoteAssetVolume" : 4187775.0889,
+  "numberOfTrades" : 6634,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHUSD",
+  "openTime" : 1595721600000,
+  "openDate" : null,
+  "closeTime" : 1595764799999,
+  "closeDate" : null,
+  "open" : 305.95,
+  "high" : 320.07,
+  "low" : 299.84,
+  "close" : 309.48,
+  "volume" : 7174.9733,
+  "quoteAssetVolume" : 2213420.9319,
+  "numberOfTrades" : 3821,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHUSD",
+  "openTime" : 1595764800000,
+  "openDate" : null,
+  "closeTime" : 1595807999999,
+  "closeDate" : null,
+  "open" : 309.63,
+  "high" : 314.28,
+  "low" : 302.39,
+  "close" : 311.49,
+  "volume" : 6701.27861,
+  "quoteAssetVolume" : 2075069.2531,
+  "numberOfTrades" : 3697,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHUSD",
+  "openTime" : 1595808000000,
+  "openDate" : null,
+  "closeTime" : 1595851199999,
+  "closeDate" : null,
+  "open" : 311.34,
+  "high" : 329.9,
+  "low" : 311.28,
+  "close" : 325.29,
+  "volume" : 9608.52237,
+  "quoteAssetVolume" : 3104858.4353,
+  "numberOfTrades" : 5045,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHUSD",
+  "openTime" : 1595851200000,
+  "openDate" : null,
+  "closeTime" : 1595894399999,
+  "closeDate" : null,
+  "open" : 325.76,
+  "high" : 334.11,
+  "low" : 311.33,
+  "close" : 322.3,
+  "volume" : 11677.08726,
+  "quoteAssetVolume" : 3761923.8283,
+  "numberOfTrades" : 6221,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHUSD",
+  "openTime" : 1595894400000,
+  "openDate" : null,
+  "closeTime" : 1595937599999,
+  "closeDate" : null,
+  "open" : 322.73,
+  "high" : 326.98,
+  "low" : 306.23,
+  "close" : 317.15,
+  "volume" : 5106.25436,
+  "quoteAssetVolume" : 1620910.3717,
+  "numberOfTrades" : 2580,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHUSD",
+  "openTime" : 1595937600000,
+  "openDate" : null,
+  "closeTime" : 1595980799999,
+  "closeDate" : null,
+  "open" : 317.16,
+  "high" : 323.91,
+  "low" : 311.16,
+  "close" : 317.22,
+  "volume" : 3580.91112,
+  "quoteAssetVolume" : 1139443.772,
+  "numberOfTrades" : 2893,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHUSD",
+  "openTime" : 1595980800000,
+  "openDate" : null,
+  "closeTime" : 1596023999999,
+  "closeDate" : null,
+  "open" : 317.88,
+  "high" : 325.32,
+  "low" : 313.0,
+  "close" : 323.17,
+  "volume" : 3382.8339,
+  "quoteAssetVolume" : 1077267.197,
+  "numberOfTrades" : 2360,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHUSD",
+  "openTime" : 1596024000000,
+  "openDate" : null,
+  "closeTime" : 1596067199999,
+  "closeDate" : null,
+  "open" : 323.21,
+  "high" : 325.25,
+  "low" : 319.15,
+  "close" : 324.0,
+  "volume" : 3016.52874,
+  "quoteAssetVolume" : 973359.6975,
+  "numberOfTrades" : 1604,
+  "rsi" : 0.0
 } ]

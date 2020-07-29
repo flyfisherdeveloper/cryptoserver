@@ -1,0 +1,29 @@
+[ {
+  "symbol" : "WTCBNB",
+  "openTime" : 1595980800000,
+  "openDate" : null,
+  "closeTime" : 1596023999999,
+  "closeDate" : null,
+  "open" : 0.02199,
+  "high" : 0.02232,
+  "low" : 0.02143,
+  "close" : 0.0219,
+  "volume" : 6114.3,
+  "quoteAssetVolume" : 132.994596,
+  "numberOfTrades" : 99,
+  "rsi" : 0.0
+}, {
+  "symbol" : "WTCBNB",
+  "openTime" : 1596024000000,
+  "openDate" : null,
+  "closeTime" : 1596067199999,
+  "closeDate" : null,
+  "open" : 0.02202,
+  "high" : 0.02202,
+  "low" : 0.02115,
+  "close" : 0.02116,
+  "volume" : 8121.4,
+  "quoteAssetVolume" : 175.737793,
+  "numberOfTrades" : 106,
+  "rsi" : 0.0
+} ]

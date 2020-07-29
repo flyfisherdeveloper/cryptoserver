@@ -1,1253 +1,5 @@
 [ {
   "symbol" : "LTCBTC",
-  "openTime" : 1576195200000,
-  "openDate" : null,
-  "closeTime" : 1576238399999,
-  "closeDate" : null,
-  "open" : 0.006065,
-  "high" : 0.006081,
-  "low" : 0.006024,
-  "close" : 0.006062,
-  "volume" : 29634.39,
-  "quoteAssetVolume" : 179.37644656,
-  "numberOfTrades" : 5485
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1576238400000,
-  "openDate" : null,
-  "closeTime" : 1576281599999,
-  "closeDate" : null,
-  "open" : 0.006057,
-  "high" : 0.006131,
-  "low" : 0.006041,
-  "close" : 0.006125,
-  "volume" : 25740.15,
-  "quoteAssetVolume" : 156.87514,
-  "numberOfTrades" : 5188
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1576281600000,
-  "openDate" : null,
-  "closeTime" : 1576324799999,
-  "closeDate" : null,
-  "open" : 0.006125,
-  "high" : 0.006146,
-  "low" : 0.006084,
-  "close" : 0.006092,
-  "volume" : 17914.35,
-  "quoteAssetVolume" : 109.52325927,
-  "numberOfTrades" : 4154
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1576324800000,
-  "openDate" : null,
-  "closeTime" : 1576367999999,
-  "closeDate" : null,
-  "open" : 0.006093,
-  "high" : 0.006184,
-  "low" : 0.006091,
-  "close" : 0.006121,
-  "volume" : 30321.36,
-  "quoteAssetVolume" : 186.09394905,
-  "numberOfTrades" : 6486
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1576368000000,
-  "openDate" : null,
-  "closeTime" : 1576411199999,
-  "closeDate" : null,
-  "open" : 0.006125,
-  "high" : 0.006153,
-  "low" : 0.006105,
-  "close" : 0.006123,
-  "volume" : 22031.46,
-  "quoteAssetVolume" : 135.01865882,
-  "numberOfTrades" : 4630
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1576411200000,
-  "openDate" : null,
-  "closeTime" : 1576454399999,
-  "closeDate" : null,
-  "open" : 0.006123,
-  "high" : 0.006129,
-  "low" : 0.006095,
-  "close" : 0.006107,
-  "volume" : 16568.96,
-  "quoteAssetVolume" : 101.29375742,
-  "numberOfTrades" : 3868
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1576454400000,
-  "openDate" : null,
-  "closeTime" : 1576497599999,
-  "closeDate" : null,
-  "open" : 0.006107,
-  "high" : 0.006125,
-  "low" : 0.00603,
-  "close" : 0.006054,
-  "volume" : 28827.63,
-  "quoteAssetVolume" : 175.18224448,
-  "numberOfTrades" : 5778
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1576497600000,
-  "openDate" : null,
-  "closeTime" : 1576540799999,
-  "closeDate" : null,
-  "open" : 0.006051,
-  "high" : 0.006058,
-  "low" : 0.005665,
-  "close" : 0.005801,
-  "volume" : 125007.96,
-  "quoteAssetVolume" : 727.93602949,
-  "numberOfTrades" : 21119
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1576540800000,
-  "openDate" : null,
-  "closeTime" : 1576583999999,
-  "closeDate" : null,
-  "open" : 0.005804,
-  "high" : 0.005817,
-  "low" : 0.005722,
-  "close" : 0.005725,
-  "volume" : 34920.95,
-  "quoteAssetVolume" : 201.2638081,
-  "numberOfTrades" : 7308
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1576584000000,
-  "openDate" : null,
-  "closeTime" : 1576627199999,
-  "closeDate" : null,
-  "open" : 0.005725,
-  "high" : 0.005812,
-  "low" : 0.00551,
-  "close" : 0.005575,
-  "volume" : 176415.32,
-  "quoteAssetVolume" : 999.13021134,
-  "numberOfTrades" : 24694
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1576627200000,
-  "openDate" : null,
-  "closeTime" : 1576670399999,
-  "closeDate" : null,
-  "open" : 0.005575,
-  "high" : 0.005678,
-  "low" : 0.005538,
-  "close" : 0.005603,
-  "volume" : 57690.59,
-  "quoteAssetVolume" : 323.54953575,
-  "numberOfTrades" : 10781
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1576670400000,
-  "openDate" : null,
-  "closeTime" : 1576713599999,
-  "closeDate" : null,
-  "open" : 0.005604,
-  "high" : 0.005816,
-  "low" : 0.005547,
-  "close" : 0.005608,
-  "volume" : 117318.4,
-  "quoteAssetVolume" : 668.01199048,
-  "numberOfTrades" : 24336
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1576713600000,
-  "openDate" : null,
-  "closeTime" : 1576756799999,
-  "closeDate" : null,
-  "open" : 0.005604,
-  "high" : 0.005659,
-  "low" : 0.005524,
-  "close" : 0.005574,
-  "volume" : 45455.53,
-  "quoteAssetVolume" : 253.57882302,
-  "numberOfTrades" : 9956
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1576756800000,
-  "openDate" : null,
-  "closeTime" : 1576799999999,
-  "closeDate" : null,
-  "open" : 0.00557,
-  "high" : 0.00561,
-  "low" : 0.005501,
-  "close" : 0.005547,
-  "volume" : 41569.13,
-  "quoteAssetVolume" : 230.83551178,
-  "numberOfTrades" : 8441
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1576800000000,
-  "openDate" : null,
-  "closeTime" : 1576843199999,
-  "closeDate" : null,
-  "open" : 0.005548,
-  "high" : 0.00561,
-  "low" : 0.005541,
-  "close" : 0.005603,
-  "volume" : 19371.71,
-  "quoteAssetVolume" : 107.96052154,
-  "numberOfTrades" : 5039
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1576843200000,
-  "openDate" : null,
-  "closeTime" : 1576886399999,
-  "closeDate" : null,
-  "open" : 0.005605,
-  "high" : 0.005645,
-  "low" : 0.005547,
-  "close" : 0.005588,
-  "volume" : 30470.3,
-  "quoteAssetVolume" : 170.27801294,
-  "numberOfTrades" : 6515
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1576886400000,
-  "openDate" : null,
-  "closeTime" : 1576929599999,
-  "closeDate" : null,
-  "open" : 0.005588,
-  "high" : 0.005604,
-  "low" : 0.005543,
-  "close" : 0.005579,
-  "volume" : 16811.73,
-  "quoteAssetVolume" : 93.67937377,
-  "numberOfTrades" : 4125
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1576929600000,
-  "openDate" : null,
-  "closeTime" : 1576972799999,
-  "closeDate" : null,
-  "open" : 0.005579,
-  "high" : 0.005595,
-  "low" : 0.005538,
-  "close" : 0.005559,
-  "volume" : 17826.58,
-  "quoteAssetVolume" : 99.24080466,
-  "numberOfTrades" : 4120
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1576972800000,
-  "openDate" : null,
-  "closeTime" : 1577015999999,
-  "closeDate" : null,
-  "open" : 0.005558,
-  "high" : 0.00575,
-  "low" : 0.005555,
-  "close" : 0.005703,
-  "volume" : 33134.3,
-  "quoteAssetVolume" : 188.10370757,
-  "numberOfTrades" : 6808
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1577016000000,
-  "openDate" : null,
-  "closeTime" : 1577059199999,
-  "closeDate" : null,
-  "open" : 0.005706,
-  "high" : 0.005745,
-  "low" : 0.005575,
-  "close" : 0.005578,
-  "volume" : 37247.74,
-  "quoteAssetVolume" : 211.44379345,
-  "numberOfTrades" : 8757
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1577059200000,
-  "openDate" : null,
-  "closeTime" : 1577102399999,
-  "closeDate" : null,
-  "open" : 0.005578,
-  "high" : 0.005609,
-  "low" : 0.005517,
-  "close" : 0.005576,
-  "volume" : 35017.29,
-  "quoteAssetVolume" : 194.78676771,
-  "numberOfTrades" : 7414
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1577102400000,
-  "openDate" : null,
-  "closeTime" : 1577145599999,
-  "closeDate" : null,
-  "open" : 0.005576,
-  "high" : 0.00563,
-  "low" : 0.0055,
-  "close" : 0.005542,
-  "volume" : 47411.96,
-  "quoteAssetVolume" : 263.74433964,
-  "numberOfTrades" : 9204
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1577145600000,
-  "openDate" : null,
-  "closeTime" : 1577188799999,
-  "closeDate" : null,
-  "open" : 0.005546,
-  "high" : 0.005597,
-  "low" : 0.005515,
-  "close" : 0.005558,
-  "volume" : 23016.44,
-  "quoteAssetVolume" : 127.78529671,
-  "numberOfTrades" : 5050
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1577188800000,
-  "openDate" : null,
-  "closeTime" : 1577231999999,
-  "closeDate" : null,
-  "open" : 0.005554,
-  "high" : 0.005627,
-  "low" : 0.00549,
-  "close" : 0.005559,
-  "volume" : 41528.35,
-  "quoteAssetVolume" : 230.65998263,
-  "numberOfTrades" : 9332
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1577232000000,
-  "openDate" : null,
-  "closeTime" : 1577275199999,
-  "closeDate" : null,
-  "open" : 0.00556,
-  "high" : 0.005565,
-  "low" : 0.005507,
-  "close" : 0.005519,
-  "volume" : 15416.21,
-  "quoteAssetVolume" : 85.26918455,
-  "numberOfTrades" : 3647
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1577275200000,
-  "openDate" : null,
-  "closeTime" : 1577318399999,
-  "closeDate" : null,
-  "open" : 0.005519,
-  "high" : 0.005603,
-  "low" : 0.005486,
-  "close" : 0.005568,
-  "volume" : 28573.59,
-  "quoteAssetVolume" : 158.77598988,
-  "numberOfTrades" : 6211
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1577318400000,
-  "openDate" : null,
-  "closeTime" : 1577361599999,
-  "closeDate" : null,
-  "open" : 0.005569,
-  "high" : 0.005573,
-  "low" : 0.005514,
-  "close" : 0.005532,
-  "volume" : 18070.91,
-  "quoteAssetVolume" : 100.06831607,
-  "numberOfTrades" : 4228
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1577361600000,
-  "openDate" : null,
-  "closeTime" : 1577404799999,
-  "closeDate" : null,
-  "open" : 0.005532,
-  "high" : 0.005638,
-  "low" : 0.005508,
-  "close" : 0.005557,
-  "volume" : 43345.55,
-  "quoteAssetVolume" : 241.43240048,
-  "numberOfTrades" : 9055
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1577404800000,
-  "openDate" : null,
-  "closeTime" : 1577447999999,
-  "closeDate" : null,
-  "open" : 0.005552,
-  "high" : 0.005666,
-  "low" : 0.005541,
-  "close" : 0.00561,
-  "volume" : 26624.03,
-  "quoteAssetVolume" : 149.08185041,
-  "numberOfTrades" : 5748
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1577448000000,
-  "openDate" : null,
-  "closeTime" : 1577491199999,
-  "closeDate" : null,
-  "open" : 0.005607,
-  "high" : 0.005701,
-  "low" : 0.005563,
-  "close" : 0.005647,
-  "volume" : 55103.98,
-  "quoteAssetVolume" : 311.38576092,
-  "numberOfTrades" : 9060
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1577491200000,
-  "openDate" : null,
-  "closeTime" : 1577534399999,
-  "closeDate" : null,
-  "open" : 0.005647,
-  "high" : 0.005803,
-  "low" : 0.005644,
-  "close" : 0.005753,
-  "volume" : 50218.19,
-  "quoteAssetVolume" : 288.22258191,
-  "numberOfTrades" : 10068
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1577534400000,
-  "openDate" : null,
-  "closeTime" : 1577577599999,
-  "closeDate" : null,
-  "open" : 0.005753,
-  "high" : 0.005951,
-  "low" : 0.005747,
-  "close" : 0.005857,
-  "volume" : 83560.66,
-  "quoteAssetVolume" : 489.49431469,
-  "numberOfTrades" : 13955
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1577577600000,
-  "openDate" : null,
-  "closeTime" : 1577620799999,
-  "closeDate" : null,
-  "open" : 0.005855,
-  "high" : 0.005879,
-  "low" : 0.005773,
-  "close" : 0.005836,
-  "volume" : 57020.09,
-  "quoteAssetVolume" : 331.61754528,
-  "numberOfTrades" : 9552
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1577620800000,
-  "openDate" : null,
-  "closeTime" : 1577663999999,
-  "closeDate" : null,
-  "open" : 0.005835,
-  "high" : 0.005895,
-  "low" : 0.005772,
-  "close" : 0.005833,
-  "volume" : 66996.25,
-  "quoteAssetVolume" : 390.83110762,
-  "numberOfTrades" : 13220
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1577664000000,
-  "openDate" : null,
-  "closeTime" : 1577707199999,
-  "closeDate" : null,
-  "open" : 0.00583,
-  "high" : 0.005967,
-  "low" : 0.005822,
-  "close" : 0.005885,
-  "volume" : 52470.16,
-  "quoteAssetVolume" : 309.02142452,
-  "numberOfTrades" : 9225
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1577707200000,
-  "openDate" : null,
-  "closeTime" : 1577750399999,
-  "closeDate" : null,
-  "open" : 0.005887,
-  "high" : 0.005913,
-  "low" : 0.005791,
-  "close" : 0.00585,
-  "volume" : 50891.48,
-  "quoteAssetVolume" : 296.68984044,
-  "numberOfTrades" : 9052
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1577750400000,
-  "openDate" : null,
-  "closeTime" : 1577793599999,
-  "closeDate" : null,
-  "open" : 0.00585,
-  "high" : 0.005884,
-  "low" : 0.005828,
-  "close" : 0.005839,
-  "volume" : 18891.41,
-  "quoteAssetVolume" : 110.58344068,
-  "numberOfTrades" : 5115
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1577793600000,
-  "openDate" : null,
-  "closeTime" : 1577836799999,
-  "closeDate" : null,
-  "open" : 0.005837,
-  "high" : 0.00588,
-  "low" : 0.005728,
-  "close" : 0.005741,
-  "volume" : 46764.13,
-  "quoteAssetVolume" : 270.540842,
-  "numberOfTrades" : 9192
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1577836800000,
-  "openDate" : null,
-  "closeTime" : 1577879999999,
-  "closeDate" : null,
-  "open" : 0.005739,
-  "high" : 0.005805,
-  "low" : 0.005729,
-  "close" : 0.005777,
-  "volume" : 17850.2,
-  "quoteAssetVolume" : 103.01073307,
-  "numberOfTrades" : 4597
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1577880000000,
-  "openDate" : null,
-  "closeTime" : 1577923199999,
-  "closeDate" : null,
-  "open" : 0.005779,
-  "high" : 0.005812,
-  "low" : 0.005744,
-  "close" : 0.005779,
-  "volume" : 21844.0,
-  "quoteAssetVolume" : 126.23312849,
-  "numberOfTrades" : 5485
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1577923200000,
-  "openDate" : null,
-  "closeTime" : 1577966399999,
-  "closeDate" : null,
-  "open" : 0.005777,
-  "high" : 0.005806,
-  "low" : 0.005767,
-  "close" : 0.005798,
-  "volume" : 15143.59,
-  "quoteAssetVolume" : 87.61905346,
-  "numberOfTrades" : 3644
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1577966400000,
-  "openDate" : null,
-  "closeTime" : 1578009599999,
-  "closeDate" : null,
-  "open" : 0.005798,
-  "high" : 0.005805,
-  "low" : 0.005626,
-  "close" : 0.00566,
-  "volume" : 51306.81,
-  "quoteAssetVolume" : 292.29515458,
-  "numberOfTrades" : 9268
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1578009600000,
-  "openDate" : null,
-  "closeTime" : 1578052799999,
-  "closeDate" : null,
-  "open" : 0.00566,
-  "high" : 0.005739,
-  "low" : 0.005585,
-  "close" : 0.005704,
-  "volume" : 70416.12,
-  "quoteAssetVolume" : 397.8298866,
-  "numberOfTrades" : 12933
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1578052800000,
-  "openDate" : null,
-  "closeTime" : 1578095999999,
-  "closeDate" : null,
-  "open" : 0.005704,
-  "high" : 0.005754,
-  "low" : 0.005677,
-  "close" : 0.00575,
-  "volume" : 38288.93,
-  "quoteAssetVolume" : 218.62714094,
-  "numberOfTrades" : 8190
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1578096000000,
-  "openDate" : null,
-  "closeTime" : 1578139199999,
-  "closeDate" : null,
-  "open" : 0.005747,
-  "high" : 0.005824,
-  "low" : 0.005713,
-  "close" : 0.005793,
-  "volume" : 50483.93,
-  "quoteAssetVolume" : 291.24366917,
-  "numberOfTrades" : 7585
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1578139200000,
-  "openDate" : null,
-  "closeTime" : 1578182399999,
-  "closeDate" : null,
-  "open" : 0.005794,
-  "high" : 0.005828,
-  "low" : 0.005726,
-  "close" : 0.005818,
-  "volume" : 51216.64,
-  "quoteAssetVolume" : 296.32763387,
-  "numberOfTrades" : 8362
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1578182400000,
-  "openDate" : null,
-  "closeTime" : 1578225599999,
-  "closeDate" : null,
-  "open" : 0.005817,
-  "high" : 0.005841,
-  "low" : 0.00574,
-  "close" : 0.005788,
-  "volume" : 30481.65,
-  "quoteAssetVolume" : 176.12936297,
-  "numberOfTrades" : 6706
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1578225600000,
-  "openDate" : null,
-  "closeTime" : 1578268799999,
-  "closeDate" : null,
-  "open" : 0.005788,
-  "high" : 0.00597,
-  "low" : 0.005778,
-  "close" : 0.005884,
-  "volume" : 75550.68,
-  "quoteAssetVolume" : 444.44905316,
-  "numberOfTrades" : 12498
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1578268800000,
-  "openDate" : null,
-  "closeTime" : 1578311999999,
-  "closeDate" : null,
-  "open" : 0.005884,
-  "high" : 0.006,
-  "low" : 0.005865,
-  "close" : 0.005947,
-  "volume" : 65222.21,
-  "quoteAssetVolume" : 386.80365673,
-  "numberOfTrades" : 10140
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1578312000000,
-  "openDate" : null,
-  "closeTime" : 1578355199999,
-  "closeDate" : null,
-  "open" : 0.005948,
-  "high" : 0.005999,
-  "low" : 0.005852,
-  "close" : 0.005905,
-  "volume" : 69546.17,
-  "quoteAssetVolume" : 412.2896739,
-  "numberOfTrades" : 12799
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1578355200000,
-  "openDate" : null,
-  "closeTime" : 1578398399999,
-  "closeDate" : null,
-  "open" : 0.005905,
-  "high" : 0.005905,
-  "low" : 0.005694,
-  "close" : 0.005757,
-  "volume" : 63775.02,
-  "quoteAssetVolume" : 367.40434918,
-  "numberOfTrades" : 11201
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1578398400000,
-  "openDate" : null,
-  "closeTime" : 1578441599999,
-  "closeDate" : null,
-  "open" : 0.005755,
-  "high" : 0.005865,
-  "low" : 0.005672,
-  "close" : 0.005684,
-  "volume" : 129856.1,
-  "quoteAssetVolume" : 747.15525294,
-  "numberOfTrades" : 20803
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1578441600000,
-  "openDate" : null,
-  "closeTime" : 1578484799999,
-  "closeDate" : null,
-  "open" : 0.005684,
-  "high" : 0.005775,
-  "low" : 0.005583,
-  "close" : 0.005724,
-  "volume" : 107079.23,
-  "quoteAssetVolume" : 611.7404683,
-  "numberOfTrades" : 16111
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1578484800000,
-  "openDate" : null,
-  "closeTime" : 1578527999999,
-  "closeDate" : null,
-  "open" : 0.005723,
-  "high" : 0.00575,
-  "low" : 0.005467,
-  "close" : 0.00563,
-  "volume" : 128858.47,
-  "quoteAssetVolume" : 722.80740535,
-  "numberOfTrades" : 20878
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1578528000000,
-  "openDate" : null,
-  "closeTime" : 1578571199999,
-  "closeDate" : null,
-  "open" : 0.005629,
-  "high" : 0.005733,
-  "low" : 0.005629,
-  "close" : 0.005714,
-  "volume" : 40174.05,
-  "quoteAssetVolume" : 228.86296495,
-  "numberOfTrades" : 8062
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1578571200000,
-  "openDate" : null,
-  "closeTime" : 1578614399999,
-  "closeDate" : null,
-  "open" : 0.005713,
-  "high" : 0.00575,
-  "low" : 0.005612,
-  "close" : 0.005724,
-  "volume" : 56833.79,
-  "quoteAssetVolume" : 322.83061067,
-  "numberOfTrades" : 10715
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1578614400000,
-  "openDate" : null,
-  "closeTime" : 1578657599999,
-  "closeDate" : null,
-  "open" : 0.005724,
-  "high" : 0.005802,
-  "low" : 0.005695,
-  "close" : 0.005777,
-  "volume" : 45257.36,
-  "quoteAssetVolume" : 259.72687902,
-  "numberOfTrades" : 7941
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1578657600000,
-  "openDate" : null,
-  "closeTime" : 1578700799999,
-  "closeDate" : null,
-  "open" : 0.005776,
-  "high" : 0.00614,
-  "low" : 0.005753,
-  "close" : 0.005983,
-  "volume" : 281642.56,
-  "quoteAssetVolume" : 1683.65879157,
-  "numberOfTrades" : 40447
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1578700800000,
-  "openDate" : null,
-  "closeTime" : 1578743999999,
-  "closeDate" : null,
-  "open" : 0.005983,
-  "high" : 0.006119,
-  "low" : 0.005946,
-  "close" : 0.005991,
-  "volume" : 133428.12,
-  "quoteAssetVolume" : 803.46869715,
-  "numberOfTrades" : 21129
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1578744000000,
-  "openDate" : null,
-  "closeTime" : 1578787199999,
-  "closeDate" : null,
-  "open" : 0.005992,
-  "high" : 0.006342,
-  "low" : 0.005989,
-  "close" : 0.006148,
-  "volume" : 198105.33,
-  "quoteAssetVolume" : 1230.91719892,
-  "numberOfTrades" : 30543
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1578787200000,
-  "openDate" : null,
-  "closeTime" : 1578830399999,
-  "closeDate" : null,
-  "open" : 0.006152,
-  "high" : 0.006385,
-  "low" : 0.006126,
-  "close" : 0.00618,
-  "volume" : 168565.73,
-  "quoteAssetVolume" : 1053.65294583,
-  "numberOfTrades" : 22887
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1578830400000,
-  "openDate" : null,
-  "closeTime" : 1578873599999,
-  "closeDate" : null,
-  "open" : 0.006182,
-  "high" : 0.0063,
-  "low" : 0.006143,
-  "close" : 0.006285,
-  "volume" : 104143.22,
-  "quoteAssetVolume" : 647.38840468,
-  "numberOfTrades" : 16790
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1578873600000,
-  "openDate" : null,
-  "closeTime" : 1578916799999,
-  "closeDate" : null,
-  "open" : 0.006285,
-  "high" : 0.006296,
-  "low" : 0.00611,
-  "close" : 0.006196,
-  "volume" : 98964.86,
-  "quoteAssetVolume" : 612.84383563,
-  "numberOfTrades" : 14015
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1578916800000,
-  "openDate" : null,
-  "closeTime" : 1578959999999,
-  "closeDate" : null,
-  "open" : 0.006196,
-  "high" : 0.006209,
-  "low" : 0.006061,
-  "close" : 0.006118,
-  "volume" : 83008.05,
-  "quoteAssetVolume" : 507.68086224,
-  "numberOfTrades" : 12432
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1578960000000,
-  "openDate" : null,
-  "closeTime" : 1579003199999,
-  "closeDate" : null,
-  "open" : 0.006115,
-  "high" : 0.006417,
-  "low" : 0.006113,
-  "close" : 0.006367,
-  "volume" : 161296.57,
-  "quoteAssetVolume" : 1013.49816575,
-  "numberOfTrades" : 27359
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1579003200000,
-  "openDate" : null,
-  "closeTime" : 1579046399999,
-  "closeDate" : null,
-  "open" : 0.006367,
-  "high" : 0.006869,
-  "low" : 0.006303,
-  "close" : 0.006625,
-  "volume" : 454807.2,
-  "quoteAssetVolume" : 2987.0298562,
-  "numberOfTrades" : 73229
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1579046400000,
-  "openDate" : null,
-  "closeTime" : 1579089599999,
-  "closeDate" : null,
-  "open" : 0.006621,
-  "high" : 0.006823,
-  "low" : 0.00645,
-  "close" : 0.006614,
-  "volume" : 232951.23,
-  "quoteAssetVolume" : 1551.96842171,
-  "numberOfTrades" : 39483
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1579089600000,
-  "openDate" : null,
-  "closeTime" : 1579132799999,
-  "closeDate" : null,
-  "open" : 0.006614,
-  "high" : 0.006709,
-  "low" : 0.00647,
-  "close" : 0.006591,
-  "volume" : 154699.26,
-  "quoteAssetVolume" : 1019.11135912,
-  "numberOfTrades" : 27377
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1579132800000,
-  "openDate" : null,
-  "closeTime" : 1579175999999,
-  "closeDate" : null,
-  "open" : 0.006594,
-  "high" : 0.006604,
-  "low" : 0.006351,
-  "close" : 0.006489,
-  "volume" : 98986.79,
-  "quoteAssetVolume" : 639.29770982,
-  "numberOfTrades" : 19389
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1579176000000,
-  "openDate" : null,
-  "closeTime" : 1579219199999,
-  "closeDate" : null,
-  "open" : 0.006489,
-  "high" : 0.006706,
-  "low" : 0.006463,
-  "close" : 0.006599,
-  "volume" : 103928.45,
-  "quoteAssetVolume" : 684.77694983,
-  "numberOfTrades" : 20062
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1579219200000,
-  "openDate" : null,
-  "closeTime" : 1579262399999,
-  "closeDate" : null,
-  "open" : 0.006603,
-  "high" : 0.006797,
-  "low" : 0.00654,
-  "close" : 0.006693,
-  "volume" : 126800.62,
-  "quoteAssetVolume" : 847.0296705,
-  "numberOfTrades" : 24073
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1579262400000,
-  "openDate" : null,
-  "closeTime" : 1579305599999,
-  "closeDate" : null,
-  "open" : 0.006693,
-  "high" : 0.007066,
-  "low" : 0.006623,
-  "close" : 0.00685,
-  "volume" : 190475.07,
-  "quoteAssetVolume" : 1311.42477333,
-  "numberOfTrades" : 36704
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1579305600000,
-  "openDate" : null,
-  "closeTime" : 1579348799999,
-  "closeDate" : null,
-  "open" : 0.00685,
-  "high" : 0.00696,
-  "low" : 0.00657,
-  "close" : 0.00673,
-  "volume" : 124653.21,
-  "quoteAssetVolume" : 844.22427189,
-  "numberOfTrades" : 23324
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1579348800000,
-  "openDate" : null,
-  "closeTime" : 1579391999999,
-  "closeDate" : null,
-  "open" : 0.00673,
-  "high" : 0.006909,
-  "low" : 0.006545,
-  "close" : 0.006652,
-  "volume" : 153142.6,
-  "quoteAssetVolume" : 1030.00529929,
-  "numberOfTrades" : 27947
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1579392000000,
-  "openDate" : null,
-  "closeTime" : 1579435199999,
-  "closeDate" : null,
-  "open" : 0.006653,
-  "high" : 0.006867,
-  "low" : 0.006561,
-  "close" : 0.006613,
-  "volume" : 118945.66,
-  "quoteAssetVolume" : 797.40069242,
-  "numberOfTrades" : 24158
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1579435200000,
-  "openDate" : null,
-  "closeTime" : 1579478399999,
-  "closeDate" : null,
-  "open" : 0.006608,
-  "high" : 0.006645,
-  "low" : 0.006433,
-  "close" : 0.006622,
-  "volume" : 82075.87,
-  "quoteAssetVolume" : 536.99700673,
-  "numberOfTrades" : 18114
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1579478400000,
-  "openDate" : null,
-  "closeTime" : 1579521599999,
-  "closeDate" : null,
-  "open" : 0.006621,
-  "high" : 0.006638,
-  "low" : 0.00655,
-  "close" : 0.006557,
-  "volume" : 31586.08,
-  "quoteAssetVolume" : 207.89843037,
-  "numberOfTrades" : 7455
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1579521600000,
-  "openDate" : null,
-  "closeTime" : 1579564799999,
-  "closeDate" : null,
-  "open" : 0.006557,
-  "high" : 0.006706,
-  "low" : 0.006516,
-  "close" : 0.006618,
-  "volume" : 52073.08,
-  "quoteAssetVolume" : 345.08436105,
-  "numberOfTrades" : 11704
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1579564800000,
-  "openDate" : null,
-  "closeTime" : 1579607999999,
-  "closeDate" : null,
-  "open" : 0.006616,
-  "high" : 0.006686,
-  "low" : 0.006604,
-  "close" : 0.006663,
-  "volume" : 32868.51,
-  "quoteAssetVolume" : 218.59472694,
-  "numberOfTrades" : 7312
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1579608000000,
-  "openDate" : null,
-  "closeTime" : 1579651199999,
-  "closeDate" : null,
-  "open" : 0.006664,
-  "high" : 0.006686,
-  "low" : 0.006549,
-  "close" : 0.00659,
-  "volume" : 51259.4,
-  "quoteAssetVolume" : 338.90749932,
-  "numberOfTrades" : 10899
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1579651200000,
-  "openDate" : null,
-  "closeTime" : 1579694399999,
-  "closeDate" : null,
-  "open" : 0.00659,
-  "high" : 0.006776,
-  "low" : 0.006561,
-  "close" : 0.006721,
-  "volume" : 70896.75,
-  "quoteAssetVolume" : 473.76868809,
-  "numberOfTrades" : 13495
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1579694400000,
-  "openDate" : null,
-  "closeTime" : 1579737599999,
-  "closeDate" : null,
-  "open" : 0.006722,
-  "high" : 0.006743,
-  "low" : 0.006669,
-  "close" : 0.006718,
-  "volume" : 28907.4,
-  "quoteAssetVolume" : 194.08074499,
-  "numberOfTrades" : 7383
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1579737600000,
-  "openDate" : null,
-  "closeTime" : 1579780799999,
-  "closeDate" : null,
-  "open" : 0.006719,
-  "high" : 0.00673,
-  "low" : 0.006576,
-  "close" : 0.006659,
-  "volume" : 45417.12,
-  "quoteAssetVolume" : 301.25919664,
-  "numberOfTrades" : 10579
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1579780800000,
-  "openDate" : null,
-  "closeTime" : 1579823999999,
-  "closeDate" : null,
-  "open" : 0.00666,
-  "high" : 0.00668,
-  "low" : 0.0063,
-  "close" : 0.006486,
-  "volume" : 120173.8,
-  "quoteAssetVolume" : 778.7436653,
-  "numberOfTrades" : 24330
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1579824000000,
-  "openDate" : null,
-  "closeTime" : 1579867199999,
-  "closeDate" : null,
-  "open" : 0.006487,
-  "high" : 0.006493,
-  "low" : 0.006122,
-  "close" : 0.006407,
-  "volume" : 130701.62,
-  "quoteAssetVolume" : 821.42583976,
-  "numberOfTrades" : 23637
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1579867200000,
-  "openDate" : null,
-  "closeTime" : 1579910399999,
-  "closeDate" : null,
-  "open" : 0.006407,
-  "high" : 0.0065,
-  "low" : 0.006363,
-  "close" : 0.006444,
-  "volume" : 75314.19,
-  "quoteAssetVolume" : 485.30809993,
-  "numberOfTrades" : 15323
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1579910400000,
-  "openDate" : null,
-  "closeTime" : 1579953599999,
-  "closeDate" : null,
-  "open" : 0.006447,
-  "high" : 0.006492,
-  "low" : 0.00625,
-  "close" : 0.006378,
-  "volume" : 64975.74,
-  "quoteAssetVolume" : 415.04982804,
-  "numberOfTrades" : 14789
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1579953600000,
-  "openDate" : null,
-  "closeTime" : 1579996799999,
-  "closeDate" : null,
-  "open" : 0.006378,
-  "high" : 0.006447,
-  "low" : 0.006355,
-  "close" : 0.006387,
-  "volume" : 32347.43,
-  "quoteAssetVolume" : 206.87604221,
-  "numberOfTrades" : 6745
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1579996800000,
-  "openDate" : null,
-  "closeTime" : 1580039999999,
-  "closeDate" : null,
-  "open" : 0.006385,
-  "high" : 0.006493,
-  "low" : 0.006334,
-  "close" : 0.006458,
-  "volume" : 53544.57,
-  "quoteAssetVolume" : 343.49014513,
-  "numberOfTrades" : 9877
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1580040000000,
-  "openDate" : null,
-  "closeTime" : 1580083199999,
-  "closeDate" : null,
-  "open" : 0.00646,
-  "high" : 0.006596,
-  "low" : 0.00639,
-  "close" : 0.006529,
-  "volume" : 63259.77,
-  "quoteAssetVolume" : 410.89138672,
-  "numberOfTrades" : 13417
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1580083200000,
-  "openDate" : null,
-  "closeTime" : 1580126399999,
-  "closeDate" : null,
-  "open" : 0.006526,
-  "high" : 0.006659,
-  "low" : 0.006474,
-  "close" : 0.006637,
-  "volume" : 67951.02,
-  "quoteAssetVolume" : 445.25462405,
-  "numberOfTrades" : 13857
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1580126400000,
-  "openDate" : null,
-  "closeTime" : 1580169599999,
-  "closeDate" : null,
-  "open" : 0.006638,
-  "high" : 0.006785,
-  "low" : 0.006552,
-  "close" : 0.006573,
-  "volume" : 92992.12,
-  "quoteAssetVolume" : 620.59503437,
-  "numberOfTrades" : 19644
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1580169600000,
-  "openDate" : null,
-  "closeTime" : 1580212799999,
-  "closeDate" : null,
-  "open" : 0.006573,
-  "high" : 0.00675,
-  "low" : 0.006571,
-  "close" : 0.006615,
-  "volume" : 103215.35,
-  "quoteAssetVolume" : 686.41009164,
-  "numberOfTrades" : 19853
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1580212800000,
-  "openDate" : null,
-  "closeTime" : 1580255999999,
-  "closeDate" : null,
-  "open" : 0.006611,
-  "high" : 0.00662,
-  "low" : 0.006432,
-  "close" : 0.006455,
-  "volume" : 115837.21,
-  "quoteAssetVolume" : 755.1483738,
-  "numberOfTrades" : 22359
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1580256000000,
-  "openDate" : null,
-  "closeTime" : 1580299199999,
-  "closeDate" : null,
-  "open" : 0.006456,
-  "high" : 0.006671,
-  "low" : 0.006434,
-  "close" : 0.006504,
-  "volume" : 110720.94,
-  "quoteAssetVolume" : 724.60654962,
-  "numberOfTrades" : 22900
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1580299200000,
-  "openDate" : null,
-  "closeTime" : 1580342399999,
-  "closeDate" : null,
-  "open" : 0.006503,
-  "high" : 0.006526,
-  "low" : 0.006408,
-  "close" : 0.006432,
-  "volume" : 50674.55,
-  "quoteAssetVolume" : 327.35874473,
-  "numberOfTrades" : 11837
-}, {
-  "symbol" : "LTCBTC",
   "openTime" : 1580342400000,
   "openDate" : null,
   "closeTime" : 1580385599999,
@@ -1258,7 +10,8 @@
   "close" : 0.006631,
   "volume" : 93480.58,
   "quoteAssetVolume" : 607.2154238,
-  "numberOfTrades" : 20706
+  "numberOfTrades" : 20706,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1580385600000,
@@ -1271,7 +24,8 @@
   "close" : 0.007148,
   "volume" : 360970.41,
   "quoteAssetVolume" : 2550.88283977,
-  "numberOfTrades" : 62788
+  "numberOfTrades" : 62788,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1580428800000,
@@ -1284,7 +38,8 @@
   "close" : 0.007298,
   "volume" : 225278.45,
   "quoteAssetVolume" : 1633.03482233,
-  "numberOfTrades" : 36024
+  "numberOfTrades" : 36024,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1580472000000,
@@ -1297,7 +52,8 @@
   "close" : 0.007274,
   "volume" : 171324.51,
   "quoteAssetVolume" : 1239.76923367,
-  "numberOfTrades" : 34565
+  "numberOfTrades" : 34565,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1580515200000,
@@ -1310,7 +66,8 @@
   "close" : 0.007453,
   "volume" : 250451.52,
   "quoteAssetVolume" : 1892.54592969,
-  "numberOfTrades" : 45741
+  "numberOfTrades" : 45741,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1580558400000,
@@ -1323,7 +80,8 @@
   "close" : 0.007535,
   "volume" : 156202.21,
   "quoteAssetVolume" : 1179.04648216,
-  "numberOfTrades" : 28925
+  "numberOfTrades" : 28925,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1580601600000,
@@ -1336,7 +94,8 @@
   "close" : 0.007603,
   "volume" : 155528.86,
   "quoteAssetVolume" : 1163.37853671,
-  "numberOfTrades" : 29321
+  "numberOfTrades" : 29321,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1580644800000,
@@ -1349,7 +108,8 @@
   "close" : 0.007496,
   "volume" : 135268.92,
   "quoteAssetVolume" : 1033.04619259,
-  "numberOfTrades" : 25801
+  "numberOfTrades" : 25801,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1580688000000,
@@ -1362,7 +122,8 @@
   "close" : 0.007508,
   "volume" : 106787.96,
   "quoteAssetVolume" : 806.21201468,
-  "numberOfTrades" : 19855
+  "numberOfTrades" : 19855,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1580731200000,
@@ -1375,7 +136,8 @@
   "close" : 0.007496,
   "volume" : 109888.63,
   "quoteAssetVolume" : 820.67438571,
-  "numberOfTrades" : 23150
+  "numberOfTrades" : 23150,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1580774400000,
@@ -1388,7 +150,8 @@
   "close" : 0.007345,
   "volume" : 96523.16,
   "quoteAssetVolume" : 714.38895725,
-  "numberOfTrades" : 19182
+  "numberOfTrades" : 19182,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1580817600000,
@@ -1401,7 +164,8 @@
   "close" : 0.0074,
   "volume" : 69921.25,
   "quoteAssetVolume" : 515.73925619,
-  "numberOfTrades" : 15567
+  "numberOfTrades" : 15567,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1580860800000,
@@ -1414,7 +178,8 @@
   "close" : 0.007619,
   "volume" : 86718.18,
   "quoteAssetVolume" : 652.00647097,
-  "numberOfTrades" : 18891
+  "numberOfTrades" : 18891,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1580904000000,
@@ -1427,7 +192,8 @@
   "close" : 0.007549,
   "volume" : 118328.09,
   "quoteAssetVolume" : 894.1449909,
-  "numberOfTrades" : 26362
+  "numberOfTrades" : 26362,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1580947200000,
@@ -1440,7 +206,8 @@
   "close" : 0.007689,
   "volume" : 100539.84,
   "quoteAssetVolume" : 763.69844227,
-  "numberOfTrades" : 22778
+  "numberOfTrades" : 22778,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1580990400000,
@@ -1453,7 +220,8 @@
   "close" : 0.00753,
   "volume" : 111471.19,
   "quoteAssetVolume" : 838.44589485,
-  "numberOfTrades" : 24666
+  "numberOfTrades" : 24666,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1581033600000,
@@ -1466,7 +234,8 @@
   "close" : 0.007532,
   "volume" : 92650.71,
   "quoteAssetVolume" : 701.36977296,
-  "numberOfTrades" : 20744
+  "numberOfTrades" : 20744,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1581076800000,
@@ -1479,7 +248,8 @@
   "close" : 0.00757,
   "volume" : 66866.87,
   "quoteAssetVolume" : 502.86664854,
-  "numberOfTrades" : 14517
+  "numberOfTrades" : 14517,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1581120000000,
@@ -1492,7 +262,8 @@
   "close" : 0.007748,
   "volume" : 119422.03,
   "quoteAssetVolume" : 906.49972965,
-  "numberOfTrades" : 26613
+  "numberOfTrades" : 26613,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1581163200000,
@@ -1505,7 +276,8 @@
   "close" : 0.007737,
   "volume" : 115559.4,
   "quoteAssetVolume" : 898.99574412,
-  "numberOfTrades" : 27730
+  "numberOfTrades" : 27730,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1581206400000,
@@ -1518,7 +290,8 @@
   "close" : 0.007622,
   "volume" : 94131.39,
   "quoteAssetVolume" : 723.5830905,
-  "numberOfTrades" : 18906
+  "numberOfTrades" : 18906,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1581249600000,
@@ -1531,7 +304,8 @@
   "close" : 0.007582,
   "volume" : 90992.5,
   "quoteAssetVolume" : 688.64308345,
-  "numberOfTrades" : 20072
+  "numberOfTrades" : 20072,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1581292800000,
@@ -1544,7 +318,8 @@
   "close" : 0.007457,
   "volume" : 126931.98,
   "quoteAssetVolume" : 950.20549666,
-  "numberOfTrades" : 26327
+  "numberOfTrades" : 26327,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1581336000000,
@@ -1557,7 +332,8 @@
   "close" : 0.007512,
   "volume" : 86864.77,
   "quoteAssetVolume" : 652.09283379,
-  "numberOfTrades" : 19090
+  "numberOfTrades" : 19090,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1581379200000,
@@ -1570,7 +346,8 @@
   "close" : 0.0076,
   "volume" : 83521.25,
   "quoteAssetVolume" : 629.04577703,
-  "numberOfTrades" : 16146
+  "numberOfTrades" : 16146,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1581422400000,
@@ -1583,7 +360,8 @@
   "close" : 0.00748,
   "volume" : 113033.21,
   "quoteAssetVolume" : 847.46584397,
-  "numberOfTrades" : 22224
+  "numberOfTrades" : 22224,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1581465600000,
@@ -1596,7 +374,8 @@
   "close" : 0.00765,
   "volume" : 124898.47,
   "quoteAssetVolume" : 950.86650908,
-  "numberOfTrades" : 24085
+  "numberOfTrades" : 24085,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1581508800000,
@@ -1609,7 +388,8 @@
   "close" : 0.007859,
   "volume" : 168535.03,
   "quoteAssetVolume" : 1316.84214745,
-  "numberOfTrades" : 35287
+  "numberOfTrades" : 35287,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1581552000000,
@@ -1622,7 +402,8 @@
   "close" : 0.007806,
   "volume" : 248784.0,
   "quoteAssetVolume" : 1948.3698572,
-  "numberOfTrades" : 47150
+  "numberOfTrades" : 47150,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1581595200000,
@@ -1635,7 +416,8 @@
   "close" : 0.007873,
   "volume" : 143779.88,
   "quoteAssetVolume" : 1135.06101619,
-  "numberOfTrades" : 32946
+  "numberOfTrades" : 32946,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1581638400000,
@@ -1648,7 +430,8 @@
   "close" : 0.007981,
   "volume" : 118797.64,
   "quoteAssetVolume" : 940.55914563,
-  "numberOfTrades" : 25831
+  "numberOfTrades" : 25831,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1581681600000,
@@ -1661,7 +444,8 @@
   "close" : 0.008039,
   "volume" : 131313.3,
   "quoteAssetVolume" : 1049.24080342,
-  "numberOfTrades" : 27549
+  "numberOfTrades" : 27549,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1581724800000,
@@ -1674,7 +458,8 @@
   "close" : 0.007903,
   "volume" : 120889.91,
   "quoteAssetVolume" : 955.74758876,
-  "numberOfTrades" : 26697
+  "numberOfTrades" : 26697,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1581768000000,
@@ -1687,7 +472,8 @@
   "close" : 0.007747,
   "volume" : 148102.34,
   "quoteAssetVolume" : 1156.18934077,
-  "numberOfTrades" : 34066
+  "numberOfTrades" : 34066,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1581811200000,
@@ -1700,7 +486,8 @@
   "close" : 0.007796,
   "volume" : 111932.21,
   "quoteAssetVolume" : 884.67317969,
-  "numberOfTrades" : 26830
+  "numberOfTrades" : 26830,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1581854400000,
@@ -1713,7 +500,8 @@
   "close" : 0.007533,
   "volume" : 289652.14,
   "quoteAssetVolume" : 2143.56461406,
-  "numberOfTrades" : 57969
+  "numberOfTrades" : 57969,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1581897600000,
@@ -1726,7 +514,8 @@
   "close" : 0.007339,
   "volume" : 183255.89,
   "quoteAssetVolume" : 1333.93193111,
-  "numberOfTrades" : 36775
+  "numberOfTrades" : 36775,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1581940800000,
@@ -1739,7 +528,8 @@
   "close" : 0.007564,
   "volume" : 113825.45,
   "quoteAssetVolume" : 847.06549869,
-  "numberOfTrades" : 28137
+  "numberOfTrades" : 28137,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1581984000000,
@@ -1752,7 +542,8 @@
   "close" : 0.007499,
   "volume" : 68643.79,
   "quoteAssetVolume" : 519.3518615,
-  "numberOfTrades" : 18135
+  "numberOfTrades" : 18135,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1582027200000,
@@ -1765,7 +556,8 @@
   "close" : 0.0076,
   "volume" : 146717.0,
   "quoteAssetVolume" : 1108.65225749,
-  "numberOfTrades" : 37703
+  "numberOfTrades" : 37703,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1582070400000,
@@ -1778,7 +570,8 @@
   "close" : 0.00762,
   "volume" : 63864.75,
   "quoteAssetVolume" : 485.85175686,
-  "numberOfTrades" : 15529
+  "numberOfTrades" : 15529,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1582113600000,
@@ -1791,7 +584,8 @@
   "close" : 0.007359,
   "volume" : 107093.77,
   "quoteAssetVolume" : 797.7908793,
-  "numberOfTrades" : 29286
+  "numberOfTrades" : 29286,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1582156800000,
@@ -1804,7 +598,8 @@
   "close" : 0.007223,
   "volume" : 103531.35,
   "quoteAssetVolume" : 762.22193398,
-  "numberOfTrades" : 22813
+  "numberOfTrades" : 22813,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1582200000000,
@@ -1817,7 +612,8 @@
   "close" : 0.007233,
   "volume" : 147799.48,
   "quoteAssetVolume" : 1061.5082469,
-  "numberOfTrades" : 31713
+  "numberOfTrades" : 31713,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1582243200000,
@@ -1830,7 +626,8 @@
   "close" : 0.007412,
   "volume" : 99203.49,
   "quoteAssetVolume" : 733.52757233,
-  "numberOfTrades" : 21612
+  "numberOfTrades" : 21612,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1582286400000,
@@ -1843,7 +640,8 @@
   "close" : 0.007572,
   "volume" : 116686.16,
   "quoteAssetVolume" : 884.99787201,
-  "numberOfTrades" : 25847
+  "numberOfTrades" : 25847,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1582329600000,
@@ -1856,7 +654,8 @@
   "close" : 0.007758,
   "volume" : 120705.7,
   "quoteAssetVolume" : 928.8363129,
-  "numberOfTrades" : 29307
+  "numberOfTrades" : 29307,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1582372800000,
@@ -1869,7 +668,8 @@
   "close" : 0.007748,
   "volume" : 152717.96,
   "quoteAssetVolume" : 1196.30658448,
-  "numberOfTrades" : 30030
+  "numberOfTrades" : 30030,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1582416000000,
@@ -1882,7 +682,8 @@
   "close" : 0.00794,
   "volume" : 105017.21,
   "quoteAssetVolume" : 828.03320212,
-  "numberOfTrades" : 26900
+  "numberOfTrades" : 26900,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1582459200000,
@@ -1895,7 +696,8 @@
   "close" : 0.008008,
   "volume" : 104642.29,
   "quoteAssetVolume" : 836.45064589,
-  "numberOfTrades" : 21237
+  "numberOfTrades" : 21237,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1582502400000,
@@ -1908,7 +710,8 @@
   "close" : 0.00787,
   "volume" : 116823.9,
   "quoteAssetVolume" : 917.30223936,
-  "numberOfTrades" : 23626
+  "numberOfTrades" : 23626,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1582545600000,
@@ -1921,7 +724,8 @@
   "close" : 0.007825,
   "volume" : 110640.87,
   "quoteAssetVolume" : 852.55191074,
-  "numberOfTrades" : 27889
+  "numberOfTrades" : 27889,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1582588800000,
@@ -1934,7 +738,8 @@
   "close" : 0.007797,
   "volume" : 80679.97,
   "quoteAssetVolume" : 624.69499697,
-  "numberOfTrades" : 19311
+  "numberOfTrades" : 19311,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1582632000000,
@@ -1947,7 +752,8 @@
   "close" : 0.007622,
   "volume" : 127993.21,
   "quoteAssetVolume" : 978.98885654,
-  "numberOfTrades" : 29722
+  "numberOfTrades" : 29722,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1582675200000,
@@ -1960,7 +766,8 @@
   "close" : 0.007177,
   "volume" : 162208.72,
   "quoteAssetVolume" : 1199.97883334,
-  "numberOfTrades" : 37898
+  "numberOfTrades" : 37898,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1582718400000,
@@ -1973,7 +780,8 @@
   "close" : 0.006885,
   "volume" : 313150.88,
   "quoteAssetVolume" : 2189.14058059,
-  "numberOfTrades" : 59283
+  "numberOfTrades" : 59283,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1582761600000,
@@ -1986,7 +794,8 @@
   "close" : 0.006938,
   "volume" : 194230.05,
   "quoteAssetVolume" : 1338.4445276,
-  "numberOfTrades" : 36853
+  "numberOfTrades" : 36853,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1582804800000,
@@ -1999,7 +808,8 @@
   "close" : 0.006995,
   "volume" : 159131.87,
   "quoteAssetVolume" : 1128.6107029,
-  "numberOfTrades" : 28706
+  "numberOfTrades" : 28706,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1582848000000,
@@ -2012,7 +822,8 @@
   "close" : 0.006822,
   "volume" : 153200.82,
   "quoteAssetVolume" : 1058.86524139,
-  "numberOfTrades" : 27928
+  "numberOfTrades" : 27928,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1582891200000,
@@ -2025,7 +836,8 @@
   "close" : 0.006889,
   "volume" : 114164.41,
   "quoteAssetVolume" : 782.91753199,
-  "numberOfTrades" : 21486
+  "numberOfTrades" : 21486,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1582934400000,
@@ -2038,7 +850,8 @@
   "close" : 0.00687,
   "volume" : 84016.44,
   "quoteAssetVolume" : 580.39623163,
-  "numberOfTrades" : 17474
+  "numberOfTrades" : 17474,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1582977600000,
@@ -2051,7 +864,8 @@
   "close" : 0.006814,
   "volume" : 70450.97,
   "quoteAssetVolume" : 480.33581578,
-  "numberOfTrades" : 14272
+  "numberOfTrades" : 14272,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1583020800000,
@@ -2064,7 +878,8 @@
   "close" : 0.006894,
   "volume" : 73418.88,
   "quoteAssetVolume" : 505.97927389,
-  "numberOfTrades" : 14529
+  "numberOfTrades" : 14529,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1583064000000,
@@ -2077,7 +892,8 @@
   "close" : 0.006763,
   "volume" : 85425.09,
   "quoteAssetVolume" : 577.82380193,
-  "numberOfTrades" : 17958
+  "numberOfTrades" : 17958,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1583107200000,
@@ -2090,7 +906,8 @@
   "close" : 0.006823,
   "volume" : 74594.17,
   "quoteAssetVolume" : 506.0722929,
-  "numberOfTrades" : 13948
+  "numberOfTrades" : 13948,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1583150400000,
@@ -2103,7 +920,8 @@
   "close" : 0.006892,
   "volume" : 107110.2,
   "quoteAssetVolume" : 739.7451802,
-  "numberOfTrades" : 19640
+  "numberOfTrades" : 19640,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1583193600000,
@@ -2116,7 +934,8 @@
   "close" : 0.006992,
   "volume" : 53706.75,
   "quoteAssetVolume" : 371.16505068,
-  "numberOfTrades" : 12869
+  "numberOfTrades" : 12869,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1583236800000,
@@ -2129,7 +948,8 @@
   "close" : 0.006967,
   "volume" : 72089.21,
   "quoteAssetVolume" : 500.57176256,
-  "numberOfTrades" : 16001
+  "numberOfTrades" : 16001,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1583280000000,
@@ -2142,7 +962,8 @@
   "close" : 0.006886,
   "volume" : 53338.88,
   "quoteAssetVolume" : 370.21028359,
-  "numberOfTrades" : 9789
+  "numberOfTrades" : 9789,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1583323200000,
@@ -2155,7 +976,8 @@
   "close" : 0.006898,
   "volume" : 59366.13,
   "quoteAssetVolume" : 406.78878273,
-  "numberOfTrades" : 12669
+  "numberOfTrades" : 12669,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1583366400000,
@@ -2168,7 +990,8 @@
   "close" : 0.006876,
   "volume" : 64678.45,
   "quoteAssetVolume" : 444.2564539,
-  "numberOfTrades" : 12958
+  "numberOfTrades" : 12958,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1583409600000,
@@ -2181,7 +1004,8 @@
   "close" : 0.006852,
   "volume" : 66743.52,
   "quoteAssetVolume" : 457.77746365,
-  "numberOfTrades" : 13645
+  "numberOfTrades" : 13645,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1583452800000,
@@ -2194,7 +1018,8 @@
   "close" : 0.006947,
   "volume" : 63776.57,
   "quoteAssetVolume" : 437.63266404,
-  "numberOfTrades" : 12159
+  "numberOfTrades" : 12159,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1583496000000,
@@ -2207,7 +1032,8 @@
   "close" : 0.006919,
   "volume" : 56429.09,
   "quoteAssetVolume" : 388.28870416,
-  "numberOfTrades" : 10470
+  "numberOfTrades" : 10470,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1583539200000,
@@ -2220,7 +1046,8 @@
   "close" : 0.006938,
   "volume" : 49943.19,
   "quoteAssetVolume" : 347.17048551,
-  "numberOfTrades" : 11584
+  "numberOfTrades" : 11584,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1583582400000,
@@ -2233,7 +1060,8 @@
   "close" : 0.006802,
   "volume" : 68047.89,
   "quoteAssetVolume" : 466.74111042,
-  "numberOfTrades" : 13730
+  "numberOfTrades" : 13730,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1583625600000,
@@ -2246,7 +1074,8 @@
   "close" : 0.006762,
   "volume" : 64746.16,
   "quoteAssetVolume" : 436.04887583,
-  "numberOfTrades" : 12452
+  "numberOfTrades" : 12452,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1583668800000,
@@ -2259,7 +1088,8 @@
   "close" : 0.006346,
   "volume" : 219344.06,
   "quoteAssetVolume" : 1414.22341699,
-  "numberOfTrades" : 39326
+  "numberOfTrades" : 39326,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1583712000000,
@@ -2272,7 +1102,8 @@
   "close" : 0.006311,
   "volume" : 213566.68,
   "quoteAssetVolume" : 1349.45338452,
-  "numberOfTrades" : 33750
+  "numberOfTrades" : 33750,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1583755200000,
@@ -2285,7 +1116,8 @@
   "close" : 0.006354,
   "volume" : 174050.02,
   "quoteAssetVolume" : 1087.47215992,
-  "numberOfTrades" : 31323
+  "numberOfTrades" : 31323,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1583798400000,
@@ -2298,7 +1130,8 @@
   "close" : 0.00627,
   "volume" : 83394.95,
   "quoteAssetVolume" : 525.62725464,
-  "numberOfTrades" : 13537
+  "numberOfTrades" : 13537,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1583841600000,
@@ -2311,7 +1144,8 @@
   "close" : 0.006364,
   "volume" : 85911.12,
   "quoteAssetVolume" : 543.9595912,
-  "numberOfTrades" : 15080
+  "numberOfTrades" : 15080,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1583884800000,
@@ -2324,7 +1158,8 @@
   "close" : 0.006168,
   "volume" : 87916.89,
   "quoteAssetVolume" : 549.97567969,
-  "numberOfTrades" : 14203
+  "numberOfTrades" : 14203,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1583928000000,
@@ -2337,7 +1172,8 @@
   "close" : 0.006121,
   "volume" : 137576.27,
   "quoteAssetVolume" : 838.99374015,
-  "numberOfTrades" : 21038
+  "numberOfTrades" : 21038,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1583971200000,
@@ -2350,7 +1186,8 @@
   "close" : 0.005586,
   "volume" : 376582.77,
   "quoteAssetVolume" : 2174.33132629,
-  "numberOfTrades" : 57438
+  "numberOfTrades" : 57438,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1584014400000,
@@ -2363,7 +1200,8 @@
   "close" : 0.006226,
   "volume" : 580385.06,
   "quoteAssetVolume" : 3317.72795517,
-  "numberOfTrades" : 88831
+  "numberOfTrades" : 88831,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1584057600000,
@@ -2376,7 +1214,8 @@
   "close" : 0.0063,
   "volume" : 819115.03,
   "quoteAssetVolume" : 5106.41976494,
-  "numberOfTrades" : 146674
+  "numberOfTrades" : 146674,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1584100800000,
@@ -2389,7 +1228,8 @@
   "close" : 0.006731,
   "volume" : 324570.11,
   "quoteAssetVolume" : 2161.17319421,
-  "numberOfTrades" : 75782
+  "numberOfTrades" : 75782,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1584144000000,
@@ -2402,7 +1242,8 @@
   "close" : 0.006582,
   "volume" : 202540.9,
   "quoteAssetVolume" : 1349.54501372,
-  "numberOfTrades" : 36761
+  "numberOfTrades" : 36761,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1584187200000,
@@ -2415,7 +1256,8 @@
   "close" : 0.006646,
   "volume" : 105928.58,
   "quoteAssetVolume" : 700.65470819,
-  "numberOfTrades" : 22880
+  "numberOfTrades" : 22880,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1584230400000,
@@ -2428,7 +1270,8 @@
   "close" : 0.006656,
   "volume" : 113379.43,
   "quoteAssetVolume" : 758.17669675,
-  "numberOfTrades" : 18973
+  "numberOfTrades" : 18973,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1584273600000,
@@ -2441,7 +1284,8 @@
   "close" : 0.006786,
   "volume" : 134615.19,
   "quoteAssetVolume" : 904.16330054,
-  "numberOfTrades" : 25996
+  "numberOfTrades" : 25996,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1584316800000,
@@ -2454,7 +1298,8 @@
   "close" : 0.006635,
   "volume" : 204846.79,
   "quoteAssetVolume" : 1360.17632388,
-  "numberOfTrades" : 32622
+  "numberOfTrades" : 32622,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1584360000000,
@@ -2467,7 +1312,8 @@
   "close" : 0.006604,
   "volume" : 145040.3,
   "quoteAssetVolume" : 949.85215707,
-  "numberOfTrades" : 27491
+  "numberOfTrades" : 27491,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1584403200000,
@@ -2480,7 +1326,8 @@
   "close" : 0.006541,
   "volume" : 95274.03,
   "quoteAssetVolume" : 627.46964225,
-  "numberOfTrades" : 16295
+  "numberOfTrades" : 16295,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1584446400000,
@@ -2493,7 +1340,8 @@
   "close" : 0.006407,
   "volume" : 80509.85,
   "quoteAssetVolume" : 522.32782772,
-  "numberOfTrades" : 15599
+  "numberOfTrades" : 15599,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1584489600000,
@@ -2506,7 +1354,8 @@
   "close" : 0.006479,
   "volume" : 80056.43,
   "quoteAssetVolume" : 514.69038754,
-  "numberOfTrades" : 14243
+  "numberOfTrades" : 14243,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1584532800000,
@@ -2519,7 +1368,8 @@
   "close" : 0.006435,
   "volume" : 86698.92,
   "quoteAssetVolume" : 555.51601181,
-  "numberOfTrades" : 14899
+  "numberOfTrades" : 14899,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1584576000000,
@@ -2532,7 +1382,8 @@
   "close" : 0.006369,
   "volume" : 65772.7,
   "quoteAssetVolume" : 424.03203391,
-  "numberOfTrades" : 13043
+  "numberOfTrades" : 13043,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1584619200000,
@@ -2545,7 +1396,8 @@
   "close" : 0.006313,
   "volume" : 156023.17,
   "quoteAssetVolume" : 987.99700777,
-  "numberOfTrades" : 29041
+  "numberOfTrades" : 29041,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1584662400000,
@@ -2558,7 +1410,8 @@
   "close" : 0.006234,
   "volume" : 135635.17,
   "quoteAssetVolume" : 854.87401925,
-  "numberOfTrades" : 22216
+  "numberOfTrades" : 22216,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1584705600000,
@@ -2571,7 +1424,8 @@
   "close" : 0.00614,
   "volume" : 151299.58,
   "quoteAssetVolume" : 933.88986136,
-  "numberOfTrades" : 28994
+  "numberOfTrades" : 28994,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1584748800000,
@@ -2584,7 +1438,8 @@
   "close" : 0.006209,
   "volume" : 63341.83,
   "quoteAssetVolume" : 391.05347034,
-  "numberOfTrades" : 14098
+  "numberOfTrades" : 14098,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1584792000000,
@@ -2597,7 +1452,8 @@
   "close" : 0.006196,
   "volume" : 53284.11,
   "quoteAssetVolume" : 329.72491315,
-  "numberOfTrades" : 11764
+  "numberOfTrades" : 11764,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1584835200000,
@@ -2610,7 +1466,8 @@
   "close" : 0.006128,
   "volume" : 37785.6,
   "quoteAssetVolume" : 233.37582342,
-  "numberOfTrades" : 9356
+  "numberOfTrades" : 9356,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1584878400000,
@@ -2623,7 +1480,8 @@
   "close" : 0.006086,
   "volume" : 74330.61,
   "quoteAssetVolume" : 450.9506497,
-  "numberOfTrades" : 16455
+  "numberOfTrades" : 16455,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1584921600000,
@@ -2636,7 +1494,8 @@
   "close" : 0.006201,
   "volume" : 68554.35,
   "quoteAssetVolume" : 423.30213563,
-  "numberOfTrades" : 13145
+  "numberOfTrades" : 13145,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1584964800000,
@@ -2649,7 +1508,8 @@
   "close" : 0.006021,
   "volume" : 93329.63,
   "quoteAssetVolume" : 568.41187286,
-  "numberOfTrades" : 17154
+  "numberOfTrades" : 17154,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1585008000000,
@@ -2662,7 +1522,8 @@
   "close" : 0.005947,
   "volume" : 103820.36,
   "quoteAssetVolume" : 617.30283594,
-  "numberOfTrades" : 14711
+  "numberOfTrades" : 14711,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1585051200000,
@@ -2675,7 +1536,8 @@
   "close" : 0.006012,
   "volume" : 75071.22,
   "quoteAssetVolume" : 447.75985591,
-  "numberOfTrades" : 11565
+  "numberOfTrades" : 11565,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1585094400000,
@@ -2688,7 +1550,8 @@
   "close" : 0.005914,
   "volume" : 109945.57,
   "quoteAssetVolume" : 655.17134744,
-  "numberOfTrades" : 15273
+  "numberOfTrades" : 15273,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1585137600000,
@@ -2701,7 +1564,8 @@
   "close" : 0.005864,
   "volume" : 64171.53,
   "quoteAssetVolume" : 377.6393981,
-  "numberOfTrades" : 10481
+  "numberOfTrades" : 10481,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1585180800000,
@@ -2714,7 +1578,8 @@
   "close" : 0.005911,
   "volume" : 44761.67,
   "quoteAssetVolume" : 263.60819973,
-  "numberOfTrades" : 9290
+  "numberOfTrades" : 9290,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1585224000000,
@@ -2727,7 +1592,8 @@
   "close" : 0.005998,
   "volume" : 61662.12,
   "quoteAssetVolume" : 363.65204107,
-  "numberOfTrades" : 10734
+  "numberOfTrades" : 10734,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1585267200000,
@@ -2740,7 +1606,8 @@
   "close" : 0.006005,
   "volume" : 61178.13,
   "quoteAssetVolume" : 366.36032702,
-  "numberOfTrades" : 11281
+  "numberOfTrades" : 11281,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1585310400000,
@@ -2753,7 +1620,8 @@
   "close" : 0.00598,
   "volume" : 55662.04,
   "quoteAssetVolume" : 333.00849677,
-  "numberOfTrades" : 9781
+  "numberOfTrades" : 9781,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1585353600000,
@@ -2766,7 +1634,8 @@
   "close" : 0.006041,
   "volume" : 76633.04,
   "quoteAssetVolume" : 460.92062008,
-  "numberOfTrades" : 14532
+  "numberOfTrades" : 14532,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1585396800000,
@@ -2779,7 +1648,8 @@
   "close" : 0.006229,
   "volume" : 62798.98,
   "quoteAssetVolume" : 387.37975955,
-  "numberOfTrades" : 13030
+  "numberOfTrades" : 13030,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1585440000000,
@@ -2792,7 +1662,8 @@
   "close" : 0.006229,
   "volume" : 36011.92,
   "quoteAssetVolume" : 224.05886779,
-  "numberOfTrades" : 6605
+  "numberOfTrades" : 6605,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1585483200000,
@@ -2805,7 +1676,8 @@
   "close" : 0.006307,
   "volume" : 41644.75,
   "quoteAssetVolume" : 261.47822172,
-  "numberOfTrades" : 7898
+  "numberOfTrades" : 7898,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1585526400000,
@@ -2818,7 +1690,8 @@
   "close" : 0.006123,
   "volume" : 54101.55,
   "quoteAssetVolume" : 335.6399667,
-  "numberOfTrades" : 9980
+  "numberOfTrades" : 9980,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1585569600000,
@@ -2831,7 +1704,8 @@
   "close" : 0.006087,
   "volume" : 46923.69,
   "quoteAssetVolume" : 286.06100265,
-  "numberOfTrades" : 9620
+  "numberOfTrades" : 9620,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1585612800000,
@@ -2844,7 +1718,8 @@
   "close" : 0.006068,
   "volume" : 49614.27,
   "quoteAssetVolume" : 298.95670306,
-  "numberOfTrades" : 8633
+  "numberOfTrades" : 8633,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1585656000000,
@@ -2857,7 +1732,8 @@
   "close" : 0.006093,
   "volume" : 36866.5,
   "quoteAssetVolume" : 222.98676365,
-  "numberOfTrades" : 6917
+  "numberOfTrades" : 6917,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1585699200000,
@@ -2870,7 +1746,8 @@
   "close" : 0.006121,
   "volume" : 28520.83,
   "quoteAssetVolume" : 174.38472735,
-  "numberOfTrades" : 5953
+  "numberOfTrades" : 5953,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1585742400000,
@@ -2883,7 +1760,8 @@
   "close" : 0.005908,
   "volume" : 91982.95,
   "quoteAssetVolume" : 554.62280079,
-  "numberOfTrades" : 15148
+  "numberOfTrades" : 15148,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1585785600000,
@@ -2896,7 +1774,8 @@
   "close" : 0.005945,
   "volume" : 42476.81,
   "quoteAssetVolume" : 252.87668541,
-  "numberOfTrades" : 7475
+  "numberOfTrades" : 7475,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1585828800000,
@@ -2909,7 +1788,8 @@
   "close" : 0.005866,
   "volume" : 97772.77,
   "quoteAssetVolume" : 577.90600302,
-  "numberOfTrades" : 15642
+  "numberOfTrades" : 15642,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1585872000000,
@@ -2922,7 +1802,8 @@
   "close" : 0.005877,
   "volume" : 40129.59,
   "quoteAssetVolume" : 236.86784368,
-  "numberOfTrades" : 7082
+  "numberOfTrades" : 7082,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1585915200000,
@@ -2935,7 +1816,8 @@
   "close" : 0.006011,
   "volume" : 53971.66,
   "quoteAssetVolume" : 321.88228081,
-  "numberOfTrades" : 10516
+  "numberOfTrades" : 10516,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1585958400000,
@@ -2948,7 +1830,8 @@
   "close" : 0.005988,
   "volume" : 42146.14,
   "quoteAssetVolume" : 251.85961617,
-  "numberOfTrades" : 8078
+  "numberOfTrades" : 8078,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1586001600000,
@@ -2961,7 +1844,8 @@
   "close" : 0.005942,
   "volume" : 43810.95,
   "quoteAssetVolume" : 260.81008627,
-  "numberOfTrades" : 7643
+  "numberOfTrades" : 7643,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1586044800000,
@@ -2974,7 +1858,8 @@
   "close" : 0.005986,
   "volume" : 21294.46,
   "quoteAssetVolume" : 127.30945093,
-  "numberOfTrades" : 5233
+  "numberOfTrades" : 5233,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1586088000000,
@@ -2987,7 +1872,8 @@
   "close" : 0.005957,
   "volume" : 28922.43,
   "quoteAssetVolume" : 172.68517465,
-  "numberOfTrades" : 5741
+  "numberOfTrades" : 5741,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1586131200000,
@@ -3000,7 +1886,8 @@
   "close" : 0.005959,
   "volume" : 54832.15,
   "quoteAssetVolume" : 326.24540053,
-  "numberOfTrades" : 9109
+  "numberOfTrades" : 9109,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1586174400000,
@@ -3013,7 +1900,8 @@
   "close" : 0.006141,
   "volume" : 120074.12,
   "quoteAssetVolume" : 733.60222912,
-  "numberOfTrades" : 17778
+  "numberOfTrades" : 17778,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1586217600000,
@@ -3026,7 +1914,8 @@
   "close" : 0.006279,
   "volume" : 70882.01,
   "quoteAssetVolume" : 441.68148233,
-  "numberOfTrades" : 13256
+  "numberOfTrades" : 13256,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1586260800000,
@@ -3039,7 +1928,8 @@
   "close" : 0.006221,
   "volume" : 83914.22,
   "quoteAssetVolume" : 528.32917662,
-  "numberOfTrades" : 18794
+  "numberOfTrades" : 18794,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1586304000000,
@@ -3052,7 +1942,8 @@
   "close" : 0.006299,
   "volume" : 66026.65,
   "quoteAssetVolume" : 415.93637228,
-  "numberOfTrades" : 15090
+  "numberOfTrades" : 15090,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1586347200000,
@@ -3065,7 +1956,8 @@
   "close" : 0.006321,
   "volume" : 36273.61,
   "quoteAssetVolume" : 228.97612296,
-  "numberOfTrades" : 8188
+  "numberOfTrades" : 8188,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1586390400000,
@@ -3078,7 +1970,8 @@
   "close" : 0.006317,
   "volume" : 45275.18,
   "quoteAssetVolume" : 285.66127469,
-  "numberOfTrades" : 8660
+  "numberOfTrades" : 8660,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1586433600000,
@@ -3091,7 +1984,8 @@
   "close" : 0.006341,
   "volume" : 44821.11,
   "quoteAssetVolume" : 283.73622235,
-  "numberOfTrades" : 8799
+  "numberOfTrades" : 8799,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1586476800000,
@@ -3104,7 +1998,8 @@
   "close" : 0.006162,
   "volume" : 102919.21,
   "quoteAssetVolume" : 640.77716255,
-  "numberOfTrades" : 18264
+  "numberOfTrades" : 18264,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1586520000000,
@@ -3117,7 +2012,8 @@
   "close" : 0.00616,
   "volume" : 55374.51,
   "quoteAssetVolume" : 338.94790991,
-  "numberOfTrades" : 10495
+  "numberOfTrades" : 10495,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1586563200000,
@@ -3130,7 +2026,8 @@
   "close" : 0.006183,
   "volume" : 29691.71,
   "quoteAssetVolume" : 183.77487736,
-  "numberOfTrades" : 6730
+  "numberOfTrades" : 6730,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1586606400000,
@@ -3143,7 +2040,8 @@
   "close" : 0.006185,
   "volume" : 34895.65,
   "quoteAssetVolume" : 215.58594245,
-  "numberOfTrades" : 7436
+  "numberOfTrades" : 7436,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1586649600000,
@@ -3156,7 +2054,8 @@
   "close" : 0.006201,
   "volume" : 23137.98,
   "quoteAssetVolume" : 143.09309902,
-  "numberOfTrades" : 5213
+  "numberOfTrades" : 5213,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1586692800000,
@@ -3169,7 +2068,8 @@
   "close" : 0.006081,
   "volume" : 69533.46,
   "quoteAssetVolume" : 425.58429212,
-  "numberOfTrades" : 12268
+  "numberOfTrades" : 12268,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1586736000000,
@@ -3182,7 +2082,8 @@
   "close" : 0.006005,
   "volume" : 84503.07,
   "quoteAssetVolume" : 507.88465755,
-  "numberOfTrades" : 14331
+  "numberOfTrades" : 14331,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1586779200000,
@@ -3195,7 +2096,8 @@
   "close" : 0.006028,
   "volume" : 43334.56,
   "quoteAssetVolume" : 260.26001591,
-  "numberOfTrades" : 8915
+  "numberOfTrades" : 8915,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1586822400000,
@@ -3208,7 +2110,8 @@
   "close" : 0.006003,
   "volume" : 34769.95,
   "quoteAssetVolume" : 209.07251935,
-  "numberOfTrades" : 5925
+  "numberOfTrades" : 5925,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1586865600000,
@@ -3221,7 +2124,8 @@
   "close" : 0.005998,
   "volume" : 35333.52,
   "quoteAssetVolume" : 211.87424092,
-  "numberOfTrades" : 6254
+  "numberOfTrades" : 6254,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1586908800000,
@@ -3234,7 +2138,8 @@
   "close" : 0.00602,
   "volume" : 30931.4,
   "quoteAssetVolume" : 185.66994266,
-  "numberOfTrades" : 6457
+  "numberOfTrades" : 6457,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1586952000000,
@@ -3247,7 +2152,8 @@
   "close" : 0.005925,
   "volume" : 53608.22,
   "quoteAssetVolume" : 320.85941393,
-  "numberOfTrades" : 8555
+  "numberOfTrades" : 8555,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1586995200000,
@@ -3260,7 +2166,8 @@
   "close" : 0.006017,
   "volume" : 131930.31,
   "quoteAssetVolume" : 787.76048344,
-  "numberOfTrades" : 21989
+  "numberOfTrades" : 21989,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1587038400000,
@@ -3273,7 +2180,8 @@
   "close" : 0.005989,
   "volume" : 43316.48,
   "quoteAssetVolume" : 261.17617751,
-  "numberOfTrades" : 8383
+  "numberOfTrades" : 8383,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1587081600000,
@@ -3286,7 +2194,8 @@
   "close" : 0.005936,
   "volume" : 41755.59,
   "quoteAssetVolume" : 248.76831324,
-  "numberOfTrades" : 9117
+  "numberOfTrades" : 9117,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1587124800000,
@@ -3299,7 +2208,8 @@
   "close" : 0.006004,
   "volume" : 31819.93,
   "quoteAssetVolume" : 190.55873096,
-  "numberOfTrades" : 5728
+  "numberOfTrades" : 5728,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1587168000000,
@@ -3312,7 +2222,8 @@
   "close" : 0.005976,
   "volume" : 28171.26,
   "quoteAssetVolume" : 168.83691573,
-  "numberOfTrades" : 5812
+  "numberOfTrades" : 5812,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1587211200000,
@@ -3325,7 +2236,8 @@
   "close" : 0.006087,
   "volume" : 64315.83,
   "quoteAssetVolume" : 388.4245233,
-  "numberOfTrades" : 11220
+  "numberOfTrades" : 11220,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1587254400000,
@@ -3338,7 +2250,8 @@
   "close" : 0.006035,
   "volume" : 49568.44,
   "quoteAssetVolume" : 299.45623011,
-  "numberOfTrades" : 8374
+  "numberOfTrades" : 8374,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1587297600000,
@@ -3351,7 +2264,8 @@
   "close" : 0.005932,
   "volume" : 54808.41,
   "quoteAssetVolume" : 326.55676977,
-  "numberOfTrades" : 9812
+  "numberOfTrades" : 9812,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1587340800000,
@@ -3364,7 +2278,8 @@
   "close" : 0.005917,
   "volume" : 43060.38,
   "quoteAssetVolume" : 256.65047237,
-  "numberOfTrades" : 7978
+  "numberOfTrades" : 7978,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1587384000000,
@@ -3377,7 +2292,8 @@
   "close" : 0.00589,
   "volume" : 61657.37,
   "quoteAssetVolume" : 364.0624388,
-  "numberOfTrades" : 11013
+  "numberOfTrades" : 11013,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1587427200000,
@@ -3390,7 +2306,8 @@
   "close" : 0.005918,
   "volume" : 36220.68,
   "quoteAssetVolume" : 213.78047647,
-  "numberOfTrades" : 6612
+  "numberOfTrades" : 6612,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1587470400000,
@@ -3403,7 +2320,8 @@
   "close" : 0.005933,
   "volume" : 38166.31,
   "quoteAssetVolume" : 226.58773284,
-  "numberOfTrades" : 7221
+  "numberOfTrades" : 7221,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1587513600000,
@@ -3416,7 +2334,8 @@
   "close" : 0.005899,
   "volume" : 30562.28,
   "quoteAssetVolume" : 180.80476224,
-  "numberOfTrades" : 4814
+  "numberOfTrades" : 4814,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1587556800000,
@@ -3429,7 +2348,8 @@
   "close" : 0.005867,
   "volume" : 45942.32,
   "quoteAssetVolume" : 270.86634815,
-  "numberOfTrades" : 7718
+  "numberOfTrades" : 7718,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1587600000000,
@@ -3442,7 +2362,8 @@
   "close" : 0.005857,
   "volume" : 37674.56,
   "quoteAssetVolume" : 220.26706741,
-  "numberOfTrades" : 7207
+  "numberOfTrades" : 7207,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1587643200000,
@@ -3455,7 +2376,8 @@
   "close" : 0.005744,
   "volume" : 85066.69,
   "quoteAssetVolume" : 489.98006613,
-  "numberOfTrades" : 14936
+  "numberOfTrades" : 14936,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1587686400000,
@@ -3468,7 +2390,8 @@
   "close" : 0.005859,
   "volume" : 83899.55,
   "quoteAssetVolume" : 489.00966447,
-  "numberOfTrades" : 14017
+  "numberOfTrades" : 14017,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1587729600000,
@@ -3481,7 +2404,8 @@
   "close" : 0.005932,
   "volume" : 81399.93,
   "quoteAssetVolume" : 480.90102464,
-  "numberOfTrades" : 11818
+  "numberOfTrades" : 11818,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1587772800000,
@@ -3494,7 +2418,8 @@
   "close" : 0.005922,
   "volume" : 63479.78,
   "quoteAssetVolume" : 377.60985759,
-  "numberOfTrades" : 10758
+  "numberOfTrades" : 10758,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1587816000000,
@@ -3507,7 +2432,8 @@
   "close" : 0.005884,
   "volume" : 50334.97,
   "quoteAssetVolume" : 297.40193602,
-  "numberOfTrades" : 9387
+  "numberOfTrades" : 9387,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1587859200000,
@@ -3520,7 +2446,8 @@
   "close" : 0.005875,
   "volume" : 33092.41,
   "quoteAssetVolume" : 194.84197884,
-  "numberOfTrades" : 6588
+  "numberOfTrades" : 6588,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1587902400000,
@@ -3533,7 +2460,8 @@
   "close" : 0.005788,
   "volume" : 48054.3,
   "quoteAssetVolume" : 280.63562279,
-  "numberOfTrades" : 9039
+  "numberOfTrades" : 9039,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1587945600000,
@@ -3546,7 +2474,8 @@
   "close" : 0.005769,
   "volume" : 41115.87,
   "quoteAssetVolume" : 237.78475746,
-  "numberOfTrades" : 7257
+  "numberOfTrades" : 7257,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1587988800000,
@@ -3559,7 +2488,8 @@
   "close" : 0.005721,
   "volume" : 65701.91,
   "quoteAssetVolume" : 374.74172597,
-  "numberOfTrades" : 9935
+  "numberOfTrades" : 9935,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1588032000000,
@@ -3572,7 +2502,8 @@
   "close" : 0.005753,
   "volume" : 58949.21,
   "quoteAssetVolume" : 337.64951021,
-  "numberOfTrades" : 8324
+  "numberOfTrades" : 8324,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1588075200000,
@@ -3585,7 +2516,8 @@
   "close" : 0.005898,
   "volume" : 86500.38,
   "quoteAssetVolume" : 502.54696103,
-  "numberOfTrades" : 11986
+  "numberOfTrades" : 11986,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1588118400000,
@@ -3598,7 +2530,8 @@
   "close" : 0.005753,
   "volume" : 105483.12,
   "quoteAssetVolume" : 615.3255097,
-  "numberOfTrades" : 16121
+  "numberOfTrades" : 16121,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1588161600000,
@@ -3611,7 +2544,8 @@
   "close" : 0.005559,
   "volume" : 167763.51,
   "quoteAssetVolume" : 942.95680746,
-  "numberOfTrades" : 25424
+  "numberOfTrades" : 25424,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1588204800000,
@@ -3624,7 +2558,8 @@
   "close" : 0.005304,
   "volume" : 182707.3,
   "quoteAssetVolume" : 987.0112499,
-  "numberOfTrades" : 22298
+  "numberOfTrades" : 22298,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1588248000000,
@@ -3637,7 +2572,8 @@
   "close" : 0.005372,
   "volume" : 88684.41,
   "quoteAssetVolume" : 475.32105422,
-  "numberOfTrades" : 12720
+  "numberOfTrades" : 12720,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1588291200000,
@@ -3650,7 +2586,8 @@
   "close" : 0.005337,
   "volume" : 58987.58,
   "quoteAssetVolume" : 318.82175557,
-  "numberOfTrades" : 9192
+  "numberOfTrades" : 9192,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1588334400000,
@@ -3663,7 +2600,8 @@
   "close" : 0.005332,
   "volume" : 59363.55,
   "quoteAssetVolume" : 317.79283817,
-  "numberOfTrades" : 9652
+  "numberOfTrades" : 9652,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1588377600000,
@@ -3676,7 +2614,8 @@
   "close" : 0.005342,
   "volume" : 29285.51,
   "quoteAssetVolume" : 156.56047932,
-  "numberOfTrades" : 6196
+  "numberOfTrades" : 6196,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1588420800000,
@@ -3689,7 +2628,8 @@
   "close" : 0.005482,
   "volume" : 79853.93,
   "quoteAssetVolume" : 433.484336,
-  "numberOfTrades" : 13457
+  "numberOfTrades" : 13457,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1588464000000,
@@ -3702,7 +2642,8 @@
   "close" : 0.005407,
   "volume" : 54529.78,
   "quoteAssetVolume" : 296.16570021,
-  "numberOfTrades" : 9160
+  "numberOfTrades" : 9160,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1588507200000,
@@ -3715,7 +2656,8 @@
   "close" : 0.005406,
   "volume" : 49692.05,
   "quoteAssetVolume" : 268.17447815,
-  "numberOfTrades" : 8680
+  "numberOfTrades" : 8680,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1588550400000,
@@ -3728,7 +2670,8 @@
   "close" : 0.005289,
   "volume" : 53183.27,
   "quoteAssetVolume" : 283.18568918,
-  "numberOfTrades" : 9311
+  "numberOfTrades" : 9311,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1588593600000,
@@ -3741,7 +2684,8 @@
   "close" : 0.005294,
   "volume" : 61772.69,
   "quoteAssetVolume" : 327.71089461,
-  "numberOfTrades" : 9508
+  "numberOfTrades" : 9508,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1588636800000,
@@ -3754,7 +2698,8 @@
   "close" : 0.005219,
   "volume" : 47051.78,
   "quoteAssetVolume" : 247.04138719,
-  "numberOfTrades" : 9162
+  "numberOfTrades" : 9162,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1588680000000,
@@ -3767,7 +2712,8 @@
   "close" : 0.005159,
   "volume" : 39690.3,
   "quoteAssetVolume" : 207.00117133,
-  "numberOfTrades" : 7070
+  "numberOfTrades" : 7070,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1588723200000,
@@ -3780,7 +2726,8 @@
   "close" : 0.005089,
   "volume" : 54631.27,
   "quoteAssetVolume" : 281.74709238,
-  "numberOfTrades" : 8836
+  "numberOfTrades" : 8836,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1588766400000,
@@ -3793,7 +2740,8 @@
   "close" : 0.004916,
   "volume" : 68822.04,
   "quoteAssetVolume" : 345.78011856,
-  "numberOfTrades" : 11969
+  "numberOfTrades" : 11969,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1588809600000,
@@ -3806,7 +2754,8 @@
   "close" : 0.004913,
   "volume" : 59032.0,
   "quoteAssetVolume" : 291.05069788,
-  "numberOfTrades" : 9372
+  "numberOfTrades" : 9372,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1588852800000,
@@ -3819,7 +2768,8 @@
   "close" : 0.004742,
   "volume" : 143682.93,
   "quoteAssetVolume" : 693.12471403,
-  "numberOfTrades" : 20780
+  "numberOfTrades" : 20780,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1588896000000,
@@ -3832,7 +2782,8 @@
   "close" : 0.004749,
   "volume" : 70735.73,
   "quoteAssetVolume" : 337.80104106,
-  "numberOfTrades" : 10272
+  "numberOfTrades" : 10272,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1588939200000,
@@ -3845,7 +2796,8 @@
   "close" : 0.004866,
   "volume" : 87906.99,
   "quoteAssetVolume" : 422.43410371,
-  "numberOfTrades" : 13870
+  "numberOfTrades" : 13870,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1588982400000,
@@ -3858,7 +2810,8 @@
   "close" : 0.004935,
   "volume" : 84203.01,
   "quoteAssetVolume" : 416.42303542,
-  "numberOfTrades" : 13866
+  "numberOfTrades" : 13866,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1589025600000,
@@ -3871,7 +2824,8 @@
   "close" : 0.004923,
   "volume" : 52348.19,
   "quoteAssetVolume" : 258.26133056,
-  "numberOfTrades" : 8987
+  "numberOfTrades" : 8987,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1589068800000,
@@ -3884,7 +2838,8 @@
   "close" : 0.00485,
   "volume" : 197983.24,
   "quoteAssetVolume" : 961.39630558,
-  "numberOfTrades" : 26477
+  "numberOfTrades" : 26477,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1589112000000,
@@ -3897,7 +2852,8 @@
   "close" : 0.00482,
   "volume" : 89875.25,
   "quoteAssetVolume" : 433.32694462,
-  "numberOfTrades" : 14819
+  "numberOfTrades" : 14819,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1589155200000,
@@ -3910,7 +2866,8 @@
   "close" : 0.004714,
   "volume" : 66689.94,
   "quoteAssetVolume" : 319.41696663,
-  "numberOfTrades" : 10199
+  "numberOfTrades" : 10199,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1589198400000,
@@ -3923,7 +2880,8 @@
   "close" : 0.004845,
   "volume" : 153625.43,
   "quoteAssetVolume" : 728.60645395,
-  "numberOfTrades" : 20305
+  "numberOfTrades" : 20305,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1589241600000,
@@ -3936,7 +2894,8 @@
   "close" : 0.004847,
   "volume" : 51733.27,
   "quoteAssetVolume" : 249.93781122,
-  "numberOfTrades" : 8436
+  "numberOfTrades" : 8436,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1589284800000,
@@ -3949,7 +2908,8 @@
   "close" : 0.004789,
   "volume" : 96420.79,
   "quoteAssetVolume" : 460.62839693,
-  "numberOfTrades" : 13501
+  "numberOfTrades" : 13501,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1589328000000,
@@ -3962,7 +2922,8 @@
   "close" : 0.004705,
   "volume" : 39132.31,
   "quoteAssetVolume" : 185.51395675,
-  "numberOfTrades" : 6279
+  "numberOfTrades" : 6279,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1589371200000,
@@ -3975,7 +2936,8 @@
   "close" : 0.004641,
   "volume" : 68959.65,
   "quoteAssetVolume" : 324.00951538,
-  "numberOfTrades" : 10228
+  "numberOfTrades" : 10228,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1589414400000,
@@ -3988,7 +2950,8 @@
   "close" : 0.004532,
   "volume" : 89029.2,
   "quoteAssetVolume" : 404.5936253,
-  "numberOfTrades" : 12630
+  "numberOfTrades" : 12630,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1589457600000,
@@ -4001,7 +2964,8 @@
   "close" : 0.004492,
   "volume" : 68544.24,
   "quoteAssetVolume" : 310.25832286,
-  "numberOfTrades" : 9499
+  "numberOfTrades" : 9499,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1589500800000,
@@ -4014,7 +2978,8 @@
   "close" : 0.004538,
   "volume" : 67964.98,
   "quoteAssetVolume" : 307.99775201,
-  "numberOfTrades" : 8957
+  "numberOfTrades" : 8957,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1589544000000,
@@ -4027,7 +2992,8 @@
   "close" : 0.004587,
   "volume" : 67584.24,
   "quoteAssetVolume" : 308.56608264,
-  "numberOfTrades" : 10405
+  "numberOfTrades" : 10405,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1589587200000,
@@ -4040,7 +3006,8 @@
   "close" : 0.004603,
   "volume" : 84992.25,
   "quoteAssetVolume" : 390.69042842,
-  "numberOfTrades" : 9938
+  "numberOfTrades" : 9938,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1589630400000,
@@ -4053,7 +3020,8 @@
   "close" : 0.00461,
   "volume" : 58255.71,
   "quoteAssetVolume" : 268.3134698,
-  "numberOfTrades" : 8008
+  "numberOfTrades" : 8008,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1589673600000,
@@ -4066,7 +3034,8 @@
   "close" : 0.004633,
   "volume" : 50625.07,
   "quoteAssetVolume" : 233.08492815,
-  "numberOfTrades" : 6716
+  "numberOfTrades" : 6716,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1589716800000,
@@ -4079,7 +3048,8 @@
   "close" : 0.004516,
   "volume" : 55870.73,
   "quoteAssetVolume" : 253.32289205,
-  "numberOfTrades" : 8607
+  "numberOfTrades" : 8607,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1589760000000,
@@ -4092,7 +3062,8 @@
   "close" : 0.004685,
   "volume" : 149108.37,
   "quoteAssetVolume" : 690.35080068,
-  "numberOfTrades" : 16157
+  "numberOfTrades" : 16157,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1589803200000,
@@ -4105,7 +3076,8 @@
   "close" : 0.004657,
   "volume" : 54776.11,
   "quoteAssetVolume" : 255.80668493,
-  "numberOfTrades" : 7679
+  "numberOfTrades" : 7679,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1589846400000,
@@ -4118,7 +3090,8 @@
   "close" : 0.004628,
   "volume" : 52806.83,
   "quoteAssetVolume" : 245.17011197,
-  "numberOfTrades" : 6999
+  "numberOfTrades" : 6999,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1589889600000,
@@ -4131,7 +3104,8 @@
   "close" : 0.004676,
   "volume" : 57452.24,
   "quoteAssetVolume" : 267.62257128,
-  "numberOfTrades" : 7748
+  "numberOfTrades" : 7748,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1589932800000,
@@ -4144,7 +3118,8 @@
   "close" : 0.004662,
   "volume" : 53397.68,
   "quoteAssetVolume" : 250.03049721,
-  "numberOfTrades" : 7296
+  "numberOfTrades" : 7296,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1589976000000,
@@ -4157,7 +3132,8 @@
   "close" : 0.004651,
   "volume" : 77450.58,
   "quoteAssetVolume" : 359.2910496,
-  "numberOfTrades" : 9453
+  "numberOfTrades" : 9453,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1590019200000,
@@ -4170,7 +3146,8 @@
   "close" : 0.004686,
   "volume" : 50674.08,
   "quoteAssetVolume" : 235.91993119,
-  "numberOfTrades" : 6792
+  "numberOfTrades" : 6792,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1590062400000,
@@ -4183,7 +3160,8 @@
   "close" : 0.004712,
   "volume" : 76151.16,
   "quoteAssetVolume" : 357.77581637,
-  "numberOfTrades" : 12226
+  "numberOfTrades" : 12226,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1590105600000,
@@ -4196,7 +3174,8 @@
   "close" : 0.004776,
   "volume" : 52618.29,
   "quoteAssetVolume" : 250.19371743,
-  "numberOfTrades" : 9393
+  "numberOfTrades" : 9393,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1590148800000,
@@ -4209,7 +3188,8 @@
   "close" : 0.004825,
   "volume" : 58149.36,
   "quoteAssetVolume" : 279.34332695,
-  "numberOfTrades" : 9901
+  "numberOfTrades" : 9901,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1590192000000,
@@ -4222,7 +3202,8 @@
   "close" : 0.004802,
   "volume" : 52422.45,
   "quoteAssetVolume" : 251.64329549,
-  "numberOfTrades" : 6922
+  "numberOfTrades" : 6922,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1590235200000,
@@ -4235,7 +3216,8 @@
   "close" : 0.004776,
   "volume" : 37631.98,
   "quoteAssetVolume" : 180.47859475,
-  "numberOfTrades" : 5185
+  "numberOfTrades" : 5185,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1590278400000,
@@ -4248,7 +3230,8 @@
   "close" : 0.004804,
   "volume" : 58384.2,
   "quoteAssetVolume" : 279.75810857,
-  "numberOfTrades" : 6132
+  "numberOfTrades" : 6132,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1590321600000,
@@ -4261,7 +3244,8 @@
   "close" : 0.004829,
   "volume" : 74369.92,
   "quoteAssetVolume" : 356.67074937,
-  "numberOfTrades" : 10759
+  "numberOfTrades" : 10759,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1590364800000,
@@ -4274,7 +3258,8 @@
   "close" : 0.004883,
   "volume" : 55331.96,
   "quoteAssetVolume" : 268.8716817,
-  "numberOfTrades" : 9149
+  "numberOfTrades" : 9149,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1590408000000,
@@ -4287,7 +3272,8 @@
   "close" : 0.00483,
   "volume" : 64689.93,
   "quoteAssetVolume" : 313.8125503,
-  "numberOfTrades" : 8367
+  "numberOfTrades" : 8367,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1590451200000,
@@ -4300,7 +3286,8 @@
   "close" : 0.004798,
   "volume" : 53059.91,
   "quoteAssetVolume" : 254.5080804,
-  "numberOfTrades" : 7894
+  "numberOfTrades" : 7894,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1590494400000,
@@ -4313,7 +3300,8 @@
   "close" : 0.004781,
   "volume" : 42319.53,
   "quoteAssetVolume" : 202.97227401,
-  "numberOfTrades" : 7379
+  "numberOfTrades" : 7379,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1590537600000,
@@ -4326,7 +3314,8 @@
   "close" : 0.004765,
   "volume" : 48274.01,
   "quoteAssetVolume" : 230.93393826,
-  "numberOfTrades" : 6914
+  "numberOfTrades" : 6914,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1590580800000,
@@ -4339,7 +3328,8 @@
   "close" : 0.004766,
   "volume" : 47049.62,
   "quoteAssetVolume" : 224.31380076,
-  "numberOfTrades" : 6596
+  "numberOfTrades" : 6596,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1590624000000,
@@ -4352,7 +3342,8 @@
   "close" : 0.004713,
   "volume" : 43627.35,
   "quoteAssetVolume" : 207.01498042,
-  "numberOfTrades" : 6777
+  "numberOfTrades" : 6777,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1590667200000,
@@ -4365,7 +3356,8 @@
   "close" : 0.004675,
   "volume" : 54343.31,
   "quoteAssetVolume" : 254.56549404,
-  "numberOfTrades" : 9014
+  "numberOfTrades" : 9014,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1590710400000,
@@ -4378,7 +3370,8 @@
   "close" : 0.004735,
   "volume" : 53723.72,
   "quoteAssetVolume" : 253.13450667,
-  "numberOfTrades" : 8137
+  "numberOfTrades" : 8137,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1590753600000,
@@ -4391,7 +3384,8 @@
   "close" : 0.004718,
   "volume" : 31558.92,
   "quoteAssetVolume" : 149.37845936,
-  "numberOfTrades" : 5802
+  "numberOfTrades" : 5802,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1590796800000,
@@ -4404,7 +3398,8 @@
   "close" : 0.004899,
   "volume" : 75017.12,
   "quoteAssetVolume" : 362.60177728,
-  "numberOfTrades" : 12216
+  "numberOfTrades" : 12216,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1590840000000,
@@ -4417,7 +3412,8 @@
   "close" : 0.004924,
   "volume" : 105473.43,
   "quoteAssetVolume" : 519.81800252,
-  "numberOfTrades" : 13630
+  "numberOfTrades" : 13630,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1590883200000,
@@ -4430,7 +3426,8 @@
   "close" : 0.00493,
   "volume" : 75513.9,
   "quoteAssetVolume" : 369.39583345,
-  "numberOfTrades" : 11967
+  "numberOfTrades" : 11967,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1590926400000,
@@ -4443,7 +3440,8 @@
   "close" : 0.004826,
   "volume" : 65159.45,
   "quoteAssetVolume" : 317.80154208,
-  "numberOfTrades" : 10553
+  "numberOfTrades" : 10553,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1590969600000,
@@ -4456,7 +3454,8 @@
   "close" : 0.00482,
   "volume" : 45947.53,
   "quoteAssetVolume" : 221.88304484,
-  "numberOfTrades" : 7936
+  "numberOfTrades" : 7936,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1591012800000,
@@ -4469,7 +3468,8 @@
   "close" : 0.004732,
   "volume" : 145654.72,
   "quoteAssetVolume" : 701.83695534,
-  "numberOfTrades" : 21638
+  "numberOfTrades" : 21638,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1591056000000,
@@ -4482,7 +3482,8 @@
   "close" : 0.00491,
   "volume" : 107311.33,
   "quoteAssetVolume" : 518.09002969,
-  "numberOfTrades" : 13088
+  "numberOfTrades" : 13088,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1591099200000,
@@ -4495,7 +3496,8 @@
   "close" : 0.004832,
   "volume" : 137109.31,
   "quoteAssetVolume" : 662.98846079,
-  "numberOfTrades" : 21383
+  "numberOfTrades" : 21383,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1591142400000,
@@ -4508,7 +3510,8 @@
   "close" : 0.004858,
   "volume" : 52394.98,
   "quoteAssetVolume" : 253.56764966,
-  "numberOfTrades" : 8695
+  "numberOfTrades" : 8695,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1591185600000,
@@ -4521,7 +3524,8 @@
   "close" : 0.004879,
   "volume" : 83014.13,
   "quoteAssetVolume" : 406.67462703,
-  "numberOfTrades" : 12227
+  "numberOfTrades" : 12227,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1591228800000,
@@ -4534,7 +3538,8 @@
   "close" : 0.00492,
   "volume" : 80796.23,
   "quoteAssetVolume" : 397.97884265,
-  "numberOfTrades" : 11586
+  "numberOfTrades" : 11586,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1591272000000,
@@ -4547,7 +3552,8 @@
   "close" : 0.004847,
   "volume" : 66356.75,
   "quoteAssetVolume" : 322.6423279,
-  "numberOfTrades" : 10069
+  "numberOfTrades" : 10069,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1591315200000,
@@ -4560,7 +3566,8 @@
   "close" : 0.004871,
   "volume" : 37730.02,
   "quoteAssetVolume" : 183.18371904,
-  "numberOfTrades" : 7543
+  "numberOfTrades" : 7543,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1591358400000,
@@ -4573,7 +3580,8 @@
   "close" : 0.004865,
   "volume" : 41081.56,
   "quoteAssetVolume" : 199.29683634,
-  "numberOfTrades" : 7865
+  "numberOfTrades" : 7865,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1591401600000,
@@ -4586,7 +3594,8 @@
   "close" : 0.004855,
   "volume" : 30610.91,
   "quoteAssetVolume" : 148.5489811,
-  "numberOfTrades" : 6629
+  "numberOfTrades" : 6629,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1591444800000,
@@ -4599,7 +3608,8 @@
   "close" : 0.004842,
   "volume" : 35239.19,
   "quoteAssetVolume" : 170.75624091,
-  "numberOfTrades" : 6784
+  "numberOfTrades" : 6784,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1591488000000,
@@ -4612,7 +3622,8 @@
   "close" : 0.004807,
   "volume" : 32936.8,
   "quoteAssetVolume" : 158.80972489,
-  "numberOfTrades" : 5977
+  "numberOfTrades" : 5977,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1591531200000,
@@ -4625,7 +3636,8 @@
   "close" : 0.004784,
   "volume" : 47382.01,
   "quoteAssetVolume" : 227.79771946,
-  "numberOfTrades" : 8214
+  "numberOfTrades" : 8214,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1591574400000,
@@ -4638,7 +3650,8 @@
   "close" : 0.004772,
   "volume" : 37058.01,
   "quoteAssetVolume" : 177.13966384,
-  "numberOfTrades" : 6965
+  "numberOfTrades" : 6965,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1591617600000,
@@ -4651,7 +3664,8 @@
   "close" : 0.004747,
   "volume" : 37074.33,
   "quoteAssetVolume" : 176.28589924,
-  "numberOfTrades" : 6736
+  "numberOfTrades" : 6736,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1591660800000,
@@ -4664,7 +3678,8 @@
   "close" : 0.004754,
   "volume" : 35391.83,
   "quoteAssetVolume" : 168.34318769,
-  "numberOfTrades" : 6809
+  "numberOfTrades" : 6809,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1591704000000,
@@ -4677,7 +3692,8 @@
   "close" : 0.004695,
   "volume" : 43653.15,
   "quoteAssetVolume" : 206.16004104,
-  "numberOfTrades" : 7468
+  "numberOfTrades" : 7468,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1591747200000,
@@ -4690,7 +3706,8 @@
   "close" : 0.004711,
   "volume" : 36457.35,
   "quoteAssetVolume" : 171.72944483,
-  "numberOfTrades" : 6356
+  "numberOfTrades" : 6356,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1591790400000,
@@ -4703,7 +3720,8 @@
   "close" : 0.004718,
   "volume" : 54424.4,
   "quoteAssetVolume" : 257.28698766,
-  "numberOfTrades" : 9351
+  "numberOfTrades" : 9351,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1591833600000,
@@ -4716,7 +3734,8 @@
   "close" : 0.004724,
   "volume" : 30612.97,
   "quoteAssetVolume" : 144.42870276,
-  "numberOfTrades" : 5461
+  "numberOfTrades" : 5461,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1591876800000,
@@ -4729,7 +3748,8 @@
   "close" : 0.004657,
   "volume" : 99010.04,
   "quoteAssetVolume" : 463.7631655,
-  "numberOfTrades" : 14698
+  "numberOfTrades" : 14698,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1591920000000,
@@ -4742,7 +3762,8 @@
   "close" : 0.004679,
   "volume" : 48619.94,
   "quoteAssetVolume" : 226.83631515,
-  "numberOfTrades" : 7325
+  "numberOfTrades" : 7325,
+  "rsi" : 0.0
 }, {
   "symbol" : "LTCBTC",
   "openTime" : 1591963200000,
@@ -4752,8 +3773,1325 @@
   "open" : 0.004681,
   "high" : 0.004783,
   "low" : 0.004679,
-  "close" : 0.00473,
-  "volume" : 35417.9,
-  "quoteAssetVolume" : 167.99799589,
-  "numberOfTrades" : 6085
+  "close" : 0.004723,
+  "volume" : 39663.47,
+  "quoteAssetVolume" : 188.04889366,
+  "numberOfTrades" : 7187,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1592006400000,
+  "openDate" : null,
+  "closeTime" : 1592049599999,
+  "closeDate" : null,
+  "open" : 0.004726,
+  "high" : 0.004746,
+  "low" : 0.00471,
+  "close" : 0.004735,
+  "volume" : 22329.63,
+  "quoteAssetVolume" : 105.58290009,
+  "numberOfTrades" : 4630,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1592049600000,
+  "openDate" : null,
+  "closeTime" : 1592092799999,
+  "closeDate" : null,
+  "open" : 0.004737,
+  "high" : 0.004775,
+  "low" : 0.004727,
+  "close" : 0.00476,
+  "volume" : 24533.94,
+  "quoteAssetVolume" : 116.60309907,
+  "numberOfTrades" : 5045,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1592092800000,
+  "openDate" : null,
+  "closeTime" : 1592135999999,
+  "closeDate" : null,
+  "open" : 0.004759,
+  "high" : 0.004762,
+  "low" : 0.004711,
+  "close" : 0.004721,
+  "volume" : 27625.8,
+  "quoteAssetVolume" : 130.71544404,
+  "numberOfTrades" : 4615,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1592136000000,
+  "openDate" : null,
+  "closeTime" : 1592179199999,
+  "closeDate" : null,
+  "open" : 0.004722,
+  "high" : 0.004728,
+  "low" : 0.004693,
+  "close" : 0.004715,
+  "volume" : 32598.4,
+  "quoteAssetVolume" : 153.61865669,
+  "numberOfTrades" : 5274,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1592179200000,
+  "openDate" : null,
+  "closeTime" : 1592222399999,
+  "closeDate" : null,
+  "open" : 0.004715,
+  "high" : 0.004719,
+  "low" : 0.004651,
+  "close" : 0.004691,
+  "volume" : 81364.5,
+  "quoteAssetVolume" : 381.2857488,
+  "numberOfTrades" : 9255,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1592222400000,
+  "openDate" : null,
+  "closeTime" : 1592265599999,
+  "closeDate" : null,
+  "open" : 0.004689,
+  "high" : 0.004694,
+  "low" : 0.004617,
+  "close" : 0.004642,
+  "volume" : 55770.95,
+  "quoteAssetVolume" : 259.57786341,
+  "numberOfTrades" : 7293,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1592265600000,
+  "openDate" : null,
+  "closeTime" : 1592308799999,
+  "closeDate" : null,
+  "open" : 0.004642,
+  "high" : 0.004649,
+  "low" : 0.004594,
+  "close" : 0.0046,
+  "volume" : 37715.26,
+  "quoteAssetVolume" : 174.01387816,
+  "numberOfTrades" : 6445,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1592308800000,
+  "openDate" : null,
+  "closeTime" : 1592351999999,
+  "closeDate" : null,
+  "open" : 0.0046,
+  "high" : 0.004619,
+  "low" : 0.004572,
+  "close" : 0.004607,
+  "volume" : 44499.23,
+  "quoteAssetVolume" : 204.80519073,
+  "numberOfTrades" : 6546,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1592352000000,
+  "openDate" : null,
+  "closeTime" : 1592395199999,
+  "closeDate" : null,
+  "open" : 0.004607,
+  "high" : 0.004735,
+  "low" : 0.004602,
+  "close" : 0.004704,
+  "volume" : 46446.21,
+  "quoteAssetVolume" : 216.51976908,
+  "numberOfTrades" : 8852,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1592395200000,
+  "openDate" : null,
+  "closeTime" : 1592438399999,
+  "closeDate" : null,
+  "open" : 0.004702,
+  "high" : 0.004735,
+  "low" : 0.004647,
+  "close" : 0.004655,
+  "volume" : 49914.69,
+  "quoteAssetVolume" : 233.85872262,
+  "numberOfTrades" : 8036,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1592438400000,
+  "openDate" : null,
+  "closeTime" : 1592481599999,
+  "closeDate" : null,
+  "open" : 0.004656,
+  "high" : 0.004679,
+  "low" : 0.004644,
+  "close" : 0.004662,
+  "volume" : 45228.79,
+  "quoteAssetVolume" : 210.69371398,
+  "numberOfTrades" : 5768,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1592481600000,
+  "openDate" : null,
+  "closeTime" : 1592524799999,
+  "closeDate" : null,
+  "open" : 0.004663,
+  "high" : 0.00467,
+  "low" : 0.004602,
+  "close" : 0.004626,
+  "volume" : 37686.37,
+  "quoteAssetVolume" : 174.78702958,
+  "numberOfTrades" : 6600,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1592524800000,
+  "openDate" : null,
+  "closeTime" : 1592567999999,
+  "closeDate" : null,
+  "open" : 0.004626,
+  "high" : 0.004656,
+  "low" : 0.004618,
+  "close" : 0.004643,
+  "volume" : 45188.16,
+  "quoteAssetVolume" : 209.44905123,
+  "numberOfTrades" : 5978,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1592568000000,
+  "openDate" : null,
+  "closeTime" : 1592611199999,
+  "closeDate" : null,
+  "open" : 0.004641,
+  "high" : 0.004655,
+  "low" : 0.004587,
+  "close" : 0.004605,
+  "volume" : 35478.34,
+  "quoteAssetVolume" : 164.19906687,
+  "numberOfTrades" : 6163,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1592611200000,
+  "openDate" : null,
+  "closeTime" : 1592654399999,
+  "closeDate" : null,
+  "open" : 0.004606,
+  "high" : 0.004633,
+  "low" : 0.004587,
+  "close" : 0.004621,
+  "volume" : 34607.7,
+  "quoteAssetVolume" : 159.74068034,
+  "numberOfTrades" : 5222,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1592654400000,
+  "openDate" : null,
+  "closeTime" : 1592697599999,
+  "closeDate" : null,
+  "open" : 0.004621,
+  "high" : 0.00467,
+  "low" : 0.004605,
+  "close" : 0.004656,
+  "volume" : 24677.79,
+  "quoteAssetVolume" : 114.37681889,
+  "numberOfTrades" : 4572,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1592697600000,
+  "openDate" : null,
+  "closeTime" : 1592740799999,
+  "closeDate" : null,
+  "open" : 0.004656,
+  "high" : 0.004671,
+  "low" : 0.004612,
+  "close" : 0.004623,
+  "volume" : 20969.1,
+  "quoteAssetVolume" : 97.19949254,
+  "numberOfTrades" : 4128,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1592740800000,
+  "openDate" : null,
+  "closeTime" : 1592783999999,
+  "closeDate" : null,
+  "open" : 0.004623,
+  "high" : 0.004631,
+  "low" : 0.00461,
+  "close" : 0.004628,
+  "volume" : 26756.95,
+  "quoteAssetVolume" : 123.62353475,
+  "numberOfTrades" : 4096,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1592784000000,
+  "openDate" : null,
+  "closeTime" : 1592827199999,
+  "closeDate" : null,
+  "open" : 0.004627,
+  "high" : 0.004655,
+  "low" : 0.004612,
+  "close" : 0.004613,
+  "volume" : 29081.38,
+  "quoteAssetVolume" : 134.75106307,
+  "numberOfTrades" : 4461,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1592827200000,
+  "openDate" : null,
+  "closeTime" : 1592870399999,
+  "closeDate" : null,
+  "open" : 0.004613,
+  "high" : 0.004656,
+  "low" : 0.004564,
+  "close" : 0.004576,
+  "volume" : 62593.52,
+  "quoteAssetVolume" : 288.96064377,
+  "numberOfTrades" : 8247,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1592870400000,
+  "openDate" : null,
+  "closeTime" : 1592913599999,
+  "closeDate" : null,
+  "open" : 0.004573,
+  "high" : 0.004589,
+  "low" : 0.004563,
+  "close" : 0.004572,
+  "volume" : 33884.24,
+  "quoteAssetVolume" : 155.05694018,
+  "numberOfTrades" : 4527,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1592913600000,
+  "openDate" : null,
+  "closeTime" : 1592956799999,
+  "closeDate" : null,
+  "open" : 0.004573,
+  "high" : 0.004611,
+  "low" : 0.004564,
+  "close" : 0.004591,
+  "volume" : 41925.8,
+  "quoteAssetVolume" : 192.10987612,
+  "numberOfTrades" : 6023,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1592956800000,
+  "openDate" : null,
+  "closeTime" : 1592999999999,
+  "closeDate" : null,
+  "open" : 0.004591,
+  "high" : 0.004624,
+  "low" : 0.004545,
+  "close" : 0.004588,
+  "volume" : 60351.18,
+  "quoteAssetVolume" : 276.50608132,
+  "numberOfTrades" : 7529,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1593000000000,
+  "openDate" : null,
+  "closeTime" : 1593043199999,
+  "closeDate" : null,
+  "open" : 0.004588,
+  "high" : 0.004604,
+  "low" : 0.004557,
+  "close" : 0.004585,
+  "volume" : 44633.0,
+  "quoteAssetVolume" : 204.50200034,
+  "numberOfTrades" : 6261,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1593043200000,
+  "openDate" : null,
+  "closeTime" : 1593086399999,
+  "closeDate" : null,
+  "open" : 0.004585,
+  "high" : 0.004643,
+  "low" : 0.004582,
+  "close" : 0.004617,
+  "volume" : 63926.46,
+  "quoteAssetVolume" : 294.97903999,
+  "numberOfTrades" : 7110,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1593086400000,
+  "openDate" : null,
+  "closeTime" : 1593129599999,
+  "closeDate" : null,
+  "open" : 0.004617,
+  "high" : 0.004624,
+  "low" : 0.004554,
+  "close" : 0.00458,
+  "volume" : 32481.65,
+  "quoteAssetVolume" : 149.16903162,
+  "numberOfTrades" : 5832,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1593129600000,
+  "openDate" : null,
+  "closeTime" : 1593172799999,
+  "closeDate" : null,
+  "open" : 0.004581,
+  "high" : 0.004712,
+  "low" : 0.004544,
+  "close" : 0.00471,
+  "volume" : 92852.59,
+  "quoteAssetVolume" : 426.73680225,
+  "numberOfTrades" : 11636,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1593172800000,
+  "openDate" : null,
+  "closeTime" : 1593215999999,
+  "closeDate" : null,
+  "open" : 0.004712,
+  "high" : 0.00473,
+  "low" : 0.004675,
+  "close" : 0.004702,
+  "volume" : 85696.85,
+  "quoteAssetVolume" : 403.10933684,
+  "numberOfTrades" : 10821,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1593216000000,
+  "openDate" : null,
+  "closeTime" : 1593259199999,
+  "closeDate" : null,
+  "open" : 0.004704,
+  "high" : 0.004713,
+  "low" : 0.004646,
+  "close" : 0.004665,
+  "volume" : 33279.93,
+  "quoteAssetVolume" : 155.77351181,
+  "numberOfTrades" : 5219,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1593259200000,
+  "openDate" : null,
+  "closeTime" : 1593302399999,
+  "closeDate" : null,
+  "open" : 0.004665,
+  "high" : 0.004666,
+  "low" : 0.004418,
+  "close" : 0.004556,
+  "volume" : 78138.65,
+  "quoteAssetVolume" : 356.21883119,
+  "numberOfTrades" : 12684,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1593302400000,
+  "openDate" : null,
+  "closeTime" : 1593345599999,
+  "closeDate" : null,
+  "open" : 0.004556,
+  "high" : 0.004592,
+  "low" : 0.00452,
+  "close" : 0.004562,
+  "volume" : 24076.65,
+  "quoteAssetVolume" : 109.61940086,
+  "numberOfTrades" : 4414,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1593345600000,
+  "openDate" : null,
+  "closeTime" : 1593388799999,
+  "closeDate" : null,
+  "open" : 0.004561,
+  "high" : 0.004576,
+  "low" : 0.004517,
+  "close" : 0.004536,
+  "volume" : 22102.26,
+  "quoteAssetVolume" : 100.63154333,
+  "numberOfTrades" : 5083,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1593388800000,
+  "openDate" : null,
+  "closeTime" : 1593431999999,
+  "closeDate" : null,
+  "open" : 0.004538,
+  "high" : 0.004544,
+  "low" : 0.00448,
+  "close" : 0.004518,
+  "volume" : 35373.42,
+  "quoteAssetVolume" : 159.5920927,
+  "numberOfTrades" : 5471,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1593432000000,
+  "openDate" : null,
+  "closeTime" : 1593475199999,
+  "closeDate" : null,
+  "open" : 0.004516,
+  "high" : 0.004595,
+  "low" : 0.004514,
+  "close" : 0.004557,
+  "volume" : 56143.41,
+  "quoteAssetVolume" : 255.61125113,
+  "numberOfTrades" : 8274,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1593475200000,
+  "openDate" : null,
+  "closeTime" : 1593518399999,
+  "closeDate" : null,
+  "open" : 0.004558,
+  "high" : 0.004572,
+  "low" : 0.004508,
+  "close" : 0.004526,
+  "volume" : 20181.23,
+  "quoteAssetVolume" : 91.41216056,
+  "numberOfTrades" : 3992,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1593518400000,
+  "openDate" : null,
+  "closeTime" : 1593561599999,
+  "closeDate" : null,
+  "open" : 0.004523,
+  "high" : 0.00453,
+  "low" : 0.004476,
+  "close" : 0.004507,
+  "volume" : 25484.12,
+  "quoteAssetVolume" : 114.69246166,
+  "numberOfTrades" : 4523,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1593561600000,
+  "openDate" : null,
+  "closeTime" : 1593604799999,
+  "closeDate" : null,
+  "open" : 0.004508,
+  "high" : 0.004546,
+  "low" : 0.0045,
+  "close" : 0.004531,
+  "volume" : 26051.99,
+  "quoteAssetVolume" : 117.86725378,
+  "numberOfTrades" : 4724,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1593604800000,
+  "openDate" : null,
+  "closeTime" : 1593647999999,
+  "closeDate" : null,
+  "open" : 0.004532,
+  "high" : 0.004547,
+  "low" : 0.004497,
+  "close" : 0.004524,
+  "volume" : 22980.27,
+  "quoteAssetVolume" : 103.92069639,
+  "numberOfTrades" : 5321,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1593648000000,
+  "openDate" : null,
+  "closeTime" : 1593691199999,
+  "closeDate" : null,
+  "open" : 0.004524,
+  "high" : 0.004533,
+  "low" : 0.004489,
+  "close" : 0.004511,
+  "volume" : 17178.06,
+  "quoteAssetVolume" : 77.47370653,
+  "numberOfTrades" : 4156,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1593691200000,
+  "openDate" : null,
+  "closeTime" : 1593734399999,
+  "closeDate" : null,
+  "open" : 0.004513,
+  "high" : 0.004529,
+  "low" : 0.004491,
+  "close" : 0.004515,
+  "volume" : 43729.88,
+  "quoteAssetVolume" : 197.21599311,
+  "numberOfTrades" : 7460,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1593734400000,
+  "openDate" : null,
+  "closeTime" : 1593777599999,
+  "closeDate" : null,
+  "open" : 0.004516,
+  "high" : 0.004574,
+  "low" : 0.004505,
+  "close" : 0.004548,
+  "volume" : 34308.6,
+  "quoteAssetVolume" : 155.78199805,
+  "numberOfTrades" : 5806,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1593777600000,
+  "openDate" : null,
+  "closeTime" : 1593820799999,
+  "closeDate" : null,
+  "open" : 0.00455,
+  "high" : 0.004581,
+  "low" : 0.00452,
+  "close" : 0.00454,
+  "volume" : 32931.35,
+  "quoteAssetVolume" : 149.78167888,
+  "numberOfTrades" : 4999,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1593820800000,
+  "openDate" : null,
+  "closeTime" : 1593863999999,
+  "closeDate" : null,
+  "open" : 0.00454,
+  "high" : 0.0046,
+  "low" : 0.004538,
+  "close" : 0.004589,
+  "volume" : 39902.24,
+  "quoteAssetVolume" : 182.57767047,
+  "numberOfTrades" : 5638,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1593864000000,
+  "openDate" : null,
+  "closeTime" : 1593907199999,
+  "closeDate" : null,
+  "open" : 0.004587,
+  "high" : 0.004621,
+  "low" : 0.004563,
+  "close" : 0.004608,
+  "volume" : 42096.6,
+  "quoteAssetVolume" : 193.36701784,
+  "numberOfTrades" : 6302,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1593907200000,
+  "openDate" : null,
+  "closeTime" : 1593950399999,
+  "closeDate" : null,
+  "open" : 0.004609,
+  "high" : 0.004619,
+  "low" : 0.004552,
+  "close" : 0.004591,
+  "volume" : 34105.52,
+  "quoteAssetVolume" : 156.27575648,
+  "numberOfTrades" : 4912,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1593950400000,
+  "openDate" : null,
+  "closeTime" : 1593993599999,
+  "closeDate" : null,
+  "open" : 0.004591,
+  "high" : 0.004599,
+  "low" : 0.004552,
+  "close" : 0.004584,
+  "volume" : 28907.69,
+  "quoteAssetVolume" : 132.3999317,
+  "numberOfTrades" : 4355,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1593993600000,
+  "openDate" : null,
+  "closeTime" : 1594036799999,
+  "closeDate" : null,
+  "open" : 0.004582,
+  "high" : 0.00465,
+  "low" : 0.004579,
+  "close" : 0.004648,
+  "volume" : 46050.86,
+  "quoteAssetVolume" : 212.19568834,
+  "numberOfTrades" : 6311,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1594036800000,
+  "openDate" : null,
+  "closeTime" : 1594079999999,
+  "closeDate" : null,
+  "open" : 0.004647,
+  "high" : 0.00473,
+  "low" : 0.004635,
+  "close" : 0.004716,
+  "volume" : 59280.95,
+  "quoteAssetVolume" : 277.88889144,
+  "numberOfTrades" : 9856,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1594080000000,
+  "openDate" : null,
+  "closeTime" : 1594123199999,
+  "closeDate" : null,
+  "open" : 0.004716,
+  "high" : 0.004746,
+  "low" : 0.004688,
+  "close" : 0.004717,
+  "volume" : 44164.54,
+  "quoteAssetVolume" : 208.1330688,
+  "numberOfTrades" : 5797,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1594123200000,
+  "openDate" : null,
+  "closeTime" : 1594166399999,
+  "closeDate" : null,
+  "open" : 0.004716,
+  "high" : 0.004724,
+  "low" : 0.004663,
+  "close" : 0.004688,
+  "volume" : 40833.93,
+  "quoteAssetVolume" : 191.76279481,
+  "numberOfTrades" : 6336,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1594166400000,
+  "openDate" : null,
+  "closeTime" : 1594209599999,
+  "closeDate" : null,
+  "open" : 0.004689,
+  "high" : 0.00488,
+  "low" : 0.004667,
+  "close" : 0.004867,
+  "volume" : 108447.63,
+  "quoteAssetVolume" : 520.07603965,
+  "numberOfTrades" : 15855,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1594209600000,
+  "openDate" : null,
+  "closeTime" : 1594252799999,
+  "closeDate" : null,
+  "open" : 0.004867,
+  "high" : 0.004868,
+  "low" : 0.004779,
+  "close" : 0.004807,
+  "volume" : 68683.48,
+  "quoteAssetVolume" : 330.46138287,
+  "numberOfTrades" : 9873,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1594252800000,
+  "openDate" : null,
+  "closeTime" : 1594295999999,
+  "closeDate" : null,
+  "open" : 0.004808,
+  "high" : 0.004869,
+  "low" : 0.004751,
+  "close" : 0.00484,
+  "volume" : 64646.4,
+  "quoteAssetVolume" : 311.17176643,
+  "numberOfTrades" : 9168,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1594296000000,
+  "openDate" : null,
+  "closeTime" : 1594339199999,
+  "closeDate" : null,
+  "open" : 0.004839,
+  "high" : 0.004866,
+  "low" : 0.004736,
+  "close" : 0.004804,
+  "volume" : 76645.01,
+  "quoteAssetVolume" : 367.75017519,
+  "numberOfTrades" : 9408,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1594339200000,
+  "openDate" : null,
+  "closeTime" : 1594382399999,
+  "closeDate" : null,
+  "open" : 0.004804,
+  "high" : 0.004852,
+  "low" : 0.004761,
+  "close" : 0.004797,
+  "volume" : 54797.01,
+  "quoteAssetVolume" : 263.15028729,
+  "numberOfTrades" : 7326,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1594382400000,
+  "openDate" : null,
+  "closeTime" : 1594425599999,
+  "closeDate" : null,
+  "open" : 0.004796,
+  "high" : 0.004818,
+  "low" : 0.004765,
+  "close" : 0.00477,
+  "volume" : 45372.81,
+  "quoteAssetVolume" : 217.43556111,
+  "numberOfTrades" : 5345,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1594425600000,
+  "openDate" : null,
+  "closeTime" : 1594468799999,
+  "closeDate" : null,
+  "open" : 0.004769,
+  "high" : 0.004812,
+  "low" : 0.004766,
+  "close" : 0.004794,
+  "volume" : 33050.46,
+  "quoteAssetVolume" : 158.26585121,
+  "numberOfTrades" : 5248,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1594468800000,
+  "openDate" : null,
+  "closeTime" : 1594511999999,
+  "closeDate" : null,
+  "open" : 0.004794,
+  "high" : 0.004847,
+  "low" : 0.004785,
+  "close" : 0.004839,
+  "volume" : 31096.33,
+  "quoteAssetVolume" : 149.50435645,
+  "numberOfTrades" : 5026,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1594512000000,
+  "openDate" : null,
+  "closeTime" : 1594555199999,
+  "closeDate" : null,
+  "open" : 0.004839,
+  "high" : 0.004875,
+  "low" : 0.004828,
+  "close" : 0.004834,
+  "volume" : 41533.03,
+  "quoteAssetVolume" : 201.43304073,
+  "numberOfTrades" : 5694,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1594555200000,
+  "openDate" : null,
+  "closeTime" : 1594598399999,
+  "closeDate" : null,
+  "open" : 0.004833,
+  "high" : 0.004856,
+  "low" : 0.004756,
+  "close" : 0.004807,
+  "volume" : 62781.21,
+  "quoteAssetVolume" : 301.55019405,
+  "numberOfTrades" : 7891,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1594598400000,
+  "openDate" : null,
+  "closeTime" : 1594641599999,
+  "closeDate" : null,
+  "open" : 0.004809,
+  "high" : 0.0049,
+  "low" : 0.004799,
+  "close" : 0.004874,
+  "volume" : 57645.17,
+  "quoteAssetVolume" : 279.22579407,
+  "numberOfTrades" : 7657,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1594641600000,
+  "openDate" : null,
+  "closeTime" : 1594684799999,
+  "closeDate" : null,
+  "open" : 0.004874,
+  "high" : 0.004888,
+  "low" : 0.004622,
+  "close" : 0.004753,
+  "volume" : 125864.73,
+  "quoteAssetVolume" : 601.54417183,
+  "numberOfTrades" : 15868,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1594684800000,
+  "openDate" : null,
+  "closeTime" : 1594727999999,
+  "closeDate" : null,
+  "open" : 0.004751,
+  "high" : 0.004762,
+  "low" : 0.004672,
+  "close" : 0.004747,
+  "volume" : 53137.1,
+  "quoteAssetVolume" : 250.94964837,
+  "numberOfTrades" : 7339,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1594728000000,
+  "openDate" : null,
+  "closeTime" : 1594771199999,
+  "closeDate" : null,
+  "open" : 0.004745,
+  "high" : 0.004757,
+  "low" : 0.004709,
+  "close" : 0.004741,
+  "volume" : 42288.55,
+  "quoteAssetVolume" : 200.00820642,
+  "numberOfTrades" : 5393,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1594771200000,
+  "openDate" : null,
+  "closeTime" : 1594814399999,
+  "closeDate" : null,
+  "open" : 0.004742,
+  "high" : 0.004752,
+  "low" : 0.004691,
+  "close" : 0.004704,
+  "volume" : 34047.44,
+  "quoteAssetVolume" : 160.47216729,
+  "numberOfTrades" : 5321,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1594814400000,
+  "openDate" : null,
+  "closeTime" : 1594857599999,
+  "closeDate" : null,
+  "open" : 0.004704,
+  "high" : 0.004717,
+  "low" : 0.004668,
+  "close" : 0.004711,
+  "volume" : 33633.7,
+  "quoteAssetVolume" : 157.94566057,
+  "numberOfTrades" : 5448,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1594857600000,
+  "openDate" : null,
+  "closeTime" : 1594900799999,
+  "closeDate" : null,
+  "open" : 0.00471,
+  "high" : 0.004714,
+  "low" : 0.004502,
+  "close" : 0.004595,
+  "volume" : 88471.43,
+  "quoteAssetVolume" : 407.89050712,
+  "numberOfTrades" : 14025,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1594900800000,
+  "openDate" : null,
+  "closeTime" : 1594943999999,
+  "closeDate" : null,
+  "open" : 0.004595,
+  "high" : 0.004618,
+  "low" : 0.004567,
+  "close" : 0.004609,
+  "volume" : 43134.38,
+  "quoteAssetVolume" : 198.29179753,
+  "numberOfTrades" : 6515,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1594944000000,
+  "openDate" : null,
+  "closeTime" : 1594987199999,
+  "closeDate" : null,
+  "open" : 0.004607,
+  "high" : 0.004618,
+  "low" : 0.004586,
+  "close" : 0.004611,
+  "volume" : 41697.89,
+  "quoteAssetVolume" : 191.90384948,
+  "numberOfTrades" : 4708,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1594987200000,
+  "openDate" : null,
+  "closeTime" : 1595030399999,
+  "closeDate" : null,
+  "open" : 0.004609,
+  "high" : 0.004627,
+  "low" : 0.00457,
+  "close" : 0.004577,
+  "volume" : 38237.26,
+  "quoteAssetVolume" : 175.50381016,
+  "numberOfTrades" : 4836,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1595030400000,
+  "openDate" : null,
+  "closeTime" : 1595073599999,
+  "closeDate" : null,
+  "open" : 0.004578,
+  "high" : 0.004641,
+  "low" : 0.00457,
+  "close" : 0.004638,
+  "volume" : 40445.09,
+  "quoteAssetVolume" : 186.14403146,
+  "numberOfTrades" : 4832,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1595073600000,
+  "openDate" : null,
+  "closeTime" : 1595116799999,
+  "closeDate" : null,
+  "open" : 0.004637,
+  "high" : 0.004671,
+  "low" : 0.004625,
+  "close" : 0.004631,
+  "volume" : 31316.21,
+  "quoteAssetVolume" : 145.53381196,
+  "numberOfTrades" : 4962,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1595116800000,
+  "openDate" : null,
+  "closeTime" : 1595159999999,
+  "closeDate" : null,
+  "open" : 0.004631,
+  "high" : 0.004642,
+  "low" : 0.004601,
+  "close" : 0.004621,
+  "volume" : 26141.91,
+  "quoteAssetVolume" : 120.91894395,
+  "numberOfTrades" : 3562,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1595160000000,
+  "openDate" : null,
+  "closeTime" : 1595203199999,
+  "closeDate" : null,
+  "open" : 0.004623,
+  "high" : 0.004651,
+  "low" : 0.004589,
+  "close" : 0.00463,
+  "volume" : 33801.04,
+  "quoteAssetVolume" : 156.0758247,
+  "numberOfTrades" : 5493,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1595203200000,
+  "openDate" : null,
+  "closeTime" : 1595246399999,
+  "closeDate" : null,
+  "open" : 0.00463,
+  "high" : 0.004649,
+  "low" : 0.004606,
+  "close" : 0.004616,
+  "volume" : 33591.38,
+  "quoteAssetVolume" : 155.57790124,
+  "numberOfTrades" : 5151,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1595246400000,
+  "openDate" : null,
+  "closeTime" : 1595289599999,
+  "closeDate" : null,
+  "open" : 0.004617,
+  "high" : 0.004624,
+  "low" : 0.00452,
+  "close" : 0.00458,
+  "volume" : 47890.49,
+  "quoteAssetVolume" : 219.70347453,
+  "numberOfTrades" : 7902,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1595289600000,
+  "openDate" : null,
+  "closeTime" : 1595332799999,
+  "closeDate" : null,
+  "open" : 0.004579,
+  "high" : 0.004704,
+  "low" : 0.004573,
+  "close" : 0.004682,
+  "volume" : 57030.44,
+  "quoteAssetVolume" : 265.09711164,
+  "numberOfTrades" : 9275,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1595332800000,
+  "openDate" : null,
+  "closeTime" : 1595375999999,
+  "closeDate" : null,
+  "open" : 0.004682,
+  "high" : 0.004715,
+  "low" : 0.004638,
+  "close" : 0.004663,
+  "volume" : 54293.64,
+  "quoteAssetVolume" : 253.50480444,
+  "numberOfTrades" : 7823,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1595376000000,
+  "openDate" : null,
+  "closeTime" : 1595419199999,
+  "closeDate" : null,
+  "open" : 0.004663,
+  "high" : 0.004693,
+  "low" : 0.004648,
+  "close" : 0.004662,
+  "volume" : 43151.0,
+  "quoteAssetVolume" : 201.43711047,
+  "numberOfTrades" : 5563,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1595419200000,
+  "openDate" : null,
+  "closeTime" : 1595462399999,
+  "closeDate" : null,
+  "open" : 0.004664,
+  "high" : 0.004742,
+  "low" : 0.004635,
+  "close" : 0.004724,
+  "volume" : 83064.13,
+  "quoteAssetVolume" : 388.73254052,
+  "numberOfTrades" : 10518,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1595462400000,
+  "openDate" : null,
+  "closeTime" : 1595505599999,
+  "closeDate" : null,
+  "open" : 0.004722,
+  "high" : 0.004792,
+  "low" : 0.004709,
+  "close" : 0.004728,
+  "volume" : 66116.71,
+  "quoteAssetVolume" : 313.66428172,
+  "numberOfTrades" : 8996,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1595505600000,
+  "openDate" : null,
+  "closeTime" : 1595548799999,
+  "closeDate" : null,
+  "open" : 0.004728,
+  "high" : 0.004754,
+  "low" : 0.00467,
+  "close" : 0.00468,
+  "volume" : 89389.51,
+  "quoteAssetVolume" : 421.40368716,
+  "numberOfTrades" : 11149,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1595548800000,
+  "openDate" : null,
+  "closeTime" : 1595591999999,
+  "closeDate" : null,
+  "open" : 0.004679,
+  "high" : 0.004695,
+  "low" : 0.004631,
+  "close" : 0.004653,
+  "volume" : 69469.91,
+  "quoteAssetVolume" : 323.71405467,
+  "numberOfTrades" : 7666,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1595592000000,
+  "openDate" : null,
+  "closeTime" : 1595635199999,
+  "closeDate" : null,
+  "open" : 0.004652,
+  "high" : 0.004686,
+  "low" : 0.004623,
+  "close" : 0.004626,
+  "volume" : 66203.42,
+  "quoteAssetVolume" : 307.91842399,
+  "numberOfTrades" : 7226,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1595635200000,
+  "openDate" : null,
+  "closeTime" : 1595678399999,
+  "closeDate" : null,
+  "open" : 0.004627,
+  "high" : 0.005029,
+  "low" : 0.004618,
+  "close" : 0.004949,
+  "volume" : 237741.44,
+  "quoteAssetVolume" : 1162.12357356,
+  "numberOfTrades" : 31440,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1595678400000,
+  "openDate" : null,
+  "closeTime" : 1595721599999,
+  "closeDate" : null,
+  "open" : 0.00495,
+  "high" : 0.0051,
+  "low" : 0.004891,
+  "close" : 0.005068,
+  "volume" : 177693.27,
+  "quoteAssetVolume" : 888.41077195,
+  "numberOfTrades" : 22459,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1595721600000,
+  "openDate" : null,
+  "closeTime" : 1595764799999,
+  "closeDate" : null,
+  "open" : 0.005066,
+  "high" : 0.005207,
+  "low" : 0.004792,
+  "close" : 0.004871,
+  "volume" : 263883.5,
+  "quoteAssetVolume" : 1322.77480865,
+  "numberOfTrades" : 33504,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1595764800000,
+  "openDate" : null,
+  "closeTime" : 1595807999999,
+  "closeDate" : null,
+  "open" : 0.00487,
+  "high" : 0.004908,
+  "low" : 0.004805,
+  "close" : 0.004841,
+  "volume" : 92240.92,
+  "quoteAssetVolume" : 448.32293181,
+  "numberOfTrades" : 12608,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1595808000000,
+  "openDate" : null,
+  "closeTime" : 1595851199999,
+  "closeDate" : null,
+  "open" : 0.004841,
+  "high" : 0.004891,
+  "low" : 0.004727,
+  "close" : 0.004801,
+  "volume" : 145678.7,
+  "quoteAssetVolume" : 698.23367933,
+  "numberOfTrades" : 18118,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1595851200000,
+  "openDate" : null,
+  "closeTime" : 1595894399999,
+  "closeDate" : null,
+  "open" : 0.0048,
+  "high" : 0.005063,
+  "low" : 0.004454,
+  "close" : 0.004831,
+  "volume" : 417482.95,
+  "quoteAssetVolume" : 2004.99003988,
+  "numberOfTrades" : 53873,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1595894400000,
+  "openDate" : null,
+  "closeTime" : 1595937599999,
+  "closeDate" : null,
+  "open" : 0.00483,
+  "high" : 0.004951,
+  "low" : 0.004792,
+  "close" : 0.004897,
+  "volume" : 175997.95,
+  "quoteAssetVolume" : 859.44320265,
+  "numberOfTrades" : 24580,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1595937600000,
+  "openDate" : null,
+  "closeTime" : 1595980799999,
+  "closeDate" : null,
+  "open" : 0.004897,
+  "high" : 0.005252,
+  "low" : 0.004847,
+  "close" : 0.005111,
+  "volume" : 377176.16,
+  "quoteAssetVolume" : 1916.57889954,
+  "numberOfTrades" : 47138,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1595980800000,
+  "openDate" : null,
+  "closeTime" : 1596023999999,
+  "closeDate" : null,
+  "open" : 0.005111,
+  "high" : 0.005154,
+  "low" : 0.005024,
+  "close" : 0.005035,
+  "volume" : 129105.07,
+  "quoteAssetVolume" : 657.04773425,
+  "numberOfTrades" : 17774,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1596024000000,
+  "openDate" : null,
+  "closeTime" : 1596067199999,
+  "closeDate" : null,
+  "open" : 0.005037,
+  "high" : 0.005052,
+  "low" : 0.004926,
+  "close" : 0.004968,
+  "volume" : 111014.96,
+  "quoteAssetVolume" : 552.96760346,
+  "numberOfTrades" : 13401,
+  "rsi" : 0.0
 } ]

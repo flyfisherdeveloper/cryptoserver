@@ -1,0 +1,43 @@
+[ {
+  "symbol" : "LTCUSD",
+  "openTime" : 1595808000000,
+  "openDate" : null,
+  "closeTime" : 1595894399999,
+  "closeDate" : null,
+  "open" : 48.16,
+  "high" : 55.9,
+  "low" : 47.0,
+  "close" : 53.1,
+  "volume" : 17183.741,
+  "quoteAssetVolume" : 887276.8558,
+  "numberOfTrades" : 2689,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCUSD",
+  "openTime" : 1595894400000,
+  "openDate" : null,
+  "closeTime" : 1595980799999,
+  "closeDate" : null,
+  "open" : 53.71,
+  "high" : 57.86,
+  "low" : 51.8,
+  "close" : 55.86,
+  "volume" : 14482.89895,
+  "quoteAssetVolume" : 799454.1763,
+  "numberOfTrades" : 2527,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCUSD",
+  "openTime" : 1595980800000,
+  "openDate" : null,
+  "closeTime" : 1596067199999,
+  "closeDate" : null,
+  "open" : 55.89,
+  "high" : 56.81,
+  "low" : 54.81,
+  "close" : 56.27,
+  "volume" : 5733.67971,
+  "quoteAssetVolume" : 320189.0021,
+  "numberOfTrades" : 1094,
+  "rsi" : 0.0
+} ]

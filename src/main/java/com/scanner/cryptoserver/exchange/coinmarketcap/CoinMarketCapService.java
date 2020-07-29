@@ -152,12 +152,15 @@ public class CoinMarketCapService {
             JsonNode usdNode = quoteNode.get("USD");
             JsonNode marketCapNode = usdNode.get("market_cap");
             double marketCap = marketCapNode.asDouble();
+            JsonNode volume24HrNode = usdNode.get("volume_24h");
+            double volume24HrUsd = volume24HrNode.asDouble();
 
             CoinMarketCapData d = new CoinMarketCapData();
             d.setId(id);
             d.setName(name);
             d.setSymbol(symbol);
             d.setMarketCap(marketCap);
+            d.setVolume24HrUsd(volume24HrUsd);
             list.add(d);
         });
         return list;
