@@ -203,7 +203,7 @@ public abstract class AbstractBinanceExchangeService implements ExchangeService 
     }
 
     /**
-     * Returns true if the symbol is a leveraged token, such as ETHBULL.
+     * Returns true if the symbol is a leveraged token, such as ETHBULL or ETHDOWN.
      * A leveraged token is a trading pair based on a regular coin (such as ETH), but is subject
      * to leveraged trading, and is not an ordinary coin. Therefore, we don't return these to the
      * client. Unfortunately, it appears there isn't anything definitive from the exchange api
@@ -216,7 +216,7 @@ public abstract class AbstractBinanceExchangeService implements ExchangeService 
      * @return true if the symbol represents a leveraged token; false otherwise.
      */
     private boolean isLeveragedToken(String symbol) {
-        return symbol.contains("BULL") || symbol.contains("BEAR");
+        return symbol.endsWith("DOWN") || symbol.endsWith("UP") || symbol.contains("BULL") || symbol.contains("BEAR");
     }
 
     private boolean isCoinInUsaMarket(String currency) {
@@ -228,7 +228,7 @@ public abstract class AbstractBinanceExchangeService implements ExchangeService 
         String symbol = (String) map.get("symbol");
         String coin = getCoin(symbol);
         String currency = getQuote(symbol);
-        if (!isCoinTrading(symbol) || !isCoinInUsaMarket(currency) || isLeveragedToken(symbol)) {
+        if (!isCoinTrading(symbol) || !isCoinInUsaMarket(currency) || isLeveragedToken(symbol) || isLeveragedToken(coin)) {
             return null;
         }
 

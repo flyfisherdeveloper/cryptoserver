@@ -149,19 +149,21 @@ class BinanceExchangeServiceImplTest extends Specification {
           }
 
         where:
-          symbol    | coin  | currency | status    | priceChange | priceChangePercent | lastPrice | highPrice | lowPrice  | volume        | quoteVolume   | marketCap | isCoinValid
-          "LTCUSD"  | "LTC" | "USD"    | "TRADING" | "13.2"      | "1.2"              | "14.3"    | "16.3"    | "11.17"   | "23987.23"    | "54.23"       | 20000.0   | true
-          "BTCBUSD" | "BTC" | "BUSD"   | "TRADING" | "439.18"    | "4.32"             | "8734.56" | "8902.87" | "8651.23" | "88922330.09" | "10180.18"    | 50000.0   | true
-          "BTCUSDT" | "BTC" | "USDT"   | "TRADING" | "439.18"    | "4.32"             | "8734.56" | "8902.87" | "8651.23" | "88922330.09" | "10180.18"    | 50000.0   | true
+          symbol        | coin      | currency | status    | priceChange | priceChangePercent | lastPrice | highPrice | lowPrice  | volume        | quoteVolume   | marketCap | isCoinValid
+          "LTCUSD"      | "LTC"     | "USD"    | "TRADING" | "13.2"      | "1.2"              | "14.3"    | "16.3"    | "11.17"   | "23987.23"    | "54.23"       | 20000.0   | true
+          "BTCBUSD"     | "BTC"     | "BUSD"   | "TRADING" | "439.18"    | "4.32"             | "8734.56" | "8902.87" | "8651.23" | "88922330.09" | "10180.18"    | 50000.0   | true
+          "BTCUSDT"     | "BTC"     | "USDT"   | "TRADING" | "439.18"    | "4.32"             | "8734.56" | "8902.87" | "8651.23" | "88922330.09" | "10180.18"    | 50000.0   | true
           //verify that coins that are not trading (status is "BREAK") do not get returned from the service
-          "BTCUSDT" | "BTC" | "USDT"   | "BREAK"   | "439.18"    | "4.32"             | "8734.56" | "8902.87" | "8651.23" | "88922330.09" | "10180.18"    | 50000.0   | false
+          "BTCUSDT"     | "BTC"     | "USDT"   | "BREAK"   | "439.18"    | "4.32"             | "8734.56" | "8902.87" | "8651.23" | "88922330.09" | "10180.18"    | 50000.0   | false
           //verify that non-USA currencies (EUR) do not get returned from the service
-          "BTCEUR"  | "BTC" | "EUR"    | "TRADING" | "439.18"    | "4.32"             | "8823.22" | "8734.56" | "8902.87" | "8651.23"     | "88922330.09" | 50000.0   | false
+          "BTCEUR"      | "BTC"     | "EUR"    | "TRADING" | "439.18"    | "4.32"             | "8823.22" | "8734.56" | "8902.87" | "8651.23"     | "88922330.09" | 50000.0   | false
           //verify that leveraged tokens do not get returned from the service
-          "XRPBEAR" | "XRP" | "USD"    | "TRADING" | "439.18"    | "4.32"             | "0.25"    | "0.28"    | "0.21"    | "8651.23"     | "88922330.09" | 10000.0   | false
-          "XRPBULL" | "XRP" | "USD"    | "TRADING" | "439.18"    | "4.32"             | "0.25"    | "0.28"    | "0.21"    | "8651.23"     | "88922330.09" | 10000.0   | false
+          "XRPBEAR"     | "XRP"     | "USD"    | "TRADING" | "439.18"    | "4.32"             | "0.25"    | "0.28"    | "0.21"    | "8651.23"     | "88922330.09" | 10000.0   | false
+          "XRPBULL"     | "XRP"     | "USD"    | "TRADING" | "439.18"    | "4.32"             | "0.25"    | "0.28"    | "0.21"    | "8651.23"     | "88922330.09" | 10000.0   | false
+          "ADADOWNUSDT" | "ADADOWN" | "USDT"   | "TRADING" | "23.18"     | "5.32"             | "22.23"   | "35.28"   | "17.21"   | "765.90"      | "789923.09"   | 10000.0   | false
+          "ADAUPUSDT"   | "ADAUP"   | "USDT"   | "TRADING" | "33.19"     | "2.12"             | "35.29"   | "36.28"   | "18.21"   | "768.23"      | "789923.09"   | 10000.0   | false
           //verify that the service handles the case of no data being returned
-          null      | null  | null     | null      | null        | null               | null      | null      | null      | null          | null          | null      | false
+          null          | null      | null     | null      | null        | null               | null      | null      | null      | null          | null          | null      | false
     }
 
     @Unroll("Test call of coin ticker for #symbol for #interval and #daysOrMonths")
