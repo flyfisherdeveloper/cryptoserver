@@ -19,6 +19,7 @@ import java.util.function.Supplier
 @Service(value = "bittrexService")
 class BittrexServiceImpl(private val cacheUtil: CacheUtil, private val coinMarketCapService: CoinMarketCapService, private val urlReader: UrlReader) : ExchangeService {
     private val Log = LoggerFactory.getLogger(BittrexServiceImpl::class.java)
+    private val nonUsaMarkets = listOf("EUR")
     private val EXCHANGE_NAME = "bittrex"
     private val ALL_24_HR_TICKER = "All24HourTicker"
     private val ALL_MARKET_TICKERS = "AllMarketTickers"
@@ -98,6 +99,8 @@ class BittrexServiceImpl(private val cacheUtil: CacheUtil, private val coinMarke
         val exchangeInfo = ExchangeInfo()
         //put the symbols in an exchange info object, to be consistent with all the exchange info from other exchanges
         exchangeInfo.symbols = symbolList
+        //remove currency markets that are not USA-based, such as the Euro ("EUR")
+        exchangeInfo.symbols.removeIf { nonUsaMarkets.contains(it.quoteAsset) }
         //put the Bittrex exchange info in the cache
         val name = "$EXCHANGE_NAME-$EXCHANGE_INFO"
         cacheUtil.putInCache(EXCHANGE_INFO, name, exchangeInfo)

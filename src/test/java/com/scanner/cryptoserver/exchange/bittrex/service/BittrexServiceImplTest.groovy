@@ -97,9 +97,11 @@ class BittrexServiceImplTest extends Specification {
         given:
           def symbolBtc = "BTC-USD"
           def symbolEth = "ETH-USD"
+          def symbolEthEur = "ETH-EUR"
           def bittrex24HrData1 = new Bittrex24HrData(symbol: symbolBtc)
           def bittrex24HrData2 = new Bittrex24HrData(symbol: symbolEth)
-          def marketList = [bittrex24HrData1, bittrex24HrData2]
+          def bittrex24HrData3 = new Bittrex24HrData(symbol: symbolEthEur)
+          def marketList = [bittrex24HrData1, bittrex24HrData2, bittrex24HrData3]
 
         when:
           cacheUtil.retrieveFromCache(*_) >> marketList
@@ -110,7 +112,7 @@ class BittrexServiceImplTest extends Specification {
         expect:
           assert exchangeInfo
           assert exchangeInfo.getSymbols()
-          assert exchangeInfo.getSymbols().size() == marketList.size()
+          assert exchangeInfo.getSymbols().size() == marketList.size() - 1
 
           def btc = exchangeInfo.getSymbols().find { it.symbol == symbolBtc }
           assert btc
@@ -123,6 +125,10 @@ class BittrexServiceImplTest extends Specification {
           assert eth.symbol == symbolEth
           assert eth.quoteAsset == "USD"
           assert eth.baseAsset == "ETH"
+
+          //ensure that European markets don't get returned
+          def ethEur = exchangeInfo.getSymbols().find { it.symbol == symbolEthEur }
+          assert !ethEur
     }
 
     def getMarketsJson() {

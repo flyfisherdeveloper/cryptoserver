@@ -36,7 +36,7 @@ public abstract class AbstractBinanceExchangeService implements ExchangeService 
     private static final int ALL_24_HOUR_MAX_COUNT = 6;
     private static final int ALL_24_HOUR_DELAY = 151;
     private static final String TRADING = "TRADING";
-    private static final List<String> nonUsaMarkets = Arrays.asList("NGN", "RUB", "TRY", "EUR", "ZAR", "BKRW", "IDRT");
+    private static final List<String> nonUsaMarkets = Arrays.asList("NGN", "RUB", "TRY", "EUR", "ZAR", "BKRW", "IDRT", "UAH", "BIDR", "GBP");
 
     private final RestOperations restTemplate;
     private final CoinMarketCapService coinMarketCapService;
