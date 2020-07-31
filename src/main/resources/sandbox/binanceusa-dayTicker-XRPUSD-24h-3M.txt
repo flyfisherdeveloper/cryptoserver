@@ -1,629 +1,5 @@
 [ {
   "symbol" : "XRPUSD",
-  "openTime" : 1584057600000,
-  "openDate" : null,
-  "closeTime" : 1584143999999,
-  "closeDate" : null,
-  "open" : 0.137,
-  "high" : 0.167,
-  "low" : 0.1048,
-  "close" : 0.1605,
-  "volume" : 1.11779218E7,
-  "quoteAssetVolume" : 1560371.7449,
-  "numberOfTrades" : 9312
-}, {
-  "symbol" : "XRPUSD",
-  "openTime" : 1584144000000,
-  "openDate" : null,
-  "closeTime" : 1584230399999,
-  "closeDate" : null,
-  "open" : 0.1598,
-  "high" : 0.163,
-  "low" : 0.1432,
-  "close" : 0.1457,
-  "volume" : 1835264.7,
-  "quoteAssetVolume" : 282221.0487,
-  "numberOfTrades" : 1336
-}, {
-  "symbol" : "XRPUSD",
-  "openTime" : 1584230400000,
-  "openDate" : null,
-  "closeTime" : 1584316799999,
-  "closeDate" : null,
-  "open" : 0.145,
-  "high" : 0.1644,
-  "low" : 0.1444,
-  "close" : 0.1534,
-  "volume" : 1525168.9,
-  "quoteAssetVolume" : 232482.839,
-  "numberOfTrades" : 986
-}, {
-  "symbol" : "XRPUSD",
-  "openTime" : 1584316800000,
-  "openDate" : null,
-  "closeTime" : 1584403199999,
-  "closeDate" : null,
-  "open" : 0.1519,
-  "high" : 0.1531,
-  "low" : 0.127,
-  "close" : 0.1413,
-  "volume" : 5815126.9,
-  "quoteAssetVolume" : 803574.4278,
-  "numberOfTrades" : 1875
-}, {
-  "symbol" : "XRPUSD",
-  "openTime" : 1584403200000,
-  "openDate" : null,
-  "closeTime" : 1584489599999,
-  "closeDate" : null,
-  "open" : 0.142,
-  "high" : 0.1531,
-  "low" : 0.1404,
-  "close" : 0.148,
-  "volume" : 1776116.6,
-  "quoteAssetVolume" : 263506.3923,
-  "numberOfTrades" : 1056
-}, {
-  "symbol" : "XRPUSD",
-  "openTime" : 1584489600000,
-  "openDate" : null,
-  "closeTime" : 1584575999999,
-  "closeDate" : null,
-  "open" : 0.148,
-  "high" : 0.1507,
-  "low" : 0.141,
-  "close" : 0.148,
-  "volume" : 2133169.6,
-  "quoteAssetVolume" : 311153.5719,
-  "numberOfTrades" : 1375
-}, {
-  "symbol" : "XRPUSD",
-  "openTime" : 1584576000000,
-  "openDate" : null,
-  "closeTime" : 1584662399999,
-  "closeDate" : null,
-  "open" : 0.149,
-  "high" : 0.1731,
-  "low" : 0.1451,
-  "close" : 0.1662,
-  "volume" : 3941450.7,
-  "quoteAssetVolume" : 621866.9286,
-  "numberOfTrades" : 2479
-}, {
-  "symbol" : "XRPUSD",
-  "openTime" : 1584662400000,
-  "openDate" : null,
-  "closeTime" : 1584748799999,
-  "closeDate" : null,
-  "open" : 0.1652,
-  "high" : 0.175,
-  "low" : 0.1454,
-  "close" : 0.1574,
-  "volume" : 4883674.9,
-  "quoteAssetVolume" : 791839.7164,
-  "numberOfTrades" : 2914
-}, {
-  "symbol" : "XRPUSD",
-  "openTime" : 1584748800000,
-  "openDate" : null,
-  "closeTime" : 1584835199999,
-  "closeDate" : null,
-  "open" : 0.157,
-  "high" : 0.1622,
-  "low" : 0.152,
-  "close" : 0.158,
-  "volume" : 2024670.7,
-  "quoteAssetVolume" : 318729.8435,
-  "numberOfTrades" : 1402
-}, {
-  "symbol" : "XRPUSD",
-  "openTime" : 1584835200000,
-  "openDate" : null,
-  "closeTime" : 1584921599999,
-  "closeDate" : null,
-  "open" : 0.158,
-  "high" : 0.1615,
-  "low" : 0.1465,
-  "close" : 0.1485,
-  "volume" : 2385484.0,
-  "quoteAssetVolume" : 367010.2326,
-  "numberOfTrades" : 1385
-}, {
-  "symbol" : "XRPUSD",
-  "openTime" : 1584921600000,
-  "openDate" : null,
-  "closeTime" : 1585007999999,
-  "closeDate" : null,
-  "open" : 0.1475,
-  "high" : 0.162,
-  "low" : 0.1451,
-  "close" : 0.159,
-  "volume" : 3687221.7,
-  "quoteAssetVolume" : 571584.3405,
-  "numberOfTrades" : 1692
-}, {
-  "symbol" : "XRPUSD",
-  "openTime" : 1585008000000,
-  "openDate" : null,
-  "closeTime" : 1585094399999,
-  "closeDate" : null,
-  "open" : 0.1593,
-  "high" : 0.1648,
-  "low" : 0.1578,
-  "close" : 0.1628,
-  "volume" : 4053548.9,
-  "quoteAssetVolume" : 653881.9827,
-  "numberOfTrades" : 1995
-}, {
-  "symbol" : "XRPUSD",
-  "openTime" : 1585094400000,
-  "openDate" : null,
-  "closeTime" : 1585180799999,
-  "closeDate" : null,
-  "open" : 0.1628,
-  "high" : 0.1662,
-  "low" : 0.1576,
-  "close" : 0.1623,
-  "volume" : 2789414.3,
-  "quoteAssetVolume" : 449696.0514,
-  "numberOfTrades" : 1551
-}, {
-  "symbol" : "XRPUSD",
-  "openTime" : 1585180800000,
-  "openDate" : null,
-  "closeTime" : 1585267199999,
-  "closeDate" : null,
-  "open" : 0.1625,
-  "high" : 0.1802,
-  "low" : 0.1604,
-  "close" : 0.1778,
-  "volume" : 3859445.9,
-  "quoteAssetVolume" : 649153.1789,
-  "numberOfTrades" : 2277
-}, {
-  "symbol" : "XRPUSD",
-  "openTime" : 1585267200000,
-  "openDate" : null,
-  "closeTime" : 1585353599999,
-  "closeDate" : null,
-  "open" : 0.1773,
-  "high" : 0.1876,
-  "low" : 0.17,
-  "close" : 0.173,
-  "volume" : 4593062.6,
-  "quoteAssetVolume" : 817678.1652,
-  "numberOfTrades" : 2524
-}, {
-  "symbol" : "XRPUSD",
-  "openTime" : 1585353600000,
-  "openDate" : null,
-  "closeTime" : 1585439999999,
-  "closeDate" : null,
-  "open" : 0.1729,
-  "high" : 0.1803,
-  "low" : 0.1665,
-  "close" : 0.1761,
-  "volume" : 6010410.5,
-  "quoteAssetVolume" : 1036160.9888,
-  "numberOfTrades" : 1900
-}, {
-  "symbol" : "XRPUSD",
-  "openTime" : 1585440000000,
-  "openDate" : null,
-  "closeTime" : 1585526399999,
-  "closeDate" : null,
-  "open" : 0.176,
-  "high" : 0.1773,
-  "low" : 0.1621,
-  "close" : 0.163,
-  "volume" : 4652114.3,
-  "quoteAssetVolume" : 788081.4555,
-  "numberOfTrades" : 1574
-}, {
-  "symbol" : "XRPUSD",
-  "openTime" : 1585526400000,
-  "openDate" : null,
-  "closeTime" : 1585612799999,
-  "closeDate" : null,
-  "open" : 0.1631,
-  "high" : 0.176,
-  "low" : 0.1625,
-  "close" : 0.1714,
-  "volume" : 1685550.9,
-  "quoteAssetVolume" : 288997.3237,
-  "numberOfTrades" : 1083
-}, {
-  "symbol" : "XRPUSD",
-  "openTime" : 1585612800000,
-  "openDate" : null,
-  "closeTime" : 1585699199999,
-  "closeDate" : null,
-  "open" : 0.1715,
-  "high" : 0.1783,
-  "low" : 0.1707,
-  "close" : 0.174,
-  "volume" : 2621515.1,
-  "quoteAssetVolume" : 459265.0206,
-  "numberOfTrades" : 1019
-}, {
-  "symbol" : "XRPUSD",
-  "openTime" : 1585699200000,
-  "openDate" : null,
-  "closeTime" : 1585785599999,
-  "closeDate" : null,
-  "open" : 0.174,
-  "high" : 0.1766,
-  "low" : 0.1681,
-  "close" : 0.1754,
-  "volume" : 3388614.3,
-  "quoteAssetVolume" : 583928.4291,
-  "numberOfTrades" : 1181
-}, {
-  "symbol" : "XRPUSD",
-  "openTime" : 1585785600000,
-  "openDate" : null,
-  "closeTime" : 1585871999999,
-  "closeDate" : null,
-  "open" : 0.1756,
-  "high" : 0.1864,
-  "low" : 0.1748,
-  "close" : 0.1787,
-  "volume" : 3315063.7,
-  "quoteAssetVolume" : 591031.8931,
-  "numberOfTrades" : 1823
-}, {
-  "symbol" : "XRPUSD",
-  "openTime" : 1585872000000,
-  "openDate" : null,
-  "closeTime" : 1585958399999,
-  "closeDate" : null,
-  "open" : 0.1785,
-  "high" : 0.1829,
-  "low" : 0.1763,
-  "close" : 0.1795,
-  "volume" : 1615257.8,
-  "quoteAssetVolume" : 289900.4713,
-  "numberOfTrades" : 1063
-}, {
-  "symbol" : "XRPUSD",
-  "openTime" : 1585958400000,
-  "openDate" : null,
-  "closeTime" : 1586044799999,
-  "closeDate" : null,
-  "open" : 0.1795,
-  "high" : 0.184,
-  "low" : 0.1777,
-  "close" : 0.1819,
-  "volume" : 1804611.9,
-  "quoteAssetVolume" : 324998.0845,
-  "numberOfTrades" : 880
-}, {
-  "symbol" : "XRPUSD",
-  "openTime" : 1586044800000,
-  "openDate" : null,
-  "closeTime" : 1586131199999,
-  "closeDate" : null,
-  "open" : 0.182,
-  "high" : 0.1822,
-  "low" : 0.1767,
-  "close" : 0.1796,
-  "volume" : 1229011.6,
-  "quoteAssetVolume" : 219794.6893,
-  "numberOfTrades" : 643
-}, {
-  "symbol" : "XRPUSD",
-  "openTime" : 1586131200000,
-  "openDate" : null,
-  "closeTime" : 1586217599999,
-  "closeDate" : null,
-  "open" : 0.1798,
-  "high" : 0.1981,
-  "low" : 0.1798,
-  "close" : 0.1981,
-  "volume" : 3382929.8,
-  "quoteAssetVolume" : 641594.0481,
-  "numberOfTrades" : 1628
-}, {
-  "symbol" : "XRPUSD",
-  "openTime" : 1586217600000,
-  "openDate" : null,
-  "closeTime" : 1586303999999,
-  "closeDate" : null,
-  "open" : 0.1985,
-  "high" : 0.2053,
-  "low" : 0.19,
-  "close" : 0.193,
-  "volume" : 5265159.9,
-  "quoteAssetVolume" : 1044243.9688,
-  "numberOfTrades" : 2398
-}, {
-  "symbol" : "XRPUSD",
-  "openTime" : 1586304000000,
-  "openDate" : null,
-  "closeTime" : 1586390399999,
-  "closeDate" : null,
-  "open" : 0.1932,
-  "high" : 0.2034,
-  "low" : 0.1918,
-  "close" : 0.202,
-  "volume" : 3104696.6,
-  "quoteAssetVolume" : 619266.2839,
-  "numberOfTrades" : 1561
-}, {
-  "symbol" : "XRPUSD",
-  "openTime" : 1586390400000,
-  "openDate" : null,
-  "closeTime" : 1586476799999,
-  "closeDate" : null,
-  "open" : 0.2019,
-  "high" : 0.203,
-  "low" : 0.1944,
-  "close" : 0.1991,
-  "volume" : 2277079.0,
-  "quoteAssetVolume" : 452167.4277,
-  "numberOfTrades" : 1640
-}, {
-  "symbol" : "XRPUSD",
-  "openTime" : 1586476800000,
-  "openDate" : null,
-  "closeTime" : 1586563199999,
-  "closeDate" : null,
-  "open" : 0.1991,
-  "high" : 0.1991,
-  "low" : 0.1821,
-  "close" : 0.1878,
-  "volume" : 2700693.0,
-  "quoteAssetVolume" : 513289.4001,
-  "numberOfTrades" : 1648
-}, {
-  "symbol" : "XRPUSD",
-  "openTime" : 1586563200000,
-  "openDate" : null,
-  "closeTime" : 1586649599999,
-  "closeDate" : null,
-  "open" : 0.1883,
-  "high" : 0.1926,
-  "low" : 0.1853,
-  "close" : 0.1885,
-  "volume" : 1329917.1,
-  "quoteAssetVolume" : 250662.2166,
-  "numberOfTrades" : 1114
-}, {
-  "symbol" : "XRPUSD",
-  "openTime" : 1586649600000,
-  "openDate" : null,
-  "closeTime" : 1586735999999,
-  "closeDate" : null,
-  "open" : 0.189,
-  "high" : 0.1962,
-  "low" : 0.1867,
-  "close" : 0.1895,
-  "volume" : 2112030.6,
-  "quoteAssetVolume" : 405371.6334,
-  "numberOfTrades" : 1052
-}, {
-  "symbol" : "XRPUSD",
-  "openTime" : 1586736000000,
-  "openDate" : null,
-  "closeTime" : 1586822399999,
-  "closeDate" : null,
-  "open" : 0.1894,
-  "high" : 0.1898,
-  "low" : 0.18,
-  "close" : 0.1882,
-  "volume" : 2088081.9,
-  "quoteAssetVolume" : 385630.4467,
-  "numberOfTrades" : 1097
-}, {
-  "symbol" : "XRPUSD",
-  "openTime" : 1586822400000,
-  "openDate" : null,
-  "closeTime" : 1586908799999,
-  "closeDate" : null,
-  "open" : 0.1888,
-  "high" : 0.1892,
-  "low" : 0.184,
-  "close" : 0.186,
-  "volume" : 2332814.4,
-  "quoteAssetVolume" : 437817.0082,
-  "numberOfTrades" : 1170
-}, {
-  "symbol" : "XRPUSD",
-  "openTime" : 1586908800000,
-  "openDate" : null,
-  "closeTime" : 1586995199999,
-  "closeDate" : null,
-  "open" : 0.1859,
-  "high" : 0.1899,
-  "low" : 0.1801,
-  "close" : 0.181,
-  "volume" : 2302563.2,
-  "quoteAssetVolume" : 424262.8679,
-  "numberOfTrades" : 1378
-}, {
-  "symbol" : "XRPUSD",
-  "openTime" : 1586995200000,
-  "openDate" : null,
-  "closeTime" : 1587081599999,
-  "closeDate" : null,
-  "open" : 0.1806,
-  "high" : 0.1939,
-  "low" : 0.1746,
-  "close" : 0.191,
-  "volume" : 3686220.4,
-  "quoteAssetVolume" : 685960.621,
-  "numberOfTrades" : 1506
-}, {
-  "symbol" : "XRPUSD",
-  "openTime" : 1587081600000,
-  "openDate" : null,
-  "closeTime" : 1587167999999,
-  "closeDate" : null,
-  "open" : 0.191,
-  "high" : 0.192,
-  "low" : 0.1868,
-  "close" : 0.1888,
-  "volume" : 2240557.7,
-  "quoteAssetVolume" : 424057.0243,
-  "numberOfTrades" : 1196
-}, {
-  "symbol" : "XRPUSD",
-  "openTime" : 1587168000000,
-  "openDate" : null,
-  "closeTime" : 1587254399999,
-  "closeDate" : null,
-  "open" : 0.189,
-  "high" : 0.1971,
-  "low" : 0.189,
-  "close" : 0.1952,
-  "volume" : 2208446.2,
-  "quoteAssetVolume" : 426820.551,
-  "numberOfTrades" : 1285
-}, {
-  "symbol" : "XRPUSD",
-  "openTime" : 1587254400000,
-  "openDate" : null,
-  "closeTime" : 1587340799999,
-  "closeDate" : null,
-  "open" : 0.1953,
-  "high" : 0.1962,
-  "low" : 0.1885,
-  "close" : 0.1894,
-  "volume" : 1397634.0,
-  "quoteAssetVolume" : 268865.8598,
-  "numberOfTrades" : 944
-}, {
-  "symbol" : "XRPUSD",
-  "openTime" : 1587340800000,
-  "openDate" : null,
-  "closeTime" : 1587427199999,
-  "closeDate" : null,
-  "open" : 0.189,
-  "high" : 0.1948,
-  "low" : 0.1785,
-  "close" : 0.1819,
-  "volume" : 4462069.2,
-  "quoteAssetVolume" : 837149.2167,
-  "numberOfTrades" : 1819
-}, {
-  "symbol" : "XRPUSD",
-  "openTime" : 1587427200000,
-  "openDate" : null,
-  "closeTime" : 1587513599999,
-  "closeDate" : null,
-  "open" : 0.1816,
-  "high" : 0.1864,
-  "low" : 0.1816,
-  "close" : 0.1834,
-  "volume" : 1331170.8,
-  "quoteAssetVolume" : 244901.1139,
-  "numberOfTrades" : 743
-}, {
-  "symbol" : "XRPUSD",
-  "openTime" : 1587513600000,
-  "openDate" : null,
-  "closeTime" : 1587599999999,
-  "closeDate" : null,
-  "open" : 0.1839,
-  "high" : 0.1906,
-  "low" : 0.1823,
-  "close" : 0.1884,
-  "volume" : 2189364.2,
-  "quoteAssetVolume" : 412277.3433,
-  "numberOfTrades" : 1142
-}, {
-  "symbol" : "XRPUSD",
-  "openTime" : 1587600000000,
-  "openDate" : null,
-  "closeTime" : 1587686399999,
-  "closeDate" : null,
-  "open" : 0.1884,
-  "high" : 0.1997,
-  "low" : 0.186,
-  "close" : 0.1923,
-  "volume" : 3252246.8,
-  "quoteAssetVolume" : 630937.9197,
-  "numberOfTrades" : 1604
-}, {
-  "symbol" : "XRPUSD",
-  "openTime" : 1587686400000,
-  "openDate" : null,
-  "closeTime" : 1587772799999,
-  "closeDate" : null,
-  "open" : 0.1932,
-  "high" : 0.197,
-  "low" : 0.1925,
-  "close" : 0.1933,
-  "volume" : 2613274.0,
-  "quoteAssetVolume" : 508366.83,
-  "numberOfTrades" : 1266
-}, {
-  "symbol" : "XRPUSD",
-  "openTime" : 1587772800000,
-  "openDate" : null,
-  "closeTime" : 1587859199999,
-  "closeDate" : null,
-  "open" : 0.193,
-  "high" : 0.1979,
-  "low" : 0.192,
-  "close" : 0.1943,
-  "volume" : 2446074.0,
-  "quoteAssetVolume" : 476628.9724,
-  "numberOfTrades" : 1115
-}, {
-  "symbol" : "XRPUSD",
-  "openTime" : 1587859200000,
-  "openDate" : null,
-  "closeTime" : 1587945599999,
-  "closeDate" : null,
-  "open" : 0.194,
-  "high" : 0.1977,
-  "low" : 0.1921,
-  "close" : 0.1967,
-  "volume" : 2020746.9,
-  "quoteAssetVolume" : 395033.2791,
-  "numberOfTrades" : 1091
-}, {
-  "symbol" : "XRPUSD",
-  "openTime" : 1587945600000,
-  "openDate" : null,
-  "closeTime" : 1588031999999,
-  "closeDate" : null,
-  "open" : 0.1975,
-  "high" : 0.1997,
-  "low" : 0.1905,
-  "close" : 0.1978,
-  "volume" : 2232031.5,
-  "quoteAssetVolume" : 437080.0341,
-  "numberOfTrades" : 1321
-}, {
-  "symbol" : "XRPUSD",
-  "openTime" : 1588032000000,
-  "openDate" : null,
-  "closeTime" : 1588118399999,
-  "closeDate" : null,
-  "open" : 0.198,
-  "high" : 0.2177,
-  "low" : 0.195,
-  "close" : 0.2149,
-  "volume" : 4741959.5,
-  "quoteAssetVolume" : 990394.3859,
-  "numberOfTrades" : 2243
-}, {
-  "symbol" : "XRPUSD",
-  "openTime" : 1588118400000,
-  "openDate" : null,
-  "closeTime" : 1588204799999,
-  "closeDate" : null,
-  "open" : 0.215,
-  "high" : 0.2322,
-  "low" : 0.2142,
-  "close" : 0.2266,
-  "volume" : 5250579.0,
-  "quoteAssetVolume" : 1173622.1846,
-  "numberOfTrades" : 2713
-}, {
-  "symbol" : "XRPUSD",
   "openTime" : 1588204800000,
   "openDate" : null,
   "closeTime" : 1588291199999,
@@ -634,7 +10,8 @@
   "close" : 0.2116,
   "volume" : 6614297.6,
   "quoteAssetVolume" : 1478185.4075,
-  "numberOfTrades" : 2448
+  "numberOfTrades" : 2448,
+  "rsi" : 0.0
 }, {
   "symbol" : "XRPUSD",
   "openTime" : 1588291200000,
@@ -647,7 +24,8 @@
   "close" : 0.2182,
   "volume" : 3026120.9,
   "quoteAssetVolume" : 658309.9786,
-  "numberOfTrades" : 1921
+  "numberOfTrades" : 1921,
+  "rsi" : 0.0
 }, {
   "symbol" : "XRPUSD",
   "openTime" : 1588377600000,
@@ -660,7 +38,8 @@
   "close" : 0.224,
   "volume" : 2464332.9,
   "quoteAssetVolume" : 543547.3483,
-  "numberOfTrades" : 1303
+  "numberOfTrades" : 1303,
+  "rsi" : 0.0
 }, {
   "symbol" : "XRPUSD",
   "openTime" : 1588464000000,
@@ -673,7 +52,8 @@
   "close" : 0.2195,
   "volume" : 2618626.7,
   "quoteAssetVolume" : 582340.6525,
-  "numberOfTrades" : 1243
+  "numberOfTrades" : 1243,
+  "rsi" : 0.0
 }, {
   "symbol" : "XRPUSD",
   "openTime" : 1588550400000,
@@ -686,7 +66,8 @@
   "close" : 0.218,
   "volume" : 3050875.3,
   "quoteAssetVolume" : 654672.1702,
-  "numberOfTrades" : 1288
+  "numberOfTrades" : 1288,
+  "rsi" : 0.0
 }, {
   "symbol" : "XRPUSD",
   "openTime" : 1588636800000,
@@ -699,7 +80,8 @@
   "close" : 0.217,
   "volume" : 1709615.1,
   "quoteAssetVolume" : 371164.239,
-  "numberOfTrades" : 1018
+  "numberOfTrades" : 1018,
+  "rsi" : 0.0
 }, {
   "symbol" : "XRPUSD",
   "openTime" : 1588723200000,
@@ -712,7 +94,8 @@
   "close" : 0.2118,
   "volume" : 3079580.1,
   "quoteAssetVolume" : 672369.704,
-  "numberOfTrades" : 1466
+  "numberOfTrades" : 1466,
+  "rsi" : 0.0
 }, {
   "symbol" : "XRPUSD",
   "openTime" : 1588809600000,
@@ -725,7 +108,8 @@
   "close" : 0.2191,
   "volume" : 3183811.7,
   "quoteAssetVolume" : 688480.4971,
-  "numberOfTrades" : 2090
+  "numberOfTrades" : 2090,
+  "rsi" : 0.0
 }, {
   "symbol" : "XRPUSD",
   "openTime" : 1588896000000,
@@ -738,7 +122,8 @@
   "close" : 0.219,
   "volume" : 3455827.0,
   "quoteAssetVolume" : 758404.9254,
-  "numberOfTrades" : 2074
+  "numberOfTrades" : 2074,
+  "rsi" : 0.0
 }, {
   "symbol" : "XRPUSD",
   "openTime" : 1588982400000,
@@ -751,7 +136,8 @@
   "close" : 0.2163,
   "volume" : 2730018.0,
   "quoteAssetVolume" : 602118.2809,
-  "numberOfTrades" : 1763
+  "numberOfTrades" : 1763,
+  "rsi" : 0.0
 }, {
   "symbol" : "XRPUSD",
   "openTime" : 1589068800000,
@@ -764,7 +150,8 @@
   "close" : 0.1973,
   "volume" : 5022381.3,
   "quoteAssetVolume" : 989973.7001,
-  "numberOfTrades" : 4891
+  "numberOfTrades" : 4891,
+  "rsi" : 0.0
 }, {
   "symbol" : "XRPUSD",
   "openTime" : 1589155200000,
@@ -777,7 +164,8 @@
   "close" : 0.1941,
   "volume" : 3381922.1,
   "quoteAssetVolume" : 650857.0385,
-  "numberOfTrades" : 1980
+  "numberOfTrades" : 1980,
+  "rsi" : 0.0
 }, {
   "symbol" : "XRPUSD",
   "openTime" : 1589241600000,
@@ -790,7 +178,8 @@
   "close" : 0.1967,
   "volume" : 1492015.1,
   "quoteAssetVolume" : 293392.5241,
-  "numberOfTrades" : 1326
+  "numberOfTrades" : 1326,
+  "rsi" : 0.0
 }, {
   "symbol" : "XRPUSD",
   "openTime" : 1589328000000,
@@ -803,7 +192,8 @@
   "close" : 0.2017,
   "volume" : 1726970.2,
   "quoteAssetVolume" : 346061.0826,
-  "numberOfTrades" : 1146
+  "numberOfTrades" : 1146,
+  "rsi" : 0.0
 }, {
   "symbol" : "XRPUSD",
   "openTime" : 1589414400000,
@@ -816,7 +206,8 @@
   "close" : 0.2041,
   "volume" : 2886297.1,
   "quoteAssetVolume" : 586251.2741,
-  "numberOfTrades" : 1436
+  "numberOfTrades" : 1436,
+  "rsi" : 0.0
 }, {
   "symbol" : "XRPUSD",
   "openTime" : 1589500800000,
@@ -829,7 +220,8 @@
   "close" : 0.1981,
   "volume" : 1810977.5,
   "quoteAssetVolume" : 362740.3494,
-  "numberOfTrades" : 1146
+  "numberOfTrades" : 1146,
+  "rsi" : 0.0
 }, {
   "symbol" : "XRPUSD",
   "openTime" : 1589587200000,
@@ -842,7 +234,8 @@
   "close" : 0.1998,
   "volume" : 1413771.1,
   "quoteAssetVolume" : 282078.3362,
-  "numberOfTrades" : 768
+  "numberOfTrades" : 768,
+  "rsi" : 0.0
 }, {
   "symbol" : "XRPUSD",
   "openTime" : 1589673600000,
@@ -855,7 +248,8 @@
   "close" : 0.2012,
   "volume" : 2116440.9,
   "quoteAssetVolume" : 428185.914,
-  "numberOfTrades" : 807
+  "numberOfTrades" : 807,
+  "rsi" : 0.0
 }, {
   "symbol" : "XRPUSD",
   "openTime" : 1589760000000,
@@ -868,7 +262,8 @@
   "close" : 0.2052,
   "volume" : 4173712.7,
   "quoteAssetVolume" : 855458.5163,
-  "numberOfTrades" : 1718
+  "numberOfTrades" : 1718,
+  "rsi" : 0.0
 }, {
   "symbol" : "XRPUSD",
   "openTime" : 1589846400000,
@@ -881,7 +276,8 @@
   "close" : 0.205,
   "volume" : 1973028.2,
   "quoteAssetVolume" : 401107.6809,
-  "numberOfTrades" : 1066
+  "numberOfTrades" : 1066,
+  "rsi" : 0.0
 }, {
   "symbol" : "XRPUSD",
   "openTime" : 1589932800000,
@@ -894,7 +290,8 @@
   "close" : 0.2018,
   "volume" : 2033053.7,
   "quoteAssetVolume" : 412554.1346,
-  "numberOfTrades" : 1240
+  "numberOfTrades" : 1240,
+  "rsi" : 0.0
 }, {
   "symbol" : "XRPUSD",
   "openTime" : 1590019200000,
@@ -907,7 +304,8 @@
   "close" : 0.194,
   "volume" : 2436362.8,
   "quoteAssetVolume" : 475529.7022,
-  "numberOfTrades" : 1778
+  "numberOfTrades" : 1778,
+  "rsi" : 0.0
 }, {
   "symbol" : "XRPUSD",
   "openTime" : 1590105600000,
@@ -920,7 +318,8 @@
   "close" : 0.2003,
   "volume" : 2042877.7,
   "quoteAssetVolume" : 406652.058,
-  "numberOfTrades" : 1280
+  "numberOfTrades" : 1280,
+  "rsi" : 0.0
 }, {
   "symbol" : "XRPUSD",
   "openTime" : 1590192000000,
@@ -933,7 +332,8 @@
   "close" : 0.199,
   "volume" : 1355714.9,
   "quoteAssetVolume" : 271604.1055,
-  "numberOfTrades" : 873
+  "numberOfTrades" : 873,
+  "rsi" : 0.0
 }, {
   "symbol" : "XRPUSD",
   "openTime" : 1590278400000,
@@ -946,7 +346,8 @@
   "close" : 0.1927,
   "volume" : 1910163.2,
   "quoteAssetVolume" : 377737.5898,
-  "numberOfTrades" : 1051
+  "numberOfTrades" : 1051,
+  "rsi" : 0.0
 }, {
   "symbol" : "XRPUSD",
   "openTime" : 1590364800000,
@@ -959,7 +360,8 @@
   "close" : 0.1964,
   "volume" : 2149668.5,
   "quoteAssetVolume" : 417949.1516,
-  "numberOfTrades" : 1254
+  "numberOfTrades" : 1254,
+  "rsi" : 0.0
 }, {
   "symbol" : "XRPUSD",
   "openTime" : 1590451200000,
@@ -972,7 +374,8 @@
   "close" : 0.1939,
   "volume" : 1149139.5,
   "quoteAssetVolume" : 223455.2004,
-  "numberOfTrades" : 920
+  "numberOfTrades" : 920,
+  "rsi" : 0.0
 }, {
   "symbol" : "XRPUSD",
   "openTime" : 1590537600000,
@@ -985,7 +388,8 @@
   "close" : 0.1977,
   "volume" : 1971727.3,
   "quoteAssetVolume" : 386356.3474,
-  "numberOfTrades" : 1017
+  "numberOfTrades" : 1017,
+  "rsi" : 0.0
 }, {
   "symbol" : "XRPUSD",
   "openTime" : 1590624000000,
@@ -998,7 +402,8 @@
   "close" : 0.2005,
   "volume" : 2104596.1,
   "quoteAssetVolume" : 417438.7378,
-  "numberOfTrades" : 1207
+  "numberOfTrades" : 1207,
+  "rsi" : 0.0
 }, {
   "symbol" : "XRPUSD",
   "openTime" : 1590710400000,
@@ -1011,7 +416,8 @@
   "close" : 0.1976,
   "volume" : 2310167.7,
   "quoteAssetVolume" : 460092.6878,
-  "numberOfTrades" : 1498
+  "numberOfTrades" : 1498,
+  "rsi" : 0.0
 }, {
   "symbol" : "XRPUSD",
   "openTime" : 1590796800000,
@@ -1024,7 +430,8 @@
   "close" : 0.2073,
   "volume" : 1965266.1,
   "quoteAssetVolume" : 396760.6677,
-  "numberOfTrades" : 1315
+  "numberOfTrades" : 1315,
+  "rsi" : 0.0
 }, {
   "symbol" : "XRPUSD",
   "openTime" : 1590883200000,
@@ -1037,7 +444,8 @@
   "close" : 0.2022,
   "volume" : 1924821.4,
   "quoteAssetVolume" : 398229.4684,
-  "numberOfTrades" : 1481
+  "numberOfTrades" : 1481,
+  "rsi" : 0.0
 }, {
   "symbol" : "XRPUSD",
   "openTime" : 1590969600000,
@@ -1050,7 +458,8 @@
   "close" : 0.2118,
   "volume" : 2094140.9,
   "quoteAssetVolume" : 433624.1963,
-  "numberOfTrades" : 1790
+  "numberOfTrades" : 1790,
+  "rsi" : 0.0
 }, {
   "symbol" : "XRPUSD",
   "openTime" : 1591056000000,
@@ -1063,7 +472,8 @@
   "close" : 0.2033,
   "volume" : 3949976.0,
   "quoteAssetVolume" : 821434.3901,
-  "numberOfTrades" : 2664
+  "numberOfTrades" : 2664,
+  "rsi" : 0.0
 }, {
   "symbol" : "XRPUSD",
   "openTime" : 1591142400000,
@@ -1076,7 +486,8 @@
   "close" : 0.204,
   "volume" : 1628002.5,
   "quoteAssetVolume" : 331047.1274,
-  "numberOfTrades" : 1221
+  "numberOfTrades" : 1221,
+  "rsi" : 0.0
 }, {
   "symbol" : "XRPUSD",
   "openTime" : 1591228800000,
@@ -1089,7 +500,8 @@
   "close" : 0.2046,
   "volume" : 2277961.3,
   "quoteAssetVolume" : 466226.844,
-  "numberOfTrades" : 1476
+  "numberOfTrades" : 1476,
+  "rsi" : 0.0
 }, {
   "symbol" : "XRPUSD",
   "openTime" : 1591315200000,
@@ -1102,7 +514,8 @@
   "close" : 0.203,
   "volume" : 1391764.8,
   "quoteAssetVolume" : 283471.643,
-  "numberOfTrades" : 1034
+  "numberOfTrades" : 1034,
+  "rsi" : 0.0
 }, {
   "symbol" : "XRPUSD",
   "openTime" : 1591401600000,
@@ -1115,7 +528,8 @@
   "close" : 0.2036,
   "volume" : 1272357.3,
   "quoteAssetVolume" : 258497.9838,
-  "numberOfTrades" : 962
+  "numberOfTrades" : 962,
+  "rsi" : 0.0
 }, {
   "symbol" : "XRPUSD",
   "openTime" : 1591488000000,
@@ -1128,7 +542,8 @@
   "close" : 0.2036,
   "volume" : 2010860.9,
   "quoteAssetVolume" : 406273.6257,
-  "numberOfTrades" : 1095
+  "numberOfTrades" : 1095,
+  "rsi" : 0.0
 }, {
   "symbol" : "XRPUSD",
   "openTime" : 1591574400000,
@@ -1141,7 +556,8 @@
   "close" : 0.204,
   "volume" : 1207004.7,
   "quoteAssetVolume" : 244588.2548,
-  "numberOfTrades" : 780
+  "numberOfTrades" : 780,
+  "rsi" : 0.0
 }, {
   "symbol" : "XRPUSD",
   "openTime" : 1591660800000,
@@ -1154,7 +570,8 @@
   "close" : 0.2016,
   "volume" : 2455860.9,
   "quoteAssetVolume" : 497078.9278,
-  "numberOfTrades" : 1284
+  "numberOfTrades" : 1284,
+  "rsi" : 0.0
 }, {
   "symbol" : "XRPUSD",
   "openTime" : 1591747200000,
@@ -1167,7 +584,8 @@
   "close" : 0.2029,
   "volume" : 3079700.1,
   "quoteAssetVolume" : 621630.6189,
-  "numberOfTrades" : 1432
+  "numberOfTrades" : 1432,
+  "rsi" : 0.0
 }, {
   "symbol" : "XRPUSD",
   "openTime" : 1591833600000,
@@ -1180,7 +598,8 @@
   "close" : 0.188,
   "volume" : 5284637.6,
   "quoteAssetVolume" : 1026876.0459,
-  "numberOfTrades" : 2953
+  "numberOfTrades" : 2953,
+  "rsi" : 0.0
 }, {
   "symbol" : "XRPUSD",
   "openTime" : 1591920000000,
@@ -1190,8 +609,667 @@
   "open" : 0.1882,
   "high" : 0.195,
   "low" : 0.1868,
+  "close" : 0.1933,
+  "volume" : 1871184.7,
+  "quoteAssetVolume" : 359550.7583,
+  "numberOfTrades" : 1247,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1592006400000,
+  "openDate" : null,
+  "closeTime" : 1592092799999,
+  "closeDate" : null,
+  "open" : 0.1933,
+  "high" : 0.1938,
+  "low" : 0.1907,
+  "close" : 0.1924,
+  "volume" : 1423448.0,
+  "quoteAssetVolume" : 273855.5577,
+  "numberOfTrades" : 993,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1592092800000,
+  "openDate" : null,
+  "closeTime" : 1592179199999,
+  "closeDate" : null,
+  "open" : 0.1924,
+  "high" : 0.1936,
+  "low" : 0.1885,
+  "close" : 0.1904,
+  "volume" : 1402385.8,
+  "quoteAssetVolume" : 268300.7351,
+  "numberOfTrades" : 1170,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1592179200000,
+  "openDate" : null,
+  "closeTime" : 1592265599999,
+  "closeDate" : null,
+  "open" : 0.19,
+  "high" : 0.1934,
+  "low" : 0.1819,
+  "close" : 0.1927,
+  "volume" : 3586726.5,
+  "quoteAssetVolume" : 675907.6547,
+  "numberOfTrades" : 2739,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1592265600000,
+  "openDate" : null,
+  "closeTime" : 1592351999999,
+  "closeDate" : null,
+  "open" : 0.1927,
+  "high" : 0.1942,
+  "low" : 0.19,
+  "close" : 0.1922,
+  "volume" : 2347058.1,
+  "quoteAssetVolume" : 450390.1183,
+  "numberOfTrades" : 1357,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1592352000000,
+  "openDate" : null,
+  "closeTime" : 1592438399999,
+  "closeDate" : null,
+  "open" : 0.1925,
+  "high" : 0.1989,
+  "low" : 0.1885,
   "close" : 0.1931,
-  "volume" : 1665241.1,
-  "quoteAssetVolume" : 319870.0677,
-  "numberOfTrades" : 1106
+  "volume" : 4013725.8,
+  "quoteAssetVolume" : 780218.1949,
+  "numberOfTrades" : 1955,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1592438400000,
+  "openDate" : null,
+  "closeTime" : 1592524799999,
+  "closeDate" : null,
+  "open" : 0.1933,
+  "high" : 0.1933,
+  "low" : 0.1882,
+  "close" : 0.1898,
+  "volume" : 2322775.3,
+  "quoteAssetVolume" : 442727.427,
+  "numberOfTrades" : 1701,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1592524800000,
+  "openDate" : null,
+  "closeTime" : 1592611199999,
+  "closeDate" : null,
+  "open" : 0.1896,
+  "high" : 0.19,
+  "low" : 0.1865,
+  "close" : 0.187,
+  "volume" : 2524349.4,
+  "quoteAssetVolume" : 475578.7078,
+  "numberOfTrades" : 1954,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1592611200000,
+  "openDate" : null,
+  "closeTime" : 1592697599999,
+  "closeDate" : null,
+  "open" : 0.187,
+  "high" : 0.189,
+  "low" : 0.1849,
+  "close" : 0.1881,
+  "volume" : 1700354.7,
+  "quoteAssetVolume" : 318892.4104,
+  "numberOfTrades" : 1262,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1592697600000,
+  "openDate" : null,
+  "closeTime" : 1592783999999,
+  "closeDate" : null,
+  "open" : 0.1881,
+  "high" : 0.1885,
+  "low" : 0.1856,
+  "close" : 0.1859,
+  "volume" : 968627.8,
+  "quoteAssetVolume" : 181588.0678,
+  "numberOfTrades" : 801,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1592784000000,
+  "openDate" : null,
+  "closeTime" : 1592870399999,
+  "closeDate" : null,
+  "open" : 0.1859,
+  "high" : 0.1905,
+  "low" : 0.1857,
+  "close" : 0.1896,
+  "volume" : 1855916.5,
+  "quoteAssetVolume" : 350367.9625,
+  "numberOfTrades" : 1125,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1592870400000,
+  "openDate" : null,
+  "closeTime" : 1592956799999,
+  "closeDate" : null,
+  "open" : 0.19,
+  "high" : 0.1905,
+  "low" : 0.1883,
+  "close" : 0.1889,
+  "volume" : 1885333.3,
+  "quoteAssetVolume" : 356684.0538,
+  "numberOfTrades" : 1256,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1592956800000,
+  "openDate" : null,
+  "closeTime" : 1593043199999,
+  "closeDate" : null,
+  "open" : 0.189,
+  "high" : 0.1902,
+  "low" : 0.1815,
+  "close" : 0.1834,
+  "volume" : 2867747.6,
+  "quoteAssetVolume" : 531561.6354,
+  "numberOfTrades" : 2089,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1593043200000,
+  "openDate" : null,
+  "closeTime" : 1593129599999,
+  "closeDate" : null,
+  "open" : 0.1831,
+  "high" : 0.1841,
+  "low" : 0.1786,
+  "close" : 0.1814,
+  "volume" : 2242409.9,
+  "quoteAssetVolume" : 406797.4282,
+  "numberOfTrades" : 1625,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1593129600000,
+  "openDate" : null,
+  "closeTime" : 1593215999999,
+  "closeDate" : null,
+  "open" : 0.1816,
+  "high" : 0.1868,
+  "low" : 0.1785,
+  "close" : 0.1825,
+  "volume" : 2062763.7,
+  "quoteAssetVolume" : 377138.2632,
+  "numberOfTrades" : 1860,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1593216000000,
+  "openDate" : null,
+  "closeTime" : 1593302399999,
+  "closeDate" : null,
+  "open" : 0.1823,
+  "high" : 0.1834,
+  "low" : 0.1714,
+  "close" : 0.1752,
+  "volume" : 2973274.6,
+  "quoteAssetVolume" : 527120.3071,
+  "numberOfTrades" : 2501,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1593302400000,
+  "openDate" : null,
+  "closeTime" : 1593388799999,
+  "closeDate" : null,
+  "open" : 0.1751,
+  "high" : 0.1799,
+  "low" : 0.1734,
+  "close" : 0.1769,
+  "volume" : 1556570.1,
+  "quoteAssetVolume" : 274798.2317,
+  "numberOfTrades" : 1314,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1593388800000,
+  "openDate" : null,
+  "closeTime" : 1593475199999,
+  "closeDate" : null,
+  "open" : 0.1772,
+  "high" : 0.179,
+  "low" : 0.1749,
+  "close" : 0.1773,
+  "volume" : 2449916.5,
+  "quoteAssetVolume" : 432717.693,
+  "numberOfTrades" : 1275,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1593475200000,
+  "openDate" : null,
+  "closeTime" : 1593561599999,
+  "closeDate" : null,
+  "open" : 0.1773,
+  "high" : 0.1778,
+  "low" : 0.175,
+  "close" : 0.1753,
+  "volume" : 1496955.2,
+  "quoteAssetVolume" : 263855.4419,
+  "numberOfTrades" : 1261,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1593561600000,
+  "openDate" : null,
+  "closeTime" : 1593647999999,
+  "closeDate" : null,
+  "open" : 0.1753,
+  "high" : 0.1788,
+  "low" : 0.174,
+  "close" : 0.1764,
+  "volume" : 2594908.1,
+  "quoteAssetVolume" : 458353.9884,
+  "numberOfTrades" : 1648,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1593648000000,
+  "openDate" : null,
+  "closeTime" : 1593734399999,
+  "closeDate" : null,
+  "open" : 0.1765,
+  "high" : 0.1774,
+  "low" : 0.1723,
+  "close" : 0.1749,
+  "volume" : 2169351.0,
+  "quoteAssetVolume" : 380841.56,
+  "numberOfTrades" : 1686,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1593734400000,
+  "openDate" : null,
+  "closeTime" : 1593820799999,
+  "closeDate" : null,
+  "open" : 0.1749,
+  "high" : 0.1785,
+  "low" : 0.1742,
+  "close" : 0.1764,
+  "volume" : 2729268.8,
+  "quoteAssetVolume" : 481405.8698,
+  "numberOfTrades" : 1487,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1593820800000,
+  "openDate" : null,
+  "closeTime" : 1593907199999,
+  "closeDate" : null,
+  "open" : 0.1762,
+  "high" : 0.1798,
+  "low" : 0.1762,
+  "close" : 0.1778,
+  "volume" : 2921313.5,
+  "quoteAssetVolume" : 520241.9088,
+  "numberOfTrades" : 1615,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1593907200000,
+  "openDate" : null,
+  "closeTime" : 1593993599999,
+  "closeDate" : null,
+  "open" : 0.1784,
+  "high" : 0.179,
+  "low" : 0.174,
+  "close" : 0.1773,
+  "volume" : 2204888.1,
+  "quoteAssetVolume" : 389095.7998,
+  "numberOfTrades" : 1268,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1593993600000,
+  "openDate" : null,
+  "closeTime" : 1594079999999,
+  "closeDate" : null,
+  "open" : 0.1774,
+  "high" : 0.1893,
+  "low" : 0.1765,
+  "close" : 0.189,
+  "volume" : 4627732.0,
+  "quoteAssetVolume" : 851104.8646,
+  "numberOfTrades" : 2207,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1594080000000,
+  "openDate" : null,
+  "closeTime" : 1594166399999,
+  "closeDate" : null,
+  "open" : 0.1885,
+  "high" : 0.1896,
+  "low" : 0.183,
+  "close" : 0.1852,
+  "volume" : 3586154.2,
+  "quoteAssetVolume" : 665958.7653,
+  "numberOfTrades" : 1948,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1594166400000,
+  "openDate" : null,
+  "closeTime" : 1594252799999,
+  "closeDate" : null,
+  "open" : 0.1851,
+  "high" : 0.2069,
+  "low" : 0.184,
+  "close" : 0.2053,
+  "volume" : 1.05788342E7,
+  "quoteAssetVolume" : 2097507.4916,
+  "numberOfTrades" : 4452,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1594252800000,
+  "openDate" : null,
+  "closeTime" : 1594339199999,
+  "closeDate" : null,
+  "open" : 0.2054,
+  "high" : 0.2114,
+  "low" : 0.1977,
+  "close" : 0.2025,
+  "volume" : 5668996.5,
+  "quoteAssetVolume" : 1149096.2662,
+  "numberOfTrades" : 3118,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1594339200000,
+  "openDate" : null,
+  "closeTime" : 1594425599999,
+  "closeDate" : null,
+  "open" : 0.2027,
+  "high" : 0.2027,
+  "low" : 0.193,
+  "close" : 0.199,
+  "volume" : 4745143.8,
+  "quoteAssetVolume" : 939422.1759,
+  "numberOfTrades" : 2210,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1594425600000,
+  "openDate" : null,
+  "closeTime" : 1594511999999,
+  "closeDate" : null,
+  "open" : 0.199,
+  "high" : 0.2052,
+  "low" : 0.198,
+  "close" : 0.2013,
+  "volume" : 5016568.8,
+  "quoteAssetVolume" : 1009521.7345,
+  "numberOfTrades" : 2315,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1594512000000,
+  "openDate" : null,
+  "closeTime" : 1594598399999,
+  "closeDate" : null,
+  "open" : 0.2015,
+  "high" : 0.2043,
+  "low" : 0.1977,
+  "close" : 0.201,
+  "volume" : 2910625.2,
+  "quoteAssetVolume" : 583950.8375,
+  "numberOfTrades" : 1737,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1594598400000,
+  "openDate" : null,
+  "closeTime" : 1594684799999,
+  "closeDate" : null,
+  "open" : 0.2014,
+  "high" : 0.2065,
+  "low" : 0.192,
+  "close" : 0.1988,
+  "volume" : 6379370.9,
+  "quoteAssetVolume" : 1277308.6053,
+  "numberOfTrades" : 3122,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1594684800000,
+  "openDate" : null,
+  "closeTime" : 1594771199999,
+  "closeDate" : null,
+  "open" : 0.1986,
+  "high" : 0.1998,
+  "low" : 0.1953,
+  "close" : 0.1992,
+  "volume" : 2760883.2,
+  "quoteAssetVolume" : 547278.72,
+  "numberOfTrades" : 1903,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1594771200000,
+  "openDate" : null,
+  "closeTime" : 1594857599999,
+  "closeDate" : null,
+  "open" : 0.1998,
+  "high" : 0.1999,
+  "low" : 0.1965,
+  "close" : 0.1972,
+  "volume" : 2358236.9,
+  "quoteAssetVolume" : 467034.6686,
+  "numberOfTrades" : 1743,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1594857600000,
+  "openDate" : null,
+  "closeTime" : 1594943999999,
+  "closeDate" : null,
+  "open" : 0.1972,
+  "high" : 0.1975,
+  "low" : 0.1882,
+  "close" : 0.1945,
+  "volume" : 3351911.7,
+  "quoteAssetVolume" : 647157.0007,
+  "numberOfTrades" : 2325,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1594944000000,
+  "openDate" : null,
+  "closeTime" : 1595030399999,
+  "closeDate" : null,
+  "open" : 0.1944,
+  "high" : 0.1979,
+  "low" : 0.1912,
+  "close" : 0.1942,
+  "volume" : 3721439.3,
+  "quoteAssetVolume" : 722706.8758,
+  "numberOfTrades" : 1940,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1595030400000,
+  "openDate" : null,
+  "closeTime" : 1595116799999,
+  "closeDate" : null,
+  "open" : 0.1946,
+  "high" : 0.2026,
+  "low" : 0.1938,
+  "close" : 0.1999,
+  "volume" : 3612558.7,
+  "quoteAssetVolume" : 718207.8099,
+  "numberOfTrades" : 2250,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1595116800000,
+  "openDate" : null,
+  "closeTime" : 1595203199999,
+  "closeDate" : null,
+  "open" : 0.2002,
+  "high" : 0.2021,
+  "low" : 0.1959,
+  "close" : 0.1997,
+  "volume" : 2501228.6,
+  "quoteAssetVolume" : 496494.3818,
+  "numberOfTrades" : 1450,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1595203200000,
+  "openDate" : null,
+  "closeTime" : 1595289599999,
+  "closeDate" : null,
+  "open" : 0.1998,
+  "high" : 0.2001,
+  "low" : 0.1927,
+  "close" : 0.1948,
+  "volume" : 3293227.2,
+  "quoteAssetVolume" : 648346.1198,
+  "numberOfTrades" : 1664,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1595289600000,
+  "openDate" : null,
+  "closeTime" : 1595375999999,
+  "closeDate" : null,
+  "open" : 0.1947,
+  "high" : 0.2012,
+  "low" : 0.1942,
+  "close" : 0.1994,
+  "volume" : 4010100.9,
+  "quoteAssetVolume" : 794559.1264,
+  "numberOfTrades" : 2228,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1595376000000,
+  "openDate" : null,
+  "closeTime" : 1595462399999,
+  "closeDate" : null,
+  "open" : 0.1994,
+  "high" : 0.2049,
+  "low" : 0.1961,
+  "close" : 0.2042,
+  "volume" : 3685369.6,
+  "quoteAssetVolume" : 739062.4697,
+  "numberOfTrades" : 1841,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1595462400000,
+  "openDate" : null,
+  "closeTime" : 1595548799999,
+  "closeDate" : null,
+  "open" : 0.2041,
+  "high" : 0.2106,
+  "low" : 0.202,
+  "close" : 0.2085,
+  "volume" : 6112464.5,
+  "quoteAssetVolume" : 1263565.9297,
+  "numberOfTrades" : 3661,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1595548800000,
+  "openDate" : null,
+  "closeTime" : 1595635199999,
+  "closeDate" : null,
+  "open" : 0.2087,
+  "high" : 0.2089,
+  "low" : 0.2022,
+  "close" : 0.2048,
+  "volume" : 2932577.8,
+  "quoteAssetVolume" : 602367.7038,
+  "numberOfTrades" : 1929,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1595635200000,
+  "openDate" : null,
+  "closeTime" : 1595721599999,
+  "closeDate" : null,
+  "open" : 0.2048,
+  "high" : 0.2179,
+  "low" : 0.204,
+  "close" : 0.215,
+  "volume" : 6924957.3,
+  "quoteAssetVolume" : 1466771.1381,
+  "numberOfTrades" : 3508,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1595721600000,
+  "openDate" : null,
+  "closeTime" : 1595807999999,
+  "closeDate" : null,
+  "open" : 0.2151,
+  "high" : 0.2252,
+  "low" : 0.2131,
+  "close" : 0.2155,
+  "volume" : 7007735.7,
+  "quoteAssetVolume" : 1531463.8408,
+  "numberOfTrades" : 3469,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1595808000000,
+  "openDate" : null,
+  "closeTime" : 1595894399999,
+  "closeDate" : null,
+  "open" : 0.2156,
+  "high" : 0.2298,
+  "low" : 0.209,
+  "close" : 0.2241,
+  "volume" : 8054030.2,
+  "quoteAssetVolume" : 1779059.666,
+  "numberOfTrades" : 4239,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1595894400000,
+  "openDate" : null,
+  "closeTime" : 1595980799999,
+  "closeDate" : null,
+  "open" : 0.225,
+  "high" : 0.2352,
+  "low" : 0.2176,
+  "close" : 0.231,
+  "volume" : 8243849.5,
+  "quoteAssetVolume" : 1874777.2357,
+  "numberOfTrades" : 4414,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1595980800000,
+  "openDate" : null,
+  "closeTime" : 1596067199999,
+  "closeDate" : null,
+  "open" : 0.2307,
+  "high" : 0.25,
+  "low" : 0.2299,
+  "close" : 0.2484,
+  "volume" : 9840641.2,
+  "quoteAssetVolume" : 2373192.8811,
+  "numberOfTrades" : 5612,
+  "rsi" : 0.0
 } ]

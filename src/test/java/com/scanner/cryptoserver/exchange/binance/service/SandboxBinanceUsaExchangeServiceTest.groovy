@@ -127,7 +127,6 @@ class SandboxBinanceUsaExchangeServiceTest extends Specification {
 
         then:
           def tickerRsiList = tickerList.collect { it.getRsi() }
-          tickerRsiList.each { println it }
           //transform the expected list into a list of doubles - Groovy defaults to BigDecimal
           def expectList = expectedRsiList.collect { it.toDouble() }
           assert expectList == tickerRsiList

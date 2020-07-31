@@ -6,6 +6,7 @@ import com.scanner.cryptoserver.util.dto.Symbol
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 class Bittrex24HrData {
+    //the symbol/currency, such as "BTC-USD"
     var symbol: String = ""
     var high: Double = 0.0
     var low: Double = 0.0

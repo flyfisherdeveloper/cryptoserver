@@ -52,8 +52,8 @@ class Bittrex24HrDataTest extends Specification {
 
         then:
           assert theSymbol
-          assert theSymbol.baseAsset == coin
-          assert theSymbol.quoteAsset == currency
-          assert theSymbol.symbol == symbol
+          assert theSymbol.getBaseAsset() == coin
+          assert theSymbol.getQuoteAsset() == currency
+          assert theSymbol.getSymbol() == symbol
     }
 }

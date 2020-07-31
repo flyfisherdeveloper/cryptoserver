@@ -22,7 +22,7 @@ class BittrexServiceImplTest extends Specification {
         service = new BittrexServiceImpl(cacheUtil, coinMarketCapService, urlReader)
     }
 
-    def "test getCoinDataFor24Hour"() {
+    def "test getCoinDataFor24Hour using json supplier"() {
         when:
           urlReader.readFromUrl() >> getMarketsJson()
           //here, we mock the cache util, and use the supplier passed in as an argument
@@ -39,7 +39,36 @@ class BittrexServiceImplTest extends Specification {
           def btc = markets.find { it.symbol == "BTC-USD" }
           assert btc
           //getting the value from the json
-          assert btc.volume == 1120.23
+          assert btc.getVolume() == 1120.23
+    }
+
+    def "test getCoinDataFor24Hour using mock removes 'EUR' market coins"() {
+        given:
+          def btcUsd = "BTC-USD"
+          def btcUsdHigh = 8023.45
+
+          def ethEur = "BTC-EUR"
+          def ethEurHigh = 387.21
+
+          def bittrexList = [new Bittrex24HrData(symbol: btcUsd, high: btcUsdHigh), new Bittrex24HrData(symbol: ethEur, high: ethEurHigh)]
+
+        when:
+          urlReader.readFromUrl() >> getMarketsJson()
+          //mock the cache util, ignoring the json supplier in the service
+          cacheUtil.retrieveFromCache(*_) >> bittrexList
+
+        then:
+          def markets = service.getCoinDataFor24Hour()
+
+        expect:
+          assert markets
+          def btc = markets.find { it.getSymbol() == btcUsd }
+          assert btc
+          assert btc.getHighPrice() == btcUsdHigh
+
+          //test that the EUR markets are eliminated
+          def eth = markets.find { it.getSymbol() == ethEur }
+          assert !eth
     }
 
     def "test get24HourCoinData"() {
@@ -59,7 +88,7 @@ class BittrexServiceImplTest extends Specification {
 
         expect:
           assert coin
-          assert coin.symbol == symbol
+          assert coin.getSymbol() == symbol
     }
 
     def "test get24HrAllCoinTicker"() {
@@ -72,7 +101,7 @@ class BittrexServiceImplTest extends Specification {
           }
           //mock the call to set the market cap for each coin
           //sets the market cap to an arbitrary, non-zero value
-          coinMarketCapService.setMarketCapAndIdFor24HrData(_) >> { args ->
+          coinMarketCapService.setMarketCapDataFor24HrData(_) >> { args ->
               def list = args.get(0) as List<CoinDataFor24Hr>
               list.each { it.setMarketCap(10000.0) }
           }
@@ -85,7 +114,7 @@ class BittrexServiceImplTest extends Specification {
           def btc = coins.find { it.symbol == "BTC-USD" }
           assert btc
           //getting the value from the json - "lastTradeRate" is converted to "lastPrice"
-          assert btc.lastPrice == 9834.33
+          assert btc.getLastPrice() == 9834.33
 
           //note: the full trade link is null in the service for a unit test, but the service adds the symbol
           //to the end of the trade link with the currency-coin pair
@@ -97,9 +126,11 @@ class BittrexServiceImplTest extends Specification {
         given:
           def symbolBtc = "BTC-USD"
           def symbolEth = "ETH-USD"
+          def symbolEthEur = "ETH-EUR"
           def bittrex24HrData1 = new Bittrex24HrData(symbol: symbolBtc)
           def bittrex24HrData2 = new Bittrex24HrData(symbol: symbolEth)
-          def marketList = [bittrex24HrData1, bittrex24HrData2]
+          def bittrex24HrData3 = new Bittrex24HrData(symbol: symbolEthEur)
+          def marketList = [bittrex24HrData1, bittrex24HrData2, bittrex24HrData3]
 
         when:
           cacheUtil.retrieveFromCache(*_) >> marketList
@@ -110,19 +141,23 @@ class BittrexServiceImplTest extends Specification {
         expect:
           assert exchangeInfo
           assert exchangeInfo.getSymbols()
-          assert exchangeInfo.getSymbols().size() == marketList.size()
+          assert exchangeInfo.getSymbols().size() == marketList.size() - 1
 
-          def btc = exchangeInfo.getSymbols().find { it.symbol == symbolBtc }
+          def btc = exchangeInfo.getSymbols().find { it.getSymbol() == symbolBtc }
           assert btc
-          assert btc.symbol == symbolBtc
-          assert btc.quoteAsset == "USD"
-          assert btc.baseAsset == "BTC"
+          assert btc.getSymbol() == symbolBtc
+          assert btc.getQuoteAsset() == "USD"
+          assert btc.getBaseAsset() == "BTC"
 
-          def eth = exchangeInfo.getSymbols().find { it.symbol == symbolEth }
+          def eth = exchangeInfo.getSymbols().find { it.getSymbol() == symbolEth }
           assert eth
-          assert eth.symbol == symbolEth
-          assert eth.quoteAsset == "USD"
-          assert eth.baseAsset == "ETH"
+          assert eth.getSymbol() == symbolEth
+          assert eth.getQuoteAsset() == "USD"
+          assert eth.getBaseAsset() == "ETH"
+
+          //ensure that European markets don't get returned
+          def ethEur = exchangeInfo.getSymbols().find { it.getSymbol() == symbolEthEur }
+          assert !ethEur
     }
 
     def getMarketsJson() {

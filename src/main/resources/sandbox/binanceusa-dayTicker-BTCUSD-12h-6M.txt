@@ -1,1253 +1,5 @@
 [ {
   "symbol" : "BTCUSD",
-  "openTime" : 1576195200000,
-  "openDate" : null,
-  "closeTime" : 1576238399999,
-  "closeDate" : null,
-  "open" : 7196.27,
-  "high" : 7235.42,
-  "low" : 7186.32,
-  "close" : 7221.21,
-  "volume" : 36.990545,
-  "quoteAssetVolume" : 266859.6035,
-  "numberOfTrades" : 812
-}, {
-  "symbol" : "BTCUSD",
-  "openTime" : 1576238400000,
-  "openDate" : null,
-  "closeTime" : 1576281599999,
-  "closeDate" : null,
-  "open" : 7215.11,
-  "high" : 7310.24,
-  "low" : 7203.49,
-  "close" : 7253.54,
-  "volume" : 84.81136,
-  "quoteAssetVolume" : 614386.2033,
-  "numberOfTrades" : 1087
-}, {
-  "symbol" : "BTCUSD",
-  "openTime" : 1576281600000,
-  "openDate" : null,
-  "closeTime" : 1576324799999,
-  "closeDate" : null,
-  "open" : 7253.54,
-  "high" : 7268.67,
-  "low" : 7150.02,
-  "close" : 7187.7,
-  "volume" : 58.802247,
-  "quoteAssetVolume" : 424641.4846,
-  "numberOfTrades" : 722
-}, {
-  "symbol" : "BTCUSD",
-  "openTime" : 1576324800000,
-  "openDate" : null,
-  "closeTime" : 1576367999999,
-  "closeDate" : null,
-  "open" : 7189.12,
-  "high" : 7189.12,
-  "low" : 6994.42,
-  "close" : 7063.86,
-  "volume" : 120.617538,
-  "quoteAssetVolume" : 854372.1714,
-  "numberOfTrades" : 2173
-}, {
-  "symbol" : "BTCUSD",
-  "openTime" : 1576368000000,
-  "openDate" : null,
-  "closeTime" : 1576411199999,
-  "closeDate" : null,
-  "open" : 7063.0,
-  "high" : 7200.4,
-  "low" : 7013.13,
-  "close" : 7103.63,
-  "volume" : 119.431584,
-  "quoteAssetVolume" : 848369.1778,
-  "numberOfTrades" : 1752
-}, {
-  "symbol" : "BTCUSD",
-  "openTime" : 1576411200000,
-  "openDate" : null,
-  "closeTime" : 1576454399999,
-  "closeDate" : null,
-  "open" : 7110.37,
-  "high" : 7177.97,
-  "low" : 7059.3,
-  "close" : 7122.21,
-  "volume" : 69.282268,
-  "quoteAssetVolume" : 493327.9945,
-  "numberOfTrades" : 1109
-}, {
-  "symbol" : "BTCUSD",
-  "openTime" : 1576454400000,
-  "openDate" : null,
-  "closeTime" : 1576497599999,
-  "closeDate" : null,
-  "open" : 7123.27,
-  "high" : 7128.2,
-  "low" : 7031.79,
-  "close" : 7093.46,
-  "volume" : 52.326285,
-  "quoteAssetVolume" : 370340.6576,
-  "numberOfTrades" : 869
-}, {
-  "symbol" : "BTCUSD",
-  "openTime" : 1576497600000,
-  "openDate" : null,
-  "closeTime" : 1576540799999,
-  "closeDate" : null,
-  "open" : 7085.19,
-  "high" : 7144.27,
-  "low" : 6831.66,
-  "close" : 6884.08,
-  "volume" : 180.78766,
-  "quoteAssetVolume" : 1253913.3367,
-  "numberOfTrades" : 1470
-}, {
-  "symbol" : "BTCUSD",
-  "openTime" : 1576540800000,
-  "openDate" : null,
-  "closeTime" : 1576583999999,
-  "closeDate" : null,
-  "open" : 6881.0,
-  "high" : 6928.22,
-  "low" : 6846.08,
-  "close" : 6923.19,
-  "volume" : 53.894151,
-  "quoteAssetVolume" : 370820.3059,
-  "numberOfTrades" : 600
-}, {
-  "symbol" : "BTCUSD",
-  "openTime" : 1576584000000,
-  "openDate" : null,
-  "closeTime" : 1576627199999,
-  "closeDate" : null,
-  "open" : 6930.52,
-  "high" : 6937.21,
-  "low" : 6555.0,
-  "close" : 6619.03,
-  "volume" : 312.921359,
-  "quoteAssetVolume" : 2090274.9027,
-  "numberOfTrades" : 2438
-}, {
-  "symbol" : "BTCUSD",
-  "openTime" : 1576627200000,
-  "openDate" : null,
-  "closeTime" : 1576670399999,
-  "closeDate" : null,
-  "open" : 6621.65,
-  "high" : 6716.32,
-  "low" : 6590.83,
-  "close" : 6612.08,
-  "volume" : 112.53446,
-  "quoteAssetVolume" : 749728.4849,
-  "numberOfTrades" : 1223
-}, {
-  "symbol" : "BTCUSD",
-  "openTime" : 1576670400000,
-  "openDate" : null,
-  "closeTime" : 1576713599999,
-  "closeDate" : null,
-  "open" : 6626.18,
-  "high" : 7439.99,
-  "low" : 6438.1,
-  "close" : 7284.4,
-  "volume" : 482.165628,
-  "quoteAssetVolume" : 3341048.0645,
-  "numberOfTrades" : 5509
-}, {
-  "symbol" : "BTCUSD",
-  "openTime" : 1576713600000,
-  "openDate" : null,
-  "closeTime" : 1576756799999,
-  "closeDate" : null,
-  "open" : 7286.2,
-  "high" : 7377.64,
-  "low" : 7050.0,
-  "close" : 7145.14,
-  "volume" : 200.351722,
-  "quoteAssetVolume" : 1440727.1686,
-  "numberOfTrades" : 1982
-}, {
-  "symbol" : "BTCUSD",
-  "openTime" : 1576756800000,
-  "openDate" : null,
-  "closeTime" : 1576799999999,
-  "closeDate" : null,
-  "open" : 7143.11,
-  "high" : 7227.54,
-  "low" : 7067.78,
-  "close" : 7150.68,
-  "volume" : 102.995344,
-  "quoteAssetVolume" : 736260.8539,
-  "numberOfTrades" : 1027
-}, {
-  "symbol" : "BTCUSD",
-  "openTime" : 1576800000000,
-  "openDate" : null,
-  "closeTime" : 1576843199999,
-  "closeDate" : null,
-  "open" : 7150.68,
-  "high" : 7168.93,
-  "low" : 7082.35,
-  "close" : 7142.95,
-  "volume" : 81.350619,
-  "quoteAssetVolume" : 579219.1365,
-  "numberOfTrades" : 761
-}, {
-  "symbol" : "BTCUSD",
-  "openTime" : 1576843200000,
-  "openDate" : null,
-  "closeTime" : 1576886399999,
-  "closeDate" : null,
-  "open" : 7143.07,
-  "high" : 7214.71,
-  "low" : 7134.74,
-  "close" : 7185.68,
-  "volume" : 119.534864,
-  "quoteAssetVolume" : 858690.4901,
-  "numberOfTrades" : 1237
-}, {
-  "symbol" : "BTCUSD",
-  "openTime" : 1576886400000,
-  "openDate" : null,
-  "closeTime" : 1576929599999,
-  "closeDate" : null,
-  "open" : 7186.4,
-  "high" : 7186.68,
-  "low" : 7116.81,
-  "close" : 7153.74,
-  "volume" : 49.222389,
-  "quoteAssetVolume" : 351892.7526,
-  "numberOfTrades" : 659
-}, {
-  "symbol" : "BTCUSD",
-  "openTime" : 1576929600000,
-  "openDate" : null,
-  "closeTime" : 1576972799999,
-  "closeDate" : null,
-  "open" : 7151.23,
-  "high" : 7175.47,
-  "low" : 7121.83,
-  "close" : 7139.86,
-  "volume" : 50.593265,
-  "quoteAssetVolume" : 361487.7838,
-  "numberOfTrades" : 433
-}, {
-  "symbol" : "BTCUSD",
-  "openTime" : 1576972800000,
-  "openDate" : null,
-  "closeTime" : 1577015999999,
-  "closeDate" : null,
-  "open" : 7139.86,
-  "high" : 7202.94,
-  "low" : 7127.64,
-  "close" : 7158.22,
-  "volume" : 29.27541,
-  "quoteAssetVolume" : 209677.9436,
-  "numberOfTrades" : 424
-}, {
-  "symbol" : "BTCUSD",
-  "openTime" : 1577016000000,
-  "openDate" : null,
-  "closeTime" : 1577059199999,
-  "closeDate" : null,
-  "open" : 7166.56,
-  "high" : 7518.8,
-  "low" : 7159.86,
-  "close" : 7508.93,
-  "volume" : 242.454039,
-  "quoteAssetVolume" : 1781421.5722,
-  "numberOfTrades" : 2267
-}, {
-  "symbol" : "BTCUSD",
-  "openTime" : 1577059200000,
-  "openDate" : null,
-  "closeTime" : 1577102399999,
-  "closeDate" : null,
-  "open" : 7512.29,
-  "high" : 7641.9,
-  "low" : 7472.0,
-  "close" : 7555.62,
-  "volume" : 221.61434,
-  "quoteAssetVolume" : 1674192.3668,
-  "numberOfTrades" : 2283
-}, {
-  "symbol" : "BTCUSD",
-  "openTime" : 1577102400000,
-  "openDate" : null,
-  "closeTime" : 1577145599999,
-  "closeDate" : null,
-  "open" : 7555.62,
-  "high" : 7692.29,
-  "low" : 7251.14,
-  "close" : 7316.9,
-  "volume" : 445.132772,
-  "quoteAssetVolume" : 3320489.491,
-  "numberOfTrades" : 4072
-}, {
-  "symbol" : "BTCUSD",
-  "openTime" : 1577145600000,
-  "openDate" : null,
-  "closeTime" : 1577188799999,
-  "closeDate" : null,
-  "open" : 7315.48,
-  "high" : 7401.27,
-  "low" : 7229.11,
-  "close" : 7372.67,
-  "volume" : 93.223089,
-  "quoteAssetVolume" : 682891.6972,
-  "numberOfTrades" : 1107
-}, {
-  "symbol" : "BTCUSD",
-  "openTime" : 1577188800000,
-  "openDate" : null,
-  "closeTime" : 1577231999999,
-  "closeDate" : null,
-  "open" : 7372.33,
-  "high" : 7424.99,
-  "low" : 7159.55,
-  "close" : 7260.66,
-  "volume" : 158.277007,
-  "quoteAssetVolume" : 1149306.4761,
-  "numberOfTrades" : 1370
-}, {
-  "symbol" : "BTCUSD",
-  "openTime" : 1577232000000,
-  "openDate" : null,
-  "closeTime" : 1577275199999,
-  "closeDate" : null,
-  "open" : 7253.97,
-  "high" : 7260.78,
-  "low" : 7198.44,
-  "close" : 7209.35,
-  "volume" : 39.424697,
-  "quoteAssetVolume" : 285104.9483,
-  "numberOfTrades" : 532
-}, {
-  "symbol" : "BTCUSD",
-  "openTime" : 1577275200000,
-  "openDate" : null,
-  "closeTime" : 1577318399999,
-  "closeDate" : null,
-  "open" : 7209.0,
-  "high" : 7260.84,
-  "low" : 7117.09,
-  "close" : 7194.81,
-  "volume" : 85.63103,
-  "quoteAssetVolume" : 615240.9235,
-  "numberOfTrades" : 858
-}, {
-  "symbol" : "BTCUSD",
-  "openTime" : 1577318400000,
-  "openDate" : null,
-  "closeTime" : 1577361599999,
-  "closeDate" : null,
-  "open" : 7201.59,
-  "high" : 7232.52,
-  "low" : 7166.85,
-  "close" : 7185.89,
-  "volume" : 339.133451,
-  "quoteAssetVolume" : 2438139.3779,
-  "numberOfTrades" : 3494
-}, {
-  "symbol" : "BTCUSD",
-  "openTime" : 1577361600000,
-  "openDate" : null,
-  "closeTime" : 1577404799999,
-  "closeDate" : null,
-  "open" : 7179.87,
-  "high" : 7428.9,
-  "low" : 7153.56,
-  "close" : 7196.71,
-  "volume" : 205.30698,
-  "quoteAssetVolume" : 1493087.2959,
-  "numberOfTrades" : 1683
-}, {
-  "symbol" : "BTCUSD",
-  "openTime" : 1577404800000,
-  "openDate" : null,
-  "closeTime" : 1577447999999,
-  "closeDate" : null,
-  "open" : 7190.42,
-  "high" : 7228.08,
-  "low" : 7065.71,
-  "close" : 7110.7,
-  "volume" : 54.15967,
-  "quoteAssetVolume" : 389006.2739,
-  "numberOfTrades" : 733
-}, {
-  "symbol" : "BTCUSD",
-  "openTime" : 1577448000000,
-  "openDate" : null,
-  "closeTime" : 1577491199999,
-  "closeDate" : null,
-  "open" : 7111.44,
-  "high" : 7248.99,
-  "low" : 7084.6,
-  "close" : 7243.19,
-  "volume" : 65.788095,
-  "quoteAssetVolume" : 472984.7762,
-  "numberOfTrades" : 696
-}, {
-  "symbol" : "BTCUSD",
-  "openTime" : 1577491200000,
-  "openDate" : null,
-  "closeTime" : 1577534399999,
-  "closeDate" : null,
-  "open" : 7247.94,
-  "high" : 7342.73,
-  "low" : 7231.51,
-  "close" : 7281.72,
-  "volume" : 139.258619,
-  "quoteAssetVolume" : 1014429.2701,
-  "numberOfTrades" : 1833
-}, {
-  "symbol" : "BTCUSD",
-  "openTime" : 1577534400000,
-  "openDate" : null,
-  "closeTime" : 1577577599999,
-  "closeDate" : null,
-  "open" : 7286.53,
-  "high" : 7339.26,
-  "low" : 7261.97,
-  "close" : 7298.73,
-  "volume" : 99.919564,
-  "quoteAssetVolume" : 730064.562,
-  "numberOfTrades" : 1805
-}, {
-  "symbol" : "BTCUSD",
-  "openTime" : 1577577600000,
-  "openDate" : null,
-  "closeTime" : 1577620799999,
-  "closeDate" : null,
-  "open" : 7291.2,
-  "high" : 7345.0,
-  "low" : 7273.52,
-  "close" : 7323.56,
-  "volume" : 14.983453,
-  "quoteAssetVolume" : 109334.9268,
-  "numberOfTrades" : 469
-}, {
-  "symbol" : "BTCUSD",
-  "openTime" : 1577620800000,
-  "openDate" : null,
-  "closeTime" : 1577663999999,
-  "closeDate" : null,
-  "open" : 7317.75,
-  "high" : 7500.0,
-  "low" : 7314.53,
-  "close" : 7382.73,
-  "volume" : 88.932129,
-  "quoteAssetVolume" : 657230.8307,
-  "numberOfTrades" : 1614
-}, {
-  "symbol" : "BTCUSD",
-  "openTime" : 1577664000000,
-  "openDate" : null,
-  "closeTime" : 1577707199999,
-  "closeDate" : null,
-  "open" : 7380.0,
-  "high" : 7380.0,
-  "low" : 7281.13,
-  "close" : 7300.5,
-  "volume" : 33.183973,
-  "quoteAssetVolume" : 243297.5837,
-  "numberOfTrades" : 550
-}, {
-  "symbol" : "BTCUSD",
-  "openTime" : 1577707200000,
-  "openDate" : null,
-  "closeTime" : 1577750399999,
-  "closeDate" : null,
-  "open" : 7292.07,
-  "high" : 7318.93,
-  "low" : 7203.25,
-  "close" : 7223.4,
-  "volume" : 85.586348,
-  "quoteAssetVolume" : 621434.759,
-  "numberOfTrades" : 930
-}, {
-  "symbol" : "BTCUSD",
-  "openTime" : 1577750400000,
-  "openDate" : null,
-  "closeTime" : 1577793599999,
-  "closeDate" : null,
-  "open" : 7216.32,
-  "high" : 7242.52,
-  "low" : 7176.75,
-  "close" : 7222.95,
-  "volume" : 22.482049,
-  "quoteAssetVolume" : 162266.8927,
-  "numberOfTrades" : 475
-}, {
-  "symbol" : "BTCUSD",
-  "openTime" : 1577793600000,
-  "openDate" : null,
-  "closeTime" : 1577836799999,
-  "closeDate" : null,
-  "open" : 7215.62,
-  "high" : 7295.3,
-  "low" : 7119.03,
-  "close" : 7170.14,
-  "volume" : 69.408349,
-  "quoteAssetVolume" : 497486.2141,
-  "numberOfTrades" : 1006
-}, {
-  "symbol" : "BTCUSD",
-  "openTime" : 1577836800000,
-  "openDate" : null,
-  "closeTime" : 1577879999999,
-  "closeDate" : null,
-  "open" : 7157.89,
-  "high" : 7216.53,
-  "low" : 7152.4,
-  "close" : 7173.87,
-  "volume" : 53.995051,
-  "quoteAssetVolume" : 387530.6653,
-  "numberOfTrades" : 590
-}, {
-  "symbol" : "BTCUSD",
-  "openTime" : 1577880000000,
-  "openDate" : null,
-  "closeTime" : 1577923199999,
-  "closeDate" : null,
-  "open" : 7173.87,
-  "high" : 7230.2,
-  "low" : 7156.21,
-  "close" : 7179.62,
-  "volume" : 28.122785,
-  "quoteAssetVolume" : 202221.9219,
-  "numberOfTrades" : 753
-}, {
-  "symbol" : "BTCUSD",
-  "openTime" : 1577923200000,
-  "openDate" : null,
-  "closeTime" : 1577966399999,
-  "closeDate" : null,
-  "open" : 7172.85,
-  "high" : 7186.39,
-  "low" : 7081.27,
-  "close" : 7114.52,
-  "volume" : 24.348583,
-  "quoteAssetVolume" : 173432.3802,
-  "numberOfTrades" : 520
-}, {
-  "symbol" : "BTCUSD",
-  "openTime" : 1577966400000,
-  "openDate" : null,
-  "closeTime" : 1578009599999,
-  "closeDate" : null,
-  "open" : 7113.46,
-  "high" : 7140.74,
-  "low" : 6906.33,
-  "close" : 6946.64,
-  "volume" : 110.498136,
-  "quoteAssetVolume" : 775542.7878,
-  "numberOfTrades" : 1282
-}, {
-  "symbol" : "BTCUSD",
-  "openTime" : 1578009600000,
-  "openDate" : null,
-  "closeTime" : 1578052799999,
-  "closeDate" : null,
-  "open" : 6946.49,
-  "high" : 7354.99,
-  "low" : 6855.51,
-  "close" : 7324.89,
-  "volume" : 91.867847,
-  "quoteAssetVolume" : 655002.1908,
-  "numberOfTrades" : 1230
-}, {
-  "symbol" : "BTCUSD",
-  "openTime" : 1578052800000,
-  "openDate" : null,
-  "closeTime" : 1578095999999,
-  "closeDate" : null,
-  "open" : 7321.28,
-  "high" : 7400.0,
-  "low" : 7235.01,
-  "close" : 7322.74,
-  "volume" : 108.208636,
-  "quoteAssetVolume" : 792013.2679,
-  "numberOfTrades" : 1139
-}, {
-  "symbol" : "BTCUSD",
-  "openTime" : 1578096000000,
-  "openDate" : null,
-  "closeTime" : 1578139199999,
-  "closeDate" : null,
-  "open" : 7336.14,
-  "high" : 7364.5,
-  "low" : 7262.64,
-  "close" : 7324.38,
-  "volume" : 43.971037,
-  "quoteAssetVolume" : 322440.2262,
-  "numberOfTrades" : 439
-}, {
-  "symbol" : "BTCUSD",
-  "openTime" : 1578139200000,
-  "openDate" : null,
-  "closeTime" : 1578182399999,
-  "closeDate" : null,
-  "open" : 7327.48,
-  "high" : 7392.88,
-  "low" : 7268.64,
-  "close" : 7349.45,
-  "volume" : 53.344244,
-  "quoteAssetVolume" : 390443.1025,
-  "numberOfTrades" : 472
-}, {
-  "symbol" : "BTCUSD",
-  "openTime" : 1578182400000,
-  "openDate" : null,
-  "closeTime" : 1578225599999,
-  "closeDate" : null,
-  "open" : 7349.15,
-  "high" : 7488.93,
-  "low" : 7349.15,
-  "close" : 7426.26,
-  "volume" : 133.13474,
-  "quoteAssetVolume" : 991307.579,
-  "numberOfTrades" : 1442
-}, {
-  "symbol" : "BTCUSD",
-  "openTime" : 1578225600000,
-  "openDate" : null,
-  "closeTime" : 1578268799999,
-  "closeDate" : null,
-  "open" : 7423.36,
-  "high" : 7479.04,
-  "low" : 7321.77,
-  "close" : 7353.97,
-  "volume" : 53.924916,
-  "quoteAssetVolume" : 399050.8994,
-  "numberOfTrades" : 480
-}, {
-  "symbol" : "BTCUSD",
-  "openTime" : 1578268800000,
-  "openDate" : null,
-  "closeTime" : 1578311999999,
-  "closeDate" : null,
-  "open" : 7346.51,
-  "high" : 7581.24,
-  "low" : 7341.37,
-  "close" : 7540.05,
-  "volume" : 106.258764,
-  "quoteAssetVolume" : 797599.8488,
-  "numberOfTrades" : 870
-}, {
-  "symbol" : "BTCUSD",
-  "openTime" : 1578312000000,
-  "openDate" : null,
-  "closeTime" : 1578355199999,
-  "closeDate" : null,
-  "open" : 7539.1,
-  "high" : 7798.14,
-  "low" : 7451.04,
-  "close" : 7763.07,
-  "volume" : 143.659667,
-  "quoteAssetVolume" : 1094104.7899,
-  "numberOfTrades" : 1021
-}, {
-  "symbol" : "BTCUSD",
-  "openTime" : 1578355200000,
-  "openDate" : null,
-  "closeTime" : 1578398399999,
-  "closeDate" : null,
-  "open" : 7768.45,
-  "high" : 8002.64,
-  "low" : 7767.37,
-  "close" : 7900.0,
-  "volume" : 153.319146,
-  "quoteAssetVolume" : 1211525.8816,
-  "numberOfTrades" : 1741
-}, {
-  "symbol" : "BTCUSD",
-  "openTime" : 1578398400000,
-  "openDate" : null,
-  "closeTime" : 1578441599999,
-  "closeDate" : null,
-  "open" : 7890.38,
-  "high" : 8208.63,
-  "low" : 7742.74,
-  "close" : 8164.76,
-  "volume" : 326.44093,
-  "quoteAssetVolume" : 2619302.2182,
-  "numberOfTrades" : 3118
-}, {
-  "symbol" : "BTCUSD",
-  "openTime" : 1578441600000,
-  "openDate" : null,
-  "closeTime" : 1578484799999,
-  "closeDate" : null,
-  "open" : 8158.74,
-  "high" : 8468.56,
-  "low" : 8153.9,
-  "close" : 8338.52,
-  "volume" : 218.797394,
-  "quoteAssetVolume" : 1825482.825,
-  "numberOfTrades" : 2001
-}, {
-  "symbol" : "BTCUSD",
-  "openTime" : 1578484800000,
-  "openDate" : null,
-  "closeTime" : 1578527999999,
-  "closeDate" : null,
-  "open" : 8335.21,
-  "high" : 8414.11,
-  "low" : 7874.89,
-  "close" : 8026.27,
-  "volume" : 230.049113,
-  "quoteAssetVolume" : 1871165.9553,
-  "numberOfTrades" : 1925
-}, {
-  "symbol" : "BTCUSD",
-  "openTime" : 1578528000000,
-  "openDate" : null,
-  "closeTime" : 1578571199999,
-  "closeDate" : null,
-  "open" : 8045.34,
-  "high" : 8045.34,
-  "low" : 7850.55,
-  "close" : 7863.52,
-  "volume" : 61.732836,
-  "quoteAssetVolume" : 490490.4381,
-  "numberOfTrades" : 748
-}, {
-  "symbol" : "BTCUSD",
-  "openTime" : 1578571200000,
-  "openDate" : null,
-  "closeTime" : 1578614399999,
-  "closeDate" : null,
-  "open" : 7884.4,
-  "high" : 8000.0,
-  "low" : 7750.67,
-  "close" : 7819.03,
-  "volume" : 147.366613,
-  "quoteAssetVolume" : 1158867.0965,
-  "numberOfTrades" : 1462
-}, {
-  "symbol" : "BTCUSD",
-  "openTime" : 1578614400000,
-  "openDate" : null,
-  "closeTime" : 1578657599999,
-  "closeDate" : null,
-  "open" : 7818.64,
-  "high" : 7843.2,
-  "low" : 7676.76,
-  "close" : 7818.5,
-  "volume" : 91.022522,
-  "quoteAssetVolume" : 707127.9283,
-  "numberOfTrades" : 813
-}, {
-  "symbol" : "BTCUSD",
-  "openTime" : 1578657600000,
-  "openDate" : null,
-  "closeTime" : 1578700799999,
-  "closeDate" : null,
-  "open" : 7844.94,
-  "high" : 8194.36,
-  "low" : 7808.84,
-  "close" : 8186.8,
-  "volume" : 212.334368,
-  "quoteAssetVolume" : 1704969.6402,
-  "numberOfTrades" : 2312
-}, {
-  "symbol" : "BTCUSD",
-  "openTime" : 1578700800000,
-  "openDate" : null,
-  "closeTime" : 1578743999999,
-  "closeDate" : null,
-  "open" : 8200.0,
-  "high" : 8254.21,
-  "low" : 7999.9,
-  "close" : 8036.61,
-  "volume" : 148.516398,
-  "quoteAssetVolume" : 1208517.4479,
-  "numberOfTrades" : 1688
-}, {
-  "symbol" : "BTCUSD",
-  "openTime" : 1578744000000,
-  "openDate" : null,
-  "closeTime" : 1578787199999,
-  "closeDate" : null,
-  "open" : 8022.4,
-  "high" : 8300.47,
-  "low" : 8001.52,
-  "close" : 8021.12,
-  "volume" : 106.022417,
-  "quoteAssetVolume" : 861220.3201,
-  "numberOfTrades" : 1469
-}, {
-  "symbol" : "BTCUSD",
-  "openTime" : 1578787200000,
-  "openDate" : null,
-  "closeTime" : 1578830399999,
-  "closeDate" : null,
-  "open" : 8015.88,
-  "high" : 8159.3,
-  "low" : 7961.01,
-  "close" : 8107.85,
-  "volume" : 70.020657,
-  "quoteAssetVolume" : 565026.0038,
-  "numberOfTrades" : 1127
-}, {
-  "symbol" : "BTCUSD",
-  "openTime" : 1578830400000,
-  "openDate" : null,
-  "closeTime" : 1578873599999,
-  "closeDate" : null,
-  "open" : 8110.45,
-  "high" : 8186.72,
-  "low" : 8079.3,
-  "close" : 8186.34,
-  "volume" : 76.929615,
-  "quoteAssetVolume" : 625812.3207,
-  "numberOfTrades" : 1143
-}, {
-  "symbol" : "BTCUSD",
-  "openTime" : 1578873600000,
-  "openDate" : null,
-  "closeTime" : 1578916799999,
-  "closeDate" : null,
-  "open" : 8183.59,
-  "high" : 8188.95,
-  "low" : 8034.23,
-  "close" : 8078.43,
-  "volume" : 56.84269,
-  "quoteAssetVolume" : 460637.0423,
-  "numberOfTrades" : 943
-}, {
-  "symbol" : "BTCUSD",
-  "openTime" : 1578916800000,
-  "openDate" : null,
-  "closeTime" : 1578959999999,
-  "closeDate" : null,
-  "open" : 8063.47,
-  "high" : 8159.92,
-  "low" : 8045.4,
-  "close" : 8101.49,
-  "volume" : 59.245432,
-  "quoteAssetVolume" : 480467.5942,
-  "numberOfTrades" : 807
-}, {
-  "symbol" : "BTCUSD",
-  "openTime" : 1578960000000,
-  "openDate" : null,
-  "closeTime" : 1579003199999,
-  "closeDate" : null,
-  "open" : 8105.89,
-  "high" : 8579.99,
-  "low" : 8105.89,
-  "close" : 8517.84,
-  "volume" : 289.880988,
-  "quoteAssetVolume" : 2447234.1135,
-  "numberOfTrades" : 2786
-}, {
-  "symbol" : "BTCUSD",
-  "openTime" : 1579003200000,
-  "openDate" : null,
-  "closeTime" : 1579046399999,
-  "closeDate" : null,
-  "open" : 8516.49,
-  "high" : 8892.72,
-  "low" : 8472.28,
-  "close" : 8848.94,
-  "volume" : 393.162602,
-  "quoteAssetVolume" : 3421554.2961,
-  "numberOfTrades" : 5308
-}, {
-  "symbol" : "BTCUSD",
-  "openTime" : 1579046400000,
-  "openDate" : null,
-  "closeTime" : 1579089599999,
-  "closeDate" : null,
-  "open" : 8816.48,
-  "high" : 8900.0,
-  "low" : 8566.52,
-  "close" : 8714.64,
-  "volume" : 182.659059,
-  "quoteAssetVolume" : 1593765.5338,
-  "numberOfTrades" : 2712
-}, {
-  "symbol" : "BTCUSD",
-  "openTime" : 1579089600000,
-  "openDate" : null,
-  "closeTime" : 1579132799999,
-  "closeDate" : null,
-  "open" : 8720.16,
-  "high" : 8894.74,
-  "low" : 8670.49,
-  "close" : 8817.71,
-  "volume" : 158.627778,
-  "quoteAssetVolume" : 1393370.5286,
-  "numberOfTrades" : 2478
-}, {
-  "symbol" : "BTCUSD",
-  "openTime" : 1579132800000,
-  "openDate" : null,
-  "closeTime" : 1579175999999,
-  "closeDate" : null,
-  "open" : 8823.93,
-  "high" : 8848.34,
-  "low" : 8590.0,
-  "close" : 8712.58,
-  "volume" : 154.791454,
-  "quoteAssetVolume" : 1342333.9895,
-  "numberOfTrades" : 2251
-}, {
-  "symbol" : "BTCUSD",
-  "openTime" : 1579176000000,
-  "openDate" : null,
-  "closeTime" : 1579219199999,
-  "closeDate" : null,
-  "open" : 8709.11,
-  "high" : 8775.86,
-  "low" : 8614.6,
-  "close" : 8727.76,
-  "volume" : 76.760106,
-  "quoteAssetVolume" : 667452.3838,
-  "numberOfTrades" : 1268
-}, {
-  "symbol" : "BTCUSD",
-  "openTime" : 1579219200000,
-  "openDate" : null,
-  "closeTime" : 1579262399999,
-  "closeDate" : null,
-  "open" : 8722.38,
-  "high" : 9017.52,
-  "low" : 8664.0,
-  "close" : 8899.8,
-  "volume" : 242.867788,
-  "quoteAssetVolume" : 2158781.2266,
-  "numberOfTrades" : 3080
-}, {
-  "symbol" : "BTCUSD",
-  "openTime" : 1579262400000,
-  "openDate" : null,
-  "closeTime" : 1579305599999,
-  "closeDate" : null,
-  "open" : 8899.8,
-  "high" : 8950.0,
-  "low" : 8770.06,
-  "close" : 8910.14,
-  "volume" : 161.908978,
-  "quoteAssetVolume" : 1438006.4971,
-  "numberOfTrades" : 1990
-}, {
-  "symbol" : "BTCUSD",
-  "openTime" : 1579305600000,
-  "openDate" : null,
-  "closeTime" : 1579348799999,
-  "closeDate" : null,
-  "open" : 8884.45,
-  "high" : 8984.32,
-  "low" : 8814.07,
-  "close" : 8869.25,
-  "volume" : 95.683935,
-  "quoteAssetVolume" : 850042.5047,
-  "numberOfTrades" : 1539
-}, {
-  "symbol" : "BTCUSD",
-  "openTime" : 1579348800000,
-  "openDate" : null,
-  "closeTime" : 1579391999999,
-  "closeDate" : null,
-  "open" : 8876.79,
-  "high" : 8967.69,
-  "low" : 8852.58,
-  "close" : 8921.19,
-  "volume" : 160.698302,
-  "quoteAssetVolume" : 1432072.3713,
-  "numberOfTrades" : 3784
-}, {
-  "symbol" : "BTCUSD",
-  "openTime" : 1579392000000,
-  "openDate" : null,
-  "closeTime" : 1579435199999,
-  "closeDate" : null,
-  "open" : 8921.18,
-  "high" : 9190.92,
-  "low" : 8513.0,
-  "close" : 8669.46,
-  "volume" : 210.270589,
-  "quoteAssetVolume" : 1891192.5036,
-  "numberOfTrades" : 4237
-}, {
-  "symbol" : "BTCUSD",
-  "openTime" : 1579435200000,
-  "openDate" : null,
-  "closeTime" : 1579478399999,
-  "closeDate" : null,
-  "open" : 8673.13,
-  "high" : 8763.34,
-  "low" : 8430.54,
-  "close" : 8701.12,
-  "volume" : 121.999062,
-  "quoteAssetVolume" : 1054837.3172,
-  "numberOfTrades" : 2043
-}, {
-  "symbol" : "BTCUSD",
-  "openTime" : 1579478400000,
-  "openDate" : null,
-  "closeTime" : 1579521599999,
-  "closeDate" : null,
-  "open" : 8702.14,
-  "high" : 8725.0,
-  "low" : 8590.99,
-  "close" : 8610.0,
-  "volume" : 82.976631,
-  "quoteAssetVolume" : 719048.5779,
-  "numberOfTrades" : 827
-}, {
-  "symbol" : "BTCUSD",
-  "openTime" : 1579521600000,
-  "openDate" : null,
-  "closeTime" : 1579564799999,
-  "closeDate" : null,
-  "open" : 8598.32,
-  "high" : 8739.12,
-  "low" : 8515.27,
-  "close" : 8641.26,
-  "volume" : 110.432258,
-  "quoteAssetVolume" : 956759.3196,
-  "numberOfTrades" : 1186
-}, {
-  "symbol" : "BTCUSD",
-  "openTime" : 1579564800000,
-  "openDate" : null,
-  "closeTime" : 1579607999999,
-  "closeDate" : null,
-  "open" : 8638.12,
-  "high" : 8692.57,
-  "low" : 8605.5,
-  "close" : 8636.57,
-  "volume" : 70.603961,
-  "quoteAssetVolume" : 610433.8264,
-  "numberOfTrades" : 788
-}, {
-  "symbol" : "BTCUSD",
-  "openTime" : 1579608000000,
-  "openDate" : null,
-  "closeTime" : 1579651199999,
-  "closeDate" : null,
-  "open" : 8638.34,
-  "high" : 8767.89,
-  "low" : 8501.99,
-  "close" : 8737.46,
-  "volume" : 127.349362,
-  "quoteAssetVolume" : 1101011.9844,
-  "numberOfTrades" : 1409
-}, {
-  "symbol" : "BTCUSD",
-  "openTime" : 1579651200000,
-  "openDate" : null,
-  "closeTime" : 1579694399999,
-  "closeDate" : null,
-  "open" : 8727.29,
-  "high" : 8795.0,
-  "low" : 8606.94,
-  "close" : 8640.69,
-  "volume" : 37.479398,
-  "quoteAssetVolume" : 325707.6006,
-  "numberOfTrades" : 580
-}, {
-  "symbol" : "BTCUSD",
-  "openTime" : 1579694400000,
-  "openDate" : null,
-  "closeTime" : 1579737599999,
-  "closeDate" : null,
-  "open" : 8638.25,
-  "high" : 8676.65,
-  "low" : 8570.52,
-  "close" : 8650.05,
-  "volume" : 33.043796,
-  "quoteAssetVolume" : 285420.8513,
-  "numberOfTrades" : 676
-}, {
-  "symbol" : "BTCUSD",
-  "openTime" : 1579737600000,
-  "openDate" : null,
-  "closeTime" : 1579780799999,
-  "closeDate" : null,
-  "open" : 8660.0,
-  "high" : 8664.12,
-  "low" : 8380.64,
-  "close" : 8398.67,
-  "volume" : 86.948061,
-  "quoteAssetVolume" : 739607.8289,
-  "numberOfTrades" : 3225
-}, {
-  "symbol" : "BTCUSD",
-  "openTime" : 1579780800000,
-  "openDate" : null,
-  "closeTime" : 1579823999999,
-  "closeDate" : null,
-  "open" : 8398.67,
-  "high" : 8444.99,
-  "low" : 8281.04,
-  "close" : 8394.59,
-  "volume" : 129.795793,
-  "quoteAssetVolume" : 1084050.3651,
-  "numberOfTrades" : 1572
-}, {
-  "symbol" : "BTCUSD",
-  "openTime" : 1579824000000,
-  "openDate" : null,
-  "closeTime" : 1579867199999,
-  "closeDate" : null,
-  "open" : 8385.49,
-  "high" : 8395.38,
-  "low" : 8222.0,
-  "close" : 8385.37,
-  "volume" : 85.847688,
-  "quoteAssetVolume" : 712783.2006,
-  "numberOfTrades" : 3996
-}, {
-  "symbol" : "BTCUSD",
-  "openTime" : 1579867200000,
-  "openDate" : null,
-  "closeTime" : 1579910399999,
-  "closeDate" : null,
-  "open" : 8393.22,
-  "high" : 8513.66,
-  "low" : 8354.59,
-  "close" : 8431.66,
-  "volume" : 68.933494,
-  "quoteAssetVolume" : 582787.1922,
-  "numberOfTrades" : 3843
-}, {
-  "symbol" : "BTCUSD",
-  "openTime" : 1579910400000,
-  "openDate" : null,
-  "closeTime" : 1579953599999,
-  "closeDate" : null,
-  "open" : 8419.92,
-  "high" : 8430.2,
-  "low" : 8260.0,
-  "close" : 8295.99,
-  "volume" : 61.785151,
-  "quoteAssetVolume" : 513531.7981,
-  "numberOfTrades" : 5154
-}, {
-  "symbol" : "BTCUSD",
-  "openTime" : 1579953600000,
-  "openDate" : null,
-  "closeTime" : 1579996799999,
-  "closeDate" : null,
-  "open" : 8295.99,
-  "high" : 8400.0,
-  "low" : 8270.55,
-  "close" : 8320.43,
-  "volume" : 27.402059,
-  "quoteAssetVolume" : 228540.2756,
-  "numberOfTrades" : 4242
-}, {
-  "symbol" : "BTCUSD",
-  "openTime" : 1579996800000,
-  "openDate" : null,
-  "closeTime" : 1580039999999,
-  "closeDate" : null,
-  "open" : 8313.61,
-  "high" : 8467.86,
-  "low" : 8280.98,
-  "close" : 8459.28,
-  "volume" : 28.479285,
-  "quoteAssetVolume" : 238679.316,
-  "numberOfTrades" : 827
-}, {
-  "symbol" : "BTCUSD",
-  "openTime" : 1580040000000,
-  "openDate" : null,
-  "closeTime" : 1580083199999,
-  "closeDate" : null,
-  "open" : 8460.5,
-  "high" : 8604.14,
-  "low" : 8415.4,
-  "close" : 8593.66,
-  "volume" : 74.655782,
-  "quoteAssetVolume" : 636697.5428,
-  "numberOfTrades" : 2505
-}, {
-  "symbol" : "BTCUSD",
-  "openTime" : 1580083200000,
-  "openDate" : null,
-  "closeTime" : 1580126399999,
-  "closeDate" : null,
-  "open" : 8594.25,
-  "high" : 8707.33,
-  "low" : 8564.02,
-  "close" : 8707.33,
-  "volume" : 54.498072,
-  "quoteAssetVolume" : 470838.2566,
-  "numberOfTrades" : 2103
-}, {
-  "symbol" : "BTCUSD",
-  "openTime" : 1580126400000,
-  "openDate" : null,
-  "closeTime" : 1580169599999,
-  "closeDate" : null,
-  "open" : 8719.99,
-  "high" : 8977.53,
-  "low" : 8681.95,
-  "close" : 8890.08,
-  "volume" : 130.900731,
-  "quoteAssetVolume" : 1156919.3668,
-  "numberOfTrades" : 9800
-}, {
-  "symbol" : "BTCUSD",
-  "openTime" : 1580169600000,
-  "openDate" : null,
-  "closeTime" : 1580212799999,
-  "closeDate" : null,
-  "open" : 8895.98,
-  "high" : 9135.96,
-  "low" : 8895.98,
-  "close" : 9065.96,
-  "volume" : 113.320311,
-  "quoteAssetVolume" : 1024798.1066,
-  "numberOfTrades" : 3646
-}, {
-  "symbol" : "BTCUSD",
-  "openTime" : 1580212800000,
-  "openDate" : null,
-  "closeTime" : 1580255999999,
-  "closeDate" : null,
-  "open" : 9063.62,
-  "high" : 9407.42,
-  "low" : 8890.48,
-  "close" : 9381.1,
-  "volume" : 174.082659,
-  "quoteAssetVolume" : 1589450.177,
-  "numberOfTrades" : 4510
-}, {
-  "symbol" : "BTCUSD",
-  "openTime" : 1580256000000,
-  "openDate" : null,
-  "closeTime" : 1580299199999,
-  "closeDate" : null,
-  "open" : 9378.77,
-  "high" : 9419.0,
-  "low" : 9228.0,
-  "close" : 9288.26,
-  "volume" : 162.213509,
-  "quoteAssetVolume" : 1514055.0131,
-  "numberOfTrades" : 7019
-}, {
-  "symbol" : "BTCUSD",
-  "openTime" : 1580299200000,
-  "openDate" : null,
-  "closeTime" : 1580342399999,
-  "closeDate" : null,
-  "open" : 9285.71,
-  "high" : 9418.52,
-  "low" : 9240.0,
-  "close" : 9268.09,
-  "volume" : 109.607134,
-  "quoteAssetVolume" : 1022467.0077,
-  "numberOfTrades" : 9570
-}, {
-  "symbol" : "BTCUSD",
   "openTime" : 1580342400000,
   "openDate" : null,
   "closeTime" : 1580385599999,
@@ -1258,7 +10,8 @@
   "close" : 9317.38,
   "volume" : 75.414623,
   "quoteAssetVolume" : 699844.0308,
-  "numberOfTrades" : 8304
+  "numberOfTrades" : 8304,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1580385600000,
@@ -1271,7 +24,8 @@
   "close" : 9498.38,
   "volume" : 174.717254,
   "quoteAssetVolume" : 1648186.4332,
-  "numberOfTrades" : 6936
+  "numberOfTrades" : 6936,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1580428800000,
@@ -1284,7 +38,8 @@
   "close" : 9306.12,
   "volume" : 95.920463,
   "quoteAssetVolume" : 900269.5537,
-  "numberOfTrades" : 3164
+  "numberOfTrades" : 3164,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1580472000000,
@@ -1297,7 +52,8 @@
   "close" : 9333.48,
   "volume" : 111.485041,
   "quoteAssetVolume" : 1036016.2472,
-  "numberOfTrades" : 4594
+  "numberOfTrades" : 4594,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1580515200000,
@@ -1310,7 +66,8 @@
   "close" : 9328.85,
   "volume" : 51.374213,
   "quoteAssetVolume" : 483179.611,
-  "numberOfTrades" : 1636
+  "numberOfTrades" : 1636,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1580558400000,
@@ -1323,7 +80,8 @@
   "close" : 9382.02,
   "volume" : 50.174003,
   "quoteAssetVolume" : 469770.0712,
-  "numberOfTrades" : 2326
+  "numberOfTrades" : 2326,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1580601600000,
@@ -1336,7 +94,8 @@
   "close" : 9428.43,
   "volume" : 114.05592,
   "quoteAssetVolume" : 1059776.4261,
-  "numberOfTrades" : 2945
+  "numberOfTrades" : 2945,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1580644800000,
@@ -1349,7 +108,8 @@
   "close" : 9326.45,
   "volume" : 88.557598,
   "quoteAssetVolume" : 834287.4617,
-  "numberOfTrades" : 2965
+  "numberOfTrades" : 2965,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1580688000000,
@@ -1362,7 +122,8 @@
   "close" : 9327.22,
   "volume" : 163.825288,
   "quoteAssetVolume" : 1542358.2938,
-  "numberOfTrades" : 14657
+  "numberOfTrades" : 14657,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1580731200000,
@@ -1375,7 +136,8 @@
   "close" : 9284.63,
   "volume" : 114.290672,
   "quoteAssetVolume" : 1061555.8805,
-  "numberOfTrades" : 6117
+  "numberOfTrades" : 6117,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1580774400000,
@@ -1388,7 +150,8 @@
   "close" : 9176.55,
   "volume" : 163.168409,
   "quoteAssetVolume" : 1505492.2913,
-  "numberOfTrades" : 10257
+  "numberOfTrades" : 10257,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1580817600000,
@@ -1401,7 +164,8 @@
   "close" : 9167.22,
   "volume" : 113.781468,
   "quoteAssetVolume" : 1042754.5489,
-  "numberOfTrades" : 4634
+  "numberOfTrades" : 4634,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1580860800000,
@@ -1414,7 +178,8 @@
   "close" : 9396.85,
   "volume" : 113.755535,
   "quoteAssetVolume" : 1053602.3301,
-  "numberOfTrades" : 3470
+  "numberOfTrades" : 3470,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1580904000000,
@@ -1427,7 +192,8 @@
   "close" : 9618.16,
   "volume" : 292.004945,
   "quoteAssetVolume" : 2802722.2969,
-  "numberOfTrades" : 10694
+  "numberOfTrades" : 10694,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1580947200000,
@@ -1440,7 +206,8 @@
   "close" : 9683.73,
   "volume" : 83.822182,
   "quoteAssetVolume" : 804264.5709,
-  "numberOfTrades" : 5426
+  "numberOfTrades" : 5426,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1580990400000,
@@ -1453,7 +220,8 @@
   "close" : 9751.97,
   "volume" : 149.808785,
   "quoteAssetVolume" : 1461798.0974,
-  "numberOfTrades" : 5948
+  "numberOfTrades" : 5948,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1581033600000,
@@ -1466,7 +234,8 @@
   "close" : 9788.43,
   "volume" : 109.639628,
   "quoteAssetVolume" : 1072820.1262,
-  "numberOfTrades" : 5798
+  "numberOfTrades" : 5798,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1581076800000,
@@ -1479,7 +248,8 @@
   "close" : 9808.59,
   "volume" : 136.821643,
   "quoteAssetVolume" : 1336948.1767,
-  "numberOfTrades" : 10365
+  "numberOfTrades" : 10365,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1581120000000,
@@ -1492,7 +262,8 @@
   "close" : 9809.28,
   "volume" : 95.380161,
   "quoteAssetVolume" : 930473.0967,
-  "numberOfTrades" : 4556
+  "numberOfTrades" : 4556,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1581163200000,
@@ -1505,7 +276,8 @@
   "close" : 9902.64,
   "volume" : 193.679996,
   "quoteAssetVolume" : 1911807.539,
-  "numberOfTrades" : 13324
+  "numberOfTrades" : 13324,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1581206400000,
@@ -1518,7 +290,8 @@
   "close" : 10109.12,
   "volume" : 308.094982,
   "quoteAssetVolume" : 3092431.9993,
-  "numberOfTrades" : 18634
+  "numberOfTrades" : 18634,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1581249600000,
@@ -1531,7 +304,8 @@
   "close" : 10174.75,
   "volume" : 106.620504,
   "quoteAssetVolume" : 1076500.6829,
-  "numberOfTrades" : 3092
+  "numberOfTrades" : 3092,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1581292800000,
@@ -1544,7 +318,8 @@
   "close" : 9809.22,
   "volume" : 195.226623,
   "quoteAssetVolume" : 1951990.0091,
-  "numberOfTrades" : 5898
+  "numberOfTrades" : 5898,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1581336000000,
@@ -1557,7 +332,8 @@
   "close" : 9854.85,
   "volume" : 76.906433,
   "quoteAssetVolume" : 757986.7296,
-  "numberOfTrades" : 2597
+  "numberOfTrades" : 2597,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1581379200000,
@@ -1570,7 +346,8 @@
   "close" : 9810.35,
   "volume" : 96.062298,
   "quoteAssetVolume" : 938240.6489,
-  "numberOfTrades" : 3504
+  "numberOfTrades" : 3504,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1581422400000,
@@ -1583,7 +360,8 @@
   "close" : 10272.26,
   "volume" : 253.490011,
   "quoteAssetVolume" : 2582649.8392,
-  "numberOfTrades" : 6752
+  "numberOfTrades" : 6752,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1581465600000,
@@ -1596,7 +374,8 @@
   "close" : 10357.16,
   "volume" : 112.081792,
   "quoteAssetVolume" : 1159304.2941,
-  "numberOfTrades" : 4109
+  "numberOfTrades" : 4109,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1581508800000,
@@ -1609,7 +388,8 @@
   "close" : 10350.75,
   "volume" : 115.326079,
   "quoteAssetVolume" : 1195147.7162,
-  "numberOfTrades" : 6044
+  "numberOfTrades" : 6044,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1581552000000,
@@ -1622,7 +402,8 @@
   "close" : 10150.11,
   "volume" : 215.459714,
   "quoteAssetVolume" : 2221078.2424,
-  "numberOfTrades" : 5613
+  "numberOfTrades" : 5613,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1581595200000,
@@ -1635,7 +416,8 @@
   "close" : 10235.79,
   "volume" : 262.722143,
   "quoteAssetVolume" : 2692760.1543,
-  "numberOfTrades" : 6145
+  "numberOfTrades" : 6145,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1581638400000,
@@ -1648,7 +430,8 @@
   "close" : 10255.0,
   "volume" : 128.204275,
   "quoteAssetVolume" : 1310337.2653,
-  "numberOfTrades" : 3835
+  "numberOfTrades" : 3835,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1581681600000,
@@ -1661,7 +444,8 @@
   "close" : 10365.73,
   "volume" : 97.584903,
   "quoteAssetVolume" : 1006952.243,
-  "numberOfTrades" : 3569
+  "numberOfTrades" : 3569,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1581724800000,
@@ -1674,7 +458,8 @@
   "close" : 10234.25,
   "volume" : 68.363092,
   "quoteAssetVolume" : 703584.4403,
-  "numberOfTrades" : 3396
+  "numberOfTrades" : 3396,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1581768000000,
@@ -1687,7 +472,8 @@
   "close" : 9904.42,
   "volume" : 205.055192,
   "quoteAssetVolume" : 2042562.57,
-  "numberOfTrades" : 7233
+  "numberOfTrades" : 7233,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1581811200000,
@@ -1700,7 +486,8 @@
   "close" : 9921.39,
   "volume" : 64.991729,
   "quoteAssetVolume" : 648041.2869,
-  "numberOfTrades" : 4273
+  "numberOfTrades" : 4273,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1581854400000,
@@ -1713,7 +500,8 @@
   "close" : 9929.62,
   "volume" : 218.116382,
   "quoteAssetVolume" : 2144119.8879,
-  "numberOfTrades" : 8175
+  "numberOfTrades" : 8175,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1581897600000,
@@ -1726,7 +514,8 @@
   "close" : 9624.37,
   "volume" : 175.839264,
   "quoteAssetVolume" : 1717722.361,
-  "numberOfTrades" : 13559
+  "numberOfTrades" : 13559,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1581940800000,
@@ -1739,7 +528,8 @@
   "close" : 9702.49,
   "volume" : 149.365196,
   "quoteAssetVolume" : 1436578.0573,
-  "numberOfTrades" : 8110
+  "numberOfTrades" : 8110,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1581984000000,
@@ -1752,7 +542,8 @@
   "close" : 9715.29,
   "volume" : 91.55135,
   "quoteAssetVolume" : 891944.3497,
-  "numberOfTrades" : 4591
+  "numberOfTrades" : 4591,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1582027200000,
@@ -1765,7 +556,8 @@
   "close" : 10180.0,
   "volume" : 256.405546,
   "quoteAssetVolume" : 2557380.1312,
-  "numberOfTrades" : 13021
+  "numberOfTrades" : 13021,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1582070400000,
@@ -1778,7 +570,8 @@
   "close" : 10232.93,
   "volume" : 87.14804,
   "quoteAssetVolume" : 883728.5494,
-  "numberOfTrades" : 3358
+  "numberOfTrades" : 3358,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1582113600000,
@@ -1791,7 +584,8 @@
   "close" : 9599.72,
   "volume" : 430.899935,
   "quoteAssetVolume" : 4264175.3962,
-  "numberOfTrades" : 8005
+  "numberOfTrades" : 8005,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1582156800000,
@@ -1804,7 +598,8 @@
   "close" : 9577.86,
   "volume" : 145.361555,
   "quoteAssetVolume" : 1392784.8624,
-  "numberOfTrades" : 2979
+  "numberOfTrades" : 2979,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1582200000000,
@@ -1817,7 +612,8 @@
   "close" : 9607.08,
   "volume" : 148.939002,
   "quoteAssetVolume" : 1422188.269,
-  "numberOfTrades" : 3975
+  "numberOfTrades" : 3975,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1582243200000,
@@ -1830,7 +626,8 @@
   "close" : 9708.71,
   "volume" : 74.420417,
   "quoteAssetVolume" : 719362.4867,
-  "numberOfTrades" : 2240
+  "numberOfTrades" : 2240,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1582286400000,
@@ -1843,7 +640,8 @@
   "close" : 9697.35,
   "volume" : 117.632585,
   "quoteAssetVolume" : 1140785.801,
-  "numberOfTrades" : 2907
+  "numberOfTrades" : 2907,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1582329600000,
@@ -1856,7 +654,8 @@
   "close" : 9647.1,
   "volume" : 81.574033,
   "quoteAssetVolume" : 785814.1184,
-  "numberOfTrades" : 1016
+  "numberOfTrades" : 1016,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1582372800000,
@@ -1869,7 +668,8 @@
   "close" : 9671.67,
   "volume" : 62.449014,
   "quoteAssetVolume" : 604035.295,
-  "numberOfTrades" : 979
+  "numberOfTrades" : 979,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1582416000000,
@@ -1882,7 +682,8 @@
   "close" : 9858.59,
   "volume" : 155.602982,
   "quoteAssetVolume" : 1537012.0126,
-  "numberOfTrades" : 1623
+  "numberOfTrades" : 1623,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1582459200000,
@@ -1895,7 +696,8 @@
   "close" : 9975.71,
   "volume" : 75.052174,
   "quoteAssetVolume" : 744377.585,
-  "numberOfTrades" : 1449
+  "numberOfTrades" : 1449,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1582502400000,
@@ -1908,7 +710,8 @@
   "close" : 9823.69,
   "volume" : 190.260811,
   "quoteAssetVolume" : 1861246.8467,
-  "numberOfTrades" : 1881
+  "numberOfTrades" : 1881,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1582545600000,
@@ -1921,7 +724,8 @@
   "close" : 9660.2,
   "volume" : 190.944792,
   "quoteAssetVolume" : 1839646.7998,
-  "numberOfTrades" : 2774
+  "numberOfTrades" : 2774,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1582588800000,
@@ -1934,7 +738,8 @@
   "close" : 9643.11,
   "volume" : 74.144023,
   "quoteAssetVolume" : 709945.2112,
-  "numberOfTrades" : 1459
+  "numberOfTrades" : 1459,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1582632000000,
@@ -1947,7 +752,8 @@
   "close" : 9312.63,
   "volume" : 188.649957,
   "quoteAssetVolume" : 1773012.5964,
-  "numberOfTrades" : 2778
+  "numberOfTrades" : 2778,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1582675200000,
@@ -1960,7 +766,8 @@
   "close" : 9138.22,
   "volume" : 174.981851,
   "quoteAssetVolume" : 1606521.5576,
-  "numberOfTrades" : 2711
+  "numberOfTrades" : 2711,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1582718400000,
@@ -1973,7 +780,8 @@
   "close" : 8787.11,
   "volume" : 369.727192,
   "quoteAssetVolume" : 3281906.6794,
-  "numberOfTrades" : 6312
+  "numberOfTrades" : 6312,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1582761600000,
@@ -1986,7 +794,8 @@
   "close" : 8802.44,
   "volume" : 214.04682,
   "quoteAssetVolume" : 1861285.1541,
-  "numberOfTrades" : 3308
+  "numberOfTrades" : 3308,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1582804800000,
@@ -1999,7 +808,8 @@
   "close" : 8810.94,
   "volume" : 265.265581,
   "quoteAssetVolume" : 2347086.5048,
-  "numberOfTrades" : 4149
+  "numberOfTrades" : 4149,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1582848000000,
@@ -2012,7 +822,8 @@
   "close" : 8576.4,
   "volume" : 165.350162,
   "quoteAssetVolume" : 1445611.9314,
-  "numberOfTrades" : 2388
+  "numberOfTrades" : 2388,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1582891200000,
@@ -2025,7 +836,8 @@
   "close" : 8706.17,
   "volume" : 338.822445,
   "quoteAssetVolume" : 2921798.8147,
-  "numberOfTrades" : 4259
+  "numberOfTrades" : 4259,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1582934400000,
@@ -2038,7 +850,8 @@
   "close" : 8704.42,
   "volume" : 93.402696,
   "quoteAssetVolume" : 815949.9884,
-  "numberOfTrades" : 1760
+  "numberOfTrades" : 1760,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1582977600000,
@@ -2051,7 +864,8 @@
   "close" : 8523.29,
   "volume" : 107.159053,
   "quoteAssetVolume" : 924179.0214,
-  "numberOfTrades" : 2062
+  "numberOfTrades" : 2062,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1583020800000,
@@ -2064,7 +878,8 @@
   "close" : 8639.92,
   "volume" : 92.875257,
   "quoteAssetVolume" : 797130.3667,
-  "numberOfTrades" : 1324
+  "numberOfTrades" : 1324,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1583064000000,
@@ -2077,7 +892,8 @@
   "close" : 8531.9,
   "volume" : 163.347693,
   "quoteAssetVolume" : 1392794.8314,
-  "numberOfTrades" : 2088
+  "numberOfTrades" : 2088,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1583107200000,
@@ -2090,7 +906,8 @@
   "close" : 8747.3,
   "volume" : 75.676084,
   "quoteAssetVolume" : 651906.4015,
-  "numberOfTrades" : 1769
+  "numberOfTrades" : 1769,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1583150400000,
@@ -2103,7 +920,8 @@
   "close" : 8910.51,
   "volume" : 187.944969,
   "quoteAssetVolume" : 1665364.7032,
-  "numberOfTrades" : 4021
+  "numberOfTrades" : 4021,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1583193600000,
@@ -2116,7 +934,8 @@
   "close" : 8878.45,
   "volume" : 72.032011,
   "quoteAssetVolume" : 636300.0704,
-  "numberOfTrades" : 1836
+  "numberOfTrades" : 1836,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1583236800000,
@@ -2129,7 +948,8 @@
   "close" : 8758.89,
   "volume" : 183.36991,
   "quoteAssetVolume" : 1605097.4043,
-  "numberOfTrades" : 3216
+  "numberOfTrades" : 3216,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1583280000000,
@@ -2142,7 +962,8 @@
   "close" : 8723.89,
   "volume" : 105.344711,
   "quoteAssetVolume" : 926837.9628,
-  "numberOfTrades" : 2903
+  "numberOfTrades" : 2903,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1583323200000,
@@ -2155,7 +976,8 @@
   "close" : 8755.39,
   "volume" : 100.868069,
   "quoteAssetVolume" : 880592.8847,
-  "numberOfTrades" : 3055
+  "numberOfTrades" : 3055,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1583366400000,
@@ -2168,7 +990,8 @@
   "close" : 9102.4,
   "volume" : 152.648867,
   "quoteAssetVolume" : 1364232.4856,
-  "numberOfTrades" : 3092
+  "numberOfTrades" : 3092,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1583409600000,
@@ -2181,7 +1004,8 @@
   "close" : 9075.85,
   "volume" : 158.231831,
   "quoteAssetVolume" : 1438883.5274,
-  "numberOfTrades" : 3592
+  "numberOfTrades" : 3592,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1583452800000,
@@ -2194,7 +1018,8 @@
   "close" : 9143.54,
   "volume" : 85.129909,
   "quoteAssetVolume" : 774428.2556,
-  "numberOfTrades" : 1800
+  "numberOfTrades" : 1800,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1583496000000,
@@ -2207,7 +1032,8 @@
   "close" : 9165.68,
   "volume" : 117.321572,
   "quoteAssetVolume" : 1068099.0189,
-  "numberOfTrades" : 2028
+  "numberOfTrades" : 2028,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1583539200000,
@@ -2220,7 +1046,8 @@
   "close" : 9115.51,
   "volume" : 73.841071,
   "quoteAssetVolume" : 673416.8374,
-  "numberOfTrades" : 1303
+  "numberOfTrades" : 1303,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1583582400000,
@@ -2233,7 +1060,8 @@
   "close" : 8895.31,
   "volume" : 165.301024,
   "quoteAssetVolume" : 1487417.8882,
-  "numberOfTrades" : 2442
+  "numberOfTrades" : 2442,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1583625600000,
@@ -2246,7 +1074,8 @@
   "close" : 8761.41,
   "volume" : 77.401293,
   "quoteAssetVolume" : 678533.186,
-  "numberOfTrades" : 1672
+  "numberOfTrades" : 1672,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1583668800000,
@@ -2259,7 +1088,8 @@
   "close" : 8034.91,
   "volume" : 339.510027,
   "quoteAssetVolume" : 2829259.6473,
-  "numberOfTrades" : 5415
+  "numberOfTrades" : 5415,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1583712000000,
@@ -2272,7 +1102,8 @@
   "close" : 7800.85,
   "volume" : 270.044922,
   "quoteAssetVolume" : 2141784.2654,
-  "numberOfTrades" : 3032
+  "numberOfTrades" : 3032,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1583755200000,
@@ -2285,7 +1116,8 @@
   "close" : 7930.0,
   "volume" : 293.617502,
   "quoteAssetVolume" : 2289300.3901,
-  "numberOfTrades" : 3369
+  "numberOfTrades" : 3369,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1583798400000,
@@ -2298,7 +1130,8 @@
   "close" : 8069.2,
   "volume" : 95.545604,
   "quoteAssetVolume" : 759128.9545,
-  "numberOfTrades" : 1447
+  "numberOfTrades" : 1447,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1583841600000,
@@ -2311,7 +1144,8 @@
   "close" : 7883.3,
   "volume" : 316.421021,
   "quoteAssetVolume" : 2510022.4291,
-  "numberOfTrades" : 3218
+  "numberOfTrades" : 3218,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1583884800000,
@@ -2324,7 +1158,8 @@
   "close" : 7834.8,
   "volume" : 97.866265,
   "quoteAssetVolume" : 770131.8488,
-  "numberOfTrades" : 1352
+  "numberOfTrades" : 1352,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1583928000000,
@@ -2337,7 +1172,8 @@
   "close" : 7938.42,
   "volume" : 264.869574,
   "quoteAssetVolume" : 2059047.7209,
-  "numberOfTrades" : 2567
+  "numberOfTrades" : 2567,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1583971200000,
@@ -2350,7 +1186,8 @@
   "close" : 6065.09,
   "volume" : 1147.767151,
   "quoteAssetVolume" : 7767728.4509,
-  "numberOfTrades" : 12036
+  "numberOfTrades" : 12036,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1584014400000,
@@ -2363,7 +1200,8 @@
   "close" : 4891.93,
   "volume" : 1826.344815,
   "quoteAssetVolume" : 1.04521335959E7,
-  "numberOfTrades" : 18255
+  "numberOfTrades" : 18255,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1584057600000,
@@ -2376,7 +1214,8 @@
   "close" : 5421.62,
   "volume" : 1336.806399,
   "quoteAssetVolume" : 6311490.1044,
-  "numberOfTrades" : 19271
+  "numberOfTrades" : 19271,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1584100800000,
@@ -2389,7 +1228,8 @@
   "close" : 5610.81,
   "volume" : 633.547273,
   "quoteAssetVolume" : 3440523.3149,
-  "numberOfTrades" : 6271
+  "numberOfTrades" : 6271,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1584144000000,
@@ -2402,7 +1242,8 @@
   "close" : 5499.85,
   "volume" : 248.889426,
   "quoteAssetVolume" : 1358540.8893,
-  "numberOfTrades" : 2093
+  "numberOfTrades" : 2093,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1584187200000,
@@ -2415,7 +1256,8 @@
   "close" : 5170.6,
   "volume" : 199.930124,
   "quoteAssetVolume" : 1063435.8447,
-  "numberOfTrades" : 1721
+  "numberOfTrades" : 1721,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1584230400000,
@@ -2428,7 +1270,8 @@
   "close" : 5433.93,
   "volume" : 140.696408,
   "quoteAssetVolume" : 744477.2872,
-  "numberOfTrades" : 1149
+  "numberOfTrades" : 1149,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1584273600000,
@@ -2441,7 +1284,8 @@
   "close" : 5361.54,
   "volume" : 573.65722,
   "quoteAssetVolume" : 3153105.821,
-  "numberOfTrades" : 2820
+  "numberOfTrades" : 2820,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1584316800000,
@@ -2454,7 +1298,8 @@
   "close" : 4581.49,
   "volume" : 522.043713,
   "quoteAssetVolume" : 2561099.6601,
-  "numberOfTrades" : 2651
+  "numberOfTrades" : 2651,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1584360000000,
@@ -2467,7 +1312,8 @@
   "close" : 5020.0,
   "volume" : 560.22544,
   "quoteAssetVolume" : 2757596.4761,
-  "numberOfTrades" : 3125
+  "numberOfTrades" : 3125,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1584403200000,
@@ -2480,7 +1326,8 @@
   "close" : 5295.38,
   "volume" : 334.02683,
   "quoteAssetVolume" : 1754506.2843,
-  "numberOfTrades" : 2101
+  "numberOfTrades" : 2101,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1584446400000,
@@ -2493,7 +1340,8 @@
   "close" : 5353.0,
   "volume" : 333.04173,
   "quoteAssetVolume" : 1788383.5704,
-  "numberOfTrades" : 2159
+  "numberOfTrades" : 2159,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1584489600000,
@@ -2506,7 +1354,8 @@
   "close" : 5162.65,
   "volume" : 246.011045,
   "quoteAssetVolume" : 1291332.3299,
-  "numberOfTrades" : 1578
+  "numberOfTrades" : 1578,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1584532800000,
@@ -2519,7 +1368,8 @@
   "close" : 5410.88,
   "volume" : 678.794939,
   "quoteAssetVolume" : 3593068.4731,
-  "numberOfTrades" : 4017
+  "numberOfTrades" : 4017,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1584576000000,
@@ -2532,7 +1382,8 @@
   "close" : 5642.23,
   "volume" : 373.238077,
   "quoteAssetVolume" : 2030547.0761,
-  "numberOfTrades" : 2833
+  "numberOfTrades" : 2833,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1584619200000,
@@ -2545,7 +1396,8 @@
   "close" : 6189.4,
   "volume" : 1015.58146,
   "quoteAssetVolume" : 6210879.6491,
-  "numberOfTrades" : 7094
+  "numberOfTrades" : 7094,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1584662400000,
@@ -2558,7 +1410,8 @@
   "close" : 6683.34,
   "volume" : 589.380423,
   "quoteAssetVolume" : 3824413.9325,
-  "numberOfTrades" : 4291
+  "numberOfTrades" : 4291,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1584705600000,
@@ -2571,7 +1424,8 @@
   "close" : 6206.43,
   "volume" : 890.62638,
   "quoteAssetVolume" : 5591033.6,
-  "numberOfTrades" : 7580
+  "numberOfTrades" : 7580,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1584748800000,
@@ -2584,7 +1438,8 @@
   "close" : 6107.09,
   "volume" : 290.26434,
   "quoteAssetVolume" : 1787732.9872,
-  "numberOfTrades" : 2654
+  "numberOfTrades" : 2654,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1584792000000,
@@ -2597,7 +1452,8 @@
   "close" : 6192.74,
   "volume" : 390.89497,
   "quoteAssetVolume" : 2433417.2363,
-  "numberOfTrades" : 3149
+  "numberOfTrades" : 3149,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1584835200000,
@@ -2610,7 +1466,8 @@
   "close" : 6164.89,
   "volume" : 246.985306,
   "quoteAssetVolume" : 1550439.1902,
-  "numberOfTrades" : 2028
+  "numberOfTrades" : 2028,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1584878400000,
@@ -2623,7 +1480,8 @@
   "close" : 5823.99,
   "volume" : 525.201155,
   "quoteAssetVolume" : 3134624.9419,
-  "numberOfTrades" : 4160
+  "numberOfTrades" : 4160,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1584921600000,
@@ -2636,7 +1494,8 @@
   "close" : 5842.42,
   "volume" : 219.141637,
   "quoteAssetVolume" : 1284914.5372,
-  "numberOfTrades" : 2173
+  "numberOfTrades" : 2173,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1584964800000,
@@ -2649,7 +1508,8 @@
   "close" : 6502.01,
   "volume" : 785.338798,
   "quoteAssetVolume" : 4984650.0741,
-  "numberOfTrades" : 5799
+  "numberOfTrades" : 5799,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1585008000000,
@@ -2662,7 +1522,8 @@
   "close" : 6765.6,
   "volume" : 520.949157,
   "quoteAssetVolume" : 3448470.7842,
-  "numberOfTrades" : 4741
+  "numberOfTrades" : 4741,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1585051200000,
@@ -2675,7 +1536,8 @@
   "close" : 6768.84,
   "volume" : 491.471461,
   "quoteAssetVolume" : 3284777.0071,
-  "numberOfTrades" : 5136
+  "numberOfTrades" : 5136,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1585094400000,
@@ -2688,7 +1550,8 @@
   "close" : 6533.69,
   "volume" : 494.631981,
   "quoteAssetVolume" : 3311416.751,
-  "numberOfTrades" : 5128
+  "numberOfTrades" : 5128,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1585137600000,
@@ -2701,7 +1564,8 @@
   "close" : 6701.1,
   "volume" : 412.44386,
   "quoteAssetVolume" : 2742716.2457,
-  "numberOfTrades" : 4500
+  "numberOfTrades" : 4500,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1585180800000,
@@ -2714,7 +1578,8 @@
   "close" : 6627.52,
   "volume" : 287.061876,
   "quoteAssetVolume" : 1918299.9002,
-  "numberOfTrades" : 2812
+  "numberOfTrades" : 2812,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1585224000000,
@@ -2727,7 +1592,8 @@
   "close" : 6760.85,
   "volume" : 413.78464,
   "quoteAssetVolume" : 2766980.4372,
-  "numberOfTrades" : 4692
+  "numberOfTrades" : 4692,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1585267200000,
@@ -2740,7 +1606,8 @@
   "close" : 6635.0,
   "volume" : 314.749148,
   "quoteAssetVolume" : 2123910.058,
-  "numberOfTrades" : 3060
+  "numberOfTrades" : 3060,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1585310400000,
@@ -2753,7 +1620,8 @@
   "close" : 6370.28,
   "volume" : 422.407125,
   "quoteAssetVolume" : 2768150.4945,
-  "numberOfTrades" : 3944
+  "numberOfTrades" : 3944,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1585353600000,
@@ -2766,7 +1634,8 @@
   "close" : 6242.78,
   "volume" : 341.0058,
   "quoteAssetVolume" : 2122905.6294,
-  "numberOfTrades" : 4384
+  "numberOfTrades" : 4384,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1585396800000,
@@ -2779,7 +1648,8 @@
   "close" : 6250.2,
   "volume" : 324.572433,
   "quoteAssetVolume" : 2009232.6683,
-  "numberOfTrades" : 3017
+  "numberOfTrades" : 3017,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1585440000000,
@@ -2792,7 +1662,8 @@
   "close" : 6145.2,
   "volume" : 143.383079,
   "quoteAssetVolume" : 885185.3422,
-  "numberOfTrades" : 1532
+  "numberOfTrades" : 1532,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1585483200000,
@@ -2805,7 +1676,8 @@
   "close" : 5875.0,
   "volume" : 485.293695,
   "quoteAssetVolume" : 2906839.3716,
-  "numberOfTrades" : 3492
+  "numberOfTrades" : 3492,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1585526400000,
@@ -2818,7 +1690,8 @@
   "close" : 6381.95,
   "volume" : 418.402169,
   "quoteAssetVolume" : 2569296.5385,
-  "numberOfTrades" : 3320
+  "numberOfTrades" : 3320,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1585569600000,
@@ -2831,7 +1704,8 @@
   "close" : 6404.48,
   "volume" : 511.175147,
   "quoteAssetVolume" : 3292878.2254,
-  "numberOfTrades" : 4190
+  "numberOfTrades" : 4190,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1585612800000,
@@ -2844,7 +1718,8 @@
   "close" : 6406.16,
   "volume" : 193.357408,
   "quoteAssetVolume" : 1247336.6941,
-  "numberOfTrades" : 1720
+  "numberOfTrades" : 1720,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1585656000000,
@@ -2857,7 +1732,8 @@
   "close" : 6424.06,
   "volume" : 266.744505,
   "quoteAssetVolume" : 1722864.0049,
-  "numberOfTrades" : 2360
+  "numberOfTrades" : 2360,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1585699200000,
@@ -2870,7 +1746,8 @@
   "close" : 6292.93,
   "volume" : 212.698483,
   "quoteAssetVolume" : 1344482.9884,
-  "numberOfTrades" : 2486
+  "numberOfTrades" : 2486,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1585742400000,
@@ -2883,7 +1760,8 @@
   "close" : 6665.11,
   "volume" : 628.240761,
   "quoteAssetVolume" : 4039628.5975,
-  "numberOfTrades" : 5073
+  "numberOfTrades" : 5073,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1585785600000,
@@ -2896,7 +1774,8 @@
   "close" : 6705.11,
   "volume" : 293.106992,
   "quoteAssetVolume" : 1948356.9419,
-  "numberOfTrades" : 3297
+  "numberOfTrades" : 3297,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1585828800000,
@@ -2909,7 +1788,8 @@
   "close" : 6803.77,
   "volume" : 830.019664,
   "quoteAssetVolume" : 5694395.3959,
-  "numberOfTrades" : 9404
+  "numberOfTrades" : 9404,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1585872000000,
@@ -2922,7 +1802,8 @@
   "close" : 7012.16,
   "volume" : 257.855103,
   "quoteAssetVolume" : 1776609.0462,
-  "numberOfTrades" : 3630
+  "numberOfTrades" : 3630,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1585915200000,
@@ -2935,7 +1816,8 @@
   "close" : 6739.29,
   "volume" : 390.12856,
   "quoteAssetVolume" : 2646482.1345,
-  "numberOfTrades" : 5398
+  "numberOfTrades" : 5398,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1585958400000,
@@ -2948,7 +1830,8 @@
   "close" : 6709.12,
   "volume" : 309.937898,
   "quoteAssetVolume" : 2099017.1215,
-  "numberOfTrades" : 4144
+  "numberOfTrades" : 4144,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1586001600000,
@@ -2961,7 +1844,8 @@
   "close" : 6877.52,
   "volume" : 287.605389,
   "quoteAssetVolume" : 1962985.7418,
-  "numberOfTrades" : 4318
+  "numberOfTrades" : 4318,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1586044800000,
@@ -2974,7 +1858,8 @@
   "close" : 6786.98,
   "volume" : 160.549919,
   "quoteAssetVolume" : 1095009.9638,
-  "numberOfTrades" : 2043
+  "numberOfTrades" : 2043,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1586088000000,
@@ -2987,7 +1872,8 @@
   "close" : 6779.13,
   "volume" : 236.902122,
   "quoteAssetVolume" : 1607537.4852,
-  "numberOfTrades" : 2719
+  "numberOfTrades" : 2719,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1586131200000,
@@ -3000,7 +1886,8 @@
   "close" : 7112.91,
   "volume" : 427.04187,
   "quoteAssetVolume" : 2986416.5561,
-  "numberOfTrades" : 4558
+  "numberOfTrades" : 4558,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1586174400000,
@@ -3013,7 +1900,8 @@
   "close" : 7349.62,
   "volume" : 591.818425,
   "quoteAssetVolume" : 4267055.3657,
-  "numberOfTrades" : 4942
+  "numberOfTrades" : 4942,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1586217600000,
@@ -3026,7 +1914,8 @@
   "close" : 7394.94,
   "volume" : 378.232202,
   "quoteAssetVolume" : 2783690.561,
-  "numberOfTrades" : 4213
+  "numberOfTrades" : 4213,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1586260800000,
@@ -3039,7 +1928,8 @@
   "close" : 7200.6,
   "volume" : 618.332356,
   "quoteAssetVolume" : 4477647.3039,
-  "numberOfTrades" : 5113
+  "numberOfTrades" : 5113,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1586304000000,
@@ -3052,7 +1942,8 @@
   "close" : 7306.66,
   "volume" : 207.265072,
   "quoteAssetVolume" : 1512914.1189,
-  "numberOfTrades" : 2982
+  "numberOfTrades" : 2982,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1586347200000,
@@ -3065,7 +1956,8 @@
   "close" : 7369.59,
   "volume" : 309.333803,
   "quoteAssetVolume" : 2265567.5032,
-  "numberOfTrades" : 3190
+  "numberOfTrades" : 3190,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1586390400000,
@@ -3078,7 +1970,8 @@
   "close" : 7201.54,
   "volume" : 216.177409,
   "quoteAssetVolume" : 1574603.7965,
-  "numberOfTrades" : 2306
+  "numberOfTrades" : 2306,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1586433600000,
@@ -3091,7 +1984,8 @@
   "close" : 7294.87,
   "volume" : 273.295154,
   "quoteAssetVolume" : 1988484.7306,
-  "numberOfTrades" : 3704
+  "numberOfTrades" : 3704,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1586476800000,
@@ -3104,7 +1998,8 @@
   "close" : 6917.89,
   "volume" : 370.935226,
   "quoteAssetVolume" : 2615644.6075,
-  "numberOfTrades" : 5794
+  "numberOfTrades" : 5794,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1586520000000,
@@ -3117,7 +2012,8 @@
   "close" : 6870.47,
   "volume" : 443.696545,
   "quoteAssetVolume" : 3048713.342,
-  "numberOfTrades" : 5542
+  "numberOfTrades" : 5542,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1586563200000,
@@ -3130,7 +2026,8 @@
   "close" : 6891.42,
   "volume" : 98.094207,
   "quoteAssetVolume" : 678051.5003,
-  "numberOfTrades" : 1735
+  "numberOfTrades" : 1735,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1586606400000,
@@ -3143,7 +2040,8 @@
   "close" : 6892.6,
   "volume" : 161.800005,
   "quoteAssetVolume" : 1104465.0211,
-  "numberOfTrades" : 2702
+  "numberOfTrades" : 2702,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1586649600000,
@@ -3156,7 +2054,8 @@
   "close" : 6869.84,
   "volume" : 74.027259,
   "quoteAssetVolume" : 506925.0552,
-  "numberOfTrades" : 1400
+  "numberOfTrades" : 1400,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1586692800000,
@@ -3169,7 +2068,8 @@
   "close" : 6900.05,
   "volume" : 350.785879,
   "quoteAssetVolume" : 2474324.8197,
-  "numberOfTrades" : 4937
+  "numberOfTrades" : 4937,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1586736000000,
@@ -3182,7 +2082,8 @@
   "close" : 6792.77,
   "volume" : 330.629387,
   "quoteAssetVolume" : 2224197.1861,
-  "numberOfTrades" : 4833
+  "numberOfTrades" : 4833,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1586779200000,
@@ -3195,7 +2096,8 @@
   "close" : 6859.91,
   "volume" : 293.824012,
   "quoteAssetVolume" : 1992524.0262,
-  "numberOfTrades" : 5052
+  "numberOfTrades" : 5052,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1586822400000,
@@ -3208,7 +2110,8 @@
   "close" : 6847.06,
   "volume" : 127.689669,
   "quoteAssetVolume" : 875922.2381,
-  "numberOfTrades" : 2653
+  "numberOfTrades" : 2653,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1586865600000,
@@ -3221,7 +2124,8 @@
   "close" : 6871.49,
   "volume" : 248.554113,
   "quoteAssetVolume" : 1717737.3113,
-  "numberOfTrades" : 3406
+  "numberOfTrades" : 3406,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1586908800000,
@@ -3234,7 +2138,8 @@
   "close" : 6782.12,
   "volume" : 106.056912,
   "quoteAssetVolume" : 727353.1727,
-  "numberOfTrades" : 2046
+  "numberOfTrades" : 2046,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1586952000000,
@@ -3247,7 +2152,8 @@
   "close" : 6627.63,
   "volume" : 259.480119,
   "quoteAssetVolume" : 1743550.5365,
-  "numberOfTrades" : 5401
+  "numberOfTrades" : 5401,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1586995200000,
@@ -3260,7 +2166,8 @@
   "close" : 7035.68,
   "volume" : 427.913712,
   "quoteAssetVolume" : 2911156.7162,
-  "numberOfTrades" : 7884
+  "numberOfTrades" : 7884,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1587038400000,
@@ -3273,7 +2180,8 @@
   "close" : 7112.0,
   "volume" : 551.202639,
   "quoteAssetVolume" : 3891703.3011,
-  "numberOfTrades" : 7426
+  "numberOfTrades" : 7426,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1587081600000,
@@ -3286,7 +2194,8 @@
   "close" : 7083.67,
   "volume" : 158.847508,
   "quoteAssetVolume" : 1125710.779,
-  "numberOfTrades" : 2981
+  "numberOfTrades" : 2981,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1587124800000,
@@ -3299,7 +2208,8 @@
   "close" : 7036.77,
   "volume" : 181.789409,
   "quoteAssetVolume" : 1284308.1047,
-  "numberOfTrades" : 3720
+  "numberOfTrades" : 3720,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1587168000000,
@@ -3312,7 +2222,8 @@
   "close" : 7115.0,
   "volume" : 74.982069,
   "quoteAssetVolume" : 531800.0958,
-  "numberOfTrades" : 1674
+  "numberOfTrades" : 1674,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1587211200000,
@@ -3325,7 +2236,8 @@
   "close" : 7260.0,
   "volume" : 237.769308,
   "quoteAssetVolume" : 1718553.7968,
-  "numberOfTrades" : 4276
+  "numberOfTrades" : 4276,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1587254400000,
@@ -3338,7 +2250,8 @@
   "close" : 7172.77,
   "volume" : 104.414649,
   "quoteAssetVolume" : 750920.5308,
-  "numberOfTrades" : 2073
+  "numberOfTrades" : 2073,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1587297600000,
@@ -3351,7 +2264,8 @@
   "close" : 7130.72,
   "volume" : 136.049165,
   "quoteAssetVolume" : 971868.8371,
-  "numberOfTrades" : 3051
+  "numberOfTrades" : 3051,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1587340800000,
@@ -3364,7 +2278,8 @@
   "close" : 6976.39,
   "volume" : 167.797998,
   "quoteAssetVolume" : 1192532.8498,
-  "numberOfTrades" : 3004
+  "numberOfTrades" : 3004,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1587384000000,
@@ -3377,7 +2292,8 @@
   "close" : 6844.17,
   "volume" : 420.142491,
   "quoteAssetVolume" : 2908797.5889,
-  "numberOfTrades" : 7799
+  "numberOfTrades" : 7799,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1587427200000,
@@ -3390,7 +2306,8 @@
   "close" : 6800.0,
   "volume" : 176.821127,
   "quoteAssetVolume" : 1212311.5866,
-  "numberOfTrades" : 2972
+  "numberOfTrades" : 2972,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1587470400000,
@@ -3403,7 +2320,8 @@
   "close" : 6852.07,
   "volume" : 409.536724,
   "quoteAssetVolume" : 2813673.4998,
-  "numberOfTrades" : 6017
+  "numberOfTrades" : 6017,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1587513600000,
@@ -3416,7 +2334,8 @@
   "close" : 6963.76,
   "volume" : 138.861392,
   "quoteAssetVolume" : 962413.4972,
-  "numberOfTrades" : 1917
+  "numberOfTrades" : 1917,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1587556800000,
@@ -3429,7 +2348,8 @@
   "close" : 7139.37,
   "volume" : 285.858457,
   "quoteAssetVolume" : 2027118.9212,
-  "numberOfTrades" : 3751
+  "numberOfTrades" : 3751,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1587600000000,
@@ -3442,7 +2362,8 @@
   "close" : 7133.49,
   "volume" : 136.060924,
   "quoteAssetVolume" : 968149.6831,
-  "numberOfTrades" : 2534
+  "numberOfTrades" : 2534,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1587643200000,
@@ -3455,7 +2376,8 @@
   "close" : 7485.17,
   "volume" : 635.993998,
   "quoteAssetVolume" : 4754445.8594,
-  "numberOfTrades" : 7489
+  "numberOfTrades" : 7489,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1587686400000,
@@ -3468,7 +2390,8 @@
   "close" : 7496.24,
   "volume" : 233.653012,
   "quoteAssetVolume" : 1764087.0761,
-  "numberOfTrades" : 3328
+  "numberOfTrades" : 3328,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1587729600000,
@@ -3481,7 +2404,8 @@
   "close" : 7510.29,
   "volume" : 255.635714,
   "quoteAssetVolume" : 1917431.0814,
-  "numberOfTrades" : 3602
+  "numberOfTrades" : 3602,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1587772800000,
@@ -3494,7 +2418,8 @@
   "close" : 7537.41,
   "volume" : 173.739358,
   "quoteAssetVolume" : 1307512.0063,
-  "numberOfTrades" : 2783
+  "numberOfTrades" : 2783,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1587816000000,
@@ -3507,7 +2432,8 @@
   "close" : 7546.38,
   "volume" : 260.18954,
   "quoteAssetVolume" : 1972134.7496,
-  "numberOfTrades" : 3736
+  "numberOfTrades" : 3736,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1587859200000,
@@ -3520,7 +2446,8 @@
   "close" : 7667.25,
   "volume" : 107.22405,
   "quoteAssetVolume" : 812897.1778,
-  "numberOfTrades" : 2353
+  "numberOfTrades" : 2353,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1587902400000,
@@ -3533,7 +2460,8 @@
   "close" : 7702.31,
   "volume" : 283.061927,
   "quoteAssetVolume" : 2155126.1815,
-  "numberOfTrades" : 4381
+  "numberOfTrades" : 4381,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1587945600000,
@@ -3546,7 +2474,8 @@
   "close" : 7720.94,
   "volume" : 249.696889,
   "quoteAssetVolume" : 1927386.3245,
-  "numberOfTrades" : 4152
+  "numberOfTrades" : 4152,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1587988800000,
@@ -3559,7 +2488,8 @@
   "close" : 7790.32,
   "volume" : 161.480136,
   "quoteAssetVolume" : 1244691.6888,
-  "numberOfTrades" : 3145
+  "numberOfTrades" : 3145,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1588032000000,
@@ -3572,7 +2502,8 @@
   "close" : 7716.29,
   "volume" : 53.008981,
   "quoteAssetVolume" : 409149.8356,
-  "numberOfTrades" : 995
+  "numberOfTrades" : 995,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1588075200000,
@@ -3585,7 +2516,8 @@
   "close" : 7760.0,
   "volume" : 156.76305,
   "quoteAssetVolume" : 1213385.748,
-  "numberOfTrades" : 3044
+  "numberOfTrades" : 3044,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1588118400000,
@@ -3598,7 +2530,8 @@
   "close" : 8143.27,
   "volume" : 334.894489,
   "quoteAssetVolume" : 2653855.5573,
-  "numberOfTrades" : 5454
+  "numberOfTrades" : 5454,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1588161600000,
@@ -3611,7 +2544,8 @@
   "close" : 8788.63,
   "volume" : 1219.122749,
   "quoteAssetVolume" : 1.05198333008E7,
-  "numberOfTrades" : 16940
+  "numberOfTrades" : 16940,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1588204800000,
@@ -3624,7 +2558,8 @@
   "close" : 8860.15,
   "volume" : 1019.180118,
   "quoteAssetVolume" : 9242048.4152,
-  "numberOfTrades" : 13654
+  "numberOfTrades" : 13654,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1588248000000,
@@ -3637,7 +2572,8 @@
   "close" : 8628.94,
   "volume" : 679.042177,
   "quoteAssetVolume" : 5926434.1408,
-  "numberOfTrades" : 9234
+  "numberOfTrades" : 9234,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1588291200000,
@@ -3650,7 +2586,8 @@
   "close" : 8999.89,
   "volume" : 301.810641,
   "quoteAssetVolume" : 2652356.2652,
-  "numberOfTrades" : 5382
+  "numberOfTrades" : 5382,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1588334400000,
@@ -3663,7 +2600,8 @@
   "close" : 8828.27,
   "volume" : 416.012552,
   "quoteAssetVolume" : 3659016.0038,
-  "numberOfTrades" : 6110
+  "numberOfTrades" : 6110,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1588377600000,
@@ -3676,7 +2614,8 @@
   "close" : 8855.0,
   "volume" : 144.033527,
   "quoteAssetVolume" : 1271483.0558,
-  "numberOfTrades" : 3036
+  "numberOfTrades" : 3036,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1588420800000,
@@ -3689,7 +2628,8 @@
   "close" : 8977.7,
   "volume" : 397.033338,
   "quoteAssetVolume" : 3541693.177,
-  "numberOfTrades" : 5988
+  "numberOfTrades" : 5988,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1588464000000,
@@ -3702,7 +2642,8 @@
   "close" : 9054.58,
   "volume" : 442.819902,
   "quoteAssetVolume" : 4020493.1514,
-  "numberOfTrades" : 6929
+  "numberOfTrades" : 6929,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1588507200000,
@@ -3715,7 +2656,8 @@
   "close" : 8896.89,
   "volume" : 359.677407,
   "quoteAssetVolume" : 3192157.726,
-  "numberOfTrades" : 7080
+  "numberOfTrades" : 7080,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1588550400000,
@@ -3728,7 +2670,8 @@
   "close" : 8686.67,
   "volume" : 352.573538,
   "quoteAssetVolume" : 3073917.446,
-  "numberOfTrades" : 6409
+  "numberOfTrades" : 6409,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1588593600000,
@@ -3741,7 +2684,8 @@
   "close" : 8883.75,
   "volume" : 268.916575,
   "quoteAssetVolume" : 2380628.0598,
-  "numberOfTrades" : 6036
+  "numberOfTrades" : 6036,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1588636800000,
@@ -3754,7 +2698,8 @@
   "close" : 8851.71,
   "volume" : 276.25146,
   "quoteAssetVolume" : 2469830.7414,
-  "numberOfTrades" : 6379
+  "numberOfTrades" : 6379,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1588680000000,
@@ -3767,7 +2712,8 @@
   "close" : 9028.74,
   "volume" : 240.306402,
   "quoteAssetVolume" : 2145112.385,
-  "numberOfTrades" : 7482
+  "numberOfTrades" : 7482,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1588723200000,
@@ -3780,7 +2726,8 @@
   "close" : 9327.62,
   "volume" : 284.020052,
   "quoteAssetVolume" : 2582368.734,
-  "numberOfTrades" : 5333
+  "numberOfTrades" : 5333,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1588766400000,
@@ -3793,7 +2740,8 @@
   "close" : 9148.74,
   "volume" : 444.079164,
   "quoteAssetVolume" : 4113843.5446,
-  "numberOfTrades" : 10639
+  "numberOfTrades" : 10639,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1588809600000,
@@ -3806,7 +2754,8 @@
   "close" : 9288.22,
   "volume" : 278.496904,
   "quoteAssetVolume" : 2572214.2111,
-  "numberOfTrades" : 6300
+  "numberOfTrades" : 6300,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1588852800000,
@@ -3819,7 +2768,8 @@
   "close" : 9997.06,
   "volume" : 1112.596053,
   "quoteAssetVolume" : 1.08579154023E7,
-  "numberOfTrades" : 16506
+  "numberOfTrades" : 16506,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1588896000000,
@@ -3832,7 +2782,8 @@
   "close" : 9911.01,
   "volume" : 400.917223,
   "quoteAssetVolume" : 3968487.9769,
-  "numberOfTrades" : 7578
+  "numberOfTrades" : 7578,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1588939200000,
@@ -3845,7 +2796,8 @@
   "close" : 9820.75,
   "volume" : 393.450057,
   "quoteAssetVolume" : 3911021.0161,
-  "numberOfTrades" : 8214
+  "numberOfTrades" : 8214,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1588982400000,
@@ -3858,7 +2810,8 @@
   "close" : 9637.74,
   "volume" : 354.426754,
   "quoteAssetVolume" : 3447440.7053,
-  "numberOfTrades" : 6961
+  "numberOfTrades" : 6961,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1589025600000,
@@ -3871,7 +2824,8 @@
   "close" : 9542.0,
   "volume" : 281.128357,
   "quoteAssetVolume" : 2724682.8164,
-  "numberOfTrades" : 6983
+  "numberOfTrades" : 6983,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1589068800000,
@@ -3884,7 +2838,8 @@
   "close" : 8744.06,
   "volume" : 1496.895418,
   "quoteAssetVolume" : 1.29878034228E7,
-  "numberOfTrades" : 25320
+  "numberOfTrades" : 25320,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1589112000000,
@@ -3897,7 +2852,8 @@
   "close" : 8729.03,
   "volume" : 561.216923,
   "quoteAssetVolume" : 4833471.3711,
-  "numberOfTrades" : 11436
+  "numberOfTrades" : 11436,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1589155200000,
@@ -3910,7 +2866,8 @@
   "close" : 8933.85,
   "volume" : 322.893597,
   "quoteAssetVolume" : 2818809.6631,
-  "numberOfTrades" : 7045
+  "numberOfTrades" : 7045,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1589198400000,
@@ -3923,7 +2880,8 @@
   "close" : 8566.32,
   "volume" : 1080.420705,
   "quoteAssetVolume" : 9343359.3154,
-  "numberOfTrades" : 18277
+  "numberOfTrades" : 18277,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1589241600000,
@@ -3936,7 +2894,8 @@
   "close" : 8806.62,
   "volume" : 221.345622,
   "quoteAssetVolume" : 1923431.4862,
-  "numberOfTrades" : 5435
+  "numberOfTrades" : 5435,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1589284800000,
@@ -3949,7 +2908,8 @@
   "close" : 8823.64,
   "volume" : 383.324962,
   "quoteAssetVolume" : 3392964.0457,
-  "numberOfTrades" : 8766
+  "numberOfTrades" : 8766,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1589328000000,
@@ -3962,7 +2922,8 @@
   "close" : 9050.0,
   "volume" : 250.888538,
   "quoteAssetVolume" : 2239186.9975,
-  "numberOfTrades" : 5314
+  "numberOfTrades" : 5314,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1589371200000,
@@ -3975,7 +2936,8 @@
   "close" : 9323.37,
   "volume" : 565.765886,
   "quoteAssetVolume" : 5210282.559,
-  "numberOfTrades" : 10207
+  "numberOfTrades" : 10207,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1589414400000,
@@ -3988,7 +2950,8 @@
   "close" : 9680.0,
   "volume" : 534.588807,
   "quoteAssetVolume" : 5111833.6339,
-  "numberOfTrades" : 9689
+  "numberOfTrades" : 9689,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1589457600000,
@@ -4001,7 +2964,8 @@
   "close" : 9796.48,
   "volume" : 647.177162,
   "quoteAssetVolume" : 6276725.1964,
-  "numberOfTrades" : 10147
+  "numberOfTrades" : 10147,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1589500800000,
@@ -4014,7 +2978,8 @@
   "close" : 9601.83,
   "volume" : 633.470319,
   "quoteAssetVolume" : 6039838.8419,
-  "numberOfTrades" : 9431
+  "numberOfTrades" : 9431,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1589544000000,
@@ -4027,7 +2992,8 @@
   "close" : 9310.0,
   "volume" : 623.698777,
   "quoteAssetVolume" : 5861908.3358,
-  "numberOfTrades" : 8815
+  "numberOfTrades" : 8815,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1589587200000,
@@ -4040,7 +3006,8 @@
   "close" : 9411.81,
   "volume" : 257.037994,
   "quoteAssetVolume" : 2419845.4161,
-  "numberOfTrades" : 5164
+  "numberOfTrades" : 5164,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1589630400000,
@@ -4053,7 +3020,8 @@
   "close" : 9386.31,
   "volume" : 249.97841,
   "quoteAssetVolume" : 2345639.584,
-  "numberOfTrades" : 5443
+  "numberOfTrades" : 5443,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1589673600000,
@@ -4066,7 +3034,8 @@
   "close" : 9514.29,
   "volume" : 262.056388,
   "quoteAssetVolume" : 2488761.3406,
-  "numberOfTrades" : 3550
+  "numberOfTrades" : 3550,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1589716800000,
@@ -4079,7 +3048,8 @@
   "close" : 9676.35,
   "volume" : 444.208243,
   "quoteAssetVolume" : 4326378.7292,
-  "numberOfTrades" : 8329
+  "numberOfTrades" : 8329,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1589760000000,
@@ -4092,7 +3062,8 @@
   "close" : 9630.0,
   "volume" : 572.662943,
   "quoteAssetVolume" : 5595934.3366,
-  "numberOfTrades" : 8336
+  "numberOfTrades" : 8336,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1589803200000,
@@ -4105,7 +3076,8 @@
   "close" : 9725.84,
   "volume" : 356.554255,
   "quoteAssetVolume" : 3444038.6697,
-  "numberOfTrades" : 7877
+  "numberOfTrades" : 7877,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1589846400000,
@@ -4118,7 +3090,8 @@
   "close" : 9736.0,
   "volume" : 365.642631,
   "quoteAssetVolume" : 3529635.1594,
-  "numberOfTrades" : 6742
+  "numberOfTrades" : 6742,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1589889600000,
@@ -4131,7 +3104,8 @@
   "close" : 9783.0,
   "volume" : 280.314824,
   "quoteAssetVolume" : 2714605.085,
-  "numberOfTrades" : 5533
+  "numberOfTrades" : 5533,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1589932800000,
@@ -4144,7 +3118,8 @@
   "close" : 9716.43,
   "volume" : 178.832604,
   "quoteAssetVolume" : 1744735.4199,
-  "numberOfTrades" : 4072
+  "numberOfTrades" : 4072,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1589976000000,
@@ -4157,7 +3132,8 @@
   "close" : 9512.39,
   "volume" : 521.90794,
   "quoteAssetVolume" : 4972597.1361,
-  "numberOfTrades" : 7971
+  "numberOfTrades" : 7971,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1590019200000,
@@ -4170,7 +3146,8 @@
   "close" : 9374.76,
   "volume" : 187.589818,
   "quoteAssetVolume" : 1769087.2056,
-  "numberOfTrades" : 4359
+  "numberOfTrades" : 4359,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1590062400000,
@@ -4183,7 +3160,8 @@
   "close" : 9055.57,
   "volume" : 687.381292,
   "quoteAssetVolume" : 6222514.9614,
-  "numberOfTrades" : 10486
+  "numberOfTrades" : 10486,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1590105600000,
@@ -4196,7 +3174,8 @@
   "close" : 9166.94,
   "volume" : 304.580809,
   "quoteAssetVolume" : 2757711.1706,
-  "numberOfTrades" : 4588
+  "numberOfTrades" : 4588,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1590148800000,
@@ -4209,7 +3188,8 @@
   "close" : 9166.06,
   "volume" : 251.728666,
   "quoteAssetVolume" : 2311273.0597,
-  "numberOfTrades" : 5156
+  "numberOfTrades" : 5156,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1590192000000,
@@ -4222,7 +3202,8 @@
   "close" : 9183.25,
   "volume" : 160.447038,
   "quoteAssetVolume" : 1482512.0991,
-  "numberOfTrades" : 2984
+  "numberOfTrades" : 2984,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1590235200000,
@@ -4235,7 +3216,8 @@
   "close" : 9183.4,
   "volume" : 104.204064,
   "quoteAssetVolume" : 956640.0862,
-  "numberOfTrades" : 3026
+  "numberOfTrades" : 3026,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1590278400000,
@@ -4248,7 +3230,8 @@
   "close" : 9113.74,
   "volume" : 132.848115,
   "quoteAssetVolume" : 1224158.738,
-  "numberOfTrades" : 3047
+  "numberOfTrades" : 3047,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1590321600000,
@@ -4261,7 +3244,8 @@
   "close" : 8706.69,
   "volume" : 374.550672,
   "quoteAssetVolume" : 3346424.8433,
-  "numberOfTrades" : 7174
+  "numberOfTrades" : 7174,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1590364800000,
@@ -4274,7 +3258,8 @@
   "close" : 8733.4,
   "volume" : 241.715731,
   "quoteAssetVolume" : 2120315.4558,
-  "numberOfTrades" : 4219
+  "numberOfTrades" : 4219,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1590408000000,
@@ -4287,7 +3272,8 @@
   "close" : 8902.35,
   "volume" : 394.745689,
   "quoteAssetVolume" : 3505027.8912,
-  "numberOfTrades" : 6022
+  "numberOfTrades" : 6022,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1590451200000,
@@ -4300,7 +3286,8 @@
   "close" : 8861.18,
   "volume" : 125.914225,
   "quoteAssetVolume" : 1120692.1033,
-  "numberOfTrades" : 3348
+  "numberOfTrades" : 3348,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1590494400000,
@@ -4313,7 +3300,8 @@
   "close" : 8841.2,
   "volume" : 188.537368,
   "quoteAssetVolume" : 1660030.8614,
-  "numberOfTrades" : 4555
+  "numberOfTrades" : 4555,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1590537600000,
@@ -4326,7 +3314,8 @@
   "close" : 9146.46,
   "volume" : 146.984268,
   "quoteAssetVolume" : 1315795.6877,
-  "numberOfTrades" : 4106
+  "numberOfTrades" : 4106,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1590580800000,
@@ -4339,7 +3328,8 @@
   "close" : 9203.0,
   "volume" : 225.471843,
   "quoteAssetVolume" : 2064171.4485,
-  "numberOfTrades" : 4215
+  "numberOfTrades" : 4215,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1590624000000,
@@ -4352,7 +3342,8 @@
   "close" : 9264.9,
   "volume" : 158.200515,
   "quoteAssetVolume" : 1455401.5536,
-  "numberOfTrades" : 3264
+  "numberOfTrades" : 3264,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1590667200000,
@@ -4365,7 +3356,8 @@
   "close" : 9580.0,
   "volume" : 473.92341,
   "quoteAssetVolume" : 4486096.4653,
-  "numberOfTrades" : 7750
+  "numberOfTrades" : 7750,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1590710400000,
@@ -4378,7 +3370,8 @@
   "close" : 9396.61,
   "volume" : 222.569767,
   "quoteAssetVolume" : 2112499.6827,
-  "numberOfTrades" : 4770
+  "numberOfTrades" : 4770,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1590753600000,
@@ -4391,7 +3384,8 @@
   "close" : 9420.89,
   "volume" : 188.387586,
   "quoteAssetVolume" : 1773652.4991,
-  "numberOfTrades" : 3757
+  "numberOfTrades" : 3757,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1590796800000,
@@ -4404,7 +3398,8 @@
   "close" : 9545.2,
   "volume" : 204.698128,
   "quoteAssetVolume" : 1940286.242,
-  "numberOfTrades" : 4173
+  "numberOfTrades" : 4173,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1590840000000,
@@ -4417,7 +3412,8 @@
   "close" : 9704.0,
   "volume" : 372.719081,
   "quoteAssetVolume" : 3571642.0146,
-  "numberOfTrades" : 5617
+  "numberOfTrades" : 5617,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1590883200000,
@@ -4430,7 +3426,8 @@
   "close" : 9593.71,
   "volume" : 145.337906,
   "quoteAssetVolume" : 1395564.6378,
-  "numberOfTrades" : 4102
+  "numberOfTrades" : 4102,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1590926400000,
@@ -4443,7 +3440,8 @@
   "close" : 9447.28,
   "volume" : 205.365176,
   "quoteAssetVolume" : 1948877.8372,
-  "numberOfTrades" : 4489
+  "numberOfTrades" : 4489,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1590969600000,
@@ -4456,7 +3454,8 @@
   "close" : 9509.26,
   "volume" : 170.764307,
   "quoteAssetVolume" : 1627501.055,
-  "numberOfTrades" : 4152
+  "numberOfTrades" : 4152,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1591012800000,
@@ -4469,7 +3468,8 @@
   "close" : 10209.03,
   "volume" : 768.086259,
   "quoteAssetVolume" : 7643943.0604,
-  "numberOfTrades" : 11532
+  "numberOfTrades" : 11532,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1591056000000,
@@ -4482,7 +3482,8 @@
   "close" : 10102.53,
   "volume" : 346.927495,
   "quoteAssetVolume" : 3512455.8181,
-  "numberOfTrades" : 6341
+  "numberOfTrades" : 6341,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1591099200000,
@@ -4495,7 +3496,8 @@
   "close" : 9518.18,
   "volume" : 770.634784,
   "quoteAssetVolume" : 7394221.4761,
-  "numberOfTrades" : 11769
+  "numberOfTrades" : 11769,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1591142400000,
@@ -4508,7 +3510,8 @@
   "close" : 9614.67,
   "volume" : 175.887141,
   "quoteAssetVolume" : 1672910.0616,
-  "numberOfTrades" : 4052
+  "numberOfTrades" : 4052,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1591185600000,
@@ -4521,7 +3524,8 @@
   "close" : 9664.51,
   "volume" : 201.159433,
   "quoteAssetVolume" : 1929360.2281,
-  "numberOfTrades" : 4653
+  "numberOfTrades" : 4653,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1591228800000,
@@ -4534,7 +3538,8 @@
   "close" : 9620.0,
   "volume" : 178.857915,
   "quoteAssetVolume" : 1718262.311,
-  "numberOfTrades" : 4666
+  "numberOfTrades" : 4666,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1591272000000,
@@ -4547,7 +3552,8 @@
   "close" : 9788.35,
   "volume" : 252.922899,
   "quoteAssetVolume" : 2473249.3333,
-  "numberOfTrades" : 5944
+  "numberOfTrades" : 5944,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1591315200000,
@@ -4560,7 +3566,8 @@
   "close" : 9689.14,
   "volume" : 184.533503,
   "quoteAssetVolume" : 1799912.4973,
-  "numberOfTrades" : 3603
+  "numberOfTrades" : 3603,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1591358400000,
@@ -4573,7 +3580,8 @@
   "close" : 9618.43,
   "volume" : 184.72476,
   "quoteAssetVolume" : 1790491.7542,
-  "numberOfTrades" : 4179
+  "numberOfTrades" : 4179,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1591401600000,
@@ -4586,7 +3594,8 @@
   "close" : 9686.53,
   "volume" : 156.785595,
   "quoteAssetVolume" : 1505581.2855,
-  "numberOfTrades" : 3008
+  "numberOfTrades" : 3008,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1591444800000,
@@ -4599,7 +3608,8 @@
   "close" : 9675.0,
   "volume" : 136.092326,
   "quoteAssetVolume" : 1313163.8839,
-  "numberOfTrades" : 2765
+  "numberOfTrades" : 2765,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1591488000000,
@@ -4612,7 +3622,8 @@
   "close" : 9571.52,
   "volume" : 145.914351,
   "quoteAssetVolume" : 1404146.0455,
-  "numberOfTrades" : 2589
+  "numberOfTrades" : 2589,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1591531200000,
@@ -4625,7 +3636,8 @@
   "close" : 9751.1,
   "volume" : 420.238124,
   "quoteAssetVolume" : 4028754.3565,
-  "numberOfTrades" : 6320
+  "numberOfTrades" : 6320,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1591574400000,
@@ -4638,7 +3650,8 @@
   "close" : 9737.34,
   "volume" : 186.671494,
   "quoteAssetVolume" : 1815549.4911,
-  "numberOfTrades" : 3195
+  "numberOfTrades" : 3195,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1591617600000,
@@ -4651,7 +3664,8 @@
   "close" : 9778.0,
   "volume" : 162.250162,
   "quoteAssetVolume" : 1577503.3074,
-  "numberOfTrades" : 4300
+  "numberOfTrades" : 4300,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1591660800000,
@@ -4664,7 +3678,8 @@
   "close" : 9724.42,
   "volume" : 372.482167,
   "quoteAssetVolume" : 3610326.9011,
-  "numberOfTrades" : 4181
+  "numberOfTrades" : 4181,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1591704000000,
@@ -4677,7 +3692,8 @@
   "close" : 9785.75,
   "volume" : 239.615594,
   "quoteAssetVolume" : 2335330.116,
-  "numberOfTrades" : 4911
+  "numberOfTrades" : 4911,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1591747200000,
@@ -4690,7 +3706,8 @@
   "close" : 9730.99,
   "volume" : 142.963433,
   "quoteAssetVolume" : 1395551.8363,
-  "numberOfTrades" : 2996
+  "numberOfTrades" : 2996,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1591790400000,
@@ -4703,7 +3720,8 @@
   "close" : 9893.35,
   "volume" : 395.165306,
   "quoteAssetVolume" : 3890750.4594,
-  "numberOfTrades" : 6072
+  "numberOfTrades" : 6072,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1591833600000,
@@ -4716,7 +3734,8 @@
   "close" : 9779.7,
   "volume" : 283.935006,
   "quoteAssetVolume" : 2803239.9975,
-  "numberOfTrades" : 4628
+  "numberOfTrades" : 4628,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1591876800000,
@@ -4729,7 +3748,8 @@
   "close" : 9266.87,
   "volume" : 852.385874,
   "quoteAssetVolume" : 8011872.7913,
-  "numberOfTrades" : 11572
+  "numberOfTrades" : 11572,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1591920000000,
@@ -4742,7 +3762,8 @@
   "close" : 9495.12,
   "volume" : 376.936465,
   "quoteAssetVolume" : 3532657.1666,
-  "numberOfTrades" : 5122
+  "numberOfTrades" : 5122,
+  "rsi" : 0.0
 }, {
   "symbol" : "BTCUSD",
   "openTime" : 1591963200000,
@@ -4752,8 +3773,1325 @@
   "open" : 9499.52,
   "high" : 9553.92,
   "low" : 9304.0,
-  "close" : 9470.0,
-  "volume" : 205.038364,
-  "quoteAssetVolume" : 1930868.047,
-  "numberOfTrades" : 3833
+  "close" : 9465.7,
+  "volume" : 235.786591,
+  "quoteAssetVolume" : 2221863.8922,
+  "numberOfTrades" : 4465,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BTCUSD",
+  "openTime" : 1592006400000,
+  "openDate" : null,
+  "closeTime" : 1592049599999,
+  "closeDate" : null,
+  "open" : 9466.0,
+  "high" : 9476.57,
+  "low" : 9363.6,
+  "close" : 9401.49,
+  "volume" : 73.974685,
+  "quoteAssetVolume" : 697088.6829,
+  "numberOfTrades" : 2180,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BTCUSD",
+  "openTime" : 1592049600000,
+  "openDate" : null,
+  "closeTime" : 1592092799999,
+  "closeDate" : null,
+  "open" : 9397.0,
+  "high" : 9490.0,
+  "low" : 9350.0,
+  "close" : 9472.51,
+  "volume" : 179.859188,
+  "quoteAssetVolume" : 1696798.6453,
+  "numberOfTrades" : 3457,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BTCUSD",
+  "openTime" : 1592092800000,
+  "openDate" : null,
+  "closeTime" : 1592135999999,
+  "closeDate" : null,
+  "open" : 9475.38,
+  "high" : 9480.0,
+  "low" : 9373.78,
+  "close" : 9424.45,
+  "volume" : 69.42263,
+  "quoteAssetVolume" : 654351.3371,
+  "numberOfTrades" : 2002,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BTCUSD",
+  "openTime" : 1592136000000,
+  "openDate" : null,
+  "closeTime" : 1592179199999,
+  "closeDate" : null,
+  "open" : 9423.12,
+  "high" : 9434.39,
+  "low" : 9241.0,
+  "close" : 9336.41,
+  "volume" : 180.282232,
+  "quoteAssetVolume" : 1686474.4343,
+  "numberOfTrades" : 4098,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BTCUSD",
+  "openTime" : 1592179200000,
+  "openDate" : null,
+  "closeTime" : 1592222399999,
+  "closeDate" : null,
+  "open" : 9335.64,
+  "high" : 9358.0,
+  "low" : 8899.9,
+  "close" : 9105.4,
+  "volume" : 386.325147,
+  "quoteAssetVolume" : 3522188.7284,
+  "numberOfTrades" : 6956,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BTCUSD",
+  "openTime" : 1592222400000,
+  "openDate" : null,
+  "closeTime" : 1592265599999,
+  "closeDate" : null,
+  "open" : 9112.02,
+  "high" : 9499.0,
+  "low" : 9030.45,
+  "close" : 9434.47,
+  "volume" : 370.434492,
+  "quoteAssetVolume" : 3455666.2608,
+  "numberOfTrades" : 7749,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BTCUSD",
+  "openTime" : 1592265600000,
+  "openDate" : null,
+  "closeTime" : 1592308799999,
+  "closeDate" : null,
+  "open" : 9428.44,
+  "high" : 9582.0,
+  "low" : 9384.1,
+  "close" : 9507.64,
+  "volume" : 182.134084,
+  "quoteAssetVolume" : 1729992.0432,
+  "numberOfTrades" : 4348,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BTCUSD",
+  "openTime" : 1592308800000,
+  "openDate" : null,
+  "closeTime" : 1592351999999,
+  "closeDate" : null,
+  "open" : 9507.37,
+  "high" : 9590.0,
+  "low" : 9397.01,
+  "close" : 9528.12,
+  "volume" : 238.127162,
+  "quoteAssetVolume" : 2260442.4496,
+  "numberOfTrades" : 4756,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BTCUSD",
+  "openTime" : 1592352000000,
+  "openDate" : null,
+  "closeTime" : 1592395199999,
+  "closeDate" : null,
+  "open" : 9528.86,
+  "high" : 9536.8,
+  "low" : 9415.0,
+  "close" : 9473.24,
+  "volume" : 98.921599,
+  "quoteAssetVolume" : 936723.2681,
+  "numberOfTrades" : 2855,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BTCUSD",
+  "openTime" : 1592395200000,
+  "openDate" : null,
+  "closeTime" : 1592438399999,
+  "closeDate" : null,
+  "open" : 9474.26,
+  "high" : 9558.0,
+  "low" : 9233.87,
+  "close" : 9452.46,
+  "volume" : 279.021296,
+  "quoteAssetVolume" : 2622633.2057,
+  "numberOfTrades" : 6258,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BTCUSD",
+  "openTime" : 1592438400000,
+  "openDate" : null,
+  "closeTime" : 1592481599999,
+  "closeDate" : null,
+  "open" : 9459.0,
+  "high" : 9477.28,
+  "low" : 9375.47,
+  "close" : 9422.91,
+  "volume" : 92.346097,
+  "quoteAssetVolume" : 870244.8683,
+  "numberOfTrades" : 2611,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BTCUSD",
+  "openTime" : 1592481600000,
+  "openDate" : null,
+  "closeTime" : 1592524799999,
+  "closeDate" : null,
+  "open" : 9427.97,
+  "high" : 9437.93,
+  "low" : 9273.0,
+  "close" : 9382.79,
+  "volume" : 179.951254,
+  "quoteAssetVolume" : 1686669.2672,
+  "numberOfTrades" : 4367,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BTCUSD",
+  "openTime" : 1592524800000,
+  "openDate" : null,
+  "closeTime" : 1592567999999,
+  "closeDate" : null,
+  "open" : 9376.28,
+  "high" : 9424.74,
+  "low" : 9233.87,
+  "close" : 9379.52,
+  "volume" : 157.21418,
+  "quoteAssetVolume" : 1464646.0181,
+  "numberOfTrades" : 3918,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BTCUSD",
+  "openTime" : 1592568000000,
+  "openDate" : null,
+  "closeTime" : 1592611199999,
+  "closeDate" : null,
+  "open" : 9378.86,
+  "high" : 9419.98,
+  "low" : 9250.62,
+  "close" : 9299.58,
+  "volume" : 149.818957,
+  "quoteAssetVolume" : 1396723.8466,
+  "numberOfTrades" : 4575,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BTCUSD",
+  "openTime" : 1592611200000,
+  "openDate" : null,
+  "closeTime" : 1592654399999,
+  "closeDate" : null,
+  "open" : 9290.25,
+  "high" : 9380.0,
+  "low" : 9159.0,
+  "close" : 9323.22,
+  "volume" : 117.077265,
+  "quoteAssetVolume" : 1087118.0797,
+  "numberOfTrades" : 3231,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BTCUSD",
+  "openTime" : 1592654400000,
+  "openDate" : null,
+  "closeTime" : 1592697599999,
+  "closeDate" : null,
+  "open" : 9325.76,
+  "high" : 9393.41,
+  "low" : 9229.42,
+  "close" : 9359.96,
+  "volume" : 110.255017,
+  "quoteAssetVolume" : 1026254.5769,
+  "numberOfTrades" : 3462,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BTCUSD",
+  "openTime" : 1592697600000,
+  "openDate" : null,
+  "closeTime" : 1592740799999,
+  "closeDate" : null,
+  "open" : 9359.5,
+  "high" : 9413.99,
+  "low" : 9335.0,
+  "close" : 9357.98,
+  "volume" : 86.772042,
+  "quoteAssetVolume" : 813191.4887,
+  "numberOfTrades" : 2600,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BTCUSD",
+  "openTime" : 1592740800000,
+  "openDate" : null,
+  "closeTime" : 1592783999999,
+  "closeDate" : null,
+  "open" : 9356.6,
+  "high" : 9384.01,
+  "low" : 9274.94,
+  "close" : 9281.55,
+  "volume" : 103.050087,
+  "quoteAssetVolume" : 960847.0458,
+  "numberOfTrades" : 2786,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BTCUSD",
+  "openTime" : 1592784000000,
+  "openDate" : null,
+  "closeTime" : 1592827199999,
+  "closeDate" : null,
+  "open" : 9282.21,
+  "high" : 9464.0,
+  "low" : 9267.2,
+  "close" : 9456.23,
+  "volume" : 133.102426,
+  "quoteAssetVolume" : 1250529.7416,
+  "numberOfTrades" : 2579,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BTCUSD",
+  "openTime" : 1592827200000,
+  "openDate" : null,
+  "closeTime" : 1592870399999,
+  "closeDate" : null,
+  "open" : 9457.48,
+  "high" : 9781.0,
+  "low" : 9448.76,
+  "close" : 9690.02,
+  "volume" : 297.608332,
+  "quoteAssetVolume" : 2857185.0817,
+  "numberOfTrades" : 5108,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BTCUSD",
+  "openTime" : 1592870400000,
+  "openDate" : null,
+  "closeTime" : 1592913599999,
+  "closeDate" : null,
+  "open" : 9692.2,
+  "high" : 9719.0,
+  "low" : 9578.0,
+  "close" : 9644.31,
+  "volume" : 119.097046,
+  "quoteAssetVolume" : 1148399.8803,
+  "numberOfTrades" : 3110,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BTCUSD",
+  "openTime" : 1592913600000,
+  "openDate" : null,
+  "closeTime" : 1592956799999,
+  "closeDate" : null,
+  "open" : 9633.81,
+  "high" : 9694.51,
+  "low" : 9592.06,
+  "close" : 9621.54,
+  "volume" : 164.353952,
+  "quoteAssetVolume" : 1585113.6852,
+  "numberOfTrades" : 3590,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BTCUSD",
+  "openTime" : 1592956800000,
+  "openDate" : null,
+  "closeTime" : 1592999999999,
+  "closeDate" : null,
+  "open" : 9626.01,
+  "high" : 9662.99,
+  "low" : 9304.0,
+  "close" : 9318.95,
+  "volume" : 176.2851,
+  "quoteAssetVolume" : 1678671.4518,
+  "numberOfTrades" : 3191,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BTCUSD",
+  "openTime" : 1593000000000,
+  "openDate" : null,
+  "closeTime" : 1593043199999,
+  "closeDate" : null,
+  "open" : 9313.0,
+  "high" : 9420.33,
+  "low" : 9195.0,
+  "close" : 9286.65,
+  "volume" : 298.688935,
+  "quoteAssetVolume" : 2775741.4235,
+  "numberOfTrades" : 5516,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BTCUSD",
+  "openTime" : 1593043200000,
+  "openDate" : null,
+  "closeTime" : 1593086399999,
+  "closeDate" : null,
+  "open" : 9286.74,
+  "high" : 9318.0,
+  "low" : 8988.05,
+  "close" : 9254.75,
+  "volume" : 310.621141,
+  "quoteAssetVolume" : 2841918.708,
+  "numberOfTrades" : 4978,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BTCUSD",
+  "openTime" : 1593086400000,
+  "openDate" : null,
+  "closeTime" : 1593129599999,
+  "closeDate" : null,
+  "open" : 9254.7,
+  "high" : 9335.86,
+  "low" : 9156.54,
+  "close" : 9238.33,
+  "volume" : 251.554694,
+  "quoteAssetVolume" : 2326690.0316,
+  "numberOfTrades" : 3769,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BTCUSD",
+  "openTime" : 1593129600000,
+  "openDate" : null,
+  "closeTime" : 1593172799999,
+  "closeDate" : null,
+  "open" : 9246.21,
+  "high" : 9292.92,
+  "low" : 9083.01,
+  "close" : 9171.8,
+  "volume" : 176.30904,
+  "quoteAssetVolume" : 1619710.142,
+  "numberOfTrades" : 3608,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BTCUSD",
+  "openTime" : 1593172800000,
+  "openDate" : null,
+  "closeTime" : 1593215999999,
+  "closeDate" : null,
+  "open" : 9171.8,
+  "high" : 9226.0,
+  "low" : 9030.89,
+  "close" : 9152.2,
+  "volume" : 227.332887,
+  "quoteAssetVolume" : 2078337.7273,
+  "numberOfTrades" : 4615,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BTCUSD",
+  "openTime" : 1593216000000,
+  "openDate" : null,
+  "closeTime" : 1593259199999,
+  "closeDate" : null,
+  "open" : 9153.65,
+  "high" : 9188.99,
+  "low" : 9090.5,
+  "close" : 9155.41,
+  "volume" : 67.06416,
+  "quoteAssetVolume" : 612756.3042,
+  "numberOfTrades" : 1922,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BTCUSD",
+  "openTime" : 1593259200000,
+  "openDate" : null,
+  "closeTime" : 1593302399999,
+  "closeDate" : null,
+  "open" : 9159.82,
+  "high" : 9169.56,
+  "low" : 8830.88,
+  "close" : 9005.66,
+  "volume" : 294.49674,
+  "quoteAssetVolume" : 2651195.8043,
+  "numberOfTrades" : 4877,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BTCUSD",
+  "openTime" : 1593302400000,
+  "openDate" : null,
+  "closeTime" : 1593345599999,
+  "closeDate" : null,
+  "open" : 9001.75,
+  "high" : 9074.61,
+  "low" : 8930.16,
+  "close" : 9044.06,
+  "volume" : 96.032108,
+  "quoteAssetVolume" : 862945.9718,
+  "numberOfTrades" : 2081,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BTCUSD",
+  "openTime" : 1593345600000,
+  "openDate" : null,
+  "closeTime" : 1593388799999,
+  "closeDate" : null,
+  "open" : 9050.64,
+  "high" : 9187.73,
+  "low" : 9016.0,
+  "close" : 9117.0,
+  "volume" : 135.552483,
+  "quoteAssetVolume" : 1236182.8193,
+  "numberOfTrades" : 2922,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BTCUSD",
+  "openTime" : 1593388800000,
+  "openDate" : null,
+  "closeTime" : 1593431999999,
+  "closeDate" : null,
+  "open" : 9117.01,
+  "high" : 9135.99,
+  "low" : 9045.45,
+  "close" : 9083.45,
+  "volume" : 82.841728,
+  "quoteAssetVolume" : 753301.2608,
+  "numberOfTrades" : 1779,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BTCUSD",
+  "openTime" : 1593432000000,
+  "openDate" : null,
+  "closeTime" : 1593475199999,
+  "closeDate" : null,
+  "open" : 9083.9,
+  "high" : 9233.0,
+  "low" : 9010.0,
+  "close" : 9183.34,
+  "volume" : 267.850208,
+  "quoteAssetVolume" : 2446404.4731,
+  "numberOfTrades" : 3891,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BTCUSD",
+  "openTime" : 1593475200000,
+  "openDate" : null,
+  "closeTime" : 1593518399999,
+  "closeDate" : null,
+  "open" : 9190.54,
+  "high" : 9199.45,
+  "low" : 9111.7,
+  "close" : 9147.98,
+  "volume" : 83.454701,
+  "quoteAssetVolume" : 763968.1036,
+  "numberOfTrades" : 1816,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BTCUSD",
+  "openTime" : 1593518400000,
+  "openDate" : null,
+  "closeTime" : 1593561599999,
+  "closeDate" : null,
+  "open" : 9146.41,
+  "high" : 9190.0,
+  "low" : 9061.51,
+  "close" : 9138.84,
+  "volume" : 148.525097,
+  "quoteAssetVolume" : 1358182.2632,
+  "numberOfTrades" : 3155,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BTCUSD",
+  "openTime" : 1593561600000,
+  "openDate" : null,
+  "closeTime" : 1593604799999,
+  "closeDate" : null,
+  "open" : 9137.3,
+  "high" : 9194.28,
+  "low" : 9086.0,
+  "close" : 9161.83,
+  "volume" : 106.673637,
+  "quoteAssetVolume" : 974847.7444,
+  "numberOfTrades" : 2303,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BTCUSD",
+  "openTime" : 1593604800000,
+  "openDate" : null,
+  "closeTime" : 1593647999999,
+  "closeDate" : null,
+  "open" : 9161.83,
+  "high" : 9297.77,
+  "low" : 9134.91,
+  "close" : 9240.52,
+  "volume" : 228.427589,
+  "quoteAssetVolume" : 2111107.6274,
+  "numberOfTrades" : 4510,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BTCUSD",
+  "openTime" : 1593648000000,
+  "openDate" : null,
+  "closeTime" : 1593691199999,
+  "closeDate" : null,
+  "open" : 9237.47,
+  "high" : 9266.25,
+  "low" : 9169.15,
+  "close" : 9195.9,
+  "volume" : 132.284726,
+  "quoteAssetVolume" : 1219075.8483,
+  "numberOfTrades" : 2702,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BTCUSD",
+  "openTime" : 1593691200000,
+  "openDate" : null,
+  "closeTime" : 1593734399999,
+  "closeDate" : null,
+  "open" : 9196.84,
+  "high" : 9255.47,
+  "low" : 8938.64,
+  "close" : 9089.08,
+  "volume" : 303.701242,
+  "quoteAssetVolume" : 2759856.624,
+  "numberOfTrades" : 5301,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BTCUSD",
+  "openTime" : 1593734400000,
+  "openDate" : null,
+  "closeTime" : 1593777599999,
+  "closeDate" : null,
+  "open" : 9090.72,
+  "high" : 9123.88,
+  "low" : 9050.0,
+  "close" : 9092.96,
+  "volume" : 102.002593,
+  "quoteAssetVolume" : 927570.4649,
+  "numberOfTrades" : 1936,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BTCUSD",
+  "openTime" : 1593777600000,
+  "openDate" : null,
+  "closeTime" : 1593820799999,
+  "closeDate" : null,
+  "open" : 9094.83,
+  "high" : 9125.97,
+  "low" : 9043.0,
+  "close" : 9063.67,
+  "volume" : 150.339579,
+  "quoteAssetVolume" : 1366806.116,
+  "numberOfTrades" : 2890,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BTCUSD",
+  "openTime" : 1593820800000,
+  "openDate" : null,
+  "closeTime" : 1593863999999,
+  "closeDate" : null,
+  "open" : 9060.95,
+  "high" : 9096.58,
+  "low" : 9046.13,
+  "close" : 9061.58,
+  "volume" : 42.148601,
+  "quoteAssetVolume" : 382526.5355,
+  "numberOfTrades" : 1427,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BTCUSD",
+  "openTime" : 1593864000000,
+  "openDate" : null,
+  "closeTime" : 1593907199999,
+  "closeDate" : null,
+  "open" : 9060.67,
+  "high" : 9198.85,
+  "low" : 9045.6,
+  "close" : 9139.03,
+  "volume" : 150.29423,
+  "quoteAssetVolume" : 1370806.1284,
+  "numberOfTrades" : 3315,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BTCUSD",
+  "openTime" : 1593907200000,
+  "openDate" : null,
+  "closeTime" : 1593950399999,
+  "closeDate" : null,
+  "open" : 9139.68,
+  "high" : 9146.26,
+  "low" : 8989.92,
+  "close" : 9035.03,
+  "volume" : 78.843755,
+  "quoteAssetVolume" : 716766.4519,
+  "numberOfTrades" : 1751,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BTCUSD",
+  "openTime" : 1593950400000,
+  "openDate" : null,
+  "closeTime" : 1593993599999,
+  "closeDate" : null,
+  "open" : 9035.55,
+  "high" : 9100.0,
+  "low" : 8910.0,
+  "close" : 9075.55,
+  "volume" : 125.498621,
+  "quoteAssetVolume" : 1132771.5891,
+  "numberOfTrades" : 2707,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BTCUSD",
+  "openTime" : 1593993600000,
+  "openDate" : null,
+  "closeTime" : 1594036799999,
+  "closeDate" : null,
+  "open" : 9075.55,
+  "high" : 9232.0,
+  "low" : 9062.5,
+  "close" : 9222.94,
+  "volume" : 164.072803,
+  "quoteAssetVolume" : 1503556.6821,
+  "numberOfTrades" : 2255,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BTCUSD",
+  "openTime" : 1594036800000,
+  "openDate" : null,
+  "closeTime" : 1594079999999,
+  "closeDate" : null,
+  "open" : 9225.0,
+  "high" : 9369.26,
+  "low" : 9200.35,
+  "close" : 9345.74,
+  "volume" : 325.688325,
+  "quoteAssetVolume" : 3026464.7238,
+  "numberOfTrades" : 3671,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BTCUSD",
+  "openTime" : 1594080000000,
+  "openDate" : null,
+  "closeTime" : 1594123199999,
+  "closeDate" : null,
+  "open" : 9346.67,
+  "high" : 9380.0,
+  "low" : 9217.73,
+  "close" : 9266.43,
+  "volume" : 130.100516,
+  "quoteAssetVolume" : 1208250.3406,
+  "numberOfTrades" : 3444,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BTCUSD",
+  "openTime" : 1594123200000,
+  "openDate" : null,
+  "closeTime" : 1594166399999,
+  "closeDate" : null,
+  "open" : 9270.45,
+  "high" : 9287.39,
+  "low" : 9202.02,
+  "close" : 9260.66,
+  "volume" : 164.885834,
+  "quoteAssetVolume" : 1526207.204,
+  "numberOfTrades" : 3077,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BTCUSD",
+  "openTime" : 1594166400000,
+  "openDate" : null,
+  "closeTime" : 1594209599999,
+  "closeDate" : null,
+  "open" : 9259.11,
+  "high" : 9320.82,
+  "low" : 9233.86,
+  "close" : 9312.58,
+  "volume" : 172.825227,
+  "quoteAssetVolume" : 1604414.4495,
+  "numberOfTrades" : 2921,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BTCUSD",
+  "openTime" : 1594209600000,
+  "openDate" : null,
+  "closeTime" : 1594252799999,
+  "closeDate" : null,
+  "open" : 9313.75,
+  "high" : 9476.44,
+  "low" : 9287.0,
+  "close" : 9437.02,
+  "volume" : 280.170816,
+  "quoteAssetVolume" : 2638603.1577,
+  "numberOfTrades" : 4756,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BTCUSD",
+  "openTime" : 1594252800000,
+  "openDate" : null,
+  "closeTime" : 1594295999999,
+  "closeDate" : null,
+  "open" : 9437.02,
+  "high" : 9445.0,
+  "low" : 9386.98,
+  "close" : 9390.18,
+  "volume" : 37.738566,
+  "quoteAssetVolume" : 355156.6388,
+  "numberOfTrades" : 696,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BTCUSD",
+  "openTime" : 1594296000000,
+  "openDate" : null,
+  "closeTime" : 1594339199999,
+  "closeDate" : null,
+  "open" : 9387.48,
+  "high" : 9427.37,
+  "low" : 9163.01,
+  "close" : 9237.66,
+  "volume" : 254.615771,
+  "quoteAssetVolume" : 2357573.218,
+  "numberOfTrades" : 4989,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BTCUSD",
+  "openTime" : 1594339200000,
+  "openDate" : null,
+  "closeTime" : 1594382399999,
+  "closeDate" : null,
+  "open" : 9236.4,
+  "high" : 9236.4,
+  "low" : 9124.0,
+  "close" : 9159.77,
+  "volume" : 122.935172,
+  "quoteAssetVolume" : 1128542.6154,
+  "numberOfTrades" : 2170,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BTCUSD",
+  "openTime" : 1594382400000,
+  "openDate" : null,
+  "closeTime" : 1594425599999,
+  "closeDate" : null,
+  "open" : 9158.0,
+  "high" : 9313.48,
+  "low" : 9157.98,
+  "close" : 9286.47,
+  "volume" : 168.045363,
+  "quoteAssetVolume" : 1549454.0481,
+  "numberOfTrades" : 5772,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BTCUSD",
+  "openTime" : 1594425600000,
+  "openDate" : null,
+  "closeTime" : 1594468799999,
+  "closeDate" : null,
+  "open" : 9286.94,
+  "high" : 9300.4,
+  "low" : 9182.84,
+  "close" : 9203.19,
+  "volume" : 74.824713,
+  "quoteAssetVolume" : 692277.4717,
+  "numberOfTrades" : 2285,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BTCUSD",
+  "openTime" : 1594468800000,
+  "openDate" : null,
+  "closeTime" : 1594511999999,
+  "closeDate" : null,
+  "open" : 9203.19,
+  "high" : 9250.0,
+  "low" : 9200.4,
+  "close" : 9236.98,
+  "volume" : 98.190537,
+  "quoteAssetVolume" : 905367.1333,
+  "numberOfTrades" : 2797,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BTCUSD",
+  "openTime" : 1594512000000,
+  "openDate" : null,
+  "closeTime" : 1594555199999,
+  "closeDate" : null,
+  "open" : 9235.87,
+  "high" : 9291.75,
+  "low" : 9229.37,
+  "close" : 9249.69,
+  "volume" : 84.328154,
+  "quoteAssetVolume" : 781401.3933,
+  "numberOfTrades" : 2125,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BTCUSD",
+  "openTime" : 1594555200000,
+  "openDate" : null,
+  "closeTime" : 1594598399999,
+  "closeDate" : null,
+  "open" : 9249.69,
+  "high" : 9341.0,
+  "low" : 9161.0,
+  "close" : 9301.0,
+  "volume" : 186.424421,
+  "quoteAssetVolume" : 1723367.9192,
+  "numberOfTrades" : 5780,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BTCUSD",
+  "openTime" : 1594598400000,
+  "openDate" : null,
+  "closeTime" : 1594641599999,
+  "closeDate" : null,
+  "open" : 9301.0,
+  "high" : 9323.5,
+  "low" : 9243.49,
+  "close" : 9308.0,
+  "volume" : 115.83917,
+  "quoteAssetVolume" : 1075029.693,
+  "numberOfTrades" : 2865,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BTCUSD",
+  "openTime" : 1594641600000,
+  "openDate" : null,
+  "closeTime" : 1594684799999,
+  "closeDate" : null,
+  "open" : 9308.73,
+  "high" : 9334.0,
+  "low" : 9197.0,
+  "close" : 9238.21,
+  "volume" : 277.352383,
+  "quoteAssetVolume" : 2572339.9634,
+  "numberOfTrades" : 5966,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BTCUSD",
+  "openTime" : 1594684800000,
+  "openDate" : null,
+  "closeTime" : 1594727999999,
+  "closeDate" : null,
+  "open" : 9233.46,
+  "high" : 9239.98,
+  "low" : 9106.98,
+  "close" : 9228.54,
+  "volume" : 153.349309,
+  "quoteAssetVolume" : 1407560.9818,
+  "numberOfTrades" : 2709,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BTCUSD",
+  "openTime" : 1594728000000,
+  "openDate" : null,
+  "closeTime" : 1594771199999,
+  "closeDate" : null,
+  "open" : 9229.0,
+  "high" : 9277.77,
+  "low" : 9180.0,
+  "close" : 9257.99,
+  "volume" : 166.078131,
+  "quoteAssetVolume" : 1534449.346,
+  "numberOfTrades" : 3431,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BTCUSD",
+  "openTime" : 1594771200000,
+  "openDate" : null,
+  "closeTime" : 1594814399999,
+  "closeDate" : null,
+  "open" : 9258.0,
+  "high" : 9277.99,
+  "low" : 9185.38,
+  "close" : 9214.09,
+  "volume" : 113.712168,
+  "quoteAssetVolume" : 1050510.8529,
+  "numberOfTrades" : 1883,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BTCUSD",
+  "openTime" : 1594814400000,
+  "openDate" : null,
+  "closeTime" : 1594857599999,
+  "closeDate" : null,
+  "open" : 9212.41,
+  "high" : 9245.0,
+  "low" : 9149.09,
+  "close" : 9192.91,
+  "volume" : 190.014923,
+  "quoteAssetVolume" : 1748998.4342,
+  "numberOfTrades" : 3307,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BTCUSD",
+  "openTime" : 1594857600000,
+  "openDate" : null,
+  "closeTime" : 1594900799999,
+  "closeDate" : null,
+  "open" : 9191.55,
+  "high" : 9214.45,
+  "low" : 9034.14,
+  "close" : 9073.69,
+  "volume" : 146.759387,
+  "quoteAssetVolume" : 1340934.8572,
+  "numberOfTrades" : 3323,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BTCUSD",
+  "openTime" : 1594900800000,
+  "openDate" : null,
+  "closeTime" : 1594943999999,
+  "closeDate" : null,
+  "open" : 9067.47,
+  "high" : 9152.0,
+  "low" : 9062.28,
+  "close" : 9131.99,
+  "volume" : 112.049312,
+  "quoteAssetVolume" : 1020679.1192,
+  "numberOfTrades" : 3056,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BTCUSD",
+  "openTime" : 1594944000000,
+  "openDate" : null,
+  "closeTime" : 1594987199999,
+  "closeDate" : null,
+  "open" : 9131.67,
+  "high" : 9140.72,
+  "low" : 9076.81,
+  "close" : 9128.98,
+  "volume" : 86.302889,
+  "quoteAssetVolume" : 786713.8012,
+  "numberOfTrades" : 2221,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BTCUSD",
+  "openTime" : 1594987200000,
+  "openDate" : null,
+  "closeTime" : 1595030399999,
+  "closeDate" : null,
+  "open" : 9132.88,
+  "high" : 9181.99,
+  "low" : 9128.0,
+  "close" : 9157.15,
+  "volume" : 155.791813,
+  "quoteAssetVolume" : 1427300.4472,
+  "numberOfTrades" : 2975,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BTCUSD",
+  "openTime" : 1595030400000,
+  "openDate" : null,
+  "closeTime" : 1595073599999,
+  "closeDate" : null,
+  "open" : 9157.29,
+  "high" : 9205.99,
+  "low" : 9121.5,
+  "close" : 9163.8,
+  "volume" : 80.457372,
+  "quoteAssetVolume" : 735901.883,
+  "numberOfTrades" : 1514,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BTCUSD",
+  "openTime" : 1595073600000,
+  "openDate" : null,
+  "closeTime" : 1595116799999,
+  "closeDate" : null,
+  "open" : 9164.48,
+  "high" : 9205.0,
+  "low" : 9159.0,
+  "close" : 9174.5,
+  "volume" : 106.402763,
+  "quoteAssetVolume" : 976934.2317,
+  "numberOfTrades" : 2278,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BTCUSD",
+  "openTime" : 1595116800000,
+  "openDate" : null,
+  "closeTime" : 1595159999999,
+  "closeDate" : null,
+  "open" : 9173.47,
+  "high" : 9184.97,
+  "low" : 9105.84,
+  "close" : 9125.71,
+  "volume" : 65.060018,
+  "quoteAssetVolume" : 595543.9112,
+  "numberOfTrades" : 1628,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BTCUSD",
+  "openTime" : 1595160000000,
+  "openDate" : null,
+  "closeTime" : 1595203199999,
+  "closeDate" : null,
+  "open" : 9125.71,
+  "high" : 9238.47,
+  "low" : 9114.0,
+  "close" : 9214.7,
+  "volume" : 128.552217,
+  "quoteAssetVolume" : 1177784.7198,
+  "numberOfTrades" : 2523,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BTCUSD",
+  "openTime" : 1595203200000,
+  "openDate" : null,
+  "closeTime" : 1595246399999,
+  "closeDate" : null,
+  "open" : 9212.87,
+  "high" : 9225.0,
+  "low" : 9130.18,
+  "close" : 9149.35,
+  "volume" : 115.264975,
+  "quoteAssetVolume" : 1057571.3356,
+  "numberOfTrades" : 2141,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BTCUSD",
+  "openTime" : 1595246400000,
+  "openDate" : null,
+  "closeTime" : 1595289599999,
+  "closeDate" : null,
+  "open" : 9147.66,
+  "high" : 9209.12,
+  "low" : 9141.12,
+  "close" : 9159.0,
+  "volume" : 133.113957,
+  "quoteAssetVolume" : 1220823.8297,
+  "numberOfTrades" : 3053,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BTCUSD",
+  "openTime" : 1595289600000,
+  "openDate" : null,
+  "closeTime" : 1595332799999,
+  "closeDate" : null,
+  "open" : 9159.0,
+  "high" : 9358.47,
+  "low" : 9158.33,
+  "close" : 9349.42,
+  "volume" : 147.162507,
+  "quoteAssetVolume" : 1362793.5009,
+  "numberOfTrades" : 2622,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BTCUSD",
+  "openTime" : 1595332800000,
+  "openDate" : null,
+  "closeTime" : 1595375999999,
+  "closeDate" : null,
+  "open" : 9349.93,
+  "high" : 9440.0,
+  "low" : 9321.91,
+  "close" : 9392.76,
+  "volume" : 196.912054,
+  "quoteAssetVolume" : 1847379.8952,
+  "numberOfTrades" : 4076,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BTCUSD",
+  "openTime" : 1595376000000,
+  "openDate" : null,
+  "closeTime" : 1595419199999,
+  "closeDate" : null,
+  "open" : 9394.15,
+  "high" : 9398.69,
+  "low" : 9285.0,
+  "close" : 9348.75,
+  "volume" : 116.581367,
+  "quoteAssetVolume" : 1090392.7227,
+  "numberOfTrades" : 2573,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BTCUSD",
+  "openTime" : 1595419200000,
+  "openDate" : null,
+  "closeTime" : 1595462399999,
+  "closeDate" : null,
+  "open" : 9348.11,
+  "high" : 9563.53,
+  "low" : 9318.15,
+  "close" : 9535.0,
+  "volume" : 249.909548,
+  "quoteAssetVolume" : 2362407.4824,
+  "numberOfTrades" : 4564,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BTCUSD",
+  "openTime" : 1595462400000,
+  "openDate" : null,
+  "closeTime" : 1595505599999,
+  "closeDate" : null,
+  "open" : 9534.2,
+  "high" : 9550.0,
+  "low" : 9480.92,
+  "close" : 9515.66,
+  "volume" : 157.760302,
+  "quoteAssetVolume" : 1501950.3327,
+  "numberOfTrades" : 3010,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BTCUSD",
+  "openTime" : 1595505600000,
+  "openDate" : null,
+  "closeTime" : 1595548799999,
+  "closeDate" : null,
+  "open" : 9513.28,
+  "high" : 9680.0,
+  "low" : 9459.9,
+  "close" : 9611.77,
+  "volume" : 492.247162,
+  "quoteAssetVolume" : 4705313.2732,
+  "numberOfTrades" : 6049,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BTCUSD",
+  "openTime" : 1595548800000,
+  "openDate" : null,
+  "closeTime" : 1595591999999,
+  "closeDate" : null,
+  "open" : 9614.47,
+  "high" : 9615.47,
+  "low" : 9477.57,
+  "close" : 9541.57,
+  "volume" : 113.751435,
+  "quoteAssetVolume" : 1086979.1295,
+  "numberOfTrades" : 2416,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BTCUSD",
+  "openTime" : 1595592000000,
+  "openDate" : null,
+  "closeTime" : 1595635199999,
+  "closeDate" : null,
+  "open" : 9538.88,
+  "high" : 9649.31,
+  "low" : 9510.98,
+  "close" : 9554.69,
+  "volume" : 445.010038,
+  "quoteAssetVolume" : 4258760.6451,
+  "numberOfTrades" : 15735,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BTCUSD",
+  "openTime" : 1595635200000,
+  "openDate" : null,
+  "closeTime" : 1595678399999,
+  "closeDate" : null,
+  "open" : 9554.69,
+  "high" : 9634.0,
+  "low" : 9541.08,
+  "close" : 9586.9,
+  "volume" : 101.66093,
+  "quoteAssetVolume" : 975199.236,
+  "numberOfTrades" : 3808,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BTCUSD",
+  "openTime" : 1595678400000,
+  "openDate" : null,
+  "closeTime" : 1595721599999,
+  "closeDate" : null,
+  "open" : 9586.91,
+  "high" : 9745.01,
+  "low" : 9573.24,
+  "close" : 9703.09,
+  "volume" : 271.246784,
+  "quoteAssetVolume" : 2621518.3801,
+  "numberOfTrades" : 5260,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BTCUSD",
+  "openTime" : 1595721600000,
+  "openDate" : null,
+  "closeTime" : 1595764799999,
+  "closeDate" : null,
+  "open" : 9712.46,
+  "high" : 10200.0,
+  "low" : 9662.41,
+  "close" : 9979.38,
+  "volume" : 591.149336,
+  "quoteAssetVolume" : 5901035.2716,
+  "numberOfTrades" : 6461,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BTCUSD",
+  "openTime" : 1595764800000,
+  "openDate" : null,
+  "closeTime" : 1595807999999,
+  "closeDate" : null,
+  "open" : 9975.13,
+  "high" : 9997.93,
+  "low" : 9820.01,
+  "close" : 9940.94,
+  "volume" : 243.140778,
+  "quoteAssetVolume" : 2410642.0873,
+  "numberOfTrades" : 5203,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BTCUSD",
+  "openTime" : 1595808000000,
+  "openDate" : null,
+  "closeTime" : 1595851199999,
+  "closeDate" : null,
+  "open" : 9940.94,
+  "high" : 10332.39,
+  "low" : 9936.64,
+  "close" : 10275.91,
+  "volume" : 680.284942,
+  "quoteAssetVolume" : 6924189.6153,
+  "numberOfTrades" : 7875,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BTCUSD",
+  "openTime" : 1595851200000,
+  "openDate" : null,
+  "closeTime" : 1595894399999,
+  "closeDate" : null,
+  "open" : 10274.36,
+  "high" : 11411.56,
+  "low" : 10234.54,
+  "close" : 11043.1,
+  "volume" : 1705.674264,
+  "quoteAssetVolume" : 1.84646870443E7,
+  "numberOfTrades" : 15829,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BTCUSD",
+  "openTime" : 1595894400000,
+  "openDate" : null,
+  "closeTime" : 1595937599999,
+  "closeDate" : null,
+  "open" : 11050.45,
+  "high" : 11264.49,
+  "low" : 10591.04,
+  "close" : 10992.0,
+  "volume" : 777.220597,
+  "quoteAssetVolume" : 8522408.3239,
+  "numberOfTrades" : 8048,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BTCUSD",
+  "openTime" : 1595937600000,
+  "openDate" : null,
+  "closeTime" : 1595980799999,
+  "closeDate" : null,
+  "open" : 10990.66,
+  "high" : 11193.55,
+  "low" : 10866.13,
+  "close" : 10929.06,
+  "volume" : 553.276741,
+  "quoteAssetVolume" : 6090924.8166,
+  "numberOfTrades" : 8929,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BTCUSD",
+  "openTime" : 1595980800000,
+  "openDate" : null,
+  "closeTime" : 1596023999999,
+  "closeDate" : null,
+  "open" : 10930.23,
+  "high" : 11152.55,
+  "low" : 10855.35,
+  "close" : 11104.0,
+  "volume" : 220.050754,
+  "quoteAssetVolume" : 2421503.5556,
+  "numberOfTrades" : 4899,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BTCUSD",
+  "openTime" : 1596024000000,
+  "openDate" : null,
+  "closeTime" : 1596067199999,
+  "closeDate" : null,
+  "open" : 11101.61,
+  "high" : 11342.85,
+  "low" : 11005.0,
+  "close" : 11327.48,
+  "volume" : 336.42406,
+  "quoteAssetVolume" : 3767698.47,
+  "numberOfTrades" : 6015,
+  "rsi" : 0.0
 } ]

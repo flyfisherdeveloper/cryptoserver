@@ -1,0 +1,43 @@
+[ {
+  "symbol" : "BNBBTC",
+  "openTime" : 1595808000000,
+  "openDate" : null,
+  "closeTime" : 1595894399999,
+  "closeDate" : null,
+  "open" : 0.0019686,
+  "high" : 0.0019828,
+  "low" : 0.001725,
+  "close" : 0.0017901,
+  "volume" : 2046107.69,
+  "quoteAssetVolume" : 3784.25403264,
+  "numberOfTrades" : 172181,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BNBBTC",
+  "openTime" : 1595894400000,
+  "openDate" : null,
+  "closeTime" : 1595980799999,
+  "closeDate" : null,
+  "open" : 0.0017911,
+  "high" : 0.0018797,
+  "low" : 0.0017683,
+  "close" : 0.0018498,
+  "volume" : 1371460.74,
+  "quoteAssetVolume" : 2519.17739669,
+  "numberOfTrades" : 118034,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BNBBTC",
+  "openTime" : 1595980800000,
+  "openDate" : null,
+  "closeTime" : 1596067199999,
+  "closeDate" : null,
+  "open" : 0.0018496,
+  "high" : 0.001865,
+  "low" : 0.0017668,
+  "close" : 0.0017767,
+  "volume" : 950340.77,
+  "quoteAssetVolume" : 1721.78348455,
+  "numberOfTrades" : 78648,
+  "rsi" : 0.0
+} ]

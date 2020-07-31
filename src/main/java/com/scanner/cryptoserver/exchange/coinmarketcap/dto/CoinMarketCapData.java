@@ -15,13 +15,11 @@ public class CoinMarketCapData {
     private String description;
     //the market cap value in $USD for the coin
     private Double marketCap;
+    //the volume for the coin in 24 hours in USD
+    private Double volume24HrUsd;
 
     public CoinMarketCapData() {
 
-    }
-
-    public CoinMarketCapData(Integer id) {
-        this.id = id;
     }
 
     /**

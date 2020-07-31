@@ -120,7 +120,7 @@ class BinanceExchangeServiceImplTest extends Specification {
           restTemplate.getForEntity(*_,) >>> [linkedHashMapResponse, exchangeInfoResponse]
           //here, we mock the call to the market cap service that sets the market cap
           //this ensures that the service makes the call to set the market cap
-          coinMarketCapService.setMarketCapAndIdFor24HrData(*_) >> { args ->
+          coinMarketCapService.setMarketCapDataFor24HrData(*_) >> { args ->
               def list = args.get(0) as List<CoinDataFor24Hr>
               list.forEach { it.setMarketCap(marketCap) }
           }
@@ -132,85 +132,38 @@ class BinanceExchangeServiceImplTest extends Specification {
           assert allCoins != null
           if (isCoinValid) {
               assert allCoins.size() == coinList.size()
-              assert allCoins[0].symbol == symbol
-              assert allCoins[0].coin == coin
-              assert allCoins[0].currency == currency
-              assert allCoins[0].priceChange == priceChange as Double
-              assert allCoins[0].priceChangePercent == priceChangePercent as Double
-              assert allCoins[0].lastPrice == lastPrice as Double
-              assert allCoins[0].highPrice == highPrice as Double
-              assert allCoins[0].lowPrice == lowPrice as Double
-              assert allCoins[0].volume == volume as Double
-              assert allCoins[0].quoteVolume == quoteVolume as Double
-              assert allCoins[0].tradeLink
-              assert allCoins[0].marketCap == marketCap
+              assert allCoins[0].getSymbol() == symbol
+              assert allCoins[0].getCoin() == coin
+              assert allCoins[0].getCurrency() == currency
+              assert allCoins[0].getPriceChange() == priceChange as Double
+              assert allCoins[0].getPriceChangePercent() == priceChangePercent as Double
+              assert allCoins[0].getLastPrice() == lastPrice as Double
+              assert allCoins[0].getHighPrice() == highPrice as Double
+              assert allCoins[0].getLowPrice() == lowPrice as Double
+              assert allCoins[0].getVolume() == volume as Double
+              assert allCoins[0].getQuoteVolume() == quoteVolume as Double
+              assert allCoins[0].getTradeLink()
+              assert allCoins[0].getMarketCap() == marketCap
           } else {
               assert allCoins.isEmpty()
           }
 
         where:
-          symbol    | coin  | currency | status    | priceChange | priceChangePercent | lastPrice | highPrice | lowPrice  | volume        | quoteVolume   | marketCap | isCoinValid
-          "LTCUSD"  | "LTC" | "USD"    | "TRADING" | "13.2"      | "1.2"              | "14.3"    | "16.3"    | "11.17"   | "23987.23"    | "54.23"       | 20000.0   | true
-          "BTCBUSD" | "BTC" | "BUSD"   | "TRADING" | "439.18"    | "4.32"             | "8734.56" | "8902.87" | "8651.23" | "88922330.09" | "10180.18"    | 50000.0   | true
-          "BTCUSDT" | "BTC" | "USDT"   | "TRADING" | "439.18"    | "4.32"             | "8734.56" | "8902.87" | "8651.23" | "88922330.09" | "10180.18"    | 50000.0   | true
+          symbol        | coin      | currency | status    | priceChange | priceChangePercent | lastPrice | highPrice | lowPrice  | volume        | quoteVolume   | marketCap | isCoinValid
+          "LTCUSD"      | "LTC"     | "USD"    | "TRADING" | "13.2"      | "1.2"              | "14.3"    | "16.3"    | "11.17"   | "23987.23"    | "54.23"       | 20000.0   | true
+          "BTCBUSD"     | "BTC"     | "BUSD"   | "TRADING" | "439.18"    | "4.32"             | "8734.56" | "8902.87" | "8651.23" | "88922330.09" | "10180.18"    | 50000.0   | true
+          "BTCUSDT"     | "BTC"     | "USDT"   | "TRADING" | "439.18"    | "4.32"             | "8734.56" | "8902.87" | "8651.23" | "88922330.09" | "10180.18"    | 50000.0   | true
           //verify that coins that are not trading (status is "BREAK") do not get returned from the service
-          "BTCUSDT" | "BTC" | "USDT"   | "BREAK"   | "439.18"    | "4.32"             | "8734.56" | "8902.87" | "8651.23" | "88922330.09" | "10180.18"    | 50000.0   | false
+          "BTCUSDT"     | "BTC"     | "USDT"   | "BREAK"   | "439.18"    | "4.32"             | "8734.56" | "8902.87" | "8651.23" | "88922330.09" | "10180.18"    | 50000.0   | false
           //verify that non-USA currencies (EUR) do not get returned from the service
-          "BTCEUR"  | "BTC" | "EUR"    | "TRADING" | "439.18"    | "4.32"             | "8823.22" | "8734.56" | "8902.87" | "8651.23"     | "88922330.09" | 50000.0   | false
+          "BTCEUR"      | "BTC"     | "EUR"    | "TRADING" | "439.18"    | "4.32"             | "8823.22" | "8734.56" | "8902.87" | "8651.23"     | "88922330.09" | 50000.0   | false
           //verify that leveraged tokens do not get returned from the service
-          "XRPBEAR" | "XRP" | "USD"    | "TRADING" | "439.18"    | "4.32"             | "0.25"    | "0.28"    | "0.21"    | "8651.23"     | "88922330.09" | 10000.0   | false
-          "XRPBULL" | "XRP" | "USD"    | "TRADING" | "439.18"    | "4.32"             | "0.25"    | "0.28"    | "0.21"    | "8651.23"     | "88922330.09" | 10000.0   | false
+          "XRPBEAR"     | "XRP"     | "USD"    | "TRADING" | "439.18"    | "4.32"             | "0.25"    | "0.28"    | "0.21"    | "8651.23"     | "88922330.09" | 10000.0   | false
+          "XRPBULL"     | "XRP"     | "USD"    | "TRADING" | "439.18"    | "4.32"             | "0.25"    | "0.28"    | "0.21"    | "8651.23"     | "88922330.09" | 10000.0   | false
+          "ADADOWNUSDT" | "ADADOWN" | "USDT"   | "TRADING" | "23.18"     | "5.32"             | "22.23"   | "35.28"   | "17.21"   | "765.90"      | "789923.09"   | 10000.0   | false
+          "ADAUPUSDT"   | "ADAUP"   | "USDT"   | "TRADING" | "33.19"     | "2.12"             | "35.29"   | "36.28"   | "18.21"   | "768.23"      | "789923.09"   | 10000.0   | false
           //verify that the service handles the case of no data being returned
-          null      | null  | null     | null      | null        | null               | null      | null      | null      | null          | null          | null      | false
-    }
-
-    @Unroll("Test that when volume changes from #volume1 to #volume2 that the volume percent change is #percentChange")
-    def "test getPercentChange"() {
-        when:
-          def change = service.getPercentChange(volume1, volume2)
-
-        then:
-          assert change == percentChange
-
-        where:
-          volume1 | volume2 | percentChange
-          10.0    | 20.0    | 100.0
-          10.0    | 5.0     | -50.0
-    }
-
-    @Unroll("Test that when #symbol volume changes from #quoteVolumePrevious to #quoteVolueNew that the expected volume percent change is #expectedVolumePercentChange%")
-    def "test add24HrVolumeChange"() {
-        given:
-          def now = LocalDateTime.now()
-          def closeTime1 = now.minusDays(1).minusHours(1)
-
-          def coin = new CoinDataFor24Hr()
-          coin.setSymbol(symbol)
-          def coinList = [coin]
-
-          //The zeroes are just filler data - not needed for the test, but are necessary for the test to complete.
-          def coinDataList1 = [0L, "0.0", "0.0", "0.0", "0.0", "0.0", closeTime1.toInstant(ZoneOffset.UTC).toEpochMilli(), quoteVolumePrevious.toString(), 0]
-          def coinDataList2 = [0L, "0.0", "0.0", "0.0", "0.0", "0.0", now.toInstant(ZoneOffset.UTC).toEpochMilli(), quoteVolueNew.toString(), 0]
-
-          def coinData = new Object[2]
-          coinData[0] = coinDataList1
-          coinData[1] = coinDataList2
-          def response = ResponseEntity.of(Optional.of(coinData)) as ResponseEntity<Object[]>
-
-        when: "mocks are called"
-          restTemplate.getForEntity(*_) >> response
-          response.getBody() >> coinData
-
-        then: "the service is called"
-          service.add24HrVolumeChange(coinList)
-
-        expect:
-          assert coinList[0].getVolumeChangePercent() == expectedVolumePercentChange
-
-        where:
-          symbol   | quoteVolueNew | quoteVolumePrevious | expectedVolumePercentChange
-          "BTCUSD" | 20.0          | 10.0                | 100.0
-          "LTCUSD" | 10.0          | 20.0                | -50.0
+          null          | null      | null     | null      | null        | null               | null      | null      | null      | null          | null          | null      | false
     }
 
     @Unroll("Test call of coin ticker for #symbol for #interval and #daysOrMonths")
@@ -382,15 +335,15 @@ class BinanceExchangeServiceImplTest extends Specification {
           assert info
           assert info.getSymbols()
 
-          def coinBtc = info.getSymbols().find { it.symbol == symbolBtc }
+          def coinBtc = info.getSymbols().find { it.getSymbol() == symbolBtc }
           assert coinBtc
-          assert coinBtc.id == idBtc
-          assert coinBtc.marketCap == marketCapBtc
+          assert coinBtc.getId() == idBtc
+          assert coinBtc.getMarketCap() == marketCapBtc
 
-          def coinLtc = info.getSymbols().find { it.symbol == symbolLtc }
+          def coinLtc = info.getSymbols().find { it.getSymbol() == symbolLtc }
           assert coinLtc
-          assert coinLtc.id == idLtc
-          assert coinLtc.marketCap == marketCapLtc
+          assert coinLtc.getId() == idLtc
+          assert coinLtc.getMarketCap() == marketCapLtc
     }
 
     @Unroll("test that #symbol has #expectedCoin for coin")

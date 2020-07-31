@@ -19,6 +19,7 @@ import java.util.function.Supplier
 @Service(value = "bittrexService")
 class BittrexServiceImpl(private val cacheUtil: CacheUtil, private val coinMarketCapService: CoinMarketCapService, private val urlReader: UrlReader) : ExchangeService {
     private val Log = LoggerFactory.getLogger(BittrexServiceImpl::class.java)
+    private val nonUsaMarkets = listOf("EUR")
     private val EXCHANGE_NAME = "bittrex"
     private val ALL_24_HR_TICKER = "All24HourTicker"
     private val ALL_MARKET_TICKERS = "AllMarketTickers"
@@ -43,7 +44,7 @@ class BittrexServiceImpl(private val cacheUtil: CacheUtil, private val coinMarke
         var coins = getCoinDataFor24Hour()
         //we need to make another api call to get the "current price", which is "lastTradeRate" in the json
         val tickers = getTickersFromCache()
-        coinMarketCapService.setMarketCapAndIdFor24HrData(coins)
+        coinMarketCapService.setMarketCapDataFor24HrData(coins)
         //exclude coins that don't have a market cap - they are probably old coins that the exchange doesn't support anymore
         coins = coins.filter { it.marketCap > 0.0 }
         coins.forEach {
@@ -63,7 +64,9 @@ class BittrexServiceImpl(private val cacheUtil: CacheUtil, private val coinMarke
     fun getCoinDataFor24Hour(): List<CoinDataFor24Hr> {
         val cacheName = "$EXCHANGE_NAME-$ALL_24_HR_TICKER"
         val markets = cacheUtil.retrieveFromCache(cacheName, ALL_MARKET_TICKERS) { getMarkets() }
-        return markets.map { it.coinDataAdapter() }
+        //remove currency markets that are not USA-based, such as the Euro ("EUR")
+        val coins = markets.map { it.coinDataAdapter() }
+        return coins.filter { !nonUsaMarkets.contains(it.currency) }
     }
 
     private fun getMarkets(): List<Bittrex24HrData> {
@@ -98,6 +101,8 @@ class BittrexServiceImpl(private val cacheUtil: CacheUtil, private val coinMarke
         val exchangeInfo = ExchangeInfo()
         //put the symbols in an exchange info object, to be consistent with all the exchange info from other exchanges
         exchangeInfo.symbols = symbolList
+        //remove currency markets that are not USA-based, such as the Euro ("EUR")
+        exchangeInfo.symbols.removeIf { nonUsaMarkets.contains(it.quoteAsset) }
         //put the Bittrex exchange info in the cache
         val name = "$EXCHANGE_NAME-$EXCHANGE_INFO"
         cacheUtil.putInCache(EXCHANGE_INFO, name, exchangeInfo)

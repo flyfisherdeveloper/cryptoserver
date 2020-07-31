@@ -77,16 +77,16 @@ public class CoinMarketCapService {
         return listing;
     }
 
-    public void setMarketCapAndIdFor24HrData(List<CoinDataFor24Hr> data) {
+    public void setMarketCapDataFor24HrData(List<CoinDataFor24Hr> data) {
         CoinMarketCapListing coinMarketCap = getCoinMarketCapListing();
         //If the coin market cap data exists, then update each symbol with the market cap value found in the maket cap data.
         if (coinMarketCap != null) {
-            data.forEach(d -> d.addMarketCapAndId(coinMarketCap));
+            data.forEach(d -> d.addMarketCapData(coinMarketCap));
         }
     }
 
-    public void setMarketCapAndIdFor24HrData(CoinDataFor24Hr coin) {
-        setMarketCapAndIdFor24HrData(Collections.singletonList(coin));
+    public void setMarketCapDataFor24HrData(CoinDataFor24Hr coin) {
+        setMarketCapDataFor24HrData(Collections.singletonList(coin));
     }
 
     public CoinMarketCapListing getCoinMarketCapListing(Set<Integer> idSet) {
@@ -152,12 +152,15 @@ public class CoinMarketCapService {
             JsonNode usdNode = quoteNode.get("USD");
             JsonNode marketCapNode = usdNode.get("market_cap");
             double marketCap = marketCapNode.asDouble();
+            JsonNode volume24HrNode = usdNode.get("volume_24h");
+            double volume24HrUsd = volume24HrNode.asDouble();
 
             CoinMarketCapData d = new CoinMarketCapData();
             d.setId(id);
             d.setName(name);
             d.setSymbol(symbol);
             d.setMarketCap(marketCap);
+            d.setVolume24HrUsd(volume24HrUsd);
             list.add(d);
         });
         return list;

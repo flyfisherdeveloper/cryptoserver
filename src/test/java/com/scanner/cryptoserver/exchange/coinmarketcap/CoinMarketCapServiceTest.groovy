@@ -81,7 +81,8 @@ class CoinMarketCapServiceTest extends Specification {
               def btc = listing.getData().get(1)
               assert btc.getSymbol() == "BTC"
               assert btc.getName() == "Bitcoin"
-              assert btc.getMarketCap() == 10000000.35;
+              assert btc.getMarketCap() == 10000.35;
+              assert btc.getVolume24HrUsd() == 50000.7804
           }
 
         where:
@@ -123,17 +124,21 @@ class CoinMarketCapServiceTest extends Specification {
 
     }
 
-    def "test setMarketCapAndIdFor24HrData"() {
+    def "test setMarketCapDataFor24HrData"() {
         given:
           def exchangeNameList = ["binance", "binanceUsa"]
           def exchangeInfo = new ExchangeInfo(symbols: [new Symbol(baseAsset: "BTC"), new Symbol(baseAsset: "ETH")])
 
           def listing = new CoinMarketCapListing()
           def btcCap = 121000000
-          def data1 = new CoinMarketCapData(name: "BTC", marketCap: btcCap, symbol: "BTCUSD", id: 1)
+          def btcAllCap = 500000000
+          def data1 = new CoinMarketCapData(name: "BTC", marketCap: btcCap, symbol: "BTCUSD", id: 1, volume24HrUsd: btcAllCap)
 
           def ethCap = 22000000
-          def data2 = new CoinMarketCapData(name: "ETH", marketCap: ethCap, symbol: "ETHUSD", id: 2)
+          def ethAllCap = 4000000.8923
+          //the service will format the numbers to two decimal places - test this
+          def ethAllCapFormatted = 4000000.89
+          def data2 = new CoinMarketCapData(name: "ETH", marketCap: ethCap, symbol: "ETHUSD", id: 2, volume24HrUsd: ethAllCap)
           def data = [:] as Map<String, CoinMarketCapData>
           data.put(data1.getName(), data1)
           data.put(data2.getName(), data2)
@@ -149,11 +154,17 @@ class CoinMarketCapServiceTest extends Specification {
           cacheUtil.retrieveFromCache("CoinMarketCap", _, _) >> listing
 
         then:
-          service.setMarketCapAndIdFor24HrData(coinList)
+          service.setMarketCapDataFor24HrData(coinList)
 
         expect:
-          data.get("BTC").getMarketCap() == btcCap
-          data.get("ETH").getMarketCap() == ethCap
+          def btcCoin = coinList.find { it -> it.getCoin() == "BTC" }
+          assert btcCoin.getMarketCap() == btcCap
+          assert btcCoin.getVolume24HrUsd() == btcAllCap
+
+          def ethCoin = coinList.find { it -> it.getCoin() == "ETH" }
+          assert ethCoin.getMarketCap() == ethCap
+          //make sure the number is formatted to two decimal places
+          assert ethCoin.getVolume24HrUsd() == ethAllCapFormatted
     }
 
     def getJson() {
@@ -167,7 +178,8 @@ class CoinMarketCapServiceTest extends Specification {
                 "\"logo\": \"http://mockPathToLogo.com\",\n" +
                 "\"quote\": {\n" +
                 "\"USD\": {\n" +
-                "\"market_cap\": 10000000.35\n" +
+                "\"market_cap\": 10000.35,\n" +
+                "\"volume_24h\": 50000.7804\n" +
                 "}\n" +
                 "}\n" +
                 "}\n" +

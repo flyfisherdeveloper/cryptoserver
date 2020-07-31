@@ -36,7 +36,7 @@ public abstract class AbstractBinanceExchangeService implements ExchangeService 
     private static final int ALL_24_HOUR_MAX_COUNT = 6;
     private static final int ALL_24_HOUR_DELAY = 151;
     private static final String TRADING = "TRADING";
-    private static final List<String> nonUsaMarkets = Arrays.asList("NGN", "RUB", "TRY", "EUR", "ZAR", "BKRW", "IDRT");
+    private static final List<String> nonUsaMarkets = Arrays.asList("NGN", "RUB", "TRY", "EUR", "ZAR", "BKRW", "IDRT", "UAH", "BIDR", "GBP", "AUD");
 
     private final RestOperations restTemplate;
     private final CoinMarketCapService coinMarketCapService;
@@ -96,7 +96,6 @@ public abstract class AbstractBinanceExchangeService implements ExchangeService 
         ExchangeInfo exchangeInfo = retrieveExchangeInfoFromCache();
         //remove currency markets that are not USA-based, such as the Euro ("EUR")
         exchangeInfo.getSymbols().removeIf(s -> nonUsaMarkets.contains(s.getQuoteAsset()));
-        //Attempt to retrieve the latest coin market cap data to get the market cap for each coin.
         return exchangeInfo;
     }
 
@@ -120,7 +119,7 @@ public abstract class AbstractBinanceExchangeService implements ExchangeService 
             return new CoinDataFor24Hr();
         }
         CoinDataFor24Hr coin = get24HrCoinTicker(body);
-        coinMarketCapService.setMarketCapAndIdFor24HrData(coin);
+        coinMarketCapService.setMarketCapDataFor24HrData(coin);
         return coin;
     }
 
@@ -204,7 +203,7 @@ public abstract class AbstractBinanceExchangeService implements ExchangeService 
     }
 
     /**
-     * Returns true if the symbol is a leveraged token, such as ETHBULL.
+     * Returns true if the symbol is a leveraged token, such as ETHBULL or ETHDOWN.
      * A leveraged token is a trading pair based on a regular coin (such as ETH), but is subject
      * to leveraged trading, and is not an ordinary coin. Therefore, we don't return these to the
      * client. Unfortunately, it appears there isn't anything definitive from the exchange api
@@ -217,7 +216,7 @@ public abstract class AbstractBinanceExchangeService implements ExchangeService 
      * @return true if the symbol represents a leveraged token; false otherwise.
      */
     private boolean isLeveragedToken(String symbol) {
-        return symbol.contains("BULL") || symbol.contains("BEAR");
+        return symbol.endsWith("DOWN") || symbol.endsWith("UP") || symbol.contains("BULL") || symbol.contains("BEAR");
     }
 
     private boolean isCoinInUsaMarket(String currency) {
@@ -229,7 +228,7 @@ public abstract class AbstractBinanceExchangeService implements ExchangeService 
         String symbol = (String) map.get("symbol");
         String coin = getCoin(symbol);
         String currency = getQuote(symbol);
-        if (!isCoinTrading(symbol) || !isCoinInUsaMarket(currency) || isLeveragedToken(symbol)) {
+        if (!isCoinTrading(symbol) || !isCoinInUsaMarket(currency) || isLeveragedToken(symbol) || isLeveragedToken(coin)) {
             return null;
         }
 
@@ -452,54 +451,6 @@ public abstract class AbstractBinanceExchangeService implements ExchangeService 
         //todo
     }
 
-    public Double getPercentChange(double fromValue, double toValue) {
-        double change = toValue - fromValue;
-        return (change / fromValue) * 100.0;
-    }
-
-    //Put the start and end times in an array - from time first, to time second.
-    //Essentially this a "Tuple" or a "Pair", but is simple enough to just use a simple array of two longs.
-    private long[] getStartAndEndTime(int minusHours, int minusMinutes) {
-        Instant now = Instant.now();
-        Instant to = now.minus(minusMinutes, ChronoUnit.MINUTES);
-        Instant from = to.minus(minusHours, ChronoUnit.HOURS);
-        long fromTime = from.toEpochMilli();
-        long toTime = to.toEpochMilli();
-        return new long[]{fromTime, toTime};
-    }
-
-    public void add24HrVolumeChange(List<CoinDataFor24Hr> data) {
-        List<String> coins = data.stream().map(CoinDataFor24Hr::getSymbol).collect(Collectors.toList());
-
-        //the api does not give volume percent change information for intervals
-        //so... a workaround:
-        //here, we go back 2 days and get volume info in 15-minute intervals
-        //then, we calculate the total volume of day 1 and compare to day 2 to get a percent volume change
-        //note: this is for volume change percentage in days; todo: modify for ANY interval, not just days
-        coins.parallelStream().forEach(coin -> {
-            long[] startAndEndTime = getStartAndEndTime(48, 15);
-            //get all the data for 15-min intervals going back 2 days
-            List<CoinTicker> coinTickers = callCoinTicker(coin, "15m", startAndEndTime[0], startAndEndTime[1]);
-            //sort by close time
-            coinTickers = coinTickers.stream().sorted(Comparator.comparingLong(CoinTicker::getCloseTime)).collect(Collectors.toList());
-            //now compute the volumes for day 1 and day 2
-            startAndEndTime = getStartAndEndTime(24, 0);
-            long startTime = startAndEndTime[0];
-            //volume for day 1
-            double prevDayVolume = coinTickers.stream().filter(ticker -> ticker.getCloseTime() <= startTime).map(CoinTicker::getQuoteAssetVolume).mapToDouble(vol -> vol).sum();
-            //volume for day 2
-            double newDayVolume = coinTickers.stream().filter(ticker -> ticker.getCloseTime() > startTime).map(CoinTicker::getQuoteAssetVolume).mapToDouble(vol -> vol).sum();
-            //if volume is 0.0 then the data is missing (such as a brand new coin with only one day of data)
-            if (prevDayVolume != 0.0) {
-                double percentChange = getPercentChange(prevDayVolume, newDayVolume);
-                CoinDataFor24Hr coinDataFor24Hr = data.stream().filter(d -> d.getSymbol().equals(coin)).findFirst().orElse(new CoinDataFor24Hr());
-                NumberFormat nf = new DecimalFormat("##.##");
-                percentChange = Double.parseDouble(nf.format(percentChange));
-                coinDataFor24Hr.setVolumeChangePercent(percentChange);
-            }
-        });
-    }
-
     //The cache keeps data as defined in the Cache config. When the data in the cache expires, the call
     //to extract new data will take place here. This will suffice for now, as the solution is new,
     //but if the solution and website ever grows, a new solution will be needed. We would need to create a running
@@ -549,14 +500,8 @@ public abstract class AbstractBinanceExchangeService implements ExchangeService 
                 list.add(coin);
             }
         }
-        //todo: Binance has MANY coin pairs - this 24HrVolumeChange calls the api too many times and gets rejected
-        //(eventually - too many calls will lead to the api blacklisting the i.p. address calling it)
-        //don't call this in that case
-        if (getAdd24HrVolume()) {
-            add24HrVolumeChange(list);
-        }
 
-        coinMarketCapService.setMarketCapAndIdFor24HrData(list);
+        coinMarketCapService.setMarketCapDataFor24HrData(list);
         //since this is the first time (in awhile) we have called the exchange info,
         //start threads to update every minute for 15 minutes - this way the client gets
         //updated 24-hour data every minute
@@ -608,8 +553,6 @@ public abstract class AbstractBinanceExchangeService implements ExchangeService 
     protected abstract UrlExtractor getUrlExtractor();
 
     public abstract String getExchangeName();
-
-    protected abstract boolean getAdd24HrVolume();
 
     protected abstract int getAll24HourTickerCount();
 
