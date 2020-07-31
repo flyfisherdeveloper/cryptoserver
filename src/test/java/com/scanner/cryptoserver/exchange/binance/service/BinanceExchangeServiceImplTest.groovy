@@ -132,18 +132,18 @@ class BinanceExchangeServiceImplTest extends Specification {
           assert allCoins != null
           if (isCoinValid) {
               assert allCoins.size() == coinList.size()
-              assert allCoins[0].symbol == symbol
-              assert allCoins[0].coin == coin
-              assert allCoins[0].currency == currency
-              assert allCoins[0].priceChange == priceChange as Double
-              assert allCoins[0].priceChangePercent == priceChangePercent as Double
-              assert allCoins[0].lastPrice == lastPrice as Double
-              assert allCoins[0].highPrice == highPrice as Double
-              assert allCoins[0].lowPrice == lowPrice as Double
-              assert allCoins[0].volume == volume as Double
-              assert allCoins[0].quoteVolume == quoteVolume as Double
-              assert allCoins[0].tradeLink
-              assert allCoins[0].marketCap == marketCap
+              assert allCoins[0].getSymbol() == symbol
+              assert allCoins[0].getCoin() == coin
+              assert allCoins[0].getCurrency() == currency
+              assert allCoins[0].getPriceChange() == priceChange as Double
+              assert allCoins[0].getPriceChangePercent() == priceChangePercent as Double
+              assert allCoins[0].getLastPrice() == lastPrice as Double
+              assert allCoins[0].getHighPrice() == highPrice as Double
+              assert allCoins[0].getLowPrice() == lowPrice as Double
+              assert allCoins[0].getVolume() == volume as Double
+              assert allCoins[0].getQuoteVolume() == quoteVolume as Double
+              assert allCoins[0].getTradeLink()
+              assert allCoins[0].getMarketCap() == marketCap
           } else {
               assert allCoins.isEmpty()
           }
@@ -335,15 +335,15 @@ class BinanceExchangeServiceImplTest extends Specification {
           assert info
           assert info.getSymbols()
 
-          def coinBtc = info.getSymbols().find { it.symbol == symbolBtc }
+          def coinBtc = info.getSymbols().find { it.getSymbol() == symbolBtc }
           assert coinBtc
-          assert coinBtc.id == idBtc
-          assert coinBtc.marketCap == marketCapBtc
+          assert coinBtc.getId() == idBtc
+          assert coinBtc.getMarketCap() == marketCapBtc
 
-          def coinLtc = info.getSymbols().find { it.symbol == symbolLtc }
+          def coinLtc = info.getSymbols().find { it.getSymbol() == symbolLtc }
           assert coinLtc
-          assert coinLtc.id == idLtc
-          assert coinLtc.marketCap == marketCapLtc
+          assert coinLtc.getId() == idLtc
+          assert coinLtc.getMarketCap() == marketCapLtc
     }
 
     @Unroll("test that #symbol has #expectedCoin for coin")
