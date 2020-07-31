@@ -39,7 +39,7 @@ class BittrexServiceImplTest extends Specification {
           def btc = markets.find { it.symbol == "BTC-USD" }
           assert btc
           //getting the value from the json
-          assert btc.volume == 1120.23
+          assert btc.getVolume() == 1120.23
     }
 
     def "test getCoinDataFor24Hour using mock removes 'EUR' market coins"() {
@@ -62,12 +62,12 @@ class BittrexServiceImplTest extends Specification {
 
         expect:
           assert markets
-          def btc = markets.find { it.symbol == btcUsd }
+          def btc = markets.find { it.getSymbol() == btcUsd }
           assert btc
-          assert btc.highPrice == btcUsdHigh
+          assert btc.getHighPrice() == btcUsdHigh
 
           //test that the EUR markets are eliminated
-          def eth = markets.find { it.symbol == ethEur }
+          def eth = markets.find { it.getSymbol() == ethEur }
           assert !eth
     }
 
@@ -88,7 +88,7 @@ class BittrexServiceImplTest extends Specification {
 
         expect:
           assert coin
-          assert coin.symbol == symbol
+          assert coin.getSymbol() == symbol
     }
 
     def "test get24HrAllCoinTicker"() {
@@ -114,7 +114,7 @@ class BittrexServiceImplTest extends Specification {
           def btc = coins.find { it.symbol == "BTC-USD" }
           assert btc
           //getting the value from the json - "lastTradeRate" is converted to "lastPrice"
-          assert btc.lastPrice == 9834.33
+          assert btc.getLastPrice() == 9834.33
 
           //note: the full trade link is null in the service for a unit test, but the service adds the symbol
           //to the end of the trade link with the currency-coin pair
@@ -143,20 +143,20 @@ class BittrexServiceImplTest extends Specification {
           assert exchangeInfo.getSymbols()
           assert exchangeInfo.getSymbols().size() == marketList.size() - 1
 
-          def btc = exchangeInfo.getSymbols().find { it.symbol == symbolBtc }
+          def btc = exchangeInfo.getSymbols().find { it.getSymbol() == symbolBtc }
           assert btc
-          assert btc.symbol == symbolBtc
-          assert btc.quoteAsset == "USD"
-          assert btc.baseAsset == "BTC"
+          assert btc.getSymbol() == symbolBtc
+          assert btc.getQuoteAsset() == "USD"
+          assert btc.getBaseAsset() == "BTC"
 
-          def eth = exchangeInfo.getSymbols().find { it.symbol == symbolEth }
+          def eth = exchangeInfo.getSymbols().find { it.getSymbol() == symbolEth }
           assert eth
-          assert eth.symbol == symbolEth
-          assert eth.quoteAsset == "USD"
-          assert eth.baseAsset == "ETH"
+          assert eth.getSymbol() == symbolEth
+          assert eth.getQuoteAsset() == "USD"
+          assert eth.getBaseAsset() == "ETH"
 
           //ensure that European markets don't get returned
-          def ethEur = exchangeInfo.getSymbols().find { it.symbol == symbolEthEur }
+          def ethEur = exchangeInfo.getSymbols().find { it.getSymbol() == symbolEthEur }
           assert !ethEur
     }
 
