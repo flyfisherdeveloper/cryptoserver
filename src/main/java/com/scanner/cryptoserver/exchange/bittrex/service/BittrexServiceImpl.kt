@@ -64,7 +64,9 @@ class BittrexServiceImpl(private val cacheUtil: CacheUtil, private val coinMarke
     fun getCoinDataFor24Hour(): List<CoinDataFor24Hr> {
         val cacheName = "$EXCHANGE_NAME-$ALL_24_HR_TICKER"
         val markets = cacheUtil.retrieveFromCache(cacheName, ALL_MARKET_TICKERS) { getMarkets() }
-        return markets.map { it.coinDataAdapter() }
+        //remove currency markets that are not USA-based, such as the Euro ("EUR")
+        val coins = markets.map { it.coinDataAdapter() }
+        return coins.filter { !nonUsaMarkets.contains(it.currency) }
     }
 
     private fun getMarkets(): List<Bittrex24HrData> {

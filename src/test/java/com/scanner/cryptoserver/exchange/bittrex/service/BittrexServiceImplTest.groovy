@@ -22,7 +22,7 @@ class BittrexServiceImplTest extends Specification {
         service = new BittrexServiceImpl(cacheUtil, coinMarketCapService, urlReader)
     }
 
-    def "test getCoinDataFor24Hour"() {
+    def "test getCoinDataFor24Hour using json supplier"() {
         when:
           urlReader.readFromUrl() >> getMarketsJson()
           //here, we mock the cache util, and use the supplier passed in as an argument
@@ -40,6 +40,35 @@ class BittrexServiceImplTest extends Specification {
           assert btc
           //getting the value from the json
           assert btc.volume == 1120.23
+    }
+
+    def "test getCoinDataFor24Hour using mock removes 'EUR' market coins"() {
+        given:
+          def btcUsd = "BTC-USD"
+          def btcUsdHigh = 8023.45
+
+          def ethEur = "BTC-EUR"
+          def ethEurHigh = 387.21
+
+          def bittrexList = [new Bittrex24HrData(symbol: btcUsd, high: btcUsdHigh), new Bittrex24HrData(symbol: ethEur, high: ethEurHigh)]
+
+        when:
+          urlReader.readFromUrl() >> getMarketsJson()
+          //mock the cache util, ignoring the json supplier in the service
+          cacheUtil.retrieveFromCache(*_) >> bittrexList
+
+        then:
+          def markets = service.getCoinDataFor24Hour()
+
+        expect:
+          assert markets
+          def btc = markets.find { it.symbol == btcUsd }
+          assert btc
+          assert btc.highPrice == btcUsdHigh
+
+          //test that the EUR markets are eliminated
+          def eth = markets.find { it.symbol == ethEur }
+          assert !eth
     }
 
     def "test get24HourCoinData"() {
