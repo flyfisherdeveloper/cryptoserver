@@ -97,8 +97,13 @@ public abstract class AbstractSandboxExchangeService implements ExchangeService 
 
     @Override
     public void setRsiForTickers(List<CoinTicker> tickers, int periodLength) {
-        RsiCalc rsi = new RsiCalc(periodLength);
+        RsiCalc rsi = new RsiCalc();
         rsi.calculateRsiForTickers(tickers, periodLength);
+    }
+
+    @Override
+    public List<CoinTicker> getRsiTickerData(List<String> symbols) {
+        return getDataList(getDataName("rsiTickers"), CoinTicker.class);
     }
 
     protected String getDataName(String name) {

@@ -31,5 +31,7 @@ public interface ExchangeService {
     List<CoinTicker> getTickerData(String symbol, String interval, String daysOrMonths);
 
     void setRsiForTickers(List<CoinTicker> tickers, int periodLength);
+
+    List<CoinTicker> getRsiTickerData(List<String> symbols);
 }
 

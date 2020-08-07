@@ -6,10 +6,10 @@ import java.util.*
 /**
  * Class used to calculate the relative strength for a list of tickers.
  */
-class RsiCalc(private val periodLength: Int) {
+class RsiCalc() {
     private val avgList: Stack<Averages> = Stack()
 
-    private fun calculate(prices: List<CoinTicker>): Double {
+    private fun calculate(prices: List<CoinTicker>, periodLength: Int): Double {
         var value: Double
         val pricesSize = prices.size
         val lastPrice = pricesSize - 1
@@ -49,7 +49,7 @@ class RsiCalc(private val periodLength: Int) {
         var index = prices.size - 1
         while (index - periodLength >= 0) {
             val subList = prices.subList(0, index + 1)
-            val rsi = calculate(subList)
+            val rsi = calculate(subList, periodLength)
             prices[index].rsi = rsi
             index--
         }

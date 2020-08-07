@@ -3,6 +3,7 @@ package com.scanner.cryptoserver.exchange.binance.controller;
 import com.scanner.cryptoserver.exchange.binance.dto.CoinDataFor24Hr;
 import com.scanner.cryptoserver.exchange.binance.dto.CoinTicker;
 import com.scanner.cryptoserver.exchange.coinmarketcap.dto.ExchangeInfo;
+import com.scanner.cryptoserver.util.SandboxUtil;
 import com.scanner.cryptoserver.util.dto.Symbol;
 import com.scanner.cryptoserver.exchange.service.ExchangeService;
 import org.springframework.http.MediaType;
@@ -66,6 +67,12 @@ public class SandboxBinanceUsaExchangeController {
     @GetMapping(value = "/DayTicker/{symbol}/{interval}/{daysOrMonths}", produces = MediaType.APPLICATION_JSON_VALUE)
     public List<CoinTicker> getDayTicker(@PathVariable String symbol, @PathVariable String interval, @PathVariable String daysOrMonths) {
         List<CoinTicker> data = sandboxBinanceUsaService.getTickerData(symbol, interval, daysOrMonths);
+        return data;
+    }
+
+    @GetMapping(value = "/RsiTicker/{symbols}", produces = MediaType.APPLICATION_JSON_VALUE)
+    public List<CoinTicker> getRsiTickers(@PathVariable List<String> symbols) {
+        List<CoinTicker> data = sandboxBinanceUsaService.getRsiTickerData(symbols);
         return data;
     }
 }

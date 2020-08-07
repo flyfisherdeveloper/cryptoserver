@@ -1,6 +1,7 @@
 package com.scanner.cryptoserver.exchange.bittrex.service
 
 import com.scanner.cryptoserver.exchange.binance.dto.CoinDataFor24Hr
+import com.scanner.cryptoserver.exchange.binance.dto.CoinTicker
 import com.scanner.cryptoserver.exchange.coinmarketcap.dto.ExchangeInfo
 import com.scanner.cryptoserver.exchange.service.AbstractSandboxExchangeService
 import com.scanner.cryptoserver.util.SandboxUtil
@@ -24,5 +25,9 @@ class SandboxBittrexExchangeService(sandboxUtil: SandboxUtil) : AbstractSandboxE
 
     override fun get24HrAllCoinTicker(): List<CoinDataFor24Hr> {
         return getDataList<CoinDataFor24Hr>(getDataName("24HourTicker"), CoinDataFor24Hr::class.java)
+    }
+
+    override fun getRsiTickerData(symbols: MutableList<String>?): MutableList<CoinTicker> {
+        TODO("Not yet implemented")
     }
 }

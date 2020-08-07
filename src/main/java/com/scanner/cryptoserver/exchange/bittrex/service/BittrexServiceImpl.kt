@@ -92,6 +92,10 @@ class BittrexServiceImpl(private val cacheUtil: CacheUtil, private val coinMarke
         return getCoinDataFor24Hour().find { it.symbol == symbol }!!
     }
 
+    override fun getRsiTickerData(symbols: MutableList<String>?): MutableList<CoinTicker> {
+        TODO("Not yet implemented")
+    }
+
     override fun getExchangeInfo(): ExchangeInfo {
         val cacheName = "$EXCHANGE_NAME-$ALL_MARKETS"
         //get the markets from the Bittrex API
