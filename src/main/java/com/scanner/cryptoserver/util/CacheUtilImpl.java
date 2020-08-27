@@ -51,7 +51,13 @@ public class CacheUtilImpl implements CacheUtil {
         return cacheObj;
     }
 
-    //jeff comments?
+    /**
+     * Convenience method to get exchange info out of the cache manager.
+     *
+     * @param cacheName The name of the container in the cache manager.
+     * @param valueName The name of the value wrapper in the container in the cache manager.
+     * @return The element in the cache.
+     */
     @Override
     public ExchangeInfo retrieveExchangeInfoFromCache(String cacheName, String valueName) {
         return retrieveFromCache(cacheName, valueName, exchangeInfoSuppliersMap.get(cacheName));
