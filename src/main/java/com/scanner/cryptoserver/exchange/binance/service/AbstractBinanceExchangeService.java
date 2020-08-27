@@ -49,6 +49,15 @@ public abstract class AbstractBinanceExchangeService implements ExchangeService 
         this.cacheUtil = cacheUtil;
     }
 
+    @Override
+    public Supplier<ExchangeInfo> getExchangeInfoSupplier() {
+        return () -> {
+            ResponseEntity<ExchangeInfo> response = restTemplate.getForEntity(getUrlExtractor().getExchangeInfoUrl(), ExchangeInfo.class);
+            ExchangeInfo info = response.getBody();
+            return info;
+        };
+    }
+
     /**
      * Get exchange information. Gets the information out of the cache if in there.
      *
@@ -57,12 +66,7 @@ public abstract class AbstractBinanceExchangeService implements ExchangeService 
     @Override
     public ExchangeInfo retrieveExchangeInfoFromCache() {
         String name = getExchangeName() + "-" + EXCHANGE_INFO;
-        Supplier<ExchangeInfo> exchangeInfoSupplier = () -> {
-            ResponseEntity<ExchangeInfo> response = restTemplate.getForEntity(getUrlExtractor().getExchangeInfoUrl(), ExchangeInfo.class);
-            ExchangeInfo info = response.getBody();
-            return info;
-        };
-        ExchangeInfo exchangeInfo = cacheUtil.retrieveFromCache(EXCHANGE_INFO, name, exchangeInfoSupplier);
+        ExchangeInfo exchangeInfo = cacheUtil.retrieveFromCache(EXCHANGE_INFO, name, getExchangeInfoSupplier());
         return exchangeInfo;
     }
 

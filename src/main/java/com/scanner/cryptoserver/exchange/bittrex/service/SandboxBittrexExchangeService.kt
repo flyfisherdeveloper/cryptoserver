@@ -6,6 +6,7 @@ import com.scanner.cryptoserver.exchange.coinmarketcap.dto.ExchangeInfo
 import com.scanner.cryptoserver.exchange.service.AbstractSandboxExchangeService
 import com.scanner.cryptoserver.util.SandboxUtil
 import org.springframework.stereotype.Service
+import java.util.function.Supplier
 
 /**
  * The purpose of a Sandbox exchange is to return data for an exchange but without
@@ -21,6 +22,10 @@ class SandboxBittrexExchangeService(sandboxUtil: SandboxUtil) : AbstractSandboxE
 
     override fun getSandboxName(): String {
         return sandboxName
+    }
+
+    override fun getExchangeInfoSupplier(): Supplier<ExchangeInfo> {
+        TODO("Not yet implemented")
     }
 
     override fun get24HrAllCoinTicker(): List<CoinDataFor24Hr> {

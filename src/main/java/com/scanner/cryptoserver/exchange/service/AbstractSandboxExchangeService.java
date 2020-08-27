@@ -15,6 +15,7 @@ import org.slf4j.LoggerFactory;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.function.Supplier;
 
 public abstract class AbstractSandboxExchangeService implements ExchangeService {
     private static final Logger Log = LoggerFactory.getLogger(SandboxBinanceUsaExchangeService.class);
@@ -60,6 +61,11 @@ public abstract class AbstractSandboxExchangeService implements ExchangeService 
     @Override
     public ExchangeInfo retrieveExchangeInfoFromCache() {
         return getExchangeInfo();
+    }
+
+    @Override
+    public Supplier<ExchangeInfo> getExchangeInfoSupplier() {
+        return null;
     }
 
 

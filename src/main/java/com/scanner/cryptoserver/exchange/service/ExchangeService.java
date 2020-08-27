@@ -5,6 +5,7 @@ import com.scanner.cryptoserver.exchange.binance.dto.CoinTicker;
 import com.scanner.cryptoserver.exchange.coinmarketcap.dto.ExchangeInfo;
 
 import java.util.List;
+import java.util.function.Supplier;
 
 public interface ExchangeService {
     /**
@@ -13,6 +14,8 @@ public interface ExchangeService {
      * @return the exchange info.
      */
     ExchangeInfo getExchangeInfo();
+
+    Supplier<ExchangeInfo> getExchangeInfoSupplier();
 
     /**
      * Retrieve the exchange info from the cache.

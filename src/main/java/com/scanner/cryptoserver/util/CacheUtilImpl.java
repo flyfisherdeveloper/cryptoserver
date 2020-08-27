@@ -1,16 +1,20 @@
 package com.scanner.cryptoserver.util;
 
+import com.scanner.cryptoserver.exchange.coinmarketcap.dto.ExchangeInfo;
 import org.springframework.cache.Cache;
 import org.springframework.cache.CacheManager;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.function.Supplier;
 
 @Service(value = "cacheUtil")
 public class CacheUtilImpl implements CacheUtil {
     private final List<String> exchangeNames = new ArrayList<>();
+    private final Map<String, Supplier<ExchangeInfo>> exchangeInfoSuppliersMap = new HashMap<>();
     private final CacheManager cacheManager;
     private static final String ICON_CACHE = "IconCache";
 
@@ -31,6 +35,7 @@ public class CacheUtilImpl implements CacheUtil {
      * @param <T>       The type of the element in the cache.
      * @return The element in the cache.
      */
+    @Override
     public <T> T retrieveFromCache(String cacheName, String valueName, Supplier<T> supplier) {
         T cacheObj = null;
         Cache cache = cacheManager.getCache(cacheName);
@@ -44,6 +49,12 @@ public class CacheUtilImpl implements CacheUtil {
             }
         }
         return cacheObj;
+    }
+
+    //jeff comments?
+    @Override
+    public ExchangeInfo retrieveExchangeInfoFromCache(String cacheName, String valueName) {
+        return retrieveFromCache(cacheName, valueName, exchangeInfoSuppliersMap.get(cacheName));
     }
 
     /**
@@ -96,8 +107,9 @@ public class CacheUtilImpl implements CacheUtil {
     }
 
     @Override
-    public void addExchangeName(String exchangeName) {
+    public void addExchangeInfoSupplier(String exchangeName, Supplier<ExchangeInfo> supplier) {
         exchangeNames.add(exchangeName);
+        exchangeInfoSuppliersMap.put(exchangeName, supplier);
     }
 
     @Override
