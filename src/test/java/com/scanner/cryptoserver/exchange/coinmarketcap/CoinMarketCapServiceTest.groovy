@@ -39,7 +39,7 @@ class CoinMarketCapServiceTest extends Specification {
 
         when:
           cacheUtil.getExchangeNames() >> exchangeNameList
-          cacheUtil.retrieveFromCache("ExchangeInfo", _, _) >> exchangeInfo
+          cacheUtil.retrieveExchangeInfoFromCache("ExchangeInfo", _) >> exchangeInfo
           cacheUtil.retrieveFromCache("CoinMarketCap", _, _) >> listing
 
         then:
