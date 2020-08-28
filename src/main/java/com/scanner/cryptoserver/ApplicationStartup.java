@@ -49,6 +49,8 @@ public class ApplicationStartup implements ApplicationListener<ApplicationReadyE
         //Asynchronously get the exchange information on startup.
         //Do not include the calls that fill the market cap, since that data hasn't been retrieved yet,
         //and will be retrieved when the threads finish retrieving the exchange info.
+        //We do this since we need a list of coins to retrieve the market cap info,
+        //and the exchange info gives us a list of coins that is needed.
         CompletableFuture<ExchangeInfo> futureBinance = CompletableFuture.supplyAsync(binanceService::getExchangeInfoWithoutMarketCap);
         CompletableFuture<ExchangeInfo> futureBinanceUsa = CompletableFuture.supplyAsync(binanceUsaService::getExchangeInfoWithoutMarketCap);
         CompletableFuture<ExchangeInfo> futureBittrex = CompletableFuture.supplyAsync(bittrexService::getExchangeInfo);
