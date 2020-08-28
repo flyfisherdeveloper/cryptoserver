@@ -120,6 +120,14 @@ public class CoinMarketCapService {
         setMarketCapDataFor24HrData(Collections.singletonList(coin));
     }
 
+    /**
+     * Get the coin market cap listing based on the ids passed in.
+     * This will retrieve it from the cache if it is in there. If not in the cache, the coin market cap api
+     * will be called to supply the data.
+     *
+     * @param idSet a set of ids.
+     * @return the market cap data for the coins.
+     */
     public CoinMarketCapListing getCoinMarketCapListing(Set<Integer> idSet) {
         Supplier<CoinMarketCapListing> marketCapSupplier = () -> {
             List<NameValuePair> parameters = new ArrayList<>();
@@ -136,18 +144,6 @@ public class CoinMarketCapService {
         };
         CoinMarketCapListing coinMarketCap = cacheUtil.retrieveFromCache(COIN_MARKET_CAP, LISTING, marketCapSupplier);
         return coinMarketCap;
-    }
-
-    public CoinMarketCapListing getCoinMarketCapInfo(Set<Integer> ids) {
-        List<NameValuePair> paratmers = new ArrayList<>();
-        String value = ids.stream().map(String::valueOf).collect(Collectors.joining(","));
-        paratmers.add(new BasicNameValuePair("id", value));
-        String json = coinMarketCapApiService.makeExchangeInfoApiCall(paratmers);
-
-        List<CoinMarketCapData> data = parseJsonInfo(json, ids);
-        CoinMarketCapListing listing = new CoinMarketCapListing();
-        listing = listing.convertToCoinMarketCapListing(data);
-        return listing;
     }
 
     private Optional<JsonNode> parseJson(String json) {
@@ -194,27 +190,6 @@ public class CoinMarketCapService {
             d.setVolume24HrUsd(volume24HrUsd);
             list.add(d);
         });
-        return list;
-    }
-
-    private List<CoinMarketCapData> parseJsonInfo(String json, Set<Integer> ids) {
-        Optional<JsonNode> jsonNode = parseJson(json);
-        if (!jsonNode.isPresent()) {
-            return new ArrayList<>();
-        }
-        JsonNode data = jsonNode.get();
-        List<CoinMarketCapData> list = new ArrayList<>();
-
-        for (int id : ids) {
-            JsonNode idNode = data.get(String.valueOf(id));
-            CoinMarketCapData d = new CoinMarketCapData();
-            d.setId(id);
-            d.setName(idNode.get("name").textValue());
-            d.setSymbol(idNode.get("symbol").textValue());
-            d.setDescription(idNode.get("description").textValue());
-            d.setLogo(idNode.get("logo").textValue());
-            list.add(d);
-        }
         return list;
     }
 }

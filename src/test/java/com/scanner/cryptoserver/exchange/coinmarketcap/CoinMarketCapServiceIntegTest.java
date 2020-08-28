@@ -6,7 +6,6 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Optional;
 import java.util.Set;
@@ -32,15 +31,6 @@ public class CoinMarketCapServiceIntegTest {
         assertNotNull(listing);
         Optional<CoinMarketCapData> ltc = listing.findData("LTC");
         assertTrue(ltc.isPresent());
-    }
-
-    @Test
-    void testGetMarketCapInfo() {
-        Set<Integer> ids = new HashSet<>(Arrays.asList(1, 1027));
-        CoinMarketCapListing listing = service.getCoinMarketCapInfo(ids);
-        assertNotNull(listing);
-        Optional<CoinMarketCapData> btc = listing.findData("BTC");
-        assertTrue(btc.isPresent());
     }
 
     @Test

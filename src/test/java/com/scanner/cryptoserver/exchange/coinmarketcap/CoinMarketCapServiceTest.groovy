@@ -91,39 +91,6 @@ class CoinMarketCapServiceTest extends Specification {
           "bad json" | true
     }
 
-    @Unroll
-    def "test getCoinMarketCapInfo"() {
-        given:
-          def idSet = [1].toSet()
-
-        when:
-          apiService.makeExchangeInfoApiCall(_) >> json
-
-        then:
-          def listing = service.getCoinMarketCapInfo(idSet)
-
-        expect:
-          assert listing != null
-          if (badData) {
-              //make sure we handle bad data effectively, without exceptions
-              assert listing.getData() == null
-          } else {
-              assert listing.getData().size() == 1
-              assert listing.getData().size() == 1
-              def btc = listing.getData().get(1)
-              assert btc.getSymbol() == "BTC"
-              assert btc.getName() == "Bitcoin"
-              //the market cap is null since the endpoint being tested does not retrieve it
-              assert btc.getMarketCap() == null
-          }
-
-        where:
-          json       | badData
-          getJson()  | false
-          "bad json" | true
-
-    }
-
     def "test setMarketCapDataFor24HrData"() {
         given:
           def exchangeNameList = ["binance", "binanceUsa"]
