@@ -1,8 +1,13 @@
 package com.scanner.cryptoserver.exchange.binance.service;
 
+import com.scanner.cryptoserver.exchange.binance.dto.CoinTicker;
+import com.scanner.cryptoserver.exchange.coinmarketcap.dto.ExchangeInfo;
 import com.scanner.cryptoserver.exchange.service.AbstractSandboxExchangeService;
 import com.scanner.cryptoserver.util.SandboxUtil;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
+import java.util.function.Supplier;
 
 /**
  * The purpose of a Sandbox exchange is to return data for Binance USA but without

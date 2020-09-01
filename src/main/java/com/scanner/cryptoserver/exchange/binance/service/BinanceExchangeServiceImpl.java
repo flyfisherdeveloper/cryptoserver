@@ -18,7 +18,7 @@ public class BinanceExchangeServiceImpl extends AbstractBinanceExchangeService {
     public BinanceExchangeServiceImpl(RestOperations restTemplate, BinanceUrlExtractor urlExtractor, CacheUtil cacheUtil, CoinMarketCapService coinMarketCapService) {
         super(restTemplate, coinMarketCapService, cacheUtil);
         this.urlExtractor = urlExtractor;
-        cacheUtil.addExchangeName(getExchangeName());
+        cacheUtil.addExchangeInfoSupplier(getExchangeName(), getExchangeInfoSupplier());
     }
 
     @Override

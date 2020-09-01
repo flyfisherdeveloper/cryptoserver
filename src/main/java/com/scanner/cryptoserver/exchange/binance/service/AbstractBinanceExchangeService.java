@@ -7,6 +7,7 @@ import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapListing;
 import com.scanner.cryptoserver.exchange.coinmarketcap.dto.ExchangeInfo;
 import com.scanner.cryptoserver.exchange.service.ExchangeService;
 import com.scanner.cryptoserver.util.CacheUtil;
+import com.scanner.cryptoserver.util.RsiCalc;
 import com.scanner.cryptoserver.util.dto.Symbol;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -48,6 +49,15 @@ public abstract class AbstractBinanceExchangeService implements ExchangeService 
         this.cacheUtil = cacheUtil;
     }
 
+    @Override
+    public Supplier<ExchangeInfo> getExchangeInfoSupplier() {
+        return () -> {
+            ResponseEntity<ExchangeInfo> response = restTemplate.getForEntity(getUrlExtractor().getExchangeInfoUrl(), ExchangeInfo.class);
+            ExchangeInfo info = response.getBody();
+            return info;
+        };
+    }
+
     /**
      * Get exchange information. Gets the information out of the cache if in there.
      *
@@ -56,12 +66,7 @@ public abstract class AbstractBinanceExchangeService implements ExchangeService 
     @Override
     public ExchangeInfo retrieveExchangeInfoFromCache() {
         String name = getExchangeName() + "-" + EXCHANGE_INFO;
-        Supplier<ExchangeInfo> exchangeInfoSupplier = () -> {
-            ResponseEntity<ExchangeInfo> response = restTemplate.getForEntity(getUrlExtractor().getExchangeInfoUrl(), ExchangeInfo.class);
-            ExchangeInfo info = response.getBody();
-            return info;
-        };
-        ExchangeInfo exchangeInfo = cacheUtil.retrieveFromCache(EXCHANGE_INFO, name, exchangeInfoSupplier);
+        ExchangeInfo exchangeInfo = cacheUtil.retrieveFromCache(EXCHANGE_INFO, name, getExchangeInfoSupplier());
         return exchangeInfo;
     }
 
@@ -448,7 +453,27 @@ public abstract class AbstractBinanceExchangeService implements ExchangeService 
 
     @Override
     public void setRsiForTickers(List<CoinTicker> tickers, int periodLength) {
-        //todo
+        RsiCalc rsiCalc = new RsiCalc();
+        rsiCalc.calculateRsiForTickers(tickers, periodLength);
+    }
+
+    @Override
+    public List<CoinTicker> getRsiTickerData(List<String> symbols) {
+        List<CoinTicker> list = new ArrayList<>();
+        //return if too many symbols will go over the exchange quota
+        //todo: add error message or exception
+        if (symbols.size() > 15) {
+            return list;
+        }
+        symbols.parallelStream().forEach(symbol -> {
+            List<CoinTicker> tickers = getTickerData(symbol, "4h", "3M");
+            list.addAll(tickers);
+            tickers = getTickerData(symbol, "12h", "6M");
+            list.addAll(tickers);
+            tickers = getTickerData(symbol, "24h", "12M");
+            list.addAll(tickers);
+        });
+        return list;
     }
 
     //The cache keeps data as defined in the Cache config. When the data in the cache expires, the call

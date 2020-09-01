@@ -1,10 +1,14 @@
 package com.scanner.cryptoserver.util;
 
+import com.scanner.cryptoserver.exchange.coinmarketcap.dto.ExchangeInfo;
+
 import java.util.List;
 import java.util.function.Supplier;
 
 public interface CacheUtil {
     <T> T retrieveFromCache(String cacheName, String valueName, Supplier<T> supplier);
+
+    ExchangeInfo retrieveExchangeInfoFromCache(String cacheName, String valueName);
 
     void evictAndAdd(String cacheName, String objectToEvict, Supplier<?> supplier);
 
@@ -12,7 +16,7 @@ public interface CacheUtil {
 
     byte[] getIconBytes(String coin);
 
-    void addExchangeName(String exchangeName);
+    void addExchangeInfoSupplier(String exchangeName, Supplier<ExchangeInfo> supplier);
 
     List<String> getExchangeNames();
 

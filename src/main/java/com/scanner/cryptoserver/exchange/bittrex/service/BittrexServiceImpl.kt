@@ -37,7 +37,7 @@ class BittrexServiceImpl(private val cacheUtil: CacheUtil, private val coinMarke
     private val tickersUrl: String? = null
 
     init {
-        cacheUtil.addExchangeName(EXCHANGE_NAME)
+        cacheUtil.addExchangeInfoSupplier(EXCHANGE_NAME, exchangeInfoSupplier)
     }
 
     override fun get24HrAllCoinTicker(): List<CoinDataFor24Hr> {
@@ -90,6 +90,16 @@ class BittrexServiceImpl(private val cacheUtil: CacheUtil, private val coinMarke
 
     override fun get24HourCoinData(symbol: String?): CoinDataFor24Hr {
         return getCoinDataFor24Hour().find { it.symbol == symbol }!!
+    }
+
+    override fun getRsiTickerData(symbols: MutableList<String>?): MutableList<CoinTicker> {
+        TODO("Not yet implemented")
+    }
+
+    override fun getExchangeInfoSupplier(): Supplier<ExchangeInfo> {
+        return Supplier {
+            return@Supplier exchangeInfo
+        }
     }
 
     override fun getExchangeInfo(): ExchangeInfo {

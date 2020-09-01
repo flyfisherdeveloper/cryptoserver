@@ -15,6 +15,7 @@ import org.slf4j.LoggerFactory;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.function.Supplier;
 
 public abstract class AbstractSandboxExchangeService implements ExchangeService {
     private static final Logger Log = LoggerFactory.getLogger(SandboxBinanceUsaExchangeService.class);
@@ -62,6 +63,11 @@ public abstract class AbstractSandboxExchangeService implements ExchangeService 
         return getExchangeInfo();
     }
 
+    @Override
+    public Supplier<ExchangeInfo> getExchangeInfoSupplier() {
+        return null;
+    }
+
 
     @Override
     public CoinDataFor24Hr get24HourCoinData(String symbol) {
@@ -97,8 +103,13 @@ public abstract class AbstractSandboxExchangeService implements ExchangeService 
 
     @Override
     public void setRsiForTickers(List<CoinTicker> tickers, int periodLength) {
-        RsiCalc rsi = new RsiCalc(periodLength);
+        RsiCalc rsi = new RsiCalc();
         rsi.calculateRsiForTickers(tickers, periodLength);
+    }
+
+    @Override
+    public List<CoinTicker> getRsiTickerData(List<String> symbols) {
+        return getDataList(getDataName("rsiTickers"), CoinTicker.class);
     }
 
     protected String getDataName(String name) {

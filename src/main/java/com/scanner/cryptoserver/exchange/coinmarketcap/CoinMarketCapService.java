@@ -20,6 +20,10 @@ import java.util.function.Function;
 import java.util.function.Supplier;
 import java.util.stream.Collectors;
 
+/**
+ * Encapsulates services that use the Coin Market Cap api.
+ * Used mainly to get the total market cap (not exclusive to a specific exchange) for each coin.
+ */
 @Service
 public class CoinMarketCapService {
     private static final Logger Log = LoggerFactory.getLogger(CoinMarketCapData.class);
@@ -43,10 +47,10 @@ public class CoinMarketCapService {
      */
     public Set<Integer> getIdSet() {
         Set<String> coinSet = new HashSet<>();
-        //get the exchange info for both Binance exchanges - this is to get a list of coins to retrieve the market cap for each coin
+        //get the exchange info for all exchanges - this is to get a list of coins to retrieve the market cap for each coin
         cacheUtil.getExchangeNames().forEach(exchange -> {
             String name = exchange + "-" + EXCHANGE_INFO;
-            ExchangeInfo exchangeInfo = cacheUtil.retrieveFromCache(EXCHANGE_INFO, name, null);
+            ExchangeInfo exchangeInfo = cacheUtil.retrieveExchangeInfoFromCache(EXCHANGE_INFO, name);
             if (exchangeInfo != null) {
                 coinSet.addAll(exchangeInfo.getSymbols().stream().map(Symbol::getBaseAsset).collect(Collectors.toSet()));
             }
@@ -54,6 +58,12 @@ public class CoinMarketCapService {
         return getIdSet(coinSet);
     }
 
+    /**
+     * Get a set of Coin Market Cap Ids for a set of coins.
+     *
+     * @param coinSet the coin set that will be used to look up the Ids.
+     * @return the set of Ids, based on the Coin Market Cap service.
+     */
     public Set<Integer> getIdSet(Set<String> coinSet) {
         Supplier<CoinMarketCapListing> supplier = coinMarketCapApiService::getCoinMarketCapMap;
         CoinMarketCapListing coinMarketCap = cacheUtil.retrieveFromCache(COIN_MARKET_CAP, MARKET_CAP_MAP, supplier);
@@ -66,17 +76,33 @@ public class CoinMarketCapService {
         return idSet;
     }
 
+    /**
+     * Get a Coin Market Cap listing, which contains the Ids mapped to the Coin Market Cap data for each coin.
+     *
+     * @return the listing, which contains the map.
+     */
     public CoinMarketCapListing getCoinMarketCapListing() {
         Set<Integer> idSet = getIdSet();
         return getCoinMarketCapListing(idSet);
     }
 
+    /**
+     * Get a Coin Market Cap listing for a set of coins.
+     *
+     * @param coinSet the set of coins to use.
+     * @return the listing, which contains the map.
+     */
     public CoinMarketCapListing getCoinMarketCapListingWithCoinSet(Set<String> coinSet) {
         Set<Integer> idSet = getIdSet(coinSet);
         CoinMarketCapListing listing = getCoinMarketCapListing(idSet);
         return listing;
     }
 
+    /**
+     * Set the market cap data for a list of coins.
+     *
+     * @param data the list of coins that will have the market cap data set.
+     */
     public void setMarketCapDataFor24HrData(List<CoinDataFor24Hr> data) {
         CoinMarketCapListing coinMarketCap = getCoinMarketCapListing();
         //If the coin market cap data exists, then update each symbol with the market cap value found in the maket cap data.
@@ -85,10 +111,23 @@ public class CoinMarketCapService {
         }
     }
 
+    /**
+     * Set the market cap data for a coin.
+     *
+     * @param coin the coin that will have the market cap data set.
+     */
     public void setMarketCapDataFor24HrData(CoinDataFor24Hr coin) {
         setMarketCapDataFor24HrData(Collections.singletonList(coin));
     }
 
+    /**
+     * Get the coin market cap listing based on the ids passed in.
+     * This will retrieve it from the cache if it is in there. If not in the cache, the coin market cap api
+     * will be called to supply the data.
+     *
+     * @param idSet a set of ids.
+     * @return the market cap data for the coins.
+     */
     public CoinMarketCapListing getCoinMarketCapListing(Set<Integer> idSet) {
         Supplier<CoinMarketCapListing> marketCapSupplier = () -> {
             List<NameValuePair> parameters = new ArrayList<>();
@@ -105,18 +144,6 @@ public class CoinMarketCapService {
         };
         CoinMarketCapListing coinMarketCap = cacheUtil.retrieveFromCache(COIN_MARKET_CAP, LISTING, marketCapSupplier);
         return coinMarketCap;
-    }
-
-    public CoinMarketCapListing getCoinMarketCapInfo(Set<Integer> ids) {
-        List<NameValuePair> paratmers = new ArrayList<>();
-        String value = ids.stream().map(String::valueOf).collect(Collectors.joining(","));
-        paratmers.add(new BasicNameValuePair("id", value));
-        String json = coinMarketCapApiService.makeExchangeInfoApiCall(paratmers);
-
-        List<CoinMarketCapData> data = parseJsonInfo(json, ids);
-        CoinMarketCapListing listing = new CoinMarketCapListing();
-        listing = listing.convertToCoinMarketCapListing(data);
-        return listing;
     }
 
     private Optional<JsonNode> parseJson(String json) {
@@ -163,27 +190,6 @@ public class CoinMarketCapService {
             d.setVolume24HrUsd(volume24HrUsd);
             list.add(d);
         });
-        return list;
-    }
-
-    private List<CoinMarketCapData> parseJsonInfo(String json, Set<Integer> ids) {
-        Optional<JsonNode> jsonNode = parseJson(json);
-        if (!jsonNode.isPresent()) {
-            return new ArrayList<>();
-        }
-        JsonNode data = jsonNode.get();
-        List<CoinMarketCapData> list = new ArrayList<>();
-
-        for (int id : ids) {
-            JsonNode idNode = data.get(String.valueOf(id));
-            CoinMarketCapData d = new CoinMarketCapData();
-            d.setId(id);
-            d.setName(idNode.get("name").textValue());
-            d.setSymbol(idNode.get("symbol").textValue());
-            d.setDescription(idNode.get("description").textValue());
-            d.setLogo(idNode.get("logo").textValue());
-            list.add(d);
-        }
         return list;
     }
 }

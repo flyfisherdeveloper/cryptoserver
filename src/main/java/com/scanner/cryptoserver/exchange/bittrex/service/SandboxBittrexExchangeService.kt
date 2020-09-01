@@ -1,10 +1,12 @@
 package com.scanner.cryptoserver.exchange.bittrex.service
 
 import com.scanner.cryptoserver.exchange.binance.dto.CoinDataFor24Hr
+import com.scanner.cryptoserver.exchange.binance.dto.CoinTicker
 import com.scanner.cryptoserver.exchange.coinmarketcap.dto.ExchangeInfo
 import com.scanner.cryptoserver.exchange.service.AbstractSandboxExchangeService
 import com.scanner.cryptoserver.util.SandboxUtil
 import org.springframework.stereotype.Service
+import java.util.function.Supplier
 
 /**
  * The purpose of a Sandbox exchange is to return data for an exchange but without
@@ -22,7 +24,15 @@ class SandboxBittrexExchangeService(sandboxUtil: SandboxUtil) : AbstractSandboxE
         return sandboxName
     }
 
+    override fun getExchangeInfoSupplier(): Supplier<ExchangeInfo> {
+        TODO("Not yet implemented")
+    }
+
     override fun get24HrAllCoinTicker(): List<CoinDataFor24Hr> {
         return getDataList<CoinDataFor24Hr>(getDataName("24HourTicker"), CoinDataFor24Hr::class.java)
+    }
+
+    override fun getRsiTickerData(symbols: MutableList<String>?): MutableList<CoinTicker> {
+        TODO("Not yet implemented")
     }
 }

@@ -39,7 +39,7 @@ class CoinMarketCapServiceTest extends Specification {
 
         when:
           cacheUtil.getExchangeNames() >> exchangeNameList
-          cacheUtil.retrieveFromCache("ExchangeInfo", _, _) >> exchangeInfo
+          cacheUtil.retrieveExchangeInfoFromCache("ExchangeInfo", _) >> exchangeInfo
           cacheUtil.retrieveFromCache("CoinMarketCap", _, _) >> listing
 
         then:
@@ -91,40 +91,7 @@ class CoinMarketCapServiceTest extends Specification {
           "bad json" | true
     }
 
-    @Unroll
-    def "test getCoinMarketCapInfo"() {
-        given:
-          def idSet = [1].toSet()
-
-        when:
-          apiService.makeExchangeInfoApiCall(_) >> json
-
-        then:
-          def listing = service.getCoinMarketCapInfo(idSet)
-
-        expect:
-          assert listing != null
-          if (badData) {
-              //make sure we handle bad data effectively, without exceptions
-              assert listing.getData() == null
-          } else {
-              assert listing.getData().size() == 1
-              assert listing.getData().size() == 1
-              def btc = listing.getData().get(1)
-              assert btc.getSymbol() == "BTC"
-              assert btc.getName() == "Bitcoin"
-              //the market cap is null since the endpoint being tested does not retrieve it
-              assert btc.getMarketCap() == null
-          }
-
-        where:
-          json       | badData
-          getJson()  | false
-          "bad json" | true
-
-    }
-
-    def "test setMarketCapDataFor24HrData"() {
+    def "test setMarketCapDataFor24HrData for list of coins"() {
         given:
           def exchangeNameList = ["binance", "binanceUsa"]
           def exchangeInfo = new ExchangeInfo(symbols: [new Symbol(baseAsset: "BTC"), new Symbol(baseAsset: "ETH")])
@@ -165,6 +132,39 @@ class CoinMarketCapServiceTest extends Specification {
           assert ethCoin.getMarketCap() == ethCap
           //make sure the number is formatted to two decimal places
           assert ethCoin.getVolume24HrUsd() == ethAllCapFormatted
+    }
+
+    def "test setMarketCapDataFor24HrData for single coin"() {
+        given:
+          def exchangeNameList = ["binance", "binanceUsa"]
+          def exchangeInfo = new ExchangeInfo(symbols: [new Symbol(baseAsset: "BTC"), new Symbol(baseAsset: "ETH")])
+
+          def listing = new CoinMarketCapListing()
+          def btcCap = 121000000
+          def btcAllCap = 500000000
+          def data1 = new CoinMarketCapData(name: "BTC", marketCap: btcCap, symbol: "BTCUSD", id: 1, volume24HrUsd: btcAllCap)
+
+          def ethCap = 22000000
+          def ethAllCap = 4000000.8923
+          def data2 = new CoinMarketCapData(name: "ETH", marketCap: ethCap, symbol: "ETHUSD", id: 2, volume24HrUsd: ethAllCap)
+          def data = [:] as Map<String, CoinMarketCapData>
+          data.put(data1.getName(), data1)
+          data.put(data2.getName(), data2)
+          listing.setData(data)
+
+          def btc = new CoinDataFor24Hr(coin: "BTC", symbol: "BTCUSD")
+
+        when:
+          cacheUtil.getExchangeNames() >> exchangeNameList
+          cacheUtil.retrieveFromCache("ExchangeInfo", _, _) >> exchangeInfo
+          cacheUtil.retrieveFromCache("CoinMarketCap", _, _) >> listing
+
+        then:
+          service.setMarketCapDataFor24HrData(btc)
+
+        expect:
+          assert btc.getMarketCap() == btcCap
+          assert btc.getVolume24HrUsd() == btcAllCap
     }
 
     def getJson() {
