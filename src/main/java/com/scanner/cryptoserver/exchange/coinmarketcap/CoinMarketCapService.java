@@ -48,9 +48,9 @@ public class CoinMarketCapService {
     public Set<Integer> getIdSet() {
         Set<String> coinSet = new HashSet<>();
         //get the exchange info for all exchanges - this is to get a list of coins to retrieve the market cap for each coin
-        cacheUtil.getExchangeNames().forEach(exchange -> {
-            String name = exchange + "-" + EXCHANGE_INFO;
-            ExchangeInfo exchangeInfo = cacheUtil.retrieveExchangeInfoFromCache(EXCHANGE_INFO, name);
+        cacheUtil.getExchangeNames().forEach(exchangeName -> {
+            String name = exchangeName + "-" + EXCHANGE_INFO;
+            ExchangeInfo exchangeInfo = cacheUtil.retrieveExchangeInfoFromCache(exchangeName, EXCHANGE_INFO, name);
             if (exchangeInfo != null) {
                 coinSet.addAll(exchangeInfo.getSymbols().stream().map(Symbol::getBaseAsset).collect(Collectors.toSet()));
             }
