@@ -1,6 +1,7 @@
 package com.scanner.cryptoserver.exchange.proton
 
 import com.scanner.cryptoserver.util.UrlReaderImpl
+import junit.framework.Assert.assertNotNull
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.springframework.beans.factory.annotation.Autowired
@@ -22,5 +23,17 @@ internal class ProtonApiServiceImplIntegTest {
     fun `test that the service method 'getInfo()' returns valid info`() {
         val info = service.getInfo()
         println(info)
+        assertNotNull(info)
+        assertNotNull(info.chainUrl)
+        assertNotNull(info.name)
+        assertNotNull(info.description)
+        assertNotNull(info.iconUrl)
+        assertNotNull(info.explorerUrl)
+        assertNotNull(info.explorerName)
+        assertNotNull(info.systemTokenSymbol)
+        assertNotNull(info.createAccountPath)
+        assertNotNull(info.updateAccountAvatarPath)
+        assertNotNull(info.updateAccountNamePath)
+        assertNotNull(info.exchangeRatePath)
     }
 }
