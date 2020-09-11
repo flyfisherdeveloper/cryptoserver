@@ -8,7 +8,7 @@ import java.util.function.Supplier;
 public interface CacheUtil {
     <T> T retrieveFromCache(String cacheName, String valueName, Supplier<T> supplier);
 
-    ExchangeInfo retrieveExchangeInfoFromCache(String cacheName, String valueName);
+    ExchangeInfo retrieveExchangeInfoFromCache(String exchangeName, String cacheName, String valueName);
 
     void evictAndAdd(String cacheName, String objectToEvict, Supplier<?> supplier);
 

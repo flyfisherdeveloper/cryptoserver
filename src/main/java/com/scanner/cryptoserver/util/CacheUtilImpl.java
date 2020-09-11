@@ -54,13 +54,14 @@ public class CacheUtilImpl implements CacheUtil {
     /**
      * Convenience method to get exchange info out of the cache manager.
      *
+     * @param exchangeName The name of the exchange, such as "binanceusa".
      * @param cacheName The name of the container in the cache manager.
      * @param valueName The name of the value wrapper in the container in the cache manager.
      * @return The element in the cache.
      */
     @Override
-    public ExchangeInfo retrieveExchangeInfoFromCache(String cacheName, String valueName) {
-        return retrieveFromCache(cacheName, valueName, exchangeInfoSuppliersMap.get(cacheName));
+    public ExchangeInfo retrieveExchangeInfoFromCache(String exchangeName, String cacheName, String valueName) {
+        return retrieveFromCache(cacheName, valueName, exchangeInfoSuppliersMap.get(exchangeName));
     }
 
     /**
