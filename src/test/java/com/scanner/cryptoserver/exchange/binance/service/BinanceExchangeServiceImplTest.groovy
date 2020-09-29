@@ -302,7 +302,7 @@ class BinanceExchangeServiceImplTest extends Specification {
           "BTC"   | "EUR"  | false           | "LTC"   | "USDC" | true
     }
 
-    def "test getExchangeInfo adds market cap and id"() {
+    def "test getExchangeInfoWithoutMarketCap adds market cap and id"() {
         given:
           def symbolBtc = "BTC"
           def symbolLtc = "LTC"
@@ -330,6 +330,54 @@ class BinanceExchangeServiceImplTest extends Specification {
 
         then:
           def info = service.getExchangeInfoWithoutMarketCap()
+
+        expect:
+          assert info
+          assert info.getSymbols()
+
+          def coinBtc = info.getSymbols().find { it.getSymbol() == symbolBtc }
+          assert coinBtc
+          assert coinBtc.getId() == idBtc
+          assert coinBtc.getMarketCap() == marketCapBtc
+
+          def coinLtc = info.getSymbols().find { it.getSymbol() == symbolLtc }
+          assert coinLtc
+          assert coinLtc.getId() == idLtc
+          assert coinLtc.getMarketCap() == marketCapLtc
+    }
+
+    def "test getExchangeInfo() retrieves market cap data and adds market cap and id"() {
+        given:
+          def baseAssetBtc = "BTC"
+          def baseAssetLtc = "LTC"
+          def nameBtc = "Bitcoin"
+          def nameLtc = "Litecoin"
+          def symbolBtc = "BTCUSD"
+          def symbolLtc = "LTCETH"
+          def marketCapBtc = 10000000
+          def marketCapLtc = 300000
+          def idBtc = 1
+          def idLtc = 2
+
+          def exchangeInfo = new ExchangeInfo()
+          def symbols = [new Symbol(symbol: symbolBtc, baseAsset: baseAssetBtc, id: idBtc, marketCap: marketCapBtc),
+                         new Symbol(symbol: symbolLtc, baseAsset: baseAssetLtc, id: idLtc, marketCap: marketCapLtc)]
+          exchangeInfo.setSymbols(symbols)
+
+          def coinMarketCapListing = new CoinMarketCapListing()
+          def dataBtc = new CoinMarketCapData(symbol: baseAssetBtc, name: nameBtc, id: idBtc, marketCap: marketCapBtc)
+          def dataLtc = new CoinMarketCapData(symbol: baseAssetLtc, name: nameLtc, id: idLtc, marketCap: marketCapLtc)
+          def dataMap = [:] as HashMap<String, CoinMarketCapData>
+          dataMap.put(symbolBtc, dataBtc)
+          dataMap.put(symbolLtc, dataLtc)
+          coinMarketCapListing.setData(dataMap)
+
+        when:
+          cacheUtil.retrieveFromCache(*_) >> exchangeInfo
+          coinMarketCapService.getCoinMarketCapListing() >> coinMarketCapListing
+
+        then:
+          def info = service.getExchangeInfo()
 
         expect:
           assert info
