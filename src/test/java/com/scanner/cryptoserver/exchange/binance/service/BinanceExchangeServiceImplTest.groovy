@@ -32,7 +32,7 @@ class BinanceExchangeServiceImplTest extends Specification {
         service = new BinanceExchangeServiceImpl(restTemplate, urlExtractor, cacheUtil, coinMarketCapService)
     }
 
-    def "test get24HrAllCoinTicker when cache has data"() {
+    def "test get24HrAllCoinTicker() when cache has data"() {
         given:
           def coinData = new CoinDataFor24Hr()
           def symbol = "BTCUSD"
@@ -51,7 +51,7 @@ class BinanceExchangeServiceImplTest extends Specification {
     }
 
     @Unroll
-    def "test getMarkets returns expected markets"() {
+    def "test getMarkets() returns expected markets"() {
         given:
           def symbol1 = new Symbol(baseAsset: coin1, quoteAsset: market1)
           def symbol2 = new Symbol(baseAsset: coin2, quoteAsset: market2)
@@ -302,7 +302,7 @@ class BinanceExchangeServiceImplTest extends Specification {
           "BTC"   | "EUR"  | false           | "LTC"   | "USDC" | true
     }
 
-    def "test getExchangeInfoWithoutMarketCap adds market cap and id"() {
+    def "test getExchangeInfoWithoutMarketCap() adds market cap and id"() {
         given:
           def symbolBtc = "BTC"
           def symbolLtc = "LTC"
