@@ -462,6 +462,24 @@ class BinanceExchangeServiceImplTest extends Specification {
 
     }
 
+    def "test setRsiForTickers() sets RSI for period length"() {
+        given:
+          def ticker1 = new CoinTicker(close: 100)
+          def ticker2 = new CoinTicker(close: 200)
+          def ticker3 = new CoinTicker(close: 100)
+          def ticker4 = new CoinTicker(close: 200)
+          def tickers = [ticker1, ticker2, ticker3, ticker4]
+
+        when:
+          service.setRsiForTickers(tickers, 2)
+
+        then:
+          assert ticker1.getRsi() == 0.0f
+          assert ticker2.getRsi() == 0.0f
+          assert ticker3.getRsi() != 0.0f
+          assert ticker4.getRsi() != 0.0f
+    }
+
     ResponseEntity<Object[]> getMockCoinTicker() {
         def now = LocalDateTime.now()
         def closeTime1 = now.minusDays(1).minusHours(1).toInstant(ZoneOffset.UTC).toEpochMilli()

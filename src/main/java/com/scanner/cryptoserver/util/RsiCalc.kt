@@ -6,7 +6,7 @@ import java.util.*
 /**
  * Class used to calculate the relative strength for a list of tickers.
  */
-class RsiCalc() {
+class RsiCalc {
     private val avgList: Stack<Averages> = Stack()
 
     private fun calculate(prices: List<CoinTicker>, periodLength: Int): Double {
