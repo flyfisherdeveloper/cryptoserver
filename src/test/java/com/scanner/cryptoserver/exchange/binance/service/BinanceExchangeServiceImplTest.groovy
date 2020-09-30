@@ -480,6 +480,26 @@ class BinanceExchangeServiceImplTest extends Specification {
           assert ticker4.getRsi() != 0.0f
     }
 
+    def "test getRsiTickerData"() {
+        given:
+          def coinTicker1 = new CoinTicker(symbol: "BTC", close: 10000.0)
+          def coinTicker2 = new CoinTicker(symbol: "LTC", close: 175.0)
+          def symbols = ["BTC"]
+          def coinTickerList = [coinTicker1, coinTicker2]
+
+        when:
+          cacheUtil.retrieveFromCache(*_) >> coinTickerList
+
+        then:
+          def tickerData = service.getRsiTickerData(symbols)
+
+        expect:
+          //The service extracts data for "4-hour", "12-hour", and "24-hour" for each coin,
+          //therefore, all we need to do is check that the service correctly made the calls.
+          //3 times the ticker list size is what we are expecting
+          assert tickerData.size() == 3 * coinTickerList.size()
+    }
+
     ResponseEntity<Object[]> getMockCoinTicker() {
         def now = LocalDateTime.now()
         def closeTime1 = now.minusDays(1).minusHours(1).toInstant(ZoneOffset.UTC).toEpochMilli()
