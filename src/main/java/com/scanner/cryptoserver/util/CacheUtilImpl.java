@@ -71,7 +71,7 @@ public class CacheUtilImpl implements CacheUtil {
      * @param cacheName     The name of the cache to evict.
      * @param objectToEvict The name of the object to evict.
      * @param command       The command that will be called after eviction. This won't be called
-     *                      if the cache does not exist.
+     *                      if the cache does not exist, and eviction didn't happen.
      */
     @Override
     public void evictAndThen(String cacheName, String objectToEvict, CacheCommand command) {
