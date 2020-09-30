@@ -55,8 +55,8 @@ public class CacheUtilImpl implements CacheUtil {
      * Convenience method to get exchange info out of the cache manager.
      *
      * @param exchangeName The name of the exchange, such as "binanceusa".
-     * @param cacheName The name of the container in the cache manager.
-     * @param valueName The name of the value wrapper in the container in the cache manager.
+     * @param cacheName    The name of the container in the cache manager.
+     * @param valueName    The name of the value wrapper in the container in the cache manager.
      * @return The element in the cache.
      */
     @Override
@@ -65,19 +65,20 @@ public class CacheUtilImpl implements CacheUtil {
     }
 
     /**
-     * Evict all the objects in the cache. Call a supplier to add objects to the cache.
-     * The supplier has the responsibility to add objects to the cache.
+     * Evict all the objects in the cache if the cache exists. When done evicting, call a command,
+     * which is usually to supply new objects for the cache, but can be anything.
      *
      * @param cacheName     The name of the cache to evict.
      * @param objectToEvict The name of the object to evict.
-     * @param supplier      The supplier that will supply new objects to the cache after eviction.
+     * @param command       The command that will be called after eviction. This won't be called
+     *                      if the cache does not exist.
      */
     @Override
-    public void evictAndAdd(String cacheName, String objectToEvict, Supplier<?> supplier) {
+    public void evictAndThen(String cacheName, String objectToEvict, CacheCommand command) {
         Cache cache = cacheManager.getCache(cacheName);
         if (cache != null) {
             cache.evictIfPresent(objectToEvict);
-            supplier.get();
+            command.run();
         }
     }
 

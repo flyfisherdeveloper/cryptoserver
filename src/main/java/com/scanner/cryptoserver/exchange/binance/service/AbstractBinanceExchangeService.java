@@ -552,8 +552,8 @@ public abstract class AbstractBinanceExchangeService implements ExchangeService 
             cacheUtil.evict(cacheName, ALL_TICKERS);
             shutdownScheduledService();
         } else {
-            Supplier<?> supplier = this::get24HrAllCoinTicker;
-            cacheUtil.evictAndAdd(cacheName, ALL_TICKERS, supplier);
+            CacheUtil.CacheCommand command = this::get24HrAllCoinTicker;
+            cacheUtil.evictAndThen(cacheName, ALL_TICKERS, command);
         }
     }
 

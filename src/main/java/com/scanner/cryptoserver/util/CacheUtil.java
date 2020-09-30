@@ -6,11 +6,17 @@ import java.util.List;
 import java.util.function.Supplier;
 
 public interface CacheUtil {
+
+    @FunctionalInterface
+    interface CacheCommand {
+        void run();
+    }
+
     <T> T retrieveFromCache(String cacheName, String valueName, Supplier<T> supplier);
 
     ExchangeInfo retrieveExchangeInfoFromCache(String exchangeName, String cacheName, String valueName);
 
-    void evictAndAdd(String cacheName, String objectToEvict, Supplier<?> supplier);
+    void evictAndThen(String cacheName, String objectToEvict, CacheCommand command);
 
     void evict(String cacheName, String objectToEvict);
 
