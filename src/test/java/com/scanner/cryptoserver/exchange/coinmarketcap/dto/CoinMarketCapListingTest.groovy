@@ -50,4 +50,32 @@ class CoinMarketCapListingTest extends Specification {
           new ArrayList<CoinMarketCapData>() | _
           null                               | _
     }
+
+    def "test findData"() {
+        given:
+          def id1 = 1
+          def symbol1 = "BTC"
+          def name1 = "Bitcoin"
+          def id2 = 2
+          def symbol2 = "LTC"
+          def name2 = "Litecoin"
+          def data1 = new CoinMarketCapData(id: id1, symbol: symbol1, name: name1)
+          def data2 = new CoinMarketCapData(id: id2, symbol: symbol2, name: name2)
+          def data = [id1: data1, id2: data2]
+          def list = new CoinMarketCapListing(data: data as Map)
+
+        when:
+          def foundBtc = list.findData("BTC")
+          def foundLtc = list.findData("LTC")
+          def foundEth = list.findData("ETH")
+          def foundBitcoin = list.findData("Bitcoin")
+          def foundEther = list.findData("Ether")
+
+        then:
+          assert foundBtc.isPresent()
+          assert foundLtc.isPresent()
+          assert !foundEth.isPresent()
+          assert foundBitcoin.isPresent()
+          assert !foundEther.isPresent()
+    }
 }
