@@ -68,7 +68,7 @@ class CoinMarketCapListingTest extends Specification {
 
         then:
           assert symbol1 == null ? !foundBtc.isPresent() : foundBtc.isPresent()
-          assert symbol1 == null ? !foundLtc.isPresent() : foundLtc.isPresent()
+          assert symbol2 == null ? !foundLtc.isPresent() : foundLtc.isPresent()
           assert !foundEth.isPresent()
           assert name1 == null ? !foundBitcoin.isPresent() : foundBitcoin.isPresent()
           assert !foundEther.isPresent()
