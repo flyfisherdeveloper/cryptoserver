@@ -51,31 +51,31 @@ class CoinMarketCapListingTest extends Specification {
           null                               | _
     }
 
+    @Unroll
     def "test findData"() {
         given:
-          def id1 = 1
-          def symbol1 = "BTC"
-          def name1 = "Bitcoin"
-          def id2 = 2
-          def symbol2 = "LTC"
-          def name2 = "Litecoin"
           def data1 = new CoinMarketCapData(id: id1, symbol: symbol1, name: name1)
           def data2 = new CoinMarketCapData(id: id2, symbol: symbol2, name: name2)
-          def data = [id1: data1, id2: data2]
+          def data = symbol1 == null ? null : [id1: data1, id2: data2]
           def list = new CoinMarketCapListing(data: data as Map)
 
         when:
-          def foundBtc = list.findData("BTC")
-          def foundLtc = list.findData("LTC")
+          def foundBtc = list.findData(symbol1)
+          def foundLtc = list.findData(symbol2)
           def foundEth = list.findData("ETH")
-          def foundBitcoin = list.findData("Bitcoin")
+          def foundBitcoin = list.findData(name1)
           def foundEther = list.findData("Ether")
 
         then:
-          assert foundBtc.isPresent()
-          assert foundLtc.isPresent()
+          assert symbol1 == null ? !foundBtc.isPresent() : foundBtc.isPresent()
+          assert symbol1 == null ? !foundLtc.isPresent() : foundLtc.isPresent()
           assert !foundEth.isPresent()
-          assert foundBitcoin.isPresent()
+          assert name1 == null ? !foundBitcoin.isPresent() : foundBitcoin.isPresent()
           assert !foundEther.isPresent()
+
+        where:
+          id1 | symbol1 | name1     | id2 | symbol2 | name2
+          1   | "BTC"   | "Bitcoin" | 2   | "LTC"   | "Litecoin"
+          0   | null    | null      | 2   | null    | null
     }
 }
