@@ -30,15 +30,21 @@ public class CoinMarketCapListing {
     }
 
     /**
-     * Find the coin market cap data using the symbol (i.e. "BTC").
+     * Find the coin market cap data using the symbol (i.e. "BTC") or name (i.e. "Bitcoin"), if necessary.
+     * There are sometimes multiple coins with the same symbol. In this case, the name will be used
+     * to get the coin wanted among the duplicates.
      * The purpose of this method is to find the data when an id is not available.
      *
-     * @param symbol the symbol - such as "ETH" or "LTC"
+     * @param symbol the coin - such as "ETH" or "LTC"
+     * @param name   the name of the coin, such as "Bitcoin" or "Ether"
      * @return return the coin market cap data, if found.
      */
-    public Optional<CoinMarketCapData> findData(String symbol) {
+    public Optional<CoinMarketCapData> findData(String symbol, String name) {
         if (data != null) {
-            return data.values().stream().filter(d -> d.isCoin(symbol)).findFirst();
+            return data.values().stream()
+                    .filter(d -> d.isCoin(symbol))
+                    .filter(d -> name.isEmpty() || d.isCoin(name))
+                    .findFirst();
         }
         return Optional.empty();
     }
