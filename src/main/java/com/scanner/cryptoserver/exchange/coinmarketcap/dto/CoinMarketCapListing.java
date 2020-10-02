@@ -36,6 +36,9 @@ public class CoinMarketCapListing {
      * @return return the coin market cap data, if found.
      */
     public Optional<CoinMarketCapData> findData(String symbol) {
-        return data.values().stream().filter(d -> d.isCoin(symbol)).findFirst();
+        if (data != null) {
+            return data.values().stream().filter(d -> d.isCoin(symbol)).findFirst();
+        }
+        return Optional.empty();
     }
 }
