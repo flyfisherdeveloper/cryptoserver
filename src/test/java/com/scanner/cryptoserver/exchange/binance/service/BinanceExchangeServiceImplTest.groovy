@@ -32,7 +32,7 @@ class BinanceExchangeServiceImplTest extends Specification {
         service = new BinanceExchangeServiceImpl(restTemplate, urlExtractor, cacheUtil, coinMarketCapService)
     }
 
-    def "test get24HrAllCoinTicker when cache has data"() {
+    def "test get24HrAllCoinTicker() when cache has data"() {
         given:
           def coinData = new CoinDataFor24Hr()
           def symbol = "BTCUSD"
@@ -51,7 +51,7 @@ class BinanceExchangeServiceImplTest extends Specification {
     }
 
     @Unroll
-    def "test getMarkets returns expected markets"() {
+    def "test getMarkets() returns expected markets"() {
         given:
           def symbol1 = new Symbol(baseAsset: coin1, quoteAsset: market1)
           def symbol2 = new Symbol(baseAsset: coin2, quoteAsset: market2)
@@ -302,7 +302,7 @@ class BinanceExchangeServiceImplTest extends Specification {
           "BTC"   | "EUR"  | false           | "LTC"   | "USDC" | true
     }
 
-    def "test getExchangeInfo adds market cap and id"() {
+    def "test getExchangeInfoWithoutMarketCap() adds market cap and id"() {
         given:
           def symbolBtc = "BTC"
           def symbolLtc = "LTC"
@@ -330,6 +330,54 @@ class BinanceExchangeServiceImplTest extends Specification {
 
         then:
           def info = service.getExchangeInfoWithoutMarketCap()
+
+        expect:
+          assert info
+          assert info.getSymbols()
+
+          def coinBtc = info.getSymbols().find { it.getSymbol() == symbolBtc }
+          assert coinBtc
+          assert coinBtc.getId() == idBtc
+          assert coinBtc.getMarketCap() == marketCapBtc
+
+          def coinLtc = info.getSymbols().find { it.getSymbol() == symbolLtc }
+          assert coinLtc
+          assert coinLtc.getId() == idLtc
+          assert coinLtc.getMarketCap() == marketCapLtc
+    }
+
+    def "test getExchangeInfo() retrieves market cap data and adds market cap and id"() {
+        given:
+          def baseAssetBtc = "BTC"
+          def baseAssetLtc = "LTC"
+          def nameBtc = "Bitcoin"
+          def nameLtc = "Litecoin"
+          def symbolBtc = "BTCUSD"
+          def symbolLtc = "LTCETH"
+          def marketCapBtc = 10000000
+          def marketCapLtc = 300000
+          def idBtc = 1
+          def idLtc = 2
+
+          def exchangeInfo = new ExchangeInfo()
+          def symbols = [new Symbol(symbol: symbolBtc, baseAsset: baseAssetBtc, id: idBtc, marketCap: marketCapBtc),
+                         new Symbol(symbol: symbolLtc, baseAsset: baseAssetLtc, id: idLtc, marketCap: marketCapLtc)]
+          exchangeInfo.setSymbols(symbols)
+
+          def coinMarketCapListing = new CoinMarketCapListing()
+          def dataBtc = new CoinMarketCapData(symbol: baseAssetBtc, name: nameBtc, id: idBtc, marketCap: marketCapBtc)
+          def dataLtc = new CoinMarketCapData(symbol: baseAssetLtc, name: nameLtc, id: idLtc, marketCap: marketCapLtc)
+          def dataMap = [:] as HashMap<String, CoinMarketCapData>
+          dataMap.put(symbolBtc, dataBtc)
+          dataMap.put(symbolLtc, dataLtc)
+          coinMarketCapListing.setData(dataMap)
+
+        when:
+          cacheUtil.retrieveFromCache(*_) >> exchangeInfo
+          coinMarketCapService.getCoinMarketCapListing() >> coinMarketCapListing
+
+        then:
+          def info = service.getExchangeInfo()
 
         expect:
           assert info
@@ -412,6 +460,44 @@ class BinanceExchangeServiceImplTest extends Specification {
           "LTCUSDT" | "USDT"   | "USDT"        | true
           "ETHUSD"  | "USD"    | "USD"         | false
 
+    }
+
+    def "test setRsiForTickers() sets RSI for period length"() {
+        given:
+          def ticker1 = new CoinTicker(close: 100)
+          def ticker2 = new CoinTicker(close: 200)
+          def ticker3 = new CoinTicker(close: 100)
+          def ticker4 = new CoinTicker(close: 200)
+          def tickers = [ticker1, ticker2, ticker3, ticker4]
+
+        when:
+          service.setRsiForTickers(tickers, 2)
+
+        then:
+          assert ticker1.getRsi() == 0.0f
+          assert ticker2.getRsi() == 0.0f
+          assert ticker3.getRsi() != 0.0f
+          assert ticker4.getRsi() != 0.0f
+    }
+
+    def "test getRsiTickerData"() {
+        given:
+          def coinTicker1 = new CoinTicker(symbol: "BTC", close: 10000.0)
+          def coinTicker2 = new CoinTicker(symbol: "LTC", close: 175.0)
+          def symbols = ["BTC"]
+          def coinTickerList = [coinTicker1, coinTicker2]
+
+        when:
+          cacheUtil.retrieveFromCache(*_) >> coinTickerList
+
+        then:
+          def tickerData = service.getRsiTickerData(symbols)
+
+        expect:
+          //The service extracts data for "4-hour", "12-hour", and "24-hour" for each coin,
+          //therefore, all we need to do is check that the service correctly made the calls.
+          //3 times the ticker list size is what we are expecting
+          assert tickerData.size() == 3 * coinTickerList.size()
     }
 
     ResponseEntity<Object[]> getMockCoinTicker() {

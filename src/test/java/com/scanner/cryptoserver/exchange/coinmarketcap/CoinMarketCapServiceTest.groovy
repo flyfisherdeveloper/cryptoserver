@@ -75,7 +75,8 @@ class CoinMarketCapServiceTest extends Specification {
           listing != null
           if (badData) {
               //make sure we handle bad data effectively, without exceptions
-              assert listing.getData() == null
+              assert listing.getData() != null
+              assert listing.getData().isEmpty()
           } else {
               assert listing.getData().size() == 1
               def btc = listing.getData().get(1)

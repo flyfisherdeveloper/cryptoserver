@@ -73,6 +73,9 @@ public class CoinMarketCapService {
                 .filter(c -> c.isCoin(coin))
                 .map(CoinMarketCapData::getId).findFirst().orElse(1);
         Set<Integer> idSet = coinSet.stream().map(findCoinId).collect(Collectors.toSet());
+        //Note. Id of 6999 is causing the coin market cap API to return a 400 error.
+        //Remove it out for now.
+        idSet.remove(6999);
         return idSet;
     }
 

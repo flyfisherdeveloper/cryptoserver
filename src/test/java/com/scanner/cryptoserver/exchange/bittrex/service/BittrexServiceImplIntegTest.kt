@@ -10,7 +10,7 @@ import org.springframework.boot.test.context.SpringBootTest
 internal class BittrexServiceImplIntegTest(@Autowired private val service: BittrexServiceImpl) {
 
     @Test
-    fun testGet24HrAllCoinTicker() {
+    fun `test that get24HrAllCoinTicker() returns valid data`() {
         val coins = service.get24HrAllCoinTicker()
         //find one of the coins that we know should be there
         val mtlBtc = coins.first { it.symbol == "MTL-BTC" }

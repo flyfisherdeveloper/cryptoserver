@@ -29,7 +29,7 @@ public class CoinMarketCapServiceIntegTest {
     void testGetMarketCapMap() {
         CoinMarketCapListing listing = apiService.getCoinMarketCapMap();
         assertNotNull(listing);
-        Optional<CoinMarketCapData> ltc = listing.findData("LTC");
+        Optional<CoinMarketCapData> ltc = listing.findData("LTC", "Litecoin");
         assertTrue(ltc.isPresent());
     }
 
@@ -39,7 +39,7 @@ public class CoinMarketCapServiceIntegTest {
         idSet.add(1);
         CoinMarketCapListing listing = service.getCoinMarketCapListing(idSet);
         assertNotNull(listing);
-        Optional<CoinMarketCapData> btc = listing.findData("BTC");
+        Optional<CoinMarketCapData> btc = listing.findData("BTC", "Bitcoin");
         assertTrue(btc.isPresent());
     }
 }
