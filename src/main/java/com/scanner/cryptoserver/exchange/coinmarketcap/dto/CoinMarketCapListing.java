@@ -2,6 +2,7 @@ package com.scanner.cryptoserver.exchange.coinmarketcap.dto;
 
 import lombok.Data;
 
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
@@ -9,7 +10,7 @@ import java.util.stream.Collectors;
 
 @Data
 public class CoinMarketCapListing {
-    Map<Integer, CoinMarketCapData> data;
+    private Map<Integer, CoinMarketCapData> data = new HashMap<>();
 
     /**
      * Convert a coin market cap data list to a coin market cap listing.
