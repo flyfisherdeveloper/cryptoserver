@@ -165,9 +165,9 @@ class CoinMarketCapServiceTest extends Specification {
           def ethCap = 22000000
           def ethAllCap = 4000000.8923
           def data2 = new CoinMarketCapData(name: "ETH", marketCap: ethCap, symbol: "ETHUSD", id: 2, volume24HrUsd: ethAllCap)
-          def data = [:] as Map<String, CoinMarketCapData>
-          data.put(data1.getName(), data1)
-          data.put(data2.getName(), data2)
+          def data = [:] as Map<Integer, CoinMarketCapData>
+          data.put(1, data1)
+          data.put(2, data2)
           listing.setData(data)
 
           def btc = new CoinDataFor24Hr(coin: "BTC", symbol: "BTCUSD")
