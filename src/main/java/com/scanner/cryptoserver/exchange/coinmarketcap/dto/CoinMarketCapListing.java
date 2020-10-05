@@ -41,6 +41,7 @@ public class CoinMarketCapListing {
             return data.values().stream()
                     .filter(d -> d.isCoin(symbol))
                     .filter(d -> name.isEmpty() || d.isCoin(name))
+                    //jeff fix this! need visitor
                     .findFirst();
         }
         return Optional.empty();
@@ -54,6 +55,7 @@ public class CoinMarketCapListing {
     //todo: jeff unit test this
     public List<CoinMarketCapData> findData(String symbol) {
         if (data != null) {
+            //jeff fix this! need visitor
             return data.values().stream().filter(d -> d.isCoin(symbol)).collect(Collectors.toList());
         }
         return new ArrayList<>();

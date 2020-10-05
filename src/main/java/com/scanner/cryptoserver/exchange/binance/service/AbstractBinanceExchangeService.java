@@ -86,12 +86,7 @@ public abstract class AbstractBinanceExchangeService implements ExchangeService 
     @Override
     //todo: jeff unit test this
     public ExchangeVisitor getExchangeVisitor() {
-        return coin -> {
-            if (coin.equals("UNI")) {
-                return "Uniswap";
-            }
-            return "";
-        };
+        return coin -> coin.equals("UNI") ? "Uniswap" : coin;
     }
 
     private void setMarketCapForExchangeInfo(ExchangeInfo exchangeInfo) {
@@ -148,7 +143,7 @@ public abstract class AbstractBinanceExchangeService implements ExchangeService 
             return new CoinDataFor24Hr();
         }
         CoinDataFor24Hr coin = get24HrCoinTicker(body);
-        coinMarketCapService.setMarketCapDataFor24HrData(coin);
+        coinMarketCapService.setMarketCapDataFor24HrData(getExchangeVisitor(), coin);
         return coin;
     }
 
@@ -550,7 +545,7 @@ public abstract class AbstractBinanceExchangeService implements ExchangeService 
             }
         }
 
-        coinMarketCapService.setMarketCapDataFor24HrData(list);
+        coinMarketCapService.setMarketCapDataFor24HrData(getExchangeVisitor(), list);
         //since this is the first time (in awhile) we have called the exchange info,
         //start threads to update every minute for 15 minutes - this way the client gets
         //updated 24-hour data every minute

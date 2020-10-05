@@ -7,6 +7,7 @@ import com.scanner.cryptoserver.exchange.binance.dto.CoinDataFor24Hr;
 import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapData;
 import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapListing;
 import com.scanner.cryptoserver.exchange.coinmarketcap.dto.ExchangeInfo;
+import com.scanner.cryptoserver.exchange.service.ExchangeVisitor;
 import com.scanner.cryptoserver.util.CacheUtil;
 import com.scanner.cryptoserver.util.dto.Symbol;
 import org.apache.http.NameValuePair;
@@ -107,11 +108,11 @@ public class CoinMarketCapService {
      *
      * @param data the list of coins that will have the market cap data set.
      */
-    public void setMarketCapDataFor24HrData(List<CoinDataFor24Hr> data) {
+    public void setMarketCapDataFor24HrData(ExchangeVisitor visitor, List<CoinDataFor24Hr> data) {
         CoinMarketCapListing coinMarketCap = getCoinMarketCapListing();
         //If the coin market cap data exists, then update each symbol with the market cap value found in the market cap data.
         if (coinMarketCap != null) {
-            data.forEach(d -> d.addMarketCapData(coinMarketCap));
+            data.forEach(d -> d.addMarketCapData(visitor, coinMarketCap));
         }
     }
 
@@ -120,8 +121,8 @@ public class CoinMarketCapService {
      *
      * @param coin the coin that will have the market cap data set.
      */
-    public void setMarketCapDataFor24HrData(CoinDataFor24Hr coin) {
-        setMarketCapDataFor24HrData(Collections.singletonList(coin));
+    public void setMarketCapDataFor24HrData(ExchangeVisitor visitor, CoinDataFor24Hr coin) {
+        setMarketCapDataFor24HrData(visitor, Collections.singletonList(coin));
     }
 
     /**

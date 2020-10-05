@@ -45,7 +45,7 @@ class BittrexServiceImpl(private val cacheUtil: CacheUtil, private val coinMarke
         var coins = getCoinDataFor24Hour()
         //we need to make another api call to get the "current price", which is "lastTradeRate" in the json
         val tickers = getTickersFromCache()
-        coinMarketCapService.setMarketCapDataFor24HrData(coins)
+        coinMarketCapService.setMarketCapDataFor24HrData(exchangeVisitor, coins)
         //exclude coins that don't have a market cap - they are probably old coins that the exchange doesn't support anymore
         coins = coins.filter { it.marketCap > 0.0 }
         coins.forEach {
@@ -127,7 +127,7 @@ class BittrexServiceImpl(private val cacheUtil: CacheUtil, private val coinMarke
                 if (coin == "UNI") {
                     return "Uniswap"
                 }
-                return ""
+                return coin
             }
         }
     }
