@@ -200,6 +200,7 @@ public class CoinDataFor24Hr {
         } else {
             data = coinMarketCapListing.getData().entrySet().stream()
                     .filter(e -> e.getValue().isCoin(this.coin))
+                    //jeff: findFirst() fix this!
                     .findFirst().map(Map.Entry::getValue);
         }
         data.ifPresent(coinMarketCapData -> {

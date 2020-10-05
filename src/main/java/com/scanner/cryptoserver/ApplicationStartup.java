@@ -5,7 +5,6 @@ import com.scanner.cryptoserver.exchange.bittrex.service.BittrexServiceImpl;
 import com.scanner.cryptoserver.exchange.coinmarketcap.CoinMarketCapService;
 import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapListing;
 import com.scanner.cryptoserver.exchange.coinmarketcap.dto.ExchangeInfo;
-import com.scanner.cryptoserver.exchange.service.ExchangeService;
 import com.scanner.cryptoserver.util.dto.Symbol;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -13,8 +12,6 @@ import org.springframework.boot.context.event.ApplicationReadyEvent;
 import org.springframework.context.ApplicationListener;
 import org.springframework.stereotype.Component;
 
-import java.util.Arrays;
-import java.util.List;
 import java.util.Set;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutionException;
@@ -77,9 +74,9 @@ public class ApplicationStartup implements ApplicationListener<ApplicationReadyE
                     //Now fill the market cap for each coin on the exchanges.
                     //Here, we set the exchange info market cap for each coin, retrieving it from the coin market cap info.
                     try {
-                        futureBinance.get().getSymbols().forEach(symbol -> symbol.addMarketCapAndId(coinMarketCapInfo));
-                        futureBinanceUsa.get().getSymbols().forEach(symbol -> symbol.addMarketCapAndId(coinMarketCapInfo));
-                        futureBittrex.get().getSymbols().forEach(symbol -> symbol.addMarketCapAndId(coinMarketCapInfo));
+                        futureBinance.get().getSymbols().forEach(symbol -> symbol.addMarketCapAndId(binanceService.getExchangeVisitor(), coinMarketCapInfo));
+                        futureBinanceUsa.get().getSymbols().forEach(symbol -> symbol.addMarketCapAndId(binanceUsaService.getExchangeVisitor(), coinMarketCapInfo));
+                        futureBittrex.get().getSymbols().forEach(symbol -> symbol.addMarketCapAndId(bittrexService.getExchangeVisitor(), coinMarketCapInfo));
                     } catch (InterruptedException | ExecutionException e) {
                         Log.error("Could not access exchange future for adding market cap: {}", e.getMessage());
                     }

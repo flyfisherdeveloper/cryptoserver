@@ -1,6 +1,7 @@
 package com.scanner.cryptoserver.exchange.binance.service;
 
 import com.scanner.cryptoserver.exchange.coinmarketcap.CoinMarketCapService;
+import com.scanner.cryptoserver.exchange.service.ExchangeVisitor;
 import com.scanner.cryptoserver.util.CacheUtil;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestOperations;

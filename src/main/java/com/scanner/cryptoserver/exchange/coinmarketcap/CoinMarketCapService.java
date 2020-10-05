@@ -16,8 +16,6 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
 import java.util.*;
-import java.util.function.Function;
-import java.util.function.Predicate;
 import java.util.function.Supplier;
 import java.util.stream.Collectors;
 
@@ -70,6 +68,7 @@ public class CoinMarketCapService {
         CoinMarketCapListing coinMarketCap = cacheUtil.retrieveFromCache(COIN_MARKET_CAP, MARKET_CAP_MAP, supplier);
 
         //now get a set of ids for the coins in the exchanges
+        //note: there can be duplicate symbols in there, such as "UNI" (Universe) and "UNI" (Uniswap)
         Set<Integer> idSet = new HashSet<>();
         coinSet.forEach(coin -> {
             Set<Integer> ids = coinMarketCap.findData(coin).stream().map(CoinMarketCapData::getId).collect(Collectors.toSet());
@@ -110,7 +109,7 @@ public class CoinMarketCapService {
      */
     public void setMarketCapDataFor24HrData(List<CoinDataFor24Hr> data) {
         CoinMarketCapListing coinMarketCap = getCoinMarketCapListing();
-        //If the coin market cap data exists, then update each symbol with the market cap value found in the maket cap data.
+        //If the coin market cap data exists, then update each symbol with the market cap value found in the market cap data.
         if (coinMarketCap != null) {
             data.forEach(d -> d.addMarketCapData(coinMarketCap));
         }
