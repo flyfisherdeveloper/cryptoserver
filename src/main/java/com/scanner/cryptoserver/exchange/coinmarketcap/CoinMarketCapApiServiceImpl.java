@@ -79,17 +79,6 @@ public class CoinMarketCapApiServiceImpl implements CoinMarketCapApiService {
     }
 
     @Override
-    public String makeExchangeInfoApiCall(List<NameValuePair> paratmers) {
-        try {
-            String value = makeAPICall(exchangeInfoUrl, paratmers);
-            return value;
-        } catch (URISyntaxException | IOException e) {
-            Log.error("Cannot make coin market cap exchange info api call: {}", e.getMessage());
-        }
-        return null;
-    }
-
-    @Override
     public String makeExchangeQuotesApiCall(List<NameValuePair> parameters) {
         try {
             return makeAPICall(exchangeQuotesUrl, parameters);

@@ -27,13 +27,26 @@ class CoinMarketCapServiceTest extends Specification {
           def name1 = "Bitcoin"
           def baseAsset2 = "ETH"
           def name2 = "Ether"
+          def baseAsset3 = "UNI"
+          def name3 = "Universe"
+          def baseAsset4 = "UNI"
+          def name4 = "Uniswap"
           def id1 = 1
           def id2 = 2
+          def id3 = 3
+          def id4 = 4
 
-          def exchangeInfo = new ExchangeInfo(symbols: [new Symbol(baseAsset: baseAsset1), new Symbol(baseAsset: baseAsset2)])
-          def data = [:] as HashMap<String, CoinMarketCapData>
-          data.put(baseAsset1, new CoinMarketCapData(symbol: baseAsset1, id: id1, name: name1))
-          data.put(baseAsset2, new CoinMarketCapData(symbol: baseAsset2, id: id2, name: name2))
+          def exchangeInfo = new ExchangeInfo(symbols: [new Symbol(baseAsset: baseAsset1),
+                                                        new Symbol(baseAsset: baseAsset2),
+                                                        new Symbol(baseAsset: baseAsset3),
+                                                        new Symbol(baseAsset: baseAsset4)])
+
+          def data = [:] as HashMap<Integer, CoinMarketCapData>
+          data.put(id1, new CoinMarketCapData(symbol: baseAsset1, id: id1, name: name1))
+          data.put(id2, new CoinMarketCapData(symbol: baseAsset2, id: id2, name: name2))
+          data.put(id3, new CoinMarketCapData(symbol: baseAsset3, id: id3, name: name3))
+          data.put(id4, new CoinMarketCapData(symbol: baseAsset4, id: id4, name: name4))
+
           def listing = new CoinMarketCapListing()
           listing.setData(data)
 
@@ -51,6 +64,8 @@ class CoinMarketCapServiceTest extends Specification {
           //"it" is a Groovy keyword: it is the name of the function parameter
           assert idSet.find { it == id1 } == 1
           assert idSet.find { it == id2 } == 2
+          assert idSet.find { it == id3 } == 3
+          assert idSet.find { it == id4 } == 4
     }
 
     @Unroll

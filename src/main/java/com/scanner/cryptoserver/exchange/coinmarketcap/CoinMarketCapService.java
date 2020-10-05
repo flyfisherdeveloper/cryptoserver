@@ -17,6 +17,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.*;
 import java.util.function.Function;
+import java.util.function.Predicate;
 import java.util.function.Supplier;
 import java.util.stream.Collectors;
 
@@ -69,10 +70,11 @@ public class CoinMarketCapService {
         CoinMarketCapListing coinMarketCap = cacheUtil.retrieveFromCache(COIN_MARKET_CAP, MARKET_CAP_MAP, supplier);
 
         //now get a set of ids for the coins in the exchanges
-        Function<String, Integer> findCoinId = (coin) -> coinMarketCap.getData().values().stream()
-                .filter(c -> c.isCoin(coin))
-                .map(CoinMarketCapData::getId).findFirst().orElse(1);
-        Set<Integer> idSet = coinSet.stream().map(findCoinId).collect(Collectors.toSet());
+        Set<Integer> idSet = new HashSet<>();
+        coinSet.forEach(coin -> {
+            Set<Integer> ids = coinMarketCap.findData(coin).stream().map(CoinMarketCapData::getId).collect(Collectors.toSet());
+            idSet.addAll(ids);
+        });
         //Note. Id of 6999 is causing the coin market cap API to return a 400 error.
         //Remove it out for now.
         idSet.remove(6999);
