@@ -86,7 +86,15 @@ public abstract class AbstractBinanceExchangeService implements ExchangeService 
     @Override
     //todo: jeff unit test this
     public ExchangeVisitor getExchangeVisitor() {
-        return coin -> coin.equals("UNI") ? "Uniswap" : coin;
+        return (coin) -> {
+            if (coin == null) {
+                return "";
+            }
+            if (coin.equals("UNI")) {
+                return "Uniswap";
+            }
+            return coin;
+        };
     }
 
     private void setMarketCapForExchangeInfo(ExchangeInfo exchangeInfo) {

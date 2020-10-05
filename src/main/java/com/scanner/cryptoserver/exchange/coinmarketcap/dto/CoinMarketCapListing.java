@@ -52,7 +52,6 @@ public class CoinMarketCapListing {
      * @param symbol the coin symbol, such as "BTC".
      * @return a list of data for the symbol.
      */
-    //todo: jeff unit test this
     public List<CoinMarketCapData> findData(String symbol) {
         if (data != null) {
             return data.values().stream().filter(d -> d.isCoin(symbol)).collect(Collectors.toList());

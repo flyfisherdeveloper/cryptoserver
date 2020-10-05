@@ -4,8 +4,10 @@ import com.scanner.cryptoserver.exchange.binance.dto.CoinDataFor24Hr
 import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapData
 import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapListing
 import com.scanner.cryptoserver.exchange.coinmarketcap.dto.ExchangeInfo
+import com.scanner.cryptoserver.exchange.service.ExchangeVisitor
 import com.scanner.cryptoserver.util.CacheUtil
 import com.scanner.cryptoserver.util.dto.Symbol
+import org.jetbrains.annotations.NotNull
 import spock.lang.Specification
 import spock.lang.Unroll
 
@@ -137,7 +139,7 @@ class CoinMarketCapServiceTest extends Specification {
           cacheUtil.retrieveFromCache("CoinMarketCap", _, _) >> listing
 
         then:
-          service.setMarketCapDataFor24HrData(coinList)
+          service.setMarketCapDataFor24HrData(getExchangeVisitor(), coinList)
 
         expect:
           def btcCoin = coinList.find { it -> it.getCoin() == "BTC" }
@@ -176,11 +178,20 @@ class CoinMarketCapServiceTest extends Specification {
           cacheUtil.retrieveFromCache("CoinMarketCap", _, _) >> listing
 
         then:
-          service.setMarketCapDataFor24HrData(btc)
+          service.setMarketCapDataFor24HrData(getExchangeVisitor(), btc)
 
         expect:
           assert btc.getMarketCap() == btcCap
           assert btc.getVolume24HrUsd() == btcAllCap
+    }
+
+    def getExchangeVisitor() {
+        return new ExchangeVisitor() {
+            @Override
+            String visit(@NotNull String coin) {
+                return coin
+            }
+        }
     }
 
     def getJson() {

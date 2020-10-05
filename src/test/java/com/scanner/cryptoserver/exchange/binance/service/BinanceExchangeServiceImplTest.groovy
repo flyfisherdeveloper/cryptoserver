@@ -121,7 +121,7 @@ class BinanceExchangeServiceImplTest extends Specification {
           //here, we mock the call to the market cap service that sets the market cap
           //this ensures that the service makes the call to set the market cap
           coinMarketCapService.setMarketCapDataFor24HrData(*_) >> { args ->
-              def list = args.get(0) as List<CoinDataFor24Hr>
+              def list = args.get(1) as List<CoinDataFor24Hr>
               list.forEach { it.setMarketCap(marketCap) }
           }
 
@@ -498,6 +498,24 @@ class BinanceExchangeServiceImplTest extends Specification {
           //therefore, all we need to do is check that the service correctly made the calls.
           //3 times the ticker list size is what we are expecting
           assert tickerData.size() == 3 * coinTickerList.size()
+    }
+
+    @Unroll("test that the exchange visitor returns '#expectedResult' for #coin")
+    def "test getExchangeVisitor"() {
+        when:
+          def visitor = service.getExchangeVisitor()
+
+        then:
+          def coinName = visitor.visit(coin)
+
+        expect:
+          coinName == expectedResult
+
+        where:
+          coin  | expectedResult
+          "BTC" | "BTC"
+          "UNI" | "Uniswap"
+          null  | ""
     }
 
     ResponseEntity<Object[]> getMockCoinTicker() {
