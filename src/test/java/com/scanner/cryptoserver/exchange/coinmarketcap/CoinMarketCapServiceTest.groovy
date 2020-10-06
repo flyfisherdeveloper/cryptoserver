@@ -109,7 +109,7 @@ class CoinMarketCapServiceTest extends Specification {
           "bad json" | true
     }
 
-    def "test setMarketCapDataFor24HrData for list of coins"() {
+    def "test setMarketCapDataFor24HrData() for list of coins"() {
         given:
           def exchangeNameList = ["binance", "binanceUsa"]
           def exchangeInfo = new ExchangeInfo(symbols: [new Symbol(baseAsset: "BTC"), new Symbol(baseAsset: "ETH")])
@@ -152,7 +152,7 @@ class CoinMarketCapServiceTest extends Specification {
           assert ethCoin.getVolume24HrUsd() == ethAllCapFormatted
     }
 
-    def "test setMarketCapDataFor24HrData for single coin"() {
+    def "test setMarketCapDataFor24HrData() for single coin"() {
         given:
           def exchangeNameList = ["binance", "binanceUsa"]
           def exchangeInfo = new ExchangeInfo(symbols: [new Symbol(baseAsset: "BTC"), new Symbol(baseAsset: "ETH")])
