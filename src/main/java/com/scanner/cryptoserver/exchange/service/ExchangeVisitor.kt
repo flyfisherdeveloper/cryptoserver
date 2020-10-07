@@ -6,6 +6,7 @@ package com.scanner.cryptoserver.exchange.service
  * such as "Universe" and "Uniswap". This visitor allows a service to "visit" an exchange for information
  * without being coupled with the exchange service.
  */
+@FunctionalInterface
 interface ExchangeVisitor {
     /**
      * Determine which exact coin is needed for a given coin symbol, such as "UNI". Will

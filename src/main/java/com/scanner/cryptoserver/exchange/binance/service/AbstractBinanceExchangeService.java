@@ -84,7 +84,6 @@ public abstract class AbstractBinanceExchangeService implements ExchangeService 
      * symbol, such as "UNI".
      */
     @Override
-    //todo: jeff unit test this
     public ExchangeVisitor getExchangeVisitor() {
         return (coin) -> {
             if (coin == null) {
