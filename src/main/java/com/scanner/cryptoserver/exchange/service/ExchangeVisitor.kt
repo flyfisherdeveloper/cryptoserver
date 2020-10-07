@@ -12,6 +12,7 @@ interface ExchangeVisitor {
      * Determine which exact coin is needed for a given coin symbol, such as "UNI". Will
      * return the coin name based on what the exchange is expecting, such as "Uniswap" for "UNI", given
      * that "UNI" represents multiple coins in the coin market cap data, such as "Universe" and "Uniswap".
+     * This allows a unique representation (i.e. "UNI/Uniswap") for the ambiguous coin symbol ("UNI").
      */
     fun visit(coin: String): String
 }
