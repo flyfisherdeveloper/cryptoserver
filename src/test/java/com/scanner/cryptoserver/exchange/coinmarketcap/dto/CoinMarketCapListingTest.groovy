@@ -99,4 +99,44 @@ class CoinMarketCapListingTest extends Specification {
           1   | "UNI"   | "Universe" | 2   | "UNI"   | "Uniswap"
           0   | null    | null       | 2   | null    | null
     }
+
+    @Unroll
+    def "test findData() that returns a list for multiple coins with identical symbols"() {
+        given:
+          def data1 = new CoinMarketCapData(symbol: symbol1, id: id1, name: name1)
+          def data2 = new CoinMarketCapData(symbol: symbol2, id: id2, name: name2)
+          def data3 = new CoinMarketCapData(symbol: symbol3, id: id3, name: name3)
+          def data
+          if (id1 == 0) {
+              data = null
+          } else {
+              data = [id1: data1, id2: data2, id3: data3] as Map<Integer, CoinMarketCapData>
+          }
+          def listing = new CoinMarketCapListing(data: data)
+
+        when:
+          //find the data for "UNI" coin
+          def list = listing.findData(symbol1)
+
+        then:
+          if (id1 == 0) {
+              assert list != null
+              assert list.size() == 0
+          } else {
+              //assert there are two distinct coins with symbol "UNI", but with different names
+              assert list.size() == 2
+              list.each { assert it.getSymbol() == symbol1 }
+              def find = list.find { it.getId() == id1 }
+              assert find.getName() == name1
+              def find2 = list.find { it.getId() == id2 }
+              assert find2.getName() == name2
+          }
+
+        where:
+          id1 | symbol1 | name1      | id2 | symbol2 | name2     | id3 | symbol3 | name3
+          1   | "UNI"   | "Universe" | 2   | "UNI"   | "Uniswap" | 3   | "BTC"   | "Bitcoin"
+          //ids of 0 are used to create null data in the coin market cap data
+          //we test this to ensure that there are no null pointer exceptions
+          0   | null    | null       | 0   | null    | null      | 0   | null    | null
+    }
 }

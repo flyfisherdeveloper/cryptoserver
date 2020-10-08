@@ -2,10 +2,7 @@ package com.scanner.cryptoserver.exchange.coinmarketcap.dto;
 
 import lombok.Data;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Optional;
+import java.util.*;
 import java.util.stream.Collectors;
 
 @Data
@@ -44,8 +41,21 @@ public class CoinMarketCapListing {
             return data.values().stream()
                     .filter(d -> d.isCoin(symbol))
                     .filter(d -> name.isEmpty() || d.isCoin(name))
-                    .findFirst();
+                    .findAny();
         }
         return Optional.empty();
+    }
+
+    /**
+     * Find all the data for a symbol. A symbol, such as "UNI" can be in the list more than once.
+     *
+     * @param symbol the coin symbol, such as "BTC".
+     * @return a list of data for the symbol.
+     */
+    public List<CoinMarketCapData> findData(String symbol) {
+        if (data != null) {
+            return data.values().stream().filter(d -> d.isCoin(symbol)).collect(Collectors.toList());
+        }
+        return new ArrayList<>();
     }
 }

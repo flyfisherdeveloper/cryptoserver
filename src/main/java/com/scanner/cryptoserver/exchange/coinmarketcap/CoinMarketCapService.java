@@ -7,6 +7,7 @@ import com.scanner.cryptoserver.exchange.binance.dto.CoinDataFor24Hr;
 import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapData;
 import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapListing;
 import com.scanner.cryptoserver.exchange.coinmarketcap.dto.ExchangeInfo;
+import com.scanner.cryptoserver.exchange.service.ExchangeVisitor;
 import com.scanner.cryptoserver.util.CacheUtil;
 import com.scanner.cryptoserver.util.dto.Symbol;
 import org.apache.http.NameValuePair;
@@ -16,7 +17,6 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
 import java.util.*;
-import java.util.function.Function;
 import java.util.function.Supplier;
 import java.util.stream.Collectors;
 
@@ -69,10 +69,12 @@ public class CoinMarketCapService {
         CoinMarketCapListing coinMarketCap = cacheUtil.retrieveFromCache(COIN_MARKET_CAP, MARKET_CAP_MAP, supplier);
 
         //now get a set of ids for the coins in the exchanges
-        Function<String, Integer> findCoinId = (coin) -> coinMarketCap.getData().values().stream()
-                .filter(c -> c.isCoin(coin))
-                .map(CoinMarketCapData::getId).findFirst().orElse(1);
-        Set<Integer> idSet = coinSet.stream().map(findCoinId).collect(Collectors.toSet());
+        //note: there can be duplicate symbols in there, such as "UNI" (Universe) and "UNI" (Uniswap)
+        Set<Integer> idSet = new HashSet<>();
+        coinSet.forEach(coin -> {
+            Set<Integer> ids = coinMarketCap.findData(coin).stream().map(CoinMarketCapData::getId).collect(Collectors.toSet());
+            idSet.addAll(ids);
+        });
         //Note. Id of 6999 is causing the coin market cap API to return a 400 error.
         //Remove it out for now.
         idSet.remove(6999);
@@ -106,11 +108,11 @@ public class CoinMarketCapService {
      *
      * @param data the list of coins that will have the market cap data set.
      */
-    public void setMarketCapDataFor24HrData(List<CoinDataFor24Hr> data) {
+    public void setMarketCapDataFor24HrData(ExchangeVisitor visitor, List<CoinDataFor24Hr> data) {
         CoinMarketCapListing coinMarketCap = getCoinMarketCapListing();
-        //If the coin market cap data exists, then update each symbol with the market cap value found in the maket cap data.
+        //If the coin market cap data exists, then update each symbol with the market cap value found in the market cap data.
         if (coinMarketCap != null) {
-            data.forEach(d -> d.addMarketCapData(coinMarketCap));
+            data.forEach(d -> d.addMarketCapData(visitor, coinMarketCap));
         }
     }
 
@@ -119,8 +121,8 @@ public class CoinMarketCapService {
      *
      * @param coin the coin that will have the market cap data set.
      */
-    public void setMarketCapDataFor24HrData(CoinDataFor24Hr coin) {
-        setMarketCapDataFor24HrData(Collections.singletonList(coin));
+    public void setMarketCapDataFor24HrData(ExchangeVisitor visitor, CoinDataFor24Hr coin) {
+        setMarketCapDataFor24HrData(visitor, Collections.singletonList(coin));
     }
 
     /**

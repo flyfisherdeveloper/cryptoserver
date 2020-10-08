@@ -15,6 +15,8 @@ public interface ExchangeService {
      */
     ExchangeInfo getExchangeInfo();
 
+    ExchangeVisitor getExchangeVisitor();
+
     Supplier<ExchangeInfo> getExchangeInfoSupplier();
 
     /**

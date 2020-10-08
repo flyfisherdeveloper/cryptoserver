@@ -6,6 +6,7 @@ import com.scanner.cryptoserver.exchange.coinmarketcap.CoinMarketCapService;
 import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapListing;
 import com.scanner.cryptoserver.exchange.coinmarketcap.dto.ExchangeInfo;
 import com.scanner.cryptoserver.exchange.service.ExchangeService;
+import com.scanner.cryptoserver.exchange.service.ExchangeVisitor;
 import com.scanner.cryptoserver.util.CacheUtil;
 import com.scanner.cryptoserver.util.RsiCalc;
 import com.scanner.cryptoserver.util.dto.Symbol;
@@ -70,12 +71,37 @@ public abstract class AbstractBinanceExchangeService implements ExchangeService 
         return exchangeInfo;
     }
 
+    /**
+     * When coins have duplicate symbols, such as "UNI", this visitor is used by services
+     * to determine which coin is wanted for a given symbol that has multiple coins.
+     * The coin wanted is the coin name, which is assumbed to be unique. Thus, the coin
+     * symbol/name pair should suffice for determining exactly which coin is wanted.
+     * Since the exchange does not have the coin name in its API data, (only the symbol is there),
+     * we simply must hard-code the values here, until the exchanges give more information in their
+     * API data.
+     *
+     * @return the name of the coin, such as "Uniswap", or "Universe" for a given coin
+     * symbol, such as "UNI".
+     */
+    @Override
+    public ExchangeVisitor getExchangeVisitor() {
+        return (coin) -> {
+            if (coin == null) {
+                return "";
+            }
+            if (coin.equals("UNI")) {
+                return "Uniswap";
+            }
+            return coin;
+        };
+    }
+
     private void setMarketCapForExchangeInfo(ExchangeInfo exchangeInfo) {
         CoinMarketCapListing coinMarketCap = coinMarketCapService.getCoinMarketCapListing();
 
         if (coinMarketCap != null) {
             //If the coin market cap data exists, then update each symbol with the market cap value found in the market cap data.
-            exchangeInfo.getSymbols().forEach(symbol -> symbol.addMarketCapAndId(coinMarketCap));
+            exchangeInfo.getSymbols().forEach(symbol -> symbol.addMarketCapAndId(getExchangeVisitor(), coinMarketCap));
         }
     }
 
@@ -124,7 +150,7 @@ public abstract class AbstractBinanceExchangeService implements ExchangeService 
             return new CoinDataFor24Hr();
         }
         CoinDataFor24Hr coin = get24HrCoinTicker(body);
-        coinMarketCapService.setMarketCapDataFor24HrData(coin);
+        coinMarketCapService.setMarketCapDataFor24HrData(getExchangeVisitor(), coin);
         return coin;
     }
 
@@ -526,7 +552,7 @@ public abstract class AbstractBinanceExchangeService implements ExchangeService 
             }
         }
 
-        coinMarketCapService.setMarketCapDataFor24HrData(list);
+        coinMarketCapService.setMarketCapDataFor24HrData(getExchangeVisitor(), list);
         //since this is the first time (in awhile) we have called the exchange info,
         //start threads to update every minute for 15 minutes - this way the client gets
         //updated 24-hour data every minute

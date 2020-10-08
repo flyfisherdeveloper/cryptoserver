@@ -9,6 +9,7 @@ import com.scanner.cryptoserver.exchange.bittrex.dto.BittrexTicker
 import com.scanner.cryptoserver.exchange.coinmarketcap.CoinMarketCapService
 import com.scanner.cryptoserver.exchange.coinmarketcap.dto.ExchangeInfo
 import com.scanner.cryptoserver.exchange.service.ExchangeService
+import com.scanner.cryptoserver.exchange.service.ExchangeVisitor
 import com.scanner.cryptoserver.util.CacheUtil
 import com.scanner.cryptoserver.util.UrlReader
 import org.slf4j.LoggerFactory
@@ -44,7 +45,7 @@ class BittrexServiceImpl(private val cacheUtil: CacheUtil, private val coinMarke
         var coins = getCoinDataFor24Hour()
         //we need to make another api call to get the "current price", which is "lastTradeRate" in the json
         val tickers = getTickersFromCache()
-        coinMarketCapService.setMarketCapDataFor24HrData(coins)
+        coinMarketCapService.setMarketCapDataFor24HrData(exchangeVisitor, coins)
         //exclude coins that don't have a market cap - they are probably old coins that the exchange doesn't support anymore
         coins = coins.filter { it.marketCap > 0.0 }
         coins.forEach {
@@ -117,6 +118,17 @@ class BittrexServiceImpl(private val cacheUtil: CacheUtil, private val coinMarke
         val name = "$EXCHANGE_NAME-$EXCHANGE_INFO"
         cacheUtil.putInCache(EXCHANGE_INFO, name, exchangeInfo)
         return exchangeInfo
+    }
+
+    override fun getExchangeVisitor(): ExchangeVisitor {
+        return object : ExchangeVisitor {
+            override fun visit(coin: String): String {
+                if (coin == "UNI") {
+                    return "Uniswap"
+                }
+                return coin
+            }
+        }
     }
 
     override fun retrieveExchangeInfoFromCache(): ExchangeInfo {

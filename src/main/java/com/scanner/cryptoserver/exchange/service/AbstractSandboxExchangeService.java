@@ -64,6 +64,11 @@ public abstract class AbstractSandboxExchangeService implements ExchangeService 
     }
 
     @Override
+    public ExchangeVisitor getExchangeVisitor() {
+        return null;
+    }
+
+    @Override
     public Supplier<ExchangeInfo> getExchangeInfoSupplier() {
         return null;
     }
@@ -117,4 +122,5 @@ public abstract class AbstractSandboxExchangeService implements ExchangeService 
     }
 
     protected abstract String getSandboxName();
+
 }

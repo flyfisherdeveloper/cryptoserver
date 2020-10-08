@@ -4,8 +4,10 @@ import com.scanner.cryptoserver.exchange.binance.dto.CoinDataFor24Hr
 import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapData
 import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapListing
 import com.scanner.cryptoserver.exchange.coinmarketcap.dto.ExchangeInfo
+import com.scanner.cryptoserver.exchange.service.ExchangeVisitor
 import com.scanner.cryptoserver.util.CacheUtil
 import com.scanner.cryptoserver.util.dto.Symbol
+import org.jetbrains.annotations.NotNull
 import spock.lang.Specification
 import spock.lang.Unroll
 
@@ -27,13 +29,26 @@ class CoinMarketCapServiceTest extends Specification {
           def name1 = "Bitcoin"
           def baseAsset2 = "ETH"
           def name2 = "Ether"
+          def baseAsset3 = "UNI"
+          def name3 = "Universe"
+          def baseAsset4 = "UNI"
+          def name4 = "Uniswap"
           def id1 = 1
           def id2 = 2
+          def id3 = 3
+          def id4 = 4
 
-          def exchangeInfo = new ExchangeInfo(symbols: [new Symbol(baseAsset: baseAsset1), new Symbol(baseAsset: baseAsset2)])
-          def data = [:] as HashMap<String, CoinMarketCapData>
-          data.put(baseAsset1, new CoinMarketCapData(symbol: baseAsset1, id: id1, name: name1))
-          data.put(baseAsset2, new CoinMarketCapData(symbol: baseAsset2, id: id2, name: name2))
+          def exchangeInfo = new ExchangeInfo(symbols: [new Symbol(baseAsset: baseAsset1),
+                                                        new Symbol(baseAsset: baseAsset2),
+                                                        new Symbol(baseAsset: baseAsset3),
+                                                        new Symbol(baseAsset: baseAsset4)])
+
+          def data = [:] as HashMap<Integer, CoinMarketCapData>
+          data.put(id1, new CoinMarketCapData(symbol: baseAsset1, id: id1, name: name1))
+          data.put(id2, new CoinMarketCapData(symbol: baseAsset2, id: id2, name: name2))
+          data.put(id3, new CoinMarketCapData(symbol: baseAsset3, id: id3, name: name3))
+          data.put(id4, new CoinMarketCapData(symbol: baseAsset4, id: id4, name: name4))
+
           def listing = new CoinMarketCapListing()
           listing.setData(data)
 
@@ -51,6 +66,8 @@ class CoinMarketCapServiceTest extends Specification {
           //"it" is a Groovy keyword: it is the name of the function parameter
           assert idSet.find { it == id1 } == 1
           assert idSet.find { it == id2 } == 2
+          assert idSet.find { it == id3 } == 3
+          assert idSet.find { it == id4 } == 4
     }
 
     @Unroll
@@ -92,7 +109,7 @@ class CoinMarketCapServiceTest extends Specification {
           "bad json" | true
     }
 
-    def "test setMarketCapDataFor24HrData for list of coins"() {
+    def "test setMarketCapDataFor24HrData() for list of coins"() {
         given:
           def exchangeNameList = ["binance", "binanceUsa"]
           def exchangeInfo = new ExchangeInfo(symbols: [new Symbol(baseAsset: "BTC"), new Symbol(baseAsset: "ETH")])
@@ -122,7 +139,7 @@ class CoinMarketCapServiceTest extends Specification {
           cacheUtil.retrieveFromCache("CoinMarketCap", _, _) >> listing
 
         then:
-          service.setMarketCapDataFor24HrData(coinList)
+          service.setMarketCapDataFor24HrData(getExchangeVisitor(), coinList)
 
         expect:
           def btcCoin = coinList.find { it -> it.getCoin() == "BTC" }
@@ -135,7 +152,7 @@ class CoinMarketCapServiceTest extends Specification {
           assert ethCoin.getVolume24HrUsd() == ethAllCapFormatted
     }
 
-    def "test setMarketCapDataFor24HrData for single coin"() {
+    def "test setMarketCapDataFor24HrData() for single coin"() {
         given:
           def exchangeNameList = ["binance", "binanceUsa"]
           def exchangeInfo = new ExchangeInfo(symbols: [new Symbol(baseAsset: "BTC"), new Symbol(baseAsset: "ETH")])
@@ -148,9 +165,9 @@ class CoinMarketCapServiceTest extends Specification {
           def ethCap = 22000000
           def ethAllCap = 4000000.8923
           def data2 = new CoinMarketCapData(name: "ETH", marketCap: ethCap, symbol: "ETHUSD", id: 2, volume24HrUsd: ethAllCap)
-          def data = [:] as Map<String, CoinMarketCapData>
-          data.put(data1.getName(), data1)
-          data.put(data2.getName(), data2)
+          def data = [:] as Map<Integer, CoinMarketCapData>
+          data.put(1, data1)
+          data.put(2, data2)
           listing.setData(data)
 
           def btc = new CoinDataFor24Hr(coin: "BTC", symbol: "BTCUSD")
@@ -161,11 +178,20 @@ class CoinMarketCapServiceTest extends Specification {
           cacheUtil.retrieveFromCache("CoinMarketCap", _, _) >> listing
 
         then:
-          service.setMarketCapDataFor24HrData(btc)
+          service.setMarketCapDataFor24HrData(getExchangeVisitor(), btc)
 
         expect:
           assert btc.getMarketCap() == btcCap
           assert btc.getVolume24HrUsd() == btcAllCap
+    }
+
+    def getExchangeVisitor() {
+        return new ExchangeVisitor() {
+            @Override
+            String visit(@NotNull String coin) {
+                return coin
+            }
+        }
     }
 
     def getJson() {

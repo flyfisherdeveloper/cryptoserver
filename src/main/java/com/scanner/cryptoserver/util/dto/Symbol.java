@@ -3,6 +3,7 @@ package com.scanner.cryptoserver.util.dto;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapData;
 import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapListing;
+import com.scanner.cryptoserver.exchange.service.ExchangeVisitor;
 
 import java.util.Optional;
 
@@ -72,12 +73,12 @@ public class Symbol {
     /**
      * Add the market cap and id value from the coin market cap to the symbol.
      *
-     * @param listing the coin market cap information which contains the symbol, which has the market cap and id value.
+     * @param exchangeVisitor used to determine which exact coin is wanted, given a list of coins with the same symbol.
+     * @param listing         the coin market cap information which contains the symbol, which has the market cap and id value.
      */
-    public void addMarketCapAndId(CoinMarketCapListing listing) {
+    public void addMarketCapAndId(ExchangeVisitor exchangeVisitor, CoinMarketCapListing listing) {
         //find the symbol (i.e. "BTC") in the coin market cap info, and get the market cap value from it and set it in the exchange symbol
-        //todo: fix name
-        Optional<CoinMarketCapData> data = listing.findData(getBaseAsset(), "");
+        Optional<CoinMarketCapData> data = listing.findData(getBaseAsset(), exchangeVisitor.visit(getBaseAsset()));
         data.ifPresent(d -> {
             setMarketCap(d.getMarketCap());
             setId(d.getId());

@@ -6,6 +6,7 @@ import com.scanner.cryptoserver.exchange.coinmarketcap.CoinMarketCapService
 import com.scanner.cryptoserver.util.CacheUtil
 import com.scanner.cryptoserver.util.UrlReader
 import spock.lang.Specification
+import spock.lang.Unroll
 
 import java.util.function.Supplier
 
@@ -91,6 +92,24 @@ class BittrexServiceImplTest extends Specification {
           assert coin.getSymbol() == symbol
     }
 
+    @Unroll("test that when the Bittrex exchange visitor is called for '#symbol' then the result is '#expectedResult'")
+    def "test getExchangeVisitor"() {
+        given:
+          def coin = symbol
+
+        when:
+          def coinReference = service.getExchangeVisitor().visit(coin)
+
+        then:
+          assert coinReference
+          assert coinReference == expectedResult
+
+        where:
+          symbol | expectedResult
+          "BTC"  | "BTC"
+          "UNI"  | "Uniswap"
+    }
+
     def "test get24HrAllCoinTicker"() {
         when:
           urlReader.readFromUrl() >>> [getMarketsJson(), getTickersJson()]
@@ -101,8 +120,8 @@ class BittrexServiceImplTest extends Specification {
           }
           //mock the call to set the market cap for each coin
           //sets the market cap to an arbitrary, non-zero value
-          coinMarketCapService.setMarketCapDataFor24HrData(_) >> { args ->
-              def list = args.get(0) as List<CoinDataFor24Hr>
+          coinMarketCapService.setMarketCapDataFor24HrData(_, _) >> { args ->
+              def list = args.get(1) as List<CoinDataFor24Hr>
               list.each { it.setMarketCap(10000.0) }
           }
 

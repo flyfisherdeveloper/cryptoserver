@@ -8,7 +8,5 @@ import java.util.List;
 public interface CoinMarketCapApiService {
     CoinMarketCapListing getCoinMarketCapMap();
 
-    String makeExchangeInfoApiCall(List<NameValuePair> paratmers);
-
     String makeExchangeQuotesApiCall(List<NameValuePair> parameters);
 }

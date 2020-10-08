@@ -2,6 +2,7 @@ package com.scanner.cryptoserver.exchange.binance.dto;
 
 import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapData;
 import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapListing;
+import com.scanner.cryptoserver.exchange.service.ExchangeVisitor;
 
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
@@ -193,14 +194,14 @@ public class CoinDataFor24Hr {
      *
      * @param coinMarketCapListing the coin market cap listing - contains all the coin market cap data.
      */
-    public void addMarketCapData(CoinMarketCapListing coinMarketCapListing) {
+    public void addMarketCapData(ExchangeVisitor visitor, CoinMarketCapListing coinMarketCapListing) {
         Optional<CoinMarketCapData> data;
         if (id != null) {
             data = Optional.of(coinMarketCapListing.getData().get(id));
         } else {
             data = coinMarketCapListing.getData().entrySet().stream()
-                    .filter(e -> e.getValue().isCoin(this.coin))
-                    .findFirst().map(Map.Entry::getValue);
+                    .filter(e -> e.getValue().isCoin(visitor.visit(this.coin)))
+                    .findAny().map(Map.Entry::getValue);
         }
         data.ifPresent(coinMarketCapData -> {
             setMarketCap(getNumberFormattedValue(coinMarketCapData.getMarketCap()));
