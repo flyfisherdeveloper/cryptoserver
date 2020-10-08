@@ -120,7 +120,6 @@ class BittrexServiceImpl(private val cacheUtil: CacheUtil, private val coinMarke
         return exchangeInfo
     }
 
-    //todo: jeff unit test this
     override fun getExchangeVisitor(): ExchangeVisitor {
         return object : ExchangeVisitor {
             override fun visit(coin: String): String {
