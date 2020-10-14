@@ -98,7 +98,7 @@ class BittrexServiceImplTest extends Specification {
           def coin = symbol
 
         when:
-          def coinReference = service.getExchangeVisitor().visit(coin)
+          def coinReference = service.getExchangeVisitor().getName(coin)
 
         then:
           assert coinReference

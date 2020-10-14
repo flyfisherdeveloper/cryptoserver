@@ -1,5 +1,7 @@
 package com.scanner.cryptoserver.exchange.coinmarketcap.dto
 
+import com.scanner.cryptoserver.exchange.service.ExchangeVisitor
+import org.jetbrains.annotations.NotNull
 import spock.lang.Specification
 import spock.lang.Unroll
 
@@ -62,8 +64,8 @@ class CoinMarketCapListingTest extends Specification {
           def emptyData = new CoinMarketCapData()
 
         when:
-          def foundBySymbol1 = list.findData(symbol1, name1).orElse(emptyData)
-          def foundBySymbol2 = list.findData(symbol2, name2).orElse(emptyData)
+          def foundBySymbol1 = list.findData(symbol1, name1 as String).orElse(emptyData)
+          def foundBySymbol2 = list.findData(symbol2, name2 as String).orElse(emptyData)
           def foundBySymbol1AndEmptyName = list.findData(symbol1, "").orElse(emptyData)
           def foundBySymbol2AndEmptyName = list.findData(symbol2, "").orElse(emptyData)
           def foundEth = list.findData("ETH", "Ether").orElse(emptyData)
@@ -113,10 +115,27 @@ class CoinMarketCapListingTest extends Specification {
               data = [id1: data1, id2: data2, id3: data3] as Map<Integer, CoinMarketCapData>
           }
           def listing = new CoinMarketCapListing(data: data)
+          def exchangeVisitor = new ExchangeVisitor() {
+              @Override
+              String getName(@NotNull String coin) {
+                  if (coin == "UNI") {
+                      return "Uniswap"
+                  }
+                  return getSymbol(coin)
+              }
+
+              @Override
+              String getSymbol(@NotNull String coin) {
+                  if (coin == "BQX") {
+                      return "VGX"
+                  }
+                  return coin
+              }
+          }
 
         when:
           //find the data for "UNI" coin
-          def list = listing.findData(symbol1)
+          def list = listing.findData(symbol1, exchangeVisitor)
 
         then:
           if (id1 == 0) {

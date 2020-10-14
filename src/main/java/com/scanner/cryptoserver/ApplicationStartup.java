@@ -69,7 +69,10 @@ public class ApplicationStartup implements ApplicationListener<ApplicationReadyE
                 })
                 .whenComplete((coinSet, error) -> {
                     //now get the market cap value for each coin
-                    CoinMarketCapListing coinMarketCapInfo = coinMarketCapService.getCoinMarketCapListingWithCoinSet(coinSet);
+                    //note: this uses the Binance exchange visitor - but what about the Bittrex exchange? For now,
+                    //the Bittrex exchange uses the same symbols as Binance, but that could change. If so, this
+                    //will have to be modified to accommodate the Bittrex (or other exchange) info.
+                    CoinMarketCapListing coinMarketCapInfo = coinMarketCapService.getCoinMarketCapListingWithCoinSet(coinSet, binanceService.getExchangeVisitor());
 
                     //Now fill the market cap for each coin on the exchanges.
                     //Here, we set the exchange info market cap for each coin, retrieving it from the coin market cap info.

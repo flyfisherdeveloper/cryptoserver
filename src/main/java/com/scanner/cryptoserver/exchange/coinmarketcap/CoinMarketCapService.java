@@ -43,9 +43,11 @@ public class CoinMarketCapService {
     /**
      * Get a set of IDs that represent coins. Use the exchange info from the exchange services to get the coin names.
      *
+     * @param visitor the exchange visitor used to use an alternate symbol to
+     *                match what the coin market cap is expecting.
      * @return a Set of IDs.
      */
-    public Set<Integer> getIdSet() {
+    public Set<Integer> getIdSet(ExchangeVisitor visitor) {
         Set<String> coinSet = new HashSet<>();
         //get the exchange info for all exchanges - this is to get a list of coins to retrieve the market cap for each coin
         cacheUtil.getExchangeNames().forEach(exchangeName -> {
@@ -55,16 +57,18 @@ public class CoinMarketCapService {
                 coinSet.addAll(exchangeInfo.getSymbols().stream().map(Symbol::getBaseAsset).collect(Collectors.toSet()));
             }
         });
-        return getIdSet(coinSet);
+        return getIdSet(coinSet, visitor);
     }
 
     /**
      * Get a set of Coin Market Cap Ids for a set of coins.
      *
      * @param coinSet the coin set that will be used to look up the Ids.
+     * @param visitor the exchange visitor used to use an alternate symbol to
+     *                match what the coin market cap is expecting.
      * @return the set of Ids, based on the Coin Market Cap service.
      */
-    public Set<Integer> getIdSet(Set<String> coinSet) {
+    public Set<Integer> getIdSet(Set<String> coinSet, ExchangeVisitor visitor) {
         Supplier<CoinMarketCapListing> supplier = coinMarketCapApiService::getCoinMarketCapMap;
         CoinMarketCapListing coinMarketCap = cacheUtil.retrieveFromCache(COIN_MARKET_CAP, MARKET_CAP_MAP, supplier);
 
@@ -72,7 +76,7 @@ public class CoinMarketCapService {
         //note: there can be duplicate symbols in there, such as "UNI" (Universe) and "UNI" (Uniswap)
         Set<Integer> idSet = new HashSet<>();
         coinSet.forEach(coin -> {
-            Set<Integer> ids = coinMarketCap.findData(coin).stream().map(CoinMarketCapData::getId).collect(Collectors.toSet());
+            Set<Integer> ids = coinMarketCap.findData(coin, visitor).stream().map(CoinMarketCapData::getId).collect(Collectors.toSet());
             idSet.addAll(ids);
         });
         //Note. Id of 6999 is causing the coin market cap API to return a 400 error.
@@ -84,10 +88,12 @@ public class CoinMarketCapService {
     /**
      * Get a Coin Market Cap listing, which contains the Ids mapped to the Coin Market Cap data for each coin.
      *
+     * @param visitor the exchange visitor used to use an alternate symbol to
+     *                match what the coin market cap is expecting.
      * @return the listing, which contains the map.
      */
-    public CoinMarketCapListing getCoinMarketCapListing() {
-        Set<Integer> idSet = getIdSet();
+    public CoinMarketCapListing getCoinMarketCapListing(ExchangeVisitor visitor) {
+        Set<Integer> idSet = getIdSet(visitor);
         return getCoinMarketCapListing(idSet);
     }
 
@@ -95,10 +101,12 @@ public class CoinMarketCapService {
      * Get a Coin Market Cap listing for a set of coins.
      *
      * @param coinSet the set of coins to use.
+     * @param visitor the exchange visitor used to use an alternate symbol to
+     *                match what the coin market cap is expecting.
      * @return the listing, which contains the map.
      */
-    public CoinMarketCapListing getCoinMarketCapListingWithCoinSet(Set<String> coinSet) {
-        Set<Integer> idSet = getIdSet(coinSet);
+    public CoinMarketCapListing getCoinMarketCapListingWithCoinSet(Set<String> coinSet, ExchangeVisitor visitor) {
+        Set<Integer> idSet = getIdSet(coinSet, visitor);
         CoinMarketCapListing listing = getCoinMarketCapListing(idSet);
         return listing;
     }
@@ -109,7 +117,7 @@ public class CoinMarketCapService {
      * @param data the list of coins that will have the market cap data set.
      */
     public void setMarketCapDataFor24HrData(ExchangeVisitor visitor, List<CoinDataFor24Hr> data) {
-        CoinMarketCapListing coinMarketCap = getCoinMarketCapListing();
+        CoinMarketCapListing coinMarketCap = getCoinMarketCapListing(visitor);
         //If the coin market cap data exists, then update each symbol with the market cap value found in the market cap data.
         if (coinMarketCap != null) {
             data.forEach(d -> d.addMarketCapData(visitor, coinMarketCap));

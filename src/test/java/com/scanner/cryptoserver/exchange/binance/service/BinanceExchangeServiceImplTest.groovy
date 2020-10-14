@@ -506,16 +506,20 @@ class BinanceExchangeServiceImplTest extends Specification {
           def visitor = service.getExchangeVisitor()
 
         then:
-          def coinName = visitor.visit(coin)
+          def coinName = visitor.getName(coin)
 
         expect:
           coinName == expectedResult
 
         where:
-          coin  | expectedResult
-          "BTC" | "BTC"
-          "UNI" | "Uniswap"
-          null  | ""
+          coin   | expectedResult
+          "BTC"  | "BTC"
+          "UNI"  | "Uniswap"
+          "HNT"  | "Helium"
+          "LINK" | "Chainlink"
+          "CND"  | "Cindicator"
+          "BQX"  | "VGX"
+          "YOYO" | "YOYOW"
     }
 
     ResponseEntity<Object[]> getMockCoinTicker() {
