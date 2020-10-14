@@ -86,11 +86,14 @@ public abstract class AbstractBinanceExchangeService implements ExchangeService 
     @Override
     public ExchangeVisitor getExchangeVisitor() {
         return (coin) -> {
-            if (coin == null) {
-                return "";
-            }
             if (coin.equals("UNI")) {
                 return "Uniswap";
+            }
+            if (coin.equals("HNT")) {
+                return "Helium";
+            }
+            if (coin.equals("LINK")) {
+                return "Chainlink";
             }
             return coin;
         };
