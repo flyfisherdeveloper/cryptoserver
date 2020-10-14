@@ -512,10 +512,11 @@ class BinanceExchangeServiceImplTest extends Specification {
           coinName == expectedResult
 
         where:
-          coin  | expectedResult
-          "BTC" | "BTC"
-          "UNI" | "Uniswap"
-          null  | ""
+          coin   | expectedResult
+          "BTC"  | "BTC"
+          "UNI"  | "Uniswap"
+          "HNT"  | "Helium"
+          "LINK" | "Chainlink"
     }
 
     ResponseEntity<Object[]> getMockCoinTicker() {
