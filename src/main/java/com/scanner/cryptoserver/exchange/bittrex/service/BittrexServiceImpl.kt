@@ -122,10 +122,14 @@ class BittrexServiceImpl(private val cacheUtil: CacheUtil, private val coinMarke
 
     override fun getExchangeVisitor(): ExchangeVisitor {
         return object : ExchangeVisitor {
-            override fun visit(coin: String): String {
+            override fun getName(coin: String): String {
                 if (coin == "UNI") {
                     return "Uniswap"
                 }
+                return coin
+            }
+
+            override fun getSymbol(coin: String): String {
                 return coin
             }
         }

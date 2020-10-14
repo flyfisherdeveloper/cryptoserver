@@ -506,7 +506,7 @@ class BinanceExchangeServiceImplTest extends Specification {
           def visitor = service.getExchangeVisitor()
 
         then:
-          def coinName = visitor.visit(coin)
+          def coinName = visitor.getName(coin)
 
         expect:
           coinName == expectedResult

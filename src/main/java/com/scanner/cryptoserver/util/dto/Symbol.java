@@ -78,7 +78,7 @@ public class Symbol {
      */
     public void addMarketCapAndId(ExchangeVisitor exchangeVisitor, CoinMarketCapListing listing) {
         //find the symbol (i.e. "BTC") in the coin market cap info, and get the market cap value from it and set it in the exchange symbol
-        Optional<CoinMarketCapData> data = listing.findData(getBaseAsset(), exchangeVisitor.visit(getBaseAsset()));
+        Optional<CoinMarketCapData> data = listing.findData(exchangeVisitor.getSymbol(getBaseAsset()), exchangeVisitor.getName(getBaseAsset()));
         data.ifPresent(d -> {
             setMarketCap(d.getMarketCap());
             setId(d.getId());

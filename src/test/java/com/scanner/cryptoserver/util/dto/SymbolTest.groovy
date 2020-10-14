@@ -15,9 +15,20 @@ class SymbolTest extends Specification {
         given:
           def visitor = new ExchangeVisitor() {
               @Override
-              String visit(@NotNull String coin) {
+              String getName(@NotNull String coin) {
                   if (coin == "UNI") {
                       return "Uniswap"
+                  }
+                  return coin
+              }
+
+              @Override
+              String getSymbol(@NotNull String coin) {
+                  if (coin.equals("BQX")) {
+                      return "VGX"
+                  }
+                  if (coin.equals("YOYO")) {
+                      return "YOYOW"
                   }
                   return coin
               }

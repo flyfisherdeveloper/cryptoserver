@@ -200,7 +200,7 @@ public class CoinDataFor24Hr {
             data = Optional.of(coinMarketCapListing.getData().get(id));
         } else {
             data = coinMarketCapListing.getData().entrySet().stream()
-                    .filter(e -> e.getValue().isCoin(visitor.visit(this.coin)))
+                    .filter(e -> (e.getValue().isCoin(visitor.getName(this.coin))))
                     .findAny().map(Map.Entry::getValue);
         }
         data.ifPresent(coinMarketCapData -> {

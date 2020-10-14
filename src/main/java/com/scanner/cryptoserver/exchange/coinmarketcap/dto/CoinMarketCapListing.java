@@ -1,5 +1,6 @@
 package com.scanner.cryptoserver.exchange.coinmarketcap.dto;
 
+import com.scanner.cryptoserver.exchange.service.ExchangeVisitor;
 import lombok.Data;
 
 import java.util.*;
@@ -50,11 +51,13 @@ public class CoinMarketCapListing {
      * Find all the data for a symbol. A symbol, such as "UNI" can be in the list more than once.
      *
      * @param symbol the coin symbol, such as "BTC".
+     * @param visitor the exchange visitor used to use an alternate symbol to
+     *                match what the coin market cap is expecting.
      * @return a list of data for the symbol.
      */
-    public List<CoinMarketCapData> findData(String symbol) {
+    public List<CoinMarketCapData> findData(String symbol, ExchangeVisitor visitor) {
         if (data != null) {
-            return data.values().stream().filter(d -> d.isCoin(symbol)).collect(Collectors.toList());
+            return data.values().stream().filter(d -> d.isCoin(visitor.getSymbol(symbol))).collect(Collectors.toList());
         }
         return new ArrayList<>();
     }

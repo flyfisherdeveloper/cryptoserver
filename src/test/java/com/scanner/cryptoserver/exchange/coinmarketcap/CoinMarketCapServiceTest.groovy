@@ -188,8 +188,13 @@ class CoinMarketCapServiceTest extends Specification {
     def getExchangeVisitor() {
         return new ExchangeVisitor() {
             @Override
-            String visit(@NotNull String coin) {
+            String getName(@NotNull String coin) {
                 return coin
+            }
+
+            @Override
+            String getSymbol(@NotNull String coin) {
+                return null
             }
         }
     }
