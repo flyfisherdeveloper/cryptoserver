@@ -517,6 +517,9 @@ class BinanceExchangeServiceImplTest extends Specification {
           "UNI"  | "Uniswap"
           "HNT"  | "Helium"
           "LINK" | "Chainlink"
+          "CND"  | "Cindicator"
+          "BQX"  | "VGX"
+          "YOYO" | "YOYOW"
     }
 
     ResponseEntity<Object[]> getMockCoinTicker() {

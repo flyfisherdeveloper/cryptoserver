@@ -33,21 +33,29 @@ class CoinMarketCapServiceTest extends Specification {
           def name3 = "Universe"
           def baseAsset4 = "UNI"
           def name4 = "Uniswap"
+          def baseAsset5 = "BQX"
+          def baseAssetVgx = "VGX"
+          def name5 = "Voyager"
           def id1 = 1
           def id2 = 2
           def id3 = 3
           def id4 = 4
+          def id5 = 5
 
           def exchangeInfo = new ExchangeInfo(symbols: [new Symbol(baseAsset: baseAsset1),
                                                         new Symbol(baseAsset: baseAsset2),
                                                         new Symbol(baseAsset: baseAsset3),
-                                                        new Symbol(baseAsset: baseAsset4)])
+                                                        new Symbol(baseAsset: baseAsset4),
+                                                        new Symbol(baseAsset: baseAsset5)])
 
           def data = [:] as HashMap<Integer, CoinMarketCapData>
           data.put(id1, new CoinMarketCapData(symbol: baseAsset1, id: id1, name: name1))
           data.put(id2, new CoinMarketCapData(symbol: baseAsset2, id: id2, name: name2))
           data.put(id3, new CoinMarketCapData(symbol: baseAsset3, id: id3, name: name3))
           data.put(id4, new CoinMarketCapData(symbol: baseAsset4, id: id4, name: name4))
+          //for this data, the base asset does not match the exchange info base asset
+          //the visitor will take care of it by returning the needed base asset to find the correct id
+          data.put(id5, new CoinMarketCapData(symbol: baseAssetVgx, id: id5, name: name5))
 
           def listing = new CoinMarketCapListing()
           listing.setData(data)
@@ -58,16 +66,17 @@ class CoinMarketCapServiceTest extends Specification {
           cacheUtil.retrieveFromCache("CoinMarketCap", _, _) >> listing
 
         then:
-          def idSet = service.getIdSet()
+          def idSet = service.getIdSet(getExchangeVisitor())
 
         expect:
           assert idSet
           assert idSet.size() == listing.getData().size()
           //"it" is a Groovy keyword: it is the name of the function parameter
-          assert idSet.find { it == id1 } == 1
-          assert idSet.find { it == id2 } == 2
-          assert idSet.find { it == id3 } == 3
-          assert idSet.find { it == id4 } == 4
+          assert idSet.find { it == id1 } == id1
+          assert idSet.find { it == id2 } == id2
+          assert idSet.find { it == id3 } == id3
+          assert idSet.find { it == id4 } == id4
+          assert idSet.find { it == id5 } == id5
     }
 
     @Unroll
@@ -189,12 +198,18 @@ class CoinMarketCapServiceTest extends Specification {
         return new ExchangeVisitor() {
             @Override
             String getName(@NotNull String coin) {
-                return coin
+                if (coin == "UNI") {
+                    return "Uniswap"
+                }
+                return getSymbol(coin)
             }
 
             @Override
             String getSymbol(@NotNull String coin) {
-                return null
+                if (coin == "BQX") {
+                    return "VGX"
+                }
+                return coin
             }
         }
     }
