@@ -30,6 +30,7 @@ public class CoinMarketCapService {
     private static final String MARKET_CAP_MAP = "MarketCap";
     private static final String COIN_MARKET_CAP = "CoinMarketCap";
     private static final String LISTING = "Listing";
+    private static final String INFO = "Info";
     private static final String EXCHANGE_INFO = "ExchangeInfo";
 
     private final CoinMarketCapApiService coinMarketCapApiService;
@@ -134,14 +135,12 @@ public class CoinMarketCapService {
     }
 
     /**
-     * Get the coin market cap listing based on the ids passed in.
-     * This will retrieve it from the cache if it is in there. If not in the cache, the coin market cap api
-     * will be called to supply the data.
-     *
-     * @param idSet a set of ids.
-     * @return the market cap data for the coins.
+     * Make the call to retrieve the coin market cap listing.
+     * @param idSet the set of Ids that will be used to retrieve the data.
+     * @param isForQuotes true if calling for exchange quotes, false if calling simply for exchange info.
+     * @return the coin market cap listing.
      */
-    public CoinMarketCapListing getCoinMarketCapListing(Set<Integer> idSet) {
+    private CoinMarketCapListing callCoinMarketCapListing(Set<Integer> idSet, boolean isForQuotes) {
         Supplier<CoinMarketCapListing> marketCapSupplier = () -> {
             List<NameValuePair> parameters = new ArrayList<>();
 
@@ -149,14 +148,48 @@ public class CoinMarketCapService {
             String value = idSet.stream().map(String::valueOf).collect(Collectors.joining(","));
             parameters.add(new BasicNameValuePair("id", value));
 
-            String json = coinMarketCapApiService.makeExchangeQuotesApiCall(parameters);
+            String json;
+            if (isForQuotes) {
+                json = coinMarketCapApiService.makeExchangeQuotesApiCall(parameters);
+            } else {
+                json = coinMarketCapApiService.makeInfoApiCall(parameters);
+            }
             List<CoinMarketCapData> data = parseJsonData(json, idSet);
             CoinMarketCapListing coinMarketCapListing = new CoinMarketCapListing();
             coinMarketCapListing = coinMarketCapListing.convertToCoinMarketCapListing(data);
             return coinMarketCapListing;
         };
-        CoinMarketCapListing coinMarketCap = cacheUtil.retrieveFromCache(COIN_MARKET_CAP, LISTING, marketCapSupplier);
+        CoinMarketCapListing coinMarketCap;
+        if (isForQuotes) {
+            coinMarketCap = cacheUtil.retrieveFromCache(COIN_MARKET_CAP, LISTING, marketCapSupplier);
+        } else {
+            coinMarketCap = cacheUtil.retrieveFromCache(COIN_MARKET_CAP, INFO, marketCapSupplier);
+        }
         return coinMarketCap;
+    }
+
+    /**
+     * Get the coin market cap data/quotes listing based on the ids passed in.
+     * This will retrieve it from the cache if it is in there. If not in the cache, the coin market cap api
+     * will be called to supply the data.
+     *
+     * @param idSet a set of ids.
+     * @return the market cap data for the coins.
+     */
+    public CoinMarketCapListing getCoinMarketCapListing(Set<Integer> idSet) {
+        return callCoinMarketCapListing(idSet, true);
+    }
+
+    /**
+     * Get the coin market cap info listing based on the ids passed in.
+     * This will retrieve it from the cache if it is in there. If not in the cache, the coin market cap api
+     * will be called to supply the data.
+     *
+     * @param idSet a set of ids.
+     * @return the market cap data for the coins.
+     */
+    public CoinMarketCapListing getCoinMarketCapInfoListing(Set<Integer> idSet) {
+        return callCoinMarketCapListing(idSet, false);
     }
 
     private Optional<JsonNode> parseJson(String json) {
@@ -186,6 +219,12 @@ public class CoinMarketCapService {
             int id = idNode.asInt();
             JsonNode nameNode = node.get("name");
             String name = nameNode.textValue();
+
+            String logo = null;
+            JsonNode logoNode = node.get("logo");
+            if (logoNode != null) {
+                logo = logoNode.textValue();
+            }
             JsonNode symbolNode = node.get("symbol");
             String symbol = symbolNode.textValue();
             JsonNode quoteNode = node.get("quote");
@@ -201,6 +240,7 @@ public class CoinMarketCapService {
             d.setSymbol(symbol);
             d.setMarketCap(marketCap);
             d.setVolume24HrUsd(volume24HrUsd);
+            d.setLogo(logo);
             list.add(d);
         });
         return list;

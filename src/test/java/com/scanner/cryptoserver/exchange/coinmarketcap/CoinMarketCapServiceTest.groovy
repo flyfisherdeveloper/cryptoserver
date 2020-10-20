@@ -108,14 +108,55 @@ class CoinMarketCapServiceTest extends Specification {
               def btc = listing.getData().get(1)
               assert btc.getSymbol() == "BTC"
               assert btc.getName() == "Bitcoin"
-              assert btc.getMarketCap() == 10000.35;
+              assert btc.getMarketCap() == 10000.35
               assert btc.getVolume24HrUsd() == 50000.7804
+              assert btc.getLogo() == null
           }
 
         where:
-          json       | badData
-          getJson()  | false
-          "bad json" | true
+          json                   | badData
+          getMarketCapDataJson() | false
+          "bad json"             | true
+    }
+
+    @Unroll
+    def "test getCoinMarketCapInfoListing"() {
+        given:
+          def idSet = [1].toSet()
+
+        when:
+          //Here, the call to the api service is being mocked and returns mock json.
+          //To make the supplier call that the api makes, we retrieve the arguments
+          //to the mocked method call, and call the supplier so that the rest of the test will run.
+          cacheUtil.retrieveFromCache(*_) >> { args ->
+              def results = args.get(2).get()
+              return results
+          }
+          apiService.makeInfoApiCall(_) >> json
+
+        then:
+          def listing = service.getCoinMarketCapInfoListing(idSet)
+
+        expect:
+          listing != null
+          if (badData) {
+              //make sure we handle bad data effectively, without exceptions
+              assert listing.getData() != null
+              assert listing.getData().isEmpty()
+          } else {
+              assert listing.getData().size() == 1
+              def btc = listing.getData().get(1)
+              assert btc.getSymbol() == "BTC"
+              assert btc.getName() == "Bitcoin"
+              assert btc.getMarketCap() == 10000.35
+              assert btc.getVolume24HrUsd() == 50000.7804
+              assert btc.getLogo() == "http://mockPathToLogo.com"
+          }
+
+        where:
+          json                   | badData
+          getMarketCapInfoJson() | false
+          "bad json"             | true
     }
 
     def "test setMarketCapDataFor24HrData() for list of coins"() {
@@ -214,7 +255,7 @@ class CoinMarketCapServiceTest extends Specification {
         }
     }
 
-    def getJson() {
+    def getMarketCapInfoJson() {
         return "{\n" +
                 "\"data\": {\n" +
                 "\"1\": {\n" +
@@ -232,5 +273,12 @@ class CoinMarketCapServiceTest extends Specification {
                 "}\n" +
                 "}\n" +
                 "}"
+    }
+
+    def getMarketCapDataJson() {
+        def json = getMarketCapInfoJson()
+        //the market cap data does not have logo information in it - so remove it here
+        json = json.replaceFirst("\"logo.*\n", "")
+        return json
     }
 }

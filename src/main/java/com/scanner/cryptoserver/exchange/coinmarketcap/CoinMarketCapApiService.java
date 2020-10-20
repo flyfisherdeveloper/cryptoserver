@@ -9,4 +9,6 @@ public interface CoinMarketCapApiService {
     CoinMarketCapListing getCoinMarketCapMap();
 
     String makeExchangeQuotesApiCall(List<NameValuePair> parameters);
+
+    String makeInfoApiCall(List<NameValuePair> parameters);
 }

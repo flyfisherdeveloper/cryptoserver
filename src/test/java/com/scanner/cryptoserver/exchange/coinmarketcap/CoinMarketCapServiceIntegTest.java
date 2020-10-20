@@ -1,5 +1,6 @@
 package com.scanner.cryptoserver.exchange.coinmarketcap;
 
+import com.scanner.cryptoserver.exchange.binance.service.AbstractBinanceExchangeService;
 import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapData;
 import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapListing;
 import org.junit.jupiter.api.Test;
@@ -9,6 +10,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import java.util.HashSet;
 import java.util.Optional;
 import java.util.Set;
+import java.util.stream.Collectors;
 
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
@@ -24,6 +26,8 @@ public class CoinMarketCapServiceIntegTest {
     private CoinMarketCapService service;
     @Autowired
     private CoinMarketCapApiService apiService;
+    @Autowired
+    private AbstractBinanceExchangeService binanceService;
 
     @Test
     void testGetMarketCapMap() {
@@ -41,5 +45,12 @@ public class CoinMarketCapServiceIntegTest {
         assertNotNull(listing);
         Optional<CoinMarketCapData> btc = listing.findData("BTC", "Bitcoin");
         assertTrue(btc.isPresent());
+    }
+
+    @Test
+    void testGetIcons() {
+        CoinMarketCapListing map = apiService.getCoinMarketCapMap();
+        Set<String> set = map.getData().values().stream().map(CoinMarketCapData::getLogo).collect(Collectors.toSet());
+        set.forEach(System.out::println);
     }
 }

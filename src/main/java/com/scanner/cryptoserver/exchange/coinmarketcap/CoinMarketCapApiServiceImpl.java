@@ -2,6 +2,7 @@ package com.scanner.cryptoserver.exchange.coinmarketcap;
 
 import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapData;
 import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapListing;
+import com.sun.org.glassfish.gmbal.NameValue;
 import org.apache.http.HttpEntity;
 import org.apache.http.NameValuePair;
 import org.apache.http.client.methods.CloseableHttpResponse;
@@ -84,6 +85,16 @@ public class CoinMarketCapApiServiceImpl implements CoinMarketCapApiService {
             return makeAPICall(exchangeQuotesUrl, parameters);
         } catch (URISyntaxException | IOException e) {
             Log.error("Cannot make coin market cap exchange quotes api call: {}", e.getMessage());
+        }
+        return null;
+    }
+
+    @Override
+    public String makeInfoApiCall(List<NameValuePair> parameters) {
+        try {
+            return makeAPICall(exchangeInfoUrl, parameters);
+        } catch (URISyntaxException | IOException e) {
+            Log.error("Cannot make coin market cap info api call: {}", e.getMessage());
         }
         return null;
     }
