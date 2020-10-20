@@ -2,7 +2,6 @@ package com.scanner.cryptoserver.exchange.coinmarketcap;
 
 import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapData;
 import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapListing;
-import com.sun.org.glassfish.gmbal.NameValue;
 import org.apache.http.HttpEntity;
 import org.apache.http.NameValuePair;
 import org.apache.http.client.methods.CloseableHttpResponse;

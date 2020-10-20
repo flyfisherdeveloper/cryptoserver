@@ -136,7 +136,8 @@ public class CoinMarketCapService {
 
     /**
      * Make the call to retrieve the coin market cap listing.
-     * @param idSet the set of Ids that will be used to retrieve the data.
+     *
+     * @param idSet       the set of Ids that will be used to retrieve the data.
      * @param isForQuotes true if calling for exchange quotes, false if calling simply for exchange info.
      * @return the coin market cap listing.
      */
@@ -228,11 +229,21 @@ public class CoinMarketCapService {
             JsonNode symbolNode = node.get("symbol");
             String symbol = symbolNode.textValue();
             JsonNode quoteNode = node.get("quote");
-            JsonNode usdNode = quoteNode.get("USD");
-            JsonNode marketCapNode = usdNode.get("market_cap");
-            double marketCap = marketCapNode.asDouble();
-            JsonNode volume24HrNode = usdNode.get("volume_24h");
-            double volume24HrUsd = volume24HrNode.asDouble();
+            double volume24HrUsd = 0.0;
+            double marketCap = 0.0;
+            if (quoteNode != null) {
+                JsonNode usdNode = quoteNode.get("USD");
+                if (usdNode != null) {
+                    JsonNode marketCapNode = usdNode.get("market_cap");
+                    if (marketCapNode != null) {
+                        marketCap = marketCapNode.asDouble();
+                    }
+                    JsonNode volume24HrNode = usdNode.get("volume_24h");
+                    if (volume24HrNode != null) {
+                        volume24HrUsd = volume24HrNode.asDouble();
+                    }
+                }
+            }
 
             CoinMarketCapData d = new CoinMarketCapData();
             d.setId(id);
