@@ -333,7 +333,7 @@ public abstract class AbstractBinanceExchangeService implements ExchangeService 
         data.setCloseTime(closeTime);
 
         data.setupLinks(getUrlExtractor().getTradeUrl());
-        byte[] iconBytes = cacheUtil.getIconBytes(coin);
+        byte[] iconBytes = cacheUtil.getIconBytes(coin, null);
         data.setIcon(iconBytes);
 
         return data;
@@ -581,12 +581,18 @@ public abstract class AbstractBinanceExchangeService implements ExchangeService 
         }
 
         coinMarketCapService.setMarketCapDataFor24HrData(getExchangeVisitor(), list);
+        //Some coins have icons by their id and not their name.
+        //Here, those will have a null icon.
+        //Attempt to find the icon with the id here.
+        list.stream()
+                .filter(coin -> coin.getIcon() == null || coin.getIcon().length == 0 && coin.getId() != null)
+                .forEach(coin -> coin.setIcon(cacheUtil.getIconBytes(null, coin.getId())));
+
         //since this is the first time (in awhile) we have called the exchange info,
         //start threads to update every minute for 15 minutes - this way the client gets
         //updated 24-hour data every minute
         //We stop at 15 minutes just to prevent too much data from being processed (we are trying to stay in the AWS free zone!),
         // and we are trying to not go over quota on extracting exchange data.
-
         startUpdates();
         return list;
     }

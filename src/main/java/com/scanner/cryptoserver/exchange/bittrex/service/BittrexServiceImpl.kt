@@ -49,7 +49,7 @@ class BittrexServiceImpl(private val cacheUtil: CacheUtil, private val coinMarke
         //exclude coins that don't have a market cap - they are probably old coins that the exchange doesn't support anymore
         coins = coins.filter { it.marketCap > 0.0 }
         coins.forEach {
-            it.icon = cacheUtil.getIconBytes(it.coin)
+            it.icon = cacheUtil.getIconBytes(it.coin, it.id)
             it.tradeLink = tradeUrl + it.currency + "-" + it.coin
             val bittrexTicker = tickers.find { ticker -> ticker.symbol == it.symbol }
             val lastTradeRate = bittrexTicker?.lastTradeRate
