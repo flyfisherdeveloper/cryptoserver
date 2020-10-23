@@ -336,7 +336,7 @@ public abstract class AbstractBinanceExchangeService implements ExchangeService 
         data.setCloseTime(closeTime);
 
         data.setupLinks(getUrlExtractor().getTradeUrl());
-        byte[] iconBytes = cacheUtil.getIconBytes(coin, null);
+        byte[] iconBytes = cacheUtil.getIconBytes(getExchangeVisitor().getSymbol(coin), null);
         data.setIcon(iconBytes);
 
         return data;

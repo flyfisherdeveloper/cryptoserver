@@ -39,8 +39,8 @@ public class ImageResizer {
      * Test resizing images
      */
     public static void main(String[] args) {
-        String downloadedFolder = "C:/dev/icons/coin-market-cap-downloaded/";
-        String convertedFolder = "C:/dev/icons/coin-market-cap-converted/";
+        String downloadedFolder = "C:/dev/icons/coin-market-cap-downloaded2/";
+        String convertedFolder = "C:/dev/icons/coin-market-cap-converted2/";
         List<Path> imagePaths = new ArrayList<>();
 
         try {
