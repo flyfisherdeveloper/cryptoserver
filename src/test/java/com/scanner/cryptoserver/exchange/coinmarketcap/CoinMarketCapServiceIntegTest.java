@@ -1,7 +1,10 @@
 package com.scanner.cryptoserver.exchange.coinmarketcap;
 
+import com.scanner.cryptoserver.exchange.binance.service.AbstractBinanceExchangeService;
 import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapData;
 import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapListing;
+import com.scanner.cryptoserver.util.dto.Symbol;
+import org.junit.Ignore;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -9,6 +12,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import java.util.HashSet;
 import java.util.Optional;
 import java.util.Set;
+import java.util.stream.Collectors;
 
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
@@ -24,6 +28,8 @@ public class CoinMarketCapServiceIntegTest {
     private CoinMarketCapService service;
     @Autowired
     private CoinMarketCapApiService apiService;
+    @Autowired
+    private AbstractBinanceExchangeService binanceService;
 
     @Test
     void testGetMarketCapMap() {
@@ -41,5 +47,14 @@ public class CoinMarketCapServiceIntegTest {
         assertNotNull(listing);
         Optional<CoinMarketCapData> btc = listing.findData("BTC", "Bitcoin");
         assertTrue(btc.isPresent());
+    }
+
+    //Use this test to retrieve coin logos.
+    @Ignore
+    void testGetIcons() {
+        Set<Integer> set = binanceService.getExchangeInfo().getSymbols().stream().map(Symbol::getId).collect(Collectors.toSet());
+        set.remove(null);
+        CoinMarketCapListing listing = service.getCoinMarketCapInfoListing(set);
+        listing.getData().values().forEach(d -> System.out.println(d.getLogo()));
     }
 }

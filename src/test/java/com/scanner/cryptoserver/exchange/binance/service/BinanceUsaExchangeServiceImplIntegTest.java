@@ -55,8 +55,15 @@ class BinanceUsaExchangeServiceImplIntegTest {
     }
 
     @Test
-    void testExtract() {
+    void testExtractWithCoinName() {
         byte[] bytes = IconExtractor.getIconBytes("eth");
+        assertNotNull(bytes);
+        assertTrue(bytes.length > 0);
+    }
+
+    @Test
+    void testExtractWithCoinId() {
+        byte[] bytes = IconExtractor.getIconBytes("1958");
         assertNotNull(bytes);
         assertTrue(bytes.length > 0);
     }

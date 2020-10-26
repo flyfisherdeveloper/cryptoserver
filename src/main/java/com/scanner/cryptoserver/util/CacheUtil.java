@@ -20,7 +20,7 @@ public interface CacheUtil {
 
     void evict(String cacheName, String objectToEvict);
 
-    byte[] getIconBytes(String coin);
+    byte[] getIconBytes(String coin, Integer id);
 
     void addExchangeInfoSupplier(String exchangeName, Supplier<ExchangeInfo> supplier);
 

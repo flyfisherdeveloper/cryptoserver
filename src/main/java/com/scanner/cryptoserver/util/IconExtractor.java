@@ -27,15 +27,21 @@ public class IconExtractor {
         //try to get the icon from the resources - known icons are stored there
         resource = resolver.getResource("classpath:images/" + coin.toLowerCase() + ".png");
         try (InputStream stream = resource.getInputStream()) {
-            if (stream == null) {
-                Log.error("Cannot load input stream for png file: Coin: {}", coin);
-                return null;
-            }
             bytes = new byte[stream.available()];
             stream.read(bytes);
         } catch (IOException e) {
             Log.error("Cannot read bytes from png file: Coin: {}", coin, e);
         }
         return bytes;
+    }
+
+    /**
+     * Extract a coin icon from the resources.
+     *
+     * @param id the coin id from the coin market cap map.
+     * @return a byte array of the png icon file.
+     */
+    public static byte[] getIconBytes(int id) {
+        return getIconBytes(String.valueOf(id));
     }
 }

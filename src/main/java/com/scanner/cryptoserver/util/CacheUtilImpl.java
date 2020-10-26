@@ -97,20 +97,26 @@ public class CacheUtilImpl implements CacheUtil {
     }
 
     @Override
-    public byte[] getIconBytes(String coin) {
+    public byte[] getIconBytes(String coin, Integer id) {
         //Attempt to get the icon out of the cache if it is in there.
         //If not in the cache, then call the icon extract service and add the icon bytes to the cache.
         //The data in the cache will expire according to the setup in the CachingConfig configuration.
         Supplier<byte[]> iconExtractor = () -> {
-            byte[] coins = IconExtractor.getIconBytes(coin);
-            if (coins == null) {
+            byte[] bytes = null;
+            if (coin != null) {
+                bytes = IconExtractor.getIconBytes(coin);
+            }
+            if (bytes == null && id != null) {
+                bytes = IconExtractor.getIconBytes(id);
+            }
+            if (bytes == null) {
                 //here, the coin icon wasn't in the images folder
                 // add a non-null empty array to the cache so we don't keep trying to extract it
-                coins = new byte[0];
+                bytes = new byte[0];
             }
-            return coins;
+            return bytes;
         };
-        byte[] coins = retrieveFromCache(ICON_CACHE, coin, iconExtractor);
+        byte[] coins = retrieveFromCache(ICON_CACHE, coin == null ? id.toString() : coin, iconExtractor);
         return coins;
     }
 

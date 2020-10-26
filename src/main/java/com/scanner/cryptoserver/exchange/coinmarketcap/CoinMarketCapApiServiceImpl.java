@@ -88,6 +88,16 @@ public class CoinMarketCapApiServiceImpl implements CoinMarketCapApiService {
         return null;
     }
 
+    @Override
+    public String makeInfoApiCall(List<NameValuePair> parameters) {
+        try {
+            return makeAPICall(exchangeInfoUrl, parameters);
+        } catch (URISyntaxException | IOException e) {
+            Log.error("Cannot make coin market cap info api call: {}", e.getMessage());
+        }
+        return null;
+    }
+
     /**
      * Make a CMC call. The code here is taken from the api documentation (with a few minor modifications for clarity).
      * see: https://sandbox.coinmarketcap.com/api/v1/#operation/getV1CryptocurrencyInfo
