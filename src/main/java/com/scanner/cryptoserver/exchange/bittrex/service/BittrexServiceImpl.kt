@@ -15,6 +15,8 @@ import com.scanner.cryptoserver.util.UrlReader
 import org.slf4j.LoggerFactory
 import org.springframework.beans.factory.annotation.Value
 import org.springframework.stereotype.Service
+import java.util.function.Consumer
+import java.util.function.Predicate
 import java.util.function.Supplier
 
 @Service(value = "bittrexService")
@@ -55,6 +57,12 @@ class BittrexServiceImpl(private val cacheUtil: CacheUtil, private val coinMarke
             val lastTradeRate = bittrexTicker?.lastTradeRate
             it.lastPrice = lastTradeRate
         }
+        //Some coins have icons by their id and not their name.
+        //Here, those will have a null icon.
+        //Attempt to find the icon with the id here.
+        coins.stream()
+                .filter(Predicate { coin: CoinDataFor24Hr -> coin.icon == null || coin.icon.isEmpty() && coin.id != null })
+                .forEach(Consumer { coin: CoinDataFor24Hr -> coin.icon = cacheUtil.getIconBytes(null, coin.id) })
         return coins
     }
 
