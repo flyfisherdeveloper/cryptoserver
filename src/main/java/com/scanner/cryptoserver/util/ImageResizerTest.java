@@ -2,6 +2,7 @@ package com.scanner.cryptoserver.util;
 
 import org.imgscalr.Scalr;
 import org.imgscalr.Scalr.Method;
+import org.junit.Ignore;
 
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
@@ -17,7 +18,7 @@ import java.util.stream.Collectors;
 
 import static org.imgscalr.Scalr.resize;
 
-public class ImageResizer {
+public class ImageResizerTest {
 
     public static void resizeImageToSize(InputStream uploadedInputStream, int size, String outputFile) throws IOException {
         BufferedImage image = ImageIO.read(uploadedInputStream);
@@ -27,7 +28,8 @@ public class ImageResizer {
     /**
      * Image resizer utility. Used when converting coin icons to a smaller size.
      */
-    public static void main(String[] args) {
+    @Ignore
+    public void resizerTest(String[] args) {
         String downloadedFolder = "C:/dev/icons/coin-market-cap-downloaded/";
         String convertedFolder = "C:/dev/icons/coin-market-cap-converted3/";
         List<Path> imagePaths = new ArrayList<>();
