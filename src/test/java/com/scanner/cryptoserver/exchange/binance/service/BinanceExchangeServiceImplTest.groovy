@@ -510,7 +510,7 @@ class BinanceExchangeServiceImplTest extends Specification {
           def coinName = visitor.getName(coin)
 
         expect:
-          coinName == expectedResult
+          assert coinName == expectedResult
 
         where:
           coin   | expectedResult
@@ -522,6 +522,33 @@ class BinanceExchangeServiceImplTest extends Specification {
           "BQX"  | "VGX"
           "YOYO" | "YOYOW"
           "PHB"  | "PHX"
+    }
+
+    def "test getExchangeInfoSupplier"() {
+        given:
+          def symbol1 = new Symbol(id: 1, baseAsset: "BTC", quoteAsset: "USD")
+          def symbol2 = new Symbol(id: 2, baseAsset: "ETH", quoteAsset: "USD")
+          def symbols = [symbol1, symbol2]
+          def exchangeInfo = new ExchangeInfo(symbols: symbols)
+          def response = ResponseEntity.of(Optional.of(exchangeInfo)) as ResponseEntity<ExchangeInfo>
+
+        when:
+          restTemplate.getForEntity(*_,) >>> response
+
+        then:
+          def supplier = service.getExchangeInfoSupplier()
+
+        expect:
+          supplier != null
+          def info = supplier.get()
+          assert info != null
+          assert info.getSymbols() != null
+          def btc = info.getSymbols().find { it.getId() == 1 }
+          assert btc != null
+          def eth = info.getSymbols().find { it.getId() == 2 }
+          assert eth != null
+          def other = info.getSymbols().find { it.getId() == 3 }
+          assert other == null
     }
 
     ResponseEntity<Object[]> getMockCoinTicker() {
