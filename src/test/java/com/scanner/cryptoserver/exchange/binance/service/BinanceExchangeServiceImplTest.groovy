@@ -225,6 +225,7 @@ class BinanceExchangeServiceImplTest extends Specification {
           "BTCUSD" | "1h"     | "1d"         | [expected: false]
           "BTCUSD" | "1h"     | "1m"         | [expected: false]
           "BTCUSD" | "4h"     | "1m"         | [expected: false]
+          "BTCUSD" | "24h"    | "1m"         | [expected: false]
           "BTCUSD" | "1h"     | "12m"        | [expected: true, type: RuntimeException]
     }
 
@@ -520,6 +521,7 @@ class BinanceExchangeServiceImplTest extends Specification {
           "CND"  | "Cindicator"
           "BQX"  | "VGX"
           "YOYO" | "YOYOW"
+          "PHB"  | "PHX"
     }
 
     ResponseEntity<Object[]> getMockCoinTicker() {
