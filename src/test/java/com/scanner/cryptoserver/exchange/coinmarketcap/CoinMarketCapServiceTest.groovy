@@ -120,6 +120,28 @@ class CoinMarketCapServiceTest extends Specification {
     }
 
     @Unroll
+    def "test getCoinMarketCapListingWithCoinSet"() {
+        given:
+          def idSet = ["BTC"].toSet()
+          def btcData = new CoinMarketCapData(id: 1, symbol: "BTC", name: "Bitcoin")
+          def data = [1: btcData]
+          def map = new CoinMarketCapListing(data: data)
+
+        when:
+          cacheUtil.retrieveFromCache(*_) >> map
+
+        then:
+          def listing = service.getCoinMarketCapListingWithCoinSet(idSet, getExchangeVisitor())
+
+        expect:
+          listing != null
+          assert listing.getData().size() == 1
+          def btc = listing.getData().get(1)
+          assert btc.getSymbol() == "BTC"
+          assert btc.getName() == "Bitcoin"
+    }
+
+    @Unroll
     def "test getCoinMarketCapInfoListing"() {
         given:
           def idSet = [1].toSet()
