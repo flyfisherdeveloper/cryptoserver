@@ -7,11 +7,9 @@ import com.scanner.cryptoserver.exchange.coinmarketcap.CoinMarketCapService;
 import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapData;
 import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapListing;
 import com.scanner.cryptoserver.exchange.service.ExchangeService;
-import com.scanner.cryptoserver.util.CacheUtil;
 import org.imgscalr.Scalr;
 import org.imgscalr.Scalr.Method;
 import org.junit.Ignore;
-import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
@@ -37,8 +35,6 @@ public class ImageIntegTest {
     private AbstractBinanceExchangeService binanceUsaService;
     @Autowired
     private BittrexServiceImpl bittrexService;
-    @Autowired
-    private CacheUtil cacheUtil;
     @Autowired
     private CoinMarketCapService coinMarketCapService;
 
@@ -77,7 +73,7 @@ public class ImageIntegTest {
      * periodically to repopulate icons from newly listed coins on exchanges. It really isn't a "test",
      * but is included here to run when needed.
      */
-    @Test
+    @Ignore
     void findNewIconsTest() {
         String downloadedFolder = "C:/dev/icons/coin-market-cap-downloadedNew/";
         String convertedFolder = "C:/dev/icons/coin-market-cap-convertedNew/";
