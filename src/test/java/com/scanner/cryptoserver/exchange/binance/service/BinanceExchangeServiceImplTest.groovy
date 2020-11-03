@@ -566,9 +566,9 @@ class BinanceExchangeServiceImplTest extends Specification {
           coin3.setSymbol(symbol3)
 
           def icon1 = new byte[3]
-          icon1[0] = 'a'.getBytes()[0]
-          icon1[1] = 'b'.getBytes()[0]
-          icon1[2] = 'c'.getBytes()[0]
+          icon1[0] = "a".getBytes()[0]
+          icon1[1] = "a".getBytes()[0]
+          icon1[2] = "a".getBytes()[0]
           def icon2 = new byte[0]
           def icon3 = null
 
@@ -608,9 +608,9 @@ class BinanceExchangeServiceImplTest extends Specification {
           coin3.setSymbol(symbol3)
 
           def icon1 = new byte[3]
-          icon1[0] = 'a'.getBytes()[0]
-          icon1[1] = 'b'.getBytes()[0]
-          icon1[2] = 'c'.getBytes()[0]
+          icon1[0] = "a".getBytes()[0]
+          icon1[1] = "b".getBytes()[0]
+          icon1[2] = "c".getBytes()[0]
           def icon2 = new byte[0]
           def icon3 = null
 

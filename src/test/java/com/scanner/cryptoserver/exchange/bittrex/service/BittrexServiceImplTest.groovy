@@ -179,37 +179,35 @@ class BittrexServiceImplTest extends Specification {
           assert !ethEur
     }
 
+    @Unroll
     def "test getMissingIcons"() {
-        given:
-          def coin1 = new CoinDataFor24Hr()
-          def symbol1 = "BTCUSD"
-          coin1.setSymbol(symbol1)
-
-          def coin2 = new CoinDataFor24Hr()
-          def symbol2 = "ETHUSD"
-          coin2.setSymbol(symbol2)
-
-          def coin3 = new CoinDataFor24Hr()
-          def symbol3 = "XRPUSD"
-          coin3.setSymbol(symbol3)
-
-          def icon1 = new byte[3]
-          icon1[0] = 'a'.getBytes()[0]
-          icon1[1] = 'b'.getBytes()[0]
-          icon1[2] = 'c'.getBytes()[0]
-          def icon2 = new byte[0]
-          def icon3 = null
-
         when:
-          cacheUtil.retrieveFromCache(*_) >> [coin1, coin2, coin3]
-          cacheUtil.getIconBytes(_, _) >>> [icon1, icon2, icon3]
+          urlReader.readFromUrl() >>> [getMarketsJson(), getTickersJson()]
+          //here, we mock the cache util, and use the supplier passed in as an argument
+          cacheUtil.retrieveFromCache(*_) >> { args ->
+              Supplier supplier = args.get(2)
+              return supplier.get()
+          }
+          //mock the call to set the market cap for each coin
+          //sets the market cap to an arbitrary, non-zero value
+          coinMarketCapService.setMarketCapDataFor24HrData(_, _) >> { args ->
+              def list = args.get(1) as List<CoinDataFor24Hr>
+              list.each { it.setMarketCap(10000.0) }
+          }
+          cacheUtil.getIconBytes(_, _) >> icon
 
         then:
           def coins = service.getMissingIcons()
 
         expect:
-          assert coins
-          assert coins.size() == 2
+          assert coins != null
+          assert coins.size() == size
+
+        where:
+          icon                | size
+          [1, 2, 3] as byte[] | 0
+          [] as byte[]        | 1
+          null as byte[]      | 1
     }
 
     def getMarketsJson() {
