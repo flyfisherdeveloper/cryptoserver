@@ -551,6 +551,81 @@ class BinanceExchangeServiceImplTest extends Specification {
           assert other == null
     }
 
+    def "test getIcons"() {
+        given:
+          def coin1 = new CoinDataFor24Hr()
+          def symbol1 = "BTCUSD"
+          coin1.setSymbol(symbol1)
+
+          def coin2 = new CoinDataFor24Hr()
+          def symbol2 = "ETHUSD"
+          coin2.setSymbol(symbol2)
+
+          def coin3 = new CoinDataFor24Hr()
+          def symbol3 = "XRPUSD"
+          coin3.setSymbol(symbol3)
+
+          def icon1 = new byte[3]
+          icon1[0] = 'a'.getBytes()[0]
+          icon1[1] = 'b'.getBytes()[0]
+          icon1[2] = 'c'.getBytes()[0]
+          def icon2 = new byte[0]
+          def icon3 = null
+
+        when:
+          cacheUtil.retrieveFromCache(*_) >> [coin1, coin2, coin3]
+          cacheUtil.getIconBytes(_, _) >>> [icon1, icon2, icon3]
+
+        then:
+          def coins = service.getIcons()
+
+        expect:
+          assert coins
+          assert coins.size() == 3
+
+          def findCoin1 = coins.find { it.getSymbol() == symbol1 }
+          assert findCoin1.getIcon() == icon1
+
+          def findCoin2 = coins.find { it.getSymbol() == symbol2 }
+          assert findCoin2.getIcon() == icon2
+
+          def findCoin3 = coins.find { it.getSymbol() == symbol3 }
+          assert findCoin3.getIcon() == icon3
+    }
+
+    def "test getMissingIcons"() {
+        given:
+          def coin1 = new CoinDataFor24Hr()
+          def symbol1 = "BTCUSD"
+          coin1.setSymbol(symbol1)
+
+          def coin2 = new CoinDataFor24Hr()
+          def symbol2 = "ETHUSD"
+          coin2.setSymbol(symbol2)
+
+          def coin3 = new CoinDataFor24Hr()
+          def symbol3 = "XRPUSD"
+          coin3.setSymbol(symbol3)
+
+          def icon1 = new byte[3]
+          icon1[0] = 'a'.getBytes()[0]
+          icon1[1] = 'b'.getBytes()[0]
+          icon1[2] = 'c'.getBytes()[0]
+          def icon2 = new byte[0]
+          def icon3 = null
+
+        when:
+          cacheUtil.retrieveFromCache(*_) >> [coin1, coin2, coin3]
+          cacheUtil.getIconBytes(_, _) >>> [icon1, icon2, icon3]
+
+        then:
+          def coins = service.getMissingIcons()
+
+        expect:
+          assert coins
+          assert coins.size() == 2
+    }
+
     ResponseEntity<Object[]> getMockCoinTicker() {
         def now = LocalDateTime.now()
         def closeTime1 = now.minusDays(1).minusHours(1).toInstant(ZoneOffset.UTC).toEpochMilli()

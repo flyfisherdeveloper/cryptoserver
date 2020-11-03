@@ -179,6 +179,39 @@ class BittrexServiceImplTest extends Specification {
           assert !ethEur
     }
 
+    def "test getMissingIcons"() {
+        given:
+          def coin1 = new CoinDataFor24Hr()
+          def symbol1 = "BTCUSD"
+          coin1.setSymbol(symbol1)
+
+          def coin2 = new CoinDataFor24Hr()
+          def symbol2 = "ETHUSD"
+          coin2.setSymbol(symbol2)
+
+          def coin3 = new CoinDataFor24Hr()
+          def symbol3 = "XRPUSD"
+          coin3.setSymbol(symbol3)
+
+          def icon1 = new byte[3]
+          icon1[0] = 'a'.getBytes()[0]
+          icon1[1] = 'b'.getBytes()[0]
+          icon1[2] = 'c'.getBytes()[0]
+          def icon2 = new byte[0]
+          def icon3 = null
+
+        when:
+          cacheUtil.retrieveFromCache(*_) >> [coin1, coin2, coin3]
+          cacheUtil.getIconBytes(_, _) >>> [icon1, icon2, icon3]
+
+        then:
+          def coins = service.getMissingIcons()
+
+        expect:
+          assert coins
+          assert coins.size() == 2
+    }
+
     def getMarketsJson() {
         return "[{\"symbol\":\"BTC-USD\",\"high\":\"9543.23\",\"low\":\"9523.89\",\"volume\":\"1120.23\",\"quoteVolume\":\"193023.56\",\"updatedAt\":\"2020-07-02T21:05:17.837Z\"}]"
     }

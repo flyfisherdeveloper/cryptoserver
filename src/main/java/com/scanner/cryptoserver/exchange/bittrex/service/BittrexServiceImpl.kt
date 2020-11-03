@@ -105,6 +105,14 @@ class BittrexServiceImpl(private val cacheUtil: CacheUtil, private val coinMarke
         TODO("Not yet implemented")
     }
 
+    override fun getIcons(): MutableList<CoinDataFor24Hr> {
+        TODO("Not yet implemented")
+    }
+
+    override fun getMissingIcons(): MutableList<CoinDataFor24Hr> {
+        TODO("Not yet implemented")
+    }
+
     override fun getExchangeInfoSupplier(): Supplier<ExchangeInfo> {
         return Supplier {
             return@Supplier exchangeInfo

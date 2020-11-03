@@ -83,6 +83,9 @@ public class ImageIntegTest {
         List<ExchangeService> services = Arrays.asList(binanceUsaService, binanceService, bittrexService);
         List<CoinDataFor24Hr> missingIconList = new ArrayList<>();
 
+        //here we sleep for a few seconds to ensure that the asynchronous initialization has completed
+        //yes, it is a hack, but this is just a utility test that is run periodically to download icons,
+        //so, whatever works is good enough
         try {
             Thread.sleep(7000);
         } catch (InterruptedException e) {

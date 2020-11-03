@@ -38,5 +38,20 @@ public interface ExchangeService {
     void setRsiForTickers(List<CoinTicker> tickers, int periodLength);
 
     List<CoinTicker> getRsiTickerData(List<String> symbols);
+
+    /**
+     * Retrieve a list of coins with icons, which is contained in each element in the list.
+     * @return a list of coins which contain the coin symbol, and icon bytes. Note: the other
+     * information for the coin may or may not be present.
+     */
+    List<CoinDataFor24Hr> getIcons();
+
+    /**
+     * Retrieve a list of coins with no icons, which is contained in each element in the list as an empty byte array.
+     * @return a list of coins which contain the coin symbol, and the empty icon bytes. Note: the other
+     * information for the coin may or may not be present.
+     */
+    List<CoinDataFor24Hr> getMissingIcons();
+
 }
 
