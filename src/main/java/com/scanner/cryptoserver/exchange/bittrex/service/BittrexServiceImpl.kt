@@ -105,6 +105,21 @@ class BittrexServiceImpl(private val cacheUtil: CacheUtil, private val coinMarke
         TODO("Not yet implemented")
     }
 
+    override fun getIcons(): List<CoinDataFor24Hr> {
+        val coinList = get24HrAllCoinTicker()
+        //go through each coin and get the icon, if it is there
+        coinList.forEach {
+            val icon = cacheUtil.getIconBytes(it.symbol, it.id)
+            it.icon = icon
+        }
+        return coinList
+    }
+
+    override fun getMissingIcons(): List<CoinDataFor24Hr> {
+        val icons = icons
+        return icons.filter { it.icon == null || it.icon.isEmpty() }
+    }
+
     override fun getExchangeInfoSupplier(): Supplier<ExchangeInfo> {
         return Supplier {
             return@Supplier exchangeInfo

@@ -179,6 +179,37 @@ class BittrexServiceImplTest extends Specification {
           assert !ethEur
     }
 
+    @Unroll
+    def "test getMissingIcons"() {
+        when:
+          urlReader.readFromUrl() >>> [getMarketsJson(), getTickersJson()]
+          //here, we mock the cache util, and use the supplier passed in as an argument
+          cacheUtil.retrieveFromCache(*_) >> { args ->
+              Supplier supplier = args.get(2)
+              return supplier.get()
+          }
+          //mock the call to set the market cap for each coin
+          //sets the market cap to an arbitrary, non-zero value
+          coinMarketCapService.setMarketCapDataFor24HrData(_, _) >> { args ->
+              def list = args.get(1) as List<CoinDataFor24Hr>
+              list.each { it.setMarketCap(10000.0) }
+          }
+          cacheUtil.getIconBytes(_, _) >> icon
+
+        then:
+          def coins = service.getMissingIcons()
+
+        expect:
+          assert coins != null
+          assert coins.size() == size
+
+        where:
+          icon                | size
+          [1, 2, 3] as byte[] | 0
+          [] as byte[]        | 1
+          null as byte[]      | 1
+    }
+
     def getMarketsJson() {
         return "[{\"symbol\":\"BTC-USD\",\"high\":\"9543.23\",\"low\":\"9523.89\",\"volume\":\"1120.23\",\"quoteVolume\":\"193023.56\",\"updatedAt\":\"2020-07-02T21:05:17.837Z\"}]"
     }

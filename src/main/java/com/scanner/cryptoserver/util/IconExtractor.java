@@ -29,8 +29,8 @@ public class IconExtractor {
         try (InputStream stream = resource.getInputStream()) {
             bytes = new byte[stream.available()];
             stream.read(bytes);
-        } catch (IOException e) {
-            Log.error("Cannot read bytes from png file: Coin: {}", coin, e);
+        } catch (IOException ignored) {
+            //since many of the icons are not included yet, this exception happens frequently, and we don't need to catch it
         }
         return bytes;
     }

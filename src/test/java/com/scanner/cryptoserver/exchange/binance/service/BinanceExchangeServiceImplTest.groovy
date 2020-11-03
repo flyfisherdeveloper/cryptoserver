@@ -225,6 +225,7 @@ class BinanceExchangeServiceImplTest extends Specification {
           "BTCUSD" | "1h"     | "1d"         | [expected: false]
           "BTCUSD" | "1h"     | "1m"         | [expected: false]
           "BTCUSD" | "4h"     | "1m"         | [expected: false]
+          "BTCUSD" | "24h"    | "1m"         | [expected: false]
           "BTCUSD" | "1h"     | "12m"        | [expected: true, type: RuntimeException]
     }
 
@@ -509,7 +510,7 @@ class BinanceExchangeServiceImplTest extends Specification {
           def coinName = visitor.getName(coin)
 
         expect:
-          coinName == expectedResult
+          assert coinName == expectedResult
 
         where:
           coin   | expectedResult
@@ -520,6 +521,109 @@ class BinanceExchangeServiceImplTest extends Specification {
           "CND"  | "Cindicator"
           "BQX"  | "VGX"
           "YOYO" | "YOYOW"
+          "PHB"  | "PHX"
+    }
+
+    def "test getExchangeInfoSupplier"() {
+        given:
+          def symbol1 = new Symbol(id: 1, baseAsset: "BTC", quoteAsset: "USD")
+          def symbol2 = new Symbol(id: 2, baseAsset: "ETH", quoteAsset: "USD")
+          def symbols = [symbol1, symbol2]
+          def exchangeInfo = new ExchangeInfo(symbols: symbols)
+          def response = ResponseEntity.of(Optional.of(exchangeInfo)) as ResponseEntity<ExchangeInfo>
+
+        when:
+          restTemplate.getForEntity(*_,) >>> response
+
+        then:
+          def supplier = service.getExchangeInfoSupplier()
+
+        expect:
+          supplier != null
+          def info = supplier.get()
+          assert info != null
+          assert info.getSymbols() != null
+          def btc = info.getSymbols().find { it.getId() == 1 }
+          assert btc != null
+          def eth = info.getSymbols().find { it.getId() == 2 }
+          assert eth != null
+          def other = info.getSymbols().find { it.getId() == 3 }
+          assert other == null
+    }
+
+    def "test getIcons"() {
+        given:
+          def coin1 = new CoinDataFor24Hr()
+          def symbol1 = "BTCUSD"
+          coin1.setSymbol(symbol1)
+
+          def coin2 = new CoinDataFor24Hr()
+          def symbol2 = "ETHUSD"
+          coin2.setSymbol(symbol2)
+
+          def coin3 = new CoinDataFor24Hr()
+          def symbol3 = "XRPUSD"
+          coin3.setSymbol(symbol3)
+
+          def icon1 = new byte[3]
+          icon1[0] = "a".getBytes()[0]
+          icon1[1] = "a".getBytes()[0]
+          icon1[2] = "a".getBytes()[0]
+          def icon2 = new byte[0]
+          def icon3 = null
+
+        when:
+          cacheUtil.retrieveFromCache(*_) >> [coin1, coin2, coin3]
+          cacheUtil.getIconBytes(_, _) >>> [icon1, icon2, icon3]
+
+        then:
+          def coins = service.getIcons()
+
+        expect:
+          assert coins
+          assert coins.size() == 3
+
+          def findCoin1 = coins.find { it.getSymbol() == symbol1 }
+          assert findCoin1.getIcon() == icon1
+
+          def findCoin2 = coins.find { it.getSymbol() == symbol2 }
+          assert findCoin2.getIcon() == icon2
+
+          def findCoin3 = coins.find { it.getSymbol() == symbol3 }
+          assert findCoin3.getIcon() == icon3
+    }
+
+    def "test getMissingIcons"() {
+        given:
+          def coin1 = new CoinDataFor24Hr()
+          def symbol1 = "BTCUSD"
+          coin1.setSymbol(symbol1)
+
+          def coin2 = new CoinDataFor24Hr()
+          def symbol2 = "ETHUSD"
+          coin2.setSymbol(symbol2)
+
+          def coin3 = new CoinDataFor24Hr()
+          def symbol3 = "XRPUSD"
+          coin3.setSymbol(symbol3)
+
+          def icon1 = new byte[3]
+          icon1[0] = "a".getBytes()[0]
+          icon1[1] = "b".getBytes()[0]
+          icon1[2] = "c".getBytes()[0]
+          def icon2 = new byte[0]
+          def icon3 = null
+
+        when:
+          cacheUtil.retrieveFromCache(*_) >> [coin1, coin2, coin3]
+          cacheUtil.getIconBytes(_, _) >>> [icon1, icon2, icon3]
+
+        then:
+          def coins = service.getMissingIcons()
+
+        expect:
+          assert coins
+          assert coins.size() == 2
     }
 
     ResponseEntity<Object[]> getMockCoinTicker() {

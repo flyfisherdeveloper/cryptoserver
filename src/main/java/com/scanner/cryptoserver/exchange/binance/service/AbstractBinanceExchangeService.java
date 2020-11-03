@@ -638,6 +638,38 @@ public abstract class AbstractBinanceExchangeService implements ExchangeService 
         setScheduledService(scheduledService);
     }
 
+    /**
+     * Retrieve a list of coins with icons, which is contained in each element in the list.
+     *
+     * @return a list of coins which contain the coin symbol, and icon bytes. Note: the other
+     * information for the coin may or may not be present.
+     */
+    @Override
+    public List<CoinDataFor24Hr> getIcons() {
+        List<CoinDataFor24Hr> coinList = get24HrAllCoinTicker();
+        //go through each coin and get the icon, if it is there
+        coinList.forEach(coin -> {
+            byte[] icon = cacheUtil.getIconBytes(coin.getSymbol(), coin.getId());
+            coin.setIcon(icon);
+        });
+        return coinList;
+    }
+
+    /**
+     * Retrieve a list of coins with no icons, which is contained in each element in the list as an empty byte array.
+     *
+     * @return a list of coins which contain the coin symbol, and the empty icon bytes. Note: the other
+     * information for the coin may or may not be present.
+     */
+    @Override
+    public List<CoinDataFor24Hr> getMissingIcons() {
+        final List<CoinDataFor24Hr> icons = getIcons();
+        final List<CoinDataFor24Hr> list = icons.stream()
+                .filter(coin -> coin.getIcon() == null || coin.getIcon().length == 0)
+                .collect(Collectors.toList());
+        return list;
+    }
+
     protected abstract UrlExtractor getUrlExtractor();
 
     public abstract String getExchangeName();

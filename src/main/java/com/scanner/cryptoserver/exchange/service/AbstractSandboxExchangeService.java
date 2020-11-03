@@ -117,6 +117,16 @@ public abstract class AbstractSandboxExchangeService implements ExchangeService 
         return getDataList(getDataName("rsiTickers"), CoinTicker.class);
     }
 
+    @Override
+    public List<CoinDataFor24Hr> getIcons() {
+        return null;
+    }
+
+    @Override
+    public List<CoinDataFor24Hr> getMissingIcons() {
+        return null;
+    }
+
     protected String getDataName(String name) {
         return getSandboxName() + "-" + name;
     }
