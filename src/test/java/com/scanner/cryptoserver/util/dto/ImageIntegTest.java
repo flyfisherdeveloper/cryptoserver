@@ -11,6 +11,7 @@ import com.scanner.cryptoserver.util.CacheUtil;
 import org.imgscalr.Scalr;
 import org.imgscalr.Scalr.Method;
 import org.junit.Ignore;
+import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
@@ -76,7 +77,7 @@ public class ImageIntegTest {
      * periodically to repopulate icons from newly listed coins on exchanges. It really isn't a "test",
      * but is included here to run when needed.
      */
-    @Ignore
+    @Test
     void findNewIconsTest() {
         String downloadedFolder = "C:/dev/icons/coin-market-cap-downloadedNew/";
         String convertedFolder = "C:/dev/icons/coin-market-cap-convertedNew/";
@@ -92,17 +93,7 @@ public class ImageIntegTest {
             e.printStackTrace();
         }
         //go through each service and get all coins
-        services.forEach(service -> {
-            List<CoinDataFor24Hr> coinList = service.get24HrAllCoinTicker();
-            //go through each coin and get the icon, if it is there
-            coinList.parallelStream().forEach(coin -> {
-                byte[] icon = cacheUtil.getIconBytes(coin.getSymbol(), coin.getId());
-                if (icon == null || icon.length == 0) {
-                    //for missing icons, add them to a list
-                    missingIconList.add(coin);
-                }
-            });
-        });
+        services.forEach(service -> missingIconList.addAll(service.getMissingIcons()));
 
         //go through all the missing icons, and attempt to download the icon for each
         final Set<Integer> set = missingIconList.stream().map(CoinDataFor24Hr::getId).filter(Objects::nonNull).collect(Collectors.toSet());
