@@ -7,7 +7,7 @@ import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapData
 import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapListing
 import com.scanner.cryptoserver.exchange.coinmarketcap.dto.ExchangeInfo
 import com.scanner.cryptoserver.util.CacheUtil
-import com.scanner.cryptoserver.util.dto.Symbol
+import com.scanner.cryptoserver.util.dto.Coin
 import org.springframework.http.ResponseEntity
 import org.springframework.web.client.RestOperations
 import org.springframework.web.client.RestTemplate
@@ -53,17 +53,17 @@ class BinanceExchangeServiceImplTest extends Specification {
     @Unroll
     def "test getMarkets() returns expected markets"() {
         given:
-          def symbol1 = new Symbol(baseAsset: coin1, quoteAsset: market1)
-          def symbol2 = new Symbol(baseAsset: coin2, quoteAsset: market2)
+          def coin1 = new Coin(baseAsset: symbol1, quoteAsset: market1)
+          def coin2 = new Coin(baseAsset: symbol2, quoteAsset: market2)
           def exchangeInfo = new ExchangeInfo()
-          exchangeInfo.setSymbols([symbol1, symbol2])
+          exchangeInfo.setCoins([coin1, coin2])
 
           def listing = new CoinMarketCapListing()
           def data1 = new CoinMarketCapData(symbol: coin1)
           def data2 = new CoinMarketCapData(symbol: coin2)
           def dataMap = [:] as HashMap<String, CoinMarketCapData>
-          dataMap.put(coin1, data1)
-          dataMap.put(coin2, data2)
+          dataMap.put(symbol1, data1)
+          dataMap.put(symbol2, data2)
           listing.setData(dataMap)
 
         when: "mocks are called"
@@ -78,9 +78,9 @@ class BinanceExchangeServiceImplTest extends Specification {
           assert markets == expectedMarkets.toSet()
 
         where:
-          coin1 | market1 | coin2 | market2 | expectedMarkets
-          "BTC" | "USD"   | "LTC" | "USDC"  | ["USD", "USDC"]
-          "BTC" | "USD"   | "LTC" | "USD"   | ["USD"]
+          symbol1 | market1 | symbol2 | market2 | expectedMarkets
+          "BTC"   | "USD"   | "LTC"   | "USDC"  | ["USD", "USDC"]
+          "BTC"   | "USD"   | "LTC"   | "USD"   | ["USD"]
     }
 
     //Here, we do a unit test of the 24Hour price ticker instead of an integration test
@@ -104,9 +104,9 @@ class BinanceExchangeServiceImplTest extends Specification {
 
           //the following represents exchange information - metadata about coins on an exchange
           def exchangeInfo = new ExchangeInfo()
-          def exchangeSymbol = new Symbol(symbol: symbol, quoteAsset: currency, status: status)
+          def exchangeSymbol = new Coin(symbol: symbol, quoteAsset: currency, status: status)
           def exchangeSymbols = [exchangeSymbol]
-          exchangeInfo.setSymbols(exchangeSymbols)
+          exchangeInfo.setCoins(exchangeSymbols)
           def exchangeInfoResponse = ResponseEntity.of(Optional.of(exchangeInfo)) as ResponseEntity<ExchangeInfo>
 
           //the following represents coin market cap data for certain coins
@@ -266,8 +266,8 @@ class BinanceExchangeServiceImplTest extends Specification {
     def "test getExchangeInfoWithoutMarketCap"() {
         given:
           def exchangeInfo = new ExchangeInfo()
-          def symbols = [new Symbol(symbol: symbol1, quoteAsset: quote1), new Symbol(symbol: symbol2, quoteAsset: quote2)]
-          exchangeInfo.setSymbols(symbols)
+          def coins = [new Coin(symbol: symbol1, quoteAsset: quote1), new Coin(symbol: symbol2, quoteAsset: quote2)]
+          exchangeInfo.setCoins(coins)
 
         when:
           cacheUtil.retrieveFromCache(*_) >> exchangeInfo
@@ -277,22 +277,22 @@ class BinanceExchangeServiceImplTest extends Specification {
 
         expect:
           assert info
-          assert info.getSymbols()
+          assert info.getCoins()
           if (inExchangeInfo1) {
-              def coin = info.getSymbols().find { it.getSymbol() == symbol1 }
+              def coin = info.getCoins().find { it.getSymbol() == symbol1 }
               assert coin
               assert coin.getQuoteAsset() == quote1
           } else {
               //test that the coin is not returned, since its currency "quote asset" is prohibited
-              def coin = info.getSymbols().find { it.getSymbol() == symbol1 }
+              def coin = info.getCoins().find { it.getSymbol() == symbol1 }
               assert !coin
           }
           if (inExchangeInfo2) {
-              def coin = info.getSymbols().find { it.getSymbol() == symbol2 }
+              def coin = info.getCoins().find { it.getSymbol() == symbol2 }
               assert coin
               assert coin.getQuoteAsset() == quote2
           } else {
-              def coin = info.getSymbols().find { it.getSymbol() == symbol2 }
+              def coin = info.getCoins().find { it.getSymbol() == symbol2 }
               assert !coin
           }
 
@@ -313,9 +313,9 @@ class BinanceExchangeServiceImplTest extends Specification {
           def idLtc = 2
 
           def exchangeInfo = new ExchangeInfo()
-          def symbols = [new Symbol(symbol: symbolBtc, id: idBtc, marketCap: marketCapBtc),
-                         new Symbol(symbol: symbolLtc, id: idLtc, marketCap: marketCapLtc)]
-          exchangeInfo.setSymbols(symbols)
+          def coins = [new Coin(symbol: symbolBtc, id: idBtc, marketCap: marketCapBtc),
+                       new Coin(symbol: symbolLtc, id: idLtc, marketCap: marketCapLtc)]
+          exchangeInfo.setCoins(coins)
 
           def coinMarketCapListing = new CoinMarketCapListing()
           def dataBtc = new CoinMarketCapData(symbol: symbolBtc)
@@ -334,14 +334,14 @@ class BinanceExchangeServiceImplTest extends Specification {
 
         expect:
           assert info
-          assert info.getSymbols()
+          assert info.getCoins()
 
-          def coinBtc = info.getSymbols().find { it.getSymbol() == symbolBtc }
+          def coinBtc = info.getCoins().find { it.getSymbol() == symbolBtc }
           assert coinBtc
           assert coinBtc.getId() == idBtc
           assert coinBtc.getMarketCap() == marketCapBtc
 
-          def coinLtc = info.getSymbols().find { it.getSymbol() == symbolLtc }
+          def coinLtc = info.getCoins().find { it.getSymbol() == symbolLtc }
           assert coinLtc
           assert coinLtc.getId() == idLtc
           assert coinLtc.getMarketCap() == marketCapLtc
@@ -361,9 +361,9 @@ class BinanceExchangeServiceImplTest extends Specification {
           def idLtc = 2
 
           def exchangeInfo = new ExchangeInfo()
-          def symbols = [new Symbol(symbol: symbolBtc, baseAsset: baseAssetBtc, id: idBtc, marketCap: marketCapBtc),
-                         new Symbol(symbol: symbolLtc, baseAsset: baseAssetLtc, id: idLtc, marketCap: marketCapLtc)]
-          exchangeInfo.setSymbols(symbols)
+          def coins = [new Coin(symbol: symbolBtc, baseAsset: baseAssetBtc, id: idBtc, marketCap: marketCapBtc),
+                       new Coin(symbol: symbolLtc, baseAsset: baseAssetLtc, id: idLtc, marketCap: marketCapLtc)]
+          exchangeInfo.setCoins(coins)
 
           def coinMarketCapListing = new CoinMarketCapListing()
           def dataBtc = new CoinMarketCapData(symbol: baseAssetBtc, name: nameBtc, id: idBtc, marketCap: marketCapBtc)
@@ -382,14 +382,14 @@ class BinanceExchangeServiceImplTest extends Specification {
 
         expect:
           assert info
-          assert info.getSymbols()
+          assert info.getCoins()
 
-          def coinBtc = info.getSymbols().find { it.getSymbol() == symbolBtc }
+          def coinBtc = info.getCoins().find { it.getSymbol() == symbolBtc }
           assert coinBtc
           assert coinBtc.getId() == idBtc
           assert coinBtc.getMarketCap() == marketCapBtc
 
-          def coinLtc = info.getSymbols().find { it.getSymbol() == symbolLtc }
+          def coinLtc = info.getCoins().find { it.getSymbol() == symbolLtc }
           assert coinLtc
           assert coinLtc.getId() == idLtc
           assert coinLtc.getMarketCap() == marketCapLtc
@@ -400,17 +400,17 @@ class BinanceExchangeServiceImplTest extends Specification {
         given:
           //the following represents exchange information - metadata about coins on an exchange
           def exchangeInfo = new ExchangeInfo()
-          def exchangeSymbol1 = new Symbol(symbol: symbol, quoteAsset: currency)
-          def exchangeSymbol2 = new Symbol(symbol: "XRPUSD", quoteAsset: "USD")
-          def exchangeSymbols
-          if (exchangeHasSymbol) {
-              exchangeSymbols = [exchangeSymbol1, exchangeSymbol2]
+          def coin1 = new Coin(symbol: symbol, quoteAsset: currency)
+          def coin2 = new Coin(symbol: "XRPUSD", quoteAsset: "USD")
+          def coins
+          if (exchangeHasCoin) {
+              coins = [coin1, coin2]
           } else {
               //test the rare case when the exchange doesn't have the symbol
               // (if a coin is added just recently since the exchange information was called before being put in the cache)
-              exchangeSymbols = [exchangeSymbol2]
+              coins = [coin2]
           }
-          exchangeInfo.setSymbols(exchangeSymbols)
+          exchangeInfo.setCoins(coins)
 
         when:
           cacheUtil.retrieveFromCache(_, _, _) >> exchangeInfo
@@ -422,7 +422,7 @@ class BinanceExchangeServiceImplTest extends Specification {
           coin == expectedCoin
 
         where:
-          symbol    | currency | expectedCoin | exchangeHasSymbol
+          symbol    | currency | expectedCoin | exchangeHasCoin
           "BTCUSD"  | "USD"    | "BTC"        | true
           "LTCUSDT" | "USDT"   | "LTC"        | true
           "ETHUSD"  | "USD"    | "ETH"        | false
@@ -434,17 +434,17 @@ class BinanceExchangeServiceImplTest extends Specification {
         given:
           //the following represents exchange information - metadata about coins on an exchange
           def exchangeInfo = new ExchangeInfo()
-          def exchangeSymbol1 = new Symbol(symbol: symbol, quoteAsset: currency)
-          def exchangeSymbol2 = new Symbol(symbol: "XRPUSD", quoteAsset: "USD")
-          def exchangeSymbols
-          if (exchangeHasSymbol) {
-              exchangeSymbols = [exchangeSymbol1, exchangeSymbol2]
+          def coin1 = new Coin(symbol: symbol, quoteAsset: currency)
+          def coin2 = new Coin(symbol: "XRPUSD", quoteAsset: "USD")
+          def coins
+          if (exchangeHasCoin) {
+              coins = [coin1, coin2]
           } else {
               //test the rare case when the exchange doesn't have the symbol
               // (if a coin is added just recently since the exchange information was called before being put in the cache)
-              exchangeSymbols = [exchangeSymbol2]
+              coins = [coin2]
           }
-          exchangeInfo.setSymbols(exchangeSymbols)
+          exchangeInfo.setCoins(coins)
 
         when:
           cacheUtil.retrieveFromCache(_, _, _) >> exchangeInfo
@@ -456,7 +456,7 @@ class BinanceExchangeServiceImplTest extends Specification {
           quote == expectedQuote
 
         where:
-          symbol    | currency | expectedQuote | exchangeHasSymbol
+          symbol    | currency | expectedQuote | exchangeHasCoin
           "BTCUSD"  | "USD"    | "USD"         | true
           "LTCUSDT" | "USDT"   | "USDT"        | true
           "ETHUSD"  | "USD"    | "USD"         | false
@@ -526,10 +526,10 @@ class BinanceExchangeServiceImplTest extends Specification {
 
     def "test getExchangeInfoSupplier"() {
         given:
-          def symbol1 = new Symbol(id: 1, baseAsset: "BTC", quoteAsset: "USD")
-          def symbol2 = new Symbol(id: 2, baseAsset: "ETH", quoteAsset: "USD")
-          def symbols = [symbol1, symbol2]
-          def exchangeInfo = new ExchangeInfo(symbols: symbols)
+          def coin1 = new Coin(id: 1, baseAsset: "BTC", quoteAsset: "USD")
+          def coin2 = new Coin(id: 2, baseAsset: "ETH", quoteAsset: "USD")
+          def coins = [coin1, coin2]
+          def exchangeInfo = new ExchangeInfo(coins: coins)
           def response = ResponseEntity.of(Optional.of(exchangeInfo)) as ResponseEntity<ExchangeInfo>
 
         when:
@@ -542,12 +542,12 @@ class BinanceExchangeServiceImplTest extends Specification {
           supplier != null
           def info = supplier.get()
           assert info != null
-          assert info.getSymbols() != null
-          def btc = info.getSymbols().find { it.getId() == 1 }
+          assert info.getCoins() != null
+          def btc = info.getCoins().find { it.getId() == 1 }
           assert btc != null
-          def eth = info.getSymbols().find { it.getId() == 2 }
+          def eth = info.getCoins().find { it.getId() == 2 }
           assert eth != null
-          def other = info.getSymbols().find { it.getId() == 3 }
+          def other = info.getCoins().find { it.getId() == 3 }
           assert other == null
     }
 

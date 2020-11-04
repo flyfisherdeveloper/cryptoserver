@@ -5,7 +5,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.scanner.cryptoserver.CachingConfig;
 import com.scanner.cryptoserver.exchange.binance.dto.CoinDataFor24Hr;
 import com.scanner.cryptoserver.exchange.binance.dto.CoinTicker;
-import com.scanner.cryptoserver.util.dto.Symbol;
+import com.scanner.cryptoserver.util.dto.Coin;
 import com.scanner.cryptoserver.exchange.binance.service.BinanceUrlExtractor;
 import com.scanner.cryptoserver.exchange.binance.service.BinanceUsaExchangeServiceImpl;
 import com.scanner.cryptoserver.exchange.binance.service.BinanceUsaUrlExtractor;
@@ -49,12 +49,12 @@ class BinanceUsaExchangeControllerIntegTest {
         String json = result.getResponse().getContentAsString();
         ObjectMapper mapper = new ObjectMapper();
 
-        List<Symbol> symbols = mapper.readValue(json, new TypeReference<List<Symbol>>() {
+        List<Coin> coins = mapper.readValue(json, new TypeReference<List<Coin>>() {
         });
-        assertTrue(symbols.size() > 0);
+        assertTrue(coins.size() > 0);
 
         //verify that bitcoin exists
-        Optional<Symbol> btcUsd = symbols.stream().filter(s -> s.getSymbol().equals("BTCUSD")).findFirst();
+        Optional<Coin> btcUsd = coins.stream().filter(s -> s.getSymbol().equals("BTCUSD")).findFirst();
         assertTrue(btcUsd.isPresent());
         //verify that the symbol is indeed bitcoin
         assertTrue(btcUsd.filter(b -> b.getBaseAsset().equals("BTC")).isPresent());

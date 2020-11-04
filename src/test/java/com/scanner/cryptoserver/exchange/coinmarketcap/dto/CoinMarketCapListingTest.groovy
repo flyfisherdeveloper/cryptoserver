@@ -89,7 +89,7 @@ class CoinMarketCapListingTest extends Specification {
 
           assert foundBySymbol2AndEmptyName.symbol == symbol2
           if (symbol1 == symbol2) {
-              //when there are duplicate symbols, the service returns the first one if the name is missing
+              //when there are duplicate coins, the service returns the first one if the name is missing
               assert foundBySymbol2AndEmptyName.name == name1
           } else {
               assert foundBySymbol2AndEmptyName.name == name2

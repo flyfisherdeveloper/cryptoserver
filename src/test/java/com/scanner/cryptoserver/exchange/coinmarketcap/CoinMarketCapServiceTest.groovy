@@ -6,7 +6,7 @@ import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapListing
 import com.scanner.cryptoserver.exchange.coinmarketcap.dto.ExchangeInfo
 import com.scanner.cryptoserver.exchange.service.ExchangeVisitor
 import com.scanner.cryptoserver.util.CacheUtil
-import com.scanner.cryptoserver.util.dto.Symbol
+import com.scanner.cryptoserver.util.dto.Coin
 import org.jetbrains.annotations.NotNull
 import spock.lang.Specification
 import spock.lang.Unroll
@@ -42,11 +42,11 @@ class CoinMarketCapServiceTest extends Specification {
           def id4 = 4
           def id5 = 5
 
-          def exchangeInfo = new ExchangeInfo(symbols: [new Symbol(baseAsset: baseAsset1),
-                                                        new Symbol(baseAsset: baseAsset2),
-                                                        new Symbol(baseAsset: baseAsset3),
-                                                        new Symbol(baseAsset: baseAsset4),
-                                                        new Symbol(baseAsset: baseAsset5)])
+          def exchangeInfo = new ExchangeInfo(coins: [new Coin(baseAsset: baseAsset1),
+                                                      new Coin(baseAsset: baseAsset2),
+                                                      new Coin(baseAsset: baseAsset3),
+                                                      new Coin(baseAsset: baseAsset4),
+                                                      new Coin(baseAsset: baseAsset5)])
 
           def data = [:] as HashMap<Integer, CoinMarketCapData>
           data.put(id1, new CoinMarketCapData(symbol: baseAsset1, id: id1, name: name1))
@@ -184,7 +184,7 @@ class CoinMarketCapServiceTest extends Specification {
     def "test setMarketCapDataFor24HrData() for list of coins"() {
         given:
           def exchangeNameList = ["binance", "binanceUsa"]
-          def exchangeInfo = new ExchangeInfo(symbols: [new Symbol(baseAsset: "BTC"), new Symbol(baseAsset: "ETH")])
+          def exchangeInfo = new ExchangeInfo(coins: [new Coin(baseAsset: "BTC"), new Coin(baseAsset: "ETH")])
 
           def listing = new CoinMarketCapListing()
           def btcCap = 121000000
@@ -227,7 +227,7 @@ class CoinMarketCapServiceTest extends Specification {
     def "test setMarketCapDataFor24HrData() for single coin"() {
         given:
           def exchangeNameList = ["binance", "binanceUsa"]
-          def exchangeInfo = new ExchangeInfo(symbols: [new Symbol(baseAsset: "BTC"), new Symbol(baseAsset: "ETH")])
+          def exchangeInfo = new ExchangeInfo(coins: [new Coin(baseAsset: "BTC"), new Coin(baseAsset: "ETH")])
 
           def listing = new CoinMarketCapListing()
           def btcCap = 121000000

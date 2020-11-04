@@ -20,8 +20,8 @@ class SandboxBinanceUsaExchangeServiceTest extends Specification {
 
         then:
           assert exchangeInfo
-          assert exchangeInfo.getSymbols().size() > 0
-          def ethUsd = exchangeInfo.getSymbols().find { it.symbol == "ETHUSD" }
+          assert exchangeInfo.getCoins().size() > 0
+          def ethUsd = exchangeInfo.getCoins().find { it.symbol == "ETHUSD" }
           assert ethUsd
           assert ethUsd.baseAsset == "ETH"
           assert ethUsd.quoteAsset == "USD"

@@ -1,19 +1,19 @@
 package com.scanner.cryptoserver.exchange.coinmarketcap.dto;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import com.scanner.cryptoserver.util.dto.Symbol;
+import com.scanner.cryptoserver.util.dto.Coin;
 
 import java.util.List;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class ExchangeInfo {
-    private List<Symbol> symbols;
+    private List<Coin> coins;
 
-    public List<Symbol> getSymbols() {
-        return symbols;
+    public List<Coin> getCoins() {
+        return coins;
     }
 
-    public void setSymbols(List<Symbol> symbols) {
-        this.symbols = symbols;
+    public void setCoins(List<Coin> coins) {
+        this.coins = coins;
     }
 }

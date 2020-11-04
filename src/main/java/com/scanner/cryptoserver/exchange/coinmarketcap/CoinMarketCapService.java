@@ -9,7 +9,7 @@ import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapListing;
 import com.scanner.cryptoserver.exchange.coinmarketcap.dto.ExchangeInfo;
 import com.scanner.cryptoserver.exchange.service.ExchangeVisitor;
 import com.scanner.cryptoserver.util.CacheUtil;
-import com.scanner.cryptoserver.util.dto.Symbol;
+import com.scanner.cryptoserver.util.dto.Coin;
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
 import org.slf4j.Logger;
@@ -55,7 +55,7 @@ public class CoinMarketCapService {
             String name = exchangeName + "-" + EXCHANGE_INFO;
             ExchangeInfo exchangeInfo = cacheUtil.retrieveExchangeInfoFromCache(exchangeName, EXCHANGE_INFO, name);
             if (exchangeInfo != null) {
-                coinSet.addAll(exchangeInfo.getSymbols().stream().map(Symbol::getBaseAsset).collect(Collectors.toSet()));
+                coinSet.addAll(exchangeInfo.getCoins().stream().map(Coin::getBaseAsset).collect(Collectors.toSet()));
             }
         });
         return getIdSet(coinSet, visitor);

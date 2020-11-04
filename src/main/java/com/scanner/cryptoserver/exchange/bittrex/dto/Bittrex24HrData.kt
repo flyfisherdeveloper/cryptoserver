@@ -2,7 +2,7 @@ package com.scanner.cryptoserver.exchange.bittrex.dto
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties
 import com.scanner.cryptoserver.exchange.binance.dto.CoinDataFor24Hr
-import com.scanner.cryptoserver.util.dto.Symbol
+import com.scanner.cryptoserver.util.dto.Coin
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 class Bittrex24HrData {
@@ -29,12 +29,12 @@ class Bittrex24HrData {
         return coin
     }
 
-    fun symbolAdapter(): Symbol {
-        val sym = Symbol()
+    fun coinAdapter(): Coin {
+        val coin = Coin()
         val values = symbol.split("-")
-        sym.baseAsset = values[0]
-        sym.quoteAsset = values[1]
-        sym.symbol = symbol
-        return sym
+        coin.baseAsset = values[0]
+        coin.quoteAsset = values[1]
+        coin.symbol = symbol
+        return coin
     }
 }

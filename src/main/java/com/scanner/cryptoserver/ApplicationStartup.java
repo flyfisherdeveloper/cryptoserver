@@ -5,7 +5,7 @@ import com.scanner.cryptoserver.exchange.bittrex.service.BittrexServiceImpl;
 import com.scanner.cryptoserver.exchange.coinmarketcap.CoinMarketCapService;
 import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapListing;
 import com.scanner.cryptoserver.exchange.coinmarketcap.dto.ExchangeInfo;
-import com.scanner.cryptoserver.util.dto.Symbol;
+import com.scanner.cryptoserver.util.dto.Coin;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.context.event.ApplicationReadyEvent;
@@ -60,9 +60,9 @@ public class ApplicationStartup implements ApplicationListener<ApplicationReadyE
                     ExchangeInfo binanceUsaInfo = futureBinanceUsa.join();
                     ExchangeInfo bittrexInfo = futureBittrex.join();
 
-                    Set<String> set = binanceInfo.getSymbols().stream().map(Symbol::getBaseAsset).collect(Collectors.toSet());
-                    Set<String> usaSet = binanceUsaInfo.getSymbols().stream().map(Symbol::getBaseAsset).collect(Collectors.toSet());
-                    Set<String> bittrexSet = bittrexInfo.getSymbols().stream().map(Symbol::getBaseAsset).collect(Collectors.toSet());
+                    Set<String> set = binanceInfo.getCoins().stream().map(Coin::getBaseAsset).collect(Collectors.toSet());
+                    Set<String> usaSet = binanceUsaInfo.getCoins().stream().map(Coin::getBaseAsset).collect(Collectors.toSet());
+                    Set<String> bittrexSet = bittrexInfo.getCoins().stream().map(Coin::getBaseAsset).collect(Collectors.toSet());
                     set.addAll(usaSet);
                     set.addAll(bittrexSet);
                     return set;
@@ -77,9 +77,9 @@ public class ApplicationStartup implements ApplicationListener<ApplicationReadyE
                     //Now fill the market cap for each coin on the exchanges.
                     //Here, we set the exchange info market cap for each coin, retrieving it from the coin market cap info.
                     try {
-                        futureBinance.get().getSymbols().forEach(symbol -> symbol.addMarketCapAndId(binanceService.getExchangeVisitor(), coinMarketCapInfo));
-                        futureBinanceUsa.get().getSymbols().forEach(symbol -> symbol.addMarketCapAndId(binanceUsaService.getExchangeVisitor(), coinMarketCapInfo));
-                        futureBittrex.get().getSymbols().forEach(symbol -> symbol.addMarketCapAndId(bittrexService.getExchangeVisitor(), coinMarketCapInfo));
+                        futureBinance.get().getCoins().forEach(coin -> coin.addMarketCapAndId(binanceService.getExchangeVisitor(), coinMarketCapInfo));
+                        futureBinanceUsa.get().getCoins().forEach(coin -> coin.addMarketCapAndId(binanceUsaService.getExchangeVisitor(), coinMarketCapInfo));
+                        futureBittrex.get().getCoins().forEach(coin -> coin.addMarketCapAndId(bittrexService.getExchangeVisitor(), coinMarketCapInfo));
                     } catch (InterruptedException | ExecutionException e) {
                         Log.error("Could not access exchange future for adding market cap: {}", e.getMessage());
                     }

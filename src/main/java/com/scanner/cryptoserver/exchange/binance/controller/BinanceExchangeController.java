@@ -5,7 +5,7 @@ import com.scanner.cryptoserver.exchange.binance.dto.CoinTicker;
 import com.scanner.cryptoserver.exchange.coinmarketcap.dto.ExchangeInfo;
 import com.scanner.cryptoserver.exchange.service.ExchangeService;
 import com.scanner.cryptoserver.util.SandboxUtil;
-import com.scanner.cryptoserver.util.dto.Symbol;
+import com.scanner.cryptoserver.util.dto.Coin;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
@@ -23,9 +23,9 @@ public class BinanceExchangeController {
     }
 
     @GetMapping(value = "/info", produces = MediaType.APPLICATION_JSON_VALUE)
-    public List<Symbol> getExchangeInfo() {
+    public List<Coin> getExchangeInfo() {
         ExchangeInfo info = binanceService.getExchangeInfo();
-        return info.getSymbols();
+        return info.getCoins();
     }
 
     @GetMapping(value = "/24HourTicker/{symbol}", produces = MediaType.APPLICATION_JSON_VALUE)

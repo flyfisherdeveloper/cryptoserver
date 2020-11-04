@@ -9,7 +9,7 @@ import com.scanner.cryptoserver.exchange.service.ExchangeService;
 import com.scanner.cryptoserver.exchange.service.ExchangeVisitor;
 import com.scanner.cryptoserver.util.CacheUtil;
 import com.scanner.cryptoserver.util.RsiCalc;
-import com.scanner.cryptoserver.util.dto.Symbol;
+import com.scanner.cryptoserver.util.dto.Coin;
 import org.jetbrains.annotations.NotNull;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -132,7 +132,7 @@ public abstract class AbstractBinanceExchangeService implements ExchangeService 
 
         if (coinMarketCap != null) {
             //If the coin market cap data exists, then update each symbol with the market cap value found in the market cap data.
-            exchangeInfo.getSymbols().forEach(symbol -> symbol.addMarketCapAndId(getExchangeVisitor(), coinMarketCap));
+            exchangeInfo.getCoins().forEach(symbol -> symbol.addMarketCapAndId(getExchangeVisitor(), coinMarketCap));
         }
     }
 
@@ -157,13 +157,13 @@ public abstract class AbstractBinanceExchangeService implements ExchangeService 
     public ExchangeInfo getExchangeInfoWithoutMarketCap() {
         ExchangeInfo exchangeInfo = retrieveExchangeInfoFromCache();
         //remove currency markets that are not USA-based, such as the Euro ("EUR")
-        exchangeInfo.getSymbols().removeIf(s -> nonUsaMarkets.contains(s.getQuoteAsset()));
+        exchangeInfo.getCoins().removeIf(s -> nonUsaMarkets.contains(s.getQuoteAsset()));
         return exchangeInfo;
     }
 
     public Set<String> getMarkets() {
         ExchangeInfo exchangeInfo = retrieveExchangeInfoFromCache();
-        Set<String> set = exchangeInfo.getSymbols().stream().map(Symbol::getQuoteAsset).collect(Collectors.toSet());
+        Set<String> set = exchangeInfo.getCoins().stream().map(Coin::getQuoteAsset).collect(Collectors.toSet());
         return set;
     }
 
@@ -229,10 +229,10 @@ public abstract class AbstractBinanceExchangeService implements ExchangeService 
             int start = this.getStartOfQuote(str);
             return str.substring(start);
         };
-        String quote = exchangeInfo.getSymbols().stream()
+        String quote = exchangeInfo.getCoins().stream()
                 .filter(sym -> sym.getSymbol() != null && sym.getSymbol().equals(str))
                 .findFirst()
-                .map(Symbol::getQuoteAsset)
+                .map(Coin::getQuoteAsset)
                 .orElseGet(parseQuote);
         return quote;
     }
@@ -243,10 +243,10 @@ public abstract class AbstractBinanceExchangeService implements ExchangeService 
             int offset = this.getStartOfQuote(str);
             return str.substring(0, offset);
         };
-        String coin = exchangeInfo.getSymbols().stream()
+        String coin = exchangeInfo.getCoins().stream()
                 .filter(sym -> sym.getSymbol() != null && sym.getSymbol().equals(str))
                 .findFirst()
-                .map(Symbol::getBaseAsset)
+                .map(Coin::getBaseAsset)
                 .orElseGet(parseCoin);
         return coin;
     }
@@ -259,7 +259,7 @@ public abstract class AbstractBinanceExchangeService implements ExchangeService 
      */
     private boolean isCoinTrading(String symbol) {
         ExchangeInfo info = retrieveExchangeInfoFromCache();
-        boolean trading = info.getSymbols().stream()
+        boolean trading = info.getCoins().stream()
                 .anyMatch(s -> s.getSymbol().equals(symbol) && s.getStatus().equals(TRADING));
         return trading;
     }

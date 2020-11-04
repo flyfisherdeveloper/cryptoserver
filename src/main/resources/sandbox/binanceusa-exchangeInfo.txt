@@ -1,5 +1,5 @@
 {
-  "symbols" : [ {
+  "coins" : [ {
     "symbol" : "BTCUSD",
     "baseAsset" : "BTC",
     "quoteAsset" : "USD",

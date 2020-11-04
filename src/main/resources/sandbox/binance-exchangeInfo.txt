@@ -1,5 +1,5 @@
 {
-  "symbols" : [ {
+  "coins" : [ {
     "symbol" : "ETHBTC",
     "baseAsset" : "ETH",
     "quoteAsset" : "BTC",

@@ -131,12 +131,12 @@ class BittrexServiceImpl(private val cacheUtil: CacheUtil, private val coinMarke
         //get the markets from the Bittrex API
         val markets = cacheUtil.retrieveFromCache(cacheName, ALL_MARKETS) { getMarkets() }
         //now adapt the Bittrex markets objects to Symbols
-        val symbolList = markets.map { it.symbolAdapter() }
+        val symbolList = markets.map { it.coinAdapter() }
         val exchangeInfo = ExchangeInfo()
         //put the symbols in an exchange info object, to be consistent with all the exchange info from other exchanges
-        exchangeInfo.symbols = symbolList
+        exchangeInfo.coins = symbolList
         //remove currency markets that are not USA-based, such as the Euro ("EUR")
-        exchangeInfo.symbols.removeIf { nonUsaMarkets.contains(it.quoteAsset) }
+        exchangeInfo.coins.removeIf { nonUsaMarkets.contains(it.quoteAsset) }
         //put the Bittrex exchange info in the cache
         val name = "$EXCHANGE_NAME-$EXCHANGE_INFO"
         cacheUtil.putInCache(EXCHANGE_INFO, name, exchangeInfo)
