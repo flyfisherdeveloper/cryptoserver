@@ -544,9 +544,17 @@ public abstract class AbstractBinanceExchangeService implements ExchangeService 
             return coins;
         }
         //Find the USD volume, and add it to the list.
-        final String coin = getCoin(symbol);
-        List<CoinTicker> dollarTickers = getTickerData(coin + getUsdQuote(), interval, daysOrMonths);
-        addUsdVolume(coins, dollarTickers);
+        final String quote = getQuote(symbol);
+        final ExchangeInfo exchangeInfo = getExchangeInfo();
+        final String usdSymbol = quote + getUsdQuote();
+        //We need the USD or USDT pair of the quote coin in order to get the USD price in order to compute the USD volume for the tickers.
+        //For example, if the coin is ETHBTC, then we need to get the USD ticker values for BTCUSD (or BTCUSDT) in order to get the
+        //USD prices over the interval to compute the USD volume for ETHBTC over the interval.
+        //If that pair doesn't exist for some reason, then just ignore the USD volume.
+        exchangeInfo.getCoins().stream().filter(exchangeCoin -> exchangeCoin.getSymbol().equals(usdSymbol)).findAny().ifPresent(usdPair -> {
+            List<CoinTicker> dollarTickers = getTickerData(usdSymbol, interval, daysOrMonths);
+            addUsdVolume(coins, dollarTickers);
+        });
         return coins;
     }
 
