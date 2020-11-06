@@ -61,4 +61,9 @@ public class BinanceUsaExchangeServiceImpl extends AbstractBinanceExchangeServic
     protected void setScheduledService(ScheduledExecutorService scheduledService) {
         this.scheduledService = scheduledService;
     }
+
+    @Override
+    protected String getUsdQuote() {
+        return "USD";
+    }
 }

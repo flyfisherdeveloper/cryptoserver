@@ -516,10 +516,15 @@ public abstract class AbstractBinanceExchangeService implements ExchangeService 
      * @param coins      the coins that are being retrieved.
      * @param usdTickers the coins that contain the USD volume value.
      */
-    private void addUsdVolume(List<CoinTicker> coins, List<CoinTicker> usdTickers) {
+    void addUsdVolume(List<CoinTicker> coins, List<CoinTicker> usdTickers) {
         for (int index = 0; index < coins.size(); index++) {
             if (index < usdTickers.size()) {
-                coins.get(index).setUsdVolume(usdTickers.get(index).getQuoteAssetVolume());
+                CoinTicker usdTicker = usdTickers.get(index);
+                double open = usdTicker.getOpen();
+                double close = usdTicker.getClose();
+                double avg = (open + close) / 2.0;
+                double vol = coins.get(index).getVolume() * avg;
+                coins.get(index).setUsdVolume(vol);
             }
         }
     }
@@ -540,10 +545,7 @@ public abstract class AbstractBinanceExchangeService implements ExchangeService 
         }
         //Find the USD volume, and add it to the list.
         final String coin = getCoin(symbol);
-        List<CoinTicker> dollarTickers = getTickerData(coin + "USD", interval, daysOrMonths);
-        if (dollarTickers.isEmpty()) {
-            dollarTickers = getTickerData(coin + "USDT", interval, daysOrMonths);
-        }
+        List<CoinTicker> dollarTickers = getTickerData(coin + getUsdQuote(), interval, daysOrMonths);
         addUsdVolume(coins, dollarTickers);
         return coins;
     }
@@ -723,4 +725,6 @@ public abstract class AbstractBinanceExchangeService implements ExchangeService 
     protected abstract ScheduledExecutorService getScheduledService();
 
     protected abstract void setScheduledService(ScheduledExecutorService scheduledService);
+
+    protected abstract String getUsdQuote();
 }
