@@ -12,6 +12,7 @@ public class CoinTicker {
     private Double close;
     private Double volume;
     private Double quoteAssetVolume;
+    private Double usdVolume;
     private Integer numberOfTrades;
     private double rsi;
 
@@ -117,5 +118,13 @@ public class CoinTicker {
 
     public void setRsi(double rsi) {
         this.rsi = rsi;
+    }
+
+    public Double getUsdVolume() {
+        return usdVolume;
+    }
+
+    public void setUsdVolume(Double usdVolume) {
+        this.usdVolume = usdVolume;
     }
 }

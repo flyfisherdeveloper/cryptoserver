@@ -229,19 +229,28 @@ class BinanceExchangeServiceImplTest extends Specification {
           "BTCUSD" | "1h"     | "12m"        | [expected: true, type: RuntimeException]
     }
 
-    @Unroll("Test call of get ticker data with coin cashe exists: #coinCacheExists and coin in cache: #inCache")
     def "test getTickerData"() {
         given:
           def coinTicker1 = new CoinTicker(symbol: symbol, openDate: "Nov 10, 2019", closeDate: "Nov 11, 2019")
           def coinTicker2 = new CoinTicker(symbol: symbol, openDate: "Nov 12, 2019", closeDate: "Nov 13, 2019")
           def coinTickerList = [coinTicker1, coinTicker2]
 
+          def coinWithUsdTicker1 = new CoinTicker(symbol: baseAsset + usdQuote, openDate: "Nov 10, 2019", closeDate: "Nov 11, 2019", quoteAssetVolume: usdVolume)
+          def coinWithUsdTicker2 = new CoinTicker(symbol: baseAsset + usdQuote, openDate: "Nov 10, 2019", closeDate: "Nov 11, 2019", quoteAssetVolume: usdVolume)
+          def coinWithUsdTickerList = [coinWithUsdTicker1, coinWithUsdTicker2]
+
+          def btcusdCoin = new Coin(symbol: "BTCUSD", baseAsset: "BTC", quoteAsset: "USD")
+          def otherCoin = new Coin(symbol: symbol, baseAsset: baseAsset, quoteAsset: quoteAsset)
+          def exchangeCoins = [btcusdCoin, otherCoin]
+          def exchangeInfo = new ExchangeInfo(coins: exchangeCoins)
+
         when:
           if (inCache) {
-              cacheUtil.retrieveFromCache(*_) >> coinTickerList
+              cacheUtil.retrieveFromCache("CoinCache", _, _) >>> [coinTickerList, coinWithUsdTickerList]
           } else {
-              cacheUtil.retrieveFromCache(*_) >> null
+              cacheUtil.retrieveFromCache("CoinCache", _, _) >> null
           }
+          cacheUtil.retrieveFromCache("ExchangeInfo", _, _) >> exchangeInfo
 
         then:
           def coins = service.getTickerData(symbol, interval, daysOrMonths)
@@ -251,15 +260,17 @@ class BinanceExchangeServiceImplTest extends Specification {
           if (inCache) {
               //if we pass this test, then we ensure that the coin was retrieved from the cache
               assert coins.size() == coinTickerList.size()
+              coins.each { assert it.getUsdVolume() == usdVolume }
           } else {
               assert coins.size() == 0
           }
 
         where:
-          symbol   | interval | daysOrMonths | inCache
-          "BTCUSD" | "4h"     | "7d"         | true
-          "BTCUSD" | "4h"     | "7d"         | false
-          "BTCUSD" | "1h"     | "1d"         | false
+          symbol   | baseAsset | quoteAsset | usdQuote | usdVolume | interval | daysOrMonths | inCache
+          "BTCBNB" | "BTC"     | "BNB"      | "USD"    | 100.34    | "4h"     | "7d"         | true
+          "BTCBNB" | "BTC"     | "BNB"      | "USDT"   | 200.84    | "4h"     | "7d"         | true
+          "BTCBNB" | "BTC"     | "BNB"      | null     | null      | "4h"     | "7d"         | false
+          "BTCBNB" | "BTC"     | "BNB"      | null     | null      | "1h"     | "1d"         | false
     }
 
     @Unroll
@@ -489,7 +500,9 @@ class BinanceExchangeServiceImplTest extends Specification {
           def coinTickerList = [coinTicker1, coinTicker2]
 
         when:
-          cacheUtil.retrieveFromCache(*_) >> coinTickerList
+          cacheUtil.retrieveFromCache("CoinCache", _, _) >> coinTickerList
+          //here, the exchange info isn't needed for the test, but is used to avoid null pointer errors
+          cacheUtil.retrieveFromCache("ExchangeInfo", _, _) >> new ExchangeInfo(coins: new ArrayList<Coin>())
 
         then:
           def tickerData = service.getRsiTickerData(symbols)

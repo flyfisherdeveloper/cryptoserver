@@ -223,6 +223,12 @@ public abstract class AbstractBinanceExchangeService implements ExchangeService 
         return end - offset;
     }
 
+    /**
+     * Get a "quote" from a symbol string. i.e. "BTCUSD" returns "USD".
+     *
+     * @param str the symbol, such as "ETHUSDT".
+     * @return the "quote" such as "USDT" from the string "LTCUSDT".
+     */
     public String getQuote(String str) {
         ExchangeInfo exchangeInfo = retrieveExchangeInfoFromCache();
         Supplier<String> parseQuote = () -> {
@@ -237,6 +243,12 @@ public abstract class AbstractBinanceExchangeService implements ExchangeService 
         return quote;
     }
 
+    /**
+     * Get a "coin symbol" from a symbol string. i.e. "BTCUSD" returns "BTC".
+     *
+     * @param str the symbol, such as "ETHUSDT".
+     * @return the "coin" such as "LTC" from the string "LTCUSDT".
+     */
     public String getCoin(String str) {
         ExchangeInfo exchangeInfo = retrieveExchangeInfoFromCache();
         Supplier<String> parseCoin = () -> {
@@ -495,6 +507,23 @@ public abstract class AbstractBinanceExchangeService implements ExchangeService 
         return coinTickers;
     }
 
+    /**
+     * Add the $USD volume to the coins.
+     * Note: In some cases, the USD volume value is not available,
+     * and the USDT (an extremely close approximation to USD) was used
+     * to compute the USD value.
+     *
+     * @param coins      the coins that are being retrieved.
+     * @param usdTickers the coins that contain the USD volume value.
+     */
+    private void addUsdVolume(List<CoinTicker> coins, List<CoinTicker> usdTickers) {
+        for (int index = 0; index < coins.size(); index++) {
+            if (index < usdTickers.size()) {
+                coins.get(index).setUsdVolume(usdTickers.get(index).getQuoteAssetVolume());
+            }
+        }
+    }
+
     public List<CoinTicker> getTickerData(String symbol, String interval, String daysOrMonths) {
         //Attempt to get the data out of the cache if it is in there.
         //If not in the cache, then call the service and add the data to the cache.
@@ -502,9 +531,20 @@ public abstract class AbstractBinanceExchangeService implements ExchangeService 
         String name = getExchangeName() + "-" + symbol + interval + daysOrMonths;
         Supplier<List<CoinTicker>> coinTickerSupplier = () -> callCoinTicker(symbol, interval, daysOrMonths);
         List<CoinTicker> coins = cacheUtil.retrieveFromCache(COIN_CACHE, name, coinTickerSupplier);
-        if (coins == null) {
+        if (coins == null || coins.isEmpty()) {
             return new ArrayList<>();
         }
+        //Here, we want the USD volume.
+        if (symbol.endsWith("USD") || symbol.endsWith("USDT")) {
+            return coins;
+        }
+        //Find the USD volume, and add it to the list.
+        final String coin = getCoin(symbol);
+        List<CoinTicker> dollarTickers = getTickerData(coin + "USD", interval, daysOrMonths);
+        if (dollarTickers.isEmpty()) {
+            dollarTickers = getTickerData(coin + "USDT", interval, daysOrMonths);
+        }
+        addUsdVolume(coins, dollarTickers);
         return coins;
     }
 
