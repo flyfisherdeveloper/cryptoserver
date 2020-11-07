@@ -122,6 +122,9 @@ public abstract class AbstractBinanceExchangeService implements ExchangeService 
                 if (coin.equals("PHB")) {
                     return "PHX";
                 }
+                if (coin.equals("GXS")) {
+                    return "GXC";
+                }
                 return coin;
             }
         };

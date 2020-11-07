@@ -240,9 +240,9 @@ class BinanceExchangeServiceImplTest extends Specification {
           def coinWithUsdTicker2 = new CoinTicker(symbol: baseAsset + usdQuote, openDate: "Nov 10, 2019", closeDate: "Nov 11, 2019", open: open1, close: close1, volume: usdVolume)
           def coinWithUsdTickerList = [coinWithUsdTicker1, coinWithUsdTicker2]
 
-          def btcusdCoin = new Coin(symbol: "BTCUSD", baseAsset: "BTC", quoteAsset: "USD")
+          def bnbusdCoin = new Coin(symbol: quoteAsset + usdQuote, baseAsset: quoteAsset, quoteAsset: usdQuote)
           def otherCoin = new Coin(symbol: symbol, baseAsset: baseAsset, quoteAsset: quoteAsset)
-          def exchangeCoins = [btcusdCoin, otherCoin]
+          def exchangeCoins = [bnbusdCoin, otherCoin]
           def exchangeInfo = new ExchangeInfo(coins: exchangeCoins)
 
         when:
@@ -268,7 +268,6 @@ class BinanceExchangeServiceImplTest extends Specification {
 
         where:
           symbol   | baseAsset | quoteAsset | volume1 | volume2 | usdQuote | open1  | close1 | usdVolume | interval | daysOrMonths | inCache
-          "BTCBNB" | "BTC"     | "BNB"      | 10.0    | 20.0    | "USD"    | 7000.0 | 8000.0 | 100.00    | "4h"     | "7d"         | true
           "BTCBNB" | "BTC"     | "BNB"      | 5.0     | 10.0    | "USDT"   | 8000.0 | 9000.0 | 200.00    | "4h"     | "7d"         | true
           "BTCBNB" | "BTC"     | "BNB"      | null    | null    | null     | null   | null   | null      | "4h"     | "7d"         | false
           "BTCBNB" | "BTC"     | "BNB"      | null    | null    | null     | null   | null   | null      | "1h"     | "1d"         | false
@@ -563,6 +562,7 @@ class BinanceExchangeServiceImplTest extends Specification {
           "BQX"  | "VGX"
           "YOYO" | "YOYOW"
           "PHB"  | "PHX"
+          "GXS"  | "GXC"
     }
 
     def "test getExchangeInfoSupplier"() {
