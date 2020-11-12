@@ -471,10 +471,13 @@ public abstract class AbstractBinanceExchangeService implements ExchangeService 
         for (int index = 0; index < coins.size(); index++) {
             if (index < usdTickers.size()) {
                 CoinTicker usdTicker = usdTickers.get(index);
+                CoinTicker coinTicker = coins.get(index);
                 double open = usdTicker.getOpen();
                 double close = usdTicker.getClose();
-                double avg = (open + close) / 2.0;
-                double vol = coins.get(index).getVolume() * avg;
+                double coinOpen = coinTicker.getOpen();
+                double coinClose = coinTicker.getClose();
+                double avg = (open*coinOpen + close*coinClose) / 2.0;
+                double vol = coinTicker.getVolume() * avg;
                 coins.get(index).setUsdVolume(vol);
             }
         }
