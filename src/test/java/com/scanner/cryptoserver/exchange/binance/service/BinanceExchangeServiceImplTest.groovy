@@ -6,6 +6,7 @@ import com.scanner.cryptoserver.exchange.coinmarketcap.CoinMarketCapService
 import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapData
 import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapListing
 import com.scanner.cryptoserver.exchange.coinmarketcap.dto.ExchangeInfo
+import com.scanner.cryptoserver.exchange.service.ExchangeVisitor
 import com.scanner.cryptoserver.util.CacheUtil
 import com.scanner.cryptoserver.util.dto.Coin
 import org.springframework.http.ResponseEntity
@@ -23,13 +24,15 @@ class BinanceExchangeServiceImplTest extends Specification {
     private BinanceUrlExtractor urlExtractor
     private CoinMarketCapService coinMarketCapService
     private CacheUtil cacheUtil
+    private ExchangeVisitor exchangeVisitor
 
     def setup() {
         restTemplate = Mock(RestTemplate)
         urlExtractor = Mock(BinanceUrlExtractor)
         coinMarketCapService = Mock(CoinMarketCapService)
         cacheUtil = Mock(CacheUtil)
-        service = new BinanceExchangeServiceImpl(restTemplate, urlExtractor, cacheUtil, coinMarketCapService)
+        exchangeVisitor = Mock(ExchangeVisitor)
+        service = new BinanceExchangeServiceImpl(restTemplate, urlExtractor, cacheUtil, coinMarketCapService, exchangeVisitor)
     }
 
     def "test get24HrAllCoinTicker() when cache has data"() {
@@ -539,30 +542,6 @@ class BinanceExchangeServiceImplTest extends Specification {
           //therefore, all we need to do is check that the service correctly made the calls.
           //3 times the ticker list size is what we are expecting
           assert tickerData.size() == 3 * coinTickerList.size()
-    }
-
-    @Unroll("test that the exchange visitor returns '#expectedResult' for #coin")
-    def "test getExchangeVisitor"() {
-        when:
-          def visitor = service.getExchangeVisitor()
-
-        then:
-          def coinName = visitor.getName(coin)
-
-        expect:
-          assert coinName == expectedResult
-
-        where:
-          coin   | expectedResult
-          "BTC"  | "BTC"
-          "UNI"  | "Uniswap"
-          "HNT"  | "Helium"
-          "LINK" | "Chainlink"
-          "CND"  | "Cindicator"
-          "BQX"  | "VGX"
-          "YOYO" | "YOYOW"
-          "PHB"  | "PHX"
-          "GXS"  | "GXC"
     }
 
     def "test getExchangeInfoSupplier"() {

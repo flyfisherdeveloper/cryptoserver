@@ -16,8 +16,8 @@ public class BinanceExchangeServiceImpl extends AbstractBinanceExchangeService {
     private int tickerCounter = 0;
     private ScheduledExecutorService scheduledService;
 
-    public BinanceExchangeServiceImpl(RestOperations restTemplate, BinanceUrlExtractor urlExtractor, CacheUtil cacheUtil, CoinMarketCapService coinMarketCapService) {
-        super(restTemplate, coinMarketCapService, cacheUtil);
+    public BinanceExchangeServiceImpl(RestOperations restTemplate, BinanceUrlExtractor urlExtractor, CacheUtil cacheUtil, CoinMarketCapService coinMarketCapService, ExchangeVisitor exchangeVisitor) {
+        super(restTemplate, coinMarketCapService, cacheUtil, exchangeVisitor);
         this.urlExtractor = urlExtractor;
         cacheUtil.addExchangeInfoSupplier(getExchangeName(), getExchangeInfoSupplier());
     }
