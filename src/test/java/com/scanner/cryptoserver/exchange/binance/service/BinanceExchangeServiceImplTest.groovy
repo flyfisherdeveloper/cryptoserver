@@ -235,12 +235,12 @@ class BinanceExchangeServiceImplTest extends Specification {
     @Unroll
     def "test getTickerData"() {
         given:
-          def coinTicker1 = new CoinTicker(symbol: symbol, openDate: "Nov 10, 2019", closeDate: "Nov 11, 2019", volume: volume1)
-          def coinTicker2 = new CoinTicker(symbol: symbol, openDate: "Nov 12, 2019", closeDate: "Nov 13, 2019", volume: volume2)
+          def coinTicker1 = new CoinTicker(symbol: symbol, openDate: "Nov 10, 2019", closeDate: "Nov 11, 2019", open: open1, close: close1, volume: volume1)
+          def coinTicker2 = new CoinTicker(symbol: symbol, openDate: "Nov 12, 2019", closeDate: "Nov 13, 2019", open: open2, close: close2, volume: volume2)
           def coinTickerList = [coinTicker1, coinTicker2]
 
-          def coinWithUsdTicker1 = new CoinTicker(symbol: baseAsset + usdQuote, openDate: "Nov 10, 2019", closeDate: "Nov 11, 2019", open: open1, close: close1, volume: usdVolume)
-          def coinWithUsdTicker2 = new CoinTicker(symbol: baseAsset + usdQuote, openDate: "Nov 10, 2019", closeDate: "Nov 11, 2019", open: open1, close: close1, volume: usdVolume)
+          def coinWithUsdTicker1 = new CoinTicker(symbol: baseAsset + usdQuote, openDate: "Nov 10, 2019", closeDate: "Nov 11, 2019", open: usdOpen1, close: usdClose1, volume: usdVolume)
+          def coinWithUsdTicker2 = new CoinTicker(symbol: baseAsset + usdQuote, openDate: "Nov 10, 2019", closeDate: "Nov 11, 2019", open: usdOpen2, close: usdClose2, volume: usdVolume)
           def coinWithUsdTickerList = [coinWithUsdTicker1, coinWithUsdTicker2]
 
           def bnbusdCoin = new Coin(symbol: quoteAsset + usdQuote, baseAsset: quoteAsset, quoteAsset: usdQuote)
@@ -270,17 +270,17 @@ class BinanceExchangeServiceImplTest extends Specification {
           }
 
         where:
-          symbol   | baseAsset | quoteAsset | volume1 | volume2 | usdQuote | open1  | close1 | usdVolume | interval | daysOrMonths | inCache
-          "BTCBNB" | "BTC"     | "BNB"      | 5.0     | 10.0    | "USDT"   | 8000.0 | 9000.0 | 200.00    | "4h"     | "7d"         | true
-          "BTCBNB" | "BTC"     | "BNB"      | null    | null    | null     | null   | null   | null      | "4h"     | "7d"         | false
-          "BTCBNB" | "BTC"     | "BNB"      | null    | null    | null     | null   | null   | null      | "1h"     | "1d"         | false
+          symbol   | baseAsset | quoteAsset | open1 | close1 | open2 | close2 | volume1 | volume2 | usdQuote | usdOpen1 | usdClose1 | usdOpen2 | usdClose2 | usdVolume | interval | daysOrMonths | inCache
+          "BTCBNB" | "BTC"     | "BNB"      | 0.5   | 0.4    | 0.4   | 0.5    | 5.0     | 10.0    | "USDT"   | 8000.0   | 9000.0    | 200.00   | 9000.0    | 8000.0    | "4h"     | "7d"         | true
+          "BTCBNB" | "BTC"     | "BNB"      | null  | null   | null  | null   | null    | null    | null     | null     | null      | null     | null      | null      | "4h"     | "7d"         | false
+          "BTCBNB" | "BTC"     | "BNB"      | null  | null   | null  | null   | null    | null    | null     | null     | null      | null     | null      | null      | "1h"     | "1d"         | false
     }
 
     @Unroll
     def "test addUsdVolume"() {
         given:
-          def ticker1 = new CoinTicker(volume: volume1)
-          def ticker2 = new CoinTicker(volume: volume2)
+          def ticker1 = new CoinTicker(volume: volume1, open: open1, close: close1)
+          def ticker2 = new CoinTicker(volume: volume2, open: open2, close: close2)
           def coins = [ticker1, ticker2]
 
           def usdTicker1 = new CoinTicker(open: usdOpen1, close: usdClose1)
@@ -293,14 +293,14 @@ class BinanceExchangeServiceImplTest extends Specification {
         then:
           assert ticker1.getUsdVolume() != null
           assert ticker2.getUsdVolume() != null
-          //the USD volume is calculated as the average USD price (based on open/close) multiplied by the number of coins (volume)
-          assert ticker1.getUsdVolume() == ((usdOpen1 + usdClose1) / 2.0) * volume1
-          assert ticker2.getUsdVolume() == ((usdOpen2 + usdClose2) / 2.0) * volume2
+          //the USD volume is computed as the coin price * the usd price at open + the coin price * the usd price at close divided by 2
+          assert ticker1.getUsdVolume() == ((open1 * usdOpen1 + close1 * usdClose1) / 2.0) * volume1
+          assert ticker2.getUsdVolume() == ((open2 * usdOpen2 + close2 * usdClose2) / 2.0) * volume2
 
         where:
-          volume1 | volume2 | usdOpen1 | usdClose1 | usdOpen2 | usdClose2
-          10.0    | 100.0   | 10.0     | 9.0       | 9.0      | 8.0
-          0.0     | 0.0     | 0.0      | 0.0       | 0.0      | 0.0
+          volume1 | volume2 | open1 | close1 | open2 | close2 | usdOpen1 | usdClose1 | usdOpen2 | usdClose2
+          10.0    | 100.0   | 100.0 | 200.0  | 200.0 | 300.0  | 10.0     | 9.0       | 9.0      | 8.0
+          0.0     | 0.0     | 0.0   | 0.0    | 0.0   | 0.0    | 0.0      | 0.0       | 0.0      | 0.0
     }
 
     @Unroll

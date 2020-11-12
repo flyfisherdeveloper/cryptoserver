@@ -472,11 +472,12 @@ public abstract class AbstractBinanceExchangeService implements ExchangeService 
             if (index < usdTickers.size()) {
                 CoinTicker usdTicker = usdTickers.get(index);
                 CoinTicker coinTicker = coins.get(index);
-                double open = usdTicker.getOpen();
-                double close = usdTicker.getClose();
+                double usdOpen = usdTicker.getOpen();
+                double usdClose = usdTicker.getClose();
                 double coinOpen = coinTicker.getOpen();
                 double coinClose = coinTicker.getClose();
-                double avg = (open*coinOpen + close*coinClose) / 2.0;
+                //the USD volume is computed as the coin price * the usd price at open + the coin price * the usd price at close divided by 2
+                double avg = (usdOpen*coinOpen + usdClose*coinClose) / 2.0;
                 double vol = coinTicker.getVolume() * avg;
                 coins.get(index).setUsdVolume(vol);
             }
