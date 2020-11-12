@@ -1,649 +1,5 @@
 [ {
   "symbol" : "ETHBTC",
-  "openTime" : 1569369600000,
-  "openDate" : null,
-  "closeTime" : 1569455999999,
-  "closeDate" : null,
-  "open" : 0.020033,
-  "high" : 0.020204,
-  "low" : 0.019803,
-  "close" : 0.020175,
-  "volume" : 109.999,
-  "quoteAssetVolume" : 2.19535481,
-  "numberOfTrades" : 227,
-  "rsi" : 0.0
-}, {
-  "symbol" : "ETHBTC",
-  "openTime" : 1569456000000,
-  "openDate" : null,
-  "closeTime" : 1569542399999,
-  "closeDate" : null,
-  "open" : 0.020096,
-  "high" : 0.020539,
-  "low" : 0.019727,
-  "close" : 0.020539,
-  "volume" : 154.529,
-  "quoteAssetVolume" : 3.11292601,
-  "numberOfTrades" : 220,
-  "rsi" : 0.0
-}, {
-  "symbol" : "ETHBTC",
-  "openTime" : 1569542400000,
-  "openDate" : null,
-  "closeTime" : 1569628799999,
-  "closeDate" : null,
-  "open" : 0.020576,
-  "high" : 0.021484,
-  "low" : 0.020509,
-  "close" : 0.021208,
-  "volume" : 123.615,
-  "quoteAssetVolume" : 2.6055161,
-  "numberOfTrades" : 201,
-  "rsi" : 0.0
-}, {
-  "symbol" : "ETHBTC",
-  "openTime" : 1569628800000,
-  "openDate" : null,
-  "closeTime" : 1569715199999,
-  "closeDate" : null,
-  "open" : 0.021304,
-  "high" : 0.021437,
-  "low" : 0.020999,
-  "close" : 0.021154,
-  "volume" : 74.976,
-  "quoteAssetVolume" : 1.59325181,
-  "numberOfTrades" : 126,
-  "rsi" : 0.0
-}, {
-  "symbol" : "ETHBTC",
-  "openTime" : 1569715200000,
-  "openDate" : null,
-  "closeTime" : 1569801599999,
-  "closeDate" : null,
-  "open" : 0.021119,
-  "high" : 0.021174,
-  "low" : 0.020736,
-  "close" : 0.021111,
-  "volume" : 64.113,
-  "quoteAssetVolume" : 1.34395108,
-  "numberOfTrades" : 124,
-  "rsi" : 0.0
-}, {
-  "symbol" : "ETHBTC",
-  "openTime" : 1569801600000,
-  "openDate" : null,
-  "closeTime" : 1569887999999,
-  "closeDate" : null,
-  "open" : 0.021126,
-  "high" : 0.021922,
-  "low" : 0.021035,
-  "close" : 0.021922,
-  "volume" : 209.22,
-  "quoteAssetVolume" : 4.49262543,
-  "numberOfTrades" : 479,
-  "rsi" : 0.0
-}, {
-  "symbol" : "ETHBTC",
-  "openTime" : 1569888000000,
-  "openDate" : null,
-  "closeTime" : 1569974399999,
-  "closeDate" : null,
-  "open" : 0.021835,
-  "high" : 0.022087,
-  "low" : 0.02103,
-  "close" : 0.021255,
-  "volume" : 289.172,
-  "quoteAssetVolume" : 6.20339736,
-  "numberOfTrades" : 942,
-  "rsi" : 0.0
-}, {
-  "symbol" : "ETHBTC",
-  "openTime" : 1569974400000,
-  "openDate" : null,
-  "closeTime" : 1570060799999,
-  "closeDate" : null,
-  "open" : 0.021165,
-  "high" : 0.021716,
-  "low" : 0.021139,
-  "close" : 0.021561,
-  "volume" : 161.798,
-  "quoteAssetVolume" : 3.46836998,
-  "numberOfTrades" : 549,
-  "rsi" : 0.0
-}, {
-  "symbol" : "ETHBTC",
-  "openTime" : 1570060800000,
-  "openDate" : null,
-  "closeTime" : 1570147199999,
-  "closeDate" : null,
-  "open" : 0.02151,
-  "high" : 0.021565,
-  "low" : 0.021018,
-  "close" : 0.02123,
-  "volume" : 226.801,
-  "quoteAssetVolume" : 4.83347559,
-  "numberOfTrades" : 582,
-  "rsi" : 0.0
-}, {
-  "symbol" : "ETHBTC",
-  "openTime" : 1570147200000,
-  "openDate" : null,
-  "closeTime" : 1570233599999,
-  "closeDate" : null,
-  "open" : 0.021262,
-  "high" : 0.021795,
-  "low" : 0.021231,
-  "close" : 0.021566,
-  "volume" : 88.018,
-  "quoteAssetVolume" : 1.89245691,
-  "numberOfTrades" : 417,
-  "rsi" : 0.0
-}, {
-  "symbol" : "ETHBTC",
-  "openTime" : 1570233600000,
-  "openDate" : null,
-  "closeTime" : 1570319999999,
-  "closeDate" : null,
-  "open" : 0.021566,
-  "high" : 0.021794,
-  "low" : 0.021401,
-  "close" : 0.021668,
-  "volume" : 89.356,
-  "quoteAssetVolume" : 1.93052458,
-  "numberOfTrades" : 437,
-  "rsi" : 0.0
-}, {
-  "symbol" : "ETHBTC",
-  "openTime" : 1570320000000,
-  "openDate" : null,
-  "closeTime" : 1570406399999,
-  "closeDate" : null,
-  "open" : 0.021676,
-  "high" : 0.021989,
-  "low" : 0.02144,
-  "close" : 0.021674,
-  "volume" : 192.646,
-  "quoteAssetVolume" : 4.18445005,
-  "numberOfTrades" : 614,
-  "rsi" : 0.0
-}, {
-  "symbol" : "ETHBTC",
-  "openTime" : 1570406400000,
-  "openDate" : null,
-  "closeTime" : 1570492799999,
-  "closeDate" : null,
-  "open" : 0.021643,
-  "high" : 0.022078,
-  "low" : 0.021611,
-  "close" : 0.021953,
-  "volume" : 413.695,
-  "quoteAssetVolume" : 9.06242841,
-  "numberOfTrades" : 561,
-  "rsi" : 0.0
-}, {
-  "symbol" : "ETHBTC",
-  "openTime" : 1570492800000,
-  "openDate" : null,
-  "closeTime" : 1570579199999,
-  "closeDate" : null,
-  "open" : 0.022033,
-  "high" : 0.022272,
-  "low" : 0.021796,
-  "close" : 0.022102,
-  "volume" : 299.825,
-  "quoteAssetVolume" : 6.58602555,
-  "numberOfTrades" : 510,
-  "rsi" : 0.0
-}, {
-  "symbol" : "ETHBTC",
-  "openTime" : 1570579200000,
-  "openDate" : null,
-  "closeTime" : 1570665599999,
-  "closeDate" : null,
-  "open" : 0.022106,
-  "high" : 0.023001,
-  "low" : 0.022056,
-  "close" : 0.022552,
-  "volume" : 242.868,
-  "quoteAssetVolume" : 5.45395966,
-  "numberOfTrades" : 646,
-  "rsi" : 0.0
-}, {
-  "symbol" : "ETHBTC",
-  "openTime" : 1570665600000,
-  "openDate" : null,
-  "closeTime" : 1570751999999,
-  "closeDate" : null,
-  "open" : 0.022562,
-  "high" : 0.022646,
-  "low" : 0.02203,
-  "close" : 0.022327,
-  "volume" : 280.486,
-  "quoteAssetVolume" : 6.28488091,
-  "numberOfTrades" : 754,
-  "rsi" : 0.0
-}, {
-  "symbol" : "ETHBTC",
-  "openTime" : 1570752000000,
-  "openDate" : null,
-  "closeTime" : 1570838399999,
-  "closeDate" : null,
-  "open" : 0.022357,
-  "high" : 0.022686,
-  "low" : 0.021537,
-  "close" : 0.021869,
-  "volume" : 384.52,
-  "quoteAssetVolume" : 8.4809691,
-  "numberOfTrades" : 945,
-  "rsi" : 0.0
-}, {
-  "symbol" : "ETHBTC",
-  "openTime" : 1570838400000,
-  "openDate" : null,
-  "closeTime" : 1570924799999,
-  "closeDate" : null,
-  "open" : 0.021866,
-  "high" : 0.022101,
-  "low" : 0.021427,
-  "close" : 0.021662,
-  "volume" : 465.989,
-  "quoteAssetVolume" : 10.19808836,
-  "numberOfTrades" : 1363,
-  "rsi" : 0.0
-}, {
-  "symbol" : "ETHBTC",
-  "openTime" : 1570924800000,
-  "openDate" : null,
-  "closeTime" : 1571011199999,
-  "closeDate" : null,
-  "open" : 0.021622,
-  "high" : 0.021993,
-  "low" : 0.021582,
-  "close" : 0.021869,
-  "volume" : 439.343,
-  "quoteAssetVolume" : 9.58022191,
-  "numberOfTrades" : 1364,
-  "rsi" : 0.0
-}, {
-  "symbol" : "ETHBTC",
-  "openTime" : 1571011200000,
-  "openDate" : null,
-  "closeTime" : 1571097599999,
-  "closeDate" : null,
-  "open" : 0.021861,
-  "high" : 0.022456,
-  "low" : 0.021855,
-  "close" : 0.022366,
-  "volume" : 539.53,
-  "quoteAssetVolume" : 11.96240207,
-  "numberOfTrades" : 1345,
-  "rsi" : 0.0
-}, {
-  "symbol" : "ETHBTC",
-  "openTime" : 1571097600000,
-  "openDate" : null,
-  "closeTime" : 1571183999999,
-  "closeDate" : null,
-  "open" : 0.022375,
-  "high" : 0.022554,
-  "low" : 0.021853,
-  "close" : 0.022127,
-  "volume" : 755.961,
-  "quoteAssetVolume" : 16.74204645,
-  "numberOfTrades" : 2141,
-  "rsi" : 0.0
-}, {
-  "symbol" : "ETHBTC",
-  "openTime" : 1571184000000,
-  "openDate" : null,
-  "closeTime" : 1571270399999,
-  "closeDate" : null,
-  "open" : 0.022118,
-  "high" : 0.022182,
-  "low" : 0.02172,
-  "close" : 0.021828,
-  "volume" : 650.31,
-  "quoteAssetVolume" : 14.22790814,
-  "numberOfTrades" : 2159,
-  "rsi" : 0.0
-}, {
-  "symbol" : "ETHBTC",
-  "openTime" : 1571270400000,
-  "openDate" : null,
-  "closeTime" : 1571356799999,
-  "closeDate" : null,
-  "open" : 0.021828,
-  "high" : 0.022061,
-  "low" : 0.021754,
-  "close" : 0.021962,
-  "volume" : 556.732,
-  "quoteAssetVolume" : 12.19123793,
-  "numberOfTrades" : 1759,
-  "rsi" : 0.0
-}, {
-  "symbol" : "ETHBTC",
-  "openTime" : 1571356800000,
-  "openDate" : null,
-  "closeTime" : 1571443199999,
-  "closeDate" : null,
-  "open" : 0.02194,
-  "high" : 0.022095,
-  "low" : 0.021501,
-  "close" : 0.021752,
-  "volume" : 593.359,
-  "quoteAssetVolume" : 12.93883064,
-  "numberOfTrades" : 2077,
-  "rsi" : 0.0
-}, {
-  "symbol" : "ETHBTC",
-  "openTime" : 1571443200000,
-  "openDate" : null,
-  "closeTime" : 1571529599999,
-  "closeDate" : null,
-  "open" : 0.021752,
-  "high" : 0.021931,
-  "low" : 0.021394,
-  "close" : 0.021625,
-  "volume" : 867.56,
-  "quoteAssetVolume" : 18.72406214,
-  "numberOfTrades" : 1356,
-  "rsi" : 0.0
-}, {
-  "symbol" : "ETHBTC",
-  "openTime" : 1571529600000,
-  "openDate" : null,
-  "closeTime" : 1571615999999,
-  "closeDate" : null,
-  "open" : 0.0216,
-  "high" : 0.021688,
-  "low" : 0.021215,
-  "close" : 0.021312,
-  "volume" : 503.33,
-  "quoteAssetVolume" : 10.8070266,
-  "numberOfTrades" : 1246,
-  "rsi" : 0.0
-}, {
-  "symbol" : "ETHBTC",
-  "openTime" : 1571616000000,
-  "openDate" : null,
-  "closeTime" : 1571702399999,
-  "closeDate" : null,
-  "open" : 0.021274,
-  "high" : 0.021482,
-  "low" : 0.021022,
-  "close" : 0.021219,
-  "volume" : 496.914,
-  "quoteAssetVolume" : 10.54217073,
-  "numberOfTrades" : 1364,
-  "rsi" : 0.0
-}, {
-  "symbol" : "ETHBTC",
-  "openTime" : 1571702400000,
-  "openDate" : null,
-  "closeTime" : 1571788799999,
-  "closeDate" : null,
-  "open" : 0.021234,
-  "high" : 0.021363,
-  "low" : 0.02093,
-  "close" : 0.021291,
-  "volume" : 458.883,
-  "quoteAssetVolume" : 9.71023986,
-  "numberOfTrades" : 1225,
-  "rsi" : 0.0
-}, {
-  "symbol" : "ETHBTC",
-  "openTime" : 1571788800000,
-  "openDate" : null,
-  "closeTime" : 1571875199999,
-  "closeDate" : null,
-  "open" : 0.021353,
-  "high" : 0.021773,
-  "low" : 0.020708,
-  "close" : 0.021773,
-  "volume" : 1386.843,
-  "quoteAssetVolume" : 29.38027109,
-  "numberOfTrades" : 2845,
-  "rsi" : 0.0
-}, {
-  "symbol" : "ETHBTC",
-  "openTime" : 1571875200000,
-  "openDate" : null,
-  "closeTime" : 1571961599999,
-  "closeDate" : null,
-  "open" : 0.021726,
-  "high" : 0.021852,
-  "low" : 0.021402,
-  "close" : 0.021626,
-  "volume" : 1249.444,
-  "quoteAssetVolume" : 27.10189893,
-  "numberOfTrades" : 2691,
-  "rsi" : 0.0
-}, {
-  "symbol" : "ETHBTC",
-  "openTime" : 1571961600000,
-  "openDate" : null,
-  "closeTime" : 1572047999999,
-  "closeDate" : null,
-  "open" : 0.021626,
-  "high" : 0.02196,
-  "low" : 0.02081,
-  "close" : 0.020961,
-  "volume" : 1208.643,
-  "quoteAssetVolume" : 25.84923348,
-  "numberOfTrades" : 2680,
-  "rsi" : 0.0
-}, {
-  "symbol" : "ETHBTC",
-  "openTime" : 1572048000000,
-  "openDate" : null,
-  "closeTime" : 1572134399999,
-  "closeDate" : null,
-  "open" : 0.020965,
-  "high" : 0.021049,
-  "low" : 0.018853,
-  "close" : 0.019461,
-  "volume" : 2471.83,
-  "quoteAssetVolume" : 48.91497659,
-  "numberOfTrades" : 4979,
-  "rsi" : 0.0
-}, {
-  "symbol" : "ETHBTC",
-  "openTime" : 1572134400000,
-  "openDate" : null,
-  "closeTime" : 1572220799999,
-  "closeDate" : null,
-  "open" : 0.019465,
-  "high" : 0.019591,
-  "low" : 0.019117,
-  "close" : 0.019282,
-  "volume" : 1030.219,
-  "quoteAssetVolume" : 19.92491731,
-  "numberOfTrades" : 2285,
-  "rsi" : 0.0
-}, {
-  "symbol" : "ETHBTC",
-  "openTime" : 1572220800000,
-  "openDate" : null,
-  "closeTime" : 1572307199999,
-  "closeDate" : null,
-  "open" : 0.019245,
-  "high" : 0.019791,
-  "low" : 0.019004,
-  "close" : 0.019741,
-  "volume" : 862.851,
-  "quoteAssetVolume" : 16.71935303,
-  "numberOfTrades" : 1804,
-  "rsi" : 0.0
-}, {
-  "symbol" : "ETHBTC",
-  "openTime" : 1572307200000,
-  "openDate" : null,
-  "closeTime" : 1572393599999,
-  "closeDate" : null,
-  "open" : 0.019725,
-  "high" : 0.020462,
-  "low" : 0.019574,
-  "close" : 0.020255,
-  "volume" : 939.552,
-  "quoteAssetVolume" : 18.70896831,
-  "numberOfTrades" : 1745,
-  "rsi" : 0.0
-}, {
-  "symbol" : "ETHBTC",
-  "openTime" : 1572393600000,
-  "openDate" : null,
-  "closeTime" : 1572479999999,
-  "closeDate" : null,
-  "open" : 0.020262,
-  "high" : 0.02054,
-  "low" : 0.019868,
-  "close" : 0.019995,
-  "volume" : 793.543,
-  "quoteAssetVolume" : 15.99968506,
-  "numberOfTrades" : 1950,
-  "rsi" : 0.0
-}, {
-  "symbol" : "ETHBTC",
-  "openTime" : 1572480000000,
-  "openDate" : null,
-  "closeTime" : 1572566399999,
-  "closeDate" : null,
-  "open" : 0.020007,
-  "high" : 0.020145,
-  "low" : 0.019615,
-  "close" : 0.019956,
-  "volume" : 595.519,
-  "quoteAssetVolume" : 11.80840414,
-  "numberOfTrades" : 1664,
-  "rsi" : 0.0
-}, {
-  "symbol" : "ETHBTC",
-  "openTime" : 1572566400000,
-  "openDate" : null,
-  "closeTime" : 1572652799999,
-  "closeDate" : null,
-  "open" : 0.019909,
-  "high" : 0.020049,
-  "low" : 0.019563,
-  "close" : 0.019808,
-  "volume" : 212.565,
-  "quoteAssetVolume" : 4.21753559,
-  "numberOfTrades" : 458,
-  "rsi" : 0.0
-}, {
-  "symbol" : "ETHBTC",
-  "openTime" : 1572652800000,
-  "openDate" : null,
-  "closeTime" : 1572739199999,
-  "closeDate" : null,
-  "open" : 0.019802,
-  "high" : 0.019879,
-  "low" : 0.019588,
-  "close" : 0.019694,
-  "volume" : 131.736,
-  "quoteAssetVolume" : 2.60177047,
-  "numberOfTrades" : 369,
-  "rsi" : 0.0
-}, {
-  "symbol" : "ETHBTC",
-  "openTime" : 1572739200000,
-  "openDate" : null,
-  "closeTime" : 1572825599999,
-  "closeDate" : null,
-  "open" : 0.01968,
-  "high" : 0.019907,
-  "low" : 0.01964,
-  "close" : 0.019729,
-  "volume" : 84.427,
-  "quoteAssetVolume" : 1.66874888,
-  "numberOfTrades" : 354,
-  "rsi" : 0.0
-}, {
-  "symbol" : "ETHBTC",
-  "openTime" : 1572825600000,
-  "openDate" : null,
-  "closeTime" : 1572911999999,
-  "closeDate" : null,
-  "open" : 0.019723,
-  "high" : 0.020152,
-  "low" : 0.019664,
-  "close" : 0.019789,
-  "volume" : 150.257,
-  "quoteAssetVolume" : 2.99282146,
-  "numberOfTrades" : 437,
-  "rsi" : 0.0
-}, {
-  "symbol" : "ETHBTC",
-  "openTime" : 1572912000000,
-  "openDate" : null,
-  "closeTime" : 1572998399999,
-  "closeDate" : null,
-  "open" : 0.019776,
-  "high" : 0.020484,
-  "low" : 0.019707,
-  "close" : 0.020281,
-  "volume" : 354.868,
-  "quoteAssetVolume" : 7.1395561,
-  "numberOfTrades" : 632,
-  "rsi" : 0.0
-}, {
-  "symbol" : "ETHBTC",
-  "openTime" : 1572998400000,
-  "openDate" : null,
-  "closeTime" : 1573084799999,
-  "closeDate" : null,
-  "open" : 0.02026,
-  "high" : 0.02068,
-  "low" : 0.020229,
-  "close" : 0.02049,
-  "volume" : 117.147,
-  "quoteAssetVolume" : 2.3948889,
-  "numberOfTrades" : 436,
-  "rsi" : 0.0
-}, {
-  "symbol" : "ETHBTC",
-  "openTime" : 1573084800000,
-  "openDate" : null,
-  "closeTime" : 1573171199999,
-  "closeDate" : null,
-  "open" : 0.020484,
-  "high" : 0.020515,
-  "low" : 0.020123,
-  "close" : 0.020239,
-  "volume" : 131.77,
-  "quoteAssetVolume" : 2.67039286,
-  "numberOfTrades" : 360,
-  "rsi" : 0.0
-}, {
-  "symbol" : "ETHBTC",
-  "openTime" : 1573171200000,
-  "openDate" : null,
-  "closeTime" : 1573257599999,
-  "closeDate" : null,
-  "open" : 0.020296,
-  "high" : 0.021003,
-  "low" : 0.020148,
-  "close" : 0.020902,
-  "volume" : 509.085,
-  "quoteAssetVolume" : 10.54023325,
-  "numberOfTrades" : 556,
-  "rsi" : 0.0
-}, {
-  "symbol" : "ETHBTC",
-  "openTime" : 1573257600000,
-  "openDate" : null,
-  "closeTime" : 1573343999999,
-  "closeDate" : null,
-  "open" : 0.020927,
-  "high" : 0.021066,
-  "low" : 0.020808,
-  "close" : 0.020987,
-  "volume" : 277.927,
-  "quoteAssetVolume" : 5.82861877,
-  "numberOfTrades" : 427,
-  "rsi" : 0.0
-}, {
-  "symbol" : "ETHBTC",
   "openTime" : 1573344000000,
   "openDate" : null,
   "closeTime" : 1573430399999,
@@ -654,6 +10,7 @@
   "close" : 0.020908,
   "volume" : 395.147,
   "quoteAssetVolume" : 8.3198944,
+  "usdVolume" : 3526005.3464249996,
   "numberOfTrades" : 610,
   "rsi" : 0.0
 }, {
@@ -668,6 +25,7 @@
   "close" : 0.021187,
   "volume" : 307.779,
   "quoteAssetVolume" : 6.54095484,
+  "usdVolume" : 2735567.45211,
   "numberOfTrades" : 461,
   "rsi" : 0.0
 }, {
@@ -682,6 +40,7 @@
   "close" : 0.021239,
   "volume" : 218.517,
   "quoteAssetVolume" : 4.63622185,
+  "usdVolume" : 1914116.050275,
   "numberOfTrades" : 439,
   "rsi" : 0.0
 }, {
@@ -696,6 +55,7 @@
   "close" : 0.021425,
   "volume" : 89.367,
   "quoteAssetVolume" : 1.91022075,
+  "usdVolume" : 785938.9751700001,
   "numberOfTrades" : 413,
   "rsi" : 0.0
 }, {
@@ -710,6 +70,7 @@
   "close" : 0.021382,
   "volume" : 167.06,
   "quoteAssetVolume" : 3.57092056,
+  "usdVolume" : 1454272.3354,
   "numberOfTrades" : 629,
   "rsi" : 0.0
 }, {
@@ -724,6 +85,7 @@
   "close" : 0.021268,
   "volume" : 251.045,
   "quoteAssetVolume" : 5.33625532,
+  "usdVolume" : 2145433.08045,
   "numberOfTrades" : 534,
   "rsi" : 0.0
 }, {
@@ -738,6 +100,7 @@
   "close" : 0.021466,
   "volume" : 76.387,
   "quoteAssetVolume" : 1.63623803,
+  "usdVolume" : 647298.09091,
   "numberOfTrades" : 458,
   "rsi" : 0.0
 }, {
@@ -752,6 +115,7 @@
   "close" : 0.021608,
   "volume" : 160.685,
   "quoteAssetVolume" : 3.46465026,
+  "usdVolume" : 1365347.675825,
   "numberOfTrades" : 616,
   "rsi" : 0.0
 }, {
@@ -766,6 +130,7 @@
   "close" : 0.021767,
   "volume" : 245.701,
   "quoteAssetVolume" : 5.31856948,
+  "usdVolume" : 2048023.48643,
   "numberOfTrades" : 538,
   "rsi" : 0.0
 }, {
@@ -780,6 +145,7 @@
   "close" : 0.021627,
   "volume" : 187.338,
   "quoteAssetVolume" : 4.05285132,
+  "usdVolume" : 1526284.83705,
   "numberOfTrades" : 618,
   "rsi" : 0.0
 }, {
@@ -794,6 +160,7 @@
   "close" : 0.021564,
   "volume" : 149.109,
   "quoteAssetVolume" : 3.22780844,
+  "usdVolume" : 1208369.643915,
   "numberOfTrades" : 519,
   "rsi" : 0.0
 }, {
@@ -808,6 +175,7 @@
   "close" : 0.021129,
   "volume" : 394.838,
   "quoteAssetVolume" : 8.33316424,
+  "usdVolume" : 3100200.85354,
   "numberOfTrades" : 834,
   "rsi" : 0.0
 }, {
@@ -822,6 +190,7 @@
   "close" : 0.020592,
   "volume" : 686.295,
   "quoteAssetVolume" : 14.25992282,
+  "usdVolume" : 5115152.229075,
   "numberOfTrades" : 1165,
   "rsi" : 0.0
 }, {
@@ -836,6 +205,7 @@
   "close" : 0.020753,
   "volume" : 264.919,
   "quoteAssetVolume" : 5.51419196,
+  "usdVolume" : 1935099.510905,
   "numberOfTrades" : 709,
   "rsi" : 0.0
 }, {
@@ -850,6 +220,7 @@
   "close" : 0.0202,
   "volume" : 351.133,
   "quoteAssetVolume" : 7.26206325,
+  "usdVolume" : 2499900.1718249996,
   "numberOfTrades" : 769,
   "rsi" : 0.0
 }, {
@@ -864,6 +235,7 @@
   "close" : 0.020591,
   "volume" : 416.021,
   "quoteAssetVolume" : 8.53790583,
+  "usdVolume" : 2918890.70041,
   "numberOfTrades" : 824,
   "rsi" : 0.0
 }, {
@@ -878,6 +250,7 @@
   "close" : 0.020603,
   "volume" : 137.713,
   "quoteAssetVolume" : 2.83454276,
+  "usdVolume" : 984585.97915,
   "numberOfTrades" : 460,
   "rsi" : 0.0
 }, {
@@ -892,6 +265,7 @@
   "close" : 0.020295,
   "volume" : 208.718,
   "quoteAssetVolume" : 4.27366992,
+  "usdVolume" : 1533215.29466,
   "numberOfTrades" : 567,
   "rsi" : 0.0
 }, {
@@ -906,6 +280,7 @@
   "close" : 0.020322,
   "volume" : 161.492,
   "quoteAssetVolume" : 3.26443187,
+  "usdVolume" : 1208252.4605199997,
   "numberOfTrades" : 459,
   "rsi" : 0.0
 }, {
@@ -920,6 +295,7 @@
   "close" : 0.019967,
   "volume" : 225.942,
   "quoteAssetVolume" : 4.53743471,
+  "usdVolume" : 1714694.1727800001,
   "numberOfTrades" : 550,
   "rsi" : 0.0
 }, {
@@ -934,6 +310,7 @@
   "close" : 0.020107,
   "volume" : 89.873,
   "quoteAssetVolume" : 1.7992796,
+  "usdVolume" : 687972.4226200001,
   "numberOfTrades" : 420,
   "rsi" : 0.0
 }, {
@@ -948,6 +325,7 @@
   "close" : 0.020399,
   "volume" : 170.808,
   "quoteAssetVolume" : 3.47367806,
+  "usdVolume" : 1276952.9216399998,
   "numberOfTrades" : 480,
   "rsi" : 0.0
 }, {
@@ -962,6 +340,7 @@
   "close" : 0.02036,
   "volume" : 351.849,
   "quoteAssetVolume" : 7.1784718,
+  "usdVolume" : 2588801.146545,
   "numberOfTrades" : 578,
   "rsi" : 0.0
 }, {
@@ -976,6 +355,7 @@
   "close" : 0.020182,
   "volume" : 161.642,
   "quoteAssetVolume" : 3.27191054,
+  "usdVolume" : 1180187.84429,
   "numberOfTrades" : 387,
   "rsi" : 0.0
 }, {
@@ -990,6 +370,7 @@
   "close" : 0.020227,
   "volume" : 135.677,
   "quoteAssetVolume" : 2.71781798,
+  "usdVolume" : 983424.88556,
   "numberOfTrades" : 451,
   "rsi" : 0.0
 }, {
@@ -1004,6 +385,7 @@
   "close" : 0.020048,
   "volume" : 164.247,
   "quoteAssetVolume" : 3.27922329,
+  "usdVolume" : 1198826.5344749999,
   "numberOfTrades" : 563,
   "rsi" : 0.0
 }, {
@@ -1018,6 +400,7 @@
   "close" : 0.0197,
   "volume" : 163.567,
   "quoteAssetVolume" : 3.25260551,
+  "usdVolume" : 1221082.449945,
   "numberOfTrades" : 427,
   "rsi" : 0.0
 }, {
@@ -1032,6 +415,7 @@
   "close" : 0.019627,
   "volume" : 84.147,
   "quoteAssetVolume" : 1.6576681,
+  "usdVolume" : 632867.90406,
   "numberOfTrades" : 414,
   "rsi" : 0.0
 }, {
@@ -1046,6 +430,7 @@
   "close" : 0.020017,
   "volume" : 125.958,
   "quoteAssetVolume" : 2.49609336,
+  "usdVolume" : 946479.9015,
   "numberOfTrades" : 400,
   "rsi" : 0.0
 }, {
@@ -1060,6 +445,7 @@
   "close" : 0.020048,
   "volume" : 56.568,
   "quoteAssetVolume" : 1.1288736,
+  "usdVolume" : 420552.53328,
   "numberOfTrades" : 363,
   "rsi" : 0.0
 }, {
@@ -1074,6 +460,7 @@
   "close" : 0.020122,
   "volume" : 87.658,
   "quoteAssetVolume" : 1.76057875,
+  "usdVolume" : 638478.9575,
   "numberOfTrades" : 392,
   "rsi" : 0.0
 }, {
@@ -1088,6 +475,7 @@
   "close" : 0.019902,
   "volume" : 110.847,
   "quoteAssetVolume" : 2.21313601,
+  "usdVolume" : 799718.9831399999,
   "numberOfTrades" : 401,
   "rsi" : 0.0
 }, {
@@ -1102,6 +490,7 @@
   "close" : 0.020149,
   "volume" : 110.086,
   "quoteAssetVolume" : 2.20016521,
+  "usdVolume" : 792311.50963,
   "numberOfTrades" : 399,
   "rsi" : 0.0
 }, {
@@ -1116,6 +505,7 @@
   "close" : 0.019964,
   "volume" : 64.581,
   "quoteAssetVolume" : 1.28790172,
+  "usdVolume" : 466591.58980500005,
   "numberOfTrades" : 370,
   "rsi" : 0.0
 }, {
@@ -1130,6 +520,7 @@
   "close" : 0.020075,
   "volume" : 38.83,
   "quoteAssetVolume" : 0.77532431,
+  "usdVolume" : 277972.321,
   "numberOfTrades" : 371,
   "rsi" : 0.0
 }, {
@@ -1144,6 +535,7 @@
   "close" : 0.02003,
   "volume" : 80.282,
   "quoteAssetVolume" : 1.60651842,
+  "usdVolume" : 569408.51461,
   "numberOfTrades" : 372,
   "rsi" : 0.0
 }, {
@@ -1158,6 +550,7 @@
   "close" : 0.019231,
   "volume" : 483.17,
   "quoteAssetVolume" : 9.33196298,
+  "usdVolume" : 3383965.6497500003,
   "numberOfTrades" : 580,
   "rsi" : 0.0
 }, {
@@ -1172,6 +565,7 @@
   "close" : 0.01842,
   "volume" : 415.858,
   "quoteAssetVolume" : 7.79890318,
+  "usdVolume" : 2807047.73787,
   "numberOfTrades" : 344,
   "rsi" : 0.0
 }, {
@@ -1186,6 +580,7 @@
   "close" : 0.018239,
   "volume" : 701.094,
   "quoteAssetVolume" : 12.83937478,
+  "usdVolume" : 4874724.1093500005,
   "numberOfTrades" : 467,
   "rsi" : 0.0
 }, {
@@ -1200,6 +595,7 @@
   "close" : 0.01795,
   "volume" : 1350.378,
   "quoteAssetVolume" : 24.22098244,
+  "usdVolume" : 9747622.57032,
   "numberOfTrades" : 620,
   "rsi" : 0.0
 }, {
@@ -1214,6 +610,7 @@
   "close" : 0.017857,
   "volume" : 103.977,
   "quoteAssetVolume" : 1.85335231,
+  "usdVolume" : 745325.85186,
   "numberOfTrades" : 155,
   "rsi" : 0.0
 }, {
@@ -1228,6 +625,7 @@
   "close" : 0.017794,
   "volume" : 65.068,
   "quoteAssetVolume" : 1.16008058,
+  "usdVolume" : 466090.54283999995,
   "numberOfTrades" : 98,
   "rsi" : 0.0
 }, {
@@ -1242,6 +640,7 @@
   "close" : 0.017612,
   "volume" : 131.461,
   "quoteAssetVolume" : 2.35154949,
+  "usdVolume" : 962872.2910950001,
   "numberOfTrades" : 144,
   "rsi" : 0.0
 }, {
@@ -1256,6 +655,7 @@
   "close" : 0.017463,
   "volume" : 403.548,
   "quoteAssetVolume" : 7.05235193,
+  "usdVolume" : 2992144.9830599995,
   "numberOfTrades" : 374,
   "rsi" : 0.0
 }, {
@@ -1270,6 +670,7 @@
   "close" : 0.017659,
   "volume" : 74.028,
   "quoteAssetVolume" : 1.29815214,
+  "usdVolume" : 539521.24596,
   "numberOfTrades" : 116,
   "rsi" : 0.0
 }, {
@@ -1284,6 +685,7 @@
   "close" : 0.017352,
   "volume" : 168.242,
   "quoteAssetVolume" : 2.9243088,
+  "usdVolume" : 1215445.82238,
   "numberOfTrades" : 107,
   "rsi" : 0.0
 }, {
@@ -1298,6 +700,7 @@
   "close" : 0.01742,
   "volume" : 156.699,
   "quoteAssetVolume" : 2.74186882,
+  "usdVolume" : 1128099.60585,
   "numberOfTrades" : 114,
   "rsi" : 0.0
 }, {
@@ -1312,6 +715,7 @@
   "close" : 0.017462,
   "volume" : 107.481,
   "quoteAssetVolume" : 1.86860771,
+  "usdVolume" : 775669.418205,
   "numberOfTrades" : 170,
   "rsi" : 0.0
 }, {
@@ -1326,6 +730,7 @@
   "close" : 0.017539,
   "volume" : 124.981,
   "quoteAssetVolume" : 2.18360205,
+  "usdVolume" : 909028.6816349998,
   "numberOfTrades" : 135,
   "rsi" : 0.0
 }, {
@@ -1340,6 +745,7 @@
   "close" : 0.018254,
   "volume" : 321.938,
   "quoteAssetVolume" : 5.79054259,
+  "usdVolume" : 2362047.83817,
   "numberOfTrades" : 612,
   "rsi" : 0.0
 }, {
@@ -1354,6 +760,7 @@
   "close" : 0.018148,
   "volume" : 108.757,
   "quoteAssetVolume" : 1.97549707,
+  "usdVolume" : 794110.9869,
   "numberOfTrades" : 205,
   "rsi" : 0.0
 }, {
@@ -1368,6 +775,7 @@
   "close" : 0.01798,
   "volume" : 80.673,
   "quoteAssetVolume" : 1.45515009,
+  "usdVolume" : 580299.4437899999,
   "numberOfTrades" : 166,
   "rsi" : 0.0
 }, {
@@ -1382,6 +790,7 @@
   "close" : 0.018114,
   "volume" : 208.768,
   "quoteAssetVolume" : 3.76403485,
+  "usdVolume" : 1496606.64384,
   "numberOfTrades" : 149,
   "rsi" : 0.0
 }, {
@@ -1396,6 +805,7 @@
   "close" : 0.018251,
   "volume" : 137.557,
   "quoteAssetVolume" : 2.49229393,
+  "usdVolume" : 971117.3429650001,
   "numberOfTrades" : 236,
   "rsi" : 0.0
 }, {
@@ -1410,6 +820,7 @@
   "close" : 0.018291,
   "volume" : 166.755,
   "quoteAssetVolume" : 3.01989546,
+  "usdVolume" : 1189732.7243249998,
   "numberOfTrades" : 155,
   "rsi" : 0.0
 }, {
@@ -1424,6 +835,7 @@
   "close" : 0.018249,
   "volume" : 141.02,
   "quoteAssetVolume" : 2.57332311,
+  "usdVolume" : 1035480.9509,
   "numberOfTrades" : 177,
   "rsi" : 0.0
 }, {
@@ -1438,6 +850,7 @@
   "close" : 0.018378,
   "volume" : 166.245,
   "quoteAssetVolume" : 3.05421682,
+  "usdVolume" : 1222160.0921999998,
   "numberOfTrades" : 239,
   "rsi" : 0.0
 }, {
@@ -1452,6 +865,7 @@
   "close" : 0.018585,
   "volume" : 281.413,
   "quoteAssetVolume" : 5.25681852,
+  "usdVolume" : 2126016.11827,
   "numberOfTrades" : 272,
   "rsi" : 0.0
 }, {
@@ -1466,6 +880,7 @@
   "close" : 0.017515,
   "volume" : 330.389,
   "quoteAssetVolume" : 5.94557023,
+  "usdVolume" : 2632078.659345,
   "numberOfTrades" : 600,
   "rsi" : 0.0
 }, {
@@ -1480,6 +895,7 @@
   "close" : 0.017513,
   "volume" : 616.357,
   "quoteAssetVolume" : 10.66952181,
+  "usdVolume" : 4987872.104285,
   "numberOfTrades" : 757,
   "rsi" : 0.0
 }, {
@@ -1494,6 +910,7 @@
   "close" : 0.017635,
   "volume" : 340.726,
   "quoteAssetVolume" : 5.97860784,
+  "usdVolume" : 2702701.66631,
   "numberOfTrades" : 494,
   "rsi" : 0.0
 }, {
@@ -1508,6 +925,7 @@
   "close" : 0.017674,
   "volume" : 381.135,
   "quoteAssetVolume" : 6.74065942,
+  "usdVolume" : 3050116.6872,
   "numberOfTrades" : 668,
   "rsi" : 0.0
 }, {
@@ -1522,6 +940,7 @@
   "close" : 0.017706,
   "volume" : 140.15,
   "quoteAssetVolume" : 2.48727324,
+  "usdVolume" : 1136694.984,
   "numberOfTrades" : 673,
   "rsi" : 0.0
 }, {
@@ -1536,6 +955,7 @@
   "close" : 0.017845,
   "volume" : 63.655,
   "quoteAssetVolume" : 1.13233552,
+  "usdVolume" : 515676.15705000004,
   "numberOfTrades" : 548,
   "rsi" : 0.0
 }, {
@@ -1550,6 +970,7 @@
   "close" : 0.01773,
   "volume" : 68.202,
   "quoteAssetVolume" : 1.20851694,
+  "usdVolume" : 555337.51308,
   "numberOfTrades" : 438,
   "rsi" : 0.0
 }, {
@@ -1564,6 +985,7 @@
   "close" : 0.018791,
   "volume" : 438.262,
   "quoteAssetVolume" : 7.9652543,
+  "usdVolume" : 3715328.8527300004,
   "numberOfTrades" : 953,
   "rsi" : 0.0
 }, {
@@ -1578,6 +1000,7 @@
   "close" : 0.018814,
   "volume" : 431.851,
   "quoteAssetVolume" : 8.18267618,
+  "usdVolume" : 3807671.2928449996,
   "numberOfTrades" : 443,
   "rsi" : 0.0
 }, {
@@ -1592,6 +1015,7 @@
   "close" : 0.018794,
   "volume" : 246.84,
   "quoteAssetVolume" : 4.62935271,
+  "usdVolume" : 2166229.5798000004,
   "numberOfTrades" : 282,
   "rsi" : 0.0
 }, {
@@ -1606,6 +1030,7 @@
   "close" : 0.019118,
   "volume" : 423.311,
   "quoteAssetVolume" : 8.05944749,
+  "usdVolume" : 3732019.836859999,
   "numberOfTrades" : 709,
   "rsi" : 0.0
 }, {
@@ -1620,6 +1045,7 @@
   "close" : 0.019531,
   "volume" : 422.106,
   "quoteAssetVolume" : 8.19168159,
+  "usdVolume" : 3757933.73892,
   "numberOfTrades" : 556,
   "rsi" : 0.0
 }, {
@@ -1634,6 +1060,7 @@
   "close" : 0.019172,
   "volume" : 347.588,
   "quoteAssetVolume" : 6.6889711,
+  "usdVolume" : 3062650.0062000006,
   "numberOfTrades" : 416,
   "rsi" : 0.0
 }, {
@@ -1648,6 +1075,7 @@
   "close" : 0.019312,
   "volume" : 131.861,
   "quoteAssetVolume" : 2.52881747,
+  "usdVolume" : 1143459.0337,
   "numberOfTrades" : 209,
   "rsi" : 0.0
 }, {
@@ -1662,6 +1090,7 @@
   "close" : 0.019441,
   "volume" : 97.223,
   "quoteAssetVolume" : 1.88434514,
+  "usdVolume" : 844653.0071700001,
   "numberOfTrades" : 186,
   "rsi" : 0.0
 }, {
@@ -1676,6 +1105,7 @@
   "close" : 0.01941,
   "volume" : 123.834,
   "quoteAssetVolume" : 2.40282141,
+  "usdVolume" : 1075952.7607800001,
   "numberOfTrades" : 238,
   "rsi" : 0.0
 }, {
@@ -1690,6 +1120,7 @@
   "close" : 0.019364,
   "volume" : 151.861,
   "quoteAssetVolume" : 2.93002639,
+  "usdVolume" : 1294963.5459949998,
   "numberOfTrades" : 222,
   "rsi" : 0.0
 }, {
@@ -1704,6 +1135,7 @@
   "close" : 0.019261,
   "volume" : 137.863,
   "quoteAssetVolume" : 2.64196819,
+  "usdVolume" : 1159231.375225,
   "numberOfTrades" : 232,
   "rsi" : 0.0
 }, {
@@ -1718,6 +1150,7 @@
   "close" : 0.01927,
   "volume" : 136.778,
   "quoteAssetVolume" : 2.63185409,
+  "usdVolume" : 1144855.7961499998,
   "numberOfTrades" : 293,
   "rsi" : 0.0
 }, {
@@ -1732,6 +1165,7 @@
   "close" : 0.019478,
   "volume" : 88.03,
   "quoteAssetVolume" : 1.70301068,
+  "usdVolume" : 744173.48905,
   "numberOfTrades" : 188,
   "rsi" : 0.0
 }, {
@@ -1746,6 +1180,7 @@
   "close" : 0.019111,
   "volume" : 92.313,
   "quoteAssetVolume" : 1.78280057,
+  "usdVolume" : 807015.4776450001,
   "numberOfTrades" : 276,
   "rsi" : 0.0
 }, {
@@ -1760,6 +1195,7 @@
   "close" : 0.018753,
   "volume" : 212.626,
   "quoteAssetVolume" : 4.04560294,
+  "usdVolume" : 1943091.2060400003,
   "numberOfTrades" : 558,
   "rsi" : 0.0
 }, {
@@ -1774,6 +1210,7 @@
   "close" : 0.01874,
   "volume" : 94.046,
   "quoteAssetVolume" : 1.77582368,
+  "usdVolume" : 876831.2977800001,
   "numberOfTrades" : 220,
   "rsi" : 0.0
 }, {
@@ -1788,6 +1225,7 @@
   "close" : 0.019381,
   "volume" : 367.561,
   "quoteAssetVolume" : 6.97648069,
+  "usdVolume" : 3451186.4424249995,
   "numberOfTrades" : 568,
   "rsi" : 0.0
 }, {
@@ -1802,6 +1240,7 @@
   "close" : 0.019235,
   "volume" : 122.27,
   "quoteAssetVolume" : 2.36340928,
+  "usdVolume" : 1150987.4223,
   "numberOfTrades" : 322,
   "rsi" : 0.0
 }, {
@@ -1816,6 +1255,7 @@
   "close" : 0.019558,
   "volume" : 198.65,
   "quoteAssetVolume" : 3.85710415,
+  "usdVolume" : 1860965.1190000004,
   "numberOfTrades" : 217,
   "rsi" : 0.0
 }, {
@@ -1830,6 +1270,7 @@
   "close" : 0.020155,
   "volume" : 371.017,
   "quoteAssetVolume" : 7.40441531,
+  "usdVolume" : 3469782.5204449994,
   "numberOfTrades" : 502,
   "rsi" : 0.0
 }, {
@@ -1844,6 +1285,7 @@
   "close" : 0.020401,
   "volume" : 312.565,
   "quoteAssetVolume" : 6.35834652,
+  "usdVolume" : 2907835.9540999997,
   "numberOfTrades" : 414,
   "rsi" : 0.0
 }, {
@@ -1858,6 +1300,7 @@
   "close" : 0.02056,
   "volume" : 323.637,
   "quoteAssetVolume" : 6.61801131,
+  "usdVolume" : 2985302.12451,
   "numberOfTrades" : 319,
   "rsi" : 0.0
 }, {
@@ -1872,6 +1315,7 @@
   "close" : 0.021261,
   "volume" : 439.048,
   "quoteAssetVolume" : 9.15077464,
+  "usdVolume" : 4124122.74984,
   "numberOfTrades" : 925,
   "rsi" : 0.0
 }, {
@@ -1886,6 +1330,7 @@
   "close" : 0.02187,
   "volume" : 293.111,
   "quoteAssetVolume" : 6.35753789,
+  "usdVolume" : 2839372.11922,
   "numberOfTrades" : 429,
   "rsi" : 0.0
 }, {
@@ -1900,6 +1345,7 @@
   "close" : 0.022799,
   "volume" : 319.188,
   "quoteAssetVolume" : 7.18971544,
+  "usdVolume" : 3123011.99712,
   "numberOfTrades" : 788,
   "rsi" : 0.0
 }, {
@@ -1914,6 +1360,7 @@
   "close" : 0.022513,
   "volume" : 319.313,
   "quoteAssetVolume" : 7.25753216,
+  "usdVolume" : 3146657.1859799996,
   "numberOfTrades" : 631,
   "rsi" : 0.0
 }, {
@@ -1928,6 +1375,7 @@
   "close" : 0.022515,
   "volume" : 531.346,
   "quoteAssetVolume" : 11.97412019,
+  "usdVolume" : 5334020.43347,
   "numberOfTrades" : 758,
   "rsi" : 0.0
 }, {
@@ -1942,6 +1390,7 @@
   "close" : 0.022645,
   "volume" : 558.09,
   "quoteAssetVolume" : 12.55308682,
+  "usdVolume" : 5585331.234600001,
   "numberOfTrades" : 728,
   "rsi" : 0.0
 }, {
@@ -1956,6 +1405,7 @@
   "close" : 0.02313,
   "volume" : 455.113,
   "quoteAssetVolume" : 10.36632161,
+  "usdVolume" : 4580054.706715,
   "numberOfTrades" : 759,
   "rsi" : 0.0
 }, {
@@ -1970,6 +1420,7 @@
   "close" : 0.025726,
   "volume" : 1433.737,
   "quoteAssetVolume" : 36.03629674,
+  "usdVolume" : 1.478445220871E7,
   "numberOfTrades" : 2611,
   "rsi" : 0.0
 }, {
@@ -1984,6 +1435,7 @@
   "close" : 0.026207,
   "volume" : 881.853,
   "quoteAssetVolume" : 22.97192878,
+  "usdVolume" : 9072971.04609,
   "numberOfTrades" : 2086,
   "rsi" : 0.0
 }, {
@@ -1998,6 +1450,7 @@
   "close" : 0.027659,
   "volume" : 478.849,
   "quoteAssetVolume" : 12.77843982,
+  "usdVolume" : 4931639.514305,
   "numberOfTrades" : 1166,
   "rsi" : 0.0
 }, {
@@ -2012,6 +1465,7 @@
   "close" : 0.026636,
   "volume" : 691.545,
   "quoteAssetVolume" : 18.79272529,
+  "usdVolume" : 7009614.224925,
   "numberOfTrades" : 1302,
   "rsi" : 0.0
 }, {
@@ -2026,6 +1480,7 @@
   "close" : 0.026142,
   "volume" : 853.452,
   "quoteAssetVolume" : 22.33774862,
+  "usdVolume" : 8466649.229700001,
   "numberOfTrades" : 1529,
   "rsi" : 0.0
 }, {
@@ -2040,6 +1495,7 @@
   "close" : 0.02762,
   "volume" : 606.932,
   "quoteAssetVolume" : 15.98677377,
+  "usdVolume" : 5957632.37336,
   "numberOfTrades" : 1880,
   "rsi" : 0.0
 }, {
@@ -2054,6 +1510,7 @@
   "close" : 0.027784,
   "volume" : 708.114,
   "quoteAssetVolume" : 19.7031354,
+  "usdVolume" : 7042785.00519,
   "numberOfTrades" : 3459,
   "rsi" : 0.0
 }, {
@@ -2068,6 +1525,7 @@
   "close" : 0.026963,
   "volume" : 1035.9,
   "quoteAssetVolume" : 28.28784644,
+  "usdVolume" : 1.02520692225E7,
   "numberOfTrades" : 2406,
   "rsi" : 0.0
 }, {
@@ -2082,6 +1540,7 @@
   "close" : 0.026827,
   "volume" : 857.912,
   "quoteAssetVolume" : 22.9635578,
+  "usdVolume" : 8237169.145480001,
   "numberOfTrades" : 2309,
   "rsi" : 0.0
 }, {
@@ -2096,6 +1555,7 @@
   "close" : 0.027395,
   "volume" : 374.885,
   "quoteAssetVolume" : 10.19728263,
+  "usdVolume" : 3618457.4993,
   "numberOfTrades" : 823,
   "rsi" : 0.0
 }, {
@@ -2110,6 +1570,7 @@
   "close" : 0.027157,
   "volume" : 370.383,
   "quoteAssetVolume" : 10.06375408,
+  "usdVolume" : 3585709.3055549995,
   "numberOfTrades" : 421,
   "rsi" : 0.0
 }, {
@@ -2124,6 +1585,7 @@
   "close" : 0.027666,
   "volume" : 445.876,
   "quoteAssetVolume" : 12.23756791,
+  "usdVolume" : 4378758.6987000005,
   "numberOfTrades" : 810,
   "rsi" : 0.0
 }, {
@@ -2138,6 +1600,7 @@
   "close" : 0.02755,
   "volume" : 583.676,
   "quoteAssetVolume" : 16.05810229,
+  "usdVolume" : 5729868.495740001,
   "numberOfTrades" : 949,
   "rsi" : 0.0
 }, {
@@ -2152,6 +1615,7 @@
   "close" : 0.026483,
   "volume" : 539.755,
   "quoteAssetVolume" : 14.58738742,
+  "usdVolume" : 5122458.4667,
   "numberOfTrades" : 1048,
   "rsi" : 0.0
 }, {
@@ -2166,6 +1630,7 @@
   "close" : 0.025466,
   "volume" : 1068.241,
   "quoteAssetVolume" : 27.54760358,
+  "usdVolume" : 9663446.957330002,
   "numberOfTrades" : 2171,
   "rsi" : 0.0
 }, {
@@ -2180,6 +1645,7 @@
   "close" : 0.025797,
   "volume" : 814.526,
   "quoteAssetVolume" : 20.89002942,
+  "usdVolume" : 7161992.721209999,
   "numberOfTrades" : 2234,
   "rsi" : 0.0
 }, {
@@ -2194,6 +1660,7 @@
   "close" : 0.026099,
   "volume" : 395.123,
   "quoteAssetVolume" : 10.23693874,
+  "usdVolume" : 3462678.191035,
   "numberOfTrades" : 1072,
   "rsi" : 0.0
 }, {
@@ -2208,6 +1675,7 @@
   "close" : 0.025474,
   "volume" : 510.347,
   "quoteAssetVolume" : 13.23512882,
+  "usdVolume" : 4396100.988915,
   "numberOfTrades" : 1141,
   "rsi" : 0.0
 }, {
@@ -2222,6 +1690,7 @@
   "close" : 0.025528,
   "volume" : 447.199,
   "quoteAssetVolume" : 11.41910393,
+  "usdVolume" : 3813408.97668,
   "numberOfTrades" : 508,
   "rsi" : 0.0
 }, {
@@ -2236,6 +1705,7 @@
   "close" : 0.025892,
   "volume" : 358.631,
   "quoteAssetVolume" : 9.27673285,
+  "usdVolume" : 3124947.3568949997,
   "numberOfTrades" : 1264,
   "rsi" : 0.0
 }, {
@@ -2250,6 +1720,7 @@
   "close" : 0.025552,
   "volume" : 322.296,
   "quoteAssetVolume" : 8.31584,
+  "usdVolume" : 2848112.02572,
   "numberOfTrades" : 905,
   "rsi" : 0.0
 }, {
@@ -2264,6 +1735,7 @@
   "close" : 0.025588,
   "volume" : 324.205,
   "quoteAssetVolume" : 8.31055676,
+  "usdVolume" : 2839371.17975,
   "numberOfTrades" : 1174,
   "rsi" : 0.0
 }, {
@@ -2278,6 +1750,7 @@
   "close" : 0.025211,
   "volume" : 1651.843,
   "quoteAssetVolume" : 41.95676486,
+  "usdVolume" : 1.4728707664789999E7,
   "numberOfTrades" : 2712,
   "rsi" : 0.0
 }, {
@@ -2292,6 +1765,7 @@
   "close" : 0.026833,
   "volume" : 445.696,
   "quoteAssetVolume" : 11.58948484,
+  "usdVolume" : 4062175.85408,
   "numberOfTrades" : 1109,
   "rsi" : 0.0
 }, {
@@ -2306,6 +1780,7 @@
   "close" : 0.026671,
   "volume" : 252.267,
   "quoteAssetVolume" : 6.81994252,
+  "usdVolume" : 2277223.038345,
   "numberOfTrades" : 592,
   "rsi" : 0.0
 }, {
@@ -2320,6 +1795,7 @@
   "close" : 0.024757,
   "volume" : 590.636,
   "quoteAssetVolume" : 15.2341439,
+  "usdVolume" : 5001101.062339999,
   "numberOfTrades" : 1820,
   "rsi" : 0.0
 }, {
@@ -2334,6 +1810,7 @@
   "close" : 0.025629,
   "volume" : 352.151,
   "quoteAssetVolume" : 8.85319246,
+  "usdVolume" : 2811878.194615,
   "numberOfTrades" : 605,
   "rsi" : 0.0
 }, {
@@ -2348,6 +1825,7 @@
   "close" : 0.025388,
   "volume" : 238.621,
   "quoteAssetVolume" : 6.06747454,
+  "usdVolume" : 1888126.84186,
   "numberOfTrades" : 370,
   "rsi" : 0.0
 }, {
@@ -2362,6 +1840,7 @@
   "close" : 0.02447,
   "volume" : 346.563,
   "quoteAssetVolume" : 8.55594576,
+  "usdVolume" : 2740907.8512899997,
   "numberOfTrades" : 415,
   "rsi" : 0.0
 }, {
@@ -2376,6 +1855,7 @@
   "close" : 0.022397,
   "volume" : 5728.093,
   "quoteAssetVolume" : 129.40810769,
+  "usdVolume" : 3.67709202042E7,
   "numberOfTrades" : 5718,
   "rsi" : 0.0
 }, {
@@ -2390,6 +1870,7 @@
   "close" : 0.024068,
   "volume" : 5873.523,
   "quoteAssetVolume" : 137.2345191,
+  "usdVolume" : 3.0704105791035E7,
   "numberOfTrades" : 5809,
   "rsi" : 0.0
 }, {
@@ -2404,6 +1885,7 @@
   "close" : 0.023705,
   "volume" : 100.017,
   "quoteAssetVolume" : 2.40461863,
+  "usdVolume" : 539765.7445799999,
   "numberOfTrades" : 174,
   "rsi" : 0.0
 }, {
@@ -2418,6 +1900,7 @@
   "close" : 0.023,
   "volume" : 229.183,
   "quoteAssetVolume" : 5.24818824,
+  "usdVolume" : 1205291.73164,
   "numberOfTrades" : 253,
   "rsi" : 0.0
 }, {
@@ -2432,6 +1915,7 @@
   "close" : 0.02201,
   "volume" : 326.417,
   "quoteAssetVolume" : 7.37577087,
+  "usdVolume" : 1690840.0599999998,
   "numberOfTrades" : 521,
   "rsi" : 0.0
 }, {
@@ -2446,6 +1930,7 @@
   "close" : 0.02177,
   "volume" : 88.737,
   "quoteAssetVolume" : 1.94833986,
+  "usdVolume" : 462444.88917,
   "numberOfTrades" : 156,
   "rsi" : 0.0
 }, {
@@ -2460,6 +1945,7 @@
   "close" : 0.021874,
   "volume" : 340.617,
   "quoteAssetVolume" : 7.43019951,
+  "usdVolume" : 1828411.6189800003,
   "numberOfTrades" : 258,
   "rsi" : 0.0
 }, {
@@ -2474,6 +1960,7 @@
   "close" : 0.022108,
   "volume" : 255.159,
   "quoteAssetVolume" : 5.61608678,
+  "usdVolume" : 1480540.9605749997,
   "numberOfTrades" : 431,
   "rsi" : 0.0
 }, {
@@ -2488,6 +1975,7 @@
   "close" : 0.021334,
   "volume" : 597.367,
   "quoteAssetVolume" : 12.78203458,
+  "usdVolume" : 3700342.09214,
   "numberOfTrades" : 894,
   "rsi" : 0.0
 }, {
@@ -2502,6 +1990,7 @@
   "close" : 0.021492,
   "volume" : 99.418,
   "quoteAssetVolume" : 2.12583792,
+  "usdVolume" : 616508.91324,
   "numberOfTrades" : 210,
   "rsi" : 0.0
 }, {
@@ -2516,6 +2005,7 @@
   "close" : 0.020934,
   "volume" : 198.906,
   "quoteAssetVolume" : 4.19931498,
+  "usdVolume" : 1194189.85374,
   "numberOfTrades" : 381,
   "rsi" : 0.0
 }, {
@@ -2530,6 +2020,7 @@
   "close" : 0.021027,
   "volume" : 451.971,
   "quoteAssetVolume" : 9.46766817,
+  "usdVolume" : 2783569.6166850002,
   "numberOfTrades" : 399,
   "rsi" : 0.0
 }, {
@@ -2544,6 +2035,7 @@
   "close" : 0.020538,
   "volume" : 227.789,
   "quoteAssetVolume" : 4.71756074,
+  "usdVolume" : 1511308.2614649998,
   "numberOfTrades" : 574,
   "rsi" : 0.0
 }, {
@@ -2558,6 +2050,7 @@
   "close" : 0.020323,
   "volume" : 54.151,
   "quoteAssetVolume" : 1.11534771,
+  "usdVolume" : 364574.31505000003,
   "numberOfTrades" : 254,
   "rsi" : 0.0
 }, {
@@ -2572,6 +2065,7 @@
   "close" : 0.020539,
   "volume" : 102.951,
   "quoteAssetVolume" : 2.09384411,
+  "usdVolume" : 693284.9028749999,
   "numberOfTrades" : 251,
   "rsi" : 0.0
 }, {
@@ -2586,6 +2080,7 @@
   "close" : 0.020579,
   "volume" : 272.45,
   "quoteAssetVolume" : 5.62459251,
+  "usdVolume" : 1789353.5179999997,
   "numberOfTrades" : 483,
   "rsi" : 0.0
 }, {
@@ -2600,6 +2095,7 @@
   "close" : 0.020911,
   "volume" : 357.564,
   "quoteAssetVolume" : 7.42882381,
+  "usdVolume" : 2256212.74962,
   "numberOfTrades" : 368,
   "rsi" : 0.0
 }, {
@@ -2614,6 +2110,7 @@
   "close" : 0.021195,
   "volume" : 103.002,
   "quoteAssetVolume" : 2.16723898,
+  "usdVolume" : 624968.7550799999,
   "numberOfTrades" : 176,
   "rsi" : 0.0
 }, {
@@ -2628,6 +2125,7 @@
   "close" : 0.020674,
   "volume" : 219.891,
   "quoteAssetVolume" : 4.61027503,
+  "usdVolume" : 1350073.56834,
   "numberOfTrades" : 219,
   "rsi" : 0.0
 }, {
@@ -2642,6 +2140,7 @@
   "close" : 0.02076,
   "volume" : 263.65,
   "quoteAssetVolume" : 5.41110403,
+  "usdVolume" : 1690659.57975,
   "numberOfTrades" : 164,
   "rsi" : 0.0
 }, {
@@ -2656,6 +2155,7 @@
   "close" : 0.020388,
   "volume" : 433.297,
   "quoteAssetVolume" : 9.02621375,
+  "usdVolume" : 2835749.0467450004,
   "numberOfTrades" : 254,
   "rsi" : 0.0
 }, {
@@ -2670,6 +2170,7 @@
   "close" : 0.02069,
   "volume" : 176.412,
   "quoteAssetVolume" : 3.64180348,
+  "usdVolume" : 1188941.02284,
   "numberOfTrades" : 291,
   "rsi" : 0.0
 }, {
@@ -2684,6 +2185,7 @@
   "close" : 0.021009,
   "volume" : 60.408,
   "quoteAssetVolume" : 1.26428011,
+  "usdVolume" : 409024.38024,
   "numberOfTrades" : 124,
   "rsi" : 0.0
 }, {
@@ -2698,6 +2200,7 @@
   "close" : 0.021005,
   "volume" : 174.211,
   "quoteAssetVolume" : 3.66280916,
+  "usdVolume" : 1185592.0894450003,
   "numberOfTrades" : 201,
   "rsi" : 0.0
 }, {
@@ -2712,6 +2215,7 @@
   "close" : 0.021087,
   "volume" : 177.788,
   "quoteAssetVolume" : 3.74945826,
+  "usdVolume" : 1214392.4902200003,
   "numberOfTrades" : 145,
   "rsi" : 0.0
 }, {
@@ -2726,6 +2230,7 @@
   "close" : 0.023389,
   "volume" : 602.782,
   "quoteAssetVolume" : 13.31788849,
+  "usdVolume" : 4258278.0912500005,
   "numberOfTrades" : 946,
   "rsi" : 0.0
 }, {
@@ -2740,6 +2245,7 @@
   "close" : 0.022865,
   "volume" : 481.775,
   "quoteAssetVolume" : 11.25381246,
+  "usdVolume" : 3501388.940875,
   "numberOfTrades" : 776,
   "rsi" : 0.0
 }, {
@@ -2754,6 +2260,7 @@
   "close" : 0.023509,
   "volume" : 186.202,
   "quoteAssetVolume" : 4.33489432,
+  "usdVolume" : 1356499.2591900001,
   "numberOfTrades" : 579,
   "rsi" : 0.0
 }, {
@@ -2768,6 +2275,7 @@
   "close" : 0.023335,
   "volume" : 190.696,
   "quoteAssetVolume" : 4.45137022,
+  "usdVolume" : 1398210.72292,
   "numberOfTrades" : 219,
   "rsi" : 0.0
 }, {
@@ -2782,6 +2290,7 @@
   "close" : 0.022935,
   "volume" : 285.369,
   "quoteAssetVolume" : 6.53394463,
+  "usdVolume" : 2020901.9278350002,
   "numberOfTrades" : 441,
   "rsi" : 0.0
 }, {
@@ -2796,6 +2305,7 @@
   "close" : 0.023027,
   "volume" : 122.273,
   "quoteAssetVolume" : 2.81588682,
+  "usdVolume" : 841491.34511,
   "numberOfTrades" : 261,
   "rsi" : 0.0
 }, {
@@ -2810,6 +2320,7 @@
   "close" : 0.022918,
   "volume" : 187.179,
   "quoteAssetVolume" : 4.30678451,
+  "usdVolume" : 1290632.8972200002,
   "numberOfTrades" : 275,
   "rsi" : 0.0
 }, {
@@ -2824,6 +2335,7 @@
   "close" : 0.022852,
   "volume" : 303.932,
   "quoteAssetVolume" : 6.93459641,
+  "usdVolume" : 2091190.44906,
   "numberOfTrades" : 399,
   "rsi" : 0.0
 }, {
@@ -2838,6 +2350,7 @@
   "close" : 0.023005,
   "volume" : 373.562,
   "quoteAssetVolume" : 8.61006218,
+  "usdVolume" : 2566296.2276,
   "numberOfTrades" : 363,
   "rsi" : 0.0
 }, {
@@ -2852,6 +2365,7 @@
   "close" : 0.023099,
   "volume" : 154.608,
   "quoteAssetVolume" : 3.5810263,
+  "usdVolume" : 1044032.2641600001,
   "numberOfTrades" : 221,
   "rsi" : 0.0
 }, {
@@ -2866,6 +2380,7 @@
   "close" : 0.024263,
   "volume" : 462.603,
   "quoteAssetVolume" : 11.11978031,
+  "usdVolume" : 3177842.05644,
   "numberOfTrades" : 724,
   "rsi" : 0.0
 }, {
@@ -2880,6 +2395,7 @@
   "close" : 0.024237,
   "volume" : 346.529,
   "quoteAssetVolume" : 8.42762561,
+  "usdVolume" : 2451813.96015,
   "numberOfTrades" : 364,
   "rsi" : 0.0
 }, {
@@ -2894,6 +2410,7 @@
   "close" : 0.025837,
   "volume" : 296.114,
   "quoteAssetVolume" : 7.43112702,
+  "usdVolume" : 2115734.53,
   "numberOfTrades" : 491,
   "rsi" : 0.0
 }, {
@@ -2908,6 +2425,7 @@
   "close" : 0.025245,
   "volume" : 315.943,
   "quoteAssetVolume" : 8.05907415,
+  "usdVolume" : 2273576.3788799997,
   "numberOfTrades" : 419,
   "rsi" : 0.0
 }, {
@@ -2922,6 +2440,7 @@
   "close" : 0.024908,
   "volume" : 920.06,
   "quoteAssetVolume" : 23.1135674,
+  "usdVolume" : 6429820.908799999,
   "numberOfTrades" : 763,
   "rsi" : 0.0
 }, {
@@ -2936,6 +2455,7 @@
   "close" : 0.024935,
   "volume" : 179.781,
   "quoteAssetVolume" : 4.50028901,
+  "usdVolume" : 1230118.2330150001,
   "numberOfTrades" : 374,
   "rsi" : 0.0
 }, {
@@ -2950,6 +2470,7 @@
   "close" : 0.02559,
   "volume" : 661.702,
   "quoteAssetVolume" : 16.89445653,
+  "usdVolume" : 4628512.851720001,
   "numberOfTrades" : 825,
   "rsi" : 0.0
 }, {
@@ -2964,6 +2485,7 @@
   "close" : 0.024793,
   "volume" : 222.988,
   "quoteAssetVolume" : 5.65591576,
+  "usdVolume" : 1630547.3478199998,
   "numberOfTrades" : 402,
   "rsi" : 0.0
 }, {
@@ -2978,6 +2500,7 @@
   "close" : 0.024983,
   "volume" : 188.897,
   "quoteAssetVolume" : 4.70702654,
+  "usdVolume" : 1416487.6008099997,
   "numberOfTrades" : 304,
   "rsi" : 0.0
 }, {
@@ -2992,6 +2515,7 @@
   "close" : 0.02571,
   "volume" : 200.653,
   "quoteAssetVolume" : 5.1448536,
+  "usdVolume" : 1510790.6786099998,
   "numberOfTrades" : 352,
   "rsi" : 0.0
 }, {
@@ -3006,6 +2530,7 @@
   "close" : 0.025643,
   "volume" : 152.188,
   "quoteAssetVolume" : 3.91653222,
+  "usdVolume" : 1160283.59482,
   "numberOfTrades" : 400,
   "rsi" : 0.0
 }, {
@@ -3020,6 +2545,7 @@
   "close" : 0.025262,
   "volume" : 279.988,
   "quoteAssetVolume" : 7.06587158,
+  "usdVolume" : 2168875.24422,
   "numberOfTrades" : 412,
   "rsi" : 0.0
 }, {
@@ -3034,6 +2560,7 @@
   "close" : 0.025416,
   "volume" : 143.386,
   "quoteAssetVolume" : 3.63169101,
+  "usdVolume" : 1114993.91162,
   "numberOfTrades" : 229,
   "rsi" : 0.0
 }, {
@@ -3048,6 +2575,7 @@
   "close" : 0.02458,
   "volume" : 529.822,
   "quoteAssetVolume" : 13.23737297,
+  "usdVolume" : 4382592.21604,
   "numberOfTrades" : 777,
   "rsi" : 0.0
 }, {
@@ -3062,6 +2590,7 @@
   "close" : 0.023887,
   "volume" : 563.718,
   "quoteAssetVolume" : 13.61613143,
+  "usdVolume" : 4909944.31974,
   "numberOfTrades" : 924,
   "rsi" : 0.0
 }, {
@@ -3076,6 +2605,7 @@
   "close" : 0.024027,
   "volume" : 299.025,
   "quoteAssetVolume" : 7.22878822,
+  "usdVolume" : 2609435.6819999996,
   "numberOfTrades" : 245,
   "rsi" : 0.0
 }, {
@@ -3090,6 +2620,7 @@
   "close" : 0.023832,
   "volume" : 202.146,
   "quoteAssetVolume" : 4.83471286,
+  "usdVolume" : 1799974.6921799998,
   "numberOfTrades" : 296,
   "rsi" : 0.0
 }, {
@@ -3104,6 +2635,7 @@
   "close" : 0.023623,
   "volume" : 220.395,
   "quoteAssetVolume" : 5.22744837,
+  "usdVolume" : 1970505.4120500004,
   "numberOfTrades" : 430,
   "rsi" : 0.0
 }, {
@@ -3118,6 +2650,7 @@
   "close" : 0.023272,
   "volume" : 217.992,
   "quoteAssetVolume" : 5.04786991,
+  "usdVolume" : 1939413.7862400003,
   "numberOfTrades" : 566,
   "rsi" : 0.0
 }, {
@@ -3132,6 +2665,7 @@
   "close" : 0.0228,
   "volume" : 164.094,
   "quoteAssetVolume" : 3.79276723,
+  "usdVolume" : 1469739.0888599998,
   "numberOfTrades" : 340,
   "rsi" : 0.0
 }, {
@@ -3146,6 +2680,7 @@
   "close" : 0.021742,
   "volume" : 539.069,
   "quoteAssetVolume" : 12.14198173,
+  "usdVolume" : 4899290.87167,
   "numberOfTrades" : 1112,
   "rsi" : 0.0
 }, {
@@ -3160,6 +2695,7 @@
   "close" : 0.021253,
   "volume" : 1041.865,
   "quoteAssetVolume" : 22.65124946,
+  "usdVolume" : 9976643.983075,
   "numberOfTrades" : 1761,
   "rsi" : 0.0
 }, {
@@ -3174,6 +2710,7 @@
   "close" : 0.021517,
   "volume" : 333.014,
   "quoteAssetVolume" : 7.12910389,
+  "usdVolume" : 3299804.0896699997,
   "numberOfTrades" : 535,
   "rsi" : 0.0
 }, {
@@ -3188,6 +2725,7 @@
   "close" : 0.022018,
   "volume" : 325.816,
   "quoteAssetVolume" : 7.12532381,
+  "usdVolume" : 3154301.26276,
   "numberOfTrades" : 638,
   "rsi" : 0.0
 }, {
@@ -3202,6 +2740,7 @@
   "close" : 0.0215,
   "volume" : 1476.39,
   "quoteAssetVolume" : 32.37830646,
+  "usdVolume" : 1.3485752267250003E7,
   "numberOfTrades" : 2130,
   "rsi" : 0.0
 }, {
@@ -3216,6 +2755,7 @@
   "close" : 0.021572,
   "volume" : 867.72,
   "quoteAssetVolume" : 18.64295226,
+  "usdVolume" : 7503756.212400001,
   "numberOfTrades" : 687,
   "rsi" : 0.0
 }, {
@@ -3230,6 +2770,7 @@
   "close" : 0.021589,
   "volume" : 304.855,
   "quoteAssetVolume" : 6.5745878,
+  "usdVolume" : 2651515.9936500005,
   "numberOfTrades" : 409,
   "rsi" : 0.0
 }, {
@@ -3244,6 +2785,7 @@
   "close" : 0.021445,
   "volume" : 254.781,
   "quoteAssetVolume" : 5.46506197,
+  "usdVolume" : 2311081.507755,
   "numberOfTrades" : 289,
   "rsi" : 0.0
 }, {
@@ -3258,6 +2800,7 @@
   "close" : 0.02074,
   "volume" : 772.605,
   "quoteAssetVolume" : 16.10230851,
+  "usdVolume" : 7386045.854625,
   "numberOfTrades" : 676,
   "rsi" : 0.0
 }, {
@@ -3272,6 +2815,7 @@
   "close" : 0.020964,
   "volume" : 381.608,
   "quoteAssetVolume" : 7.97298671,
+  "usdVolume" : 3645690.11996,
   "numberOfTrades" : 385,
   "rsi" : 0.0
 }, {
@@ -3286,6 +2830,7 @@
   "close" : 0.021412,
   "volume" : 327.906,
   "quoteAssetVolume" : 6.96175113,
+  "usdVolume" : 3065099.6954699997,
   "numberOfTrades" : 290,
   "rsi" : 0.0
 }, {
@@ -3300,6 +2845,7 @@
   "close" : 0.021395,
   "volume" : 405.779,
   "quoteAssetVolume" : 8.62590972,
+  "usdVolume" : 3867534.429165,
   "numberOfTrades" : 502,
   "rsi" : 0.0
 }, {
@@ -3314,6 +2860,7 @@
   "close" : 0.022088,
   "volume" : 669.839,
   "quoteAssetVolume" : 14.69923568,
+  "usdVolume" : 6503711.342235001,
   "numberOfTrades" : 475,
   "rsi" : 0.0
 }, {
@@ -3328,6 +2875,7 @@
   "close" : 0.02192,
   "volume" : 402.299,
   "quoteAssetVolume" : 8.83734903,
+  "usdVolume" : 3924394.56108,
   "numberOfTrades" : 333,
   "rsi" : 0.0
 }, {
@@ -3342,6 +2890,7 @@
   "close" : 0.022097,
   "volume" : 399.722,
   "quoteAssetVolume" : 8.77741571,
+  "usdVolume" : 3855846.3230399997,
   "numberOfTrades" : 398,
   "rsi" : 0.0
 }, {
@@ -3356,6 +2905,7 @@
   "close" : 0.021927,
   "volume" : 394.396,
   "quoteAssetVolume" : 8.66969203,
+  "usdVolume" : 3660428.7155999998,
   "numberOfTrades" : 382,
   "rsi" : 0.0
 }, {
@@ -3370,6 +2920,7 @@
   "close" : 0.022623,
   "volume" : 233.743,
   "quoteAssetVolume" : 5.18708417,
+  "usdVolume" : 2129493.395915,
   "numberOfTrades" : 303,
   "rsi" : 0.0
 }, {
@@ -3384,6 +2935,7 @@
   "close" : 0.022515,
   "volume" : 267.197,
   "quoteAssetVolume" : 6.03124786,
+  "usdVolume" : 2451460.33181,
   "numberOfTrades" : 446,
   "rsi" : 0.0
 }, {
@@ -3398,6 +2950,7 @@
   "close" : 0.022942,
   "volume" : 361.607,
   "quoteAssetVolume" : 8.21349025,
+  "usdVolume" : 3234590.8873150004,
   "numberOfTrades" : 523,
   "rsi" : 0.0
 }, {
@@ -3412,6 +2965,7 @@
   "close" : 0.022957,
   "volume" : 237.326,
   "quoteAssetVolume" : 5.46462531,
+  "usdVolume" : 2090105.16277,
   "numberOfTrades" : 247,
   "rsi" : 0.0
 }, {
@@ -3426,6 +2980,7 @@
   "close" : 0.022736,
   "volume" : 146.328,
   "quoteAssetVolume" : 3.33784006,
+  "usdVolume" : 1297333.0733999999,
   "numberOfTrades" : 232,
   "rsi" : 0.0
 }, {
@@ -3440,6 +2995,7 @@
   "close" : 0.022636,
   "volume" : 453.624,
   "quoteAssetVolume" : 10.24610026,
+  "usdVolume" : 4094197.02072,
   "numberOfTrades" : 448,
   "rsi" : 0.0
 }, {
@@ -3454,6 +3010,7 @@
   "close" : 0.02298,
   "volume" : 369.041,
   "quoteAssetVolume" : 8.31364076,
+  "usdVolume" : 3466217.5925,
   "numberOfTrades" : 405,
   "rsi" : 0.0
 }, {
@@ -3468,6 +3025,7 @@
   "close" : 0.023384,
   "volume" : 214.233,
   "quoteAssetVolume" : 4.99592121,
+  "usdVolume" : 2035308.833685,
   "numberOfTrades" : 336,
   "rsi" : 0.0
 }, {
@@ -3482,6 +3040,7 @@
   "close" : 0.025113,
   "volume" : 721.659,
   "quoteAssetVolume" : 17.78710313,
+  "usdVolume" : 6901986.367245,
   "numberOfTrades" : 770,
   "rsi" : 0.0
 }, {
@@ -3496,6 +3055,7 @@
   "close" : 0.024518,
   "volume" : 324.402,
   "quoteAssetVolume" : 8.05136626,
+  "usdVolume" : 3106363.25532,
   "numberOfTrades" : 435,
   "rsi" : 0.0
 }, {
@@ -3510,6 +3070,7 @@
   "close" : 0.024264,
   "volume" : 717.468,
   "quoteAssetVolume" : 17.76691483,
+  "usdVolume" : 7051465.63302,
   "numberOfTrades" : 840,
   "rsi" : 0.0
 }, {
@@ -3524,6 +3085,7 @@
   "close" : 0.024956,
   "volume" : 761.264,
   "quoteAssetVolume" : 18.81407548,
+  "usdVolume" : 7508807.39672,
   "numberOfTrades" : 1027,
   "rsi" : 0.0
 }, {
@@ -3538,6 +3100,7 @@
   "close" : 0.025322,
   "volume" : 599.359,
   "quoteAssetVolume" : 15.02252859,
+  "usdVolume" : 5748802.794015,
   "numberOfTrades" : 508,
   "rsi" : 0.0
 }, {
@@ -3552,6 +3115,7 @@
   "close" : 0.024866,
   "volume" : 538.747,
   "quoteAssetVolume" : 13.46475929,
+  "usdVolume" : 5240216.976224999,
   "numberOfTrades" : 628,
   "rsi" : 0.0
 }, {
@@ -3566,6 +3130,7 @@
   "close" : 0.02493,
   "volume" : 166.603,
   "quoteAssetVolume" : 4.15890849,
+  "usdVolume" : 1616715.512,
   "numberOfTrades" : 262,
   "rsi" : 0.0
 }, {
@@ -3580,6 +3145,7 @@
   "close" : 0.024999,
   "volume" : 153.718,
   "quoteAssetVolume" : 3.84929736,
+  "usdVolume" : 1482424.11122,
   "numberOfTrades" : 221,
   "rsi" : 0.0
 }, {
@@ -3594,6 +3160,7 @@
   "close" : 0.025057,
   "volume" : 1028.737,
   "quoteAssetVolume" : 25.68420814,
+  "usdVolume" : 9989730.667475,
   "numberOfTrades" : 635,
   "rsi" : 0.0
 }, {
@@ -3608,6 +3175,7 @@
   "close" : 0.025192,
   "volume" : 155.437,
   "quoteAssetVolume" : 3.89793441,
+  "usdVolume" : 1517797.22827,
   "numberOfTrades" : 259,
   "rsi" : 0.0
 }, {
@@ -3622,6 +3190,7 @@
   "close" : 0.024937,
   "volume" : 260.105,
   "quoteAssetVolume" : 6.53497537,
+  "usdVolume" : 2544314.5968750003,
   "numberOfTrades" : 310,
   "rsi" : 0.0
 }, {
@@ -3636,6 +3205,7 @@
   "close" : 0.02506,
   "volume" : 243.341,
   "quoteAssetVolume" : 6.08115504,
+  "usdVolume" : 2393813.5524799996,
   "numberOfTrades" : 344,
   "rsi" : 0.0
 }, {
@@ -3650,6 +3220,7 @@
   "close" : 0.024864,
   "volume" : 585.009,
   "quoteAssetVolume" : 14.58147803,
+  "usdVolume" : 5604860.077290001,
   "numberOfTrades" : 520,
   "rsi" : 0.0
 }, {
@@ -3664,6 +3235,7 @@
   "close" : 0.025075,
   "volume" : 373.625,
   "quoteAssetVolume" : 9.33097616,
+  "usdVolume" : 3499128.8937500003,
   "numberOfTrades" : 315,
   "rsi" : 0.0
 }, {
@@ -3678,6 +3250,7 @@
   "close" : 0.025172,
   "volume" : 152.595,
   "quoteAssetVolume" : 3.84828368,
+  "usdVolume" : 1444960.9667250002,
   "numberOfTrades" : 157,
   "rsi" : 0.0
 }, {
@@ -3692,6 +3265,7 @@
   "close" : 0.024829,
   "volume" : 141.628,
   "quoteAssetVolume" : 3.53861194,
+  "usdVolume" : 1332138.0970599998,
   "numberOfTrades" : 231,
   "rsi" : 0.0
 }, {
@@ -3706,6 +3280,7 @@
   "close" : 0.02451,
   "volume" : 470.847,
   "quoteAssetVolume" : 11.56386263,
+  "usdVolume" : 4418924.9915849995,
   "numberOfTrades" : 611,
   "rsi" : 0.0
 }, {
@@ -3720,6 +3295,7 @@
   "close" : 0.024692,
   "volume" : 212.451,
   "quoteAssetVolume" : 5.20751703,
+  "usdVolume" : 2013670.06428,
   "numberOfTrades" : 222,
   "rsi" : 0.0
 }, {
@@ -3734,6 +3310,7 @@
   "close" : 0.024728,
   "volume" : 380.479,
   "quoteAssetVolume" : 9.40760524,
+  "usdVolume" : 3610996.82614,
   "numberOfTrades" : 358,
   "rsi" : 0.0
 }, {
@@ -3748,6 +3325,7 @@
   "close" : 0.024644,
   "volume" : 110.888,
   "quoteAssetVolume" : 2.73289477,
+  "usdVolume" : 1044664.2047600001,
   "numberOfTrades" : 227,
   "rsi" : 0.0
 }, {
@@ -3762,6 +3340,7 @@
   "close" : 0.0246,
   "volume" : 157.665,
   "quoteAssetVolume" : 3.87155223,
+  "usdVolume" : 1472264.73345,
   "numberOfTrades" : 225,
   "rsi" : 0.0
 }, {
@@ -3776,6 +3355,7 @@
   "close" : 0.024468,
   "volume" : 388.229,
   "quoteAssetVolume" : 9.54031281,
+  "usdVolume" : 3620276.189045,
   "numberOfTrades" : 266,
   "rsi" : 0.0
 }, {
@@ -3790,6 +3370,7 @@
   "close" : 0.024545,
   "volume" : 97.8,
   "quoteAssetVolume" : 2.40103611,
+  "usdVolume" : 911547.345,
   "numberOfTrades" : 127,
   "rsi" : 0.0
 }, {
@@ -3804,6 +3385,7 @@
   "close" : 0.025124,
   "volume" : 402.165,
   "quoteAssetVolume" : 10.12851416,
+  "usdVolume" : 3814983.4389750003,
   "numberOfTrades" : 477,
   "rsi" : 0.0
 }, {
@@ -3818,6 +3400,7 @@
   "close" : 0.025264,
   "volume" : 158.157,
   "quoteAssetVolume" : 3.98820011,
+  "usdVolume" : 1527301.5885900003,
   "numberOfTrades" : 222,
   "rsi" : 0.0
 }, {
@@ -3832,6 +3415,7 @@
   "close" : 0.02528,
   "volume" : 416.533,
   "quoteAssetVolume" : 10.55440349,
+  "usdVolume" : 3938873.5038900003,
   "numberOfTrades" : 552,
   "rsi" : 0.0
 }, {
@@ -3846,6 +3430,7 @@
   "close" : 0.025129,
   "volume" : 177.73,
   "quoteAssetVolume" : 4.48192248,
+  "usdVolume" : 1646230.34555,
   "numberOfTrades" : 255,
   "rsi" : 0.0
 }, {
@@ -3860,6 +3445,7 @@
   "close" : 0.025066,
   "volume" : 306.394,
   "quoteAssetVolume" : 7.69889009,
+  "usdVolume" : 2818581.21677,
   "numberOfTrades" : 233,
   "rsi" : 0.0
 }, {
@@ -3874,6 +3460,7 @@
   "close" : 0.024532,
   "volume" : 290.819,
   "quoteAssetVolume" : 7.18301987,
+  "usdVolume" : 2640536.187445,
   "numberOfTrades" : 393,
   "rsi" : 0.0
 }, {
@@ -3888,6 +3475,7 @@
   "close" : 0.024644,
   "volume" : 124.213,
   "quoteAssetVolume" : 3.0536702,
+  "usdVolume" : 1125292.1468749999,
   "numberOfTrades" : 186,
   "rsi" : 0.0
 }, {
@@ -3902,6 +3490,7 @@
   "close" : 0.024803,
   "volume" : 189.37,
   "quoteAssetVolume" : 4.66348564,
+  "usdVolume" : 1732768.6397499999,
   "numberOfTrades" : 180,
   "rsi" : 0.0
 }, {
@@ -3916,6 +3505,7 @@
   "close" : 0.024669,
   "volume" : 294.025,
   "quoteAssetVolume" : 7.26028319,
+  "usdVolume" : 2694647.97725,
   "numberOfTrades" : 175,
   "rsi" : 0.0
 }, {
@@ -3930,6 +3520,7 @@
   "close" : 0.025048,
   "volume" : 377.692,
   "quoteAssetVolume" : 9.39674074,
+  "usdVolume" : 3470577.79572,
   "numberOfTrades" : 522,
   "rsi" : 0.0
 }, {
@@ -3944,6 +3535,7 @@
   "close" : 0.024932,
   "volume" : 293.2,
   "quoteAssetVolume" : 7.2928762,
+  "usdVolume" : 2686672.23,
   "numberOfTrades" : 427,
   "rsi" : 0.0
 }, {
@@ -3958,6 +3550,7 @@
   "close" : 0.024774,
   "volume" : 236.603,
   "quoteAssetVolume" : 5.89833556,
+  "usdVolume" : 2147691.568585,
   "numberOfTrades" : 230,
   "rsi" : 0.0
 }, {
@@ -3972,6 +3565,7 @@
   "close" : 0.02507,
   "volume" : 307.175,
   "quoteAssetVolume" : 7.65004504,
+  "usdVolume" : 2795289.428250001,
   "numberOfTrades" : 184,
   "rsi" : 0.0
 }, {
@@ -3986,6 +3580,7 @@
   "close" : 0.025087,
   "volume" : 234.374,
   "quoteAssetVolume" : 5.86588075,
+  "usdVolume" : 2134588.15801,
   "numberOfTrades" : 384,
   "rsi" : 0.0
 }, {
@@ -4000,6 +3595,7 @@
   "close" : 0.02587,
   "volume" : 628.968,
   "quoteAssetVolume" : 16.08445769,
+  "usdVolume" : 5793200.96436,
   "numberOfTrades" : 577,
   "rsi" : 0.0
 }, {
@@ -4014,6 +3610,7 @@
   "close" : 0.025798,
   "volume" : 401.061,
   "quoteAssetVolume" : 10.3347813,
+  "usdVolume" : 3731337.188565,
   "numberOfTrades" : 517,
   "rsi" : 0.0
 }, {
@@ -4028,6 +3625,7 @@
   "close" : 0.026155,
   "volume" : 635.59,
   "quoteAssetVolume" : 16.6057139,
+  "usdVolume" : 5941536.633350001,
   "numberOfTrades" : 562,
   "rsi" : 0.0
 }, {
@@ -4042,6 +3640,7 @@
   "close" : 0.02618,
   "volume" : 249.63,
   "quoteAssetVolume" : 6.50634815,
+  "usdVolume" : 2330880.1842,
   "numberOfTrades" : 284,
   "rsi" : 0.0
 }, {
@@ -4056,6 +3655,7 @@
   "close" : 0.025938,
   "volume" : 443.971,
   "quoteAssetVolume" : 11.56145216,
+  "usdVolume" : 4111808.5583849996,
   "numberOfTrades" : 496,
   "rsi" : 0.0
 }, {
@@ -4070,6 +3670,7 @@
   "close" : 0.025897,
   "volume" : 200.906,
   "quoteAssetVolume" : 5.21442645,
+  "usdVolume" : 1860783.33576,
   "numberOfTrades" : 263,
   "rsi" : 0.0
 }, {
@@ -4084,6 +3685,7 @@
   "close" : 0.026101,
   "volume" : 248.413,
   "quoteAssetVolume" : 6.4414725,
+  "usdVolume" : 2302399.7436550003,
   "numberOfTrades" : 365,
   "rsi" : 0.0
 }, {
@@ -4098,6 +3700,7 @@
   "close" : 0.025966,
   "volume" : 490.426,
   "quoteAssetVolume" : 12.82601539,
+  "usdVolume" : 4546055.3017299995,
   "numberOfTrades" : 593,
   "rsi" : 0.0
 }, {
@@ -4112,6 +3715,7 @@
   "close" : 0.025993,
   "volume" : 183.208,
   "quoteAssetVolume" : 4.76873554,
+  "usdVolume" : 1693890.7857999997,
   "numberOfTrades" : 300,
   "rsi" : 0.0
 }, {
@@ -4126,6 +3730,7 @@
   "close" : 0.025945,
   "volume" : 342.503,
   "quoteAssetVolume" : 8.88526219,
+  "usdVolume" : 3159746.0138649996,
   "numberOfTrades" : 363,
   "rsi" : 0.0
 }, {
@@ -4140,6 +3745,7 @@
   "close" : 0.025569,
   "volume" : 308.624,
   "quoteAssetVolume" : 7.91617243,
+  "usdVolume" : 2827542.10448,
   "numberOfTrades" : 441,
   "rsi" : 0.0
 }, {
@@ -4154,6 +3760,7 @@
   "close" : 0.025413,
   "volume" : 223.381,
   "quoteAssetVolume" : 5.69784803,
+  "usdVolume" : 2042687.45021,
   "numberOfTrades" : 298,
   "rsi" : 0.0
 }, {
@@ -4168,6 +3775,7 @@
   "close" : 0.025736,
   "volume" : 943.546,
   "quoteAssetVolume" : 24.1434826,
+  "usdVolume" : 8648443.56367,
   "numberOfTrades" : 395,
   "rsi" : 0.0
 }, {
@@ -4182,6 +3790,7 @@
   "close" : 0.025939,
   "volume" : 242.762,
   "quoteAssetVolume" : 6.24550076,
+  "usdVolume" : 2231974.4627699996,
   "numberOfTrades" : 422,
   "rsi" : 0.0
 }, {
@@ -4196,6 +3805,7 @@
   "close" : 0.025767,
   "volume" : 411.35,
   "quoteAssetVolume" : 10.68192966,
+  "usdVolume" : 3778634.3622500007,
   "numberOfTrades" : 674,
   "rsi" : 0.0
 }, {
@@ -4210,6 +3820,7 @@
   "close" : 0.02615,
   "volume" : 483.481,
   "quoteAssetVolume" : 12.54734103,
+  "usdVolume" : 4484711.73828,
   "numberOfTrades" : 551,
   "rsi" : 0.0
 }, {
@@ -4224,6 +3835,7 @@
   "close" : 0.027753,
   "volume" : 1187.613,
   "quoteAssetVolume" : 31.9874312,
+  "usdVolume" : 1.1240252309475001E7,
   "numberOfTrades" : 916,
   "rsi" : 0.0
 }, {
@@ -4238,6 +3850,7 @@
   "close" : 0.028655,
   "volume" : 2763.102,
   "quoteAssetVolume" : 77.56116949,
+  "usdVolume" : 2.645113399947E7,
   "numberOfTrades" : 1297,
   "rsi" : 0.0
 }, {
@@ -4252,6 +3865,7 @@
   "close" : 0.029286,
   "volume" : 2363.757,
   "quoteAssetVolume" : 68.7607174,
+  "usdVolume" : 2.265561806706E7,
   "numberOfTrades" : 2492,
   "rsi" : 0.0
 }, {
@@ -4266,6 +3880,7 @@
   "close" : 0.031492,
   "volume" : 3807.911,
   "quoteAssetVolume" : 116.01056366,
+  "usdVolume" : 3.666595614879E7,
   "numberOfTrades" : 2514,
   "rsi" : 0.0
 }, {
@@ -4280,6 +3895,7 @@
   "close" : 0.031246,
   "volume" : 2397.619,
   "quoteAssetVolume" : 75.53225174,
+  "usdVolume" : 2.35606826273E7,
   "numberOfTrades" : 2423,
   "rsi" : 0.0
 }, {
@@ -4294,6 +3910,7 @@
   "close" : 0.029227,
   "volume" : 4807.308,
   "quoteAssetVolume" : 147.47046892,
+  "usdVolume" : 5.0438371682160005E7,
   "numberOfTrades" : 2968,
   "rsi" : 0.0
 }, {
@@ -4308,6 +3925,7 @@
   "close" : 0.029075,
   "volume" : 2273.773,
   "quoteAssetVolume" : 66.01930049,
+  "usdVolume" : 2.4988208195615005E7,
   "numberOfTrades" : 1661,
   "rsi" : 0.0
 }, {
@@ -4319,9 +3937,1555 @@
   "open" : 0.029075,
   "high" : 0.02936,
   "low" : 0.028538,
-  "close" : 0.028662,
-  "volume" : 3169.265,
-  "quoteAssetVolume" : 91.42374684,
-  "numberOfTrades" : 1360,
+  "close" : 0.028659,
+  "volume" : 3201.204,
+  "quoteAssetVolume" : 92.33731993,
+  "usdVolume" : 3.529044103446E7,
+  "numberOfTrades" : 1394,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHBTC",
+  "openTime" : 1596067200000,
+  "openDate" : null,
+  "closeTime" : 1596153599999,
+  "closeDate" : null,
+  "open" : 0.028659,
+  "high" : 0.03065,
+  "low" : 0.028659,
+  "close" : 0.030125,
+  "volume" : 2304.871,
+  "quoteAssetVolume" : 68.20292651,
+  "usdVolume" : 2.5623250907E7,
+  "numberOfTrades" : 1423,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHBTC",
+  "openTime" : 1596153600000,
+  "openDate" : null,
+  "closeTime" : 1596239999999,
+  "closeDate" : null,
+  "open" : 0.03019,
+  "high" : 0.030995,
+  "low" : 0.029924,
+  "close" : 0.03056,
+  "volume" : 1453.393,
+  "quoteAssetVolume" : 44.28986197,
+  "usdVolume" : 1.6327010011960002E7,
+  "numberOfTrades" : 1327,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHBTC",
+  "openTime" : 1596240000000,
+  "openDate" : null,
+  "closeTime" : 1596326399999,
+  "closeDate" : null,
+  "open" : 0.030564,
+  "high" : 0.03312,
+  "low" : 0.030335,
+  "close" : 0.032825,
+  "volume" : 3388.215,
+  "quoteAssetVolume" : 108.12142674,
+  "usdVolume" : 3.925623169365001E7,
+  "numberOfTrades" : 2698,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHBTC",
+  "openTime" : 1596326400000,
+  "openDate" : null,
+  "closeTime" : 1596412799999,
+  "closeDate" : null,
+  "open" : 0.032891,
+  "high" : 0.034701,
+  "low" : 0.0313,
+  "close" : 0.033564,
+  "volume" : 4853.099,
+  "quoteAssetVolume" : 162.43972801,
+  "usdVolume" : 5.549183842669E7,
+  "numberOfTrades" : 4539,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHBTC",
+  "openTime" : 1596412800000,
+  "openDate" : null,
+  "closeTime" : 1596499199999,
+  "closeDate" : null,
+  "open" : 0.033607,
+  "high" : 0.035118,
+  "low" : 0.033456,
+  "close" : 0.034384,
+  "volume" : 724.487,
+  "quoteAssetVolume" : 24.91887804,
+  "usdVolume" : 8080178.1539549995,
+  "numberOfTrades" : 937,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHBTC",
+  "openTime" : 1596499200000,
+  "openDate" : null,
+  "closeTime" : 1596585599999,
+  "closeDate" : null,
+  "open" : 0.03441,
+  "high" : 0.035352,
+  "low" : 0.034384,
+  "close" : 0.034807,
+  "volume" : 770.282,
+  "quoteAssetVolume" : 26.80056203,
+  "usdVolume" : 8637056.5237,
+  "numberOfTrades" : 1034,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHBTC",
+  "openTime" : 1596585600000,
+  "openDate" : null,
+  "closeTime" : 1596671999999,
+  "closeDate" : null,
+  "open" : 0.034876,
+  "high" : 0.034901,
+  "low" : 0.033857,
+  "close" : 0.03411,
+  "volume" : 2794.485,
+  "quoteAssetVolume" : 95.88133827,
+  "usdVolume" : 3.2084586106575E7,
+  "numberOfTrades" : 1406,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHBTC",
+  "openTime" : 1596672000000,
+  "openDate" : null,
+  "closeTime" : 1596758399999,
+  "closeDate" : null,
+  "open" : 0.034127,
+  "high" : 0.03428,
+  "low" : 0.033377,
+  "close" : 0.033548,
+  "volume" : 1144.076,
+  "quoteAssetVolume" : 38.42424473,
+  "usdVolume" : 1.346290288924E7,
+  "numberOfTrades" : 904,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHBTC",
+  "openTime" : 1596758400000,
+  "openDate" : null,
+  "closeTime" : 1596844799999,
+  "closeDate" : null,
+  "open" : 0.033562,
+  "high" : 0.033626,
+  "low" : 0.032729,
+  "close" : 0.032729,
+  "volume" : 646.994,
+  "quoteAssetVolume" : 21.51193054,
+  "usdVolume" : 7560862.46316,
+  "numberOfTrades" : 701,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHBTC",
+  "openTime" : 1596844800000,
+  "openDate" : null,
+  "closeTime" : 1596931199999,
+  "closeDate" : null,
+  "open" : 0.032702,
+  "high" : 0.033736,
+  "low" : 0.032615,
+  "close" : 0.033736,
+  "volume" : 629.896,
+  "quoteAssetVolume" : 20.82599643,
+  "usdVolume" : 7362243.344879999,
+  "numberOfTrades" : 751,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHBTC",
+  "openTime" : 1596931200000,
+  "openDate" : null,
+  "closeTime" : 1597017599999,
+  "closeDate" : null,
+  "open" : 0.033781,
+  "high" : 0.033932,
+  "low" : 0.033168,
+  "close" : 0.033315,
+  "volume" : 810.075,
+  "quoteAssetVolume" : 27.18228516,
+  "usdVolume" : 9502321.513125,
+  "numberOfTrades" : 681,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHBTC",
+  "openTime" : 1597017600000,
+  "openDate" : null,
+  "closeTime" : 1597103999999,
+  "closeDate" : null,
+  "open" : 0.033398,
+  "high" : 0.033553,
+  "low" : 0.032821,
+  "close" : 0.033265,
+  "volume" : 1756.993,
+  "quoteAssetVolume" : 58.2165723,
+  "usdVolume" : 2.072714100142E7,
+  "numberOfTrades" : 703,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHBTC",
+  "openTime" : 1597104000000,
+  "openDate" : null,
+  "closeTime" : 1597190399999,
+  "closeDate" : null,
+  "open" : 0.033294,
+  "high" : 0.033719,
+  "low" : 0.032807,
+  "close" : 0.0333,
+  "volume" : 2025.555,
+  "quoteAssetVolume" : 67.35523907,
+  "usdVolume" : 2.3588063980425E7,
+  "numberOfTrades" : 1928,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHBTC",
+  "openTime" : 1597190400000,
+  "openDate" : null,
+  "closeTime" : 1597276799999,
+  "closeDate" : null,
+  "open" : 0.033276,
+  "high" : 0.033585,
+  "low" : 0.032765,
+  "close" : 0.033455,
+  "volume" : 472.041,
+  "quoteAssetVolume" : 15.66833485,
+  "usdVolume" : 5417083.510875,
+  "numberOfTrades" : 602,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHBTC",
+  "openTime" : 1597276800000,
+  "openDate" : null,
+  "closeTime" : 1597363199999,
+  "closeDate" : null,
+  "open" : 0.0335,
+  "high" : 0.036618,
+  "low" : 0.033456,
+  "close" : 0.036074,
+  "volume" : 1470.724,
+  "quoteAssetVolume" : 51.68278355,
+  "usdVolume" : 1.717433538828E7,
+  "numberOfTrades" : 1470,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHBTC",
+  "openTime" : 1597363200000,
+  "openDate" : null,
+  "closeTime" : 1597449599999,
+  "closeDate" : null,
+  "open" : 0.0361,
+  "high" : 0.037674,
+  "low" : 0.035775,
+  "close" : 0.03724,
+  "volume" : 1520.11,
+  "quoteAssetVolume" : 55.77497758,
+  "usdVolume" : 1.791448874945E7,
+  "numberOfTrades" : 1614,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHBTC",
+  "openTime" : 1597449600000,
+  "openDate" : null,
+  "closeTime" : 1597535999999,
+  "closeDate" : null,
+  "open" : 0.037278,
+  "high" : 0.03731,
+  "low" : 0.035778,
+  "close" : 0.036473,
+  "volume" : 1428.046,
+  "quoteAssetVolume" : 52.35940859,
+  "usdVolume" : 1.687491969234E7,
+  "numberOfTrades" : 897,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHBTC",
+  "openTime" : 1597536000000,
+  "openDate" : null,
+  "closeTime" : 1597622399999,
+  "closeDate" : null,
+  "open" : 0.036483,
+  "high" : 0.036744,
+  "low" : 0.035277,
+  "close" : 0.03648,
+  "volume" : 1581.622,
+  "quoteAssetVolume" : 57.2147154,
+  "usdVolume" : 1.8801254741150003E7,
+  "numberOfTrades" : 831,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHBTC",
+  "openTime" : 1597622400000,
+  "openDate" : null,
+  "closeTime" : 1597708799999,
+  "closeDate" : null,
+  "open" : 0.036405,
+  "high" : 0.036411,
+  "low" : 0.034845,
+  "close" : 0.03502,
+  "volume" : 1427.381,
+  "quoteAssetVolume" : 50.82555108,
+  "usdVolume" : 1.7280388243160002E7,
+  "numberOfTrades" : 1090,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHBTC",
+  "openTime" : 1597708800000,
+  "openDate" : null,
+  "closeTime" : 1597795199999,
+  "closeDate" : null,
+  "open" : 0.035088,
+  "high" : 0.035692,
+  "low" : 0.034753,
+  "close" : 0.03526,
+  "volume" : 765.611,
+  "quoteAssetVolume" : 26.89564416,
+  "usdVolume" : 9283638.20769,
+  "numberOfTrades" : 698,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHBTC",
+  "openTime" : 1597795200000,
+  "openDate" : null,
+  "closeTime" : 1597881599999,
+  "closeDate" : null,
+  "open" : 0.035335,
+  "high" : 0.035498,
+  "low" : 0.03389,
+  "close" : 0.034601,
+  "volume" : 1139.901,
+  "quoteAssetVolume" : 39.57678131,
+  "usdVolume" : 1.350959369655E7,
+  "numberOfTrades" : 715,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHBTC",
+  "openTime" : 1597881600000,
+  "openDate" : null,
+  "closeTime" : 1597967999999,
+  "closeDate" : null,
+  "open" : 0.034726,
+  "high" : 0.035237,
+  "low" : 0.034473,
+  "close" : 0.035099,
+  "volume" : 455.886,
+  "quoteAssetVolume" : 15.89140418,
+  "usdVolume" : 5384430.795690001,
+  "numberOfTrades" : 279,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHBTC",
+  "openTime" : 1597968000000,
+  "openDate" : null,
+  "closeTime" : 1598054399999,
+  "closeDate" : null,
+  "open" : 0.035214,
+  "high" : 0.035229,
+  "low" : 0.033527,
+  "close" : 0.033619,
+  "volume" : 659.35,
+  "quoteAssetVolume" : 22.59935053,
+  "usdVolume" : 7709555.371,
+  "numberOfTrades" : 503,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHBTC",
+  "openTime" : 1598054400000,
+  "openDate" : null,
+  "closeTime" : 1598140799999,
+  "closeDate" : null,
+  "open" : 0.033626,
+  "high" : 0.033977,
+  "low" : 0.033332,
+  "close" : 0.033937,
+  "volume" : 352.77,
+  "quoteAssetVolume" : 11.88318722,
+  "usdVolume" : 4092003.238949999,
+  "numberOfTrades" : 413,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHBTC",
+  "openTime" : 1598140800000,
+  "openDate" : null,
+  "closeTime" : 1598227199999,
+  "closeDate" : null,
+  "open" : 0.033939,
+  "high" : 0.033972,
+  "low" : 0.0333,
+  "close" : 0.033552,
+  "volume" : 452.293,
+  "quoteAssetVolume" : 15.2190393,
+  "usdVolume" : 5275258.345945,
+  "numberOfTrades" : 297,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHBTC",
+  "openTime" : 1598227200000,
+  "openDate" : null,
+  "closeTime" : 1598313599999,
+  "closeDate" : null,
+  "open" : 0.033497,
+  "high" : 0.034791,
+  "low" : 0.033431,
+  "close" : 0.034719,
+  "volume" : 382.317,
+  "quoteAssetVolume" : 13.09514842,
+  "usdVolume" : 4473982.494345,
+  "numberOfTrades" : 425,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHBTC",
+  "openTime" : 1598313600000,
+  "openDate" : null,
+  "closeTime" : 1598399999999,
+  "closeDate" : null,
+  "open" : 0.034719,
+  "high" : 0.034719,
+  "low" : 0.032859,
+  "close" : 0.033758,
+  "volume" : 653.233,
+  "quoteAssetVolume" : 21.97892574,
+  "usdVolume" : 7536538.55857,
+  "numberOfTrades" : 649,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHBTC",
+  "openTime" : 1598400000000,
+  "openDate" : null,
+  "closeTime" : 1598486399999,
+  "closeDate" : null,
+  "open" : 0.033706,
+  "high" : 0.034159,
+  "low" : 0.033506,
+  "close" : 0.033675,
+  "volume" : 495.702,
+  "quoteAssetVolume" : 16.74448652,
+  "usdVolume" : 5645612.04075,
+  "numberOfTrades" : 339,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHBTC",
+  "openTime" : 1598486400000,
+  "openDate" : null,
+  "closeTime" : 1598572799999,
+  "closeDate" : null,
+  "open" : 0.033699,
+  "high" : 0.034253,
+  "low" : 0.033292,
+  "close" : 0.033814,
+  "volume" : 313.055,
+  "quoteAssetVolume" : 10.55296083,
+  "usdVolume" : 3564999.9026250006,
+  "numberOfTrades" : 356,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHBTC",
+  "openTime" : 1598572800000,
+  "openDate" : null,
+  "closeTime" : 1598659199999,
+  "closeDate" : null,
+  "open" : 0.033749,
+  "high" : 0.034516,
+  "low" : 0.033668,
+  "close" : 0.034183,
+  "volume" : 455.019,
+  "quoteAssetVolume" : 15.56384693,
+  "usdVolume" : 5200528.180845,
+  "numberOfTrades" : 267,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHBTC",
+  "openTime" : 1598659200000,
+  "openDate" : null,
+  "closeTime" : 1598745599999,
+  "closeDate" : null,
+  "open" : 0.03423,
+  "high" : 0.035214,
+  "low" : 0.034179,
+  "close" : 0.034761,
+  "volume" : 743.302,
+  "quoteAssetVolume" : 25.94849342,
+  "usdVolume" : 8551407.05524,
+  "numberOfTrades" : 421,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHBTC",
+  "openTime" : 1598745600000,
+  "openDate" : null,
+  "closeTime" : 1598831999999,
+  "closeDate" : null,
+  "open" : 0.034775,
+  "high" : 0.036698,
+  "low" : 0.034775,
+  "close" : 0.036622,
+  "volume" : 903.424,
+  "quoteAssetVolume" : 32.17889885,
+  "usdVolume" : 1.0475973707519999E7,
+  "numberOfTrades" : 603,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHBTC",
+  "openTime" : 1598832000000,
+  "openDate" : null,
+  "closeTime" : 1598918399999,
+  "closeDate" : null,
+  "open" : 0.03662,
+  "high" : 0.037455,
+  "low" : 0.036044,
+  "close" : 0.037309,
+  "volume" : 1457.656,
+  "quoteAssetVolume" : 53.37218291,
+  "usdVolume" : 1.703202526168E7,
+  "numberOfTrades" : 762,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHBTC",
+  "openTime" : 1598918400000,
+  "openDate" : null,
+  "closeTime" : 1599004799999,
+  "closeDate" : null,
+  "open" : 0.037255,
+  "high" : 0.040596,
+  "low" : 0.037096,
+  "close" : 0.03992,
+  "volume" : 1272.626,
+  "quoteAssetVolume" : 49.84187911,
+  "usdVolume" : 1.5002644304979999E7,
+  "numberOfTrades" : 1174,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHBTC",
+  "openTime" : 1599004800000,
+  "openDate" : null,
+  "closeTime" : 1599091199999,
+  "closeDate" : null,
+  "open" : 0.039913,
+  "high" : 0.040436,
+  "low" : 0.037481,
+  "close" : 0.038571,
+  "volume" : 1770.559,
+  "quoteAssetVolume" : 68.78693207,
+  "usdVolume" : 2.064857775862E7,
+  "numberOfTrades" : 1830,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHBTC",
+  "openTime" : 1599091200000,
+  "openDate" : null,
+  "closeTime" : 1599177599999,
+  "closeDate" : null,
+  "open" : 0.038558,
+  "high" : 0.039394,
+  "low" : 0.036495,
+  "close" : 0.037578,
+  "volume" : 1531.162,
+  "quoteAssetVolume" : 57.86875786,
+  "usdVolume" : 1.650977723243E7,
+  "numberOfTrades" : 2050,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHBTC",
+  "openTime" : 1599177600000,
+  "openDate" : null,
+  "closeTime" : 1599263999999,
+  "closeDate" : null,
+  "open" : 0.037569,
+  "high" : 0.038097,
+  "low" : 0.036239,
+  "close" : 0.037005,
+  "volume" : 769.964,
+  "quoteAssetVolume" : 28.69713923,
+  "usdVolume" : 7942482.795780001,
+  "numberOfTrades" : 823,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHBTC",
+  "openTime" : 1599264000000,
+  "openDate" : null,
+  "closeTime" : 1599350399999,
+  "closeDate" : null,
+  "open" : 0.036835,
+  "high" : 0.03733,
+  "low" : 0.031465,
+  "close" : 0.032968,
+  "volume" : 3461.526,
+  "quoteAssetVolume" : 116.63140445,
+  "usdVolume" : 3.57129098946E7,
+  "numberOfTrades" : 2910,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHBTC",
+  "openTime" : 1599350400000,
+  "openDate" : null,
+  "closeTime" : 1599436799999,
+  "closeDate" : null,
+  "open" : 0.032954,
+  "high" : 0.034817,
+  "low" : 0.031691,
+  "close" : 0.0345,
+  "volume" : 1418.044,
+  "quoteAssetVolume" : 47.44189759,
+  "usdVolume" : 1.4478285961760003E7,
+  "numberOfTrades" : 1261,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHBTC",
+  "openTime" : 1599436800000,
+  "openDate" : null,
+  "closeTime" : 1599523199999,
+  "closeDate" : null,
+  "open" : 0.034446,
+  "high" : 0.034757,
+  "low" : 0.032757,
+  "close" : 0.034091,
+  "volume" : 4130.87,
+  "quoteAssetVolume" : 140.01765039,
+  "usdVolume" : 4.25999686533E7,
+  "numberOfTrades" : 2906,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHBTC",
+  "openTime" : 1599523200000,
+  "openDate" : null,
+  "closeTime" : 1599609599999,
+  "closeDate" : null,
+  "open" : 0.034112,
+  "high" : 0.034122,
+  "low" : 0.033,
+  "close" : 0.033306,
+  "volume" : 698.266,
+  "quoteAssetVolume" : 23.40280839,
+  "usdVolume" : 7153815.470590001,
+  "numberOfTrades" : 601,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHBTC",
+  "openTime" : 1599609600000,
+  "openDate" : null,
+  "closeTime" : 1599695999999,
+  "closeDate" : null,
+  "open" : 0.033295,
+  "high" : 0.034715,
+  "low" : 0.033165,
+  "close" : 0.034294,
+  "volume" : 821.797,
+  "quoteAssetVolume" : 27.98286046,
+  "usdVolume" : 8360210.733744999,
+  "numberOfTrades" : 667,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHBTC",
+  "openTime" : 1599696000000,
+  "openDate" : null,
+  "closeTime" : 1599782399999,
+  "closeDate" : null,
+  "open" : 0.034309,
+  "high" : 0.03607,
+  "low" : 0.034294,
+  "close" : 0.03551,
+  "volume" : 1303.009,
+  "quoteAssetVolume" : 46.28987116,
+  "usdVolume" : 1.339645704053E7,
+  "numberOfTrades" : 1078,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHBTC",
+  "openTime" : 1599782400000,
+  "openDate" : null,
+  "closeTime" : 1599868799999,
+  "closeDate" : null,
+  "open" : 0.035633,
+  "high" : 0.036076,
+  "low" : 0.034892,
+  "close" : 0.03601,
+  "volume" : 689.202,
+  "quoteAssetVolume" : 24.53841217,
+  "usdVolume" : 7145625.659940001,
+  "numberOfTrades" : 595,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHBTC",
+  "openTime" : 1599868800000,
+  "openDate" : null,
+  "closeTime" : 1599955199999,
+  "closeDate" : null,
+  "open" : 0.035848,
+  "high" : 0.037144,
+  "low" : 0.035437,
+  "close" : 0.037144,
+  "volume" : 639.39,
+  "quoteAssetVolume" : 23.32849145,
+  "usdVolume" : 6661743.667949999,
+  "numberOfTrades" : 648,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHBTC",
+  "openTime" : 1599955200000,
+  "openDate" : null,
+  "closeTime" : 1600041599999,
+  "closeDate" : null,
+  "open" : 0.037142,
+  "high" : 0.037142,
+  "low" : 0.034596,
+  "close" : 0.035413,
+  "volume" : 1502.258,
+  "quoteAssetVolume" : 53.5264698,
+  "usdVolume" : 1.560176806061E7,
+  "numberOfTrades" : 1195,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHBTC",
+  "openTime" : 1600041600000,
+  "openDate" : null,
+  "closeTime" : 1600127999999,
+  "closeDate" : null,
+  "open" : 0.03539,
+  "high" : 0.035848,
+  "low" : 0.034741,
+  "close" : 0.035317,
+  "volume" : 674.372,
+  "quoteAssetVolume" : 23.7504929,
+  "usdVolume" : 7080976.809059999,
+  "numberOfTrades" : 749,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHBTC",
+  "openTime" : 1600128000000,
+  "openDate" : null,
+  "closeTime" : 1600214399999,
+  "closeDate" : null,
+  "open" : 0.035358,
+  "high" : 0.035459,
+  "low" : 0.033612,
+  "close" : 0.033815,
+  "volume" : 680.375,
+  "quoteAssetVolume" : 23.51225563,
+  "usdVolume" : 7299930.478124999,
+  "numberOfTrades" : 847,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHBTC",
+  "openTime" : 1600214400000,
+  "openDate" : null,
+  "closeTime" : 1600300799999,
+  "closeDate" : null,
+  "open" : 0.033739,
+  "high" : 0.033802,
+  "low" : 0.03316,
+  "close" : 0.033325,
+  "volume" : 518.941,
+  "quoteAssetVolume" : 17.34346572,
+  "usdVolume" : 5639017.8876950005,
+  "numberOfTrades" : 525,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHBTC",
+  "openTime" : 1600300800000,
+  "openDate" : null,
+  "closeTime" : 1600387199999,
+  "closeDate" : null,
+  "open" : 0.03329,
+  "high" : 0.036057,
+  "low" : 0.03329,
+  "close" : 0.035628,
+  "volume" : 940.413,
+  "quoteAssetVolume" : 32.99270394,
+  "usdVolume" : 1.0294677600674998E7,
+  "numberOfTrades" : 1067,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHBTC",
+  "openTime" : 1600387200000,
+  "openDate" : null,
+  "closeTime" : 1600473599999,
+  "closeDate" : null,
+  "open" : 0.035604,
+  "high" : 0.035736,
+  "low" : 0.034725,
+  "close" : 0.035162,
+  "volume" : 689.413,
+  "quoteAssetVolume" : 24.32198283,
+  "usdVolume" : 7541102.73572,
+  "numberOfTrades" : 675,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHBTC",
+  "openTime" : 1600473600000,
+  "openDate" : null,
+  "closeTime" : 1600559999999,
+  "closeDate" : null,
+  "open" : 0.035141,
+  "high" : 0.035141,
+  "low" : 0.034526,
+  "close" : 0.034786,
+  "volume" : 946.788,
+  "quoteAssetVolume" : 32.84891602,
+  "usdVolume" : 1.0421877790620001E7,
+  "numberOfTrades" : 359,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHBTC",
+  "openTime" : 1600560000000,
+  "openDate" : null,
+  "closeTime" : 1600646399999,
+  "closeDate" : null,
+  "open" : 0.034705,
+  "high" : 0.034851,
+  "low" : 0.033802,
+  "close" : 0.033954,
+  "volume" : 711.609,
+  "quoteAssetVolume" : 24.46367741,
+  "usdVolume" : 7826311.36245,
+  "numberOfTrades" : 608,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHBTC",
+  "openTime" : 1600646400000,
+  "openDate" : null,
+  "closeTime" : 1600732799999,
+  "closeDate" : null,
+  "open" : 0.03388,
+  "high" : 0.0343,
+  "low" : 0.03209,
+  "close" : 0.032746,
+  "volume" : 667.302,
+  "quoteAssetVolume" : 22.0988876,
+  "usdVolume" : 7116098.5184700005,
+  "numberOfTrades" : 610,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHBTC",
+  "openTime" : 1600732800000,
+  "openDate" : null,
+  "closeTime" : 1600819199999,
+  "closeDate" : null,
+  "open" : 0.032641,
+  "high" : 0.03304,
+  "low" : 0.03235,
+  "close" : 0.032611,
+  "volume" : 307.257,
+  "quoteAssetVolume" : 10.04264787,
+  "usdVolume" : 3218082.306345,
+  "numberOfTrades" : 336,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHBTC",
+  "openTime" : 1600819200000,
+  "openDate" : null,
+  "closeTime" : 1600905599999,
+  "closeDate" : null,
+  "open" : 0.032673,
+  "high" : 0.03272,
+  "low" : 0.030927,
+  "close" : 0.031285,
+  "volume" : 1473.775,
+  "quoteAssetVolume" : 46.81672933,
+  "usdVolume" : 1.5301505781875003E7,
+  "numberOfTrades" : 577,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHBTC",
+  "openTime" : 1600905600000,
+  "openDate" : null,
+  "closeTime" : 1600991999999,
+  "closeDate" : null,
+  "open" : 0.031301,
+  "high" : 0.03285,
+  "low" : 0.031072,
+  "close" : 0.032503,
+  "volume" : 840.567,
+  "quoteAssetVolume" : 27.07092077,
+  "usdVolume" : 8820380.540789999,
+  "numberOfTrades" : 449,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHBTC",
+  "openTime" : 1600992000000,
+  "openDate" : null,
+  "closeTime" : 1601078399999,
+  "closeDate" : null,
+  "open" : 0.032503,
+  "high" : 0.033271,
+  "low" : 0.031861,
+  "close" : 0.032852,
+  "volume" : 897.58,
+  "quoteAssetVolume" : 29.18160961,
+  "usdVolume" : 9617910.7804,
+  "numberOfTrades" : 367,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHBTC",
+  "openTime" : 1601078400000,
+  "openDate" : null,
+  "closeTime" : 1601164799999,
+  "closeDate" : null,
+  "open" : 0.032945,
+  "high" : 0.03313,
+  "low" : 0.032469,
+  "close" : 0.033054,
+  "volume" : 271.556,
+  "quoteAssetVolume" : 8.91785236,
+  "usdVolume" : 2912586.09802,
+  "numberOfTrades" : 235,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHBTC",
+  "openTime" : 1601164800000,
+  "openDate" : null,
+  "closeTime" : 1601251199999,
+  "closeDate" : null,
+  "open" : 0.032987,
+  "high" : 0.033544,
+  "low" : 0.0328,
+  "close" : 0.033141,
+  "volume" : 599.205,
+  "quoteAssetVolume" : 19.83523312,
+  "usdVolume" : 6442780.989075,
+  "numberOfTrades" : 488,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHBTC",
+  "openTime" : 1601251200000,
+  "openDate" : null,
+  "closeTime" : 1601337599999,
+  "closeDate" : null,
+  "open" : 0.033173,
+  "high" : 0.03367,
+  "low" : 0.032744,
+  "close" : 0.033148,
+  "volume" : 620.866,
+  "quoteAssetVolume" : 20.60386159,
+  "usdVolume" : 6664614.677409999,
+  "numberOfTrades" : 366,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHBTC",
+  "openTime" : 1601337600000,
+  "openDate" : null,
+  "closeTime" : 1601423999999,
+  "closeDate" : null,
+  "open" : 0.033019,
+  "high" : 0.033319,
+  "low" : 0.032875,
+  "close" : 0.033171,
+  "volume" : 323.24,
+  "quoteAssetVolume" : 10.71117564,
+  "usdVolume" : 3478277.3546,
+  "numberOfTrades" : 270,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHBTC",
+  "openTime" : 1601424000000,
+  "openDate" : null,
+  "closeTime" : 1601510399999,
+  "closeDate" : null,
+  "open" : 0.033172,
+  "high" : 0.033514,
+  "low" : 0.032984,
+  "close" : 0.033359,
+  "volume" : 225.459,
+  "quoteAssetVolume" : 7.48148856,
+  "usdVolume" : 2437139.64312,
+  "numberOfTrades" : 176,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHBTC",
+  "openTime" : 1601510400000,
+  "openDate" : null,
+  "closeTime" : 1601596799999,
+  "closeDate" : null,
+  "open" : 0.033328,
+  "high" : 0.033836,
+  "low" : 0.033045,
+  "close" : 0.033206,
+  "volume" : 893.154,
+  "quoteAssetVolume" : 29.96106575,
+  "usdVolume" : 9555760.86483,
+  "numberOfTrades" : 708,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHBTC",
+  "openTime" : 1601596800000,
+  "openDate" : null,
+  "closeTime" : 1601683199999,
+  "closeDate" : null,
+  "open" : 0.033186,
+  "high" : 0.0333,
+  "low" : 0.03222,
+  "close" : 0.03278,
+  "volume" : 1198.783,
+  "quoteAssetVolume" : 39.17277882,
+  "usdVolume" : 1.2689597568199998E7,
+  "numberOfTrades" : 753,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHBTC",
+  "openTime" : 1601683200000,
+  "openDate" : null,
+  "closeTime" : 1601769599999,
+  "closeDate" : null,
+  "open" : 0.032707,
+  "high" : 0.033132,
+  "low" : 0.032634,
+  "close" : 0.032778,
+  "volume" : 233.001,
+  "quoteAssetVolume" : 7.68187809,
+  "usdVolume" : 2460988.0171350003,
+  "numberOfTrades" : 200,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHBTC",
+  "openTime" : 1601769600000,
+  "openDate" : null,
+  "closeTime" : 1601855999999,
+  "closeDate" : null,
+  "open" : 0.03288,
+  "high" : 0.033114,
+  "low" : 0.032672,
+  "close" : 0.033033,
+  "volume" : 311.386,
+  "quoteAssetVolume" : 10.2434089,
+  "usdVolume" : 3304084.15047,
+  "numberOfTrades" : 158,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHBTC",
+  "openTime" : 1601856000000,
+  "openDate" : null,
+  "closeTime" : 1601942399999,
+  "closeDate" : null,
+  "open" : 0.033082,
+  "high" : 0.033133,
+  "low" : 0.032725,
+  "close" : 0.032783,
+  "volume" : 246.349,
+  "quoteAssetVolume" : 8.09667911,
+  "usdVolume" : 2643324.77,
+  "numberOfTrades" : 135,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHBTC",
+  "openTime" : 1601942400000,
+  "openDate" : null,
+  "closeTime" : 1602028799999,
+  "closeDate" : null,
+  "open" : 0.032838,
+  "high" : 0.032917,
+  "low" : 0.031998,
+  "close" : 0.032128,
+  "volume" : 664.182,
+  "quoteAssetVolume" : 21.5814794,
+  "usdVolume" : 7107879.83031,
+  "numberOfTrades" : 566,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHBTC",
+  "openTime" : 1602028800000,
+  "openDate" : null,
+  "closeTime" : 1602115199999,
+  "closeDate" : null,
+  "open" : 0.032112,
+  "high" : 0.032182,
+  "low" : 0.031583,
+  "close" : 0.032005,
+  "volume" : 304.337,
+  "quoteAssetVolume" : 9.70314345,
+  "usdVolume" : 3237567.4396999995,
+  "numberOfTrades" : 344,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHBTC",
+  "openTime" : 1602115200000,
+  "openDate" : null,
+  "closeTime" : 1602201599999,
+  "closeDate" : null,
+  "open" : 0.032047,
+  "high" : 0.032365,
+  "low" : 0.031698,
+  "close" : 0.032111,
+  "volume" : 317.801,
+  "quoteAssetVolume" : 10.17168319,
+  "usdVolume" : 3431229.069785,
+  "numberOfTrades" : 309,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHBTC",
+  "openTime" : 1602201600000,
+  "openDate" : null,
+  "closeTime" : 1602287999999,
+  "closeDate" : null,
+  "open" : 0.032111,
+  "high" : 0.033205,
+  "low" : 0.032064,
+  "close" : 0.033038,
+  "volume" : 440.181,
+  "quoteAssetVolume" : 14.45570888,
+  "usdVolume" : 4839114.417165,
+  "numberOfTrades" : 308,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHBTC",
+  "openTime" : 1602288000000,
+  "openDate" : null,
+  "closeTime" : 1602374399999,
+  "closeDate" : null,
+  "open" : 0.033035,
+  "high" : 0.033265,
+  "low" : 0.032748,
+  "close" : 0.032787,
+  "volume" : 654.552,
+  "quoteAssetVolume" : 21.6039148,
+  "usdVolume" : 7317845.54136,
+  "numberOfTrades" : 384,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHBTC",
+  "openTime" : 1602374400000,
+  "openDate" : null,
+  "closeTime" : 1602460799999,
+  "closeDate" : null,
+  "open" : 0.032795,
+  "high" : 0.033076,
+  "low" : 0.032688,
+  "close" : 0.03289,
+  "volume" : 491.424,
+  "quoteAssetVolume" : 16.12135911,
+  "usdVolume" : 5571042.91872,
+  "numberOfTrades" : 250,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHBTC",
+  "openTime" : 1602460800000,
+  "openDate" : null,
+  "closeTime" : 1602547199999,
+  "closeDate" : null,
+  "open" : 0.032894,
+  "high" : 0.033773,
+  "low" : 0.032554,
+  "close" : 0.033538,
+  "volume" : 1050.053,
+  "quoteAssetVolume" : 34.93395255,
+  "usdVolume" : 1.2028897892295001E7,
+  "numberOfTrades" : 678,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHBTC",
+  "openTime" : 1602547200000,
+  "openDate" : null,
+  "closeTime" : 1602633599999,
+  "closeDate" : null,
+  "open" : 0.033523,
+  "high" : 0.033605,
+  "low" : 0.033134,
+  "close" : 0.033327,
+  "volume" : 861.784,
+  "quoteAssetVolume" : 28.74084311,
+  "usdVolume" : 9892810.64772,
+  "numberOfTrades" : 678,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHBTC",
+  "openTime" : 1602633600000,
+  "openDate" : null,
+  "closeTime" : 1602719999999,
+  "closeDate" : null,
+  "open" : 0.033372,
+  "high" : 0.033615,
+  "low" : 0.032994,
+  "close" : 0.033211,
+  "volume" : 641.914,
+  "quoteAssetVolume" : 21.3509512,
+  "usdVolume" : 7334451.59174,
+  "numberOfTrades" : 742,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHBTC",
+  "openTime" : 1602720000000,
+  "openDate" : null,
+  "closeTime" : 1602806399999,
+  "closeDate" : null,
+  "open" : 0.033177,
+  "high" : 0.033297,
+  "low" : 0.032782,
+  "close" : 0.032831,
+  "volume" : 692.787,
+  "quoteAssetVolume" : 22.8327444,
+  "usdVolume" : 7941188.761290001,
+  "numberOfTrades" : 641,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHBTC",
+  "openTime" : 1602806400000,
+  "openDate" : null,
+  "closeTime" : 1602892799999,
+  "closeDate" : null,
+  "open" : 0.032805,
+  "high" : 0.032924,
+  "low" : 0.032199,
+  "close" : 0.032294,
+  "volume" : 1051.285,
+  "quoteAssetVolume" : 34.20554082,
+  "usdVolume" : 1.200255238355E7,
+  "numberOfTrades" : 983,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHBTC",
+  "openTime" : 1602892800000,
+  "openDate" : null,
+  "closeTime" : 1602979199999,
+  "closeDate" : null,
+  "open" : 0.032276,
+  "high" : 0.032489,
+  "low" : 0.032226,
+  "close" : 0.032432,
+  "volume" : 313.164,
+  "quoteAssetVolume" : 10.14479606,
+  "usdVolume" : 3553260.5223000003,
+  "numberOfTrades" : 407,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHBTC",
+  "openTime" : 1602979200000,
+  "openDate" : null,
+  "closeTime" : 1603065599999,
+  "closeDate" : null,
+  "open" : 0.032394,
+  "high" : 0.032949,
+  "low" : 0.032367,
+  "close" : 0.032863,
+  "volume" : 418.931,
+  "quoteAssetVolume" : 13.69254424,
+  "usdVolume" : 4792189.4127899995,
+  "numberOfTrades" : 434,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHBTC",
+  "openTime" : 1603065600000,
+  "openDate" : null,
+  "closeTime" : 1603151999999,
+  "closeDate" : null,
+  "open" : 0.032839,
+  "high" : 0.032839,
+  "low" : 0.032209,
+  "close" : 0.032251,
+  "volume" : 199.125,
+  "quoteAssetVolume" : 6.48373618,
+  "usdVolume" : 2317107.1106249997,
+  "numberOfTrades" : 215,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHBTC",
+  "openTime" : 1603152000000,
+  "openDate" : null,
+  "closeTime" : 1603238399999,
+  "closeDate" : null,
+  "open" : 0.032282,
+  "high" : 0.032386,
+  "low" : 0.030872,
+  "close" : 0.030923,
+  "volume" : 795.17,
+  "quoteAssetVolume" : 24.80335204,
+  "usdVolume" : 9416307.7196,
+  "numberOfTrades" : 483,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHBTC",
+  "openTime" : 1603238400000,
+  "openDate" : null,
+  "closeTime" : 1603324799999,
+  "closeDate" : null,
+  "open" : 0.030909,
+  "high" : 0.031169,
+  "low" : 0.030276,
+  "close" : 0.030535,
+  "volume" : 1461.37,
+  "quoteAssetVolume" : 44.97217196,
+  "usdVolume" : 1.80749840724E7,
+  "numberOfTrades" : 1221,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHBTC",
+  "openTime" : 1603324800000,
+  "openDate" : null,
+  "closeTime" : 1603411199999,
+  "closeDate" : null,
+  "open" : 0.030539,
+  "high" : 0.032168,
+  "low" : 0.030481,
+  "close" : 0.031918,
+  "volume" : 999.251,
+  "quoteAssetVolume" : 31.57486614,
+  "usdVolume" : 1.288577132293E7,
+  "numberOfTrades" : 1179,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHBTC",
+  "openTime" : 1603411200000,
+  "openDate" : null,
+  "closeTime" : 1603497599999,
+  "closeDate" : null,
+  "open" : 0.031923,
+  "high" : 0.032218,
+  "low" : 0.031533,
+  "close" : 0.031661,
+  "volume" : 785.945,
+  "quoteAssetVolume" : 25.10257275,
+  "usdVolume" : 1.0188279699775001E7,
+  "numberOfTrades" : 709,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHBTC",
+  "openTime" : 1603497600000,
+  "openDate" : null,
+  "closeTime" : 1603583999999,
+  "closeDate" : null,
+  "open" : 0.031642,
+  "high" : 0.031923,
+  "low" : 0.03126,
+  "close" : 0.031424,
+  "volume" : 879.831,
+  "quoteAssetVolume" : 27.82385079,
+  "usdVolume" : 1.146405715704E7,
+  "numberOfTrades" : 740,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHBTC",
+  "openTime" : 1603584000000,
+  "openDate" : null,
+  "closeTime" : 1603670399999,
+  "closeDate" : null,
+  "open" : 0.03139,
+  "high" : 0.031608,
+  "low" : 0.031129,
+  "close" : 0.031155,
+  "volume" : 644.385,
+  "quoteAssetVolume" : 20.19110622,
+  "usdVolume" : 8427009.275999999,
+  "numberOfTrades" : 729,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHBTC",
+  "openTime" : 1603670400000,
+  "openDate" : null,
+  "closeTime" : 1603756799999,
+  "closeDate" : null,
+  "open" : 0.031114,
+  "high" : 0.031333,
+  "low" : 0.029841,
+  "close" : 0.030098,
+  "volume" : 989.869,
+  "quoteAssetVolume" : 30.21425289,
+  "usdVolume" : 1.2925729199380001E7,
+  "numberOfTrades" : 992,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHBTC",
+  "openTime" : 1603756800000,
+  "openDate" : null,
+  "closeTime" : 1603843199999,
+  "closeDate" : null,
+  "open" : 0.030089,
+  "high" : 0.030272,
+  "low" : 0.029405,
+  "close" : 0.029558,
+  "volume" : 507.558,
+  "quoteAssetVolume" : 15.14696603,
+  "usdVolume" : 6779211.11595,
+  "numberOfTrades" : 545,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHBTC",
+  "openTime" : 1603843200000,
+  "openDate" : null,
+  "closeTime" : 1603929599999,
+  "closeDate" : null,
+  "open" : 0.029539,
+  "high" : 0.02976,
+  "low" : 0.028798,
+  "close" : 0.029278,
+  "volume" : 505.35,
+  "quoteAssetVolume" : 14.78392697,
+  "usdVolume" : 6804143.577,
+  "numberOfTrades" : 415,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHBTC",
+  "openTime" : 1603929600000,
+  "openDate" : null,
+  "closeTime" : 1604015999999,
+  "closeDate" : null,
+  "open" : 0.029298,
+  "high" : 0.029528,
+  "low" : 0.028606,
+  "close" : 0.028762,
+  "volume" : 332.76,
+  "quoteAssetVolume" : 9.68326518,
+  "usdVolume" : 4448600.2242,
+  "numberOfTrades" : 296,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHBTC",
+  "openTime" : 1604016000000,
+  "openDate" : null,
+  "closeTime" : 1604102399999,
+  "closeDate" : null,
+  "open" : 0.02874,
+  "high" : 0.028946,
+  "low" : 0.02809,
+  "close" : 0.028225,
+  "volume" : 660.566,
+  "quoteAssetVolume" : 18.81610375,
+  "usdVolume" : 8925742.84199,
+  "numberOfTrades" : 542,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHBTC",
+  "openTime" : 1604102400000,
+  "openDate" : null,
+  "closeTime" : 1604188799999,
+  "closeDate" : null,
+  "open" : 0.028152,
+  "high" : 0.028422,
+  "low" : 0.027946,
+  "close" : 0.027969,
+  "volume" : 627.06,
+  "quoteAssetVolume" : 17.6394223,
+  "usdVolume" : 8583733.416299999,
+  "numberOfTrades" : 343,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHBTC",
+  "openTime" : 1604188800000,
+  "openDate" : null,
+  "closeTime" : 1604275199999,
+  "closeDate" : null,
+  "open" : 0.028045,
+  "high" : 0.028864,
+  "low" : 0.028038,
+  "close" : 0.028845,
+  "volume" : 286.099,
+  "quoteAssetVolume" : 8.11950687,
+  "usdVolume" : 3943162.3284899998,
+  "numberOfTrades" : 269,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHBTC",
+  "openTime" : 1604275200000,
+  "openDate" : null,
+  "closeTime" : 1604361599999,
+  "closeDate" : null,
+  "open" : 0.028823,
+  "high" : 0.029338,
+  "low" : 0.028163,
+  "close" : 0.028282,
+  "volume" : 697.87,
+  "quoteAssetVolume" : 20.07639999,
+  "usdVolume" : 9537545.0355,
+  "numberOfTrades" : 429,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHBTC",
+  "openTime" : 1604361600000,
+  "openDate" : null,
+  "closeTime" : 1604447999999,
+  "closeDate" : null,
+  "open" : 0.028328,
+  "high" : 0.028373,
+  "low" : 0.027678,
+  "close" : 0.027678,
+  "volume" : 311.884,
+  "quoteAssetVolume" : 8.72342033,
+  "usdVolume" : 4302481.88434,
+  "numberOfTrades" : 323,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHBTC",
+  "openTime" : 1604448000000,
+  "openDate" : null,
+  "closeTime" : 1604534399999,
+  "closeDate" : null,
+  "open" : 0.027661,
+  "high" : 0.028783,
+  "low" : 0.027547,
+  "close" : 0.028407,
+  "volume" : 851.72,
+  "quoteAssetVolume" : 24.09209579,
+  "usdVolume" : 1.20046356776E7,
+  "numberOfTrades" : 615,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHBTC",
+  "openTime" : 1604534400000,
+  "openDate" : null,
+  "closeTime" : 1604620799999,
+  "closeDate" : null,
+  "open" : 0.028514,
+  "high" : 0.028616,
+  "low" : 0.026573,
+  "close" : 0.02668,
+  "volume" : 962.363,
+  "quoteAssetVolume" : 26.43453228,
+  "usdVolume" : 1.432102966293E7,
+  "numberOfTrades" : 782,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHBTC",
+  "openTime" : 1604620800000,
+  "openDate" : null,
+  "closeTime" : 1604707199999,
+  "closeDate" : null,
+  "open" : 0.026732,
+  "high" : 0.02931,
+  "low" : 0.026673,
+  "close" : 0.02925,
+  "volume" : 1004.791,
+  "quoteAssetVolume" : 28.29486816,
+  "usdVolume" : 1.5677085786985E7,
+  "numberOfTrades" : 880,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHBTC",
+  "openTime" : 1604707200000,
+  "openDate" : null,
+  "closeTime" : 1604793599999,
+  "closeDate" : null,
+  "open" : 0.029299,
+  "high" : 0.029924,
+  "low" : 0.028922,
+  "close" : 0.029368,
+  "volume" : 1219.563,
+  "quoteAssetVolume" : 35.86425339,
+  "usdVolume" : 1.856243181528E7,
+  "numberOfTrades" : 1115,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHBTC",
+  "openTime" : 1604793600000,
+  "openDate" : null,
+  "closeTime" : 1604879999999,
+  "closeDate" : null,
+  "open" : 0.029344,
+  "high" : 0.029662,
+  "low" : 0.029132,
+  "close" : 0.029367,
+  "volume" : 434.203,
+  "quoteAssetVolume" : 12.76174472,
+  "usdVolume" : 6583876.53539,
+  "numberOfTrades" : 381,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ETHBTC",
+  "openTime" : 1604880000000,
+  "openDate" : null,
+  "closeTime" : 1604966399999,
+  "closeDate" : null,
+  "open" : 0.029341,
+  "high" : 0.029432,
+  "low" : 0.028996,
+  "close" : 0.029047,
+  "volume" : 400.39,
+  "quoteAssetVolume" : 11.69308867,
+  "usdVolume" : 6174069.854599999,
+  "numberOfTrades" : 309,
   "rsi" : 0.0
 } ]

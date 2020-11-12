@@ -1,0 +1,31 @@
+[ {
+  "symbol" : "ZILBUSD",
+  "openTime" : 1604880000000,
+  "openDate" : null,
+  "closeTime" : 1604923199999,
+  "closeDate" : null,
+  "open" : 0.01941,
+  "high" : 0.01965,
+  "low" : 0.01892,
+  "close" : 0.01925,
+  "volume" : 228108.8,
+  "quoteAssetVolume" : 4379.12755,
+  "usdVolume" : null,
+  "numberOfTrades" : 39,
+  "rsi" : 0.0
+}, {
+  "symbol" : "ZILBUSD",
+  "openTime" : 1604923200000,
+  "openDate" : null,
+  "closeTime" : 1604966399999,
+  "closeDate" : null,
+  "open" : 0.01938,
+  "high" : 0.01938,
+  "low" : 0.01876,
+  "close" : 0.01882,
+  "volume" : 143969.6,
+  "quoteAssetVolume" : 2737.856541,
+  "usdVolume" : null,
+  "numberOfTrades" : 26,
+  "rsi" : 0.0
+} ]

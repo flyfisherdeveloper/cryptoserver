@@ -1,747 +1,5 @@
 [ {
   "symbol" : "XRPUSD",
-  "openTime" : 1568764800000,
-  "openDate" : null,
-  "closeTime" : 1568851199999,
-  "closeDate" : null,
-  "open" : 0.32,
-  "high" : 0.32,
-  "low" : 0.32,
-  "close" : 0.32,
-  "volume" : 10.0,
-  "quoteAssetVolume" : 3.2,
-  "numberOfTrades" : 1,
-  "rsi" : 0.0
-}, {
-  "symbol" : "XRPUSD",
-  "openTime" : 1568851200000,
-  "openDate" : null,
-  "closeTime" : 1568937599999,
-  "closeDate" : null,
-  "open" : 0.32,
-  "high" : 0.32,
-  "low" : 0.32,
-  "close" : 0.32,
-  "volume" : 0.0,
-  "quoteAssetVolume" : 0.0,
-  "numberOfTrades" : 0,
-  "rsi" : 0.0
-}, {
-  "symbol" : "XRPUSD",
-  "openTime" : 1568937600000,
-  "openDate" : null,
-  "closeTime" : 1569023999999,
-  "closeDate" : null,
-  "open" : 0.32,
-  "high" : 0.32,
-  "low" : 0.32,
-  "close" : 0.32,
-  "volume" : 0.0,
-  "quoteAssetVolume" : 0.0,
-  "numberOfTrades" : 0,
-  "rsi" : 0.0
-}, {
-  "symbol" : "XRPUSD",
-  "openTime" : 1569024000000,
-  "openDate" : null,
-  "closeTime" : 1569110399999,
-  "closeDate" : null,
-  "open" : 0.32,
-  "high" : 0.32,
-  "low" : 0.32,
-  "close" : 0.32,
-  "volume" : 0.0,
-  "quoteAssetVolume" : 0.0,
-  "numberOfTrades" : 0,
-  "rsi" : 0.0
-}, {
-  "symbol" : "XRPUSD",
-  "openTime" : 1569110400000,
-  "openDate" : null,
-  "closeTime" : 1569196799999,
-  "closeDate" : null,
-  "open" : 0.32,
-  "high" : 0.32,
-  "low" : 0.32,
-  "close" : 0.32,
-  "volume" : 0.0,
-  "quoteAssetVolume" : 0.0,
-  "numberOfTrades" : 0,
-  "rsi" : 0.0
-}, {
-  "symbol" : "XRPUSD",
-  "openTime" : 1569196800000,
-  "openDate" : null,
-  "closeTime" : 1569283199999,
-  "closeDate" : null,
-  "open" : 0.3212,
-  "high" : 0.3212,
-  "low" : 0.3212,
-  "close" : 0.3212,
-  "volume" : 1.0,
-  "quoteAssetVolume" : 0.3212,
-  "numberOfTrades" : 1,
-  "rsi" : 0.0
-}, {
-  "symbol" : "XRPUSD",
-  "openTime" : 1569283200000,
-  "openDate" : null,
-  "closeTime" : 1569369599999,
-  "closeDate" : null,
-  "open" : 0.2664,
-  "high" : 0.3212,
-  "low" : 0.222,
-  "close" : 0.2374,
-  "volume" : 425228.8,
-  "quoteAssetVolume" : 103013.4491,
-  "numberOfTrades" : 697,
-  "rsi" : 0.0
-}, {
-  "symbol" : "XRPUSD",
-  "openTime" : 1569369600000,
-  "openDate" : null,
-  "closeTime" : 1569455999999,
-  "closeDate" : null,
-  "open" : 0.2374,
-  "high" : 0.2493,
-  "low" : 0.2331,
-  "close" : 0.246,
-  "volume" : 260995.3,
-  "quoteAssetVolume" : 63150.4114,
-  "numberOfTrades" : 437,
-  "rsi" : 0.0
-}, {
-  "symbol" : "XRPUSD",
-  "openTime" : 1569456000000,
-  "openDate" : null,
-  "closeTime" : 1569542399999,
-  "closeDate" : null,
-  "open" : 0.2445,
-  "high" : 0.2499,
-  "low" : 0.23,
-  "close" : 0.2429,
-  "volume" : 493005.0,
-  "quoteAssetVolume" : 118654.0272,
-  "numberOfTrades" : 425,
-  "rsi" : 0.0
-}, {
-  "symbol" : "XRPUSD",
-  "openTime" : 1569542400000,
-  "openDate" : null,
-  "closeTime" : 1569628799999,
-  "closeDate" : null,
-  "open" : 0.2426,
-  "high" : 0.2453,
-  "low" : 0.2343,
-  "close" : 0.2428,
-  "volume" : 475632.3,
-  "quoteAssetVolume" : 114264.363,
-  "numberOfTrades" : 503,
-  "rsi" : 0.0
-}, {
-  "symbol" : "XRPUSD",
-  "openTime" : 1569628800000,
-  "openDate" : null,
-  "closeTime" : 1569715199999,
-  "closeDate" : null,
-  "open" : 0.2425,
-  "high" : 0.2446,
-  "low" : 0.239,
-  "close" : 0.2425,
-  "volume" : 264784.7,
-  "quoteAssetVolume" : 64044.2012,
-  "numberOfTrades" : 281,
-  "rsi" : 0.0
-}, {
-  "symbol" : "XRPUSD",
-  "openTime" : 1569715200000,
-  "openDate" : null,
-  "closeTime" : 1569801599999,
-  "closeDate" : null,
-  "open" : 0.2423,
-  "high" : 0.2424,
-  "low" : 0.235,
-  "close" : 0.2405,
-  "volume" : 312255.8,
-  "quoteAssetVolume" : 74466.527,
-  "numberOfTrades" : 355,
-  "rsi" : 0.0
-}, {
-  "symbol" : "XRPUSD",
-  "openTime" : 1569801600000,
-  "openDate" : null,
-  "closeTime" : 1569887999999,
-  "closeDate" : null,
-  "open" : 0.2406,
-  "high" : 0.2615,
-  "low" : 0.2361,
-  "close" : 0.2571,
-  "volume" : 990284.7,
-  "quoteAssetVolume" : 248168.5851,
-  "numberOfTrades" : 966,
-  "rsi" : 0.0
-}, {
-  "symbol" : "XRPUSD",
-  "openTime" : 1569888000000,
-  "openDate" : null,
-  "closeTime" : 1569974399999,
-  "closeDate" : null,
-  "open" : 0.2573,
-  "high" : 0.2609,
-  "low" : 0.2457,
-  "close" : 0.2486,
-  "volume" : 810417.4,
-  "quoteAssetVolume" : 205664.289,
-  "numberOfTrades" : 957,
-  "rsi" : 0.0
-}, {
-  "symbol" : "XRPUSD",
-  "openTime" : 1569974400000,
-  "openDate" : null,
-  "closeTime" : 1570060799999,
-  "closeDate" : null,
-  "open" : 0.2493,
-  "high" : 0.255,
-  "low" : 0.2449,
-  "close" : 0.2536,
-  "volume" : 419910.1,
-  "quoteAssetVolume" : 104609.2478,
-  "numberOfTrades" : 685,
-  "rsi" : 0.0
-}, {
-  "symbol" : "XRPUSD",
-  "openTime" : 1570060800000,
-  "openDate" : null,
-  "closeTime" : 1570147199999,
-  "closeDate" : null,
-  "open" : 0.2532,
-  "high" : 0.2532,
-  "low" : 0.2423,
-  "close" : 0.2475,
-  "volume" : 494876.5,
-  "quoteAssetVolume" : 122742.9646,
-  "numberOfTrades" : 742,
-  "rsi" : 0.0
-}, {
-  "symbol" : "XRPUSD",
-  "openTime" : 1570147200000,
-  "openDate" : null,
-  "closeTime" : 1570233599999,
-  "closeDate" : null,
-  "open" : 0.247,
-  "high" : 0.2565,
-  "low" : 0.2452,
-  "close" : 0.2531,
-  "volume" : 634802.5,
-  "quoteAssetVolume" : 159529.4291,
-  "numberOfTrades" : 764,
-  "rsi" : 0.0
-}, {
-  "symbol" : "XRPUSD",
-  "openTime" : 1570233600000,
-  "openDate" : null,
-  "closeTime" : 1570319999999,
-  "closeDate" : null,
-  "open" : 0.2523,
-  "high" : 0.2564,
-  "low" : 0.247,
-  "close" : 0.2537,
-  "volume" : 640386.2,
-  "quoteAssetVolume" : 161660.0161,
-  "numberOfTrades" : 770,
-  "rsi" : 0.0
-}, {
-  "symbol" : "XRPUSD",
-  "openTime" : 1570320000000,
-  "openDate" : null,
-  "closeTime" : 1570406399999,
-  "closeDate" : null,
-  "open" : 0.2539,
-  "high" : 0.2568,
-  "low" : 0.2512,
-  "close" : 0.2554,
-  "volume" : 484080.1,
-  "quoteAssetVolume" : 122670.7308,
-  "numberOfTrades" : 951,
-  "rsi" : 0.0
-}, {
-  "symbol" : "XRPUSD",
-  "openTime" : 1570406400000,
-  "openDate" : null,
-  "closeTime" : 1570492799999,
-  "closeDate" : null,
-  "open" : 0.2554,
-  "high" : 0.281,
-  "low" : 0.2535,
-  "close" : 0.2766,
-  "volume" : 1897655.2,
-  "quoteAssetVolume" : 514170.3811,
-  "numberOfTrades" : 1679,
-  "rsi" : 0.0
-}, {
-  "symbol" : "XRPUSD",
-  "openTime" : 1570492800000,
-  "openDate" : null,
-  "closeTime" : 1570579199999,
-  "closeDate" : null,
-  "open" : 0.2768,
-  "high" : 0.2853,
-  "low" : 0.2712,
-  "close" : 0.278,
-  "volume" : 1174773.7,
-  "quoteAssetVolume" : 326702.8555,
-  "numberOfTrades" : 1501,
-  "rsi" : 0.0
-}, {
-  "symbol" : "XRPUSD",
-  "openTime" : 1570579200000,
-  "openDate" : null,
-  "closeTime" : 1570665599999,
-  "closeDate" : null,
-  "open" : 0.2777,
-  "high" : 0.2874,
-  "low" : 0.2739,
-  "close" : 0.2818,
-  "volume" : 901011.1,
-  "quoteAssetVolume" : 252098.5251,
-  "numberOfTrades" : 1296,
-  "rsi" : 0.0
-}, {
-  "symbol" : "XRPUSD",
-  "openTime" : 1570665600000,
-  "openDate" : null,
-  "closeTime" : 1570751999999,
-  "closeDate" : null,
-  "open" : 0.2823,
-  "high" : 0.2825,
-  "low" : 0.2657,
-  "close" : 0.2712,
-  "volume" : 809505.5,
-  "quoteAssetVolume" : 222600.7852,
-  "numberOfTrades" : 1248,
-  "rsi" : 0.0
-}, {
-  "symbol" : "XRPUSD",
-  "openTime" : 1570752000000,
-  "openDate" : null,
-  "closeTime" : 1570838399999,
-  "closeDate" : null,
-  "open" : 0.2722,
-  "high" : 0.2759,
-  "low" : 0.265,
-  "close" : 0.2677,
-  "volume" : 635891.2,
-  "quoteAssetVolume" : 171867.758,
-  "numberOfTrades" : 1742,
-  "rsi" : 0.0
-}, {
-  "symbol" : "XRPUSD",
-  "openTime" : 1570838400000,
-  "openDate" : null,
-  "closeTime" : 1570924799999,
-  "closeDate" : null,
-  "open" : 0.2682,
-  "high" : 0.277,
-  "low" : 0.268,
-  "close" : 0.273,
-  "volume" : 443221.4,
-  "quoteAssetVolume" : 121087.3742,
-  "numberOfTrades" : 1423,
-  "rsi" : 0.0
-}, {
-  "symbol" : "XRPUSD",
-  "openTime" : 1570924800000,
-  "openDate" : null,
-  "closeTime" : 1571011199999,
-  "closeDate" : null,
-  "open" : 0.2728,
-  "high" : 0.2818,
-  "low" : 0.2718,
-  "close" : 0.2773,
-  "volume" : 503625.4,
-  "quoteAssetVolume" : 139718.558,
-  "numberOfTrades" : 1728,
-  "rsi" : 0.0
-}, {
-  "symbol" : "XRPUSD",
-  "openTime" : 1571011200000,
-  "openDate" : null,
-  "closeTime" : 1571097599999,
-  "closeDate" : null,
-  "open" : 0.2775,
-  "high" : 0.2981,
-  "low" : 0.2768,
-  "close" : 0.2979,
-  "volume" : 1174100.0,
-  "quoteAssetVolume" : 338280.6991,
-  "numberOfTrades" : 3537,
-  "rsi" : 0.0
-}, {
-  "symbol" : "XRPUSD",
-  "openTime" : 1571097600000,
-  "openDate" : null,
-  "closeTime" : 1571183999999,
-  "closeDate" : null,
-  "open" : 0.2981,
-  "high" : 0.2992,
-  "low" : 0.2833,
-  "close" : 0.2883,
-  "volume" : 1730258.4,
-  "quoteAssetVolume" : 503017.2403,
-  "numberOfTrades" : 3896,
-  "rsi" : 0.0
-}, {
-  "symbol" : "XRPUSD",
-  "openTime" : 1571184000000,
-  "openDate" : null,
-  "closeTime" : 1571270399999,
-  "closeDate" : null,
-  "open" : 0.2883,
-  "high" : 0.2922,
-  "low" : 0.2785,
-  "close" : 0.2834,
-  "volume" : 1743745.1,
-  "quoteAssetVolume" : 496853.6491,
-  "numberOfTrades" : 3558,
-  "rsi" : 0.0
-}, {
-  "symbol" : "XRPUSD",
-  "openTime" : 1571270400000,
-  "openDate" : null,
-  "closeTime" : 1571356799999,
-  "closeDate" : null,
-  "open" : 0.2837,
-  "high" : 0.3035,
-  "low" : 0.2802,
-  "close" : 0.3018,
-  "volume" : 2451334.7,
-  "quoteAssetVolume" : 724498.4344,
-  "numberOfTrades" : 4514,
-  "rsi" : 0.0
-}, {
-  "symbol" : "XRPUSD",
-  "openTime" : 1571356800000,
-  "openDate" : null,
-  "closeTime" : 1571443199999,
-  "closeDate" : null,
-  "open" : 0.3017,
-  "high" : 0.3022,
-  "low" : 0.285,
-  "close" : 0.294,
-  "volume" : 2890157.2,
-  "quoteAssetVolume" : 845745.9495,
-  "numberOfTrades" : 4433,
-  "rsi" : 0.0
-}, {
-  "symbol" : "XRPUSD",
-  "openTime" : 1571443200000,
-  "openDate" : null,
-  "closeTime" : 1571529599999,
-  "closeDate" : null,
-  "open" : 0.2943,
-  "high" : 0.2994,
-  "low" : 0.2876,
-  "close" : 0.2916,
-  "volume" : 2299914.3,
-  "quoteAssetVolume" : 672475.0093,
-  "numberOfTrades" : 3165,
-  "rsi" : 0.0
-}, {
-  "symbol" : "XRPUSD",
-  "openTime" : 1571529600000,
-  "openDate" : null,
-  "closeTime" : 1571615999999,
-  "closeDate" : null,
-  "open" : 0.2916,
-  "high" : 0.2984,
-  "low" : 0.2,
-  "close" : 0.2944,
-  "volume" : 1995319.3,
-  "quoteAssetVolume" : 573605.4475,
-  "numberOfTrades" : 2853,
-  "rsi" : 0.0
-}, {
-  "symbol" : "XRPUSD",
-  "openTime" : 1571616000000,
-  "openDate" : null,
-  "closeTime" : 1571702399999,
-  "closeDate" : null,
-  "open" : 0.2944,
-  "high" : 0.2947,
-  "low" : 0.2886,
-  "close" : 0.2928,
-  "volume" : 994061.1,
-  "quoteAssetVolume" : 289882.5128,
-  "numberOfTrades" : 1886,
-  "rsi" : 0.0
-}, {
-  "symbol" : "XRPUSD",
-  "openTime" : 1571702400000,
-  "openDate" : null,
-  "closeTime" : 1571788799999,
-  "closeDate" : null,
-  "open" : 0.2922,
-  "high" : 0.303,
-  "low" : 0.2891,
-  "close" : 0.2906,
-  "volume" : 2063592.3,
-  "quoteAssetVolume" : 609146.688,
-  "numberOfTrades" : 2962,
-  "rsi" : 0.0
-}, {
-  "symbol" : "XRPUSD",
-  "openTime" : 1571788800000,
-  "openDate" : null,
-  "closeTime" : 1571875199999,
-  "closeDate" : null,
-  "open" : 0.2904,
-  "high" : 0.2915,
-  "low" : 0.2503,
-  "close" : 0.2732,
-  "volume" : 4821605.5,
-  "quoteAssetVolume" : 1313969.8204,
-  "numberOfTrades" : 5949,
-  "rsi" : 0.0
-}, {
-  "symbol" : "XRPUSD",
-  "openTime" : 1571875200000,
-  "openDate" : null,
-  "closeTime" : 1571961599999,
-  "closeDate" : null,
-  "open" : 0.2731,
-  "high" : 0.2805,
-  "low" : 0.2669,
-  "close" : 0.2764,
-  "volume" : 3755558.8,
-  "quoteAssetVolume" : 1025724.7957,
-  "numberOfTrades" : 5415,
-  "rsi" : 0.0
-}, {
-  "symbol" : "XRPUSD",
-  "openTime" : 1571961600000,
-  "openDate" : null,
-  "closeTime" : 1572047999999,
-  "closeDate" : null,
-  "open" : 0.2764,
-  "high" : 0.308,
-  "low" : 0.2747,
-  "close" : 0.2987,
-  "volume" : 4286263.3,
-  "quoteAssetVolume" : 1244989.9961,
-  "numberOfTrades" : 5553,
-  "rsi" : 0.0
-}, {
-  "symbol" : "XRPUSD",
-  "openTime" : 1572048000000,
-  "openDate" : null,
-  "closeTime" : 1572134399999,
-  "closeDate" : null,
-  "open" : 0.2985,
-  "high" : 0.3136,
-  "low" : 0.2845,
-  "close" : 0.2944,
-  "volume" : 4196978.9,
-  "quoteAssetVolume" : 1252632.3916,
-  "numberOfTrades" : 7667,
-  "rsi" : 0.0
-}, {
-  "symbol" : "XRPUSD",
-  "openTime" : 1572134400000,
-  "openDate" : null,
-  "closeTime" : 1572220799999,
-  "closeDate" : null,
-  "open" : 0.2942,
-  "high" : 0.3028,
-  "low" : 0.29,
-  "close" : 0.2991,
-  "volume" : 2735975.9,
-  "quoteAssetVolume" : 814034.6323,
-  "numberOfTrades" : 5609,
-  "rsi" : 0.0
-}, {
-  "symbol" : "XRPUSD",
-  "openTime" : 1572220800000,
-  "openDate" : null,
-  "closeTime" : 1572307199999,
-  "closeDate" : null,
-  "open" : 0.2992,
-  "high" : 0.3056,
-  "low" : 0.2943,
-  "close" : 0.295,
-  "volume" : 1913402.8,
-  "quoteAssetVolume" : 572264.7095,
-  "numberOfTrades" : 3400,
-  "rsi" : 0.0
-}, {
-  "symbol" : "XRPUSD",
-  "openTime" : 1572307200000,
-  "openDate" : null,
-  "closeTime" : 1572393599999,
-  "closeDate" : null,
-  "open" : 0.2951,
-  "high" : 0.3096,
-  "low" : 0.2949,
-  "close" : 0.3025,
-  "volume" : 2513450.5,
-  "quoteAssetVolume" : 753922.9936,
-  "numberOfTrades" : 3510,
-  "rsi" : 0.0
-}, {
-  "symbol" : "XRPUSD",
-  "openTime" : 1572393600000,
-  "openDate" : null,
-  "closeTime" : 1572479999999,
-  "closeDate" : null,
-  "open" : 0.3025,
-  "high" : 0.3064,
-  "low" : 0.291,
-  "close" : 0.2953,
-  "volume" : 1600427.8,
-  "quoteAssetVolume" : 478483.36,
-  "numberOfTrades" : 3731,
-  "rsi" : 0.0
-}, {
-  "symbol" : "XRPUSD",
-  "openTime" : 1572480000000,
-  "openDate" : null,
-  "closeTime" : 1572566399999,
-  "closeDate" : null,
-  "open" : 0.295,
-  "high" : 0.2987,
-  "low" : 0.2887,
-  "close" : 0.2948,
-  "volume" : 1915583.3,
-  "quoteAssetVolume" : 562712.3449,
-  "numberOfTrades" : 3920,
-  "rsi" : 0.0
-}, {
-  "symbol" : "XRPUSD",
-  "openTime" : 1572566400000,
-  "openDate" : null,
-  "closeTime" : 1572652799999,
-  "closeDate" : null,
-  "open" : 0.2946,
-  "high" : 0.2964,
-  "low" : 0.2853,
-  "close" : 0.2924,
-  "volume" : 1810649.1,
-  "quoteAssetVolume" : 530349.5399,
-  "numberOfTrades" : 2081,
-  "rsi" : 0.0
-}, {
-  "symbol" : "XRPUSD",
-  "openTime" : 1572652800000,
-  "openDate" : null,
-  "closeTime" : 1572739199999,
-  "closeDate" : null,
-  "open" : 0.2925,
-  "high" : 0.2982,
-  "low" : 0.2919,
-  "close" : 0.2956,
-  "volume" : 758839.6,
-  "quoteAssetVolume" : 223836.0009,
-  "numberOfTrades" : 927,
-  "rsi" : 0.0
-}, {
-  "symbol" : "XRPUSD",
-  "openTime" : 1572739200000,
-  "openDate" : null,
-  "closeTime" : 1572825599999,
-  "closeDate" : null,
-  "open" : 0.2959,
-  "high" : 0.2965,
-  "low" : 0.2889,
-  "close" : 0.291,
-  "volume" : 458601.2,
-  "quoteAssetVolume" : 133696.0535,
-  "numberOfTrades" : 776,
-  "rsi" : 0.0
-}, {
-  "symbol" : "XRPUSD",
-  "openTime" : 1572825600000,
-  "openDate" : null,
-  "closeTime" : 1572911999999,
-  "closeDate" : null,
-  "open" : 0.2907,
-  "high" : 0.3007,
-  "low" : 0.2898,
-  "close" : 0.2995,
-  "volume" : 551713.7,
-  "quoteAssetVolume" : 162906.2007,
-  "numberOfTrades" : 950,
-  "rsi" : 0.0
-}, {
-  "symbol" : "XRPUSD",
-  "openTime" : 1572912000000,
-  "openDate" : null,
-  "closeTime" : 1572998399999,
-  "closeDate" : null,
-  "open" : 0.2998,
-  "high" : 0.3054,
-  "low" : 0.2964,
-  "close" : 0.3015,
-  "volume" : 912487.0,
-  "quoteAssetVolume" : 275246.2023,
-  "numberOfTrades" : 1310,
-  "rsi" : 0.0
-}, {
-  "symbol" : "XRPUSD",
-  "openTime" : 1572998400000,
-  "openDate" : null,
-  "closeTime" : 1573084799999,
-  "closeDate" : null,
-  "open" : 0.3013,
-  "high" : 0.3125,
-  "low" : 0.2974,
-  "close" : 0.3099,
-  "volume" : 1329439.8,
-  "quoteAssetVolume" : 402722.7759,
-  "numberOfTrades" : 2003,
-  "rsi" : 0.0
-}, {
-  "symbol" : "XRPUSD",
-  "openTime" : 1573084800000,
-  "openDate" : null,
-  "closeTime" : 1573171199999,
-  "closeDate" : null,
-  "open" : 0.3099,
-  "high" : 0.315,
-  "low" : 0.2806,
-  "close" : 0.2908,
-  "volume" : 1215186.1,
-  "quoteAssetVolume" : 358803.2049,
-  "numberOfTrades" : 2068,
-  "rsi" : 0.0
-}, {
-  "symbol" : "XRPUSD",
-  "openTime" : 1573171200000,
-  "openDate" : null,
-  "closeTime" : 1573257599999,
-  "closeDate" : null,
-  "open" : 0.2903,
-  "high" : 0.2909,
-  "low" : 0.2712,
-  "close" : 0.2757,
-  "volume" : 1995699.6,
-  "quoteAssetVolume" : 558166.3844,
-  "numberOfTrades" : 1949,
-  "rsi" : 0.0
-}, {
-  "symbol" : "XRPUSD",
-  "openTime" : 1573257600000,
-  "openDate" : null,
-  "closeTime" : 1573343999999,
-  "closeDate" : null,
-  "open" : 0.2754,
-  "high" : 0.2817,
-  "low" : 0.2744,
-  "close" : 0.2803,
-  "volume" : 876451.1,
-  "quoteAssetVolume" : 244335.1483,
-  "numberOfTrades" : 1022,
-  "rsi" : 0.0
-}, {
-  "symbol" : "XRPUSD",
   "openTime" : 1573344000000,
   "openDate" : null,
   "closeTime" : 1573430399999,
@@ -752,6 +10,7 @@
   "close" : 0.2791,
   "volume" : 709311.9,
   "quoteAssetVolume" : 198712.7666,
+  "usdVolume" : null,
   "numberOfTrades" : 927,
   "rsi" : 0.0
 }, {
@@ -766,6 +25,7 @@
   "close" : 0.2742,
   "volume" : 679376.4,
   "quoteAssetVolume" : 186673.9132,
+  "usdVolume" : null,
   "numberOfTrades" : 936,
   "rsi" : 0.0
 }, {
@@ -780,6 +40,7 @@
   "close" : 0.2721,
   "volume" : 590149.0,
   "quoteAssetVolume" : 160370.9295,
+  "usdVolume" : null,
   "numberOfTrades" : 947,
   "rsi" : 0.0
 }, {
@@ -794,6 +55,7 @@
   "close" : 0.2718,
   "volume" : 517093.0,
   "quoteAssetVolume" : 140637.4576,
+  "usdVolume" : null,
   "numberOfTrades" : 735,
   "rsi" : 0.0
 }, {
@@ -808,6 +70,7 @@
   "close" : 0.2676,
   "volume" : 468765.9,
   "quoteAssetVolume" : 125643.3792,
+  "usdVolume" : null,
   "numberOfTrades" : 964,
   "rsi" : 0.0
 }, {
@@ -822,6 +85,7 @@
   "close" : 0.2605,
   "volume" : 1135498.0,
   "quoteAssetVolume" : 298541.3796,
+  "usdVolume" : null,
   "numberOfTrades" : 1538,
   "rsi" : 0.0
 }, {
@@ -836,6 +100,7 @@
   "close" : 0.2621,
   "volume" : 586308.6,
   "quoteAssetVolume" : 153252.9992,
+  "usdVolume" : null,
   "numberOfTrades" : 856,
   "rsi" : 0.0
 }, {
@@ -850,6 +115,7 @@
   "close" : 0.2629,
   "volume" : 774415.4,
   "quoteAssetVolume" : 203674.9853,
+  "usdVolume" : null,
   "numberOfTrades" : 1023,
   "rsi" : 0.0
 }, {
@@ -864,6 +130,7 @@
   "close" : 0.2516,
   "volume" : 1256829.5,
   "quoteAssetVolume" : 320375.0574,
+  "usdVolume" : null,
   "numberOfTrades" : 2445,
   "rsi" : 0.0
 }, {
@@ -878,6 +145,7 @@
   "close" : 0.2536,
   "volume" : 886327.4,
   "quoteAssetVolume" : 221185.7972,
+  "usdVolume" : null,
   "numberOfTrades" : 1533,
   "rsi" : 0.0
 }, {
@@ -892,6 +160,7 @@
   "close" : 0.2495,
   "volume" : 1061976.8,
   "quoteAssetVolume" : 267755.8359,
+  "usdVolume" : null,
   "numberOfTrades" : 2083,
   "rsi" : 0.0
 }, {
@@ -906,6 +175,7 @@
   "close" : 0.243,
   "volume" : 1533078.8,
   "quoteAssetVolume" : 373704.8882,
+  "usdVolume" : null,
   "numberOfTrades" : 2860,
   "rsi" : 0.0
 }, {
@@ -920,6 +190,7 @@
   "close" : 0.2308,
   "volume" : 1989995.8,
   "quoteAssetVolume" : 467887.9884,
+  "usdVolume" : null,
   "numberOfTrades" : 3460,
   "rsi" : 0.0
 }, {
@@ -934,6 +205,7 @@
   "close" : 0.2343,
   "volume" : 1019789.5,
   "quoteAssetVolume" : 235675.4025,
+  "usdVolume" : null,
   "numberOfTrades" : 1500,
   "rsi" : 0.0
 }, {
@@ -948,6 +220,7 @@
   "close" : 0.2208,
   "volume" : 1023631.5,
   "quoteAssetVolume" : 232882.2537,
+  "usdVolume" : null,
   "numberOfTrades" : 1592,
   "rsi" : 0.0
 }, {
@@ -962,6 +235,7 @@
   "close" : 0.218,
   "volume" : 2684431.2,
   "quoteAssetVolume" : 576178.8061,
+  "usdVolume" : null,
   "numberOfTrades" : 3361,
   "rsi" : 0.0
 }, {
@@ -976,6 +250,7 @@
   "close" : 0.2208,
   "volume" : 779836.9,
   "quoteAssetVolume" : 170083.3422,
+  "usdVolume" : null,
   "numberOfTrades" : 1495,
   "rsi" : 0.0
 }, {
@@ -990,6 +265,7 @@
   "close" : 0.2244,
   "volume" : 1524291.6,
   "quoteAssetVolume" : 337181.4234,
+  "usdVolume" : null,
   "numberOfTrades" : 1884,
   "rsi" : 0.0
 }, {
@@ -1004,6 +280,7 @@
   "close" : 0.2232,
   "volume" : 544059.7,
   "quoteAssetVolume" : 123271.4078,
+  "usdVolume" : null,
   "numberOfTrades" : 1377,
   "rsi" : 0.0
 }, {
@@ -1018,6 +295,7 @@
   "close" : 0.2305,
   "volume" : 627977.6,
   "quoteAssetVolume" : 143849.4408,
+  "usdVolume" : null,
   "numberOfTrades" : 1352,
   "rsi" : 0.0
 }, {
@@ -1032,6 +310,7 @@
   "close" : 0.2262,
   "volume" : 411416.1,
   "quoteAssetVolume" : 93506.687,
+  "usdVolume" : null,
   "numberOfTrades" : 1111,
   "rsi" : 0.0
 }, {
@@ -1046,6 +325,7 @@
   "close" : 0.2252,
   "volume" : 398014.4,
   "quoteAssetVolume" : 88371.48,
+  "usdVolume" : null,
   "numberOfTrades" : 854,
   "rsi" : 0.0
 }, {
@@ -1060,6 +340,7 @@
   "close" : 0.2193,
   "volume" : 390573.1,
   "quoteAssetVolume" : 86206.9285,
+  "usdVolume" : null,
   "numberOfTrades" : 1875,
   "rsi" : 0.0
 }, {
@@ -1074,6 +355,7 @@
   "close" : 0.2196,
   "volume" : 527819.5,
   "quoteAssetVolume" : 116187.8152,
+  "usdVolume" : null,
   "numberOfTrades" : 1364,
   "rsi" : 0.0
 }, {
@@ -1088,6 +370,7 @@
   "close" : 0.2146,
   "volume" : 5421474.7,
   "quoteAssetVolume" : 1176901.0192,
+  "usdVolume" : null,
   "numberOfTrades" : 5120,
   "rsi" : 0.0
 }, {
@@ -1102,6 +385,7 @@
   "close" : 0.2214,
   "volume" : 1054345.5,
   "quoteAssetVolume" : 230047.2077,
+  "usdVolume" : null,
   "numberOfTrades" : 1248,
   "rsi" : 0.0
 }, {
@@ -1116,6 +400,7 @@
   "close" : 0.2258,
   "volume" : 709580.1,
   "quoteAssetVolume" : 158013.5532,
+  "usdVolume" : null,
   "numberOfTrades" : 894,
   "rsi" : 0.0
 }, {
@@ -1130,6 +415,7 @@
   "close" : 0.228,
   "volume" : 718691.1,
   "quoteAssetVolume" : 162704.5983,
+  "usdVolume" : null,
   "numberOfTrades" : 1183,
   "rsi" : 0.0
 }, {
@@ -1144,6 +430,7 @@
   "close" : 0.2296,
   "volume" : 406858.2,
   "quoteAssetVolume" : 92451.1575,
+  "usdVolume" : null,
   "numberOfTrades" : 1126,
   "rsi" : 0.0
 }, {
@@ -1158,6 +445,7 @@
   "close" : 0.2248,
   "volume" : 533196.7,
   "quoteAssetVolume" : 120666.9737,
+  "usdVolume" : null,
   "numberOfTrades" : 804,
   "rsi" : 0.0
 }, {
@@ -1172,6 +460,7 @@
   "close" : 0.2225,
   "volume" : 431992.2,
   "quoteAssetVolume" : 95826.6862,
+  "usdVolume" : null,
   "numberOfTrades" : 1104,
   "rsi" : 0.0
 }, {
@@ -1186,6 +475,7 @@
   "close" : 0.2208,
   "volume" : 363590.1,
   "quoteAssetVolume" : 80748.1011,
+  "usdVolume" : null,
   "numberOfTrades" : 860,
   "rsi" : 0.0
 }, {
@@ -1200,6 +490,7 @@
   "close" : 0.2187,
   "volume" : 534511.4,
   "quoteAssetVolume" : 117394.4492,
+  "usdVolume" : null,
   "numberOfTrades" : 1060,
   "rsi" : 0.0
 }, {
@@ -1214,6 +505,7 @@
   "close" : 0.2204,
   "volume" : 584587.8,
   "quoteAssetVolume" : 127716.2807,
+  "usdVolume" : null,
   "numberOfTrades" : 877,
   "rsi" : 0.0
 }, {
@@ -1228,6 +520,7 @@
   "close" : 0.2163,
   "volume" : 739008.8,
   "quoteAssetVolume" : 160633.8976,
+  "usdVolume" : null,
   "numberOfTrades" : 1088,
   "rsi" : 0.0
 }, {
@@ -1242,6 +535,7 @@
   "close" : 0.2174,
   "volume" : 568281.6,
   "quoteAssetVolume" : 123439.3716,
+  "usdVolume" : null,
   "numberOfTrades" : 857,
   "rsi" : 0.0
 }, {
@@ -1256,6 +550,7 @@
   "close" : 0.2048,
   "volume" : 795281.8,
   "quoteAssetVolume" : 166222.4801,
+  "usdVolume" : null,
   "numberOfTrades" : 1021,
   "rsi" : 0.0
 }, {
@@ -1270,6 +565,7 @@
   "close" : 0.1832,
   "volume" : 2501587.2,
   "quoteAssetVolume" : 472992.8906,
+  "usdVolume" : null,
   "numberOfTrades" : 2801,
   "rsi" : 0.0
 }, {
@@ -1284,6 +580,7 @@
   "close" : 0.1959,
   "volume" : 2581309.6,
   "quoteAssetVolume" : 484064.3201,
+  "usdVolume" : null,
   "numberOfTrades" : 1755,
   "rsi" : 0.0
 }, {
@@ -1298,6 +595,7 @@
   "close" : 0.1883,
   "volume" : 843455.3,
   "quoteAssetVolume" : 159619.1659,
+  "usdVolume" : null,
   "numberOfTrades" : 740,
   "rsi" : 0.0
 }, {
@@ -1312,6 +610,7 @@
   "close" : 0.1949,
   "volume" : 1042238.0,
   "quoteAssetVolume" : 199267.2842,
+  "usdVolume" : null,
   "numberOfTrades" : 1138,
   "rsi" : 0.0
 }, {
@@ -1326,6 +625,7 @@
   "close" : 0.1915,
   "volume" : 489471.3,
   "quoteAssetVolume" : 94239.1232,
+  "usdVolume" : null,
   "numberOfTrades" : 539,
   "rsi" : 0.0
 }, {
@@ -1340,6 +640,7 @@
   "close" : 0.1968,
   "volume" : 601574.2,
   "quoteAssetVolume" : 116608.6142,
+  "usdVolume" : null,
   "numberOfTrades" : 610,
   "rsi" : 0.0
 }, {
@@ -1354,6 +655,7 @@
   "close" : 0.1897,
   "volume" : 833396.8,
   "quoteAssetVolume" : 162365.866,
+  "usdVolume" : null,
   "numberOfTrades" : 930,
   "rsi" : 0.0
 }, {
@@ -1368,6 +670,7 @@
   "close" : 0.1904,
   "volume" : 557707.7,
   "quoteAssetVolume" : 106205.9262,
+  "usdVolume" : null,
   "numberOfTrades" : 685,
   "rsi" : 0.0
 }, {
@@ -1382,6 +685,7 @@
   "close" : 0.1886,
   "volume" : 750116.5,
   "quoteAssetVolume" : 141648.7203,
+  "usdVolume" : null,
   "numberOfTrades" : 717,
   "rsi" : 0.0
 }, {
@@ -1396,6 +700,7 @@
   "close" : 0.1892,
   "volume" : 433610.2,
   "quoteAssetVolume" : 82341.7523,
+  "usdVolume" : null,
   "numberOfTrades" : 475,
   "rsi" : 0.0
 }, {
@@ -1410,6 +715,7 @@
   "close" : 0.1899,
   "volume" : 619796.3,
   "quoteAssetVolume" : 117222.6672,
+  "usdVolume" : null,
   "numberOfTrades" : 601,
   "rsi" : 0.0
 }, {
@@ -1424,6 +730,7 @@
   "close" : 0.1928,
   "volume" : 469903.5,
   "quoteAssetVolume" : 90345.1223,
+  "usdVolume" : null,
   "numberOfTrades" : 553,
   "rsi" : 0.0
 }, {
@@ -1438,6 +745,7 @@
   "close" : 0.1967,
   "volume" : 462949.4,
   "quoteAssetVolume" : 89932.0961,
+  "usdVolume" : null,
   "numberOfTrades" : 658,
   "rsi" : 0.0
 }, {
@@ -1452,6 +760,7 @@
   "close" : 0.1928,
   "volume" : 484701.6,
   "quoteAssetVolume" : 93909.2486,
+  "usdVolume" : null,
   "numberOfTrades" : 600,
   "rsi" : 0.0
 }, {
@@ -1466,6 +775,7 @@
   "close" : 0.1925,
   "volume" : 595457.4,
   "quoteAssetVolume" : 114038.9777,
+  "usdVolume" : null,
   "numberOfTrades" : 651,
   "rsi" : 0.0
 }, {
@@ -1480,6 +790,7 @@
   "close" : 0.1925,
   "volume" : 471037.5,
   "quoteAssetVolume" : 91160.6316,
+  "usdVolume" : null,
   "numberOfTrades" : 554,
   "rsi" : 0.0
 }, {
@@ -1494,6 +805,7 @@
   "close" : 0.1871,
   "volume" : 339573.0,
   "quoteAssetVolume" : 64118.2419,
+  "usdVolume" : null,
   "numberOfTrades" : 499,
   "rsi" : 0.0
 }, {
@@ -1508,6 +820,7 @@
   "close" : 0.193,
   "volume" : 469799.6,
   "quoteAssetVolume" : 89385.7657,
+  "usdVolume" : null,
   "numberOfTrades" : 577,
   "rsi" : 0.0
 }, {
@@ -1522,6 +835,7 @@
   "close" : 0.1931,
   "volume" : 292472.8,
   "quoteAssetVolume" : 56239.0024,
+  "usdVolume" : null,
   "numberOfTrades" : 278,
   "rsi" : 0.0
 }, {
@@ -1536,6 +850,7 @@
   "close" : 0.1944,
   "volume" : 421885.9,
   "quoteAssetVolume" : 82327.8586,
+  "usdVolume" : null,
   "numberOfTrades" : 427,
   "rsi" : 0.0
 }, {
@@ -1550,6 +865,7 @@
   "close" : 0.2228,
   "volume" : 1907656.8,
   "quoteAssetVolume" : 405534.2177,
+  "usdVolume" : null,
   "numberOfTrades" : 1016,
   "rsi" : 0.0
 }, {
@@ -1564,6 +880,7 @@
   "close" : 0.2139,
   "volume" : 1859420.5,
   "quoteAssetVolume" : 399721.7146,
+  "usdVolume" : null,
   "numberOfTrades" : 1501,
   "rsi" : 0.0
 }, {
@@ -1578,6 +895,7 @@
   "close" : 0.2076,
   "volume" : 900538.1,
   "quoteAssetVolume" : 190542.8629,
+  "usdVolume" : null,
   "numberOfTrades" : 988,
   "rsi" : 0.0
 }, {
@@ -1592,6 +910,7 @@
   "close" : 0.2037,
   "volume" : 359511.2,
   "quoteAssetVolume" : 73377.6162,
+  "usdVolume" : null,
   "numberOfTrades" : 761,
   "rsi" : 0.0
 }, {
@@ -1606,6 +925,7 @@
   "close" : 0.2129,
   "volume" : 623214.0,
   "quoteAssetVolume" : 127796.5851,
+  "usdVolume" : null,
   "numberOfTrades" : 1072,
   "rsi" : 0.0
 }, {
@@ -1620,6 +940,7 @@
   "close" : 0.2115,
   "volume" : 592715.9,
   "quoteAssetVolume" : 127010.5655,
+  "usdVolume" : null,
   "numberOfTrades" : 1049,
   "rsi" : 0.0
 }, {
@@ -1634,6 +955,7 @@
   "close" : 0.2153,
   "volume" : 361630.0,
   "quoteAssetVolume" : 77269.7532,
+  "usdVolume" : null,
   "numberOfTrades" : 776,
   "rsi" : 0.0
 }, {
@@ -1648,6 +970,7 @@
   "close" : 0.2113,
   "volume" : 285742.5,
   "quoteAssetVolume" : 60499.6742,
+  "usdVolume" : null,
   "numberOfTrades" : 708,
   "rsi" : 0.0
 }, {
@@ -1662,6 +985,7 @@
   "close" : 0.2354,
   "volume" : 2080142.3,
   "quoteAssetVolume" : 480069.6269,
+  "usdVolume" : null,
   "numberOfTrades" : 2141,
   "rsi" : 0.0
 }, {
@@ -1676,6 +1000,7 @@
   "close" : 0.2335,
   "volume" : 1461000.4,
   "quoteAssetVolume" : 343680.7199,
+  "usdVolume" : null,
   "numberOfTrades" : 1539,
   "rsi" : 0.0
 }, {
@@ -1690,6 +1015,7 @@
   "close" : 0.2293,
   "volume" : 674113.8,
   "quoteAssetVolume" : 152764.2038,
+  "usdVolume" : null,
   "numberOfTrades" : 853,
   "rsi" : 0.0
 }, {
@@ -1704,6 +1030,7 @@
   "close" : 0.2386,
   "volume" : 1175839.9,
   "quoteAssetVolume" : 276924.0905,
+  "usdVolume" : null,
   "numberOfTrades" : 1302,
   "rsi" : 0.0
 }, {
@@ -1718,6 +1045,7 @@
   "close" : 0.2438,
   "volume" : 2038902.8,
   "quoteAssetVolume" : 493301.0444,
+  "usdVolume" : null,
   "numberOfTrades" : 1539,
   "rsi" : 0.0
 }, {
@@ -1732,6 +1060,7 @@
   "close" : 0.2361,
   "volume" : 1282264.7,
   "quoteAssetVolume" : 309842.8684,
+  "usdVolume" : null,
   "numberOfTrades" : 1046,
   "rsi" : 0.0
 }, {
@@ -1746,6 +1075,7 @@
   "close" : 0.233,
   "volume" : 625886.8,
   "quoteAssetVolume" : 145158.2182,
+  "usdVolume" : null,
   "numberOfTrades" : 786,
   "rsi" : 0.0
 }, {
@@ -1760,6 +1090,7 @@
   "close" : 0.2375,
   "volume" : 767054.0,
   "quoteAssetVolume" : 181608.5034,
+  "usdVolume" : null,
   "numberOfTrades" : 1003,
   "rsi" : 0.0
 }, {
@@ -1774,6 +1105,7 @@
   "close" : 0.2363,
   "volume" : 466385.2,
   "quoteAssetVolume" : 109872.7129,
+  "usdVolume" : null,
   "numberOfTrades" : 612,
   "rsi" : 0.0
 }, {
@@ -1788,6 +1120,7 @@
   "close" : 0.2251,
   "volume" : 736486.0,
   "quoteAssetVolume" : 168033.6113,
+  "usdVolume" : null,
   "numberOfTrades" : 1326,
   "rsi" : 0.0
 }, {
@@ -1802,6 +1135,7 @@
   "close" : 0.2216,
   "volume" : 538358.4,
   "quoteAssetVolume" : 118732.0609,
+  "usdVolume" : null,
   "numberOfTrades" : 1605,
   "rsi" : 0.0
 }, {
@@ -1816,6 +1150,7 @@
   "close" : 0.2192,
   "volume" : 734110.1,
   "quoteAssetVolume" : 160975.5088,
+  "usdVolume" : null,
   "numberOfTrades" : 1422,
   "rsi" : 0.0
 }, {
@@ -1830,6 +1165,7 @@
   "close" : 0.2305,
   "volume" : 445282.8,
   "quoteAssetVolume" : 100340.7341,
+  "usdVolume" : null,
   "numberOfTrades" : 1070,
   "rsi" : 0.0
 }, {
@@ -1844,6 +1180,7 @@
   "close" : 0.2304,
   "volume" : 715210.5,
   "quoteAssetVolume" : 165029.6635,
+  "usdVolume" : null,
   "numberOfTrades" : 1733,
   "rsi" : 0.0
 }, {
@@ -1858,6 +1195,7 @@
   "close" : 0.2393,
   "volume" : 1602116.0,
   "quoteAssetVolume" : 378024.8457,
+  "usdVolume" : null,
   "numberOfTrades" : 2264,
   "rsi" : 0.0
 }, {
@@ -1872,6 +1210,7 @@
   "close" : 0.2349,
   "volume" : 1077340.3,
   "quoteAssetVolume" : 256540.4141,
+  "usdVolume" : null,
   "numberOfTrades" : 2648,
   "rsi" : 0.0
 }, {
@@ -1886,6 +1225,7 @@
   "close" : 0.2433,
   "volume" : 1635319.2,
   "quoteAssetVolume" : 389345.4235,
+  "usdVolume" : null,
   "numberOfTrades" : 2684,
   "rsi" : 0.0
 }, {
@@ -1900,6 +1240,7 @@
   "close" : 0.2392,
   "volume" : 1436604.3,
   "quoteAssetVolume" : 342829.4741,
+  "usdVolume" : null,
   "numberOfTrades" : 3234,
   "rsi" : 0.0
 }, {
@@ -1914,6 +1255,7 @@
   "close" : 0.2412,
   "volume" : 1086761.6,
   "quoteAssetVolume" : 261490.7475,
+  "usdVolume" : null,
   "numberOfTrades" : 1705,
   "rsi" : 0.0
 }, {
@@ -1928,6 +1270,7 @@
   "close" : 0.2515,
   "volume" : 1732909.6,
   "quoteAssetVolume" : 436212.0607,
+  "usdVolume" : null,
   "numberOfTrades" : 2544,
   "rsi" : 0.0
 }, {
@@ -1942,6 +1285,7 @@
   "close" : 0.2546,
   "volume" : 1299027.8,
   "quoteAssetVolume" : 326447.6534,
+  "usdVolume" : null,
   "numberOfTrades" : 2833,
   "rsi" : 0.0
 }, {
@@ -1956,6 +1300,7 @@
   "close" : 0.2667,
   "volume" : 4102169.6,
   "quoteAssetVolume" : 1077313.2046,
+  "usdVolume" : null,
   "numberOfTrades" : 4228,
   "rsi" : 0.0
 }, {
@@ -1970,6 +1315,7 @@
   "close" : 0.2785,
   "volume" : 5527282.3,
   "quoteAssetVolume" : 1519949.5987,
+  "usdVolume" : null,
   "numberOfTrades" : 7247,
   "rsi" : 0.0
 }, {
@@ -1984,6 +1330,7 @@
   "close" : 0.2828,
   "volume" : 3108581.7,
   "quoteAssetVolume" : 870006.5364,
+  "usdVolume" : null,
   "numberOfTrades" : 4957,
   "rsi" : 0.0
 }, {
@@ -1998,6 +1345,7 @@
   "close" : 0.2795,
   "volume" : 3881087.4,
   "quoteAssetVolume" : 1088812.1686,
+  "usdVolume" : null,
   "numberOfTrades" : 6344,
   "rsi" : 0.0
 }, {
@@ -2012,6 +1360,7 @@
   "close" : 0.2782,
   "volume" : 3330980.6,
   "quoteAssetVolume" : 920559.828,
+  "usdVolume" : null,
   "numberOfTrades" : 3214,
   "rsi" : 0.0
 }, {
@@ -2026,6 +1375,7 @@
   "close" : 0.2826,
   "volume" : 3364311.9,
   "quoteAssetVolume" : 946293.279,
+  "usdVolume" : null,
   "numberOfTrades" : 3725,
   "rsi" : 0.0
 }, {
@@ -2040,6 +1390,7 @@
   "close" : 0.2742,
   "volume" : 1596112.3,
   "quoteAssetVolume" : 440641.5315,
+  "usdVolume" : null,
   "numberOfTrades" : 2648,
   "rsi" : 0.0
 }, {
@@ -2054,6 +1405,7 @@
   "close" : 0.2826,
   "volume" : 2276381.4,
   "quoteAssetVolume" : 635849.7895,
+  "usdVolume" : null,
   "numberOfTrades" : 2998,
   "rsi" : 0.0
 }, {
@@ -2068,6 +1420,7 @@
   "close" : 0.3049,
   "volume" : 3908656.4,
   "quoteAssetVolume" : 1165844.8695,
+  "usdVolume" : null,
   "numberOfTrades" : 4537,
   "rsi" : 0.0
 }, {
@@ -2082,6 +1435,7 @@
   "close" : 0.3276,
   "volume" : 5204196.3,
   "quoteAssetVolume" : 1681612.0304,
+  "usdVolume" : null,
   "numberOfTrades" : 8131,
   "rsi" : 0.0
 }, {
@@ -2096,6 +1450,7 @@
   "close" : 0.3366,
   "volume" : 2768195.3,
   "quoteAssetVolume" : 909292.0892,
+  "usdVolume" : null,
   "numberOfTrades" : 3823,
   "rsi" : 0.0
 }, {
@@ -2110,6 +1465,7 @@
   "close" : 0.3075,
   "volume" : 3823855.0,
   "quoteAssetVolume" : 1235511.3569,
+  "usdVolume" : null,
   "numberOfTrades" : 6307,
   "rsi" : 0.0
 }, {
@@ -2124,6 +1480,7 @@
   "close" : 0.2933,
   "volume" : 5360591.3,
   "quoteAssetVolume" : 1595419.1571,
+  "usdVolume" : null,
   "numberOfTrades" : 4785,
   "rsi" : 0.0
 }, {
@@ -2138,6 +1495,7 @@
   "close" : 0.2869,
   "volume" : 5787380.7,
   "quoteAssetVolume" : 1619378.6304,
+  "usdVolume" : null,
   "numberOfTrades" : 4212,
   "rsi" : 0.0
 }, {
@@ -2152,6 +1510,7 @@
   "close" : 0.2988,
   "volume" : 4387274.8,
   "quoteAssetVolume" : 1282903.5941,
+  "usdVolume" : null,
   "numberOfTrades" : 4696,
   "rsi" : 0.0
 }, {
@@ -2166,6 +1525,7 @@
   "close" : 0.2749,
   "volume" : 5487491.2,
   "quoteAssetVolume" : 1594091.8853,
+  "usdVolume" : null,
   "numberOfTrades" : 4573,
   "rsi" : 0.0
 }, {
@@ -2180,6 +1540,7 @@
   "close" : 0.2711,
   "volume" : 4583771.8,
   "quoteAssetVolume" : 1245520.8605,
+  "usdVolume" : null,
   "numberOfTrades" : 2732,
   "rsi" : 0.0
 }, {
@@ -2194,6 +1555,7 @@
   "close" : 0.275,
   "volume" : 1501789.6,
   "quoteAssetVolume" : 411826.0036,
+  "usdVolume" : null,
   "numberOfTrades" : 1208,
   "rsi" : 0.0
 }, {
@@ -2208,6 +1570,7 @@
   "close" : 0.2759,
   "volume" : 829958.0,
   "quoteAssetVolume" : 227667.8926,
+  "usdVolume" : null,
   "numberOfTrades" : 789,
   "rsi" : 0.0
 }, {
@@ -2222,6 +1585,7 @@
   "close" : 0.2842,
   "volume" : 1928216.3,
   "quoteAssetVolume" : 543539.8984,
+  "usdVolume" : null,
   "numberOfTrades" : 1436,
   "rsi" : 0.0
 }, {
@@ -2236,6 +1600,7 @@
   "close" : 0.2708,
   "volume" : 1374005.9,
   "quoteAssetVolume" : 375196.0932,
+  "usdVolume" : null,
   "numberOfTrades" : 1560,
   "rsi" : 0.0
 }, {
@@ -2250,6 +1615,7 @@
   "close" : 0.2521,
   "volume" : 2630080.0,
   "quoteAssetVolume" : 679829.179,
+  "usdVolume" : null,
   "numberOfTrades" : 1883,
   "rsi" : 0.0
 }, {
@@ -2264,6 +1630,7 @@
   "close" : 0.2293,
   "volume" : 4308570.8,
   "quoteAssetVolume" : 1021227.1331,
+  "usdVolume" : null,
   "numberOfTrades" : 3355,
   "rsi" : 0.0
 }, {
@@ -2278,6 +1645,7 @@
   "close" : 0.2372,
   "volume" : 1941619.2,
   "quoteAssetVolume" : 462164.5715,
+  "usdVolume" : null,
   "numberOfTrades" : 1971,
   "rsi" : 0.0
 }, {
@@ -2292,6 +1660,7 @@
   "close" : 0.2367,
   "volume" : 1929612.9,
   "quoteAssetVolume" : 457422.2358,
+  "usdVolume" : null,
   "numberOfTrades" : 1493,
   "rsi" : 0.0
 }, {
@@ -2306,6 +1675,7 @@
   "close" : 0.2291,
   "volume" : 1153156.0,
   "quoteAssetVolume" : 272597.9106,
+  "usdVolume" : null,
   "numberOfTrades" : 1078,
   "rsi" : 0.0
 }, {
@@ -2320,6 +1690,7 @@
   "close" : 0.227,
   "volume" : 1030997.0,
   "quoteAssetVolume" : 236517.5601,
+  "usdVolume" : null,
   "numberOfTrades" : 729,
   "rsi" : 0.0
 }, {
@@ -2334,6 +1705,7 @@
   "close" : 0.2396,
   "volume" : 1110573.3,
   "quoteAssetVolume" : 260396.5041,
+  "usdVolume" : null,
   "numberOfTrades" : 1235,
   "rsi" : 0.0
 }, {
@@ -2348,6 +1720,7 @@
   "close" : 0.234,
   "volume" : 979098.4,
   "quoteAssetVolume" : 230170.5076,
+  "usdVolume" : null,
   "numberOfTrades" : 1157,
   "rsi" : 0.0
 }, {
@@ -2362,6 +1735,7 @@
   "close" : 0.2346,
   "volume" : 1246201.4,
   "quoteAssetVolume" : 291657.7493,
+  "usdVolume" : null,
   "numberOfTrades" : 1167,
   "rsi" : 0.0
 }, {
@@ -2376,6 +1750,7 @@
   "close" : 0.2394,
   "volume" : 1213679.5,
   "quoteAssetVolume" : 290261.8378,
+  "usdVolume" : null,
   "numberOfTrades" : 1378,
   "rsi" : 0.0
 }, {
@@ -2390,6 +1765,7 @@
   "close" : 0.2456,
   "volume" : 1503482.4,
   "quoteAssetVolume" : 364749.5689,
+  "usdVolume" : null,
   "numberOfTrades" : 803,
   "rsi" : 0.0
 }, {
@@ -2404,6 +1780,7 @@
   "close" : 0.2365,
   "volume" : 1829785.5,
   "quoteAssetVolume" : 437956.0128,
+  "usdVolume" : null,
   "numberOfTrades" : 797,
   "rsi" : 0.0
 }, {
@@ -2418,6 +1795,7 @@
   "close" : 0.2033,
   "volume" : 3496682.5,
   "quoteAssetVolume" : 758500.9648,
+  "usdVolume" : null,
   "numberOfTrades" : 2215,
   "rsi" : 0.0
 }, {
@@ -2432,6 +1810,7 @@
   "close" : 0.2098,
   "volume" : 2740479.5,
   "quoteAssetVolume" : 561532.7107,
+  "usdVolume" : null,
   "numberOfTrades" : 1907,
   "rsi" : 0.0
 }, {
@@ -2446,6 +1825,7 @@
   "close" : 0.2118,
   "volume" : 1574526.7,
   "quoteAssetVolume" : 330038.6598,
+  "usdVolume" : null,
   "numberOfTrades" : 1266,
   "rsi" : 0.0
 }, {
@@ -2460,6 +1840,7 @@
   "close" : 0.2083,
   "volume" : 1145416.4,
   "quoteAssetVolume" : 236473.3186,
+  "usdVolume" : null,
   "numberOfTrades" : 1063,
   "rsi" : 0.0
 }, {
@@ -2474,6 +1855,7 @@
   "close" : 0.137,
   "volume" : 1.48666494E7,
   "quoteAssetVolume" : 2347792.0064,
+  "usdVolume" : null,
   "numberOfTrades" : 9901,
   "rsi" : 0.0
 }, {
@@ -2488,6 +1870,7 @@
   "close" : 0.1605,
   "volume" : 1.11779218E7,
   "quoteAssetVolume" : 1560371.7449,
+  "usdVolume" : null,
   "numberOfTrades" : 9312,
   "rsi" : 0.0
 }, {
@@ -2502,6 +1885,7 @@
   "close" : 0.1457,
   "volume" : 1835264.7,
   "quoteAssetVolume" : 282221.0487,
+  "usdVolume" : null,
   "numberOfTrades" : 1336,
   "rsi" : 0.0
 }, {
@@ -2516,6 +1900,7 @@
   "close" : 0.1534,
   "volume" : 1525168.9,
   "quoteAssetVolume" : 232482.839,
+  "usdVolume" : null,
   "numberOfTrades" : 986,
   "rsi" : 0.0
 }, {
@@ -2530,6 +1915,7 @@
   "close" : 0.1413,
   "volume" : 5815126.9,
   "quoteAssetVolume" : 803574.4278,
+  "usdVolume" : null,
   "numberOfTrades" : 1875,
   "rsi" : 0.0
 }, {
@@ -2544,6 +1930,7 @@
   "close" : 0.148,
   "volume" : 1776116.6,
   "quoteAssetVolume" : 263506.3923,
+  "usdVolume" : null,
   "numberOfTrades" : 1056,
   "rsi" : 0.0
 }, {
@@ -2558,6 +1945,7 @@
   "close" : 0.148,
   "volume" : 2133169.6,
   "quoteAssetVolume" : 311153.5719,
+  "usdVolume" : null,
   "numberOfTrades" : 1375,
   "rsi" : 0.0
 }, {
@@ -2572,6 +1960,7 @@
   "close" : 0.1662,
   "volume" : 3941450.7,
   "quoteAssetVolume" : 621866.9286,
+  "usdVolume" : null,
   "numberOfTrades" : 2479,
   "rsi" : 0.0
 }, {
@@ -2586,6 +1975,7 @@
   "close" : 0.1574,
   "volume" : 4883674.9,
   "quoteAssetVolume" : 791839.7164,
+  "usdVolume" : null,
   "numberOfTrades" : 2914,
   "rsi" : 0.0
 }, {
@@ -2600,6 +1990,7 @@
   "close" : 0.158,
   "volume" : 2024670.7,
   "quoteAssetVolume" : 318729.8435,
+  "usdVolume" : null,
   "numberOfTrades" : 1402,
   "rsi" : 0.0
 }, {
@@ -2614,6 +2005,7 @@
   "close" : 0.1485,
   "volume" : 2385484.0,
   "quoteAssetVolume" : 367010.2326,
+  "usdVolume" : null,
   "numberOfTrades" : 1385,
   "rsi" : 0.0
 }, {
@@ -2628,6 +2020,7 @@
   "close" : 0.159,
   "volume" : 3687221.7,
   "quoteAssetVolume" : 571584.3405,
+  "usdVolume" : null,
   "numberOfTrades" : 1692,
   "rsi" : 0.0
 }, {
@@ -2642,6 +2035,7 @@
   "close" : 0.1628,
   "volume" : 4053548.9,
   "quoteAssetVolume" : 653881.9827,
+  "usdVolume" : null,
   "numberOfTrades" : 1995,
   "rsi" : 0.0
 }, {
@@ -2656,6 +2050,7 @@
   "close" : 0.1623,
   "volume" : 2789414.3,
   "quoteAssetVolume" : 449696.0514,
+  "usdVolume" : null,
   "numberOfTrades" : 1551,
   "rsi" : 0.0
 }, {
@@ -2670,6 +2065,7 @@
   "close" : 0.1778,
   "volume" : 3859445.9,
   "quoteAssetVolume" : 649153.1789,
+  "usdVolume" : null,
   "numberOfTrades" : 2277,
   "rsi" : 0.0
 }, {
@@ -2684,6 +2080,7 @@
   "close" : 0.173,
   "volume" : 4593062.6,
   "quoteAssetVolume" : 817678.1652,
+  "usdVolume" : null,
   "numberOfTrades" : 2524,
   "rsi" : 0.0
 }, {
@@ -2698,6 +2095,7 @@
   "close" : 0.1761,
   "volume" : 6010410.5,
   "quoteAssetVolume" : 1036160.9888,
+  "usdVolume" : null,
   "numberOfTrades" : 1900,
   "rsi" : 0.0
 }, {
@@ -2712,6 +2110,7 @@
   "close" : 0.163,
   "volume" : 4652114.3,
   "quoteAssetVolume" : 788081.4555,
+  "usdVolume" : null,
   "numberOfTrades" : 1574,
   "rsi" : 0.0
 }, {
@@ -2726,6 +2125,7 @@
   "close" : 0.1714,
   "volume" : 1685550.9,
   "quoteAssetVolume" : 288997.3237,
+  "usdVolume" : null,
   "numberOfTrades" : 1083,
   "rsi" : 0.0
 }, {
@@ -2740,6 +2140,7 @@
   "close" : 0.174,
   "volume" : 2621515.1,
   "quoteAssetVolume" : 459265.0206,
+  "usdVolume" : null,
   "numberOfTrades" : 1019,
   "rsi" : 0.0
 }, {
@@ -2754,6 +2155,7 @@
   "close" : 0.1754,
   "volume" : 3388614.3,
   "quoteAssetVolume" : 583928.4291,
+  "usdVolume" : null,
   "numberOfTrades" : 1181,
   "rsi" : 0.0
 }, {
@@ -2768,6 +2170,7 @@
   "close" : 0.1787,
   "volume" : 3315063.7,
   "quoteAssetVolume" : 591031.8931,
+  "usdVolume" : null,
   "numberOfTrades" : 1823,
   "rsi" : 0.0
 }, {
@@ -2782,6 +2185,7 @@
   "close" : 0.1795,
   "volume" : 1615257.8,
   "quoteAssetVolume" : 289900.4713,
+  "usdVolume" : null,
   "numberOfTrades" : 1063,
   "rsi" : 0.0
 }, {
@@ -2796,6 +2200,7 @@
   "close" : 0.1819,
   "volume" : 1804611.9,
   "quoteAssetVolume" : 324998.0845,
+  "usdVolume" : null,
   "numberOfTrades" : 880,
   "rsi" : 0.0
 }, {
@@ -2810,6 +2215,7 @@
   "close" : 0.1796,
   "volume" : 1229011.6,
   "quoteAssetVolume" : 219794.6893,
+  "usdVolume" : null,
   "numberOfTrades" : 643,
   "rsi" : 0.0
 }, {
@@ -2824,6 +2230,7 @@
   "close" : 0.1981,
   "volume" : 3382929.8,
   "quoteAssetVolume" : 641594.0481,
+  "usdVolume" : null,
   "numberOfTrades" : 1628,
   "rsi" : 0.0
 }, {
@@ -2838,6 +2245,7 @@
   "close" : 0.193,
   "volume" : 5265159.9,
   "quoteAssetVolume" : 1044243.9688,
+  "usdVolume" : null,
   "numberOfTrades" : 2398,
   "rsi" : 0.0
 }, {
@@ -2852,6 +2260,7 @@
   "close" : 0.202,
   "volume" : 3104696.6,
   "quoteAssetVolume" : 619266.2839,
+  "usdVolume" : null,
   "numberOfTrades" : 1561,
   "rsi" : 0.0
 }, {
@@ -2866,6 +2275,7 @@
   "close" : 0.1991,
   "volume" : 2277079.0,
   "quoteAssetVolume" : 452167.4277,
+  "usdVolume" : null,
   "numberOfTrades" : 1640,
   "rsi" : 0.0
 }, {
@@ -2880,6 +2290,7 @@
   "close" : 0.1878,
   "volume" : 2700693.0,
   "quoteAssetVolume" : 513289.4001,
+  "usdVolume" : null,
   "numberOfTrades" : 1648,
   "rsi" : 0.0
 }, {
@@ -2894,6 +2305,7 @@
   "close" : 0.1885,
   "volume" : 1329917.1,
   "quoteAssetVolume" : 250662.2166,
+  "usdVolume" : null,
   "numberOfTrades" : 1114,
   "rsi" : 0.0
 }, {
@@ -2908,6 +2320,7 @@
   "close" : 0.1895,
   "volume" : 2112030.6,
   "quoteAssetVolume" : 405371.6334,
+  "usdVolume" : null,
   "numberOfTrades" : 1052,
   "rsi" : 0.0
 }, {
@@ -2922,6 +2335,7 @@
   "close" : 0.1882,
   "volume" : 2088081.9,
   "quoteAssetVolume" : 385630.4467,
+  "usdVolume" : null,
   "numberOfTrades" : 1097,
   "rsi" : 0.0
 }, {
@@ -2936,6 +2350,7 @@
   "close" : 0.186,
   "volume" : 2332814.4,
   "quoteAssetVolume" : 437817.0082,
+  "usdVolume" : null,
   "numberOfTrades" : 1170,
   "rsi" : 0.0
 }, {
@@ -2950,6 +2365,7 @@
   "close" : 0.181,
   "volume" : 2302563.2,
   "quoteAssetVolume" : 424262.8679,
+  "usdVolume" : null,
   "numberOfTrades" : 1378,
   "rsi" : 0.0
 }, {
@@ -2964,6 +2380,7 @@
   "close" : 0.191,
   "volume" : 3686220.4,
   "quoteAssetVolume" : 685960.621,
+  "usdVolume" : null,
   "numberOfTrades" : 1506,
   "rsi" : 0.0
 }, {
@@ -2978,6 +2395,7 @@
   "close" : 0.1888,
   "volume" : 2240557.7,
   "quoteAssetVolume" : 424057.0243,
+  "usdVolume" : null,
   "numberOfTrades" : 1196,
   "rsi" : 0.0
 }, {
@@ -2992,6 +2410,7 @@
   "close" : 0.1952,
   "volume" : 2208446.2,
   "quoteAssetVolume" : 426820.551,
+  "usdVolume" : null,
   "numberOfTrades" : 1285,
   "rsi" : 0.0
 }, {
@@ -3006,6 +2425,7 @@
   "close" : 0.1894,
   "volume" : 1397634.0,
   "quoteAssetVolume" : 268865.8598,
+  "usdVolume" : null,
   "numberOfTrades" : 944,
   "rsi" : 0.0
 }, {
@@ -3020,6 +2440,7 @@
   "close" : 0.1819,
   "volume" : 4462069.2,
   "quoteAssetVolume" : 837149.2167,
+  "usdVolume" : null,
   "numberOfTrades" : 1819,
   "rsi" : 0.0
 }, {
@@ -3034,6 +2455,7 @@
   "close" : 0.1834,
   "volume" : 1331170.8,
   "quoteAssetVolume" : 244901.1139,
+  "usdVolume" : null,
   "numberOfTrades" : 743,
   "rsi" : 0.0
 }, {
@@ -3048,6 +2470,7 @@
   "close" : 0.1884,
   "volume" : 2189364.2,
   "quoteAssetVolume" : 412277.3433,
+  "usdVolume" : null,
   "numberOfTrades" : 1142,
   "rsi" : 0.0
 }, {
@@ -3062,6 +2485,7 @@
   "close" : 0.1923,
   "volume" : 3252246.8,
   "quoteAssetVolume" : 630937.9197,
+  "usdVolume" : null,
   "numberOfTrades" : 1604,
   "rsi" : 0.0
 }, {
@@ -3076,6 +2500,7 @@
   "close" : 0.1933,
   "volume" : 2613274.0,
   "quoteAssetVolume" : 508366.83,
+  "usdVolume" : null,
   "numberOfTrades" : 1266,
   "rsi" : 0.0
 }, {
@@ -3090,6 +2515,7 @@
   "close" : 0.1943,
   "volume" : 2446074.0,
   "quoteAssetVolume" : 476628.9724,
+  "usdVolume" : null,
   "numberOfTrades" : 1115,
   "rsi" : 0.0
 }, {
@@ -3104,6 +2530,7 @@
   "close" : 0.1967,
   "volume" : 2020746.9,
   "quoteAssetVolume" : 395033.2791,
+  "usdVolume" : null,
   "numberOfTrades" : 1091,
   "rsi" : 0.0
 }, {
@@ -3118,6 +2545,7 @@
   "close" : 0.1978,
   "volume" : 2232031.5,
   "quoteAssetVolume" : 437080.0341,
+  "usdVolume" : null,
   "numberOfTrades" : 1321,
   "rsi" : 0.0
 }, {
@@ -3132,6 +2560,7 @@
   "close" : 0.2149,
   "volume" : 4741959.5,
   "quoteAssetVolume" : 990394.3859,
+  "usdVolume" : null,
   "numberOfTrades" : 2243,
   "rsi" : 0.0
 }, {
@@ -3146,6 +2575,7 @@
   "close" : 0.2266,
   "volume" : 5250579.0,
   "quoteAssetVolume" : 1173622.1846,
+  "usdVolume" : null,
   "numberOfTrades" : 2713,
   "rsi" : 0.0
 }, {
@@ -3160,6 +2590,7 @@
   "close" : 0.2116,
   "volume" : 6614297.6,
   "quoteAssetVolume" : 1478185.4075,
+  "usdVolume" : null,
   "numberOfTrades" : 2448,
   "rsi" : 0.0
 }, {
@@ -3174,6 +2605,7 @@
   "close" : 0.2182,
   "volume" : 3026120.9,
   "quoteAssetVolume" : 658309.9786,
+  "usdVolume" : null,
   "numberOfTrades" : 1921,
   "rsi" : 0.0
 }, {
@@ -3188,6 +2620,7 @@
   "close" : 0.224,
   "volume" : 2464332.9,
   "quoteAssetVolume" : 543547.3483,
+  "usdVolume" : null,
   "numberOfTrades" : 1303,
   "rsi" : 0.0
 }, {
@@ -3202,6 +2635,7 @@
   "close" : 0.2195,
   "volume" : 2618626.7,
   "quoteAssetVolume" : 582340.6525,
+  "usdVolume" : null,
   "numberOfTrades" : 1243,
   "rsi" : 0.0
 }, {
@@ -3216,6 +2650,7 @@
   "close" : 0.218,
   "volume" : 3050875.3,
   "quoteAssetVolume" : 654672.1702,
+  "usdVolume" : null,
   "numberOfTrades" : 1288,
   "rsi" : 0.0
 }, {
@@ -3230,6 +2665,7 @@
   "close" : 0.217,
   "volume" : 1709615.1,
   "quoteAssetVolume" : 371164.239,
+  "usdVolume" : null,
   "numberOfTrades" : 1018,
   "rsi" : 0.0
 }, {
@@ -3244,6 +2680,7 @@
   "close" : 0.2118,
   "volume" : 3079580.1,
   "quoteAssetVolume" : 672369.704,
+  "usdVolume" : null,
   "numberOfTrades" : 1466,
   "rsi" : 0.0
 }, {
@@ -3258,6 +2695,7 @@
   "close" : 0.2191,
   "volume" : 3183811.7,
   "quoteAssetVolume" : 688480.4971,
+  "usdVolume" : null,
   "numberOfTrades" : 2090,
   "rsi" : 0.0
 }, {
@@ -3272,6 +2710,7 @@
   "close" : 0.219,
   "volume" : 3455827.0,
   "quoteAssetVolume" : 758404.9254,
+  "usdVolume" : null,
   "numberOfTrades" : 2074,
   "rsi" : 0.0
 }, {
@@ -3286,6 +2725,7 @@
   "close" : 0.2163,
   "volume" : 2730018.0,
   "quoteAssetVolume" : 602118.2809,
+  "usdVolume" : null,
   "numberOfTrades" : 1763,
   "rsi" : 0.0
 }, {
@@ -3300,6 +2740,7 @@
   "close" : 0.1973,
   "volume" : 5022381.3,
   "quoteAssetVolume" : 989973.7001,
+  "usdVolume" : null,
   "numberOfTrades" : 4891,
   "rsi" : 0.0
 }, {
@@ -3314,6 +2755,7 @@
   "close" : 0.1941,
   "volume" : 3381922.1,
   "quoteAssetVolume" : 650857.0385,
+  "usdVolume" : null,
   "numberOfTrades" : 1980,
   "rsi" : 0.0
 }, {
@@ -3328,6 +2770,7 @@
   "close" : 0.1967,
   "volume" : 1492015.1,
   "quoteAssetVolume" : 293392.5241,
+  "usdVolume" : null,
   "numberOfTrades" : 1326,
   "rsi" : 0.0
 }, {
@@ -3342,6 +2785,7 @@
   "close" : 0.2017,
   "volume" : 1726970.2,
   "quoteAssetVolume" : 346061.0826,
+  "usdVolume" : null,
   "numberOfTrades" : 1146,
   "rsi" : 0.0
 }, {
@@ -3356,6 +2800,7 @@
   "close" : 0.2041,
   "volume" : 2886297.1,
   "quoteAssetVolume" : 586251.2741,
+  "usdVolume" : null,
   "numberOfTrades" : 1436,
   "rsi" : 0.0
 }, {
@@ -3370,6 +2815,7 @@
   "close" : 0.1981,
   "volume" : 1810977.5,
   "quoteAssetVolume" : 362740.3494,
+  "usdVolume" : null,
   "numberOfTrades" : 1146,
   "rsi" : 0.0
 }, {
@@ -3384,6 +2830,7 @@
   "close" : 0.1998,
   "volume" : 1413771.1,
   "quoteAssetVolume" : 282078.3362,
+  "usdVolume" : null,
   "numberOfTrades" : 768,
   "rsi" : 0.0
 }, {
@@ -3398,6 +2845,7 @@
   "close" : 0.2012,
   "volume" : 2116440.9,
   "quoteAssetVolume" : 428185.914,
+  "usdVolume" : null,
   "numberOfTrades" : 807,
   "rsi" : 0.0
 }, {
@@ -3412,6 +2860,7 @@
   "close" : 0.2052,
   "volume" : 4173712.7,
   "quoteAssetVolume" : 855458.5163,
+  "usdVolume" : null,
   "numberOfTrades" : 1718,
   "rsi" : 0.0
 }, {
@@ -3426,6 +2875,7 @@
   "close" : 0.205,
   "volume" : 1973028.2,
   "quoteAssetVolume" : 401107.6809,
+  "usdVolume" : null,
   "numberOfTrades" : 1066,
   "rsi" : 0.0
 }, {
@@ -3440,6 +2890,7 @@
   "close" : 0.2018,
   "volume" : 2033053.7,
   "quoteAssetVolume" : 412554.1346,
+  "usdVolume" : null,
   "numberOfTrades" : 1240,
   "rsi" : 0.0
 }, {
@@ -3454,6 +2905,7 @@
   "close" : 0.194,
   "volume" : 2436362.8,
   "quoteAssetVolume" : 475529.7022,
+  "usdVolume" : null,
   "numberOfTrades" : 1778,
   "rsi" : 0.0
 }, {
@@ -3468,6 +2920,7 @@
   "close" : 0.2003,
   "volume" : 2042877.7,
   "quoteAssetVolume" : 406652.058,
+  "usdVolume" : null,
   "numberOfTrades" : 1280,
   "rsi" : 0.0
 }, {
@@ -3482,6 +2935,7 @@
   "close" : 0.199,
   "volume" : 1355714.9,
   "quoteAssetVolume" : 271604.1055,
+  "usdVolume" : null,
   "numberOfTrades" : 873,
   "rsi" : 0.0
 }, {
@@ -3496,6 +2950,7 @@
   "close" : 0.1927,
   "volume" : 1910163.2,
   "quoteAssetVolume" : 377737.5898,
+  "usdVolume" : null,
   "numberOfTrades" : 1051,
   "rsi" : 0.0
 }, {
@@ -3510,6 +2965,7 @@
   "close" : 0.1964,
   "volume" : 2149668.5,
   "quoteAssetVolume" : 417949.1516,
+  "usdVolume" : null,
   "numberOfTrades" : 1254,
   "rsi" : 0.0
 }, {
@@ -3524,6 +2980,7 @@
   "close" : 0.1939,
   "volume" : 1149139.5,
   "quoteAssetVolume" : 223455.2004,
+  "usdVolume" : null,
   "numberOfTrades" : 920,
   "rsi" : 0.0
 }, {
@@ -3538,6 +2995,7 @@
   "close" : 0.1977,
   "volume" : 1971727.3,
   "quoteAssetVolume" : 386356.3474,
+  "usdVolume" : null,
   "numberOfTrades" : 1017,
   "rsi" : 0.0
 }, {
@@ -3552,6 +3010,7 @@
   "close" : 0.2005,
   "volume" : 2104596.1,
   "quoteAssetVolume" : 417438.7378,
+  "usdVolume" : null,
   "numberOfTrades" : 1207,
   "rsi" : 0.0
 }, {
@@ -3566,6 +3025,7 @@
   "close" : 0.1976,
   "volume" : 2310167.7,
   "quoteAssetVolume" : 460092.6878,
+  "usdVolume" : null,
   "numberOfTrades" : 1498,
   "rsi" : 0.0
 }, {
@@ -3580,6 +3040,7 @@
   "close" : 0.2073,
   "volume" : 1965266.1,
   "quoteAssetVolume" : 396760.6677,
+  "usdVolume" : null,
   "numberOfTrades" : 1315,
   "rsi" : 0.0
 }, {
@@ -3594,6 +3055,7 @@
   "close" : 0.2022,
   "volume" : 1924821.4,
   "quoteAssetVolume" : 398229.4684,
+  "usdVolume" : null,
   "numberOfTrades" : 1481,
   "rsi" : 0.0
 }, {
@@ -3608,6 +3070,7 @@
   "close" : 0.2118,
   "volume" : 2094140.9,
   "quoteAssetVolume" : 433624.1963,
+  "usdVolume" : null,
   "numberOfTrades" : 1790,
   "rsi" : 0.0
 }, {
@@ -3622,6 +3085,7 @@
   "close" : 0.2033,
   "volume" : 3949976.0,
   "quoteAssetVolume" : 821434.3901,
+  "usdVolume" : null,
   "numberOfTrades" : 2664,
   "rsi" : 0.0
 }, {
@@ -3636,6 +3100,7 @@
   "close" : 0.204,
   "volume" : 1628002.5,
   "quoteAssetVolume" : 331047.1274,
+  "usdVolume" : null,
   "numberOfTrades" : 1221,
   "rsi" : 0.0
 }, {
@@ -3650,6 +3115,7 @@
   "close" : 0.2046,
   "volume" : 2277961.3,
   "quoteAssetVolume" : 466226.844,
+  "usdVolume" : null,
   "numberOfTrades" : 1476,
   "rsi" : 0.0
 }, {
@@ -3664,6 +3130,7 @@
   "close" : 0.203,
   "volume" : 1391764.8,
   "quoteAssetVolume" : 283471.643,
+  "usdVolume" : null,
   "numberOfTrades" : 1034,
   "rsi" : 0.0
 }, {
@@ -3678,6 +3145,7 @@
   "close" : 0.2036,
   "volume" : 1272357.3,
   "quoteAssetVolume" : 258497.9838,
+  "usdVolume" : null,
   "numberOfTrades" : 962,
   "rsi" : 0.0
 }, {
@@ -3692,6 +3160,7 @@
   "close" : 0.2036,
   "volume" : 2010860.9,
   "quoteAssetVolume" : 406273.6257,
+  "usdVolume" : null,
   "numberOfTrades" : 1095,
   "rsi" : 0.0
 }, {
@@ -3706,6 +3175,7 @@
   "close" : 0.204,
   "volume" : 1207004.7,
   "quoteAssetVolume" : 244588.2548,
+  "usdVolume" : null,
   "numberOfTrades" : 780,
   "rsi" : 0.0
 }, {
@@ -3720,6 +3190,7 @@
   "close" : 0.2016,
   "volume" : 2455860.9,
   "quoteAssetVolume" : 497078.9278,
+  "usdVolume" : null,
   "numberOfTrades" : 1284,
   "rsi" : 0.0
 }, {
@@ -3734,6 +3205,7 @@
   "close" : 0.2029,
   "volume" : 3079700.1,
   "quoteAssetVolume" : 621630.6189,
+  "usdVolume" : null,
   "numberOfTrades" : 1432,
   "rsi" : 0.0
 }, {
@@ -3748,6 +3220,7 @@
   "close" : 0.188,
   "volume" : 5284637.6,
   "quoteAssetVolume" : 1026876.0459,
+  "usdVolume" : null,
   "numberOfTrades" : 2953,
   "rsi" : 0.0
 }, {
@@ -3762,6 +3235,7 @@
   "close" : 0.1933,
   "volume" : 1871184.7,
   "quoteAssetVolume" : 359550.7583,
+  "usdVolume" : null,
   "numberOfTrades" : 1247,
   "rsi" : 0.0
 }, {
@@ -3776,6 +3250,7 @@
   "close" : 0.1924,
   "volume" : 1423448.0,
   "quoteAssetVolume" : 273855.5577,
+  "usdVolume" : null,
   "numberOfTrades" : 993,
   "rsi" : 0.0
 }, {
@@ -3790,6 +3265,7 @@
   "close" : 0.1904,
   "volume" : 1402385.8,
   "quoteAssetVolume" : 268300.7351,
+  "usdVolume" : null,
   "numberOfTrades" : 1170,
   "rsi" : 0.0
 }, {
@@ -3804,6 +3280,7 @@
   "close" : 0.1927,
   "volume" : 3586726.5,
   "quoteAssetVolume" : 675907.6547,
+  "usdVolume" : null,
   "numberOfTrades" : 2739,
   "rsi" : 0.0
 }, {
@@ -3818,6 +3295,7 @@
   "close" : 0.1922,
   "volume" : 2347058.1,
   "quoteAssetVolume" : 450390.1183,
+  "usdVolume" : null,
   "numberOfTrades" : 1357,
   "rsi" : 0.0
 }, {
@@ -3832,6 +3310,7 @@
   "close" : 0.1931,
   "volume" : 4013725.8,
   "quoteAssetVolume" : 780218.1949,
+  "usdVolume" : null,
   "numberOfTrades" : 1955,
   "rsi" : 0.0
 }, {
@@ -3846,6 +3325,7 @@
   "close" : 0.1898,
   "volume" : 2322775.3,
   "quoteAssetVolume" : 442727.427,
+  "usdVolume" : null,
   "numberOfTrades" : 1701,
   "rsi" : 0.0
 }, {
@@ -3860,6 +3340,7 @@
   "close" : 0.187,
   "volume" : 2524349.4,
   "quoteAssetVolume" : 475578.7078,
+  "usdVolume" : null,
   "numberOfTrades" : 1954,
   "rsi" : 0.0
 }, {
@@ -3874,6 +3355,7 @@
   "close" : 0.1881,
   "volume" : 1700354.7,
   "quoteAssetVolume" : 318892.4104,
+  "usdVolume" : null,
   "numberOfTrades" : 1262,
   "rsi" : 0.0
 }, {
@@ -3888,6 +3370,7 @@
   "close" : 0.1859,
   "volume" : 968627.8,
   "quoteAssetVolume" : 181588.0678,
+  "usdVolume" : null,
   "numberOfTrades" : 801,
   "rsi" : 0.0
 }, {
@@ -3902,6 +3385,7 @@
   "close" : 0.1896,
   "volume" : 1855916.5,
   "quoteAssetVolume" : 350367.9625,
+  "usdVolume" : null,
   "numberOfTrades" : 1125,
   "rsi" : 0.0
 }, {
@@ -3916,6 +3400,7 @@
   "close" : 0.1889,
   "volume" : 1885333.3,
   "quoteAssetVolume" : 356684.0538,
+  "usdVolume" : null,
   "numberOfTrades" : 1256,
   "rsi" : 0.0
 }, {
@@ -3930,6 +3415,7 @@
   "close" : 0.1834,
   "volume" : 2867747.6,
   "quoteAssetVolume" : 531561.6354,
+  "usdVolume" : null,
   "numberOfTrades" : 2089,
   "rsi" : 0.0
 }, {
@@ -3944,6 +3430,7 @@
   "close" : 0.1814,
   "volume" : 2242409.9,
   "quoteAssetVolume" : 406797.4282,
+  "usdVolume" : null,
   "numberOfTrades" : 1625,
   "rsi" : 0.0
 }, {
@@ -3958,6 +3445,7 @@
   "close" : 0.1825,
   "volume" : 2062763.7,
   "quoteAssetVolume" : 377138.2632,
+  "usdVolume" : null,
   "numberOfTrades" : 1860,
   "rsi" : 0.0
 }, {
@@ -3972,6 +3460,7 @@
   "close" : 0.1752,
   "volume" : 2973274.6,
   "quoteAssetVolume" : 527120.3071,
+  "usdVolume" : null,
   "numberOfTrades" : 2501,
   "rsi" : 0.0
 }, {
@@ -3986,6 +3475,7 @@
   "close" : 0.1769,
   "volume" : 1556570.1,
   "quoteAssetVolume" : 274798.2317,
+  "usdVolume" : null,
   "numberOfTrades" : 1314,
   "rsi" : 0.0
 }, {
@@ -4000,6 +3490,7 @@
   "close" : 0.1773,
   "volume" : 2449916.5,
   "quoteAssetVolume" : 432717.693,
+  "usdVolume" : null,
   "numberOfTrades" : 1275,
   "rsi" : 0.0
 }, {
@@ -4014,6 +3505,7 @@
   "close" : 0.1753,
   "volume" : 1496955.2,
   "quoteAssetVolume" : 263855.4419,
+  "usdVolume" : null,
   "numberOfTrades" : 1261,
   "rsi" : 0.0
 }, {
@@ -4028,6 +3520,7 @@
   "close" : 0.1764,
   "volume" : 2594908.1,
   "quoteAssetVolume" : 458353.9884,
+  "usdVolume" : null,
   "numberOfTrades" : 1648,
   "rsi" : 0.0
 }, {
@@ -4042,6 +3535,7 @@
   "close" : 0.1749,
   "volume" : 2169351.0,
   "quoteAssetVolume" : 380841.56,
+  "usdVolume" : null,
   "numberOfTrades" : 1686,
   "rsi" : 0.0
 }, {
@@ -4056,6 +3550,7 @@
   "close" : 0.1764,
   "volume" : 2729268.8,
   "quoteAssetVolume" : 481405.8698,
+  "usdVolume" : null,
   "numberOfTrades" : 1487,
   "rsi" : 0.0
 }, {
@@ -4070,6 +3565,7 @@
   "close" : 0.1778,
   "volume" : 2921313.5,
   "quoteAssetVolume" : 520241.9088,
+  "usdVolume" : null,
   "numberOfTrades" : 1615,
   "rsi" : 0.0
 }, {
@@ -4084,6 +3580,7 @@
   "close" : 0.1773,
   "volume" : 2204888.1,
   "quoteAssetVolume" : 389095.7998,
+  "usdVolume" : null,
   "numberOfTrades" : 1268,
   "rsi" : 0.0
 }, {
@@ -4098,6 +3595,7 @@
   "close" : 0.189,
   "volume" : 4627732.0,
   "quoteAssetVolume" : 851104.8646,
+  "usdVolume" : null,
   "numberOfTrades" : 2207,
   "rsi" : 0.0
 }, {
@@ -4112,6 +3610,7 @@
   "close" : 0.1852,
   "volume" : 3586154.2,
   "quoteAssetVolume" : 665958.7653,
+  "usdVolume" : null,
   "numberOfTrades" : 1948,
   "rsi" : 0.0
 }, {
@@ -4126,6 +3625,7 @@
   "close" : 0.2053,
   "volume" : 1.05788342E7,
   "quoteAssetVolume" : 2097507.4916,
+  "usdVolume" : null,
   "numberOfTrades" : 4452,
   "rsi" : 0.0
 }, {
@@ -4140,6 +3640,7 @@
   "close" : 0.2025,
   "volume" : 5668996.5,
   "quoteAssetVolume" : 1149096.2662,
+  "usdVolume" : null,
   "numberOfTrades" : 3118,
   "rsi" : 0.0
 }, {
@@ -4154,6 +3655,7 @@
   "close" : 0.199,
   "volume" : 4745143.8,
   "quoteAssetVolume" : 939422.1759,
+  "usdVolume" : null,
   "numberOfTrades" : 2210,
   "rsi" : 0.0
 }, {
@@ -4168,6 +3670,7 @@
   "close" : 0.2013,
   "volume" : 5016568.8,
   "quoteAssetVolume" : 1009521.7345,
+  "usdVolume" : null,
   "numberOfTrades" : 2315,
   "rsi" : 0.0
 }, {
@@ -4182,6 +3685,7 @@
   "close" : 0.201,
   "volume" : 2910625.2,
   "quoteAssetVolume" : 583950.8375,
+  "usdVolume" : null,
   "numberOfTrades" : 1737,
   "rsi" : 0.0
 }, {
@@ -4196,6 +3700,7 @@
   "close" : 0.1988,
   "volume" : 6379370.9,
   "quoteAssetVolume" : 1277308.6053,
+  "usdVolume" : null,
   "numberOfTrades" : 3122,
   "rsi" : 0.0
 }, {
@@ -4210,6 +3715,7 @@
   "close" : 0.1992,
   "volume" : 2760883.2,
   "quoteAssetVolume" : 547278.72,
+  "usdVolume" : null,
   "numberOfTrades" : 1903,
   "rsi" : 0.0
 }, {
@@ -4224,6 +3730,7 @@
   "close" : 0.1972,
   "volume" : 2358236.9,
   "quoteAssetVolume" : 467034.6686,
+  "usdVolume" : null,
   "numberOfTrades" : 1743,
   "rsi" : 0.0
 }, {
@@ -4238,6 +3745,7 @@
   "close" : 0.1945,
   "volume" : 3351911.7,
   "quoteAssetVolume" : 647157.0007,
+  "usdVolume" : null,
   "numberOfTrades" : 2325,
   "rsi" : 0.0
 }, {
@@ -4252,6 +3760,7 @@
   "close" : 0.1942,
   "volume" : 3721439.3,
   "quoteAssetVolume" : 722706.8758,
+  "usdVolume" : null,
   "numberOfTrades" : 1940,
   "rsi" : 0.0
 }, {
@@ -4266,6 +3775,7 @@
   "close" : 0.1999,
   "volume" : 3612558.7,
   "quoteAssetVolume" : 718207.8099,
+  "usdVolume" : null,
   "numberOfTrades" : 2250,
   "rsi" : 0.0
 }, {
@@ -4280,6 +3790,7 @@
   "close" : 0.1997,
   "volume" : 2501228.6,
   "quoteAssetVolume" : 496494.3818,
+  "usdVolume" : null,
   "numberOfTrades" : 1450,
   "rsi" : 0.0
 }, {
@@ -4294,6 +3805,7 @@
   "close" : 0.1948,
   "volume" : 3293227.2,
   "quoteAssetVolume" : 648346.1198,
+  "usdVolume" : null,
   "numberOfTrades" : 1664,
   "rsi" : 0.0
 }, {
@@ -4308,6 +3820,7 @@
   "close" : 0.1994,
   "volume" : 4010100.9,
   "quoteAssetVolume" : 794559.1264,
+  "usdVolume" : null,
   "numberOfTrades" : 2228,
   "rsi" : 0.0
 }, {
@@ -4322,6 +3835,7 @@
   "close" : 0.2042,
   "volume" : 3685369.6,
   "quoteAssetVolume" : 739062.4697,
+  "usdVolume" : null,
   "numberOfTrades" : 1841,
   "rsi" : 0.0
 }, {
@@ -4336,6 +3850,7 @@
   "close" : 0.2085,
   "volume" : 6112464.5,
   "quoteAssetVolume" : 1263565.9297,
+  "usdVolume" : null,
   "numberOfTrades" : 3661,
   "rsi" : 0.0
 }, {
@@ -4350,6 +3865,7 @@
   "close" : 0.2048,
   "volume" : 2932577.8,
   "quoteAssetVolume" : 602367.7038,
+  "usdVolume" : null,
   "numberOfTrades" : 1929,
   "rsi" : 0.0
 }, {
@@ -4364,6 +3880,7 @@
   "close" : 0.215,
   "volume" : 6924957.3,
   "quoteAssetVolume" : 1466771.1381,
+  "usdVolume" : null,
   "numberOfTrades" : 3508,
   "rsi" : 0.0
 }, {
@@ -4378,6 +3895,7 @@
   "close" : 0.2155,
   "volume" : 7007735.7,
   "quoteAssetVolume" : 1531463.8408,
+  "usdVolume" : null,
   "numberOfTrades" : 3469,
   "rsi" : 0.0
 }, {
@@ -4392,6 +3910,7 @@
   "close" : 0.2241,
   "volume" : 8054030.2,
   "quoteAssetVolume" : 1779059.666,
+  "usdVolume" : null,
   "numberOfTrades" : 4239,
   "rsi" : 0.0
 }, {
@@ -4406,6 +3925,7 @@
   "close" : 0.231,
   "volume" : 8243849.5,
   "quoteAssetVolume" : 1874777.2357,
+  "usdVolume" : null,
   "numberOfTrades" : 4414,
   "rsi" : 0.0
 }, {
@@ -4415,11 +3935,1557 @@
   "closeTime" : 1596067199999,
   "closeDate" : null,
   "open" : 0.2307,
-  "high" : 0.25,
+  "high" : 0.2501,
   "low" : 0.2299,
-  "close" : 0.2484,
-  "volume" : 9840641.2,
-  "quoteAssetVolume" : 2373192.8811,
-  "numberOfTrades" : 5612,
+  "close" : 0.2433,
+  "volume" : 1.18159574E7,
+  "quoteAssetVolume" : 2858922.6923,
+  "usdVolume" : null,
+  "numberOfTrades" : 6417,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1596067200000,
+  "openDate" : null,
+  "closeTime" : 1596153599999,
+  "closeDate" : null,
+  "open" : 0.2434,
+  "high" : 0.2496,
+  "low" : 0.2347,
+  "close" : 0.2446,
+  "volume" : 8754630.0,
+  "quoteAssetVolume" : 2128880.6143,
+  "usdVolume" : null,
+  "numberOfTrades" : 4144,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1596153600000,
+  "openDate" : null,
+  "closeTime" : 1596239999999,
+  "closeDate" : null,
+  "open" : 0.2445,
+  "high" : 0.2611,
+  "low" : 0.2421,
+  "close" : 0.26,
+  "volume" : 7335122.0,
+  "quoteAssetVolume" : 1839202.0436,
+  "usdVolume" : null,
+  "numberOfTrades" : 4114,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1596240000000,
+  "openDate" : null,
+  "closeTime" : 1596326399999,
+  "closeDate" : null,
+  "open" : 0.2598,
+  "high" : 0.2982,
+  "low" : 0.2562,
+  "close" : 0.2906,
+  "volume" : 2.31281525E7,
+  "quoteAssetVolume" : 6451989.2862,
+  "usdVolume" : null,
+  "numberOfTrades" : 10890,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1596326400000,
+  "openDate" : null,
+  "closeTime" : 1596412799999,
+  "closeDate" : null,
+  "open" : 0.2908,
+  "high" : 0.3261,
+  "low" : 0.24,
+  "close" : 0.288,
+  "volume" : 2.76402105E7,
+  "quoteAssetVolume" : 8159069.0976,
+  "usdVolume" : null,
+  "numberOfTrades" : 14785,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1596412800000,
+  "openDate" : null,
+  "closeTime" : 1596499199999,
+  "closeDate" : null,
+  "open" : 0.288,
+  "high" : 0.32,
+  "low" : 0.2834,
+  "close" : 0.3102,
+  "volume" : 1.45732268E7,
+  "quoteAssetVolume" : 4466788.794,
+  "usdVolume" : null,
+  "numberOfTrades" : 8525,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1596499200000,
+  "openDate" : null,
+  "closeTime" : 1596585599999,
+  "closeDate" : null,
+  "open" : 0.3106,
+  "high" : 0.3195,
+  "low" : 0.2918,
+  "close" : 0.3015,
+  "volume" : 1.0055072E7,
+  "quoteAssetVolume" : 3066617.9896,
+  "usdVolume" : null,
+  "numberOfTrades" : 6236,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1596585600000,
+  "openDate" : null,
+  "closeTime" : 1596671999999,
+  "closeDate" : null,
+  "open" : 0.3013,
+  "high" : 0.3085,
+  "low" : 0.2915,
+  "close" : 0.3027,
+  "volume" : 8055049.2,
+  "quoteAssetVolume" : 2428576.6698,
+  "usdVolume" : null,
+  "numberOfTrades" : 4994,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1596672000000,
+  "openDate" : null,
+  "closeTime" : 1596758399999,
+  "closeDate" : null,
+  "open" : 0.3025,
+  "high" : 0.3117,
+  "low" : 0.2977,
+  "close" : 0.3035,
+  "volume" : 8270175.8,
+  "quoteAssetVolume" : 2509395.0598,
+  "usdVolume" : null,
+  "numberOfTrades" : 4372,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1596758400000,
+  "openDate" : null,
+  "closeTime" : 1596844799999,
+  "closeDate" : null,
+  "open" : 0.3034,
+  "high" : 0.31,
+  "low" : 0.293,
+  "close" : 0.2948,
+  "volume" : 4691724.9,
+  "quoteAssetVolume" : 1419609.541,
+  "usdVolume" : null,
+  "numberOfTrades" : 2859,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1596844800000,
+  "openDate" : null,
+  "closeTime" : 1596931199999,
+  "closeDate" : null,
+  "open" : 0.2949,
+  "high" : 0.2991,
+  "low" : 0.2903,
+  "close" : 0.2958,
+  "volume" : 5797540.3,
+  "quoteAssetVolume" : 1705379.5909,
+  "usdVolume" : null,
+  "numberOfTrades" : 3846,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1596931200000,
+  "openDate" : null,
+  "closeTime" : 1597017599999,
+  "closeDate" : null,
+  "open" : 0.2953,
+  "high" : 0.299,
+  "low" : 0.2819,
+  "close" : 0.2885,
+  "volume" : 6713889.5,
+  "quoteAssetVolume" : 1950189.1784,
+  "usdVolume" : null,
+  "numberOfTrades" : 3354,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1597017600000,
+  "openDate" : null,
+  "closeTime" : 1597103999999,
+  "closeDate" : null,
+  "open" : 0.2882,
+  "high" : 0.3005,
+  "low" : 0.2852,
+  "close" : 0.2946,
+  "volume" : 5665766.2,
+  "quoteAssetVolume" : 1669438.1763,
+  "usdVolume" : null,
+  "numberOfTrades" : 3272,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1597104000000,
+  "openDate" : null,
+  "closeTime" : 1597190399999,
+  "closeDate" : null,
+  "open" : 0.2949,
+  "high" : 0.3075,
+  "low" : 0.2686,
+  "close" : 0.2826,
+  "volume" : 1.0355455E7,
+  "quoteAssetVolume" : 3023352.8447,
+  "usdVolume" : null,
+  "numberOfTrades" : 5681,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1597190400000,
+  "openDate" : null,
+  "closeTime" : 1597276799999,
+  "closeDate" : null,
+  "open" : 0.2831,
+  "high" : 0.2877,
+  "low" : 0.272,
+  "close" : 0.2827,
+  "volume" : 6497608.4,
+  "quoteAssetVolume" : 1828518.3177,
+  "usdVolume" : null,
+  "numberOfTrades" : 4249,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1597276800000,
+  "openDate" : null,
+  "closeTime" : 1597363199999,
+  "closeDate" : null,
+  "open" : 0.2823,
+  "high" : 0.296,
+  "low" : 0.2726,
+  "close" : 0.2951,
+  "volume" : 9105524.8,
+  "quoteAssetVolume" : 2586996.3882,
+  "usdVolume" : null,
+  "numberOfTrades" : 5224,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1597363200000,
+  "openDate" : null,
+  "closeTime" : 1597449599999,
+  "closeDate" : null,
+  "open" : 0.2952,
+  "high" : 0.3077,
+  "low" : 0.2906,
+  "close" : 0.3002,
+  "volume" : 1.09670957E7,
+  "quoteAssetVolume" : 3284945.1444,
+  "usdVolume" : null,
+  "numberOfTrades" : 6501,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1597449600000,
+  "openDate" : null,
+  "closeTime" : 1597535999999,
+  "closeDate" : null,
+  "open" : 0.3005,
+  "high" : 0.3057,
+  "low" : 0.2913,
+  "close" : 0.2991,
+  "volume" : 6210792.4,
+  "quoteAssetVolume" : 1863554.7008,
+  "usdVolume" : null,
+  "numberOfTrades" : 3447,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1597536000000,
+  "openDate" : null,
+  "closeTime" : 1597622399999,
+  "closeDate" : null,
+  "open" : 0.2996,
+  "high" : 0.305,
+  "low" : 0.2925,
+  "close" : 0.3045,
+  "volume" : 4065430.1,
+  "quoteAssetVolume" : 1217655.8412,
+  "usdVolume" : null,
+  "numberOfTrades" : 2632,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1597622400000,
+  "openDate" : null,
+  "closeTime" : 1597708799999,
+  "closeDate" : null,
+  "open" : 0.3046,
+  "high" : 0.3278,
+  "low" : 0.2975,
+  "close" : 0.315,
+  "volume" : 1.11666191E7,
+  "quoteAssetVolume" : 3524861.2019,
+  "usdVolume" : null,
+  "numberOfTrades" : 6554,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1597708800000,
+  "openDate" : null,
+  "closeTime" : 1597795199999,
+  "closeDate" : null,
+  "open" : 0.3154,
+  "high" : 0.3219,
+  "low" : 0.299,
+  "close" : 0.303,
+  "volume" : 5967434.3,
+  "quoteAssetVolume" : 1847044.0317,
+  "usdVolume" : null,
+  "numberOfTrades" : 4113,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1597795200000,
+  "openDate" : null,
+  "closeTime" : 1597881599999,
+  "closeDate" : null,
+  "open" : 0.3029,
+  "high" : 0.3059,
+  "low" : 0.28,
+  "close" : 0.2892,
+  "volume" : 7062378.9,
+  "quoteAssetVolume" : 2060060.0101,
+  "usdVolume" : null,
+  "numberOfTrades" : 5671,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1597881600000,
+  "openDate" : null,
+  "closeTime" : 1597967999999,
+  "closeDate" : null,
+  "open" : 0.2898,
+  "high" : 0.2949,
+  "low" : 0.2849,
+  "close" : 0.2926,
+  "volume" : 4667370.9,
+  "quoteAssetVolume" : 1358118.4328,
+  "usdVolume" : null,
+  "numberOfTrades" : 4065,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1597968000000,
+  "openDate" : null,
+  "closeTime" : 1598054399999,
+  "closeDate" : null,
+  "open" : 0.2922,
+  "high" : 0.2957,
+  "low" : 0.2776,
+  "close" : 0.2789,
+  "volume" : 6411503.5,
+  "quoteAssetVolume" : 1838916.3931,
+  "usdVolume" : null,
+  "numberOfTrades" : 4122,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1598054400000,
+  "openDate" : null,
+  "closeTime" : 1598140799999,
+  "closeDate" : null,
+  "open" : 0.2792,
+  "high" : 0.2871,
+  "low" : 0.273,
+  "close" : 0.2863,
+  "volume" : 5583688.3,
+  "quoteAssetVolume" : 1562342.4874,
+  "usdVolume" : null,
+  "numberOfTrades" : 2726,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1598140800000,
+  "openDate" : null,
+  "closeTime" : 1598227199999,
+  "closeDate" : null,
+  "open" : 0.2863,
+  "high" : 0.2883,
+  "low" : 0.2774,
+  "close" : 0.2848,
+  "volume" : 2917689.4,
+  "quoteAssetVolume" : 826473.5848,
+  "usdVolume" : null,
+  "numberOfTrades" : 1756,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1598227200000,
+  "openDate" : null,
+  "closeTime" : 1598313599999,
+  "closeDate" : null,
+  "open" : 0.2849,
+  "high" : 0.2921,
+  "low" : 0.2822,
+  "close" : 0.2888,
+  "volume" : 4914510.4,
+  "quoteAssetVolume" : 1412657.017,
+  "usdVolume" : null,
+  "numberOfTrades" : 2188,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1598313600000,
+  "openDate" : null,
+  "closeTime" : 1598399999999,
+  "closeDate" : null,
+  "open" : 0.2886,
+  "high" : 0.2897,
+  "low" : 0.2702,
+  "close" : 0.2768,
+  "volume" : 4996356.8,
+  "quoteAssetVolume" : 1391406.2293,
+  "usdVolume" : null,
+  "numberOfTrades" : 3077,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1598400000000,
+  "openDate" : null,
+  "closeTime" : 1598486399999,
+  "closeDate" : null,
+  "open" : 0.2766,
+  "high" : 0.2808,
+  "low" : 0.2743,
+  "close" : 0.2768,
+  "volume" : 2739221.3,
+  "quoteAssetVolume" : 760850.3274,
+  "usdVolume" : null,
+  "numberOfTrades" : 2031,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1598486400000,
+  "openDate" : null,
+  "closeTime" : 1598572799999,
+  "closeDate" : null,
+  "open" : 0.2768,
+  "high" : 0.2784,
+  "low" : 0.255,
+  "close" : 0.2642,
+  "volume" : 4532945.8,
+  "quoteAssetVolume" : 1205397.1265,
+  "usdVolume" : null,
+  "numberOfTrades" : 3451,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1598572800000,
+  "openDate" : null,
+  "closeTime" : 1598659199999,
+  "closeDate" : null,
+  "open" : 0.2648,
+  "high" : 0.2732,
+  "low" : 0.26,
+  "close" : 0.2718,
+  "volume" : 2639944.9,
+  "quoteAssetVolume" : 709008.9424,
+  "usdVolume" : null,
+  "numberOfTrades" : 2709,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1598659200000,
+  "openDate" : null,
+  "closeTime" : 1598745599999,
+  "closeDate" : null,
+  "open" : 0.2718,
+  "high" : 0.277,
+  "low" : 0.2691,
+  "close" : 0.275,
+  "volume" : 1883712.4,
+  "quoteAssetVolume" : 514923.4206,
+  "usdVolume" : null,
+  "numberOfTrades" : 2009,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1598745600000,
+  "openDate" : null,
+  "closeTime" : 1598831999999,
+  "closeDate" : null,
+  "open" : 0.2749,
+  "high" : 0.2838,
+  "low" : 0.2741,
+  "close" : 0.2829,
+  "volume" : 2687008.7,
+  "quoteAssetVolume" : 752301.6271,
+  "usdVolume" : null,
+  "numberOfTrades" : 2005,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1598832000000,
+  "openDate" : null,
+  "closeTime" : 1598918399999,
+  "closeDate" : null,
+  "open" : 0.2832,
+  "high" : 0.2849,
+  "low" : 0.2783,
+  "close" : 0.2815,
+  "volume" : 2940154.2,
+  "quoteAssetVolume" : 828939.6019,
+  "usdVolume" : null,
+  "numberOfTrades" : 2232,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1598918400000,
+  "openDate" : null,
+  "closeTime" : 1599004799999,
+  "closeDate" : null,
+  "open" : 0.2813,
+  "high" : 0.2991,
+  "low" : 0.276,
+  "close" : 0.295,
+  "volume" : 5252418.5,
+  "quoteAssetVolume" : 1524560.8092,
+  "usdVolume" : null,
+  "numberOfTrades" : 3798,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1599004800000,
+  "openDate" : null,
+  "closeTime" : 1599091199999,
+  "closeDate" : null,
+  "open" : 0.2951,
+  "high" : 0.3042,
+  "low" : 0.265,
+  "close" : 0.2764,
+  "volume" : 6163184.7,
+  "quoteAssetVolume" : 1747566.521,
+  "usdVolume" : null,
+  "numberOfTrades" : 4546,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1599091200000,
+  "openDate" : null,
+  "closeTime" : 1599177599999,
+  "closeDate" : null,
+  "open" : 0.2764,
+  "high" : 0.2765,
+  "low" : 0.2403,
+  "close" : 0.2449,
+  "volume" : 5559524.6,
+  "quoteAssetVolume" : 1456482.5305,
+  "usdVolume" : null,
+  "numberOfTrades" : 6004,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1599177600000,
+  "openDate" : null,
+  "closeTime" : 1599263999999,
+  "closeDate" : null,
+  "open" : 0.2448,
+  "high" : 0.2659,
+  "low" : 0.241,
+  "close" : 0.2549,
+  "volume" : 5102179.3,
+  "quoteAssetVolume" : 1284946.7726,
+  "usdVolume" : null,
+  "numberOfTrades" : 3925,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1599264000000,
+  "openDate" : null,
+  "closeTime" : 1599350399999,
+  "closeDate" : null,
+  "open" : 0.2544,
+  "high" : 0.2596,
+  "low" : 0.2311,
+  "close" : 0.2372,
+  "volume" : 4931993.2,
+  "quoteAssetVolume" : 1196852.9909,
+  "usdVolume" : null,
+  "numberOfTrades" : 4939,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1599350400000,
+  "openDate" : null,
+  "closeTime" : 1599436799999,
+  "closeDate" : null,
+  "open" : 0.2367,
+  "high" : 0.2432,
+  "low" : 0.23,
+  "close" : 0.2396,
+  "volume" : 2738339.2,
+  "quoteAssetVolume" : 650524.0194,
+  "usdVolume" : null,
+  "numberOfTrades" : 2560,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1599436800000,
+  "openDate" : null,
+  "closeTime" : 1599523199999,
+  "closeDate" : null,
+  "open" : 0.2401,
+  "high" : 0.2427,
+  "low" : 0.2299,
+  "close" : 0.2417,
+  "volume" : 2264377.9,
+  "quoteAssetVolume" : 537725.2959,
+  "usdVolume" : null,
+  "numberOfTrades" : 1837,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1599523200000,
+  "openDate" : null,
+  "closeTime" : 1599609599999,
+  "closeDate" : null,
+  "open" : 0.2427,
+  "high" : 0.2436,
+  "low" : 0.2314,
+  "close" : 0.2362,
+  "volume" : 2786013.9,
+  "quoteAssetVolume" : 659792.606,
+  "usdVolume" : null,
+  "numberOfTrades" : 1435,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1599609600000,
+  "openDate" : null,
+  "closeTime" : 1599695999999,
+  "closeDate" : null,
+  "open" : 0.2359,
+  "high" : 0.2429,
+  "low" : 0.2332,
+  "close" : 0.2384,
+  "volume" : 1666132.0,
+  "quoteAssetVolume" : 397782.9689,
+  "usdVolume" : null,
+  "numberOfTrades" : 1124,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1599696000000,
+  "openDate" : null,
+  "closeTime" : 1599782399999,
+  "closeDate" : null,
+  "open" : 0.2393,
+  "high" : 0.2488,
+  "low" : 0.2391,
+  "close" : 0.2434,
+  "volume" : 2858870.9,
+  "quoteAssetVolume" : 699555.9319,
+  "usdVolume" : null,
+  "numberOfTrades" : 2010,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1599782400000,
+  "openDate" : null,
+  "closeTime" : 1599868799999,
+  "closeDate" : null,
+  "open" : 0.2433,
+  "high" : 0.2445,
+  "low" : 0.2368,
+  "close" : 0.2428,
+  "volume" : 1841053.4,
+  "quoteAssetVolume" : 444562.1282,
+  "usdVolume" : null,
+  "numberOfTrades" : 1199,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1599868800000,
+  "openDate" : null,
+  "closeTime" : 1599955199999,
+  "closeDate" : null,
+  "open" : 0.2423,
+  "high" : 0.2487,
+  "low" : 0.2405,
+  "close" : 0.2477,
+  "volume" : 1672262.9,
+  "quoteAssetVolume" : 407382.5653,
+  "usdVolume" : null,
+  "numberOfTrades" : 1122,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1599955200000,
+  "openDate" : null,
+  "closeTime" : 1600041599999,
+  "closeDate" : null,
+  "open" : 0.2477,
+  "high" : 0.2533,
+  "low" : 0.2379,
+  "close" : 0.2422,
+  "volume" : 1978547.3,
+  "quoteAssetVolume" : 487175.804,
+  "usdVolume" : null,
+  "numberOfTrades" : 1469,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1600041600000,
+  "openDate" : null,
+  "closeTime" : 1600127999999,
+  "closeDate" : null,
+  "open" : 0.242,
+  "high" : 0.2485,
+  "low" : 0.2389,
+  "close" : 0.246,
+  "volume" : 2032402.2,
+  "quoteAssetVolume" : 497070.9866,
+  "usdVolume" : null,
+  "numberOfTrades" : 1334,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1600128000000,
+  "openDate" : null,
+  "closeTime" : 1600214399999,
+  "closeDate" : null,
+  "open" : 0.246,
+  "high" : 0.2493,
+  "low" : 0.2424,
+  "close" : 0.2431,
+  "volume" : 2053609.8,
+  "quoteAssetVolume" : 504570.5613,
+  "usdVolume" : null,
+  "numberOfTrades" : 1367,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1600214400000,
+  "openDate" : null,
+  "closeTime" : 1600300799999,
+  "closeDate" : null,
+  "open" : 0.2431,
+  "high" : 0.251,
+  "low" : 0.2345,
+  "close" : 0.2469,
+  "volume" : 2448316.6,
+  "quoteAssetVolume" : 594546.842,
+  "usdVolume" : null,
+  "numberOfTrades" : 1700,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1600300800000,
+  "openDate" : null,
+  "closeTime" : 1600387199999,
+  "closeDate" : null,
+  "open" : 0.2469,
+  "high" : 0.2585,
+  "low" : 0.2464,
+  "close" : 0.2519,
+  "volume" : 4169455.1,
+  "quoteAssetVolume" : 1053644.7543,
+  "usdVolume" : null,
+  "numberOfTrades" : 2376,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1600387200000,
+  "openDate" : null,
+  "closeTime" : 1600473599999,
+  "closeDate" : null,
+  "open" : 0.2522,
+  "high" : 0.2552,
+  "low" : 0.2463,
+  "close" : 0.2505,
+  "volume" : 2842040.0,
+  "quoteAssetVolume" : 711508.8223,
+  "usdVolume" : null,
+  "numberOfTrades" : 1576,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1600473600000,
+  "openDate" : null,
+  "closeTime" : 1600559999999,
+  "closeDate" : null,
+  "open" : 0.2505,
+  "high" : 0.2549,
+  "low" : 0.2475,
+  "close" : 0.2514,
+  "volume" : 1524447.0,
+  "quoteAssetVolume" : 382732.7266,
+  "usdVolume" : null,
+  "numberOfTrades" : 923,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1600560000000,
+  "openDate" : null,
+  "closeTime" : 1600646399999,
+  "closeDate" : null,
+  "open" : 0.2507,
+  "high" : 0.251,
+  "low" : 0.2426,
+  "close" : 0.2465,
+  "volume" : 1433880.2,
+  "quoteAssetVolume" : 353818.4444,
+  "usdVolume" : null,
+  "numberOfTrades" : 972,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1600646400000,
+  "openDate" : null,
+  "closeTime" : 1600732799999,
+  "closeDate" : null,
+  "open" : 0.246,
+  "high" : 0.2481,
+  "low" : 0.2295,
+  "close" : 0.2309,
+  "volume" : 3479858.7,
+  "quoteAssetVolume" : 824187.6778,
+  "usdVolume" : null,
+  "numberOfTrades" : 2332,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1600732800000,
+  "openDate" : null,
+  "closeTime" : 1600819199999,
+  "closeDate" : null,
+  "open" : 0.2307,
+  "high" : 0.2348,
+  "low" : 0.2295,
+  "close" : 0.2333,
+  "volume" : 1399558.1,
+  "quoteAssetVolume" : 324846.8032,
+  "usdVolume" : null,
+  "numberOfTrades" : 1232,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1600819200000,
+  "openDate" : null,
+  "closeTime" : 1600905599999,
+  "closeDate" : null,
+  "open" : 0.2333,
+  "high" : 0.2351,
+  "low" : 0.2203,
+  "close" : 0.2211,
+  "volume" : 1886889.0,
+  "quoteAssetVolume" : 429639.1943,
+  "usdVolume" : null,
+  "numberOfTrades" : 1568,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1600905600000,
+  "openDate" : null,
+  "closeTime" : 1600991999999,
+  "closeDate" : null,
+  "open" : 0.2217,
+  "high" : 0.2342,
+  "low" : 0.2195,
+  "close" : 0.2329,
+  "volume" : 2078319.7,
+  "quoteAssetVolume" : 472690.071,
+  "usdVolume" : null,
+  "numberOfTrades" : 1523,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1600992000000,
+  "openDate" : null,
+  "closeTime" : 1601078399999,
+  "closeDate" : null,
+  "open" : 0.2329,
+  "high" : 0.2447,
+  "low" : 0.2298,
+  "close" : 0.2417,
+  "volume" : 2362855.1,
+  "quoteAssetVolume" : 562384.0166,
+  "usdVolume" : null,
+  "numberOfTrades" : 1533,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1601078400000,
+  "openDate" : null,
+  "closeTime" : 1601164799999,
+  "closeDate" : null,
+  "open" : 0.242,
+  "high" : 0.2456,
+  "low" : 0.238,
+  "close" : 0.2417,
+  "volume" : 1714039.7,
+  "quoteAssetVolume" : 414965.6318,
+  "usdVolume" : null,
+  "numberOfTrades" : 894,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1601164800000,
+  "openDate" : null,
+  "closeTime" : 1601251199999,
+  "closeDate" : null,
+  "open" : 0.2415,
+  "high" : 0.2449,
+  "low" : 0.2373,
+  "close" : 0.2431,
+  "volume" : 1137526.0,
+  "quoteAssetVolume" : 274646.6231,
+  "usdVolume" : null,
+  "numberOfTrades" : 734,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1601251200000,
+  "openDate" : null,
+  "closeTime" : 1601337599999,
+  "closeDate" : null,
+  "open" : 0.2433,
+  "high" : 0.2485,
+  "low" : 0.24,
+  "close" : 0.2412,
+  "volume" : 2126408.1,
+  "quoteAssetVolume" : 521277.8226,
+  "usdVolume" : null,
+  "numberOfTrades" : 1283,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1601337600000,
+  "openDate" : null,
+  "closeTime" : 1601423999999,
+  "closeDate" : null,
+  "open" : 0.241,
+  "high" : 0.2464,
+  "low" : 0.2383,
+  "close" : 0.243,
+  "volume" : 1727161.7,
+  "quoteAssetVolume" : 417574.3316,
+  "usdVolume" : null,
+  "numberOfTrades" : 1150,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1601424000000,
+  "openDate" : null,
+  "closeTime" : 1601510399999,
+  "closeDate" : null,
+  "open" : 0.2425,
+  "high" : 0.2425,
+  "low" : 0.238,
+  "close" : 0.2418,
+  "volume" : 933037.0,
+  "quoteAssetVolume" : 224519.8228,
+  "usdVolume" : null,
+  "numberOfTrades" : 995,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1601510400000,
+  "openDate" : null,
+  "closeTime" : 1601596799999,
+  "closeDate" : null,
+  "open" : 0.2418,
+  "high" : 0.2445,
+  "low" : 0.2337,
+  "close" : 0.2383,
+  "volume" : 2673839.7,
+  "quoteAssetVolume" : 639838.7399,
+  "usdVolume" : null,
+  "numberOfTrades" : 1859,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1601596800000,
+  "openDate" : null,
+  "closeTime" : 1601683199999,
+  "closeDate" : null,
+  "open" : 0.2377,
+  "high" : 0.2391,
+  "low" : 0.2286,
+  "close" : 0.2341,
+  "volume" : 2122102.9,
+  "quoteAssetVolume" : 495372.107,
+  "usdVolume" : null,
+  "numberOfTrades" : 1399,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1601683200000,
+  "openDate" : null,
+  "closeTime" : 1601769599999,
+  "closeDate" : null,
+  "open" : 0.234,
+  "high" : 0.2349,
+  "low" : 0.2325,
+  "close" : 0.2327,
+  "volume" : 764327.9,
+  "quoteAssetVolume" : 178636.3055,
+  "usdVolume" : null,
+  "numberOfTrades" : 631,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1601769600000,
+  "openDate" : null,
+  "closeTime" : 1601855999999,
+  "closeDate" : null,
+  "open" : 0.2325,
+  "high" : 0.2501,
+  "low" : 0.2307,
+  "close" : 0.2477,
+  "volume" : 2688973.0,
+  "quoteAssetVolume" : 648911.5073,
+  "usdVolume" : null,
+  "numberOfTrades" : 1577,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1601856000000,
+  "openDate" : null,
+  "closeTime" : 1601942399999,
+  "closeDate" : null,
+  "open" : 0.2482,
+  "high" : 0.2543,
+  "low" : 0.2468,
+  "close" : 0.2503,
+  "volume" : 2807743.4,
+  "quoteAssetVolume" : 703180.784,
+  "usdVolume" : null,
+  "numberOfTrades" : 2001,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1601942400000,
+  "openDate" : null,
+  "closeTime" : 1602028799999,
+  "closeDate" : null,
+  "open" : 0.2507,
+  "high" : 0.2594,
+  "low" : 0.2404,
+  "close" : 0.2451,
+  "volume" : 4269856.9,
+  "quoteAssetVolume" : 1069269.4109,
+  "usdVolume" : null,
+  "numberOfTrades" : 2475,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1602028800000,
+  "openDate" : null,
+  "closeTime" : 1602115199999,
+  "closeDate" : null,
+  "open" : 0.2454,
+  "high" : 0.2512,
+  "low" : 0.2409,
+  "close" : 0.2487,
+  "volume" : 1915320.0,
+  "quoteAssetVolume" : 473319.2723,
+  "usdVolume" : null,
+  "numberOfTrades" : 1129,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1602115200000,
+  "openDate" : null,
+  "closeTime" : 1602201599999,
+  "closeDate" : null,
+  "open" : 0.2488,
+  "high" : 0.253,
+  "low" : 0.2425,
+  "close" : 0.2517,
+  "volume" : 1807559.9,
+  "quoteAssetVolume" : 450262.945,
+  "usdVolume" : null,
+  "numberOfTrades" : 904,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1602201600000,
+  "openDate" : null,
+  "closeTime" : 1602287999999,
+  "closeDate" : null,
+  "open" : 0.2513,
+  "high" : 0.2568,
+  "low" : 0.2494,
+  "close" : 0.2533,
+  "volume" : 1754251.1,
+  "quoteAssetVolume" : 442753.6635,
+  "usdVolume" : null,
+  "numberOfTrades" : 1101,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1602288000000,
+  "openDate" : null,
+  "closeTime" : 1602374399999,
+  "closeDate" : null,
+  "open" : 0.2532,
+  "high" : 0.262,
+  "low" : 0.2529,
+  "close" : 0.2542,
+  "volume" : 2565039.0,
+  "quoteAssetVolume" : 659434.738,
+  "usdVolume" : null,
+  "numberOfTrades" : 1401,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1602374400000,
+  "openDate" : null,
+  "closeTime" : 1602460799999,
+  "closeDate" : null,
+  "open" : 0.254,
+  "high" : 0.2586,
+  "low" : 0.2533,
+  "close" : 0.2554,
+  "volume" : 849592.1,
+  "quoteAssetVolume" : 217183.37,
+  "usdVolume" : null,
+  "numberOfTrades" : 669,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1602460800000,
+  "openDate" : null,
+  "closeTime" : 1602547199999,
+  "closeDate" : null,
+  "open" : 0.2555,
+  "high" : 0.2582,
+  "low" : 0.2495,
+  "close" : 0.2563,
+  "volume" : 2081806.3,
+  "quoteAssetVolume" : 531743.5852,
+  "usdVolume" : null,
+  "numberOfTrades" : 1052,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1602547200000,
+  "openDate" : null,
+  "closeTime" : 1602633599999,
+  "closeDate" : null,
+  "open" : 0.2562,
+  "high" : 0.26,
+  "low" : 0.253,
+  "close" : 0.2565,
+  "volume" : 1595052.1,
+  "quoteAssetVolume" : 408432.0332,
+  "usdVolume" : null,
+  "numberOfTrades" : 1082,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1602633600000,
+  "openDate" : null,
+  "closeTime" : 1602719999999,
+  "closeDate" : null,
+  "open" : 0.2559,
+  "high" : 0.2584,
+  "low" : 0.2463,
+  "close" : 0.2495,
+  "volume" : 1789569.3,
+  "quoteAssetVolume" : 450795.5799,
+  "usdVolume" : null,
+  "numberOfTrades" : 1243,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1602720000000,
+  "openDate" : null,
+  "closeTime" : 1602806399999,
+  "closeDate" : null,
+  "open" : 0.2493,
+  "high" : 0.2501,
+  "low" : 0.2429,
+  "close" : 0.2457,
+  "volume" : 1709232.0,
+  "quoteAssetVolume" : 420903.8343,
+  "usdVolume" : null,
+  "numberOfTrades" : 1182,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1602806400000,
+  "openDate" : null,
+  "closeTime" : 1602892799999,
+  "closeDate" : null,
+  "open" : 0.2458,
+  "high" : 0.2476,
+  "low" : 0.238,
+  "close" : 0.2404,
+  "volume" : 2264394.0,
+  "quoteAssetVolume" : 545426.8425,
+  "usdVolume" : null,
+  "numberOfTrades" : 1107,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1602892800000,
+  "openDate" : null,
+  "closeTime" : 1602979199999,
+  "closeDate" : null,
+  "open" : 0.2405,
+  "high" : 0.243,
+  "low" : 0.2388,
+  "close" : 0.2408,
+  "volume" : 1195111.0,
+  "quoteAssetVolume" : 288124.693,
+  "usdVolume" : null,
+  "numberOfTrades" : 752,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1602979200000,
+  "openDate" : null,
+  "closeTime" : 1603065599999,
+  "closeDate" : null,
+  "open" : 0.2405,
+  "high" : 0.2435,
+  "low" : 0.2404,
+  "close" : 0.2424,
+  "volume" : 1512107.7,
+  "quoteAssetVolume" : 365820.0204,
+  "usdVolume" : null,
+  "numberOfTrades" : 727,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1603065600000,
+  "openDate" : null,
+  "closeTime" : 1603151999999,
+  "closeDate" : null,
+  "open" : 0.2425,
+  "high" : 0.2494,
+  "low" : 0.2399,
+  "close" : 0.2457,
+  "volume" : 2295558.1,
+  "quoteAssetVolume" : 563505.6342,
+  "usdVolume" : null,
+  "numberOfTrades" : 1149,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1603152000000,
+  "openDate" : null,
+  "closeTime" : 1603238399999,
+  "closeDate" : null,
+  "open" : 0.2457,
+  "high" : 0.2502,
+  "low" : 0.2417,
+  "close" : 0.2434,
+  "volume" : 2259052.0,
+  "quoteAssetVolume" : 553758.0916,
+  "usdVolume" : null,
+  "numberOfTrades" : 1139,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1603238400000,
+  "openDate" : null,
+  "closeTime" : 1603324799999,
+  "closeDate" : null,
+  "open" : 0.2433,
+  "high" : 0.2557,
+  "low" : 0.243,
+  "close" : 0.2516,
+  "volume" : 3369937.3,
+  "quoteAssetVolume" : 848126.0053,
+  "usdVolume" : null,
+  "numberOfTrades" : 1832,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1603324800000,
+  "openDate" : null,
+  "closeTime" : 1603411199999,
+  "closeDate" : null,
+  "open" : 0.2516,
+  "high" : 0.2639,
+  "low" : 0.2516,
+  "close" : 0.2577,
+  "volume" : 2557957.9,
+  "quoteAssetVolume" : 664097.2495,
+  "usdVolume" : null,
+  "numberOfTrades" : 1805,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1603411200000,
+  "openDate" : null,
+  "closeTime" : 1603497599999,
+  "closeDate" : null,
+  "open" : 0.2575,
+  "high" : 0.2595,
+  "low" : 0.2508,
+  "close" : 0.2549,
+  "volume" : 1598313.7,
+  "quoteAssetVolume" : 407766.6686,
+  "usdVolume" : null,
+  "numberOfTrades" : 1251,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1603497600000,
+  "openDate" : null,
+  "closeTime" : 1603583999999,
+  "closeDate" : null,
+  "open" : 0.2549,
+  "high" : 0.2578,
+  "low" : 0.2528,
+  "close" : 0.2561,
+  "volume" : 1270699.6,
+  "quoteAssetVolume" : 324737.2445,
+  "usdVolume" : null,
+  "numberOfTrades" : 912,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1603584000000,
+  "openDate" : null,
+  "closeTime" : 1603670399999,
+  "closeDate" : null,
+  "open" : 0.2559,
+  "high" : 0.2574,
+  "low" : 0.2519,
+  "close" : 0.2531,
+  "volume" : 999015.5,
+  "quoteAssetVolume" : 253767.7185,
+  "usdVolume" : null,
+  "numberOfTrades" : 862,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1603670400000,
+  "openDate" : null,
+  "closeTime" : 1603756799999,
+  "closeDate" : null,
+  "open" : 0.2533,
+  "high" : 0.2591,
+  "low" : 0.2436,
+  "close" : 0.2481,
+  "volume" : 2151437.2,
+  "quoteAssetVolume" : 540217.9535,
+  "usdVolume" : null,
+  "numberOfTrades" : 1356,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1603756800000,
+  "openDate" : null,
+  "closeTime" : 1603843199999,
+  "closeDate" : null,
+  "open" : 0.2481,
+  "high" : 0.2544,
+  "low" : 0.2476,
+  "close" : 0.253,
+  "volume" : 2712346.4,
+  "quoteAssetVolume" : 681910.7585,
+  "usdVolume" : null,
+  "numberOfTrades" : 1143,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1603843200000,
+  "openDate" : null,
+  "closeTime" : 1603929599999,
+  "closeDate" : null,
+  "open" : 0.2526,
+  "high" : 0.2569,
+  "low" : 0.2446,
+  "close" : 0.246,
+  "volume" : 3792349.8,
+  "quoteAssetVolume" : 946031.8867,
+  "usdVolume" : null,
+  "numberOfTrades" : 1532,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1603929600000,
+  "openDate" : null,
+  "closeTime" : 1604015999999,
+  "closeDate" : null,
+  "open" : 0.2457,
+  "high" : 0.247,
+  "low" : 0.24,
+  "close" : 0.2425,
+  "volume" : 1778030.1,
+  "quoteAssetVolume" : 434032.2156,
+  "usdVolume" : null,
+  "numberOfTrades" : 897,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1604016000000,
+  "openDate" : null,
+  "closeTime" : 1604102399999,
+  "closeDate" : null,
+  "open" : 0.2423,
+  "high" : 0.2444,
+  "low" : 0.2316,
+  "close" : 0.2393,
+  "volume" : 2425992.9,
+  "quoteAssetVolume" : 580356.6778,
+  "usdVolume" : null,
+  "numberOfTrades" : 1399,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1604102400000,
+  "openDate" : null,
+  "closeTime" : 1604188799999,
+  "closeDate" : null,
+  "open" : 0.2394,
+  "high" : 0.2434,
+  "low" : 0.2377,
+  "close" : 0.2401,
+  "volume" : 1375421.7,
+  "quoteAssetVolume" : 330727.8242,
+  "usdVolume" : null,
+  "numberOfTrades" : 850,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1604188800000,
+  "openDate" : null,
+  "closeTime" : 1604275199999,
+  "closeDate" : null,
+  "open" : 0.24,
+  "high" : 0.2415,
+  "low" : 0.2368,
+  "close" : 0.24,
+  "volume" : 705434.0,
+  "quoteAssetVolume" : 169147.3495,
+  "usdVolume" : null,
+  "numberOfTrades" : 643,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1604275200000,
+  "openDate" : null,
+  "closeTime" : 1604361599999,
+  "closeDate" : null,
+  "open" : 0.2402,
+  "high" : 0.2446,
+  "low" : 0.2332,
+  "close" : 0.2356,
+  "volume" : 1375700.8,
+  "quoteAssetVolume" : 327848.633,
+  "usdVolume" : null,
+  "numberOfTrades" : 1141,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1604361600000,
+  "openDate" : null,
+  "closeTime" : 1604447999999,
+  "closeDate" : null,
+  "open" : 0.235,
+  "high" : 0.244,
+  "low" : 0.2281,
+  "close" : 0.2397,
+  "volume" : 2176893.8,
+  "quoteAssetVolume" : 513283.1465,
+  "usdVolume" : null,
+  "numberOfTrades" : 1342,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1604448000000,
+  "openDate" : null,
+  "closeTime" : 1604534399999,
+  "closeDate" : null,
+  "open" : 0.2399,
+  "high" : 0.2406,
+  "low" : 0.2325,
+  "close" : 0.2377,
+  "volume" : 1346396.9,
+  "quoteAssetVolume" : 319773.3405,
+  "usdVolume" : null,
+  "numberOfTrades" : 982,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1604534400000,
+  "openDate" : null,
+  "closeTime" : 1604620799999,
+  "closeDate" : null,
+  "open" : 0.2383,
+  "high" : 0.2474,
+  "low" : 0.2375,
+  "close" : 0.2461,
+  "volume" : 4781212.6,
+  "quoteAssetVolume" : 1166951.3435,
+  "usdVolume" : null,
+  "numberOfTrades" : 1909,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1604620800000,
+  "openDate" : null,
+  "closeTime" : 1604707199999,
+  "closeDate" : null,
+  "open" : 0.2458,
+  "high" : 0.2614,
+  "low" : 0.2455,
+  "close" : 0.2586,
+  "volume" : 3381371.4,
+  "quoteAssetVolume" : 862706.8857,
+  "usdVolume" : null,
+  "numberOfTrades" : 2036,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1604707200000,
+  "openDate" : null,
+  "closeTime" : 1604793599999,
+  "closeDate" : null,
+  "open" : 0.2593,
+  "high" : 0.2675,
+  "low" : 0.245,
+  "close" : 0.2495,
+  "volume" : 3521450.3,
+  "quoteAssetVolume" : 906732.1603,
+  "usdVolume" : null,
+  "numberOfTrades" : 2271,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1604793600000,
+  "openDate" : null,
+  "closeTime" : 1604879999999,
+  "closeDate" : null,
+  "open" : 0.2488,
+  "high" : 0.2572,
+  "low" : 0.2476,
+  "close" : 0.2541,
+  "volume" : 1473043.9,
+  "quoteAssetVolume" : 373430.8659,
+  "usdVolume" : null,
+  "numberOfTrades" : 1090,
+  "rsi" : 0.0
+}, {
+  "symbol" : "XRPUSD",
+  "openTime" : 1604880000000,
+  "openDate" : null,
+  "closeTime" : 1604966399999,
+  "closeDate" : null,
+  "open" : 0.2544,
+  "high" : 0.2561,
+  "low" : 0.2459,
+  "close" : 0.2503,
+  "volume" : 1230915.3,
+  "quoteAssetVolume" : 309102.4078,
+  "usdVolume" : null,
+  "numberOfTrades" : 1055,
   "rsi" : 0.0
 } ]

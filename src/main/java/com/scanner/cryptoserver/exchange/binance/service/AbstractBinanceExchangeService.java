@@ -10,7 +10,6 @@ import com.scanner.cryptoserver.exchange.service.ExchangeVisitor;
 import com.scanner.cryptoserver.util.CacheUtil;
 import com.scanner.cryptoserver.util.RsiCalc;
 import com.scanner.cryptoserver.util.dto.Coin;
-import org.jetbrains.annotations.NotNull;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.ResponseEntity;
@@ -44,11 +43,13 @@ public abstract class AbstractBinanceExchangeService implements ExchangeService 
     private final RestOperations restTemplate;
     private final CoinMarketCapService coinMarketCapService;
     private final CacheUtil cacheUtil;
+    private final ExchangeVisitor binanceExchangeVisitor;
 
-    public AbstractBinanceExchangeService(RestOperations restTemplate, CoinMarketCapService coinMarketCapService, CacheUtil cacheUtil) {
+    public AbstractBinanceExchangeService(RestOperations restTemplate, CoinMarketCapService coinMarketCapService, CacheUtil cacheUtil, ExchangeVisitor binanceExchangeVisitor) {
         this.restTemplate = restTemplate;
         this.coinMarketCapService = coinMarketCapService;
         this.cacheUtil = cacheUtil;
+        this.binanceExchangeVisitor = binanceExchangeVisitor;
     }
 
     @Override
@@ -72,62 +73,9 @@ public abstract class AbstractBinanceExchangeService implements ExchangeService 
         return exchangeInfo;
     }
 
-    /**
-     * When coins have duplicate symbols, such as "UNI", this visitor is used by services
-     * to determine which coin is wanted for a given symbol that has multiple coins.
-     * The coin wanted is the coin name, which is assumed to be unique. Thus, the coin
-     * symbol/name pair should suffice for determining exactly which coin is wanted.
-     * Since the exchange does not have the coin name in its API data, (only the symbol is there),
-     * we simply must hard-code the values here, until the exchanges give more information in their
-     * API data.
-     * <p>
-     * Also, some exchanges use different coin symbols than coin market cap. For example,
-     * BQX on Binance is VGX on coin market cap. So, in order to fill in the market cap
-     * for the BQX coin on Binance, we use this visitor to return the alternate symbol,
-     * which will be used to get the market cap.
-     *
-     * @return the visitor to be used to determine the name of an ambiguous coin, or the
-     * desired alternate symbol for a given coin.
-     */
     @Override
     public ExchangeVisitor getExchangeVisitor() {
-        return new ExchangeVisitor() {
-            @NotNull
-            @Override
-            public String getName(@NotNull String coin) {
-                if (coin.equals("UNI")) {
-                    return "Uniswap";
-                }
-                if (coin.equals("HNT")) {
-                    return "Helium";
-                }
-                if (coin.equals("LINK")) {
-                    return "Chainlink";
-                }
-                if (coin.equals("CND")) {
-                    return "Cindicator";
-                }
-                return getSymbol(coin);
-            }
-
-            @NotNull
-            @Override
-            public String getSymbol(@NotNull String coin) {
-                if (coin.equals("BQX")) {
-                    return "VGX";
-                }
-                if (coin.equals("YOYO")) {
-                    return "YOYOW";
-                }
-                if (coin.equals("PHB")) {
-                    return "PHX";
-                }
-                if (coin.equals("GXS")) {
-                    return "GXC";
-                }
-                return coin;
-            }
-        };
+        return binanceExchangeVisitor;
     }
 
     private void setMarketCapForExchangeInfo(ExchangeInfo exchangeInfo) {
