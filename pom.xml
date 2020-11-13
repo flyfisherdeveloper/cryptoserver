@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.scanner</groupId>
     <artifactId>cryptoserver</artifactId>
-    <version>1.4.9</version>
+    <version>2.0.0</version>
     <packaging>jar</packaging>
     <name>cryptoserver</name>
     <description>Crypto scanner project</description>
