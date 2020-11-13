@@ -495,7 +495,7 @@ public abstract class AbstractBinanceExchangeService implements ExchangeService 
             return new ArrayList<>();
         }
         //Here, we want the USD volume.
-        if (symbol.endsWith("USD") || symbol.endsWith("USDT")) {
+        if ((symbol.endsWith("USD") && !symbol.endsWith("BUSD") && !symbol.endsWith("TUSD")) || symbol.endsWith("USDT")) {
             return coins;
         }
         //Find the USD volume, and add it to the list.
