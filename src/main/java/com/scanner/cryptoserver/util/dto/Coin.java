@@ -8,7 +8,7 @@ import com.scanner.cryptoserver.exchange.service.ExchangeVisitor;
 import java.util.Optional;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class Symbol {
+public class Coin {
     //the market cap id
     private Integer id;
     //the symbol of the coin, such as BTCUSDT, or LTCUSD

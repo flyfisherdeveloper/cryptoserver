@@ -159,23 +159,23 @@ class BittrexServiceImplTest extends Specification {
 
         expect:
           assert exchangeInfo
-          assert exchangeInfo.getSymbols()
-          assert exchangeInfo.getSymbols().size() == marketList.size() - 1
+          assert exchangeInfo.getCoins()
+          assert exchangeInfo.getCoins().size() == marketList.size() - 1
 
-          def btc = exchangeInfo.getSymbols().find { it.getSymbol() == symbolBtc }
+          def btc = exchangeInfo.getCoins().find { it.getSymbol() == symbolBtc }
           assert btc
           assert btc.getSymbol() == symbolBtc
           assert btc.getQuoteAsset() == "USD"
           assert btc.getBaseAsset() == "BTC"
 
-          def eth = exchangeInfo.getSymbols().find { it.getSymbol() == symbolEth }
+          def eth = exchangeInfo.getCoins().find { it.getSymbol() == symbolEth }
           assert eth
           assert eth.getSymbol() == symbolEth
           assert eth.getQuoteAsset() == "USD"
           assert eth.getBaseAsset() == "ETH"
 
           //ensure that European markets don't get returned
-          def ethEur = exchangeInfo.getSymbols().find { it.getSymbol() == symbolEthEur }
+          def ethEur = exchangeInfo.getCoins().find { it.getSymbol() == symbolEthEur }
           assert !ethEur
     }
 

@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController
 //@CrossOrigin(origins = ["https://develop.d2vswqrfiywrsc.amplifyapp.com"])
 @CrossOrigin(origins = ["http://localhost:3000"])
 @RequestMapping("api/v1/bittrex")
-class BittrexExchangeController(val bittrexService: ExchangeService) {
+class BittrexExchangeController(private val bittrexService: ExchangeService) {
 
     /**
      * Gets all the coins and 24-hour data on the exchange.

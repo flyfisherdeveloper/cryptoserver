@@ -4,7 +4,7 @@ import com.scanner.cryptoserver.exchange.binance.dto.CoinDataFor24Hr;
 import com.scanner.cryptoserver.exchange.binance.dto.CoinTicker;
 import com.scanner.cryptoserver.exchange.coinmarketcap.dto.ExchangeInfo;
 import com.scanner.cryptoserver.util.IconExtractor;
-import com.scanner.cryptoserver.util.dto.Symbol;
+import com.scanner.cryptoserver.util.dto.Coin;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -25,10 +25,10 @@ class BinanceUsaExchangeServiceImplIntegTest {
     @Test
     void testAllUsdSymbols() {
         ExchangeInfo exchangeInfo = binanceUsaService.getExchangeInfo();
-        List<Symbol> usdSymbols = exchangeInfo.getSymbols().stream()
+        List<Coin> usdCoins = exchangeInfo.getCoins().stream()
                 .filter(s -> s.getQuoteAsset().equalsIgnoreCase("USD"))
                 .collect(Collectors.toList());
-        boolean allMatch = usdSymbols.stream().allMatch(s -> s.getSymbol().endsWith("USD"));
+        boolean allMatch = usdCoins.stream().allMatch(s -> s.getSymbol().endsWith("USD"));
         assertTrue(allMatch);
     }
 

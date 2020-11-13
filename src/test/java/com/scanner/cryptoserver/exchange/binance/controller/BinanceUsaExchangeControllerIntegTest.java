@@ -5,13 +5,14 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.scanner.cryptoserver.CachingConfig;
 import com.scanner.cryptoserver.exchange.binance.dto.CoinDataFor24Hr;
 import com.scanner.cryptoserver.exchange.binance.dto.CoinTicker;
-import com.scanner.cryptoserver.util.dto.Symbol;
+import com.scanner.cryptoserver.exchange.binance.service.BinanceExchangeVisitor;
 import com.scanner.cryptoserver.exchange.binance.service.BinanceUrlExtractor;
 import com.scanner.cryptoserver.exchange.binance.service.BinanceUsaExchangeServiceImpl;
 import com.scanner.cryptoserver.exchange.binance.service.BinanceUsaUrlExtractor;
 import com.scanner.cryptoserver.exchange.coinmarketcap.CoinMarketCapApiServiceImpl;
 import com.scanner.cryptoserver.exchange.coinmarketcap.CoinMarketCapService;
 import com.scanner.cryptoserver.util.CacheUtilImpl;
+import com.scanner.cryptoserver.util.dto.Coin;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
@@ -33,7 +34,7 @@ import static org.junit.jupiter.api.Assertions.*;
 //For example, startup initialization threads are not needed, etc.
 @ContextConfiguration(classes = {BinanceUsaExchangeController.class, BinanceUsaExchangeServiceImpl.class,
         BinanceUsaUrlExtractor.class, RestTemplate.class, CachingConfig.class, BinanceUrlExtractor.class,
-        CacheUtilImpl.class, CoinMarketCapApiServiceImpl.class, CoinMarketCapService.class})
+        CacheUtilImpl.class, CoinMarketCapApiServiceImpl.class, CoinMarketCapService.class, BinanceExchangeVisitor.class})
 @WebMvcTest
 class BinanceUsaExchangeControllerIntegTest {
     @Autowired
@@ -49,12 +50,12 @@ class BinanceUsaExchangeControllerIntegTest {
         String json = result.getResponse().getContentAsString();
         ObjectMapper mapper = new ObjectMapper();
 
-        List<Symbol> symbols = mapper.readValue(json, new TypeReference<List<Symbol>>() {
+        List<Coin> coins = mapper.readValue(json, new TypeReference<List<Coin>>() {
         });
-        assertTrue(symbols.size() > 0);
+        assertTrue(coins.size() > 0);
 
         //verify that bitcoin exists
-        Optional<Symbol> btcUsd = symbols.stream().filter(s -> s.getSymbol().equals("BTCUSD")).findFirst();
+        Optional<Coin> btcUsd = coins.stream().filter(s -> s.getSymbol().equals("BTCUSD")).findFirst();
         assertTrue(btcUsd.isPresent());
         //verify that the symbol is indeed bitcoin
         assertTrue(btcUsd.filter(b -> b.getBaseAsset().equals("BTC")).isPresent());

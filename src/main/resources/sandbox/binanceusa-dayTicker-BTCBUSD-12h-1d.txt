@@ -1,0 +1,31 @@
+[ {
+  "symbol" : "BTCBUSD",
+  "openTime" : 1604880000000,
+  "openDate" : null,
+  "closeTime" : 1604923199999,
+  "closeDate" : null,
+  "open" : 15510.81,
+  "high" : 15844.9,
+  "low" : 15193.91,
+  "close" : 15799.14,
+  "volume" : 16.537188,
+  "quoteAssetVolume" : 255275.98026819,
+  "usdVolume" : null,
+  "numberOfTrades" : 490,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BTCBUSD",
+  "openTime" : 1604923200000,
+  "openDate" : null,
+  "closeTime" : 1604966399999,
+  "closeDate" : null,
+  "open" : 15812.77,
+  "high" : 15813.06,
+  "low" : 14830.29,
+  "close" : 15375.86,
+  "volume" : 48.075701,
+  "quoteAssetVolume" : 738306.58439451,
+  "usdVolume" : null,
+  "numberOfTrades" : 995,
+  "rsi" : 0.0
+} ]

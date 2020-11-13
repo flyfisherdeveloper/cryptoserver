@@ -9,8 +9,7 @@ import com.scanner.cryptoserver.exchange.service.ExchangeService;
 import com.scanner.cryptoserver.exchange.service.ExchangeVisitor;
 import com.scanner.cryptoserver.util.CacheUtil;
 import com.scanner.cryptoserver.util.RsiCalc;
-import com.scanner.cryptoserver.util.dto.Symbol;
-import org.jetbrains.annotations.NotNull;
+import com.scanner.cryptoserver.util.dto.Coin;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.ResponseEntity;
@@ -44,11 +43,13 @@ public abstract class AbstractBinanceExchangeService implements ExchangeService 
     private final RestOperations restTemplate;
     private final CoinMarketCapService coinMarketCapService;
     private final CacheUtil cacheUtil;
+    private final ExchangeVisitor binanceExchangeVisitor;
 
-    public AbstractBinanceExchangeService(RestOperations restTemplate, CoinMarketCapService coinMarketCapService, CacheUtil cacheUtil) {
+    public AbstractBinanceExchangeService(RestOperations restTemplate, CoinMarketCapService coinMarketCapService, CacheUtil cacheUtil, ExchangeVisitor binanceExchangeVisitor) {
         this.restTemplate = restTemplate;
         this.coinMarketCapService = coinMarketCapService;
         this.cacheUtil = cacheUtil;
+        this.binanceExchangeVisitor = binanceExchangeVisitor;
     }
 
     @Override
@@ -72,59 +73,9 @@ public abstract class AbstractBinanceExchangeService implements ExchangeService 
         return exchangeInfo;
     }
 
-    /**
-     * When coins have duplicate symbols, such as "UNI", this visitor is used by services
-     * to determine which coin is wanted for a given symbol that has multiple coins.
-     * The coin wanted is the coin name, which is assumed to be unique. Thus, the coin
-     * symbol/name pair should suffice for determining exactly which coin is wanted.
-     * Since the exchange does not have the coin name in its API data, (only the symbol is there),
-     * we simply must hard-code the values here, until the exchanges give more information in their
-     * API data.
-     * <p>
-     * Also, some exchanges use different coin symbols than coin market cap. For example,
-     * BQX on Binance is VGX on coin market cap. So, in order to fill in the market cap
-     * for the BQX coin on Binance, we use this visitor to return the alternate symbol,
-     * which will be used to get the market cap.
-     *
-     * @return the visitor to be used to determine the name of an ambiguous coin, or the
-     * desired alternate symbol for a given coin.
-     */
     @Override
     public ExchangeVisitor getExchangeVisitor() {
-        return new ExchangeVisitor() {
-            @NotNull
-            @Override
-            public String getName(@NotNull String coin) {
-                if (coin.equals("UNI")) {
-                    return "Uniswap";
-                }
-                if (coin.equals("HNT")) {
-                    return "Helium";
-                }
-                if (coin.equals("LINK")) {
-                    return "Chainlink";
-                }
-                if (coin.equals("CND")) {
-                    return "Cindicator";
-                }
-                return getSymbol(coin);
-            }
-
-            @NotNull
-            @Override
-            public String getSymbol(@NotNull String coin) {
-                if (coin.equals("BQX")) {
-                    return "VGX";
-                }
-                if (coin.equals("YOYO")) {
-                    return "YOYOW";
-                }
-                if (coin.equals("PHB")) {
-                    return "PHX";
-                }
-                return coin;
-            }
-        };
+        return binanceExchangeVisitor;
     }
 
     private void setMarketCapForExchangeInfo(ExchangeInfo exchangeInfo) {
@@ -132,7 +83,7 @@ public abstract class AbstractBinanceExchangeService implements ExchangeService 
 
         if (coinMarketCap != null) {
             //If the coin market cap data exists, then update each symbol with the market cap value found in the market cap data.
-            exchangeInfo.getSymbols().forEach(symbol -> symbol.addMarketCapAndId(getExchangeVisitor(), coinMarketCap));
+            exchangeInfo.getCoins().forEach(symbol -> symbol.addMarketCapAndId(getExchangeVisitor(), coinMarketCap));
         }
     }
 
@@ -157,13 +108,13 @@ public abstract class AbstractBinanceExchangeService implements ExchangeService 
     public ExchangeInfo getExchangeInfoWithoutMarketCap() {
         ExchangeInfo exchangeInfo = retrieveExchangeInfoFromCache();
         //remove currency markets that are not USA-based, such as the Euro ("EUR")
-        exchangeInfo.getSymbols().removeIf(s -> nonUsaMarkets.contains(s.getQuoteAsset()));
+        exchangeInfo.getCoins().removeIf(s -> nonUsaMarkets.contains(s.getQuoteAsset()));
         return exchangeInfo;
     }
 
     public Set<String> getMarkets() {
         ExchangeInfo exchangeInfo = retrieveExchangeInfoFromCache();
-        Set<String> set = exchangeInfo.getSymbols().stream().map(Symbol::getQuoteAsset).collect(Collectors.toSet());
+        Set<String> set = exchangeInfo.getCoins().stream().map(Coin::getQuoteAsset).collect(Collectors.toSet());
         return set;
     }
 
@@ -223,30 +174,42 @@ public abstract class AbstractBinanceExchangeService implements ExchangeService 
         return end - offset;
     }
 
+    /**
+     * Get a "quote" from a symbol string. i.e. "BTCUSD" returns "USD".
+     *
+     * @param str the symbol, such as "ETHUSDT".
+     * @return the "quote" such as "USDT" from the string "LTCUSDT".
+     */
     public String getQuote(String str) {
         ExchangeInfo exchangeInfo = retrieveExchangeInfoFromCache();
         Supplier<String> parseQuote = () -> {
             int start = this.getStartOfQuote(str);
             return str.substring(start);
         };
-        String quote = exchangeInfo.getSymbols().stream()
+        String quote = exchangeInfo.getCoins().stream()
                 .filter(sym -> sym.getSymbol() != null && sym.getSymbol().equals(str))
                 .findFirst()
-                .map(Symbol::getQuoteAsset)
+                .map(Coin::getQuoteAsset)
                 .orElseGet(parseQuote);
         return quote;
     }
 
+    /**
+     * Get a "coin symbol" from a symbol string. i.e. "BTCUSD" returns "BTC".
+     *
+     * @param str the symbol, such as "ETHUSDT".
+     * @return the "coin" such as "LTC" from the string "LTCUSDT".
+     */
     public String getCoin(String str) {
         ExchangeInfo exchangeInfo = retrieveExchangeInfoFromCache();
         Supplier<String> parseCoin = () -> {
             int offset = this.getStartOfQuote(str);
             return str.substring(0, offset);
         };
-        String coin = exchangeInfo.getSymbols().stream()
+        String coin = exchangeInfo.getCoins().stream()
                 .filter(sym -> sym.getSymbol() != null && sym.getSymbol().equals(str))
                 .findFirst()
-                .map(Symbol::getBaseAsset)
+                .map(Coin::getBaseAsset)
                 .orElseGet(parseCoin);
         return coin;
     }
@@ -259,7 +222,7 @@ public abstract class AbstractBinanceExchangeService implements ExchangeService 
      */
     private boolean isCoinTrading(String symbol) {
         ExchangeInfo info = retrieveExchangeInfoFromCache();
-        boolean trading = info.getSymbols().stream()
+        boolean trading = info.getCoins().stream()
                 .anyMatch(s -> s.getSymbol().equals(symbol) && s.getStatus().equals(TRADING));
         return trading;
     }
@@ -495,6 +458,32 @@ public abstract class AbstractBinanceExchangeService implements ExchangeService 
         return coinTickers;
     }
 
+    /**
+     * Add the $USD volume to the coins.
+     * Note: In some cases, the USD volume value is not available,
+     * and the USDT (an extremely close approximation to USD) was used
+     * to compute the USD value.
+     *
+     * @param coins      the coins that are being retrieved.
+     * @param usdTickers the coins that contain the USD volume value.
+     */
+    void addUsdVolume(List<CoinTicker> coins, List<CoinTicker> usdTickers) {
+        for (int index = 0; index < coins.size(); index++) {
+            if (index < usdTickers.size()) {
+                CoinTicker usdTicker = usdTickers.get(index);
+                CoinTicker coinTicker = coins.get(index);
+                double usdOpen = usdTicker.getOpen();
+                double usdClose = usdTicker.getClose();
+                double coinOpen = coinTicker.getOpen();
+                double coinClose = coinTicker.getClose();
+                //the USD volume is computed as the coin price * the usd price at open + the coin price * the usd price at close divided by 2
+                double avg = (usdOpen*coinOpen + usdClose*coinClose) / 2.0;
+                double vol = coinTicker.getVolume() * avg;
+                coins.get(index).setUsdVolume(vol);
+            }
+        }
+    }
+
     public List<CoinTicker> getTickerData(String symbol, String interval, String daysOrMonths) {
         //Attempt to get the data out of the cache if it is in there.
         //If not in the cache, then call the service and add the data to the cache.
@@ -502,9 +491,25 @@ public abstract class AbstractBinanceExchangeService implements ExchangeService 
         String name = getExchangeName() + "-" + symbol + interval + daysOrMonths;
         Supplier<List<CoinTicker>> coinTickerSupplier = () -> callCoinTicker(symbol, interval, daysOrMonths);
         List<CoinTicker> coins = cacheUtil.retrieveFromCache(COIN_CACHE, name, coinTickerSupplier);
-        if (coins == null) {
+        if (coins == null || coins.isEmpty()) {
             return new ArrayList<>();
         }
+        //Here, we want the USD volume.
+        if (symbol.endsWith("USD") || symbol.endsWith("USDT")) {
+            return coins;
+        }
+        //Find the USD volume, and add it to the list.
+        final String quote = getQuote(symbol);
+        final ExchangeInfo exchangeInfo = getExchangeInfo();
+        final String usdSymbol = quote + getUsdQuote();
+        //We need the USD or USDT pair of the quote coin in order to get the USD price in order to compute the USD volume for the tickers.
+        //For example, if the coin is ETHBTC, then we need to get the USD ticker values for BTCUSD (or BTCUSDT) in order to get the
+        //USD prices over the interval to compute the USD volume for ETHBTC over the interval.
+        //If that pair doesn't exist for some reason, then just ignore the USD volume.
+        exchangeInfo.getCoins().stream().filter(exchangeCoin -> exchangeCoin.getSymbol().equals(usdSymbol)).findAny().ifPresent(usdPair -> {
+            List<CoinTicker> dollarTickers = getTickerData(usdSymbol, interval, daysOrMonths);
+            addUsdVolume(coins, dollarTickers);
+        });
         return coins;
     }
 
@@ -683,4 +688,6 @@ public abstract class AbstractBinanceExchangeService implements ExchangeService 
     protected abstract ScheduledExecutorService getScheduledService();
 
     protected abstract void setScheduledService(ScheduledExecutorService scheduledService);
+
+    protected abstract String getUsdQuote();
 }

@@ -48,7 +48,7 @@ class Bittrex24HrDataTest extends Specification {
           bittrexCoin.setSymbol(symbol)
 
         when:
-          def theSymbol = bittrexCoin.symbolAdapter()
+          def theSymbol = bittrexCoin.coinAdapter()
 
         then:
           assert theSymbol

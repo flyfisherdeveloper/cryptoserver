@@ -8,7 +8,7 @@ import spock.lang.Specification
 import spock.lang.Unroll
 
 
-class SymbolTest extends Specification {
+class CoinTest extends Specification {
 
     @Unroll
     def "test addMarketCapAndId"() {
@@ -49,8 +49,8 @@ class SymbolTest extends Specification {
           def data = [id1: data1, id2: data2] as Map<Integer, CoinMarketCapData>
           def listing = new CoinMarketCapListing(data: data)
 
-          def symbol1 = new Symbol(baseAsset: baseAsset1)
-          def symbol2 = new Symbol(baseAsset: baseAsset2)
+          def symbol1 = new Coin(baseAsset: baseAsset1)
+          def symbol2 = new Coin(baseAsset: baseAsset2)
 
         when:
           symbol1.addMarketCapAndId(visitor, listing)
