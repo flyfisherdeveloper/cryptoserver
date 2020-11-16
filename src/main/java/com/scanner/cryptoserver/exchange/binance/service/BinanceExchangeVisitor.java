@@ -11,7 +11,7 @@ import java.util.Optional;
 @Component
 public class BinanceExchangeVisitor implements ExchangeVisitor {
     private final Map<String, String> nameMap = ImmutableMap.of("UNI", "Uniswap", "HNT", "Helium", "LINK", "Chainlink", "CND", "Cindicator");
-    private final Map<String, String> symbolMap = ImmutableMap.of("BQX", "VGX", "YOYO", "YOYOW", "PHB", "PHX", "GXS", "GXC");
+    private final Map<String, String> symbolMap = ImmutableMap.of("BQX", "VGX", "YOYO", "YOYOW", "PHB", "PHX", "GXS", "GXC", "WNXM", "NXM");
 
     /**
      * When coins have duplicate symbols, such as "UNI", this visitor is used by services
