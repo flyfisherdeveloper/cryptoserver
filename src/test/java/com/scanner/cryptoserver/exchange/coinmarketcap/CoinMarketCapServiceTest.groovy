@@ -284,6 +284,7 @@ class CoinMarketCapServiceTest extends Specification {
                 "\"id\": 1,\n" +
                 "\"name\": \"Bitcoin\",\n" +
                 "\"symbol\": \"BTC\",\n" +
+                "\"date_added\": \"24 Mar 2010\",\n" +
                 "\"description\": \"BTC is a digital coin.\",\n" +
                 "\"logo\": \"http://mockPathToLogo.com\",\n" +
                 "\"quote\": {\n" +
