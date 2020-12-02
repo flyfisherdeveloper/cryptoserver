@@ -10,7 +10,9 @@ import java.util.Optional;
 
 @Component
 public class BinanceExchangeVisitor implements ExchangeVisitor {
-    private final Map<String, String> nameMap = ImmutableMap.of("UNI", "Uniswap", "HNT", "Helium", "LINK", "Chainlink", "CND", "Cindicator");
+    private final Map<String, String> nameMap = ImmutableMap.of("UNI", "Uniswap", "HNT", "Helium", "LINK", "Chainlink",
+            "CND", "Cindicator", "HOT", "Holo");
+    private final Map<String, String> secondNameMap = ImmutableMap.of("COMP", "Compound");
     private final Map<String, String> symbolMap = ImmutableMap.of("BQX", "VGX", "YOYO", "YOYOW", "PHB", "PHX", "GXS", "GXC", "WNXM", "NXM");
 
     /**
@@ -33,7 +35,10 @@ public class BinanceExchangeVisitor implements ExchangeVisitor {
     @NotNull
     @Override
     public String getName(@NotNull String coin) {
-        return Optional.ofNullable(nameMap.get(coin)).orElseGet(() -> getSymbol(coin));
+        return Optional.ofNullable(
+                Optional.ofNullable(nameMap.get(coin))
+                        .orElse(secondNameMap.get(coin)))
+                .orElseGet(() -> getSymbol(coin));
     }
 
     @NotNull

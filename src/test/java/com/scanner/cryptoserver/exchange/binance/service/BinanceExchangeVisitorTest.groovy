@@ -31,6 +31,8 @@ class BinanceExchangeVisitorTest extends Specification {
           "PHB"        | "PHX"
           "GXS"        | "GXC"
           "WNXM"       | "NXM"
+          "HOT"        | "Holo"
+          "COMP"       | "Compound"
           "Other Coin" | "Other Coin"
     }
 
