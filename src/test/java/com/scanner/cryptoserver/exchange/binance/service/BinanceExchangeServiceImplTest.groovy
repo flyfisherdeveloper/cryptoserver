@@ -64,14 +64,14 @@ class BinanceExchangeServiceImplTest extends Specification {
           def listing = new CoinMarketCapListing()
           def data1 = new CoinMarketCapData(symbol: coin1)
           def data2 = new CoinMarketCapData(symbol: coin2)
-          def dataMap = [:] as HashMap<String, CoinMarketCapData>
-          dataMap.put(symbol1, data1)
-          dataMap.put(symbol2, data2)
+          def dataMap = [:] as HashMap<Integer, CoinMarketCapData>
+          dataMap.put(id1, data1)
+          dataMap.put(id2, data2)
           listing.setData(dataMap)
 
         when: "mocks are called"
           cacheUtil.retrieveFromCache(*_) >> exchangeInfo
-          coinMarketCapService.getCoinMarketCapListing() >> listing
+          coinMarketCapService.getCoinMarketCapListing(_ as Set) >> listing
 
         then:
           def markets = service.getMarkets()
@@ -81,9 +81,9 @@ class BinanceExchangeServiceImplTest extends Specification {
           assert markets == expectedMarkets.toSet()
 
         where:
-          symbol1 | market1 | symbol2 | market2 | expectedMarkets
-          "BTC"   | "USD"   | "LTC"   | "USDC"  | ["USD", "USDC"]
-          "BTC"   | "USD"   | "LTC"   | "USD"   | ["USD"]
+          symbol1 | id1 | market1 | symbol2 | id2 | market2 | expectedMarkets
+          "BTC"   | 1   | "USD"   | "LTC"   | 2   | "USDC"  | ["USD", "USDC"]
+          "BTC"   | 1   | "USD"   | "LTC"   | 2   | "USD"   | ["USD"]
     }
 
     //Here, we do a unit test of the 24Hour price ticker instead of an integration test
