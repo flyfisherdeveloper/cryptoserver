@@ -13,7 +13,9 @@ public class BinanceExchangeVisitor implements ExchangeVisitor {
     private final Map<String, String> nameMap = ImmutableMap.of("UNI", "Uniswap", "HNT", "Helium", "LINK", "Chainlink",
             "CND", "Cindicator", "HOT", "Holo");
     private final Map<String, String> secondNameMap = ImmutableMap.of("COMP", "Compound");
-    private final Map<String, String> symbolMap = ImmutableMap.of("BQX", "VGX", "YOYO", "YOYOW", "PHB", "PHX", "GXS", "GXC", "WNXM", "NXM");
+    private final Map<String, String> symbolMap = ImmutableMap.of("BQX", "VGX", "YOYO", "YOYOW", "PHB", "PHX",
+            "GXS", "GXC", "WNXM", "NXM");
+    private final Map<String, String> secondSymbolMap = ImmutableMap.of("GLM", "GNT");
 
     /**
      * When coins have duplicate symbols, such as "UNI", this visitor is used by services
@@ -44,6 +46,9 @@ public class BinanceExchangeVisitor implements ExchangeVisitor {
     @NotNull
     @Override
     public String getSymbol(@NotNull String coin) {
-        return Optional.ofNullable(symbolMap.get(coin)).orElse(coin);
+        return Optional.ofNullable(
+                Optional.ofNullable(symbolMap.get(coin))
+                        .orElse(secondSymbolMap.get(coin)))
+                .orElse(coin);
     }
 }
