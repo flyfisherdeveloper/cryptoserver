@@ -11,7 +11,7 @@ class BinanceExchangeVisitorTest extends Specification {
         visitor = new BinanceExchangeVisitor()
     }
 
-    @Unroll("test that the getName() returns '#expectedResult' for #coin")
+    @Unroll("test that getName() returns '#expectedResult' for #coin")
     def "test getName"() {
         when:
           def coinName = visitor.getName(coin)
@@ -30,10 +30,13 @@ class BinanceExchangeVisitorTest extends Specification {
           "YOYO"       | "YOYOW"
           "PHB"        | "PHX"
           "GXS"        | "GXC"
+          "WNXM"       | "NXM"
+          "HOT"        | "Holo"
+          "COMP"       | "Compound"
           "Other Coin" | "Other Coin"
     }
 
-    @Unroll("test that the getSymbol() returns '#expectedResult' for #coin")
+    @Unroll("test that getSymbol() returns '#expectedResult' for #coin")
     def "test getSymbol"() {
         when:
           def coinSymbol = visitor.getSymbol(coin)
@@ -47,6 +50,8 @@ class BinanceExchangeVisitorTest extends Specification {
           "YOYO"       | "YOYOW"
           "PHB"        | "PHX"
           "GXS"        | "GXC"
+          "WNXM"       | "NXM"
+          "GLM"        | "GNT"
           "Other Coin" | "Other Coin"
     }
 }

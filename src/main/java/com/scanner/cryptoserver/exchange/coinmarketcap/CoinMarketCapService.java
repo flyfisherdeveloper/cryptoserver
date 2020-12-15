@@ -218,6 +218,7 @@ public class CoinMarketCapService {
             JsonNode node = data.get(String.valueOf(idNum));
             JsonNode idNode = node.get("id");
             int id = idNode.asInt();
+
             JsonNode nameNode = node.get("name");
             String name = nameNode.textValue();
 
@@ -226,8 +227,13 @@ public class CoinMarketCapService {
             if (logoNode != null) {
                 logo = logoNode.textValue();
             }
+
             JsonNode symbolNode = node.get("symbol");
             String symbol = symbolNode.textValue();
+
+            JsonNode dateAddedNode = node.get("date_added");
+            String dateAdded = dateAddedNode.textValue();
+
             JsonNode quoteNode = node.get("quote");
             double volume24HrUsd = 0.0;
             double marketCap = 0.0;
@@ -252,6 +258,7 @@ public class CoinMarketCapService {
             d.setMarketCap(marketCap);
             d.setVolume24HrUsd(volume24HrUsd);
             d.setLogo(logo);
+            d.setDateAdded(dateAdded);
             list.add(d);
         });
         return list;
