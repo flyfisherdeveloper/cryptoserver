@@ -10,7 +10,6 @@ import com.scanner.cryptoserver.exchange.service.ExchangeService;
 import org.imgscalr.Scalr;
 import org.imgscalr.Scalr.Method;
 import org.junit.Ignore;
-import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
@@ -77,8 +76,8 @@ public class ImageIntegTest {
      * periodically to repopulate icons from newly listed coins on exchanges. It really isn't a "test",
      * but is included here to run when needed.
      */
-    //@Ignore
-    @Test
+    @Ignore
+    //@Test
     void findNewIconsTest() {
         String downloadedFolder = "C:/dev/icons/coin-market-cap-downloadedNew/";
         String convertedFolder = "C:/dev/icons/coin-market-cap-convertedNew/";
