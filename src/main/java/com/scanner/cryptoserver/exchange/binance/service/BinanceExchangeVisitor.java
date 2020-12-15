@@ -1,11 +1,22 @@
 package com.scanner.cryptoserver.exchange.binance.service;
 
+import com.google.common.collect.ImmutableMap;
 import com.scanner.cryptoserver.exchange.service.ExchangeVisitor;
 import org.jetbrains.annotations.NotNull;
 import org.springframework.stereotype.Component;
 
+import java.util.Map;
+import java.util.Optional;
+
 @Component
 public class BinanceExchangeVisitor implements ExchangeVisitor {
+    private final Map<String, String> nameMap = ImmutableMap.of("UNI", "Uniswap", "HNT", "Helium", "LINK", "Chainlink",
+            "CND", "Cindicator", "HOT", "Holo");
+    private final Map<String, String> secondNameMap = ImmutableMap.of("COMP", "Compound");
+    private final Map<String, String> symbolMap = ImmutableMap.of("BQX", "VGX", "YOYO", "YOYOW", "PHB", "PHX",
+            "GXS", "GXC", "WNXM", "NXM");
+    private final Map<String, String> secondSymbolMap = ImmutableMap.of("GLM", "GNT");
+
     /**
      * When coins have duplicate symbols, such as "UNI", this visitor is used by services
      * to determine which coin is wanted for a given symbol that has multiple coins.
@@ -26,36 +37,18 @@ public class BinanceExchangeVisitor implements ExchangeVisitor {
     @NotNull
     @Override
     public String getName(@NotNull String coin) {
-        if (coin.equals("UNI")) {
-            return "Uniswap";
-        }
-        if (coin.equals("HNT")) {
-            return "Helium";
-        }
-        if (coin.equals("LINK")) {
-            return "Chainlink";
-        }
-        if (coin.equals("CND")) {
-            return "Cindicator";
-        }
-        return getSymbol(coin);
+        return Optional.ofNullable(
+                Optional.ofNullable(nameMap.get(coin))
+                        .orElse(secondNameMap.get(coin)))
+                .orElseGet(() -> getSymbol(coin));
     }
 
     @NotNull
     @Override
     public String getSymbol(@NotNull String coin) {
-        if (coin.equals("BQX")) {
-            return "VGX";
-        }
-        if (coin.equals("YOYO")) {
-            return "YOYOW";
-        }
-        if (coin.equals("PHB")) {
-            return "PHX";
-        }
-        if (coin.equals("GXS")) {
-            return "GXC";
-        }
-        return coin;
+        return Optional.ofNullable(
+                Optional.ofNullable(symbolMap.get(coin))
+                        .orElse(secondSymbolMap.get(coin)))
+                .orElse(coin);
     }
 }

@@ -62,7 +62,7 @@ public class CoinMarketCapApiServiceImpl implements CoinMarketCapApiService {
         Map<String, List<String>> params = new HashMap<>();
 
         //here, we add parameters to bring back only what we want
-        params.put("aux", Arrays.asList("id", "name", "symbol"));
+        params.put("aux", Arrays.asList("id", "name", "symbol", "first_historical_data"));
         HttpHeaders headers = new HttpHeaders();
         headers.set("X-CMC_PRO_API_KEY", getKey());
         org.springframework.http.HttpEntity<CoinMarketCapListing> requestEntity = new org.springframework.http.HttpEntity<>(null, headers);

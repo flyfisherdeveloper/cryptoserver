@@ -1,5 +1,6 @@
 package com.scanner.cryptoserver.exchange.coinmarketcap.dto;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 
 @Data
@@ -17,6 +18,9 @@ public class CoinMarketCapData {
     private Double marketCap;
     //the volume for the coin in 24 hours in USD
     private Double volume24HrUsd;
+    //the date string for when the coin was added (date format example: "2013-04-28T00:00:00.000Z")
+    @JsonProperty("first_historical_data")
+    private String dateAdded;
 
     public CoinMarketCapData() {
 

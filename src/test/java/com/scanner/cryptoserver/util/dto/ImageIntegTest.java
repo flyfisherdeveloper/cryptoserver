@@ -62,6 +62,9 @@ public class ImageIntegTest {
             try (InputStream in = Files.newInputStream(imagePath)) {
                 String outputImagePath = convertedFolder + fileName;
                 resizeImageToSize(in, 32, outputImagePath);
+                String downloadedImagePath = downloadedFolder + fileName;
+                Path downloadedImage = Paths.get(downloadedImagePath);
+                Files.delete(downloadedImage);
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -74,6 +77,7 @@ public class ImageIntegTest {
      * but is included here to run when needed.
      */
     @Ignore
+    //@Test
     void findNewIconsTest() {
         String downloadedFolder = "C:/dev/icons/coin-market-cap-downloadedNew/";
         String convertedFolder = "C:/dev/icons/coin-market-cap-convertedNew/";
