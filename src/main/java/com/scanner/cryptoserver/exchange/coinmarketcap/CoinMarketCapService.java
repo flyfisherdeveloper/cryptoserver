@@ -208,7 +208,7 @@ public class CoinMarketCapService {
 
     private List<CoinMarketCapData> parseJsonData(String json, Set<Integer> idSet) {
         Optional<JsonNode> jsonNode = parseJson(json);
-        if (!jsonNode.isPresent()) {
+        if (jsonNode.isEmpty()) {
             return new ArrayList<>();
         }
         JsonNode data = jsonNode.get();
