@@ -3,6 +3,7 @@ package com.scanner.cryptoserver.exchange.binance.service;
 import com.scanner.cryptoserver.exchange.binance.dto.CoinDataFor24Hr;
 import com.scanner.cryptoserver.exchange.binance.dto.CoinTicker;
 import com.scanner.cryptoserver.exchange.coinmarketcap.dto.ExchangeInfo;
+import com.scanner.cryptoserver.testutil.AbstractIntegSetup;
 import com.scanner.cryptoserver.util.IconExtractor;
 import com.scanner.cryptoserver.util.dto.Coin;
 import org.junit.jupiter.api.Test;
@@ -18,7 +19,7 @@ import java.util.stream.Collectors;
 import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
-class BinanceUsaExchangeServiceImplIntegTest {
+class BinanceUsaExchangeServiceImplIntegTest extends AbstractIntegSetup {
     @Autowired
     private AbstractBinanceExchangeService binanceUsaService;
 
