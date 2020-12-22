@@ -4,7 +4,9 @@ import com.scanner.cryptoserver.testutil.AbstractIntegTestSetup
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Assertions.assertNotNull
 import org.junit.jupiter.api.Test
+import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest
 
+@WebMvcTest
 internal class BittrexServiceImplIntegTest : AbstractIntegTestSetup() {
 
     @Test
