@@ -3,27 +3,29 @@ package com.scanner.cryptoserver.exchange.coinmarketcap;
 import com.scanner.cryptoserver.exchange.binance.service.AbstractBinanceExchangeService;
 import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapData;
 import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapListing;
+import com.scanner.cryptoserver.testutil.AbstractIntegTestSetup;
 import com.scanner.cryptoserver.util.dto.Coin;
 import org.junit.Ignore;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 
 import java.util.HashSet;
 import java.util.Optional;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 /**
  * Integration test for calling Coin Market Cap api calls.
  * USE SPARINGLY!! This test uses up daily quota for api calls that are needed for production.
  * Only use this test when needed to avoid going over the api quota limits.
  */
-@SpringBootTest
-public class CoinMarketCapServiceIntegTest {
+@WebMvcTest
+public class CoinMarketCapServiceIntegTest extends AbstractIntegTestSetup {
     @Autowired
     private CoinMarketCapService service;
     @Autowired
@@ -32,6 +34,7 @@ public class CoinMarketCapServiceIntegTest {
     private AbstractBinanceExchangeService binanceService;
 
     @Test
+    @Disabled
     void testGetMarketCapMap() {
         CoinMarketCapListing listing = apiService.getCoinMarketCapMap();
         assertNotNull(listing);
