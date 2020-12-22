@@ -14,7 +14,6 @@ internal class BittrexServiceImplIntegTest : AbstractIntegTestSetup() {
         val coins = getBittrexService().get24HrAllCoinTicker()
         //find one of the coins that we know should be there
         val mtlBtc = coins.first { it.symbol == "MTL-BTC" }
-        println(mtlBtc)
         assertNotNull(mtlBtc.symbol)
         assertEquals("https://bittrex.com/Market/Index?MarketName=BTC-MTL", mtlBtc.tradeLink)
     }

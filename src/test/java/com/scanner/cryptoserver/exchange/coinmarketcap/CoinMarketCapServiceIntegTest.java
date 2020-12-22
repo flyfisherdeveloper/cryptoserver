@@ -30,8 +30,6 @@ public class CoinMarketCapServiceIntegTest extends AbstractIntegTestSetup {
     private CoinMarketCapService service;
     @Autowired
     private CoinMarketCapApiService apiService;
-    @Autowired
-    private AbstractBinanceExchangeService binanceService;
 
     @Test
     @Disabled
@@ -42,6 +40,7 @@ public class CoinMarketCapServiceIntegTest extends AbstractIntegTestSetup {
         assertTrue(ltc.isPresent());
     }
 
+    @Disabled
     @Test
     void testGetCoinMarketCapListing() {
         Set<Integer> idSet = new HashSet<>();
@@ -53,9 +52,9 @@ public class CoinMarketCapServiceIntegTest extends AbstractIntegTestSetup {
     }
 
     //Use this test to retrieve coin logos.
-    @Ignore
+    @Disabled
     void testGetIcons() {
-        Set<Integer> set = binanceService.getExchangeInfo().getCoins().stream().map(Coin::getId).collect(Collectors.toSet());
+        Set<Integer> set = getBinanceService().getExchangeInfo().getCoins().stream().map(Coin::getId).collect(Collectors.toSet());
         set.remove(null);
         CoinMarketCapListing listing = service.getCoinMarketCapInfoListing(set);
         listing.getData().values().forEach(d -> System.out.println(d.getLogo()));
