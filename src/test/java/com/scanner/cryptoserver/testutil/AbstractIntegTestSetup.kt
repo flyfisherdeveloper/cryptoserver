@@ -26,7 +26,8 @@ import org.springframework.web.client.RestTemplate
     classes = [BinanceExchangeServiceImpl::class, BinanceUsaExchangeServiceImpl::class, BinanceUrlExtractor::class,
         RestTemplate::class, CachingConfig::class, CacheUtilImpl::class, CoinMarketCapApiServiceImpl::class, CoinMarketCapService::class,
         BinanceExchangeVisitor::class, BittrexServiceImpl::class, BinanceUsaUrlExtractor::class,
-        BinanceUrlExtractor::class, CacheUtilImpl::class, UrlReaderImpl::class])
+        BinanceUrlExtractor::class, CacheUtilImpl::class, UrlReaderImpl::class]
+)
 abstract class AbstractIntegTestSetup {
     private val marketCapListing: String = "Listing"
     private val marketCap: String = "MarketCap"

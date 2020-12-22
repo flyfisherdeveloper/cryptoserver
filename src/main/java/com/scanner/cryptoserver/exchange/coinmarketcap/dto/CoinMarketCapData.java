@@ -15,9 +15,9 @@ public class CoinMarketCapData {
     //an English description of the coin
     private String description;
     //the market cap value in $USD for the coin
-    private Double marketCap;
+    private Double marketCap = 0.0;
     //the volume for the coin in 24 hours in USD
-    private Double volume24HrUsd;
+    private Double volume24HrUsd = 0.0;
     //the date string for when the coin was added (date format example: "2013-04-28T00:00:00.000Z")
     @JsonProperty("first_historical_data")
     private String dateAdded;
