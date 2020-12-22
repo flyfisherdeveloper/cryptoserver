@@ -2,41 +2,25 @@ package com.scanner.cryptoserver.exchange.binance.controller;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.scanner.cryptoserver.CachingConfig;
 import com.scanner.cryptoserver.exchange.binance.dto.CoinDataFor24Hr;
 import com.scanner.cryptoserver.exchange.binance.dto.CoinTicker;
-import com.scanner.cryptoserver.exchange.binance.service.BinanceExchangeVisitor;
-import com.scanner.cryptoserver.exchange.binance.service.BinanceUrlExtractor;
-import com.scanner.cryptoserver.exchange.binance.service.BinanceUsaExchangeServiceImpl;
-import com.scanner.cryptoserver.exchange.binance.service.BinanceUsaUrlExtractor;
-import com.scanner.cryptoserver.exchange.coinmarketcap.CoinMarketCapApiServiceImpl;
-import com.scanner.cryptoserver.exchange.coinmarketcap.CoinMarketCapService;
-import com.scanner.cryptoserver.util.CacheUtilImpl;
+import com.scanner.cryptoserver.testutil.AbstractIntegTestSetup;
 import com.scanner.cryptoserver.util.dto.Coin;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.http.MediaType;
-import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.MvcResult;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
-import org.springframework.web.client.RestTemplate;
 
 import java.util.List;
 import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-@AutoConfigureMockMvc
-//Here, we load only the components needed - this prevents a full Spring Boot test from running, as only certain components are needed.
-//For example, startup initialization threads are not needed, etc.
-@ContextConfiguration(classes = {BinanceUsaExchangeController.class, BinanceUsaExchangeServiceImpl.class,
-        BinanceUsaUrlExtractor.class, RestTemplate.class, CachingConfig.class, BinanceUrlExtractor.class,
-        CacheUtilImpl.class, CoinMarketCapApiServiceImpl.class, CoinMarketCapService.class, BinanceExchangeVisitor.class})
 @WebMvcTest
-class BinanceUsaExchangeControllerIntegTest {
+class BinanceUsaExchangeControllerIntegTest extends AbstractIntegTestSetup {
     @Autowired
     private MockMvc mvc;
 
@@ -50,7 +34,7 @@ class BinanceUsaExchangeControllerIntegTest {
         String json = result.getResponse().getContentAsString();
         ObjectMapper mapper = new ObjectMapper();
 
-        List<Coin> coins = mapper.readValue(json, new TypeReference<List<Coin>>() {
+        List<Coin> coins = mapper.readValue(json, new TypeReference<>() {
         });
         assertTrue(coins.size() > 0);
 
@@ -89,7 +73,7 @@ class BinanceUsaExchangeControllerIntegTest {
         String json = result.getResponse().getContentAsString();
         ObjectMapper mapper = new ObjectMapper();
 
-        List<CoinTicker> list = mapper.readValue(json, new TypeReference<List<CoinTicker>>() {
+        List<CoinTicker> list = mapper.readValue(json, new TypeReference<>() {
         });
         assertNotNull(list);
         assertFalse(list.isEmpty());
@@ -108,7 +92,7 @@ class BinanceUsaExchangeControllerIntegTest {
         String json = result.getResponse().getContentAsString();
         ObjectMapper mapper = new ObjectMapper();
 
-        List<CoinTicker> list = mapper.readValue(json, new TypeReference<List<CoinTicker>>() {
+        List<CoinTicker> list = mapper.readValue(json, new TypeReference<>() {
         });
         assertNotNull(list);
         assertFalse(list.isEmpty());
