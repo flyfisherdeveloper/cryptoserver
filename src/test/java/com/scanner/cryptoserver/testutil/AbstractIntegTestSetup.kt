@@ -3,6 +3,8 @@ package com.scanner.cryptoserver.testutil
 import com.fasterxml.jackson.module.kotlin.jacksonObjectMapper
 import com.fasterxml.jackson.module.kotlin.readValue
 import com.scanner.cryptoserver.CachingConfig
+import com.scanner.cryptoserver.exchange.binance.controller.BinanceExchangeController
+import com.scanner.cryptoserver.exchange.binance.controller.BinanceUsaExchangeController
 import com.scanner.cryptoserver.exchange.binance.service.*
 import com.scanner.cryptoserver.exchange.bittrex.service.BittrexServiceImpl
 import com.scanner.cryptoserver.exchange.coinmarketcap.CoinMarketCapApiServiceImpl
@@ -23,7 +25,8 @@ import org.springframework.web.client.RestTemplate
 //Here, we load only the components needed - this prevents a full Spring Boot test from running, as only certain components are needed.
 //For example, startup initialization threads are not needed, etc.
 @ContextConfiguration(
-    classes = [BinanceExchangeServiceImpl::class, BinanceUsaExchangeServiceImpl::class, BinanceUrlExtractor::class,
+    classes = [BinanceExchangeController::class, BinanceUsaExchangeController::class, BinanceExchangeServiceImpl::class,
+        BinanceUsaExchangeServiceImpl::class, BinanceUrlExtractor::class,
         RestTemplate::class, CachingConfig::class, CacheUtilImpl::class, CoinMarketCapApiServiceImpl::class, CoinMarketCapService::class,
         BinanceExchangeVisitor::class, BittrexServiceImpl::class, BinanceUsaUrlExtractor::class,
         BinanceUrlExtractor::class, UrlReaderImpl::class]
