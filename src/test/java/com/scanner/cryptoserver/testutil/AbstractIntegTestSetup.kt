@@ -63,9 +63,7 @@ abstract class AbstractIntegTestSetup {
     /**
      * Convienience class used only for deserializing Json.
      */
-    private class CoinMarketCapObj {
-        val data: List<CoinMarketCapData>? = null
-    }
+    data class CoinMarketCapObj(var data: List<CoinMarketCapData>)
 
     @BeforeEach
     fun setupExchangeInfo() {
@@ -112,19 +110,11 @@ abstract class AbstractIntegTestSetup {
         return object {}.javaClass.getResource(this).readText()
     }
 
-    fun getListing(): CoinMarketCapListing? {
-        return listing
-    }
+    fun getListing() = listing
 
-    fun getBinanceService(): AbstractBinanceExchangeService {
-        return binanceService!!
-    }
+    fun getBinanceService() = binanceService!!
 
-    fun getBinanceUsaService(): AbstractBinanceExchangeService {
-        return binanceUsaService!!
-    }
+    fun getBinanceUsaService() = binanceUsaService!!
 
-    fun getBittrexService(): BittrexServiceImpl {
-        return bittrexService!!
-    }
+    fun getBittrexService() = bittrexService!!
 }

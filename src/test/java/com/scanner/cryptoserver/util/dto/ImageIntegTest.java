@@ -1,19 +1,16 @@
 package com.scanner.cryptoserver.util.dto;
 
 import com.scanner.cryptoserver.exchange.binance.dto.CoinDataFor24Hr;
-import com.scanner.cryptoserver.exchange.binance.service.AbstractBinanceExchangeService;
-import com.scanner.cryptoserver.exchange.bittrex.service.BittrexServiceImpl;
 import com.scanner.cryptoserver.exchange.coinmarketcap.CoinMarketCapService;
 import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapData;
 import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapListing;
 import com.scanner.cryptoserver.exchange.service.ExchangeService;
+import com.scanner.cryptoserver.testutil.AbstractIntegTestSetup;
 import org.imgscalr.Scalr;
 import org.imgscalr.Scalr.Method;
-import org.junit.Ignore;
 import org.junit.jupiter.api.Disabled;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
-import org.springframework.boot.test.context.SpringBootTest;
 
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
@@ -30,13 +27,7 @@ import java.util.stream.Collectors;
 import static org.imgscalr.Scalr.resize;
 
 @WebMvcTest
-public class ImageIntegTest {
-    @Autowired
-    private AbstractBinanceExchangeService binanceService;
-    @Autowired
-    private AbstractBinanceExchangeService binanceUsaService;
-    @Autowired
-    private BittrexServiceImpl bittrexService;
+public class ImageIntegTest extends AbstractIntegTestSetup {
     @Autowired
     private CoinMarketCapService coinMarketCapService;
 
@@ -83,7 +74,7 @@ public class ImageIntegTest {
     void findNewIconsTest() {
         String downloadedFolder = "C:/dev/icons/coin-market-cap-downloadedNew/";
         String convertedFolder = "C:/dev/icons/coin-market-cap-convertedNew/";
-        List<ExchangeService> services = Arrays.asList(binanceUsaService, binanceService, bittrexService);
+        List<ExchangeService> services = Arrays.asList(getBinanceUsaService(), getBinanceService(), getBittrexService());
         List<CoinDataFor24Hr> missingIconList = new ArrayList<>();
 
         //here we sleep for a few seconds to ensure that the asynchronous initialization has completed
