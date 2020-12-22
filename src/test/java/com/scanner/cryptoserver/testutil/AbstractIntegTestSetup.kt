@@ -22,6 +22,16 @@ import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.test.context.ContextConfiguration
 import org.springframework.web.client.RestTemplate
 
+//This Abstract class is the parent of integraton tests. It loads only the modules needed to run an integ test. This is
+//preferable to running a spring boot test so that only the components and services needed are loaded, as opposed
+//to a spring boot test, which loads everything. This parent class does NOT load the coin market cap data - the
+//reason for this is that the coin market cap data is severely limited in daily quota without a paying license.
+//The daily quota would be reached quickly if everytime an integ test is ran it queried that data.
+//Therefore, in this class, a file that contains a sandbox snapshot of the the coin market cap data is loaded
+//into memory and is used by the exchanges for the coin market cap data for the integ tests, as opposed to downloading it from the
+//coin market cap api. The integ tests still function as usual in this case, and no testing logic is lost with this approach.
+
+
 //Here, we load only the components needed - this prevents a full Spring Boot test from running, as only certain components are needed.
 //For example, startup initialization threads are not needed, etc.
 @ContextConfiguration(
@@ -62,10 +72,12 @@ abstract class AbstractIntegTestSetup {
         if (listing != null) {
             return
         }
+        //load a file containing the coin market cap data
         val text = "/exchange/data/coinmarketcap-map.txt".getResourceAsText()
         val mapper = jacksonObjectMapper()
         val obj = mapper.readValue(text) as CoinMarketCapObj
         listing = CoinMarketCapListing().convertToCoinMarketCapListing(obj.data)
+        //put that data in the cache
         cacheUtil!!.putInCache(coinMarketCap, marketCap, listing)
         cacheUtil.putInCache(coinMarketCap, marketCapListing, listing)
         setupServices()
