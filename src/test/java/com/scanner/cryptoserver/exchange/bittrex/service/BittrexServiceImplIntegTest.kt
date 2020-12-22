@@ -9,7 +9,7 @@ internal class BittrexServiceImplIntegTest : AbstractIntegTestSetup() {
 
     @Test
     fun `test that get24HrAllCoinTicker() returns valid data`() {
-        val coins = getBittrexService()!!.get24HrAllCoinTicker()
+        val coins = getBittrexService().get24HrAllCoinTicker()
         //find one of the coins that we know should be there
         val mtlBtc = coins.first { it.symbol == "MTL-BTC" }
         println(mtlBtc)

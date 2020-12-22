@@ -1,6 +1,7 @@
 package com.scanner.cryptoserver;
 
 import com.google.common.cache.CacheBuilder;
+import org.jetbrains.annotations.NotNull;
 import org.springframework.cache.Cache;
 import org.springframework.cache.CacheManager;
 import org.springframework.cache.annotation.CachingConfigurerSupport;
@@ -25,8 +26,9 @@ public class CachingConfig extends CachingConfigurerSupport {
     @Bean
     public CacheManager cacheManager() {
         return new ConcurrentMapCacheManager() {
+            @NotNull
             @Override
-            protected Cache createConcurrentMapCache(final String name) {
+            protected Cache createConcurrentMapCache(@NotNull final String name) {
                 //cache for coin pairs, such as BTCUSD
                 if (name.equals("CoinCache")) {
                     return new ConcurrentMapCache(name, CacheBuilder.newBuilder()
