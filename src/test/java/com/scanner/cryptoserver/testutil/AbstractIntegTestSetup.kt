@@ -110,8 +110,6 @@ abstract class AbstractIntegTestSetup {
         return object {}.javaClass.getResource(this).readText()
     }
 
-    fun getListing() = listing
-
     fun getBinanceService() = binanceService!!
 
     fun getBinanceUsaService() = binanceUsaService!!
