@@ -63,7 +63,7 @@ abstract class AbstractIntegTestSetup {
     /**
      * Convienience class used only for deserializing Json.
      */
-    data class CoinMarketCapObj(var data: List<CoinMarketCapData>)
+    private data class CoinMarketCapObj(var data: List<CoinMarketCapData>)
 
     @BeforeEach
     fun setupExchangeInfo() {
