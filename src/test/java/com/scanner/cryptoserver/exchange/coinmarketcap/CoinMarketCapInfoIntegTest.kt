@@ -2,8 +2,8 @@ package com.scanner.cryptoserver.exchange.coinmarketcap
 
 import com.scanner.cryptoserver.util.UrlReaderImpl
 import org.junit.Assert.assertNotNull
-import org.junit.Ignore
 import org.junit.Test
+import org.junit.jupiter.api.Disabled
 import org.junit.runner.RunWith
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest
@@ -20,7 +20,7 @@ internal class CoinMarketCapInfoIntegTest {
     @Autowired
     lateinit var service: CoinMarketCapApiServiceImpl
 
-    @Ignore
+    @Disabled
     @Test
     fun `test all coin market cap info by printing data`() {
         val map = service.coinMarketCapMap

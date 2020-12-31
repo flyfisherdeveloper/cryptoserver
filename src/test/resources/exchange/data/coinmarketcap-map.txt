@@ -1,0 +1,1438 @@
+  {
+  "data" : [ {
+    "id" : 512,
+    "name" : "Stellar",
+    "symbol" : "XLM",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 1.481666677872248E9
+  }, {
+    "id" : 1,
+    "name" : "Bitcoin",
+    "symbol" : "BTC",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 1.746034653135906E11
+  }, {
+    "id" : 2,
+    "name" : "Litecoin",
+    "symbol" : "LTC",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 2.912683550589683E9
+  }, {
+    "id" : 2563,
+    "name" : "TrueUSD",
+    "symbol" : "TUSD",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 1.3803903126101857E8
+  }, {
+    "id" : 1027,
+    "name" : "Ethereum",
+    "symbol" : "ETH",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 2.64719231998966E10
+  }, {
+    "id" : 3077,
+    "name" : "VeChain",
+    "symbol" : "VET",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 5.382236855708854E8
+  }, {
+    "id" : 2566,
+    "name" : "Ontology",
+    "symbol" : "ONT",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 3.902292603765125E8
+  }, {
+    "id" : 2057,
+    "name" : "Eidoo",
+    "symbol" : "EDO",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 3.2428567181296658E7
+  }, {
+    "id" : 2058,
+    "name" : "AirSwap",
+    "symbol" : "AST",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 1.063358438982E7
+  }, {
+    "id" : 2570,
+    "name" : "TomoChain",
+    "symbol" : "TOMO",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 3.1609401893505406E7
+  }, {
+    "id" : 3084,
+    "name" : "Blocktrade Token",
+    "symbol" : "BTT",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 876543.4944282093
+  }, {
+    "id" : 2061,
+    "name" : "Blockmason Credit Protocol",
+    "symbol" : "BCPT",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 2620723.7453620704
+  }, {
+    "id" : 2062,
+    "name" : "Aion",
+    "symbol" : "AION",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 4.9070335371038444E7
+  }, {
+    "id" : 2577,
+    "name" : "Ravencoin",
+    "symbol" : "RVN",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 1.2633146768850079E8
+  }, {
+    "id" : 1042,
+    "name" : "Siacoin",
+    "symbol" : "SC",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 1.173917313585143E8
+  }, {
+    "id" : 2071,
+    "name" : "Request",
+    "symbol" : "REQ",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 1.1792047821585646E7
+  }, {
+    "id" : 2588,
+    "name" : "Loom Network",
+    "symbol" : "LOOM",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 1.8405452167325784E7
+  }, {
+    "id" : 541,
+    "name" : "Syscoin",
+    "symbol" : "SYS",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 1.7529767768212706E7
+  }, {
+    "id" : 1567,
+    "name" : "Nano",
+    "symbol" : "NANO",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 1.48828452061733E8
+  }, {
+    "id" : 2081,
+    "name" : "Ambrosus",
+    "symbol" : "AMB",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 4450480.0579240965
+  }, {
+    "id" : 4642,
+    "name" : "Hedera Hashgraph",
+    "symbol" : "HBAR",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 1.8819959725528976E8
+  }, {
+    "id" : 2083,
+    "name" : "Bitcoin Gold",
+    "symbol" : "BTG",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 1.521576039228246E8
+  }, {
+    "id" : 5158,
+    "name" : "3X Short Bitcoin Token",
+    "symbol" : "BEAR",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 0.0
+  }, {
+    "id" : 5161,
+    "name" : "WazirX",
+    "symbol" : "WRX",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 1.345562400042453E7
+  }, {
+    "id" : 2603,
+    "name" : "Pundi X",
+    "symbol" : "NPXS",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 3.3856775909588985E7
+  }, {
+    "id" : 2092,
+    "name" : "NULS",
+    "symbol" : "NULS",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 3.35189826932494E7
+  }, {
+    "id" : 2606,
+    "name" : "Wanchain",
+    "symbol" : "WAN",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 2.9950916672971092E7
+  }, {
+    "id" : 2096,
+    "name" : "Ripio Credit Network",
+    "symbol" : "RCN",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 3.964158906263372E7
+  }, {
+    "id" : 2608,
+    "name" : "Mithril",
+    "symbol" : "MITH",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 4265834.261607414
+  }, {
+    "id" : 1586,
+    "name" : "Ark",
+    "symbol" : "ARK",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 3.002618525183247E7
+  }, {
+    "id" : 2099,
+    "name" : "ICON",
+    "symbol" : "ICX",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 1.8191716281161645E8
+  }, {
+    "id" : 52,
+    "name" : "XRP",
+    "symbol" : "XRP",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 8.559111574542942E9
+  }, {
+    "id" : 2112,
+    "name" : "Red Pulse Phoenix",
+    "symbol" : "PHX",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 2673624.5550521673
+  }, {
+    "id" : 4679,
+    "name" : "Band Protocol",
+    "symbol" : "BAND",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 2.6883130311212026E7
+  }, {
+    "id" : 2120,
+    "name" : "Etherparty",
+    "symbol" : "FUEL",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 3412841.00994
+  }, {
+    "id" : 74,
+    "name" : "Dogecoin",
+    "symbol" : "DOGE",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 3.1643568386101335E8
+  }, {
+    "id" : 2638,
+    "name" : "Cortex",
+    "symbol" : "CTXC",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 2.629530205999506E7
+  }, {
+    "id" : 4687,
+    "name" : "Binance USD",
+    "symbol" : "BUSD",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 1.6388185973490226E8
+  }, {
+    "id" : 1104,
+    "name" : "Augur",
+    "symbol" : "REP",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 1.618890706004E8
+  }, {
+    "id" : 2130,
+    "name" : "Enjin Coin",
+    "symbol" : "ENJ",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 1.594832902626907E8
+  }, {
+    "id" : 1619,
+    "name" : "Skycoin",
+    "symbol" : "SKY",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 8969165.917236
+  }, {
+    "id" : 2132,
+    "name" : "Power Ledger",
+    "symbol" : "POWR",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 4.0490860815774105E7
+  }, {
+    "id" : 4186,
+    "name" : "Binance GBP Stable Coin",
+    "symbol" : "BGBP",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 0.0
+  }, {
+    "id" : 2143,
+    "name" : "Streamr",
+    "symbol" : "DATA",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 3.885544184956963E7
+  }, {
+    "id" : 3168,
+    "name" : "FarmaTrust",
+    "symbol" : "FTT",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 2486522.169522
+  }, {
+    "id" : 5216,
+    "name" : "3X Short Ethereum Token",
+    "symbol" : "ETHBEAR",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 0.0
+  }, {
+    "id" : 5217,
+    "name" : "3X Long Ethereum Token",
+    "symbol" : "ETHBULL",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 0.0
+  }, {
+    "id" : 1637,
+    "name" : "iExec RLC",
+    "symbol" : "RLC",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 4.002755566910001E7
+  }, {
+    "id" : 2153,
+    "name" : "Aeron",
+    "symbol" : "ARN",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 2933119.9570686403
+  }, {
+    "id" : 4206,
+    "name" : "WINk",
+    "symbol" : "WIN",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 2.5585957597994387E7
+  }, {
+    "id" : 2161,
+    "name" : "Raiden Network Token",
+    "symbol" : "RDN",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 1.0921555034307817E7
+  }, {
+    "id" : 2675,
+    "name" : "Dock",
+    "symbol" : "DOCK",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 4146807.6795802843
+  }, {
+    "id" : 3702,
+    "name" : "Beam",
+    "symbol" : "BEAM",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 3.0019046630814437E7
+  }, {
+    "id" : 1658,
+    "name" : "Lunyr",
+    "symbol" : "LUN",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 2379421.855958443
+  }, {
+    "id" : 3714,
+    "name" : "LTO Network",
+    "symbol" : "LTO",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 1.1573400987328568E7
+  }, {
+    "id" : 131,
+    "name" : "Dash",
+    "symbol" : "DASH",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 7.045076605399026E8
+  }, {
+    "id" : 2181,
+    "name" : "Genesis Vision",
+    "symbol" : "GVT",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 5375034.070320203
+  }, {
+    "id" : 3719,
+    "name" : "StableUSD",
+    "symbol" : "USDS",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 582314.175506962
+  }, {
+    "id" : 1168,
+    "name" : "Decred",
+    "symbol" : "DCR",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 2.0217879714905903E8
+  }, {
+    "id" : 3217,
+    "name" : "Ontology Gas",
+    "symbol" : "ONG",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 0.0
+  }, {
+    "id" : 1169,
+    "name" : "PIVX",
+    "symbol" : "PIVX",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 2.558426823996791E7
+  }, {
+    "id" : 1684,
+    "name" : "Qtum",
+    "symbol" : "QTUM",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 1.6984408775769234E8
+  }, {
+    "id" : 1697,
+    "name" : "Basic Attention Token",
+    "symbol" : "BAT",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 3.3672967716726255E8
+  }, {
+    "id" : 1698,
+    "name" : "Horizen",
+    "symbol" : "ZEN",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 7.143054320412007E7
+  }, {
+    "id" : 1700,
+    "name" : "Aeternity",
+    "symbol" : "AE",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 4.475560499777077E7
+  }, {
+    "id" : 2212,
+    "name" : "Quantstamp",
+    "symbol" : "QSP",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 1.1634613435316E7
+  }, {
+    "id" : 5294,
+    "name" : "3X Short BNB Token",
+    "symbol" : "BNBBEAR",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 0.0
+  }, {
+    "id" : 2222,
+    "name" : "Bitcoin Diamond",
+    "symbol" : "BCD",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 1.113314080489486E8
+  }, {
+    "id" : 5295,
+    "name" : "3X Long BNB Token",
+    "symbol" : "BNBBULL",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 0.0
+  }, {
+    "id" : 4275,
+    "name" : "Cocos-BCX",
+    "symbol" : "COCOS",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 8878188.455893992
+  }, {
+    "id" : 693,
+    "name" : "Verge",
+    "symbol" : "XVG",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 1.0214408507609016E8
+  }, {
+    "id" : 2235,
+    "name" : "Time New Bank",
+    "symbol" : "TNB",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 6586355.173718267
+  }, {
+    "id" : 1723,
+    "name" : "SONM",
+    "symbol" : "SNM",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 3102213.4609212
+  }, {
+    "id" : 3773,
+    "name" : "Fetch.ai",
+    "symbol" : "FET",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 2.0017430222255945E7
+  }, {
+    "id" : 1214,
+    "name" : "Lisk",
+    "symbol" : "LSK",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 1.5212051112621772E8
+  }, {
+    "id" : 2239,
+    "name" : "Aave",
+    "symbol" : "LEND",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 1.2706633574508317E8
+  }, {
+    "id" : 1727,
+    "name" : "Bancor",
+    "symbol" : "BNT",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 5.7010603630215324E7
+  }, {
+    "id" : 4293,
+    "name" : "Perlin",
+    "symbol" : "PERL",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 6825375.346109017
+  }, {
+    "id" : 3783,
+    "name" : "Ankr",
+    "symbol" : "ANKR",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 1.213901922014041E7
+  }, {
+    "id" : 1229,
+    "name" : "DigixDAO",
+    "symbol" : "DGD",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 9018941.556088263
+  }, {
+    "id" : 1230,
+    "name" : "Steem",
+    "symbol" : "STEEM",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 7.394220082986808E7
+  }, {
+    "id" : 3794,
+    "name" : "Cosmos",
+    "symbol" : "ATOM",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 5.45802986152413E8
+  }, {
+    "id" : 2777,
+    "name" : "IoTeX",
+    "symbol" : "IOTX",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 2.634430553919873E7
+  }, {
+    "id" : 2267,
+    "name" : "Tael",
+    "symbol" : "WABI",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 1.090620975736255E7
+  }, {
+    "id" : 2780,
+    "name" : "NKN",
+    "symbol" : "NKN",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 1.3059613570323408E7
+  }, {
+    "id" : 1757,
+    "name" : "FunFair",
+    "symbol" : "FUN",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 2.56105177917681E7
+  }, {
+    "id" : 1759,
+    "name" : "Status",
+    "symbol" : "SNT",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 9.02980964260559E7
+  }, {
+    "id" : 1765,
+    "name" : "EOS",
+    "symbol" : "EOS",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 2.4235482467328467E9
+  }, {
+    "id" : 3814,
+    "name" : "Celer Network",
+    "symbol" : "CELR",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 1.2180873122795517E7
+  }, {
+    "id" : 1768,
+    "name" : "AdEx",
+    "symbol" : "ADX",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 8434648.306732992
+  }, {
+    "id" : 1772,
+    "name" : "Storj",
+    "symbol" : "STORJ",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 2.3635301834407523E7
+  }, {
+    "id" : 4846,
+    "name" : "Kava",
+    "symbol" : "KAVA",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 3.4371268576398306E7
+  }, {
+    "id" : 3822,
+    "name" : "Theta Fuel",
+    "symbol" : "TFUEL",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 3.6140219505007155E7
+  }, {
+    "id" : 1776,
+    "name" : "MCO",
+    "symbol" : "MCO",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 8.105941435351704E7
+  }, {
+    "id" : 2289,
+    "name" : "Gifto",
+    "symbol" : "GTO",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 7941446.855195179
+  }, {
+    "id" : 2296,
+    "name" : "OST",
+    "symbol" : "OST",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 6542506.381239297
+  }, {
+    "id" : 2297,
+    "name" : "Storm",
+    "symbol" : "STORM",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 2.452605112085823E7
+  }, {
+    "id" : 1785,
+    "name" : "Gas",
+    "symbol" : "GAS",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 1.6662172024712527E7
+  }, {
+    "id" : 1274,
+    "name" : "Waves",
+    "symbol" : "WAVES",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 1.2166436423114379E8
+  }, {
+    "id" : 5370,
+    "name" : "Hive",
+    "symbol" : "HIVE",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 7.54339295838458E7
+  }, {
+    "id" : 2299,
+    "name" : "aelf",
+    "symbol" : "ELF",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 6.0876530465370014E7
+  }, {
+    "id" : 1788,
+    "name" : "Metal",
+    "symbol" : "MTL",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 2.0746538069655653E7
+  }, {
+    "id" : 1789,
+    "name" : "Populous",
+    "symbol" : "PPT",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 2.053487137882187E7
+  }, {
+    "id" : 3330,
+    "name" : "Paxos Standard",
+    "symbol" : "PAX",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 2.4540390040588167E8
+  }, {
+    "id" : 258,
+    "name" : "Groestlcoin",
+    "symbol" : "GRS",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 1.4532529570754062E7
+  }, {
+    "id" : 2306,
+    "name" : "Bread",
+    "symbol" : "BRD",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 1.0206168856505793E7
+  }, {
+    "id" : 3333,
+    "name" : "Sola Token",
+    "symbol" : "SOL",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 16518.538271415386
+  }, {
+    "id" : 1291,
+    "name" : "Comet",
+    "symbol" : "CMT",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 2397.892890552523
+  }, {
+    "id" : 1808,
+    "name" : "OMG Network",
+    "symbol" : "OMG",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 2.1900497138830388E8
+  }, {
+    "id" : 2321,
+    "name" : "QLC Chain",
+    "symbol" : "QLC",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 3161515.1202720003
+  }, {
+    "id" : 2324,
+    "name" : "BigONE Token",
+    "symbol" : "ONE",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 2.1123138333659194E7
+  }, {
+    "id" : 789,
+    "name" : "Nexus",
+    "symbol" : "NXS",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 1.350856025813169E7
+  }, {
+    "id" : 1816,
+    "name" : "Civic",
+    "symbol" : "CVC",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 1.8790128504591E7
+  }, {
+    "id" : 2840,
+    "name" : "QuarkChain",
+    "symbol" : "QKC",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 8161219.257975034
+  }, {
+    "id" : 5412,
+    "name" : "3x Long XRP Token",
+    "symbol" : "XRPBULL",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 0.0
+  }, {
+    "id" : 5413,
+    "name" : "3x Short XRP Token",
+    "symbol" : "XRPBEAR",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 0.0
+  }, {
+    "id" : 5414,
+    "name" : "3x Long EOS Token",
+    "symbol" : "EOSBULL",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 0.0
+  }, {
+    "id" : 1831,
+    "name" : "Bitcoin Cash",
+    "symbol" : "BCH",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 4.450409528176877E9
+  }, {
+    "id" : 5415,
+    "name" : "3x Short EOS Token",
+    "symbol" : "EOSBEAR",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 0.0
+  }, {
+    "id" : 1320,
+    "name" : "Ardor",
+    "symbol" : "ARDR",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 5.180511535507434E7
+  }, {
+    "id" : 2344,
+    "name" : "AppCoins",
+    "symbol" : "APPC",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 4051280.264937463
+  }, {
+    "id" : 1321,
+    "name" : "Ethereum Classic",
+    "symbol" : "ETC",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 7.45810336807883E8
+  }, {
+    "id" : 2348,
+    "name" : "Measurable Data Token",
+    "symbol" : "MDT",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 3373470.6968425736
+  }, {
+    "id" : 2861,
+    "name" : "GoChain",
+    "symbol" : "GO",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 1.0018054990131477E7
+  }, {
+    "id" : 1839,
+    "name" : "Binance Coin",
+    "symbol" : "BNB",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 2.5891659182128396E9
+  }, {
+    "id" : 3890,
+    "name" : "Matic Network",
+    "symbol" : "MATIC",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 7.135105373863967E7
+  }, {
+    "id" : 825,
+    "name" : "Tether",
+    "symbol" : "USDT",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 9.215303433564049E9
+  }, {
+    "id" : 2364,
+    "name" : "TokenClub",
+    "symbol" : "TCT",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 4692753.289021945
+  }, {
+    "id" : 1853,
+    "name" : "OAX",
+    "symbol" : "OAX",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 3226955.4189330414
+  }, {
+    "id" : 1343,
+    "name" : "Stratis",
+    "symbol" : "STRAT",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 4.0321120607525975E7
+  }, {
+    "id" : 1856,
+    "name" : "district0x",
+    "symbol" : "DNT",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 4270802.801406
+  }, {
+    "id" : 5444,
+    "name" : "Cartesi",
+    "symbol" : "CTSI",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 5800889.433303551
+  }, {
+    "id" : 1861,
+    "name" : "Stox",
+    "symbol" : "STX",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 463991.123949606
+  }, {
+    "id" : 1864,
+    "name" : "Blox",
+    "symbol" : "CDT",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 3199459.3101532045
+  }, {
+    "id" : 328,
+    "name" : "Monero",
+    "symbol" : "XMR",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 1.158089898356707E9
+  }, {
+    "id" : 3408,
+    "name" : "USD Coin",
+    "symbol" : "USDC",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 7.33508590512285E8
+  }, {
+    "id" : 2896,
+    "name" : "Mainframe",
+    "symbol" : "MFT",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 7957075.888673846
+  }, {
+    "id" : 3924,
+    "name" : "DREP",
+    "symbol" : "DREP",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 1.0178995440845208E7
+  }, {
+    "id" : 1886,
+    "name" : "Dent",
+    "symbol" : "DENT",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 1.723193019671548E7
+  }, {
+    "id" : 2398,
+    "name" : "Selfkey",
+    "symbol" : "KEY",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 3177943.802905326
+  }, {
+    "id" : 1376,
+    "name" : "Neo",
+    "symbol" : "NEO",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 7.80622879596944E8
+  }, {
+    "id" : 2405,
+    "name" : "IOST",
+    "symbol" : "IOST",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 8.478576192215088E7
+  }, {
+    "id" : 1896,
+    "name" : "0x",
+    "symbol" : "ZRX",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 2.3704899977164802E8
+  }, {
+    "id" : 873,
+    "name" : "NEM",
+    "symbol" : "XEM",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 4.010481379075391E8
+  }, {
+    "id" : 362,
+    "name" : "CloakCoin",
+    "symbol" : "CLOAK",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 861064.3269393499
+  }, {
+    "id" : 1903,
+    "name" : "HyperCash",
+    "symbol" : "HC",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 5.559218348646409E7
+  }, {
+    "id" : 2416,
+    "name" : "THETA",
+    "symbol" : "THETA",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 2.127628146165542E8
+  }, {
+    "id" : 372,
+    "name" : "Bytecoin",
+    "symbol" : "BCN",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 4.0907117109265365E7
+  }, {
+    "id" : 1908,
+    "name" : "Nebulas",
+    "symbol" : "NAS",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 1.968059295713928E7
+  }, {
+    "id" : 2424,
+    "name" : "SingularityNET",
+    "symbol" : "AGI",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 1.4222482322045602E7
+  }, {
+    "id" : 2937,
+    "name" : "VITE",
+    "symbol" : "VITE",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 7283989.857731392
+  }, {
+    "id" : 377,
+    "name" : "NavCoin",
+    "symbol" : "NAV",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 1.0910712492491653E7
+  }, {
+    "id" : 2427,
+    "name" : "ChatCoin",
+    "symbol" : "CHAT",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 1233818.9334394028
+  }, {
+    "id" : 2430,
+    "name" : "Hydro Protocol",
+    "symbol" : "HOT",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 1950647.25234132
+  }, {
+    "id" : 1409,
+    "name" : "SingularDTV",
+    "symbol" : "SNGLS",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 1.0920762861720001E7
+  }, {
+    "id" : 1923,
+    "name" : "Tierion",
+    "symbol" : "TNT",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 1.5673294848215181E7
+  }, {
+    "id" : 1925,
+    "name" : "Waltonchain",
+    "symbol" : "WTC",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 2.6450917895627867E7
+  }, {
+    "id" : 1414,
+    "name" : "Zcoin",
+    "symbol" : "XZC",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 4.681972157576516E7
+  }, {
+    "id" : 3978,
+    "name" : "Chromia",
+    "symbol" : "CHR",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 1.1705704325774552E7
+  }, {
+    "id" : 1934,
+    "name" : "Loopring",
+    "symbol" : "LRC",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 1.0659895489116167E8
+  }, {
+    "id" : 5007,
+    "name" : "TROY",
+    "symbol" : "TROY",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 8565278.4619874
+  }, {
+    "id" : 1937,
+    "name" : "Po.et",
+    "symbol" : "POE",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 5955257.048471318
+  }, {
+    "id" : 3992,
+    "name" : "COTI",
+    "symbol" : "COTI",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 1.2849888282666817E7
+  }, {
+    "id" : 1947,
+    "name" : "Monetha",
+    "symbol" : "MTH",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 2943198.051852392
+  }, {
+    "id" : 1437,
+    "name" : "Zcash",
+    "symbol" : "ZEC",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 4.836453132847064E8
+  }, {
+    "id" : 1949,
+    "name" : "Agrello",
+    "symbol" : "DLT",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 3445527.0581313097
+  }, {
+    "id" : 1954,
+    "name" : "Moeda Loyalty Points",
+    "symbol" : "MDA",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 8569374.455083475
+  }, {
+    "id" : 1955,
+    "name" : "Neblio",
+    "symbol" : "NEBL",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 8803009.172383226
+  }, {
+    "id" : 2469,
+    "name" : "Zilliqa",
+    "symbol" : "ZIL",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 2.6739488071299598E8
+  }, {
+    "id" : 4006,
+    "name" : "Standard Tokenization Protocol",
+    "symbol" : "STPT",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 9256514.790842377
+  }, {
+    "id" : 1958,
+    "name" : "TRON",
+    "symbol" : "TRX",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 1.093408273642642E9
+  }, {
+    "id" : 1966,
+    "name" : "Decentraland",
+    "symbol" : "MANA",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 5.732057105098444E7
+  }, {
+    "id" : 1455,
+    "name" : "Golem",
+    "symbol" : "GNT",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 5.411970611498206E7
+  }, {
+    "id" : 4023,
+    "name" : "Bitcoin BEP2",
+    "symbol" : "BTCB",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 0.0
+  }, {
+    "id" : 1975,
+    "name" : "Chainlink",
+    "symbol" : "LINK",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 1.4365717545375E9
+  }, {
+    "id" : 3513,
+    "name" : "Fantom",
+    "symbol" : "FTM",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 1.100549886603814E7
+  }, {
+    "id" : 4030,
+    "name" : "Algorand",
+    "symbol" : "ALGO",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 1.7957972843669125E8
+  }, {
+    "id" : 1982,
+    "name" : "Kyber Network",
+    "symbol" : "KNC",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 2.3213959105842054E8
+  }, {
+    "id" : 1983,
+    "name" : "VIBE",
+    "symbol" : "VIBE",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 3625144.8216585265
+  }, {
+    "id" : 1984,
+    "name" : "Substratum",
+    "symbol" : "SUB",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 1170785.0710053793
+  }, {
+    "id" : 5056,
+    "name" : "BuySell",
+    "symbol" : "BULL",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 0.0
+  }, {
+    "id" : 2496,
+    "name" : "Polymath",
+    "symbol" : "POLY",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 2.2715560304906037E7
+  }, {
+    "id" : 1989,
+    "name" : "COS",
+    "symbol" : "COS",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 1164194.0958462937
+  }, {
+    "id" : 4038,
+    "name" : "MovieBloc",
+    "symbol" : "MBL",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 1.3646211325555172E7
+  }, {
+    "id" : 4039,
+    "name" : "ARPA Chain",
+    "symbol" : "ARPA",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 9321966.144274428
+  }, {
+    "id" : 2505,
+    "name" : "Bluzelle",
+    "symbol" : "BLZ",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 5980929.80285602
+  }, {
+    "id" : 1996,
+    "name" : "SALT",
+    "symbol" : "SALT",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 5804366.784303313
+  }, {
+    "id" : 463,
+    "name" : "BitShares",
+    "symbol" : "BTS",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 5.935064544303745E7
+  }, {
+    "id" : 2511,
+    "name" : "WePower",
+    "symbol" : "WPR",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 4813409.01644482
+  }, {
+    "id" : 470,
+    "name" : "Viacoin",
+    "symbol" : "VIA",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 4494271.978079956
+  }, {
+    "id" : 2010,
+    "name" : "Cardano",
+    "symbol" : "ADA",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 2.073588163310231E9
+  }, {
+    "id" : 2011,
+    "name" : "Tezos",
+    "symbol" : "XTZ",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 1.951645025396402E9
+  }, {
+    "id" : 1500,
+    "name" : "Wings",
+    "symbol" : "WINGS",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 5387041.394971147
+  }, {
+    "id" : 4066,
+    "name" : "Chiliz",
+    "symbol" : "CHZ",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 5.45477496676281E7
+  }, {
+    "id" : 2019,
+    "name" : "Viberate",
+    "symbol" : "VIB",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 3036324.0966042876
+  }, {
+    "id" : 2539,
+    "name" : "Ren",
+    "symbol" : "REN",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 8.274772867501296E7
+  }, {
+    "id" : 2544,
+    "name" : "Nucleus Vision",
+    "symbol" : "NCASH",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 2305120.505575098
+  }, {
+    "id" : 1521,
+    "name" : "Komodo",
+    "symbol" : "KMD",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 9.006023161771277E7
+  }, {
+    "id" : 2034,
+    "name" : "Everex",
+    "symbol" : "EVX",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 4988581.5910617
+  }, {
+    "id" : 2548,
+    "name" : "POA",
+    "symbol" : "POA",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 3511505.468769421
+  }, {
+    "id" : 4086,
+    "name" : "Elrond",
+    "symbol" : "ERD",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 2.7792976267245006E7
+  }, {
+    "id" : 2043,
+    "name" : "Cindicator",
+    "symbol" : "CND",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 1.34642519945345E7
+  }, {
+    "id" : 4092,
+    "name" : "Dusk Network",
+    "symbol" : "DUSK",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 7428817.85957548
+  }, {
+    "id" : 2044,
+    "name" : "Enigma",
+    "symbol" : "ENG",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 2.257109778182485E7
+  }, {
+    "id" : 5117,
+    "name" : "Origin Protocol",
+    "symbol" : "OGN",
+    "logo" : null,
+    "description" : null,
+    "marketCap" : 1.722563796658973E7
+  } ]
+  }

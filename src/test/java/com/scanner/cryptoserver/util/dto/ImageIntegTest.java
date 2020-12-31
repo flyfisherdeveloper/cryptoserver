@@ -9,7 +9,7 @@ import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapListing;
 import com.scanner.cryptoserver.exchange.service.ExchangeService;
 import org.imgscalr.Scalr;
 import org.imgscalr.Scalr.Method;
-import org.junit.Ignore;
+import org.junit.jupiter.api.Disabled;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
@@ -27,6 +27,8 @@ import java.util.stream.Collectors;
 
 import static org.imgscalr.Scalr.resize;
 
+//Note: this test MUST be a Spring Boot Test. This is because the full coin market cap must be loaded
+//in order to download missing icons.
 @SpringBootTest
 public class ImageIntegTest {
     @Autowired
@@ -76,7 +78,7 @@ public class ImageIntegTest {
      * periodically to repopulate icons from newly listed coins on exchanges. It really isn't a "test",
      * but is included here to run when needed.
      */
-    @Ignore
+    @Disabled
     //@Test
     void findNewIconsTest() {
         String downloadedFolder = "C:/dev/icons/coin-market-cap-downloadedNew/";
@@ -88,7 +90,7 @@ public class ImageIntegTest {
         //yes, it is a hack, but this is just a utility test that is run periodically to download icons,
         //so, whatever works is good enough
         try {
-            Thread.sleep(7000);
+            Thread.sleep(20000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

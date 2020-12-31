@@ -1,6 +1,5 @@
 package com.scanner.cryptoserver.exchange.binance.service;
 
-import com.google.common.collect.ImmutableMap;
 import com.scanner.cryptoserver.exchange.service.ExchangeVisitor;
 import org.jetbrains.annotations.NotNull;
 import org.springframework.stereotype.Component;
@@ -10,12 +9,11 @@ import java.util.Optional;
 
 @Component
 public class BinanceExchangeVisitor implements ExchangeVisitor {
-    private final Map<String, String> nameMap = ImmutableMap.of("UNI", "Uniswap", "HNT", "Helium", "LINK", "Chainlink",
-            "CND", "Cindicator", "HOT", "Holo");
-    private final Map<String, String> secondNameMap = ImmutableMap.of("COMP", "Compound");
-    private final Map<String, String> symbolMap = ImmutableMap.of("BQX", "VGX", "YOYO", "YOYOW", "PHB", "PHX",
-            "GXS", "GXC", "WNXM", "NXM");
-    private final Map<String, String> secondSymbolMap = ImmutableMap.of("GLM", "GNT");
+    private final Map<String, String> nameMap = Map.ofEntries(Map.entry("UNI", "Uniswap"), Map.entry("HNT", "Helium"), Map.entry("LINK", "Chainlink"),
+            Map.entry("CND", "Cindicator"), Map.entry("HOT", "Holo"), Map.entry("COMP", "Compound"));
+
+    private final Map<String, String> symbolMap = Map.ofEntries(Map.entry("BQX", "VGX"), Map.entry("YOYO", "YOYOW"), Map.entry("PHB", "PHX"),
+            Map.entry("GXS", "GXC"), Map.entry("WNXM", "NXM"), Map.entry("GLM", "GNT"));
 
     /**
      * When coins have duplicate symbols, such as "UNI", this visitor is used by services
@@ -37,18 +35,12 @@ public class BinanceExchangeVisitor implements ExchangeVisitor {
     @NotNull
     @Override
     public String getName(@NotNull String coin) {
-        return Optional.ofNullable(
-                Optional.ofNullable(nameMap.get(coin))
-                        .orElse(secondNameMap.get(coin)))
-                .orElseGet(() -> getSymbol(coin));
+        return Optional.ofNullable(nameMap.get(coin)).orElseGet(() -> getSymbol(coin));
     }
 
     @NotNull
     @Override
     public String getSymbol(@NotNull String coin) {
-        return Optional.ofNullable(
-                Optional.ofNullable(symbolMap.get(coin))
-                        .orElse(secondSymbolMap.get(coin)))
-                .orElse(coin);
+        return Optional.ofNullable(symbolMap.get(coin)).orElse(coin);
     }
 }
