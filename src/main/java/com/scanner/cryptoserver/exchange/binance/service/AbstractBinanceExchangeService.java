@@ -333,7 +333,6 @@ public abstract class AbstractBinanceExchangeService implements ExchangeService 
         if (interval.equals("24h")) {
             interval = "1d";
         }
-        //jeff unit test this
         if (interval.equals("72h")) {
             interval = "3d";
         }
