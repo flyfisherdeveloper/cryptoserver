@@ -362,9 +362,9 @@ class BinanceExchangeServiceImplTest extends Specification {
           def coinMarketCapListing = new CoinMarketCapListing()
           def dataBtc = new CoinMarketCapData(symbol: symbolBtc)
           def dataLtc = new CoinMarketCapData(symbol: symbolLtc)
-          def dataMap = [:] as HashMap<String, CoinMarketCapData>
-          dataMap.put(symbolBtc, dataBtc)
-          dataMap.put(symbolLtc, dataLtc)
+          def dataMap = [:] as HashMap<Integer, CoinMarketCapData>
+          dataMap.put(idBtc, dataBtc)
+          dataMap.put(idLtc, dataLtc)
           coinMarketCapListing.setData(dataMap)
 
         when:
@@ -410,9 +410,9 @@ class BinanceExchangeServiceImplTest extends Specification {
           def coinMarketCapListing = new CoinMarketCapListing()
           def dataBtc = new CoinMarketCapData(symbol: baseAssetBtc, name: nameBtc, id: idBtc, marketCap: marketCapBtc)
           def dataLtc = new CoinMarketCapData(symbol: baseAssetLtc, name: nameLtc, id: idLtc, marketCap: marketCapLtc)
-          def dataMap = [:] as HashMap<String, CoinMarketCapData>
-          dataMap.put(symbolBtc, dataBtc)
-          dataMap.put(symbolLtc, dataLtc)
+          def dataMap = [:] as HashMap<Integer, CoinMarketCapData>
+          dataMap.put(idBtc, dataBtc)
+          dataMap.put(idLtc, dataLtc)
           coinMarketCapListing.setData(dataMap)
 
         when:
