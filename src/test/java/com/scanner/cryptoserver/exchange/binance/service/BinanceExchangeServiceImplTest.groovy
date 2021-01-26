@@ -112,14 +112,8 @@ class BinanceExchangeServiceImplTest extends Specification {
           exchangeInfo.setCoins(exchangeSymbols)
           def exchangeInfoResponse = ResponseEntity.of(Optional.of(exchangeInfo)) as ResponseEntity<ExchangeInfo>
 
-          //the following represents coin market cap data for certain coins
-          def coinMarketCapMap = new CoinMarketCapListing()
-          def data = new CoinMarketCapData(symbol: coin, marketCap: marketCap)
-          coinMarketCapMap.setData(coin: data)
-
         when: "mocks are called"
           cacheUtil.retrieveFromCache(_, "binance-ExchangeInfo", _) >>> [exchangeInfo, exchangeInfo]
-          coinMarketCapService.getCoinMarketCapListing() >> coinMarketCapMap
           restTemplate.getForEntity(*_,) >>> [linkedHashMapResponse, exchangeInfoResponse]
           //here, we mock the call to the market cap service that sets the market cap
           //this ensures that the service makes the call to set the market cap
@@ -359,17 +353,8 @@ class BinanceExchangeServiceImplTest extends Specification {
                        new Coin(symbol: symbolLtc, id: idLtc, marketCap: marketCapLtc)]
           exchangeInfo.setCoins(coins)
 
-          def coinMarketCapListing = new CoinMarketCapListing()
-          def dataBtc = new CoinMarketCapData(symbol: symbolBtc)
-          def dataLtc = new CoinMarketCapData(symbol: symbolLtc)
-          def dataMap = [:] as HashMap<Integer, CoinMarketCapData>
-          dataMap.put(idBtc, dataBtc)
-          dataMap.put(idLtc, dataLtc)
-          coinMarketCapListing.setData(dataMap)
-
         when:
           cacheUtil.retrieveFromCache(*_) >> exchangeInfo
-          coinMarketCapService.getCoinMarketCapListing() >> coinMarketCapListing
 
         then:
           def info = service.getExchangeInfoWithoutMarketCap()
@@ -393,8 +378,6 @@ class BinanceExchangeServiceImplTest extends Specification {
         given:
           def baseAssetBtc = "BTC"
           def baseAssetLtc = "LTC"
-          def nameBtc = "Bitcoin"
-          def nameLtc = "Litecoin"
           def symbolBtc = "BTCUSD"
           def symbolLtc = "LTCETH"
           def marketCapBtc = 10000000
@@ -407,17 +390,8 @@ class BinanceExchangeServiceImplTest extends Specification {
                        new Coin(symbol: symbolLtc, baseAsset: baseAssetLtc, id: idLtc, marketCap: marketCapLtc)]
           exchangeInfo.setCoins(coins)
 
-          def coinMarketCapListing = new CoinMarketCapListing()
-          def dataBtc = new CoinMarketCapData(symbol: baseAssetBtc, name: nameBtc, id: idBtc, marketCap: marketCapBtc)
-          def dataLtc = new CoinMarketCapData(symbol: baseAssetLtc, name: nameLtc, id: idLtc, marketCap: marketCapLtc)
-          def dataMap = [:] as HashMap<Integer, CoinMarketCapData>
-          dataMap.put(idBtc, dataBtc)
-          dataMap.put(idLtc, dataLtc)
-          coinMarketCapListing.setData(dataMap)
-
         when:
           cacheUtil.retrieveFromCache(*_) >> exchangeInfo
-          coinMarketCapService.getCoinMarketCapListing() >> coinMarketCapListing
 
         then:
           def info = service.getExchangeInfo()
