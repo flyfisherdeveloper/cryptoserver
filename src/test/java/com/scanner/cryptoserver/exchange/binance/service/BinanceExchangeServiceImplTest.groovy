@@ -229,6 +229,7 @@ class BinanceExchangeServiceImplTest extends Specification {
           "BTCUSD" | "1h"     | "1m"         | [expected: false]
           "BTCUSD" | "4h"     | "1m"         | [expected: false]
           "BTCUSD" | "24h"    | "1m"         | [expected: false]
+          "BTCUSD" | "72h"    | "1m"         | [expected: false]
           "BTCUSD" | "1h"     | "12m"        | [expected: true, type: RuntimeException]
     }
 
