@@ -24,10 +24,10 @@ class CoinTest extends Specification {
 
               @Override
               String getSymbol(@NotNull String coin) {
-                  if (coin.equals("BQX")) {
+                  if (coin == "BQX") {
                       return "VGX"
                   }
-                  if (coin.equals("YOYO")) {
+                  if (coin == "YOYO") {
                       return "YOYOW"
                   }
                   return coin
