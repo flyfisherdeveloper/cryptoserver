@@ -178,39 +178,24 @@ public abstract class AbstractBinanceExchangeService implements ExchangeService 
      * Get a "quote" from a symbol string. i.e. "BTCUSD" returns "USD".
      *
      * @param str the symbol, such as "ETHUSDT".
-     * @return the "quote" such as "USDT" from the string "LTCUSDT".
+     * @return the coin from the symbol.
      */
-    public String getQuote(String str) {
+    //jeff
+    public Coin getCoin(String str) {
         ExchangeInfo exchangeInfo = retrieveExchangeInfoFromCache();
-        Supplier<String> parseQuote = () -> {
+        //jeff is this Supplier really necessary??
+        Supplier<Coin> parseQuote = () -> {
             int start = this.getStartOfQuote(str);
-            return str.substring(start);
+            String quote = str.substring(start);
+            Coin coin = new Coin();
+            coin.setQuoteAsset(quote);
+            //what about the base asset?
+            return coin;
         };
-        String quote = exchangeInfo.getCoins().stream()
+        final Coin coin = exchangeInfo.getCoins().stream()
                 .filter(sym -> sym.getSymbol() != null && sym.getSymbol().equals(str))
                 .findFirst()
-                .map(Coin::getQuoteAsset)
                 .orElseGet(parseQuote);
-        return quote;
-    }
-
-    /**
-     * Get a "coin symbol" from a symbol string. i.e. "BTCUSD" returns "BTC".
-     *
-     * @param str the symbol, such as "ETHUSDT".
-     * @return the "coin" such as "LTC" from the string "LTCUSDT".
-     */
-    public String getCoin(String str) {
-        ExchangeInfo exchangeInfo = retrieveExchangeInfoFromCache();
-        Supplier<String> parseCoin = () -> {
-            int offset = this.getStartOfQuote(str);
-            return str.substring(0, offset);
-        };
-        String coin = exchangeInfo.getCoins().stream()
-                .filter(sym -> sym.getSymbol() != null && sym.getSymbol().equals(str))
-                .findFirst()
-                .map(Coin::getBaseAsset)
-                .orElseGet(parseCoin);
         return coin;
     }
 
@@ -251,15 +236,15 @@ public abstract class AbstractBinanceExchangeService implements ExchangeService 
     private CoinDataFor24Hr get24HrCoinTicker(LinkedHashMap map) {
         CoinDataFor24Hr data = new CoinDataFor24Hr();
         String symbol = (String) map.get("symbol");
-        String coin = getCoin(symbol);
-        String currency = getQuote(symbol);
-        if (!isCoinTrading(symbol) || !isCoinInUsaMarket(currency) || isLeveragedToken(symbol) || isLeveragedToken(coin)) {
+        Coin coin = getCoin(symbol);
+        //jeff
+        if (!isCoinTrading(symbol) || !isCoinInUsaMarket(coin.getQuoteAsset()) || isLeveragedToken(symbol) || isLeveragedToken(coin.getBaseAsset())) {
             return null;
         }
 
         data.setSymbol(symbol);
-        data.setCoin(coin);
-        data.setCurrency(currency);
+        data.setCoin(coin.getBaseAsset());
+        data.setCurrency(coin.getQuoteAsset());
 
         String priceChangeStr = (String) map.get("priceChange");
         double priceChange = Double.parseDouble(priceChangeStr);
@@ -299,7 +284,7 @@ public abstract class AbstractBinanceExchangeService implements ExchangeService 
         data.setCloseTime(closeTime);
 
         data.setupLinks(getUrlExtractor().getTradeUrl());
-        byte[] iconBytes = cacheUtil.getIconBytes(getExchangeVisitor().getSymbol(coin), null);
+        byte[] iconBytes = cacheUtil.getIconBytes(getExchangeVisitor().getSymbol(coin.getBaseAsset()), null);
         data.setIcon(iconBytes);
 
         return data;
@@ -498,11 +483,13 @@ public abstract class AbstractBinanceExchangeService implements ExchangeService 
             return new ArrayList<>();
         }
         //Here, we want the USD volume.
+        //jeff
         if ((symbol.endsWith("USD") && !symbol.endsWith("BUSD") && !symbol.endsWith("TUSD")) || symbol.endsWith("USDT")) {
             return coins;
         }
         //Find the USD volume, and add it to the list.
-        final String quote = getQuote(symbol);
+        //jeff
+        final String quote = getCoin(symbol).getQuoteAsset();
         final ExchangeInfo exchangeInfo = getExchangeInfo();
         final String usdSymbol = quote + getUsdQuote();
         //We need the USD or USDT pair of the quote coin in order to get the USD price in order to compute the USD volume for the tickers.
