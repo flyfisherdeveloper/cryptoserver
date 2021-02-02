@@ -107,7 +107,7 @@ class BinanceExchangeServiceImplTest extends Specification {
 
           //the following represents exchange information - metadata about coins on an exchange
           def exchangeInfo = new ExchangeInfo()
-          def exchangeSymbol = new Coin(symbol: symbol, quoteAsset: currency, status: status)
+          def exchangeSymbol = new Coin(symbol: symbol, baseAsset: coin, quoteAsset: currency, status: status)
           def exchangeSymbols = [exchangeSymbol]
           exchangeInfo.setCoins(exchangeSymbols)
           def exchangeInfoResponse = ResponseEntity.of(Optional.of(exchangeInfo)) as ResponseEntity<ExchangeInfo>
