@@ -462,13 +462,15 @@ class BinanceExchangeServiceImplTest extends Specification {
         given:
           def coinTicker1 = new CoinTicker(symbol: "BTC", open: 9999.0, close: 10000.0, volume: 10.0)
           def coinTicker2 = new CoinTicker(symbol: "LTC", open: 170.0, close: 175.0, volume: 10.0)
-          def symbols = ["BTC"]
+          def symbols = ["BTCUSD"]
           def coinTickerList = [coinTicker1, coinTicker2]
+          def coins = [new Coin(symbol: "BTCUSD", quoteAsset: "USD"), new Coin(symbol: "LTCBTC", quoteAsset: "BTC")]
+          def exchangeInfo = new ExchangeInfo(coins: coins)
 
         when:
           cacheUtil.retrieveFromCache("CoinCache", _, _) >> coinTickerList
           //here, the exchange info isn't needed for the test, but is used to avoid null pointer errors
-          cacheUtil.retrieveFromCache("ExchangeInfo", _, _) >> new ExchangeInfo(coins: new ArrayList<Coin>())
+          cacheUtil.retrieveFromCache("ExchangeInfo", _, _) >> exchangeInfo
 
         then:
           def tickerData = service.getRsiTickerData(symbols)
