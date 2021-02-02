@@ -137,44 +137,6 @@ public abstract class AbstractBinanceExchangeService implements ExchangeService 
     }
 
     /**
-     * The symbol will be the coin/quote(market), such as "BTCUSD".
-     * We need to split this into coin and quote(market). So, this method determines the offset
-     * to split the string, such as for "BTCUSD", the offset would be 3; for "BTCUSDT",
-     * the offset would be 4.
-     *
-     * @param symbol the symbold, such as "BTCUSDT".
-     * @return the offset where the coin/quote are split.
-     */
-    private int getQuoteOffset(String symbol) {
-        //get the set of markets for the exchange
-        Set<String> markets = getMarkets();
-
-        //note: this is a special case
-        //There are coins whose market is "BUSD". But how do we determine the difference
-        //between a market of "BUSD" or "USD"? We really can't, except to assume that
-        //the symbol is longer than 6 characters (such as "ZILBUSD") to differentiate
-        //between "BNBUSD" which is only 6 charachters long, and the market for that is "USD" and not "BUSD".
-        //This really is a hack, without much of an alternative, until the exchange gives better information for symbols,
-        //such as "ZIL-BUSD" instead of "ZILBUSD", or "BNB-USD" instead of "BNBUSD".
-        if (symbol.endsWith("BUSD") && symbol.length() > 6) {
-            return 4;
-        }
-        //stream through the markets and find which one matches this symbol
-        int offset = markets.stream()
-                .filter(symbol::endsWith)
-                .findFirst()
-                .map(String::length)
-                .orElse(3);
-        return offset;
-    }
-
-    private int getStartOfQuote(String str) {
-        int end = str.length();
-        int offset = this.getQuoteOffset(str);
-        return end - offset;
-    }
-
-    /**
      * Get a "quote" from a symbol string. i.e. "BTCUSD" returns "USD".
      *
      * @param str the symbol, such as "ETHUSDT".
