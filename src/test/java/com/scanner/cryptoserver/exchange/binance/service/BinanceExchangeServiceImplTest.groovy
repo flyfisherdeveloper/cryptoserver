@@ -440,40 +440,6 @@ class BinanceExchangeServiceImplTest extends Specification {
 
     }
 
-    @Unroll("test that #symbol has #expectedQuote for quote")
-    def "test getQuote"() {
-        given:
-          //the following represents exchange information - metadata about coins on an exchange
-          def exchangeInfo = new ExchangeInfo()
-          def coin1 = new Coin(symbol: symbol, quoteAsset: currency)
-          def coin2 = new Coin(symbol: "XRPUSD", quoteAsset: "USD")
-          def coins
-          if (exchangeHasCoin) {
-              coins = [coin1, coin2]
-          } else {
-              //test the rare case when the exchange doesn't have the symbol
-              // (if a coin is added just recently since the exchange information was called before being put in the cache)
-              coins = [coin2]
-          }
-          exchangeInfo.setCoins(coins)
-
-        when:
-          cacheUtil.retrieveFromCache(_, _, _) >> exchangeInfo
-
-        then:
-          def quote = service.getQuote(symbol)
-
-        expect:
-          quote == expectedQuote
-
-        where:
-          symbol    | currency | expectedQuote | exchangeHasCoin
-          "BTCUSD"  | "USD"    | "USD"         | true
-          "LTCUSDT" | "USDT"   | "USDT"        | true
-          "ETHUSD"  | "USD"    | "USD"         | false
-
-    }
-
     def "test setRsiForTickers() sets RSI for period length"() {
         given:
           def ticker1 = new CoinTicker(close: 100)
