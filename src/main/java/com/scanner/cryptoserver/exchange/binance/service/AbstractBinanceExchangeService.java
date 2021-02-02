@@ -180,7 +180,6 @@ public abstract class AbstractBinanceExchangeService implements ExchangeService 
      * @param str the symbol, such as "ETHUSDT".
      * @return the coin from the symbol.
      */
-    //jeff
     public Optional<Coin> getCoin(String str) {
         ExchangeInfo exchangeInfo = retrieveExchangeInfoFromCache();
         final Optional<Coin> coin = exchangeInfo.getCoins().stream()
@@ -229,7 +228,6 @@ public abstract class AbstractBinanceExchangeService implements ExchangeService 
         final Optional<Coin> coin = getCoin(symbol);
         String baseAsset = coin.map(Coin::getBaseAsset).orElse("");
         String quoteAsset = coin.map(Coin::getQuoteAsset).orElse("");
-        //jeff
         if (!isCoinTrading(symbol) || !isCoinInUsaMarket(quoteAsset) || isLeveragedToken(symbol) || isLeveragedToken(baseAsset)) {
             return Optional.empty();
         }
@@ -475,12 +473,10 @@ public abstract class AbstractBinanceExchangeService implements ExchangeService 
             return new ArrayList<>();
         }
         //Here, we want the USD volume.
-        //jeff
         if ((symbol.endsWith("USD") && !symbol.endsWith("BUSD") && !symbol.endsWith("TUSD")) || symbol.endsWith("USDT")) {
             return coins;
         }
         //Find the USD volume, and add it to the list.
-        //jeff
         final String quote = getCoin(symbol).map(Coin::getQuoteAsset).orElse("");
         final ExchangeInfo exchangeInfo = getExchangeInfo();
         final String usdSymbol = quote + getUsdQuote();
