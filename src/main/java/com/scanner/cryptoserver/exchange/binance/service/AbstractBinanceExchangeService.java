@@ -122,18 +122,18 @@ public abstract class AbstractBinanceExchangeService implements ExchangeService 
         return callCoinTicker(symbol, interval, null, null);
     }
 
-    public CoinDataFor24Hr get24HourCoinData(String symbol) {
+    public Optional<CoinDataFor24Hr> get24HourCoinData(String symbol) {
         String url = getUrlExtractor().getTickerUrl() + "/24hr?symbol={symbol}";
         Map<String, Object> params = new HashMap<>();
         params.put("symbol", symbol);
         ResponseEntity<LinkedHashMap> info = restTemplate.getForEntity(url, LinkedHashMap.class, params);
         LinkedHashMap body = info.getBody();
         if (body == null) {
-            return new CoinDataFor24Hr();
+            return Optional.empty();
         }
-        CoinDataFor24Hr coin = get24HrCoinTicker(body);
-        coinMarketCapService.setMarketCapDataFor24HrData(getExchangeVisitor(), coin);
-        return coin;
+        final Optional<CoinDataFor24Hr> ticker = get24HrCoinTicker(body);
+        ticker.ifPresent(c -> coinMarketCapService.setMarketCapDataFor24HrData(getExchangeVisitor(), c));
+        return ticker;
     }
 
     /**
@@ -181,21 +181,11 @@ public abstract class AbstractBinanceExchangeService implements ExchangeService 
      * @return the coin from the symbol.
      */
     //jeff
-    public Coin getCoin(String str) {
+    public Optional<Coin> getCoin(String str) {
         ExchangeInfo exchangeInfo = retrieveExchangeInfoFromCache();
-        //jeff is this Supplier really necessary??
-        Supplier<Coin> parseQuote = () -> {
-            int start = this.getStartOfQuote(str);
-            String quote = str.substring(start);
-            Coin coin = new Coin();
-            coin.setQuoteAsset(quote);
-            //what about the base asset?
-            return coin;
-        };
-        final Coin coin = exchangeInfo.getCoins().stream()
+        final Optional<Coin> coin = exchangeInfo.getCoins().stream()
                 .filter(sym -> sym.getSymbol() != null && sym.getSymbol().equals(str))
-                .findFirst()
-                .orElseGet(parseQuote);
+                .findFirst();
         return coin;
     }
 
@@ -233,18 +223,20 @@ public abstract class AbstractBinanceExchangeService implements ExchangeService 
         return !nonUsaMarkets.contains(currency);
     }
 
-    private CoinDataFor24Hr get24HrCoinTicker(LinkedHashMap map) {
+    private Optional<CoinDataFor24Hr> get24HrCoinTicker(LinkedHashMap map) {
         CoinDataFor24Hr data = new CoinDataFor24Hr();
         String symbol = (String) map.get("symbol");
-        Coin coin = getCoin(symbol);
+        final Optional<Coin> coin = getCoin(symbol);
+        String baseAsset = coin.map(Coin::getBaseAsset).orElse("");
+        String quoteAsset = coin.map(Coin::getQuoteAsset).orElse("");
         //jeff
-        if (!isCoinTrading(symbol) || !isCoinInUsaMarket(coin.getQuoteAsset()) || isLeveragedToken(symbol) || isLeveragedToken(coin.getBaseAsset())) {
-            return null;
+        if (!isCoinTrading(symbol) || !isCoinInUsaMarket(quoteAsset) || isLeveragedToken(symbol) || isLeveragedToken(baseAsset)) {
+            return Optional.empty();
         }
 
         data.setSymbol(symbol);
-        data.setCoin(coin.getBaseAsset());
-        data.setCurrency(coin.getQuoteAsset());
+        data.setCoin(baseAsset);
+        data.setCurrency(quoteAsset);
 
         String priceChangeStr = (String) map.get("priceChange");
         double priceChange = Double.parseDouble(priceChangeStr);
@@ -284,10 +276,10 @@ public abstract class AbstractBinanceExchangeService implements ExchangeService 
         data.setCloseTime(closeTime);
 
         data.setupLinks(getUrlExtractor().getTradeUrl());
-        byte[] iconBytes = cacheUtil.getIconBytes(getExchangeVisitor().getSymbol(coin.getBaseAsset()), null);
+        byte[] iconBytes = cacheUtil.getIconBytes(getExchangeVisitor().getSymbol(baseAsset), null);
         data.setIcon(iconBytes);
 
-        return data;
+        return Optional.of(data);
     }
 
     private List<CoinTicker> callCoinTicker(String symbol, String interval,
@@ -465,7 +457,7 @@ public abstract class AbstractBinanceExchangeService implements ExchangeService 
                 double coinOpen = coinTicker.getOpen();
                 double coinClose = coinTicker.getClose();
                 //the USD volume is computed as the coin price * the usd price at open + the coin price * the usd price at close divided by 2
-                double avg = (usdOpen*coinOpen + usdClose*coinClose) / 2.0;
+                double avg = (usdOpen * coinOpen + usdClose * coinClose) / 2.0;
                 double vol = coinTicker.getVolume() * avg;
                 coins.get(index).setUsdVolume(vol);
             }
@@ -489,7 +481,7 @@ public abstract class AbstractBinanceExchangeService implements ExchangeService 
         }
         //Find the USD volume, and add it to the list.
         //jeff
-        final String quote = getCoin(symbol).getQuoteAsset();
+        final String quote = getCoin(symbol).map(Coin::getQuoteAsset).orElse("");
         final ExchangeInfo exchangeInfo = getExchangeInfo();
         final String usdSymbol = quote + getUsdQuote();
         //We need the USD or USDT pair of the quote coin in order to get the USD price in order to compute the USD volume for the tickers.
@@ -572,10 +564,7 @@ public abstract class AbstractBinanceExchangeService implements ExchangeService 
             pageSize = data.length;
         }
         for (int index = lastIndex - pageSize; index < (Math.min(lastIndex, data.length)); index++) {
-            CoinDataFor24Hr coin = get24HrCoinTicker(data[index]);
-            if (coin != null) {
-                list.add(coin);
-            }
+            get24HrCoinTicker(data[index]).ifPresent(list::add);
         }
 
         coinMarketCapService.setMarketCapDataFor24HrData(getExchangeVisitor(), list);

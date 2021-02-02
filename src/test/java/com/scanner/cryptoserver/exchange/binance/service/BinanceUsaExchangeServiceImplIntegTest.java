@@ -32,7 +32,7 @@ class BinanceUsaExchangeServiceImplIntegTest extends AbstractIntegTestSetup {
 
     @Test
     void test24HrCoinTicker() {
-        CoinDataFor24Hr data = getBinanceUsaService().get24HourCoinData("LTCUSD");
+        CoinDataFor24Hr data = getBinanceUsaService().get24HourCoinData("LTCUSD").orElse(new CoinDataFor24Hr());
         assertEquals("LTC", data.getCoin());
         assertEquals("USD", data.getCurrency());
     }
