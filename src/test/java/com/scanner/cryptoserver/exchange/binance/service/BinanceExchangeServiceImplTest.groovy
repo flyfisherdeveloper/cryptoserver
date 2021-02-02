@@ -416,32 +416,27 @@ class BinanceExchangeServiceImplTest extends Specification {
         given:
           //the following represents exchange information - metadata about coins on an exchange
           def exchangeInfo = new ExchangeInfo()
-          def coin1 = new Coin(symbol: symbol, quoteAsset: currency)
-          def coin2 = new Coin(symbol: "XRPUSD", quoteAsset: "USD")
-          def coins
-          if (exchangeHasCoin) {
-              coins = [coin1, coin2]
-          } else {
-              //test the rare case when the exchange doesn't have the symbol
-              // (if a coin is added just recently since the exchange information was called before being put in the cache)
-              coins = [coin2]
-          }
+          def coin1 = new Coin(symbol: symbol, baseAsset: expectedCoin, quoteAsset: currency)
+          def coin2 = new Coin(symbol: "XRPUSD", baseAsset: "XRP", quoteAsset: "USD")
+          def coins = [coin1, coin2]
           exchangeInfo.setCoins(coins)
 
         when:
           cacheUtil.retrieveFromCache(_, _, _) >> exchangeInfo
 
         then:
-          def coin = service.getCoin(symbol)
+          def coin = service.getCoin(symbol).orElse(new Coin())
 
         expect:
-          coin == expectedCoin
+          coin.getBaseAsset() == expectedCoin
 
         where:
-          symbol    | currency | expectedCoin | exchangeHasCoin
-          "BTCUSD"  | "USD"    | "BTC"        | true
-          "LTCUSDT" | "USDT"   | "LTC"        | true
-          "ETHUSD"  | "USD"    | "ETH"        | false
+          symbol    | currency | expectedCoin
+          "BTCUSD"  | "USD"    | "BTC"
+          "LTCUSDT" | "USDT"   | "LTC"
+          //test when the coin is not in the exchange info -
+          // happens when a new coin is added but the exchange info cache isn't updated yet, since it updates on a schedule
+          "ETHUSD"  | "USD"    | null
 
     }
 
