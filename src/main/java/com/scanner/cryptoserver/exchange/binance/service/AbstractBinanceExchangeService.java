@@ -462,22 +462,29 @@ public abstract class AbstractBinanceExchangeService implements ExchangeService 
         }
     }
 
+    @Override
     public List<CoinTicker> getTickerData(String symbol, String interval, String daysOrMonths) {
+        final Optional<Coin> coin = getCoin(symbol);
+        return coin.map(theCoin -> getTickerData(theCoin, interval, daysOrMonths))
+                .orElse(Collections.emptyList());
+    }
+
+    private List<CoinTicker> getTickerData(Coin coin, String interval, String daysOrMonths) {
         //Attempt to get the data out of the cache if it is in there.
         //If not in the cache, then call the service and add the data to the cache.
         //The data in the cache will expire according to the setup in the CachingConfig configuration.
-        String name = getExchangeName() + "-" + symbol + interval + daysOrMonths;
-        Supplier<List<CoinTicker>> coinTickerSupplier = () -> callCoinTicker(symbol, interval, daysOrMonths);
+        String name = getExchangeName() + "-" + coin.getSymbol() + interval + daysOrMonths;
+        Supplier<List<CoinTicker>> coinTickerSupplier = () -> callCoinTicker(coin.getSymbol(), interval, daysOrMonths);
         List<CoinTicker> coins = cacheUtil.retrieveFromCache(COIN_CACHE, name, coinTickerSupplier);
         if (coins == null || coins.isEmpty()) {
             return new ArrayList<>();
         }
         //Here, we want the USD volume.
-        if ((symbol.endsWith("USD") && !symbol.endsWith("BUSD") && !symbol.endsWith("TUSD")) || symbol.endsWith("USDT")) {
+        String quote = coin.getQuoteAsset();
+        if (quote.equals("USD") || quote.equals("USDT")) {
             return coins;
         }
         //Find the USD volume, and add it to the list.
-        final String quote = getCoin(symbol).map(Coin::getQuoteAsset).orElse("");
         final ExchangeInfo exchangeInfo = getExchangeInfo();
         final String usdSymbol = quote + getUsdQuote();
         //We need the USD or USDT pair of the quote coin in order to get the USD price in order to compute the USD volume for the tickers.
