@@ -137,7 +137,7 @@ public abstract class AbstractBinanceExchangeService implements ExchangeService 
     }
 
     /**
-     * Get a "quote" from a symbol string. i.e. "BTCUSD" returns "USD".
+     * Get a coin from a symbol string. i.e. "BTCUSD" returns the coin for the BTC/USD pair.
      *
      * @param str the symbol, such as "ETHUSDT".
      * @return the coin from the symbol.
