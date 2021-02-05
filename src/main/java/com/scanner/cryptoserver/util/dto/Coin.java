@@ -78,7 +78,7 @@ public class Coin {
     }
 
     public String[] getPermissions() {
-        return permissions;
+        return permissions == null ? new String[0] : permissions;
     }
 
     /**

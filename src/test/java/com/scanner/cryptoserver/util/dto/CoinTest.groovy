@@ -73,4 +73,26 @@ class CoinTest extends Specification {
           1   | "BTC"      | "Bitcoin"  | "Bitcoin"    | 100000.00  | 1           | 100000.00          | 2   | "LTC"      | "Litecoin" | "Litecoin"   | 200000.0   | 2           | 200000.0
           1   | "UNI"      | "Universe" | "Universe"   | 50000.00   | 2           | 3000000.0          | 2   | "UNI"      | "Uniswap"  | "Uniswap"    | 3000000.0  | 2           | 3000000.0
     }
+
+    @Unroll("test that #symbol with status #status and permissions #permissions #isTradingStr")
+    def "test isTrading"() {
+        given:
+          def coin = new Coin(symbol: symbol, status: status, permissions: permissions)
+
+        when:
+          def trading = coin.isTrading()
+
+        then:
+          assert trading == isTrading
+
+        where:
+          symbol    | status    | permissions             | isTrading | isTradingStr
+          "BTC"     | "TRADING" | ["SPOT"]                | true      | "is trading"
+          "LTCDOWN" | "TRADING" | ["LEVERAGED"]           | false     | "is not trading"
+          "LTCUP"   | "TRADING" | ["MARGIN", "LEVERAGED"] | false     | "is not trading"
+          "ETH"     | "TRADING" | ["SPOT", "LEVERAGED"]   | true      | "is trading"
+          "TRX"     | "BREAK"   | ["SPOT", "LEVERAGED"]   | false     | "is not trading"
+          "MTL"     | "TRADING" | []                      | false     | "is not trading"
+          "NEO"     | "TRADING" | null                    | false     | "is not trading"
+    }
 }
