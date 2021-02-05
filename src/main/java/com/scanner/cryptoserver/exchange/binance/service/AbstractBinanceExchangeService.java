@@ -177,6 +177,11 @@ public abstract class AbstractBinanceExchangeService implements ExchangeService 
      * @return true if the symbol represents a leveraged token; false otherwise.
      */
     private boolean isLeveragedToken(String symbol) {
+        boolean isLeveraged = symbol.endsWith("DOWN") || symbol.endsWith("UP") || symbol.contains("BULL") || symbol.contains("BEAR");
+        System.out.println("leveraged: " + isLeveraged);
+        if (isLeveraged) {
+            System.out.println("leveraged symbol: " + symbol);
+        }
         return symbol.endsWith("DOWN") || symbol.endsWith("UP") || symbol.contains("BULL") || symbol.contains("BEAR");
     }
 

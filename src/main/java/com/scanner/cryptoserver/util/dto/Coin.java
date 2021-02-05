@@ -21,6 +21,9 @@ public class Coin {
     private String status;
     //the market cap in $USD
     private Double marketCap = 0.0;
+    //Permissions include the type of trading for the coin.
+    //Values include "SPOT", "MARGIN", "LEVERAGED", etc.
+    private String[] permissions;
 
     public Integer getId() {
         return id;
@@ -83,5 +86,13 @@ public class Coin {
             setMarketCap(d.getMarketCap());
             setId(d.getId());
         });
+    }
+
+    public String[] getPermissions() {
+        return permissions;
+    }
+
+    public void setPermissions(String[] permissions) {
+        this.permissions = permissions;
     }
 }
