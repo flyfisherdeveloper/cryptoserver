@@ -37,7 +37,6 @@ public abstract class AbstractBinanceExchangeService implements ExchangeService 
     private static final String COIN_CACHE = "CoinCache";
     private static final int ALL_24_HOUR_MAX_COUNT = 6;
     private static final int ALL_24_HOUR_DELAY = 151;
-    private static final String TRADING = "TRADING";
     private static final List<String> nonUsaMarkets = Arrays.asList("NGN", "RUB", "TRY", "EUR", "ZAR", "BKRW", "IDRT", "UAH", "BIDR", "GBP", "AUD");
 
     private final RestOperations restTemplate;
@@ -159,30 +158,8 @@ public abstract class AbstractBinanceExchangeService implements ExchangeService 
     private boolean isCoinTrading(String symbol) {
         ExchangeInfo info = retrieveExchangeInfoFromCache();
         boolean trading = info.getCoins().stream()
-                .anyMatch(s -> s.getSymbol().equals(symbol) && s.getStatus().equals(TRADING));
+                .anyMatch(coin -> coin.getSymbol().equals(symbol) && coin.isTrading());
         return trading;
-    }
-
-    /**
-     * Returns true if the symbol is a leveraged token, such as ETHBULL or ETHDOWN.
-     * A leveraged token is a trading pair based on a regular coin (such as ETH), but is subject
-     * to leveraged trading, and is not an ordinary coin. Therefore, we don't return these to the
-     * client. Unfortunately, it appears there isn't anything definitive from the exchange api
-     * to determine these tokens, other than checking their name for "BULL" or "BEAR", which is
-     * somewhat of a "hack", but is the best available method now due to api limitations.
-     * This will break of course if ever a coin is introduced that includes the name "BULL" or "BEAR".
-     * No such coin exists on the exchanges as of now, however.
-     *
-     * @param symbol the trading symbol, such as ETHBTC or BTCUSDT
-     * @return true if the symbol represents a leveraged token; false otherwise.
-     */
-    private boolean isLeveragedToken(String symbol) {
-        boolean isLeveraged = symbol.endsWith("DOWN") || symbol.endsWith("UP") || symbol.contains("BULL") || symbol.contains("BEAR");
-        System.out.println("leveraged: " + isLeveraged);
-        if (isLeveraged) {
-            System.out.println("leveraged symbol: " + symbol);
-        }
-        return symbol.endsWith("DOWN") || symbol.endsWith("UP") || symbol.contains("BULL") || symbol.contains("BEAR");
     }
 
     private boolean isCoinInUsaMarket(String currency) {
@@ -195,7 +172,7 @@ public abstract class AbstractBinanceExchangeService implements ExchangeService 
         final Optional<Coin> coin = getCoin(symbol);
         String baseAsset = coin.map(Coin::getBaseAsset).orElse("");
         String quoteAsset = coin.map(Coin::getQuoteAsset).orElse("");
-        if (!isCoinTrading(symbol) || !isCoinInUsaMarket(quoteAsset) || isLeveragedToken(symbol) || isLeveragedToken(baseAsset)) {
+        if (!isCoinTrading(symbol) || !isCoinInUsaMarket(quoteAsset)) {
             return Optional.empty();
         }
 
