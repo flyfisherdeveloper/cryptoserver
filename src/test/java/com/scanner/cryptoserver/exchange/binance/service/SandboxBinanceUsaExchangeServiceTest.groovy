@@ -26,7 +26,8 @@ class SandboxBinanceUsaExchangeServiceTest extends Specification {
           assert ethUsd.baseAsset == "ETH"
           assert ethUsd.quoteAsset == "USD"
           assert ethUsd.status == "TRADING"
-          assert ethUsd.marketCap == 0.0
+          assert ethUsd.marketCap != 0.0
+          assert ethUsd.permissions == ["SPOT"].toArray()
     }
 
     def "test get24HrAllCoinTicker"() {
