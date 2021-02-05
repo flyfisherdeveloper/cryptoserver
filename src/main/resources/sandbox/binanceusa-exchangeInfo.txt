@@ -1,417 +1,867 @@
 {
   "symbols" : [ {
+    "id" : 1,
     "symbol" : "BTCUSD",
     "baseAsset" : "BTC",
     "quoteAsset" : "USD",
     "status" : "TRADING",
-    "marketCap" : 0.0
+    "marketCap" : 6.974549183238116E11,
+    "permissions" : [ "SPOT" ]
   }, {
+    "id" : 1027,
     "symbol" : "ETHUSD",
     "baseAsset" : "ETH",
     "quoteAsset" : "USD",
     "status" : "TRADING",
-    "marketCap" : 0.0
+    "marketCap" : 1.9487801133379196E11,
+    "permissions" : [ "SPOT" ]
   }, {
+    "id" : 52,
     "symbol" : "XRPUSD",
     "baseAsset" : "XRP",
     "quoteAsset" : "USD",
-    "status" : "TRADING",
-    "marketCap" : 0.0
+    "status" : "BREAK",
+    "marketCap" : 1.982581631755936E10,
+    "permissions" : [ "SPOT" ]
   }, {
+    "id" : 1831,
     "symbol" : "BCHUSD",
     "baseAsset" : "BCH",
     "quoteAsset" : "USD",
     "status" : "TRADING",
-    "marketCap" : 0.0
+    "marketCap" : 8.05059800623786E9,
+    "permissions" : [ "SPOT" ]
   }, {
+    "id" : 2,
     "symbol" : "LTCUSD",
     "baseAsset" : "LTC",
     "quoteAsset" : "USD",
     "status" : "TRADING",
-    "marketCap" : 0.0
+    "marketCap" : 1.0051007582300247E10,
+    "permissions" : [ "SPOT" ]
   }, {
+    "id" : 825,
     "symbol" : "USDTUSD",
     "baseAsset" : "USDT",
     "quoteAsset" : "USD",
     "status" : "TRADING",
-    "marketCap" : 0.0
+    "marketCap" : 2.7794399526763943E10,
+    "permissions" : [ "SPOT" ]
   }, {
+    "id" : 1,
     "symbol" : "BTCUSDT",
     "baseAsset" : "BTC",
     "quoteAsset" : "USDT",
     "status" : "TRADING",
-    "marketCap" : 0.0
+    "marketCap" : 6.974549183238116E11,
+    "permissions" : [ "SPOT" ]
   }, {
+    "id" : 1027,
     "symbol" : "ETHUSDT",
     "baseAsset" : "ETH",
     "quoteAsset" : "USDT",
     "status" : "TRADING",
-    "marketCap" : 0.0
+    "marketCap" : 1.9487801133379196E11,
+    "permissions" : [ "SPOT" ]
   }, {
+    "id" : 52,
     "symbol" : "XRPUSDT",
     "baseAsset" : "XRP",
     "quoteAsset" : "USDT",
-    "status" : "TRADING",
-    "marketCap" : 0.0
+    "status" : "BREAK",
+    "marketCap" : 1.982581631755936E10,
+    "permissions" : [ "SPOT" ]
   }, {
+    "id" : 1831,
     "symbol" : "BCHUSDT",
     "baseAsset" : "BCH",
     "quoteAsset" : "USDT",
     "status" : "TRADING",
-    "marketCap" : 0.0
+    "marketCap" : 8.05059800623786E9,
+    "permissions" : [ "SPOT" ]
   }, {
+    "id" : 2,
     "symbol" : "LTCUSDT",
     "baseAsset" : "LTC",
     "quoteAsset" : "USDT",
     "status" : "TRADING",
-    "marketCap" : 0.0
+    "marketCap" : 1.0051007582300247E10,
+    "permissions" : [ "SPOT" ]
   }, {
+    "id" : 1839,
     "symbol" : "BNBUSD",
     "baseAsset" : "BNB",
     "quoteAsset" : "USD",
     "status" : "TRADING",
-    "marketCap" : 0.0
+    "marketCap" : 9.576469415712938E9,
+    "permissions" : [ "SPOT" ]
   }, {
+    "id" : 1839,
     "symbol" : "BNBUSDT",
     "baseAsset" : "BNB",
     "quoteAsset" : "USDT",
     "status" : "TRADING",
-    "marketCap" : 0.0
+    "marketCap" : 9.576469415712938E9,
+    "permissions" : [ "SPOT" ]
   }, {
+    "id" : 1027,
     "symbol" : "ETHBTC",
     "baseAsset" : "ETH",
     "quoteAsset" : "BTC",
     "status" : "TRADING",
-    "marketCap" : 0.0
+    "marketCap" : 1.9487801133379196E11,
+    "permissions" : [ "SPOT" ]
   }, {
+    "id" : 52,
     "symbol" : "XRPBTC",
     "baseAsset" : "XRP",
     "quoteAsset" : "BTC",
-    "status" : "TRADING",
-    "marketCap" : 0.0
+    "status" : "BREAK",
+    "marketCap" : 1.982581631755936E10,
+    "permissions" : [ "SPOT" ]
   }, {
+    "id" : 1839,
     "symbol" : "BNBBTC",
     "baseAsset" : "BNB",
     "quoteAsset" : "BTC",
     "status" : "TRADING",
-    "marketCap" : 0.0
+    "marketCap" : 9.576469415712938E9,
+    "permissions" : [ "SPOT" ]
   }, {
+    "id" : 2,
     "symbol" : "LTCBTC",
     "baseAsset" : "LTC",
     "quoteAsset" : "BTC",
     "status" : "TRADING",
-    "marketCap" : 0.0
+    "marketCap" : 1.0051007582300247E10,
+    "permissions" : [ "SPOT" ]
   }, {
+    "id" : 1831,
     "symbol" : "BCHBTC",
     "baseAsset" : "BCH",
     "quoteAsset" : "BTC",
     "status" : "TRADING",
-    "marketCap" : 0.0
+    "marketCap" : 8.05059800623786E9,
+    "permissions" : [ "SPOT" ]
   }, {
+    "id" : 2010,
     "symbol" : "ADAUSD",
     "baseAsset" : "ADA",
     "quoteAsset" : "USD",
     "status" : "TRADING",
-    "marketCap" : 0.0
+    "marketCap" : 1.5840445164220625E10,
+    "permissions" : [ "SPOT" ]
   }, {
+    "id" : 1697,
     "symbol" : "BATUSD",
     "baseAsset" : "BAT",
     "quoteAsset" : "USD",
     "status" : "TRADING",
-    "marketCap" : 0.0
+    "marketCap" : 5.246864770777297E8,
+    "permissions" : [ "SPOT" ]
   }, {
+    "id" : 1321,
     "symbol" : "ETCUSD",
     "baseAsset" : "ETC",
     "quoteAsset" : "USD",
     "status" : "TRADING",
-    "marketCap" : 0.0
+    "marketCap" : 9.394111274166995E8,
+    "permissions" : [ "SPOT" ]
   }, {
+    "id" : 512,
     "symbol" : "XLMUSD",
     "baseAsset" : "XLM",
     "quoteAsset" : "USD",
     "status" : "TRADING",
-    "marketCap" : 0.0
+    "marketCap" : 7.653325883638442E9,
+    "permissions" : [ "SPOT" ]
   }, {
+    "id" : 1896,
     "symbol" : "ZRXUSD",
     "baseAsset" : "ZRX",
     "quoteAsset" : "USD",
     "status" : "TRADING",
-    "marketCap" : 0.0
+    "marketCap" : 1.2040065754600058E9,
+    "permissions" : [ "SPOT" ]
   }, {
+    "id" : 2010,
     "symbol" : "ADAUSDT",
     "baseAsset" : "ADA",
     "quoteAsset" : "USDT",
     "status" : "TRADING",
-    "marketCap" : 0.0
+    "marketCap" : 1.5840445164220625E10,
+    "permissions" : [ "SPOT" ]
   }, {
+    "id" : 1697,
     "symbol" : "BATUSDT",
     "baseAsset" : "BAT",
     "quoteAsset" : "USDT",
     "status" : "TRADING",
-    "marketCap" : 0.0
+    "marketCap" : 5.246864770777297E8,
+    "permissions" : [ "SPOT" ]
   }, {
+    "id" : 1321,
     "symbol" : "ETCUSDT",
     "baseAsset" : "ETC",
     "quoteAsset" : "USDT",
     "status" : "TRADING",
-    "marketCap" : 0.0
+    "marketCap" : 9.394111274166995E8,
+    "permissions" : [ "SPOT" ]
   }, {
+    "id" : 512,
     "symbol" : "XLMUSDT",
     "baseAsset" : "XLM",
     "quoteAsset" : "USDT",
     "status" : "TRADING",
-    "marketCap" : 0.0
+    "marketCap" : 7.653325883638442E9,
+    "permissions" : [ "SPOT" ]
   }, {
+    "id" : 1896,
     "symbol" : "ZRXUSDT",
     "baseAsset" : "ZRX",
     "quoteAsset" : "USDT",
     "status" : "TRADING",
-    "marketCap" : 0.0
+    "marketCap" : 1.2040065754600058E9,
+    "permissions" : [ "SPOT" ]
   }, {
+    "id" : 1975,
     "symbol" : "LINKUSD",
     "baseAsset" : "LINK",
     "quoteAsset" : "USD",
     "status" : "TRADING",
-    "marketCap" : 0.0
+    "marketCap" : 1.0452558574096136E10,
+    "permissions" : [ "SPOT" ]
   }, {
+    "id" : 2577,
     "symbol" : "RVNUSD",
     "baseAsset" : "RVN",
     "quoteAsset" : "USD",
     "status" : "TRADING",
-    "marketCap" : 0.0
+    "marketCap" : 2.3643360655574682E8,
+    "permissions" : [ "SPOT" ]
   }, {
+    "id" : 131,
     "symbol" : "DASHUSD",
     "baseAsset" : "DASH",
     "quoteAsset" : "USD",
     "status" : "TRADING",
-    "marketCap" : 0.0
+    "marketCap" : 1.1725745487877874E9,
+    "permissions" : [ "SPOT" ]
   }, {
+    "id" : 1437,
     "symbol" : "ZECUSD",
     "baseAsset" : "ZEC",
     "quoteAsset" : "USD",
     "status" : "TRADING",
-    "marketCap" : 0.0
+    "marketCap" : 1.0390559903932425E9,
+    "permissions" : [ "SPOT" ]
   }, {
+    "id" : 4030,
     "symbol" : "ALGOUSD",
     "baseAsset" : "ALGO",
     "quoteAsset" : "USD",
     "status" : "TRADING",
-    "marketCap" : 0.0
+    "marketCap" : 1.0581278815891441E9,
+    "permissions" : [ "SPOT" ]
   }, {
+    "id" : 1720,
     "symbol" : "IOTAUSD",
     "baseAsset" : "IOTA",
     "quoteAsset" : "USD",
     "status" : "TRADING",
-    "marketCap" : 0.0
+    "marketCap" : 1.3662750554599774E9,
+    "permissions" : [ "SPOT" ]
   }, {
+    "id" : 4687,
     "symbol" : "BUSDUSD",
     "baseAsset" : "BUSD",
     "quoteAsset" : "USD",
     "status" : "TRADING",
-    "marketCap" : 0.0
+    "marketCap" : 1.525970231322716E9,
+    "permissions" : [ "SPOT" ]
   }, {
+    "id" : 1,
     "symbol" : "BTCBUSD",
     "baseAsset" : "BTC",
     "quoteAsset" : "BUSD",
     "status" : "TRADING",
-    "marketCap" : 0.0
+    "marketCap" : 6.974549183238116E11,
+    "permissions" : [ "SPOT" ]
   }, {
+    "id" : 74,
     "symbol" : "DOGEUSDT",
     "baseAsset" : "DOGE",
     "quoteAsset" : "USDT",
     "status" : "TRADING",
-    "marketCap" : 0.0
+    "marketCap" : 5.791788233099157E9,
+    "permissions" : [ "SPOT" ]
   }, {
+    "id" : 1274,
     "symbol" : "WAVESUSD",
     "baseAsset" : "WAVES",
     "quoteAsset" : "USD",
     "status" : "TRADING",
-    "marketCap" : 0.0
+    "marketCap" : 8.867167469535385E8,
+    "permissions" : [ "SPOT" ]
   }, {
+    "id" : 3794,
     "symbol" : "ATOMUSDT",
     "baseAsset" : "ATOM",
     "quoteAsset" : "USDT",
     "status" : "TRADING",
-    "marketCap" : 0.0
+    "marketCap" : 2.5060521915588174E9,
+    "permissions" : [ "SPOT" ]
   }, {
+    "id" : 3794,
     "symbol" : "ATOMUSD",
     "baseAsset" : "ATOM",
     "quoteAsset" : "USD",
     "status" : "TRADING",
-    "marketCap" : 0.0
+    "marketCap" : 2.5060521915588174E9,
+    "permissions" : [ "SPOT" ]
   }, {
+    "id" : 1376,
     "symbol" : "NEOUSDT",
     "baseAsset" : "NEO",
     "quoteAsset" : "USDT",
     "status" : "TRADING",
-    "marketCap" : 0.0
+    "marketCap" : 1.756686497975845E9,
+    "permissions" : [ "SPOT" ]
   }, {
+    "id" : 1376,
     "symbol" : "NEOUSD",
     "baseAsset" : "NEO",
     "quoteAsset" : "USD",
     "status" : "TRADING",
-    "marketCap" : 0.0
+    "marketCap" : 1.756686497975845E9,
+    "permissions" : [ "SPOT" ]
   }, {
+    "id" : 3077,
     "symbol" : "VETUSDT",
     "baseAsset" : "VET",
     "quoteAsset" : "USDT",
     "status" : "TRADING",
-    "marketCap" : 0.0
+    "marketCap" : 1.9474844823792868E9,
+    "permissions" : [ "SPOT" ]
   }, {
+    "id" : 1684,
     "symbol" : "QTUMUSDT",
     "baseAsset" : "QTUM",
     "quoteAsset" : "USDT",
     "status" : "TRADING",
-    "marketCap" : 0.0
+    "marketCap" : 3.7606219706013495E8,
+    "permissions" : [ "SPOT" ]
   }, {
+    "id" : 1684,
     "symbol" : "QTUMUSD",
     "baseAsset" : "QTUM",
     "quoteAsset" : "USD",
     "status" : "TRADING",
-    "marketCap" : 0.0
+    "marketCap" : 3.7606219706013495E8,
+    "permissions" : [ "SPOT" ]
   }, {
+    "id" : 1567,
     "symbol" : "NANOUSD",
     "baseAsset" : "NANO",
     "quoteAsset" : "USD",
     "status" : "TRADING",
-    "marketCap" : 0.0
+    "marketCap" : 5.1465249433121383E8,
+    "permissions" : [ "SPOT" ]
   }, {
+    "id" : 2099,
     "symbol" : "ICXUSD",
     "baseAsset" : "ICX",
     "quoteAsset" : "USD",
     "status" : "TRADING",
-    "marketCap" : 0.0
+    "marketCap" : 4.6793107818993515E8,
+    "permissions" : [ "SPOT" ]
   }, {
+    "id" : 2130,
     "symbol" : "ENJUSD",
     "baseAsset" : "ENJ",
     "quoteAsset" : "USD",
     "status" : "TRADING",
-    "marketCap" : 0.0
+    "marketCap" : 3.308297134729982E8,
+    "permissions" : [ "SPOT" ]
   }, {
+    "id" : 2566,
     "symbol" : "ONTUSD",
     "baseAsset" : "ONT",
     "quoteAsset" : "USD",
     "status" : "TRADING",
-    "marketCap" : 0.0
+    "marketCap" : 5.299119902067797E8,
+    "permissions" : [ "SPOT" ]
   }, {
+    "id" : 2566,
     "symbol" : "ONTUSDT",
     "baseAsset" : "ONT",
     "quoteAsset" : "USDT",
     "status" : "TRADING",
-    "marketCap" : 0.0
+    "marketCap" : 5.299119902067797E8,
+    "permissions" : [ "SPOT" ]
   }, {
+    "id" : 2469,
     "symbol" : "ZILUSD",
     "baseAsset" : "ZIL",
     "quoteAsset" : "USD",
     "status" : "TRADING",
-    "marketCap" : 0.0
+    "marketCap" : 8.718433086008272E8,
+    "permissions" : [ "SPOT" ]
   }, {
+    "id" : 2469,
     "symbol" : "ZILBUSD",
     "baseAsset" : "ZIL",
     "quoteAsset" : "BUSD",
     "status" : "TRADING",
-    "marketCap" : 0.0
+    "marketCap" : 8.718433086008272E8,
+    "permissions" : [ "SPOT" ]
   }, {
+    "id" : 3077,
     "symbol" : "VETUSD",
     "baseAsset" : "VET",
     "quoteAsset" : "USD",
     "status" : "TRADING",
-    "marketCap" : 0.0
+    "marketCap" : 1.9474844823792868E9,
+    "permissions" : [ "SPOT" ]
   }, {
+    "id" : 1839,
     "symbol" : "BNBBUSD",
     "baseAsset" : "BNB",
     "quoteAsset" : "BUSD",
     "status" : "TRADING",
-    "marketCap" : 0.0
+    "marketCap" : 9.576469415712938E9,
+    "permissions" : [ "SPOT" ]
   }, {
+    "id" : 52,
     "symbol" : "XRPBUSD",
     "baseAsset" : "XRP",
     "quoteAsset" : "BUSD",
-    "status" : "TRADING",
-    "marketCap" : 0.0
+    "status" : "BREAK",
+    "marketCap" : 1.982581631755936E10,
+    "permissions" : [ "SPOT" ]
   }, {
+    "id" : 1027,
     "symbol" : "ETHBUSD",
     "baseAsset" : "ETH",
     "quoteAsset" : "BUSD",
     "status" : "TRADING",
-    "marketCap" : 0.0
+    "marketCap" : 1.9487801133379196E11,
+    "permissions" : [ "SPOT" ]
   }, {
+    "id" : 4030,
     "symbol" : "ALGOBUSD",
     "baseAsset" : "ALGO",
     "quoteAsset" : "BUSD",
     "status" : "TRADING",
-    "marketCap" : 0.0
+    "marketCap" : 1.0581278815891441E9,
+    "permissions" : [ "SPOT" ]
   }, {
+    "id" : 2011,
     "symbol" : "XTZUSD",
     "baseAsset" : "XTZ",
     "quoteAsset" : "USD",
     "status" : "TRADING",
-    "marketCap" : 0.0
+    "marketCap" : 2.551778166011015E9,
+    "permissions" : [ "SPOT" ]
   }, {
+    "id" : 2011,
     "symbol" : "XTZBUSD",
     "baseAsset" : "XTZ",
     "quoteAsset" : "BUSD",
     "status" : "TRADING",
-    "marketCap" : 0.0
+    "marketCap" : 2.551778166011015E9,
+    "permissions" : [ "SPOT" ]
   }, {
+    "id" : 4642,
     "symbol" : "HBARUSD",
     "baseAsset" : "HBAR",
     "quoteAsset" : "USD",
     "status" : "TRADING",
-    "marketCap" : 0.0
+    "marketCap" : 6.847443422484144E8,
+    "permissions" : [ "SPOT" ]
   }, {
+    "id" : 4642,
     "symbol" : "HBARBUSD",
     "baseAsset" : "HBAR",
     "quoteAsset" : "BUSD",
     "status" : "TRADING",
-    "marketCap" : 0.0
+    "marketCap" : 6.847443422484144E8,
+    "permissions" : [ "SPOT" ]
   }, {
+    "id" : 1808,
     "symbol" : "OMGUSD",
     "baseAsset" : "OMG",
     "quoteAsset" : "USD",
     "status" : "TRADING",
-    "marketCap" : 0.0
+    "marketCap" : 7.52008038284589E8,
+    "permissions" : [ "SPOT" ]
   }, {
+    "id" : 1808,
     "symbol" : "OMGBUSD",
     "baseAsset" : "OMG",
     "quoteAsset" : "BUSD",
     "status" : "TRADING",
-    "marketCap" : 0.0
+    "marketCap" : 7.52008038284589E8,
+    "permissions" : [ "SPOT" ]
   }, {
+    "id" : 3890,
     "symbol" : "MATICUSD",
     "baseAsset" : "MATIC",
     "quoteAsset" : "USD",
     "status" : "TRADING",
-    "marketCap" : 0.0
+    "marketCap" : 2.5103432576025817E8,
+    "permissions" : [ "SPOT" ]
   }, {
+    "id" : 3890,
     "symbol" : "MATICBUSD",
     "baseAsset" : "MATIC",
     "quoteAsset" : "BUSD",
     "status" : "TRADING",
-    "marketCap" : 0.0
+    "marketCap" : 2.5103432576025817E8,
+    "permissions" : [ "SPOT" ]
   }, {
+    "id" : 2011,
     "symbol" : "XTZBTC",
     "baseAsset" : "XTZ",
     "quoteAsset" : "BTC",
     "status" : "TRADING",
-    "marketCap" : 0.0
+    "marketCap" : 2.551778166011015E9,
+    "permissions" : [ "SPOT" ]
   }, {
+    "id" : 2010,
     "symbol" : "ADABTC",
     "baseAsset" : "ADA",
     "quoteAsset" : "BTC",
     "status" : "TRADING",
-    "marketCap" : 0.0
+    "marketCap" : 1.5840445164220625E10,
+    "permissions" : [ "SPOT" ]
   }, {
+    "id" : 1104,
     "symbol" : "REPBUSD",
     "baseAsset" : "REP",
     "quoteAsset" : "BUSD",
     "status" : "TRADING",
-    "marketCap" : 0.0
+    "marketCap" : 2.465198624266266E8,
+    "permissions" : [ "SPOT" ]
   }, {
+    "id" : 1104,
     "symbol" : "REPUSD",
     "baseAsset" : "REP",
     "quoteAsset" : "USD",
     "status" : "TRADING",
-    "marketCap" : 0.0
+    "marketCap" : 2.465198624266266E8,
+    "permissions" : [ "SPOT" ]
+  }, {
+    "id" : 1765,
+    "symbol" : "EOSBUSD",
+    "baseAsset" : "EOS",
+    "quoteAsset" : "BUSD",
+    "status" : "TRADING",
+    "marketCap" : 3.0116061782276793E9,
+    "permissions" : [ "SPOT" ]
+  }, {
+    "id" : 1765,
+    "symbol" : "EOSUSD",
+    "baseAsset" : "EOS",
+    "quoteAsset" : "USD",
+    "status" : "TRADING",
+    "marketCap" : 3.0116061782276793E9,
+    "permissions" : [ "SPOT" ]
+  }, {
+    "id" : 74,
+    "symbol" : "DOGEUSD",
+    "baseAsset" : "DOGE",
+    "quoteAsset" : "USD",
+    "status" : "TRADING",
+    "marketCap" : 5.791788233099157E9,
+    "permissions" : [ "SPOT" ]
+  }, {
+    "id" : 1982,
+    "symbol" : "KNCUSD",
+    "baseAsset" : "KNC",
+    "quoteAsset" : "USD",
+    "status" : "TRADING",
+    "marketCap" : 4.115818765703242E8,
+    "permissions" : [ "SPOT" ]
+  }, {
+    "id" : 1982,
+    "symbol" : "KNCUSDT",
+    "baseAsset" : "KNC",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 4.115818765703242E8,
+    "permissions" : [ "SPOT" ]
+  }, {
+    "id" : 3012,
+    "symbol" : "VTHOUSDT",
+    "baseAsset" : "VTHO",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 4.813228559193729E7,
+    "permissions" : [ "SPOT" ]
+  }, {
+    "id" : 3012,
+    "symbol" : "VTHOUSD",
+    "baseAsset" : "VTHO",
+    "quoteAsset" : "USD",
+    "status" : "TRADING",
+    "marketCap" : 4.813228559193729E7,
+    "permissions" : [ "SPOT" ]
+  }, {
+    "id" : 3408,
+    "symbol" : "USDCUSD",
+    "baseAsset" : "USDC",
+    "quoteAsset" : "USD",
+    "status" : "TRADING",
+    "marketCap" : 6.235046608461203E9,
+    "permissions" : [ "SPOT" ]
+  }, {
+    "id" : 5692,
+    "symbol" : "COMPUSDT",
+    "baseAsset" : "COMP",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 2.3642031247477083E9,
+    "permissions" : [ "SPOT" ]
+  }, {
+    "id" : 5692,
+    "symbol" : "COMPUSD",
+    "baseAsset" : "COMP",
+    "quoteAsset" : "USD",
+    "status" : "TRADING",
+    "marketCap" : 2.3642031247477083E9,
+    "permissions" : [ "SPOT" ]
+  }, {
+    "id" : 1966,
+    "symbol" : "MANAUSD",
+    "baseAsset" : "MANA",
+    "quoteAsset" : "USD",
+    "status" : "TRADING",
+    "marketCap" : 2.9128540557301885E8,
+    "permissions" : [ "SPOT" ]
+  }, {
+    "id" : 5665,
+    "symbol" : "HNTUSD",
+    "baseAsset" : "HNT",
+    "quoteAsset" : "USD",
+    "status" : "TRADING",
+    "marketCap" : 2.0337043552146363E8,
+    "permissions" : [ "SPOT" ]
+  }, {
+    "id" : 5665,
+    "symbol" : "HNTUSDT",
+    "baseAsset" : "HNT",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 2.0337043552146363E8,
+    "permissions" : [ "SPOT" ]
+  }, {
+    "id" : 1518,
+    "symbol" : "MKRUSD",
+    "baseAsset" : "MKR",
+    "quoteAsset" : "USD",
+    "status" : "TRADING",
+    "marketCap" : 2.81329549407454E9,
+    "permissions" : [ "SPOT" ]
+  }, {
+    "id" : 1518,
+    "symbol" : "MKRUSDT",
+    "baseAsset" : "MKR",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 2.81329549407454E9,
+    "permissions" : [ "SPOT" ]
+  }, {
+    "id" : 4943,
+    "symbol" : "DAIUSD",
+    "baseAsset" : "DAI",
+    "quoteAsset" : "USD",
+    "status" : "TRADING",
+    "marketCap" : 1.8064385672261539E9,
+    "permissions" : [ "SPOT" ]
+  }, {
+    "id" : 2324,
+    "symbol" : "ONEUSDT",
+    "baseAsset" : "ONE",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 1.4254294780595416E7,
+    "permissions" : [ "SPOT" ]
+  }, {
+    "id" : 2324,
+    "symbol" : "ONEUSD",
+    "baseAsset" : "ONE",
+    "quoteAsset" : "USD",
+    "status" : "TRADING",
+    "marketCap" : 1.4254294780595416E7,
+    "permissions" : [ "SPOT" ]
+  }, {
+    "id" : 4679,
+    "symbol" : "BANDUSDT",
+    "baseAsset" : "BAND",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 2.463030118094261E8,
+    "permissions" : [ "SPOT" ]
+  }, {
+    "id" : 4679,
+    "symbol" : "BANDUSD",
+    "baseAsset" : "BAND",
+    "quoteAsset" : "USD",
+    "status" : "TRADING",
+    "marketCap" : 2.463030118094261E8,
+    "permissions" : [ "SPOT" ]
+  }, {
+    "id" : 1772,
+    "symbol" : "STORJUSDT",
+    "baseAsset" : "STORJ",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 1.3008800555143361E8,
+    "permissions" : [ "SPOT" ]
+  }, {
+    "id" : 1772,
+    "symbol" : "STORJUSD",
+    "baseAsset" : "STORJ",
+    "quoteAsset" : "USD",
+    "status" : "TRADING",
+    "marketCap" : 1.3008800555143361E8,
+    "permissions" : [ "SPOT" ]
+  }, {
+    "id" : 4687,
+    "symbol" : "BUSDUSDT",
+    "baseAsset" : "BUSD",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 1.525970231322716E9,
+    "permissions" : [ "SPOT" ]
+  }, {
+    "id" : 7083,
+    "symbol" : "UNIUSD",
+    "baseAsset" : "UNI",
+    "quoteAsset" : "USD",
+    "status" : "TRADING",
+    "marketCap" : 6.29360674433178E9,
+    "permissions" : [ "SPOT" ]
+  }, {
+    "id" : 7083,
+    "symbol" : "UNIUSDT",
+    "baseAsset" : "UNI",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 6.29360674433178E9,
+    "permissions" : [ "SPOT" ]
+  }, {
+    "id" : 5426,
+    "symbol" : "SOLUSD",
+    "baseAsset" : "SOL",
+    "quoteAsset" : "USD",
+    "status" : "TRADING",
+    "marketCap" : 1.7491880490623834E9,
+    "permissions" : [ "SPOT" ]
+  }, {
+    "id" : 5426,
+    "symbol" : "SOLUSDT",
+    "baseAsset" : "SOL",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 1.7491880490623834E9,
+    "permissions" : [ "SPOT" ]
+  }, {
+    "id" : 1975,
+    "symbol" : "LINKBTC",
+    "baseAsset" : "LINK",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 1.0452558574096136E10,
+    "permissions" : [ "SPOT" ]
+  }, {
+    "id" : 3077,
+    "symbol" : "VETBTC",
+    "baseAsset" : "VET",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 1.9474844823792868E9,
+    "permissions" : [ "SPOT" ]
+  }, {
+    "id" : 7083,
+    "symbol" : "UNIBTC",
+    "baseAsset" : "UNI",
+    "quoteAsset" : "BTC",
+    "status" : "TRADING",
+    "marketCap" : 6.29360674433178E9,
+    "permissions" : [ "SPOT" ]
+  }, {
+    "id" : 6892,
+    "symbol" : "EGLDUSDT",
+    "baseAsset" : "EGLD",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 1.453666476962005E9,
+    "permissions" : [ "SPOT" ]
+  }, {
+    "id" : 6892,
+    "symbol" : "EGLDUSD",
+    "baseAsset" : "EGLD",
+    "quoteAsset" : "USD",
+    "status" : "TRADING",
+    "marketCap" : 1.453666476962005E9,
+    "permissions" : [ "SPOT" ]
+  }, {
+    "id" : 4705,
+    "symbol" : "PAXGUSDT",
+    "baseAsset" : "PAXG",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 1.1426891327046971E8,
+    "permissions" : [ "SPOT" ]
+  }, {
+    "id" : 4705,
+    "symbol" : "PAXGUSD",
+    "baseAsset" : "PAXG",
+    "quoteAsset" : "USD",
+    "status" : "TRADING",
+    "marketCap" : 1.1426891327046971E8,
+    "permissions" : [ "SPOT" ]
+  }, {
+    "id" : 5026,
+    "symbol" : "OXTUSDT",
+    "baseAsset" : "OXT",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 1.685074935773127E8,
+    "permissions" : [ "SPOT" ]
+  }, {
+    "id" : 5026,
+    "symbol" : "OXTUSD",
+    "baseAsset" : "OXT",
+    "quoteAsset" : "USD",
+    "status" : "TRADING",
+    "marketCap" : 1.685074935773127E8,
+    "permissions" : [ "SPOT" ]
+  }, {
+    "id" : 1698,
+    "symbol" : "ZENUSDT",
+    "baseAsset" : "ZEN",
+    "quoteAsset" : "USDT",
+    "status" : "TRADING",
+    "marketCap" : 4.0289725953084844E8,
+    "permissions" : [ "SPOT" ]
+  }, {
+    "id" : 1698,
+    "symbol" : "ZENUSD",
+    "baseAsset" : "ZEN",
+    "quoteAsset" : "USD",
+    "status" : "TRADING",
+    "marketCap" : 4.0289725953084844E8,
+    "permissions" : [ "SPOT" ]
+  }, {
+    "id" : 1,
+    "symbol" : "BTCUSDC",
+    "baseAsset" : "BTC",
+    "quoteAsset" : "USDC",
+    "status" : "TRADING",
+    "marketCap" : 6.974549183238116E11,
+    "permissions" : [ "SPOT" ]
   } ]
 }

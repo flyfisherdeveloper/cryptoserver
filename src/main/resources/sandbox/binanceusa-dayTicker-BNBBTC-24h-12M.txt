@@ -1,1325 +1,5 @@
 [ {
   "symbol" : "BNBBTC",
-  "openTime" : 1573344000000,
-  "openDate" : null,
-  "closeTime" : 1573430399999,
-  "closeDate" : null,
-  "open" : 0.0022396,
-  "high" : 0.0023105,
-  "low" : 0.0022368,
-  "close" : 0.0022614,
-  "volume" : 2726.33,
-  "quoteAssetVolume" : 6.19304219,
-  "usdVolume" : 2.432779233075E7,
-  "numberOfTrades" : 634,
-  "rsi" : 0.0
-}, {
-  "symbol" : "BNBBTC",
-  "openTime" : 1573430400000,
-  "openDate" : null,
-  "closeTime" : 1573516799999,
-  "closeDate" : null,
-  "open" : 0.0022625,
-  "high" : 0.0023203,
-  "low" : 0.0022554,
-  "close" : 0.0023034,
-  "volume" : 2637.46,
-  "quoteAssetVolume" : 6.06777855,
-  "usdVolume" : 2.34419818514E7,
-  "numberOfTrades" : 582,
-  "rsi" : 0.0
-}, {
-  "symbol" : "BNBBTC",
-  "openTime" : 1573516800000,
-  "openDate" : null,
-  "closeTime" : 1573603199999,
-  "closeDate" : null,
-  "open" : 0.0023036,
-  "high" : 0.0023772,
-  "low" : 0.0022953,
-  "close" : 0.0023772,
-  "volume" : 2247.36,
-  "quoteAssetVolume" : 5.252471,
-  "usdVolume" : 1.9685918472000003E7,
-  "numberOfTrades" : 530,
-  "rsi" : 0.0
-}, {
-  "symbol" : "BNBBTC",
-  "openTime" : 1573603200000,
-  "openDate" : null,
-  "closeTime" : 1573689599999,
-  "closeDate" : null,
-  "open" : 0.0023755,
-  "high" : 0.002474,
-  "low" : 0.002341,
-  "close" : 0.0024318,
-  "volume" : 2248.75,
-  "quoteAssetVolume" : 5.42415958,
-  "usdVolume" : 1.97766543625E7,
-  "numberOfTrades" : 561,
-  "rsi" : 0.0
-}, {
-  "symbol" : "BNBBTC",
-  "openTime" : 1573689600000,
-  "openDate" : null,
-  "closeTime" : 1573775999999,
-  "closeDate" : null,
-  "open" : 0.0024301,
-  "high" : 0.0024694,
-  "low" : 0.0024131,
-  "close" : 0.0024597,
-  "volume" : 2117.51,
-  "quoteAssetVolume" : 5.18705648,
-  "usdVolume" : 1.8433115125900004E7,
-  "numberOfTrades" : 646,
-  "rsi" : 0.0
-}, {
-  "symbol" : "BNBBTC",
-  "openTime" : 1573776000000,
-  "openDate" : null,
-  "closeTime" : 1573862399999,
-  "closeDate" : null,
-  "open" : 0.0024635,
-  "high" : 0.0024635,
-  "low" : 0.0023643,
-  "close" : 0.0023978,
-  "volume" : 3576.11,
-  "quoteAssetVolume" : 8.61169162,
-  "usdVolume" : 3.05614718211E7,
-  "numberOfTrades" : 738,
-  "rsi" : 0.0
-}, {
-  "symbol" : "BNBBTC",
-  "openTime" : 1573862400000,
-  "openDate" : null,
-  "closeTime" : 1573948799999,
-  "closeDate" : null,
-  "open" : 0.0023978,
-  "high" : 0.0024262,
-  "low" : 0.0023547,
-  "close" : 0.002376,
-  "volume" : 1218.36,
-  "quoteAssetVolume" : 2.90594731,
-  "usdVolume" : 1.0324297354799999E7,
-  "numberOfTrades" : 459,
-  "rsi" : 0.0
-}, {
-  "symbol" : "BNBBTC",
-  "openTime" : 1573948800000,
-  "openDate" : null,
-  "closeTime" : 1574035199999,
-  "closeDate" : null,
-  "open" : 0.0023731,
-  "high" : 0.0023967,
-  "low" : 0.0023365,
-  "close" : 0.002368,
-  "volume" : 1559.29,
-  "quoteAssetVolume" : 3.67697194,
-  "usdVolume" : 1.324935729805E7,
-  "numberOfTrades" : 611,
-  "rsi" : 0.0
-}, {
-  "symbol" : "BNBBTC",
-  "openTime" : 1574035200000,
-  "openDate" : null,
-  "closeTime" : 1574121599999,
-  "closeDate" : null,
-  "open" : 0.002368,
-  "high" : 0.0023737,
-  "low" : 0.0022895,
-  "close" : 0.0023278,
-  "volume" : 5412.46,
-  "quoteAssetVolume" : 12.55042887,
-  "usdVolume" : 4.51151814578E7,
-  "numberOfTrades" : 921,
-  "rsi" : 0.0
-}, {
-  "symbol" : "BNBBTC",
-  "openTime" : 1574121600000,
-  "openDate" : null,
-  "closeTime" : 1574207999999,
-  "closeDate" : null,
-  "open" : 0.0023319,
-  "high" : 0.0023507,
-  "low" : 0.0022543,
-  "close" : 0.0022725,
-  "volume" : 2951.2,
-  "quoteAssetVolume" : 6.73566847,
-  "usdVolume" : 2.4044090419999998E7,
-  "numberOfTrades" : 700,
-  "rsi" : 0.0
-}, {
-  "symbol" : "BNBBTC",
-  "openTime" : 1574208000000,
-  "openDate" : null,
-  "closeTime" : 1574294399999,
-  "closeDate" : null,
-  "open" : 0.0022735,
-  "high" : 0.0023085,
-  "low" : 0.0022051,
-  "close" : 0.0022369,
-  "volume" : 1642.17,
-  "quoteAssetVolume" : 3.69594746,
-  "usdVolume" : 1.330803893895E7,
-  "numberOfTrades" : 592,
-  "rsi" : 0.0
-}, {
-  "symbol" : "BNBBTC",
-  "openTime" : 1574294400000,
-  "openDate" : null,
-  "closeTime" : 1574380799999,
-  "closeDate" : null,
-  "open" : 0.0022369,
-  "high" : 0.0022469,
-  "low" : 0.00216,
-  "close" : 0.0021994,
-  "volume" : 4508.37,
-  "quoteAssetVolume" : 9.89596246,
-  "usdVolume" : 3.5398954817099996E7,
-  "numberOfTrades" : 960,
-  "rsi" : 0.0
-}, {
-  "symbol" : "BNBBTC",
-  "openTime" : 1574380800000,
-  "openDate" : null,
-  "closeTime" : 1574467199999,
-  "closeDate" : null,
-  "open" : 0.0022009,
-  "high" : 0.0022656,
-  "low" : 0.0021005,
-  "close" : 0.0021316,
-  "volume" : 5510.06,
-  "quoteAssetVolume" : 11.93422385,
-  "usdVolume" : 4.10680475471E7,
-  "numberOfTrades" : 980,
-  "rsi" : 0.0
-}, {
-  "symbol" : "BNBBTC",
-  "openTime" : 1574467200000,
-  "openDate" : null,
-  "closeTime" : 1574553599999,
-  "closeDate" : null,
-  "open" : 0.0021285,
-  "high" : 0.0022378,
-  "low" : 0.0021063,
-  "close" : 0.0022237,
-  "volume" : 1865.58,
-  "quoteAssetVolume" : 4.07297828,
-  "usdVolume" : 1.36271197821E7,
-  "numberOfTrades" : 573,
-  "rsi" : 0.0
-}, {
-  "symbol" : "BNBBTC",
-  "openTime" : 1574553600000,
-  "openDate" : null,
-  "closeTime" : 1574639999999,
-  "closeDate" : null,
-  "open" : 0.0022281,
-  "high" : 0.0022782,
-  "low" : 0.0021617,
-  "close" : 0.0021727,
-  "volume" : 6262.35,
-  "quoteAssetVolume" : 13.8453064,
-  "usdVolume" : 4.458495738375E7,
-  "numberOfTrades" : 1238,
-  "rsi" : 0.0
-}, {
-  "symbol" : "BNBBTC",
-  "openTime" : 1574640000000,
-  "openDate" : null,
-  "closeTime" : 1574726399999,
-  "closeDate" : null,
-  "open" : 0.0021727,
-  "high" : 0.0022107,
-  "low" : 0.002123,
-  "close" : 0.0021308,
-  "volume" : 3770.05,
-  "quoteAssetVolume" : 8.1072404,
-  "usdVolume" : 2.6451462510500003E7,
-  "numberOfTrades" : 803,
-  "rsi" : 0.0
-}, {
-  "symbol" : "BNBBTC",
-  "openTime" : 1574726400000,
-  "openDate" : null,
-  "closeTime" : 1574812799999,
-  "closeDate" : null,
-  "open" : 0.0021323,
-  "high" : 0.0021947,
-  "low" : 0.0021229,
-  "close" : 0.0021429,
-  "volume" : 2452.87,
-  "quoteAssetVolume" : 5.29502707,
-  "usdVolume" : 1.7536916708499998E7,
-  "numberOfTrades" : 639,
-  "rsi" : 0.0
-}, {
-  "symbol" : "BNBBTC",
-  "openTime" : 1574812800000,
-  "openDate" : null,
-  "closeTime" : 1574899199999,
-  "closeDate" : null,
-  "open" : 0.0021468,
-  "high" : 0.0021695,
-  "low" : 0.0020703,
-  "close" : 0.0021338,
-  "volume" : 3767.22,
-  "quoteAssetVolume" : 7.96722593,
-  "usdVolume" : 2.7673508381399997E7,
-  "numberOfTrades" : 770,
-  "rsi" : 0.0
-}, {
-  "symbol" : "BNBBTC",
-  "openTime" : 1574899200000,
-  "openDate" : null,
-  "closeTime" : 1574985599999,
-  "closeDate" : null,
-  "open" : 0.0021379,
-  "high" : 0.0021425,
-  "low" : 0.0020733,
-  "close" : 0.0020919,
-  "volume" : 1470.73,
-  "quoteAssetVolume" : 3.1010269,
-  "usdVolume" : 1.10037224213E7,
-  "numberOfTrades" : 556,
-  "rsi" : 0.0
-}, {
-  "symbol" : "BNBBTC",
-  "openTime" : 1574985600000,
-  "openDate" : null,
-  "closeTime" : 1575071999999,
-  "closeDate" : null,
-  "open" : 0.002093,
-  "high" : 0.002124,
-  "low" : 0.0020617,
-  "close" : 0.0020956,
-  "volume" : 1762.15,
-  "quoteAssetVolume" : 3.67523005,
-  "usdVolume" : 1.3373114943500001E7,
-  "numberOfTrades" : 577,
-  "rsi" : 0.0
-}, {
-  "symbol" : "BNBBTC",
-  "openTime" : 1575072000000,
-  "openDate" : null,
-  "closeTime" : 1575158399999,
-  "closeDate" : null,
-  "open" : 0.0020877,
-  "high" : 0.0020938,
-  "low" : 0.0020561,
-  "close" : 0.0020802,
-  "volume" : 1161.95,
-  "quoteAssetVolume" : 2.41048909,
-  "usdVolume" : 8894657.533000002,
-  "numberOfTrades" : 434,
-  "rsi" : 0.0
-}, {
-  "symbol" : "BNBBTC",
-  "openTime" : 1575158400000,
-  "openDate" : null,
-  "closeTime" : 1575244799999,
-  "closeDate" : null,
-  "open" : 0.0020829,
-  "high" : 0.0021006,
-  "low" : 0.0020571,
-  "close" : 0.0020873,
-  "volume" : 3007.34,
-  "quoteAssetVolume" : 6.27415546,
-  "usdVolume" : 2.24827385097E7,
-  "numberOfTrades" : 597,
-  "rsi" : 0.0
-}, {
-  "symbol" : "BNBBTC",
-  "openTime" : 1575244800000,
-  "openDate" : null,
-  "closeTime" : 1575331199999,
-  "closeDate" : null,
-  "open" : 0.0020866,
-  "high" : 0.0021064,
-  "low" : 0.0020682,
-  "close" : 0.0020727,
-  "volume" : 1818.88,
-  "quoteAssetVolume" : 3.79929113,
-  "usdVolume" : 1.33827824704E7,
-  "numberOfTrades" : 605,
-  "rsi" : 0.0
-}, {
-  "symbol" : "BNBBTC",
-  "openTime" : 1575331200000,
-  "openDate" : null,
-  "closeTime" : 1575417599999,
-  "closeDate" : null,
-  "open" : 0.0020709,
-  "high" : 0.0020995,
-  "low" : 0.0020622,
-  "close" : 0.0020914,
-  "volume" : 1484.6,
-  "quoteAssetVolume" : 3.08409113,
-  "usdVolume" : 1.0839428327E7,
-  "numberOfTrades" : 551,
-  "rsi" : 0.0
-}, {
-  "symbol" : "BNBBTC",
-  "openTime" : 1575417600000,
-  "openDate" : null,
-  "closeTime" : 1575503999999,
-  "closeDate" : null,
-  "open" : 0.0020918,
-  "high" : 0.0021227,
-  "low" : 0.0020509,
-  "close" : 0.0021038,
-  "volume" : 3461.77,
-  "quoteAssetVolume" : 7.25393473,
-  "usdVolume" : 2.5091878255599998E7,
-  "numberOfTrades" : 826,
-  "rsi" : 0.0
-}, {
-  "symbol" : "BNBBTC",
-  "openTime" : 1575504000000,
-  "openDate" : null,
-  "closeTime" : 1575590399999,
-  "closeDate" : null,
-  "open" : 0.0020974,
-  "high" : 0.0021259,
-  "low" : 0.0020543,
-  "close" : 0.0021161,
-  "volume" : 1572.07,
-  "quoteAssetVolume" : 3.30803107,
-  "usdVolume" : 1.1474421024749998E7,
-  "numberOfTrades" : 573,
-  "rsi" : 0.0
-}, {
-  "symbol" : "BNBBTC",
-  "openTime" : 1575590400000,
-  "openDate" : null,
-  "closeTime" : 1575676799999,
-  "closeDate" : null,
-  "open" : 0.0021203,
-  "high" : 0.0021373,
-  "low" : 0.00207,
-  "close" : 0.0020792,
-  "volume" : 1651.46,
-  "quoteAssetVolume" : 3.45694986,
-  "usdVolume" : 1.23287021391E7,
-  "numberOfTrades" : 513,
-  "rsi" : 0.0
-}, {
-  "symbol" : "BNBBTC",
-  "openTime" : 1575676800000,
-  "openDate" : null,
-  "closeTime" : 1575763199999,
-  "closeDate" : null,
-  "open" : 0.002075,
-  "high" : 0.0021026,
-  "low" : 0.0020704,
-  "close" : 0.0020796,
-  "volume" : 1846.12,
-  "quoteAssetVolume" : 3.84167282,
-  "usdVolume" : 1.3884631597599998E7,
-  "numberOfTrades" : 517,
-  "rsi" : 0.0
-}, {
-  "symbol" : "BNBBTC",
-  "openTime" : 1575763200000,
-  "openDate" : null,
-  "closeTime" : 1575849599999,
-  "closeDate" : null,
-  "open" : 0.0020796,
-  "high" : 0.0020877,
-  "low" : 0.0020699,
-  "close" : 0.002076,
-  "volume" : 1248.96,
-  "quoteAssetVolume" : 2.59352693,
-  "usdVolume" : 9384997.68,
-  "numberOfTrades" : 484,
-  "rsi" : 0.0
-}, {
-  "symbol" : "BNBBTC",
-  "openTime" : 1575849600000,
-  "openDate" : null,
-  "closeTime" : 1575935999999,
-  "closeDate" : null,
-  "open" : 0.0020788,
-  "high" : 0.002092,
-  "low" : 0.0020651,
-  "close" : 0.0020858,
-  "volume" : 1698.34,
-  "quoteAssetVolume" : 3.53137371,
-  "usdVolume" : 1.26262407964E7,
-  "numberOfTrades" : 537,
-  "rsi" : 0.0
-}, {
-  "symbol" : "BNBBTC",
-  "openTime" : 1575936000000,
-  "openDate" : null,
-  "closeTime" : 1576022399999,
-  "closeDate" : null,
-  "open" : 0.0020885,
-  "high" : 0.0020915,
-  "low" : 0.0020198,
-  "close" : 0.0020491,
-  "volume" : 3961.73,
-  "quoteAssetVolume" : 8.1184974,
-  "usdVolume" : 2.88562508875E7,
-  "numberOfTrades" : 796,
-  "rsi" : 0.0
-}, {
-  "symbol" : "BNBBTC",
-  "openTime" : 1576022400000,
-  "openDate" : null,
-  "closeTime" : 1576108799999,
-  "closeDate" : null,
-  "open" : 0.0020496,
-  "high" : 0.0020695,
-  "low" : 0.0020361,
-  "close" : 0.0020495,
-  "volume" : 3578.48,
-  "quoteAssetVolume" : 7.33120484,
-  "usdVolume" : 2.58173733776E7,
-  "numberOfTrades" : 763,
-  "rsi" : 0.0
-}, {
-  "symbol" : "BNBBTC",
-  "openTime" : 1576108800000,
-  "openDate" : null,
-  "closeTime" : 1576195199999,
-  "closeDate" : null,
-  "open" : 0.0020485,
-  "high" : 0.002057,
-  "low" : 0.00202,
-  "close" : 0.002044,
-  "volume" : 1074.73,
-  "quoteAssetVolume" : 2.19086519,
-  "usdVolume" : 7735052.1296500005,
-  "numberOfTrades" : 556,
-  "rsi" : 0.0
-}, {
-  "symbol" : "BNBBTC",
-  "openTime" : 1576195200000,
-  "openDate" : null,
-  "closeTime" : 1576281599999,
-  "closeDate" : null,
-  "open" : 0.0020448,
-  "high" : 0.0020627,
-  "low" : 0.0020335,
-  "close" : 0.0020459,
-  "volume" : 1388.9,
-  "quoteAssetVolume" : 2.84122569,
-  "usdVolume" : 1.0034670554500002E7,
-  "numberOfTrades" : 532,
-  "rsi" : 0.0
-}, {
-  "symbol" : "BNBBTC",
-  "openTime" : 1576281600000,
-  "openDate" : null,
-  "closeTime" : 1576367999999,
-  "closeDate" : null,
-  "open" : 0.0020446,
-  "high" : 0.0020604,
-  "low" : 0.00202,
-  "close" : 0.0020334,
-  "volume" : 2229.32,
-  "quoteAssetVolume" : 4.54016219,
-  "usdVolume" : 1.5959033084E7,
-  "numberOfTrades" : 591,
-  "rsi" : 0.0
-}, {
-  "symbol" : "BNBBTC",
-  "openTime" : 1576368000000,
-  "openDate" : null,
-  "closeTime" : 1576454399999,
-  "closeDate" : null,
-  "open" : 0.0020334,
-  "high" : 0.0020395,
-  "low" : 0.002008,
-  "close" : 0.002017,
-  "volume" : 907.56,
-  "quoteAssetVolume" : 1.83147843,
-  "usdVolume" : 6436964.593799999,
-  "numberOfTrades" : 516,
-  "rsi" : 0.0
-}, {
-  "symbol" : "BNBBTC",
-  "openTime" : 1576454400000,
-  "openDate" : null,
-  "closeTime" : 1576540799999,
-  "closeDate" : null,
-  "open" : 0.0020212,
-  "high" : 0.0020337,
-  "low" : 0.0019365,
-  "close" : 0.0019494,
-  "volume" : 1943.64,
-  "quoteAssetVolume" : 3.86188895,
-  "usdVolume" : 1.3612622877E7,
-  "numberOfTrades" : 458,
-  "rsi" : 0.0
-}, {
-  "symbol" : "BNBBTC",
-  "openTime" : 1576540800000,
-  "openDate" : null,
-  "closeTime" : 1576627199999,
-  "closeDate" : null,
-  "open" : 0.001951,
-  "high" : 0.001951,
-  "low" : 0.0018458,
-  "close" : 0.0018672,
-  "volume" : 2595.19,
-  "quoteAssetVolume" : 4.8978733,
-  "usdVolume" : 1.751757142785E7,
-  "numberOfTrades" : 425,
-  "rsi" : 0.0
-}, {
-  "symbol" : "BNBBTC",
-  "openTime" : 1576627200000,
-  "openDate" : null,
-  "closeTime" : 1576713599999,
-  "closeDate" : null,
-  "open" : 0.0018689,
-  "high" : 0.0019486,
-  "low" : 0.0018458,
-  "close" : 0.001867,
-  "volume" : 5373.76,
-  "quoteAssetVolume" : 10.13965213,
-  "usdVolume" : 3.7363887624E7,
-  "numberOfTrades" : 729,
-  "rsi" : 0.0
-}, {
-  "symbol" : "BNBBTC",
-  "openTime" : 1576713600000,
-  "openDate" : null,
-  "closeTime" : 1576799999999,
-  "closeDate" : null,
-  "open" : 0.001861,
-  "high" : 0.0018759,
-  "low" : 0.0018382,
-  "close" : 0.001865,
-  "volume" : 4360.35,
-  "quoteAssetVolume" : 8.10529866,
-  "usdVolume" : 3.1474924854000006E7,
-  "numberOfTrades" : 555,
-  "rsi" : 0.0
-}, {
-  "symbol" : "BNBBTC",
-  "openTime" : 1576800000000,
-  "openDate" : null,
-  "closeTime" : 1576886399999,
-  "closeDate" : null,
-  "open" : 0.0018672,
-  "high" : 0.0018851,
-  "low" : 0.0018496,
-  "close" : 0.0018774,
-  "volume" : 699.53,
-  "quoteAssetVolume" : 1.30393828,
-  "usdVolume" : 5014356.9554,
-  "numberOfTrades" : 228,
-  "rsi" : 0.0
-}, {
-  "symbol" : "BNBBTC",
-  "openTime" : 1576886400000,
-  "openDate" : null,
-  "closeTime" : 1576972799999,
-  "closeDate" : null,
-  "open" : 0.0018763,
-  "high" : 0.0018842,
-  "low" : 0.001857,
-  "close" : 0.0018615,
-  "volume" : 456.58,
-  "quoteAssetVolume" : 0.85197464,
-  "usdVolume" : 3270541.8953999993,
-  "numberOfTrades" : 170,
-  "rsi" : 0.0
-}, {
-  "symbol" : "BNBBTC",
-  "openTime" : 1576972800000,
-  "openDate" : null,
-  "closeTime" : 1577059199999,
-  "closeDate" : null,
-  "open" : 0.0018614,
-  "high" : 0.0018797,
-  "low" : 0.0018326,
-  "close" : 0.0018356,
-  "volume" : 2819.16,
-  "quoteAssetVolume" : 5.2374922,
-  "usdVolume" : 2.06486414082E7,
-  "numberOfTrades" : 434,
-  "rsi" : 0.0
-}, {
-  "symbol" : "BNBBTC",
-  "openTime" : 1577059200000,
-  "openDate" : null,
-  "closeTime" : 1577145599999,
-  "closeDate" : null,
-  "open" : 0.0018359,
-  "high" : 0.0018436,
-  "low" : 0.0018076,
-  "close" : 0.0018164,
-  "volume" : 2306.7,
-  "quoteAssetVolume" : 4.20867109,
-  "usdVolume" : 1.7103246286499996E7,
-  "numberOfTrades" : 383,
-  "rsi" : 0.0
-}, {
-  "symbol" : "BNBBTC",
-  "openTime" : 1577145600000,
-  "openDate" : null,
-  "closeTime" : 1577231999999,
-  "closeDate" : null,
-  "open" : 0.0018204,
-  "high" : 0.0018518,
-  "low" : 0.0018152,
-  "close" : 0.0018396,
-  "volume" : 1427.09,
-  "quoteAssetVolume" : 2.62260516,
-  "usdVolume" : 1.04007318163E7,
-  "numberOfTrades" : 261,
-  "rsi" : 0.0
-}, {
-  "symbol" : "BNBBTC",
-  "openTime" : 1577232000000,
-  "openDate" : null,
-  "closeTime" : 1577318399999,
-  "closeDate" : null,
-  "open" : 0.001837,
-  "high" : 0.0018418,
-  "low" : 0.001809,
-  "close" : 0.0018166,
-  "volume" : 765.7,
-  "quoteAssetVolume" : 1.39271829,
-  "usdVolume" : 5531715.423,
-  "numberOfTrades" : 166,
-  "rsi" : 0.0
-}, {
-  "symbol" : "BNBBTC",
-  "openTime" : 1577318400000,
-  "openDate" : null,
-  "closeTime" : 1577404799999,
-  "closeDate" : null,
-  "open" : 0.0018151,
-  "high" : 0.0018396,
-  "low" : 0.0018134,
-  "close" : 0.0018237,
-  "volume" : 1246.66,
-  "quoteAssetVolume" : 2.27639315,
-  "usdVolume" : 8974892.339,
-  "numberOfTrades" : 255,
-  "rsi" : 0.0
-}, {
-  "symbol" : "BNBBTC",
-  "openTime" : 1577404800000,
-  "openDate" : null,
-  "closeTime" : 1577491199999,
-  "closeDate" : null,
-  "open" : 0.0018232,
-  "high" : 0.0018404,
-  "low" : 0.0018207,
-  "close" : 0.0018316,
-  "volume" : 523.69,
-  "quoteAssetVolume" : 0.95721475,
-  "usdVolume" : 3779368.6104500005,
-  "numberOfTrades" : 156,
-  "rsi" : 0.0
-}, {
-  "symbol" : "BNBBTC",
-  "openTime" : 1577491200000,
-  "openDate" : null,
-  "closeTime" : 1577577599999,
-  "closeDate" : null,
-  "open" : 0.001831,
-  "high" : 0.0018715,
-  "low" : 0.0018288,
-  "close" : 0.0018694,
-  "volume" : 1248.88,
-  "quoteAssetVolume" : 2.31878327,
-  "usdVolume" : 9083522.6148,
-  "numberOfTrades" : 328,
-  "rsi" : 0.0
-}, {
-  "symbol" : "BNBBTC",
-  "openTime" : 1577577600000,
-  "openDate" : null,
-  "closeTime" : 1577663999999,
-  "closeDate" : null,
-  "open" : 0.0018694,
-  "high" : 0.0019123,
-  "low" : 0.0018559,
-  "close" : 0.0019055,
-  "volume" : 2168.25,
-  "quoteAssetVolume" : 4.09554421,
-  "usdVolume" : 1.590837436125E7,
-  "numberOfTrades" : 463,
-  "rsi" : 0.0
-}, {
-  "symbol" : "BNBBTC",
-  "openTime" : 1577664000000,
-  "openDate" : null,
-  "closeTime" : 1577750399999,
-  "closeDate" : null,
-  "open" : 0.0019056,
-  "high" : 0.0019476,
-  "low" : 0.0019035,
-  "close" : 0.001914,
-  "volume" : 1618.85,
-  "quoteAssetVolume" : 3.11220914,
-  "usdVolume" : 1.1820357045E7,
-  "numberOfTrades" : 291,
-  "rsi" : 0.0
-}, {
-  "symbol" : "BNBBTC",
-  "openTime" : 1577750400000,
-  "openDate" : null,
-  "closeTime" : 1577836799999,
-  "closeDate" : null,
-  "open" : 0.001914,
-  "high" : 0.0019254,
-  "low" : 0.0018986,
-  "close" : 0.0019072,
-  "volume" : 5295.25,
-  "quoteAssetVolume" : 10.09570028,
-  "usdVolume" : 3.80899511575E7,
-  "numberOfTrades" : 438,
-  "rsi" : 0.0
-}, {
-  "symbol" : "BNBBTC",
-  "openTime" : 1577836800000,
-  "openDate" : null,
-  "closeTime" : 1577923199999,
-  "closeDate" : null,
-  "open" : 0.0019077,
-  "high" : 0.0019159,
-  "low" : 0.0018915,
-  "close" : 0.0018989,
-  "volume" : 1072.04,
-  "quoteAssetVolume" : 2.04527738,
-  "usdVolume" : 7685192.1102,
-  "numberOfTrades" : 162,
-  "rsi" : 0.0
-}, {
-  "symbol" : "BNBBTC",
-  "openTime" : 1577923200000,
-  "openDate" : null,
-  "closeTime" : 1578009599999,
-  "closeDate" : null,
-  "open" : 0.0018994,
-  "high" : 0.0019028,
-  "low" : 0.001866,
-  "close" : 0.0018686,
-  "volume" : 633.83,
-  "quoteAssetVolume" : 1.19378482,
-  "usdVolume" : 4474678.173350001,
-  "numberOfTrades" : 109,
-  "rsi" : 0.0
-}, {
-  "symbol" : "BNBBTC",
-  "openTime" : 1578009600000,
-  "openDate" : null,
-  "closeTime" : 1578095999999,
-  "closeDate" : null,
-  "open" : 0.0018675,
-  "high" : 0.0018982,
-  "low" : 0.0018525,
-  "close" : 0.0018589,
-  "volume" : 13919.51,
-  "quoteAssetVolume" : 25.8884056,
-  "usdVolume" : 9.931034483865E7,
-  "numberOfTrades" : 855,
-  "rsi" : 0.0
-}, {
-  "symbol" : "BNBBTC",
-  "openTime" : 1578096000000,
-  "openDate" : null,
-  "closeTime" : 1578182399999,
-  "closeDate" : null,
-  "open" : 0.0018573,
-  "high" : 0.0018785,
-  "low" : 0.0018534,
-  "close" : 0.0018742,
-  "volume" : 1221.7,
-  "quoteAssetVolume" : 2.27928811,
-  "usdVolume" : 8970692.6515,
-  "numberOfTrades" : 170,
-  "rsi" : 0.0
-}, {
-  "symbol" : "BNBBTC",
-  "openTime" : 1578182400000,
-  "openDate" : null,
-  "closeTime" : 1578268799999,
-  "closeDate" : null,
-  "open" : 0.0018732,
-  "high" : 0.0019118,
-  "low" : 0.0018624,
-  "close" : 0.0019073,
-  "volume" : 1723.14,
-  "quoteAssetVolume" : 3.24812581,
-  "usdVolume" : 1.26677670984E7,
-  "numberOfTrades" : 285,
-  "rsi" : 0.0
-}, {
-  "symbol" : "BNBBTC",
-  "openTime" : 1578268800000,
-  "openDate" : null,
-  "closeTime" : 1578355199999,
-  "closeDate" : null,
-  "open" : 0.0019087,
-  "high" : 0.0019538,
-  "low" : 0.0019022,
-  "close" : 0.001923,
-  "volume" : 5101.97,
-  "quoteAssetVolume" : 9.83491638,
-  "usdVolume" : 3.85443119363E7,
-  "numberOfTrades" : 479,
-  "rsi" : 0.0
-}, {
-  "symbol" : "BNBBTC",
-  "openTime" : 1578355200000,
-  "openDate" : null,
-  "closeTime" : 1578441599999,
-  "closeDate" : null,
-  "open" : 0.0019244,
-  "high" : 0.0019244,
-  "low" : 0.0018307,
-  "close" : 0.001836,
-  "volume" : 11898.82,
-  "quoteAssetVolume" : 22.15393688,
-  "usdVolume" : 9.479319890609999E7,
-  "numberOfTrades" : 1214,
-  "rsi" : 0.0
-}, {
-  "symbol" : "BNBBTC",
-  "openTime" : 1578441600000,
-  "openDate" : null,
-  "closeTime" : 1578527999999,
-  "closeDate" : null,
-  "open" : 0.001836,
-  "high" : 0.001836,
-  "low" : 0.0017624,
-  "close" : 0.0018048,
-  "volume" : 1779.56,
-  "quoteAssetVolume" : 3.20162566,
-  "usdVolume" : 1.44010981978E7,
-  "numberOfTrades" : 651,
-  "rsi" : 0.0
-}, {
-  "symbol" : "BNBBTC",
-  "openTime" : 1578528000000,
-  "openDate" : null,
-  "closeTime" : 1578614399999,
-  "closeDate" : null,
-  "open" : 0.0018063,
-  "high" : 0.0018409,
-  "low" : 0.001803,
-  "close" : 0.0018375,
-  "volume" : 1256.4,
-  "quoteAssetVolume" : 2.28986628,
-  "usdVolume" : 9965997.234,
-  "numberOfTrades" : 565,
-  "rsi" : 0.0
-}, {
-  "symbol" : "BNBBTC",
-  "openTime" : 1578614400000,
-  "openDate" : null,
-  "closeTime" : 1578700799999,
-  "closeDate" : null,
-  "open" : 0.0018406,
-  "high" : 0.001859,
-  "low" : 0.0018275,
-  "close" : 0.0018396,
-  "volume" : 1158.01,
-  "quoteAssetVolume" : 2.134383,
-  "usdVolume" : 9267229.7872,
-  "numberOfTrades" : 568,
-  "rsi" : 0.0
-}, {
-  "symbol" : "BNBBTC",
-  "openTime" : 1578700800000,
-  "openDate" : null,
-  "closeTime" : 1578787199999,
-  "closeDate" : null,
-  "open" : 0.001839,
-  "high" : 0.0018639,
-  "low" : 0.0018192,
-  "close" : 0.0018605,
-  "volume" : 1880.33,
-  "quoteAssetVolume" : 3.46047216,
-  "usdVolume" : 1.5250529284799999E7,
-  "numberOfTrades" : 770,
-  "rsi" : 0.0
-}, {
-  "symbol" : "BNBBTC",
-  "openTime" : 1578787200000,
-  "openDate" : null,
-  "closeTime" : 1578873599999,
-  "closeDate" : null,
-  "open" : 0.0018605,
-  "high" : 0.0018974,
-  "low" : 0.001853,
-  "close" : 0.0018714,
-  "volume" : 1402.97,
-  "quoteAssetVolume" : 2.63675125,
-  "usdVolume" : 1.13656142967E7,
-  "numberOfTrades" : 617,
-  "rsi" : 0.0
-}, {
-  "symbol" : "BNBBTC",
-  "openTime" : 1578873600000,
-  "openDate" : null,
-  "closeTime" : 1578959999999,
-  "closeDate" : null,
-  "open" : 0.0018706,
-  "high" : 0.0018755,
-  "low" : 0.0018486,
-  "close" : 0.0018695,
-  "volume" : 2101.31,
-  "quoteAssetVolume" : 3.89954125,
-  "usdVolume" : 1.71100007274E7,
-  "numberOfTrades" : 584,
-  "rsi" : 0.0
-}, {
-  "symbol" : "BNBBTC",
-  "openTime" : 1578960000000,
-  "openDate" : null,
-  "closeTime" : 1579046399999,
-  "closeDate" : null,
-  "open" : 0.0018701,
-  "high" : 0.0019071,
-  "low" : 0.001815,
-  "close" : 0.0018857,
-  "volume" : 5579.62,
-  "quoteAssetVolume" : 10.40047209,
-  "usdVolume" : 4.73007542823E7,
-  "numberOfTrades" : 1150,
-  "rsi" : 0.0
-}, {
-  "symbol" : "BNBBTC",
-  "openTime" : 1579046400000,
-  "openDate" : null,
-  "closeTime" : 1579132799999,
-  "closeDate" : null,
-  "open" : 0.0018861,
-  "high" : 0.002063,
-  "low" : 0.0018784,
-  "close" : 0.0020005,
-  "volume" : 10354.37,
-  "quoteAssetVolume" : 20.50654941,
-  "usdVolume" : 9.129546395515E7,
-  "numberOfTrades" : 1150,
-  "rsi" : 0.0
-}, {
-  "symbol" : "BNBBTC",
-  "openTime" : 1579132800000,
-  "openDate" : null,
-  "closeTime" : 1579219199999,
-  "closeDate" : null,
-  "open" : 0.0019921,
-  "high" : 0.0019928,
-  "low" : 0.0019024,
-  "close" : 0.0019519,
-  "volume" : 3183.54,
-  "quoteAssetVolume" : 6.19262837,
-  "usdVolume" : 2.7938253591300003E7,
-  "numberOfTrades" : 758,
-  "rsi" : 0.0
-}, {
-  "symbol" : "BNBBTC",
-  "openTime" : 1579219200000,
-  "openDate" : null,
-  "closeTime" : 1579305599999,
-  "closeDate" : null,
-  "open" : 0.0019523,
-  "high" : 0.0020697,
-  "low" : 0.0019523,
-  "close" : 0.002029,
-  "volume" : 4274.82,
-  "quoteAssetVolume" : 8.6815332,
-  "usdVolume" : 3.768792457319999E7,
-  "numberOfTrades" : 802,
-  "rsi" : 0.0
-}, {
-  "symbol" : "BNBBTC",
-  "openTime" : 1579305600000,
-  "openDate" : null,
-  "closeTime" : 1579391999999,
-  "closeDate" : null,
-  "open" : 0.0020199,
-  "high" : 0.0020486,
-  "low" : 0.0019792,
-  "close" : 0.0019965,
-  "volume" : 2184.4,
-  "quoteAssetVolume" : 4.39872054,
-  "usdVolume" : 1.9447320008E7,
-  "numberOfTrades" : 463,
-  "rsi" : 0.0
-}, {
-  "symbol" : "BNBBTC",
-  "openTime" : 1579392000000,
-  "openDate" : null,
-  "closeTime" : 1579478399999,
-  "closeDate" : null,
-  "open" : 0.001996,
-  "high" : 0.0020249,
-  "low" : 0.0019466,
-  "close" : 0.001999,
-  "volume" : 2428.96,
-  "quoteAssetVolume" : 4.81312333,
-  "usdVolume" : 2.1401930904000003E7,
-  "numberOfTrades" : 629,
-  "rsi" : 0.0
-}, {
-  "symbol" : "BNBBTC",
-  "openTime" : 1579478400000,
-  "openDate" : null,
-  "closeTime" : 1579564799999,
-  "closeDate" : null,
-  "open" : 0.0019859,
-  "high" : 0.0020102,
-  "low" : 0.0019704,
-  "close" : 0.0020029,
-  "volume" : 1152.43,
-  "quoteAssetVolume" : 2.29133884,
-  "usdVolume" : 9993527.231,
-  "numberOfTrades" : 257,
-  "rsi" : 0.0
-}, {
-  "symbol" : "BNBBTC",
-  "openTime" : 1579564800000,
-  "openDate" : null,
-  "closeTime" : 1579651199999,
-  "closeDate" : null,
-  "open" : 0.0019999,
-  "high" : 0.0020841,
-  "low" : 0.0019951,
-  "close" : 0.0020731,
-  "volume" : 11319.53,
-  "quoteAssetVolume" : 23.53105674,
-  "usdVolume" : 9.834169953870001E7,
-  "numberOfTrades" : 855,
-  "rsi" : 0.0
-}, {
-  "symbol" : "BNBBTC",
-  "openTime" : 1579651200000,
-  "openDate" : null,
-  "closeTime" : 1579737599999,
-  "closeDate" : null,
-  "open" : 0.0020716,
-  "high" : 0.0020985,
-  "low" : 0.0020354,
-  "close" : 0.0020535,
-  "volume" : 4217.64,
-  "quoteAssetVolume" : 8.70458845,
-  "usdVolume" : 3.66456821388E7,
-  "numberOfTrades" : 671,
-  "rsi" : 0.0
-}, {
-  "symbol" : "BNBBTC",
-  "openTime" : 1579737600000,
-  "openDate" : null,
-  "closeTime" : 1579823999999,
-  "closeDate" : null,
-  "open" : 0.0020503,
-  "high" : 0.0020513,
-  "low" : 0.0020108,
-  "close" : 0.0020282,
-  "volume" : 1826.17,
-  "quoteAssetVolume" : 3.70078202,
-  "usdVolume" : 1.5572290310150001E7,
-  "numberOfTrades" : 449,
-  "rsi" : 0.0
-}, {
-  "symbol" : "BNBBTC",
-  "openTime" : 1579824000000,
-  "openDate" : null,
-  "closeTime" : 1579910399999,
-  "closeDate" : null,
-  "open" : 0.0020277,
-  "high" : 0.0020512,
-  "low" : 0.001987,
-  "close" : 0.0020175,
-  "volume" : 1410.82,
-  "quoteAssetVolume" : 2.84691711,
-  "usdVolume" : 1.18629857815E7,
-  "numberOfTrades" : 430,
-  "rsi" : 0.0
-}, {
-  "symbol" : "BNBBTC",
-  "openTime" : 1579910400000,
-  "openDate" : null,
-  "closeTime" : 1579996799999,
-  "closeDate" : null,
-  "open" : 0.0020247,
-  "high" : 0.0020403,
-  "low" : 0.002003,
-  "close" : 0.0020285,
-  "volume" : 1060.12,
-  "quoteAssetVolume" : 2.13956654,
-  "usdVolume" : 8873389.920999998,
-  "numberOfTrades" : 347,
-  "rsi" : 0.0
-}, {
-  "symbol" : "BNBBTC",
-  "openTime" : 1579996800000,
-  "openDate" : null,
-  "closeTime" : 1580083199999,
-  "closeDate" : null,
-  "open" : 0.0020276,
-  "high" : 0.0020432,
-  "low" : 0.0020203,
-  "close" : 0.0020296,
-  "volume" : 1710.18,
-  "quoteAssetVolume" : 3.47903368,
-  "usdVolume" : 1.44572375043E7,
-  "numberOfTrades" : 388,
-  "rsi" : 0.0
-}, {
-  "symbol" : "BNBBTC",
-  "openTime" : 1580083200000,
-  "openDate" : null,
-  "closeTime" : 1580169599999,
-  "closeDate" : null,
-  "open" : 0.0020295,
-  "high" : 0.0020344,
-  "low" : 0.0019735,
-  "close" : 0.0019825,
-  "volume" : 6324.06,
-  "quoteAssetVolume" : 12.52746537,
-  "usdVolume" : 5.528597598990001E7,
-  "numberOfTrades" : 649,
-  "rsi" : 0.0
-}, {
-  "symbol" : "BNBBTC",
-  "openTime" : 1580169600000,
-  "openDate" : null,
-  "closeTime" : 1580255999999,
-  "closeDate" : null,
-  "open" : 0.0019812,
-  "high" : 0.0019907,
-  "low" : 0.0019176,
-  "close" : 0.0019276,
-  "volume" : 1586.17,
-  "quoteAssetVolume" : 3.10094468,
-  "usdVolume" : 1.4495277991800003E7,
-  "numberOfTrades" : 439,
-  "rsi" : 0.0
-}, {
-  "symbol" : "BNBBTC",
-  "openTime" : 1580256000000,
-  "openDate" : null,
-  "closeTime" : 1580342399999,
-  "closeDate" : null,
-  "open" : 0.0019251,
-  "high" : 0.0019641,
-  "low" : 0.0019159,
-  "close" : 0.0019269,
-  "volume" : 6367.56,
-  "quoteAssetVolume" : 12.3081373,
-  "usdVolume" : 5.9367499930800006E7,
-  "numberOfTrades" : 540,
-  "rsi" : 0.0
-}, {
-  "symbol" : "BNBBTC",
-  "openTime" : 1580342400000,
-  "openDate" : null,
-  "closeTime" : 1580428799999,
-  "closeDate" : null,
-  "open" : 0.0019191,
-  "high" : 0.0019574,
-  "low" : 0.0019123,
-  "close" : 0.0019521,
-  "volume" : 1364.52,
-  "quoteAssetVolume" : 2.63634804,
-  "usdVolume" : 1.2812058201E7,
-  "numberOfTrades" : 340,
-  "rsi" : 0.0
-}, {
-  "symbol" : "BNBBTC",
-  "openTime" : 1580428800000,
-  "openDate" : null,
-  "closeTime" : 1580515199999,
-  "closeDate" : null,
-  "open" : 0.0019531,
-  "high" : 0.0019968,
-  "low" : 0.0019316,
-  "close" : 0.0019497,
-  "volume" : 1242.58,
-  "quoteAssetVolume" : 2.42604714,
-  "usdVolume" : 1.1697014404199999E7,
-  "numberOfTrades" : 413,
-  "rsi" : 0.0
-}, {
-  "symbol" : "BNBBTC",
-  "openTime" : 1580515200000,
-  "openDate" : null,
-  "closeTime" : 1580601599999,
-  "closeDate" : null,
-  "open" : 0.001944,
-  "high" : 0.0019682,
-  "low" : 0.0019306,
-  "close" : 0.0019393,
-  "volume" : 1223.2,
-  "quoteAssetVolume" : 2.37978948,
-  "usdVolume" : 1.1459010992000002E7,
-  "numberOfTrades" : 233,
-  "rsi" : 0.0
-}, {
-  "symbol" : "BNBBTC",
-  "openTime" : 1580601600000,
-  "openDate" : null,
-  "closeTime" : 1580687999999,
-  "closeDate" : null,
-  "open" : 0.0019457,
-  "high" : 0.001987,
-  "low" : 0.001936,
-  "close" : 0.0019759,
-  "volume" : 1240.79,
-  "quoteAssetVolume" : 2.43423152,
-  "usdVolume" : 1.1603973547149999E7,
-  "numberOfTrades" : 281,
-  "rsi" : 0.0
-}, {
-  "symbol" : "BNBBTC",
-  "openTime" : 1580688000000,
-  "openDate" : null,
-  "closeTime" : 1580774399999,
-  "closeDate" : null,
-  "open" : 0.0019729,
-  "high" : 0.0019903,
-  "low" : 0.0019542,
-  "close" : 0.0019844,
-  "volume" : 1341.8,
-  "quoteAssetVolume" : 2.64034439,
-  "usdVolume" : 1.2482953251999998E7,
-  "numberOfTrades" : 317,
-  "rsi" : 0.0
-}, {
-  "symbol" : "BNBBTC",
-  "openTime" : 1580774400000,
-  "openDate" : null,
-  "closeTime" : 1580860799999,
-  "closeDate" : null,
-  "open" : 0.001986,
-  "high" : 0.0019915,
-  "low" : 0.0019581,
-  "close" : 0.0019756,
-  "volume" : 902.51,
-  "quoteAssetVolume" : 1.784146,
-  "usdVolume" : 8324959.817299999,
-  "numberOfTrades" : 258,
-  "rsi" : 0.0
-}, {
-  "symbol" : "BNBBTC",
-  "openTime" : 1580860800000,
-  "openDate" : null,
-  "closeTime" : 1580947199999,
-  "closeDate" : null,
-  "open" : 0.0019765,
-  "high" : 0.002046,
-  "low" : 0.0019756,
-  "close" : 0.0020058,
-  "volume" : 4816.73,
-  "quoteAssetVolume" : 9.68396835,
-  "usdVolume" : 4.52451344109E7,
-  "numberOfTrades" : 736,
-  "rsi" : 0.0
-}, {
-  "symbol" : "BNBBTC",
   "openTime" : 1580947200000,
   "openDate" : null,
   "closeTime" : 1581033599999,
@@ -1330,7 +10,7 @@
   "close" : 0.0021139,
   "volume" : 3647.37,
   "quoteAssetVolume" : 7.46258173,
-  "usdVolume" : 3.53321461374E7,
+  "usdVolume" : 72802.25406159523,
   "numberOfTrades" : 606,
   "rsi" : 0.0
 }, {
@@ -1345,7 +25,7 @@
   "close" : 0.0022468,
   "volume" : 10565.08,
   "quoteAssetVolume" : 23.02252203,
-  "usdVolume" : 1.0337127833919999E8,
+  "usdVolume" : 225247.99060584506,
   "numberOfTrades" : 1145,
   "rsi" : 0.0
 }, {
@@ -1360,7 +40,7 @@
   "close" : 0.0022035,
   "volume" : 3768.93,
   "quoteAssetVolume" : 8.32666504,
-  "usdVolume" : 3.714076992779999E7,
+  "usdVolume" : 82615.82937639569,
   "numberOfTrades" : 662,
   "rsi" : 0.0
 }, {
@@ -1375,7 +55,7 @@
   "close" : 0.0023975,
   "volume" : 6232.05,
   "quoteAssetVolume" : 14.38105944,
-  "usdVolume" : 6.256164917475E7,
+  "usdVolume" : 143974.46350429312,
   "numberOfTrades" : 1132,
   "rsi" : 0.0
 }, {
@@ -1390,7 +70,7 @@
   "close" : 0.0025527,
   "volume" : 13235.45,
   "quoteAssetVolume" : 33.09536871,
-  "usdVolume" : 1.3245958947300002E8,
+  "usdVolume" : 327458.14545958093,
   "numberOfTrades" : 1689,
   "rsi" : 0.0
 }, {
@@ -1405,7 +85,7 @@
   "close" : 0.0025113,
   "volume" : 9060.15,
   "quoteAssetVolume" : 22.6876861,
-  "usdVolume" : 9.117731783325E7,
+  "usdVolume" : 230821.82715265,
   "numberOfTrades" : 1243,
   "rsi" : 0.0
 }, {
@@ -1420,7 +100,7 @@
   "close" : 0.0025613,
   "volume" : 14199.64,
   "quoteAssetVolume" : 36.22986812,
-  "usdVolume" : 1.464242737412E8,
+  "usdVolume" : 371214.6557910227,
   "numberOfTrades" : 2076,
   "rsi" : 0.0
 }, {
@@ -1435,7 +115,7 @@
   "close" : 0.0024882,
   "volume" : 9220.11,
   "quoteAssetVolume" : 23.16091156,
-  "usdVolume" : 9.48613783383E7,
+  "usdVolume" : 239070.90413638751,
   "numberOfTrades" : 1738,
   "rsi" : 0.0
 }, {
@@ -1450,7 +130,7 @@
   "close" : 0.0025504,
   "volume" : 4571.99,
   "quoteAssetVolume" : 11.516191,
-  "usdVolume" : 4.708667355055E7,
+  "usdVolume" : 118857.16409354487,
   "numberOfTrades" : 1150,
   "rsi" : 0.0
 }, {
@@ -1465,7 +145,7 @@
   "close" : 0.0024236,
   "volume" : 6793.16,
   "quoteAssetVolume" : 16.87604955,
-  "usdVolume" : 6.88565906314E7,
+  "usdVolume" : 171159.50849761875,
   "numberOfTrades" : 1576,
   "rsi" : 0.0
 }, {
@@ -1480,7 +160,7 @@
   "close" : 0.0023509,
   "volume" : 5919.19,
   "quoteAssetVolume" : 14.13482187,
-  "usdVolume" : 5.8721176415249996E7,
+  "usdVolume" : 140769.7645422245,
   "numberOfTrades" : 1558,
   "rsi" : 0.0
 }, {
@@ -1495,7 +175,7 @@
   "close" : 0.0024222,
   "volume" : 5576.2,
   "quoteAssetVolume" : 12.9931571,
-  "usdVolume" : 5.4735867676E7,
+  "usdVolume" : 130582.40823164178,
   "numberOfTrades" : 1604,
   "rsi" : 0.0
 }, {
@@ -1510,7 +190,7 @@
   "close" : 0.002365,
   "volume" : 8254.92,
   "quoteAssetVolume" : 19.6799665,
-  "usdVolume" : 8.210207225819999E7,
+  "usdVolume" : 196436.1768050313,
   "numberOfTrades" : 2544,
   "rsi" : 0.0
 }, {
@@ -1525,7 +205,7 @@
   "close" : 0.0023299,
   "volume" : 6760.35,
   "quoteAssetVolume" : 15.85782886,
-  "usdVolume" : 6.690566287125E7,
+  "usdVolume" : 157092.94214286614,
   "numberOfTrades" : 2321,
   "rsi" : 0.0
 }, {
@@ -1540,7 +220,7 @@
   "close" : 0.0023061,
   "volume" : 3310.97,
   "quoteAssetVolume" : 7.54127904,
-  "usdVolume" : 3.178999702255E7,
+  "usdVolume" : 73452.29415338242,
   "numberOfTrades" : 1378,
   "rsi" : 0.0
 }, {
@@ -1555,7 +235,7 @@
   "close" : 0.0022846,
   "volume" : 3145.55,
   "quoteAssetVolume" : 7.23166854,
-  "usdVolume" : 3.0361414799000002E7,
+  "usdVolume" : 69616.01965784634,
   "numberOfTrades" : 1196,
   "rsi" : 0.0
 }, {
@@ -1570,7 +250,7 @@
   "close" : 0.0022739,
   "volume" : 2223.44,
   "quoteAssetVolume" : 5.05845877,
-  "usdVolume" : 2.15253116324E7,
+  "usdVolume" : 49037.97766352436,
   "numberOfTrades" : 391,
   "rsi" : 0.0
 }, {
@@ -1585,7 +265,7 @@
   "close" : 0.0022985,
   "volume" : 3260.44,
   "quoteAssetVolume" : 7.48448911,
-  "usdVolume" : 3.2019395553000003E7,
+  "usdVolume" : 73262.53665431835,
   "numberOfTrades" : 695,
   "rsi" : 0.0
 }, {
@@ -1600,7 +280,7 @@
   "close" : 0.0022688,
   "volume" : 3725.86,
   "quoteAssetVolume" : 8.5866321,
-  "usdVolume" : 3.657626462890001E7,
+  "usdVolume" : 83500.75286320095,
   "numberOfTrades" : 894,
   "rsi" : 0.0
 }, {
@@ -1615,7 +295,7 @@
   "close" : 0.0021821,
   "volume" : 5080.76,
   "quoteAssetVolume" : 11.20697913,
-  "usdVolume" : 4.82181398584E7,
+  "usdVolume" : 107567.24483122095,
   "numberOfTrades" : 1255,
   "rsi" : 0.0
 }, {
@@ -1630,7 +310,7 @@
   "close" : 0.0021304,
   "volume" : 5959.23,
   "quoteAssetVolume" : 12.57084936,
-  "usdVolume" : 5.39079692799E7,
+  "usdVolume" : 116051.60851039932,
   "numberOfTrades" : 1446,
   "rsi" : 0.0
 }, {
@@ -1645,7 +325,7 @@
   "close" : 0.0021764,
   "volume" : 3060.02,
   "quoteAssetVolume" : 6.58837107,
-  "usdVolume" : 2.6906250956699997E7,
+  "usdVolume" : 57883.46572240269,
   "numberOfTrades" : 760,
   "rsi" : 0.0
 }, {
@@ -1660,7 +340,7 @@
   "close" : 0.0021877,
   "volume" : 2537.81,
   "quoteAssetVolume" : 5.49510517,
-  "usdVolume" : 2.224021213645E7,
+  "usdVolume" : 48537.38654123936,
   "numberOfTrades" : 762,
   "rsi" : 0.0
 }, {
@@ -1675,7 +355,7 @@
   "close" : 0.0022658,
   "volume" : 2245.53,
   "quoteAssetVolume" : 5.02308532,
-  "usdVolume" : 1.9342871915850002E7,
+  "usdVolume" : 43116.56607701164,
   "numberOfTrades" : 727,
   "rsi" : 0.0
 }, {
@@ -1690,7 +370,7 @@
   "close" : 0.0022156,
   "volume" : 3362.12,
   "quoteAssetVolume" : 7.51154213,
-  "usdVolume" : 2.8669873118399996E7,
+  "usdVolume" : 64267.419944686284,
   "numberOfTrades" : 1043,
   "rsi" : 0.0
 }, {
@@ -1705,7 +385,7 @@
   "close" : 0.0022336,
   "volume" : 5289.26,
   "quoteAssetVolume" : 11.82600704,
-  "usdVolume" : 4.6088205026700005E7,
+  "usdVolume" : 102710.62575709353,
   "numberOfTrades" : 2025,
   "rsi" : 0.0
 }, {
@@ -1720,7 +400,7 @@
   "close" : 0.0022405,
   "volume" : 1788.49,
   "quoteAssetVolume" : 4.01191065,
-  "usdVolume" : 1.580478776305E7,
+  "usdVolume" : 35328.51338311103,
   "numberOfTrades" : 590,
   "rsi" : 0.0
 }, {
@@ -1735,7 +415,7 @@
   "close" : 0.0022851,
   "volume" : 3809.03,
   "quoteAssetVolume" : 8.63215299,
-  "usdVolume" : 3.3359294288500004E7,
+  "usdVolume" : 75595.31151595064,
   "numberOfTrades" : 1248,
   "rsi" : 0.0
 }, {
@@ -1750,7 +430,7 @@
   "close" : 0.0022955,
   "volume" : 5804.7,
   "quoteAssetVolume" : 13.47724715,
-  "usdVolume" : 5.175778169099999E7,
+  "usdVolume" : 118370.28262161795,
   "numberOfTrades" : 1628,
   "rsi" : 0.0
 }, {
@@ -1765,7 +445,7 @@
   "close" : 0.0023336,
   "volume" : 3026.7,
   "quoteAssetVolume" : 7.06571732,
-  "usdVolume" : 2.7586039940999996E7,
+  "usdVolume" : 63900.238335607806,
   "numberOfTrades" : 1050,
   "rsi" : 0.0
 }, {
@@ -1780,7 +460,7 @@
   "close" : 0.0022764,
   "volume" : 3111.2,
   "quoteAssetVolume" : 7.12730771,
-  "usdVolume" : 2.8084911292E7,
+  "usdVolume" : 64775.936194824004,
   "numberOfTrades" : 971,
   "rsi" : 0.0
 }, {
@@ -1795,7 +475,7 @@
   "close" : 0.0021011,
   "volume" : 3786.09,
   "quoteAssetVolume" : 8.25377115,
-  "usdVolume" : 3.2058016648349997E7,
+  "usdVolume" : 70179.06682978768,
   "numberOfTrades" : 1138,
   "rsi" : 0.0
 }, {
@@ -1810,7 +490,7 @@
   "close" : 0.0020911,
   "volume" : 2710.97,
   "quoteAssetVolume" : 5.71380517,
-  "usdVolume" : 2.1646729469049998E7,
+  "usdVolume" : 45374.45332692095,
   "numberOfTrades" : 669,
   "rsi" : 0.0
 }, {
@@ -1825,7 +505,7 @@
   "close" : 0.0021342,
   "volume" : 1410.14,
   "quoteAssetVolume" : 2.98573309,
-  "usdVolume" : 1.11579583724E7,
+  "usdVolume" : 23582.04797266626,
   "numberOfTrades" : 324,
   "rsi" : 0.0
 }, {
@@ -1840,7 +520,7 @@
   "close" : 0.0020932,
   "volume" : 1910.76,
   "quoteAssetVolume" : 4.01240992,
-  "usdVolume" : 1.51118760108E7,
+  "usdVolume" : 31921.994095787755,
   "numberOfTrades" : 422,
   "rsi" : 0.0
 }, {
@@ -1855,7 +535,7 @@
   "close" : 0.0019169,
   "volume" : 43455.69,
   "quoteAssetVolume" : 84.74069005,
-  "usdVolume" : 2.78959456386E8,
+  "usdVolume" : 564091.003077499,
   "numberOfTrades" : 4989,
   "rsi" : 0.0
 }, {
@@ -1870,7 +550,7 @@
   "close" : 0.0019462,
   "volume" : 22453.43,
   "quoteAssetVolume" : 41.57847679,
-  "usdVolume" : 1.1737631572935E8,
+  "usdVolume" : 227056.39775857993,
   "numberOfTrades" : 3321,
   "rsi" : 0.0
 }, {
@@ -1885,7 +565,7 @@
   "close" : 0.0019638,
   "volume" : 1620.16,
   "quoteAssetVolume" : 3.19264761,
-  "usdVolume" : 8743582.2784,
+  "usdVolume" : 17194.788286263043,
   "numberOfTrades" : 322,
   "rsi" : 0.0
 }, {
@@ -1900,7 +580,7 @@
   "close" : 0.0019373,
   "volume" : 2199.08,
   "quoteAssetVolume" : 4.24782753,
-  "usdVolume" : 1.1565137646399999E7,
+  "usdVolume" : 22462.97424390968,
   "numberOfTrades" : 237,
   "rsi" : 0.0
 }, {
@@ -1915,7 +595,7 @@
   "close" : 0.0018735,
   "volume" : 1814.71,
   "quoteAssetVolume" : 3.42790846,
-  "usdVolume" : 9400197.8,
+  "usdVolume" : 17943.17196375,
   "numberOfTrades" : 365,
   "rsi" : 0.0
 }, {
@@ -1930,7 +610,7 @@
   "close" : 0.0019234,
   "volume" : 1770.33,
   "quoteAssetVolume" : 3.37409518,
-  "usdVolume" : 9225915.4653,
+  "usdVolume" : 17542.28505560046,
   "numberOfTrades" : 270,
   "rsi" : 0.0
 }, {
@@ -1945,7 +625,7 @@
   "close" : 0.00193,
   "volume" : 2573.56,
   "quoteAssetVolume" : 4.93496472,
-  "usdVolume" : 1.38147156664E7,
+  "usdVolume" : 26696.661753652,
   "numberOfTrades" : 323,
   "rsi" : 0.0
 }, {
@@ -1960,7 +640,7 @@
   "close" : 0.0019882,
   "volume" : 7200.05,
   "quoteAssetVolume" : 14.03726783,
-  "usdVolume" : 4.1777750121249996E7,
+  "usdVolume" : 81752.40802911326,
   "numberOfTrades" : 1053,
   "rsi" : 0.0
 }, {
@@ -1975,7 +655,7 @@
   "close" : 0.0019198,
   "volume" : 15012.36,
   "quoteAssetVolume" : 28.95976356,
-  "usdVolume" : 9.29928630312E7,
+  "usdVolume" : 181558.0286810829,
   "numberOfTrades" : 1565,
   "rsi" : 0.0
 }, {
@@ -1990,7 +670,7 @@
   "close" : 0.0019515,
   "volume" : 1874.12,
   "quoteAssetVolume" : 3.61816451,
-  "usdVolume" : 1.16217554616E7,
+  "usdVolume" : 22466.30631813116,
   "numberOfTrades" : 328,
   "rsi" : 0.0
 }, {
@@ -2005,7 +685,7 @@
   "close" : 0.0019192,
   "volume" : 4947.89,
   "quoteAssetVolume" : 9.62266857,
-  "usdVolume" : 2.97060925031E7,
+  "usdVolume" : 57547.357886638776,
   "numberOfTrades" : 514,
   "rsi" : 0.0
 }, {
@@ -2020,7 +700,7 @@
   "close" : 0.0018789,
   "volume" : 6865.68,
   "quoteAssetVolume" : 13.02707325,
-  "usdVolume" : 4.228390371480001E7,
+  "usdVolume" : 80237.78302051117,
   "numberOfTrades" : 747,
   "rsi" : 0.0
 }, {
@@ -2035,7 +715,7 @@
   "close" : 0.0018396,
   "volume" : 2489.73,
   "quoteAssetVolume" : 4.59817394,
-  "usdVolume" : 1.651857428505E7,
+  "usdVolume" : 30703.16826363753,
   "numberOfTrades" : 445,
   "rsi" : 0.0
 }, {
@@ -2050,7 +730,7 @@
   "close" : 0.0018408,
   "volume" : 1957.12,
   "quoteAssetVolume" : 3.59585884,
-  "usdVolume" : 1.3176408256E7,
+  "usdVolume" : 24265.7226853888,
   "numberOfTrades" : 219,
   "rsi" : 0.0
 }, {
@@ -2065,7 +745,7 @@
   "close" : 0.0019575,
   "volume" : 2568.46,
   "quoteAssetVolume" : 4.88348754,
-  "usdVolume" : 1.72963306975E7,
+  "usdVolume" : 32845.44063487125,
   "numberOfTrades" : 400,
   "rsi" : 0.0
 }, {
@@ -2080,7 +760,7 @@
   "close" : 0.0019326,
   "volume" : 3807.99,
   "quoteAssetVolume" : 7.43953964,
-  "usdVolume" : 2.5009507443599995E7,
+  "usdVolume" : 48620.609819203855,
   "numberOfTrades" : 382,
   "rsi" : 0.0
 }, {
@@ -2095,7 +775,7 @@
   "close" : 0.001954,
   "volume" : 7344.95,
   "quoteAssetVolume" : 14.24449009,
-  "usdVolume" : 4.6346303977249995E7,
+  "usdVolume" : 90130.25411807309,
   "numberOfTrades" : 791,
   "rsi" : 0.0
 }, {
@@ -2110,7 +790,7 @@
   "close" : 0.0019203,
   "volume" : 2044.56,
   "quoteAssetVolume" : 3.96530255,
-  "usdVolume" : 1.24054495824E7,
+  "usdVolume" : 24031.4502679272,
   "numberOfTrades" : 312,
   "rsi" : 0.0
 }, {
@@ -2125,7 +805,7 @@
   "close" : 0.0018884,
   "volume" : 5479.04,
   "quoteAssetVolume" : 10.37388758,
-  "usdVolume" : 3.36398810496E7,
+  "usdVolume" : 64018.04858206464,
   "numberOfTrades" : 585,
   "rsi" : 0.0
 }, {
@@ -2140,7 +820,7 @@
   "close" : 0.00196,
   "volume" : 1051.77,
   "quoteAssetVolume" : 2.03494835,
-  "usdVolume" : 6744490.9015500005,
+  "usdVolume" : 12988.28262319833,
   "numberOfTrades" : 232,
   "rsi" : 0.0
 }, {
@@ -2155,7 +835,7 @@
   "close" : 0.0019141,
   "volume" : 5220.03,
   "quoteAssetVolume" : 10.20810845,
-  "usdVolume" : 3.4162930037549995E7,
+  "usdVolume" : 66123.97760726577,
   "numberOfTrades" : 710,
   "rsi" : 0.0
 }, {
@@ -2170,7 +850,7 @@
   "close" : 0.0019208,
   "volume" : 2795.91,
   "quoteAssetVolume" : 5.3669608,
-  "usdVolume" : 1.8843231158699997E7,
+  "usdVolume" : 36110.091607815804,
   "numberOfTrades" : 492,
   "rsi" : 0.0
 }, {
@@ -2185,7 +865,7 @@
   "close" : 0.0019822,
   "volume" : 2933.22,
   "quoteAssetVolume" : 5.70414521,
-  "usdVolume" : 1.98609206166E7,
+  "usdVolume" : 38736.77208096051,
   "numberOfTrades" : 527,
   "rsi" : 0.0
 }, {
@@ -2200,7 +880,7 @@
   "close" : 0.0020114,
   "volume" : 14182.26,
   "quoteAssetVolume" : 28.4447542,
-  "usdVolume" : 9.651729951870002E7,
+  "usdVolume" : 192874.35139831615,
   "numberOfTrades" : 1711,
   "rsi" : 0.0
 }, {
@@ -2215,7 +895,7 @@
   "close" : 0.0020157,
   "volume" : 1392.15,
   "quoteAssetVolume" : 2.81265219,
-  "usdVolume" : 9509171.06475,
+  "usdVolume" : 19188.234784261575,
   "numberOfTrades" : 209,
   "rsi" : 0.0
 }, {
@@ -2230,7 +910,7 @@
   "close" : 0.0020736,
   "volume" : 6150.83,
   "quoteAssetVolume" : 12.50173559,
-  "usdVolume" : 4.345176968125E7,
+  "usdVolume" : 88984.10260947228,
   "numberOfTrades" : 791,
   "rsi" : 0.0
 }, {
@@ -2245,7 +925,7 @@
   "close" : 0.0020477,
   "volume" : 3360.99,
   "quoteAssetVolume" : 6.88908798,
-  "usdVolume" : 2.442661660815E7,
+  "usdVolume" : 50375.8381135321,
   "numberOfTrades" : 691,
   "rsi" : 0.0
 }, {
@@ -2260,7 +940,7 @@
   "close" : 0.0020499,
   "volume" : 1740.96,
   "quoteAssetVolume" : 3.58313051,
-  "usdVolume" : 1.26830589912E7,
+  "usdVolume" : 25903.72935608328,
   "numberOfTrades" : 388,
   "rsi" : 0.0
 }, {
@@ -2275,7 +955,7 @@
   "close" : 0.0020605,
   "volume" : 2016.0,
   "quoteAssetVolume" : 4.15190306,
-  "usdVolume" : 1.478160432E7,
+  "usdVolume" : 30386.926135439997,
   "numberOfTrades" : 289,
   "rsi" : 0.0
 }, {
@@ -2290,7 +970,7 @@
   "close" : 0.002004,
   "volume" : 4162.46,
   "quoteAssetVolume" : 8.4128586,
-  "usdVolume" : 2.94773554189E7,
+  "usdVolume" : 59889.21425965064,
   "numberOfTrades" : 629,
   "rsi" : 0.0
 }, {
@@ -2305,7 +985,7 @@
   "close" : 0.0020109,
   "volume" : 1503.55,
   "quoteAssetVolume" : 3.02589223,
-  "usdVolume" : 1.0347536348499998E7,
+  "usdVolume" : 20736.57208582635,
   "numberOfTrades" : 209,
   "rsi" : 0.0
 }, {
@@ -2320,7 +1000,7 @@
   "close" : 0.0020666,
   "volume" : 2545.82,
   "quoteAssetVolume" : 5.23824839,
-  "usdVolume" : 1.7553887147600003E7,
+  "usdVolume" : 35780.43904041131,
   "numberOfTrades" : 510,
   "rsi" : 0.0
 }, {
@@ -2335,7 +1015,7 @@
   "close" : 0.0021945,
   "volume" : 3825.14,
   "quoteAssetVolume" : 8.21093952,
-  "usdVolume" : 2.6318703638699997E7,
+  "usdVolume" : 56109.20416799114,
   "numberOfTrades" : 809,
   "rsi" : 0.0
 }, {
@@ -2350,7 +1030,7 @@
   "close" : 0.0022708,
   "volume" : 9293.94,
   "quoteAssetVolume" : 20.97569228,
-  "usdVolume" : 6.3847509011999995E7,
+  "usdVolume" : 142508.2495370177,
   "numberOfTrades" : 992,
   "rsi" : 0.0
 }, {
@@ -2365,7 +1045,7 @@
   "close" : 0.002198,
   "volume" : 2340.6,
   "quoteAssetVolume" : 5.22360929,
-  "usdVolume" : 1.5805533462000001E7,
+  "usdVolume" : 35326.545625190396,
   "numberOfTrades" : 456,
   "rsi" : 0.0
 }, {
@@ -2380,7 +1060,7 @@
   "close" : 0.0022093,
   "volume" : 3965.93,
   "quoteAssetVolume" : 8.75845399,
-  "usdVolume" : 2.72438768164E7,
+  "usdVolume" : 60114.99318097504,
   "numberOfTrades" : 757,
   "rsi" : 0.0
 }, {
@@ -2395,7 +1075,7 @@
   "close" : 0.0022246,
   "volume" : 7235.52,
   "quoteAssetVolume" : 15.95967003,
-  "usdVolume" : 5.1193836432000004E7,
+  "usdVolume" : 113492.04020825618,
   "numberOfTrades" : 768,
   "rsi" : 0.0
 }, {
@@ -2410,7 +1090,7 @@
   "close" : 0.002291,
   "volume" : 1575.06,
   "quoteAssetVolume" : 3.57684848,
-  "usdVolume" : 1.12538037E7,
+  "usdVolume" : 25444.747786800002,
   "numberOfTrades" : 560,
   "rsi" : 0.0
 }, {
@@ -2425,7 +1105,7 @@
   "close" : 0.0022526,
   "volume" : 803.11,
   "quoteAssetVolume" : 1.82189581,
-  "usdVolume" : 5779308.0576,
+  "usdVolume" : 13128.691552136164,
   "numberOfTrades" : 214,
   "rsi" : 0.0
 }, {
@@ -2440,7 +1120,7 @@
   "close" : 0.0021892,
   "volume" : 3501.05,
   "quoteAssetVolume" : 7.81002065,
-  "usdVolume" : 2.4467017904E7,
+  "usdVolume" : 54386.03137888883,
   "numberOfTrades" : 750,
   "rsi" : 0.0
 }, {
@@ -2455,7 +1135,7 @@
   "close" : 0.0022082,
   "volume" : 4728.91,
   "quoteAssetVolume" : 10.35233752,
-  "usdVolume" : 3.235669182665E7,
+  "usdVolume" : 71201.25556952461,
   "numberOfTrades" : 400,
   "rsi" : 0.0
 }, {
@@ -2470,7 +1150,7 @@
   "close" : 0.0022052,
   "volume" : 1874.07,
   "quoteAssetVolume" : 4.13878618,
-  "usdVolume" : 1.31088572802E7,
+  "usdVolume" : 28921.77391326399,
   "numberOfTrades" : 384,
   "rsi" : 0.0
 }, {
@@ -2485,7 +1165,7 @@
   "close" : 0.0021439,
   "volume" : 3829.52,
   "quoteAssetVolume" : 8.28901364,
-  "usdVolume" : 2.8002465062799998E7,
+  "usdVolume" : 60877.93377897403,
   "numberOfTrades" : 668,
   "rsi" : 0.0
 }, {
@@ -2500,7 +1180,7 @@
   "close" : 0.002122,
   "volume" : 3140.02,
   "quoteAssetVolume" : 6.71466305,
-  "usdVolume" : 2.3546162174599998E7,
+  "usdVolume" : 50252.95196290785,
   "numberOfTrades" : 570,
   "rsi" : 0.0
 }, {
@@ -2515,7 +1195,7 @@
   "close" : 0.0021562,
   "volume" : 1807.16,
   "quoteAssetVolume" : 3.87286686,
-  "usdVolume" : 1.36067762892E7,
+  "usdVolume" : 29099.99279241528,
   "numberOfTrades" : 276,
   "rsi" : 0.0
 }, {
@@ -2530,7 +1210,7 @@
   "close" : 0.0021314,
   "volume" : 1049.92,
   "quoteAssetVolume" : 2.2421851,
-  "usdVolume" : 8004605.828800001,
+  "usdVolume" : 17153.31285079328,
   "numberOfTrades" : 242,
   "rsi" : 0.0
 }, {
@@ -2545,7 +1225,7 @@
   "close" : 0.0021132,
   "volume" : 1555.26,
   "quoteAssetVolume" : 3.29303177,
-  "usdVolume" : 1.20475338669E7,
+  "usdVolume" : 25531.921044901737,
   "numberOfTrades" : 354,
   "rsi" : 0.0
 }, {
@@ -2560,7 +1240,7 @@
   "close" : 0.0021078,
   "volume" : 926.89,
   "quoteAssetVolume" : 1.95801086,
-  "usdVolume" : 7207654.2113,
+  "usdVolume" : 15220.46185046628,
   "numberOfTrades" : 197,
   "rsi" : 0.0
 }, {
@@ -2575,7 +1255,7 @@
   "close" : 0.0019809,
   "volume" : 19322.01,
   "quoteAssetVolume" : 38.5650493,
-  "usdVolume" : 1.598281887582E8,
+  "usdVolume" : 326111.1581709812,
   "numberOfTrades" : 3075,
   "rsi" : 0.0
 }, {
@@ -2590,7 +1270,7 @@
   "close" : 0.0019701,
   "volume" : 13312.49,
   "quoteAssetVolume" : 26.04004008,
-  "usdVolume" : 1.159508560257E8,
+  "usdVolume" : 229265.68760182624,
   "numberOfTrades" : 1624,
   "rsi" : 0.0
 }, {
@@ -2605,7 +1285,7 @@
   "close" : 0.0019781,
   "volume" : 2876.19,
   "quoteAssetVolume" : 5.68464764,
-  "usdVolume" : 2.50990145112E7,
+  "usdVolume" : 49495.80218474845,
   "numberOfTrades" : 540,
   "rsi" : 0.0
 }, {
@@ -2620,7 +1300,7 @@
   "close" : 0.0019542,
   "volume" : 4766.88,
   "quoteAssetVolume" : 9.28631399,
-  "usdVolume" : 4.24458725904E7,
+  "usdVolume" : 83442.35370376609,
   "numberOfTrades" : 389,
   "rsi" : 0.0
 }, {
@@ -2635,7 +1315,7 @@
   "close" : 0.0019205,
   "volume" : 6106.42,
   "quoteAssetVolume" : 11.77941528,
-  "usdVolume" : 5.4596218871800005E7,
+  "usdVolume" : 105754.5559254681,
   "numberOfTrades" : 1251,
   "rsi" : 0.0
 }, {
@@ -2650,7 +1330,7 @@
   "close" : 0.0019134,
   "volume" : 2705.62,
   "quoteAssetVolume" : 5.21967259,
-  "usdVolume" : 2.4071143566400003E7,
+  "usdVolume" : 46236.112242337476,
   "numberOfTrades" : 425,
   "rsi" : 0.0
 }, {
@@ -2665,7 +1345,7 @@
   "close" : 0.0018712,
   "volume" : 4096.11,
   "quoteAssetVolume" : 7.83225937,
-  "usdVolume" : 3.6687587475899994E7,
+  "usdVolume" : 69468.64409678806,
   "numberOfTrades" : 541,
   "rsi" : 0.0
 }, {
@@ -2680,7 +1360,7 @@
   "close" : 0.0017974,
   "volume" : 3711.29,
   "quoteAssetVolume" : 6.76700252,
-  "usdVolume" : 3.37297993747E7,
+  "usdVolume" : 61894.14241640696,
   "numberOfTrades" : 878,
   "rsi" : 0.0
 }, {
@@ -2695,7 +1375,7 @@
   "close" : 0.0017036,
   "volume" : 7875.38,
   "quoteAssetVolume" : 13.79830283,
-  "usdVolume" : 7.541270941190001E7,
+  "usdVolume" : 131425.37268557178,
   "numberOfTrades" : 1588,
   "rsi" : 0.0
 }, {
@@ -2710,7 +1390,7 @@
   "close" : 0.0017468,
   "volume" : 2350.63,
   "quoteAssetVolume" : 4.05116082,
-  "usdVolume" : 2.329216936015E7,
+  "usdVolume" : 40160.3751213993,
   "numberOfTrades" : 528,
   "rsi" : 0.0
 }, {
@@ -2725,7 +1405,7 @@
   "close" : 0.00176,
   "volume" : 2472.14,
   "quoteAssetVolume" : 4.36408718,
-  "usdVolume" : 2.39333682929E7,
+  "usdVolume" : 41998.912554304414,
   "numberOfTrades" : 573,
   "rsi" : 0.0
 }, {
@@ -2740,7 +1420,7 @@
   "close" : 0.00176,
   "volume" : 23251.41,
   "quoteAssetVolume" : 40.77929504,
-  "usdVolume" : 2.1238477307775003E8,
+  "usdVolume" : 373752.83915869537,
   "numberOfTrades" : 3274,
   "rsi" : 0.0
 }, {
@@ -2755,7 +1435,7 @@
   "close" : 0.00176,
   "volume" : 6003.19,
   "quoteAssetVolume" : 10.34438153,
-  "usdVolume" : 5.19136060673E7,
+  "usdVolume" : 91147.85842303804,
   "numberOfTrades" : 864,
   "rsi" : 0.0
 }, {
@@ -2770,7 +1450,7 @@
   "close" : 0.0017979,
   "volume" : 13913.4,
   "quoteAssetVolume" : 25.20102555,
-  "usdVolume" : 1.2101360524200001E8,
+  "usdVolume" : 215310.3767070252,
   "numberOfTrades" : 1253,
   "rsi" : 0.0
 }, {
@@ -2785,7 +1465,7 @@
   "close" : 0.001739,
   "volume" : 1462.76,
   "quoteAssetVolume" : 2.59029138,
-  "usdVolume" : 1.32684838598E7,
+  "usdVolume" : 23404.755732414164,
   "numberOfTrades" : 369,
   "rsi" : 0.0
 }, {
@@ -2800,7 +1480,7 @@
   "close" : 0.0016726,
   "volume" : 13892.21,
   "quoteAssetVolume" : 23.87989195,
-  "usdVolume" : 1.3280848568424998E8,
+  "usdVolume" : 226286.66011250037,
   "numberOfTrades" : 554,
   "rsi" : 0.0
 }, {
@@ -2815,7 +1495,7 @@
   "close" : 0.001696,
   "volume" : 3542.67,
   "quoteAssetVolume" : 6.01340207,
-  "usdVolume" : 3.384488013165E7,
+  "usdVolume" : 56984.426672518806,
   "numberOfTrades" : 384,
   "rsi" : 0.0
 }, {
@@ -2830,7 +1510,7 @@
   "close" : 0.001713,
   "volume" : 1809.51,
   "quoteAssetVolume" : 3.08461051,
-  "usdVolume" : 1.6914385677449998E7,
+  "usdVolume" : 28762.106381182166,
   "numberOfTrades" : 204,
   "rsi" : 0.0
 }, {
@@ -2845,7 +1525,7 @@
   "close" : 0.0016815,
   "volume" : 1322.5,
   "quoteAssetVolume" : 2.23715424,
-  "usdVolume" : 1.26049260375E7,
+  "usdVolume" : 21406.202078456252,
   "numberOfTrades" : 220,
   "rsi" : 0.0
 }, {
@@ -2860,7 +1540,7 @@
   "close" : 0.0017106,
   "volume" : 1994.13,
   "quoteAssetVolume" : 3.39361637,
-  "usdVolume" : 1.936173602745E7,
+  "usdVolume" : 32821.554410289405,
   "numberOfTrades" : 304,
   "rsi" : 0.0
 }, {
@@ -2875,7 +1555,7 @@
   "close" : 0.001761,
   "volume" : 3001.4,
   "quoteAssetVolume" : 5.19837497,
-  "usdVolume" : 2.9278416888E7,
+  "usdVolume" : 50795.865442155606,
   "numberOfTrades" : 437,
   "rsi" : 0.0
 }, {
@@ -2890,7 +1570,7 @@
   "close" : 0.0017714,
   "volume" : 3960.74,
   "quoteAssetVolume" : 7.00868624,
-  "usdVolume" : 3.8206565476799995E7,
+  "usdVolume" : 67456.37217813978,
   "numberOfTrades" : 398,
   "rsi" : 0.0
 }, {
@@ -2905,7 +1585,7 @@
   "close" : 0.0017774,
   "volume" : 3996.0,
   "quoteAssetVolume" : 7.1082215,
-  "usdVolume" : 3.7087275599999994E7,
+  "usdVolume" : 65937.91789817999,
   "numberOfTrades" : 603,
   "rsi" : 0.0
 }, {
@@ -2920,7 +1600,7 @@
   "close" : 0.0018107,
   "volume" : 3242.17,
   "quoteAssetVolume" : 5.84366005,
-  "usdVolume" : 2.9537481778849997E7,
+  "usdVolume" : 52963.89867007095,
   "numberOfTrades" : 391,
   "rsi" : 0.0
 }, {
@@ -2935,7 +1615,7 @@
   "close" : 0.0017938,
   "volume" : 782.84,
   "quoteAssetVolume" : 1.41083495,
-  "usdVolume" : 7182345.6332,
+  "usdVolume" : 12953.294513415041,
   "numberOfTrades" : 186,
   "rsi" : 0.0
 }, {
@@ -2950,7 +1630,7 @@
   "close" : 0.0018313,
   "volume" : 2179.26,
   "quoteAssetVolume" : 3.9614866,
-  "usdVolume" : 1.9493578766700003E7,
+  "usdVolume" : 35339.35715315991,
   "numberOfTrades" : 342,
   "rsi" : 0.0
 }, {
@@ -2965,7 +1645,7 @@
   "close" : 0.0018393,
   "volume" : 2003.08,
   "quoteAssetVolume" : 3.68870942,
-  "usdVolume" : 1.76409152366E7,
+  "usdVolume" : 32371.90163636702,
   "numberOfTrades" : 254,
   "rsi" : 0.0
 }, {
@@ -2980,7 +1660,7 @@
   "close" : 0.0018341,
   "volume" : 3533.84,
   "quoteAssetVolume" : 6.48919987,
-  "usdVolume" : 3.1330760402E7,
+  "usdVolume" : 57545.434803257805,
   "numberOfTrades" : 541,
   "rsi" : 0.0
 }, {
@@ -2995,7 +1675,7 @@
   "close" : 0.001789,
   "volume" : 1116.91,
   "quoteAssetVolume" : 2.0203113,
-  "usdVolume" : 1.0080704712299999E7,
+  "usdVolume" : 18245.86594556914,
   "numberOfTrades" : 253,
   "rsi" : 0.0
 }, {
@@ -3010,7 +1690,7 @@
   "close" : 0.0017845,
   "volume" : 3650.71,
   "quoteAssetVolume" : 6.52334211,
-  "usdVolume" : 3.4289293675E7,
+  "usdVolume" : 61316.942748127505,
   "numberOfTrades" : 322,
   "rsi" : 0.0
 }, {
@@ -3025,7 +1705,7 @@
   "close" : 0.0018017,
   "volume" : 866.2,
   "quoteAssetVolume" : 1.55745735,
-  "usdVolume" : 8229285.459,
+  "usdVolume" : 14755.3391258803,
   "numberOfTrades" : 227,
   "rsi" : 0.0
 }, {
@@ -3040,7 +1720,7 @@
   "close" : 0.00183,
   "volume" : 4230.92,
   "quoteAssetVolume" : 7.7381644,
-  "usdVolume" : 4.04647515806E7,
+  "usdVolume" : 73771.38680412961,
   "numberOfTrades" : 533,
   "rsi" : 0.0
 }, {
@@ -3055,7 +1735,7 @@
   "close" : 0.001805,
   "volume" : 3703.61,
   "quoteAssetVolume" : 6.83412513,
-  "usdVolume" : 3.54645101326E7,
+  "usdVolume" : 64426.7505545636,
   "numberOfTrades" : 507,
   "rsi" : 0.0
 }, {
@@ -3070,7 +1750,7 @@
   "close" : 0.0017576,
   "volume" : 6206.06,
   "quoteAssetVolume" : 11.13916431,
-  "usdVolume" : 6.09948022859E7,
+  "usdVolume" : 108679.05305672534,
   "numberOfTrades" : 811,
   "rsi" : 0.0
 }, {
@@ -3085,7 +1765,7 @@
   "close" : 0.0018119,
   "volume" : 5783.04,
   "quoteAssetVolume" : 10.36240219,
-  "usdVolume" : 5.70416222592E7,
+  "usdVolume" : 101774.4159996749,
   "numberOfTrades" : 643,
   "rsi" : 0.0
 }, {
@@ -3100,7 +1780,7 @@
   "close" : 0.001819,
   "volume" : 1474.56,
   "quoteAssetVolume" : 2.67963917,
-  "usdVolume" : 1.4143367577599999E7,
+  "usdVolume" : 25672.04586602496,
   "numberOfTrades" : 251,
   "rsi" : 0.0
 }, {
@@ -3115,7 +1795,7 @@
   "close" : 0.001789,
   "volume" : 3644.9,
   "quoteAssetVolume" : 6.55094425,
-  "usdVolume" : 3.5452757707499996E7,
+  "usdVolume" : 63949.8801203675,
   "numberOfTrades" : 364,
   "rsi" : 0.0
 }, {
@@ -3130,7 +1810,7 @@
   "close" : 0.0018349,
   "volume" : 1871.25,
   "quoteAssetVolume" : 3.40051683,
-  "usdVolume" : 1.815861E7,
+  "usdVolume" : 32901.566379735,
   "numberOfTrades" : 350,
   "rsi" : 0.0
 }, {
@@ -3145,7 +1825,7 @@
   "close" : 0.001816,
   "volume" : 2171.6,
   "quoteAssetVolume" : 3.97025072,
-  "usdVolume" : 2.0942454364E7,
+  "usdVolume" : 38232.9377747492,
   "numberOfTrades" : 253,
   "rsi" : 0.0
 }, {
@@ -3160,7 +1840,7 @@
   "close" : 0.0017881,
   "volume" : 2784.37,
   "quoteAssetVolume" : 5.01580438,
-  "usdVolume" : 2.7038112149749998E7,
+  "usdVolume" : 48753.424200254725,
   "numberOfTrades" : 373,
   "rsi" : 0.0
 }, {
@@ -3175,7 +1855,7 @@
   "close" : 0.0017802,
   "volume" : 1409.98,
   "quoteAssetVolume" : 2.52219872,
-  "usdVolume" : 1.3768045805799998E7,
+  "usdVolume" : 24530.499104242557,
   "numberOfTrades" : 215,
   "rsi" : 0.0
 }, {
@@ -3190,7 +1870,7 @@
   "close" : 0.0017789,
   "volume" : 3895.86,
   "quoteAssetVolume" : 6.95104044,
-  "usdVolume" : 3.81088155375E7,
+  "usdVolume" : 67797.48601752074,
   "numberOfTrades" : 339,
   "rsi" : 0.0
 }, {
@@ -3205,7 +1885,7 @@
   "close" : 0.00176,
   "volume" : 4433.58,
   "quoteAssetVolume" : 7.82724863,
-  "usdVolume" : 4.3614367862399995E7,
+  "usdVolume" : 77158.08429766496,
   "numberOfTrades" : 394,
   "rsi" : 0.0
 }, {
@@ -3220,7 +1900,7 @@
   "close" : 0.0017508,
   "volume" : 3976.52,
   "quoteAssetVolume" : 6.99934016,
-  "usdVolume" : 3.80982825812E7,
+  "usdVolume" : 66930.68383653097,
   "numberOfTrades" : 499,
   "rsi" : 0.0
 }, {
@@ -3235,7 +1915,7 @@
   "close" : 0.0017571,
   "volume" : 2364.22,
   "quoteAssetVolume" : 4.15684595,
-  "usdVolume" : 2.2141747777E7,
+  "usdVolume" : 38778.218928826696,
   "numberOfTrades" : 281,
   "rsi" : 0.0
 }, {
@@ -3250,7 +1930,7 @@
   "close" : 0.0017746,
   "volume" : 909.38,
   "quoteAssetVolume" : 1.60779506,
-  "usdVolume" : 8611151.111900002,
+  "usdVolume" : 15205.16627211974,
   "numberOfTrades" : 148,
   "rsi" : 0.0
 }, {
@@ -3265,7 +1945,7 @@
   "close" : 0.001772,
   "volume" : 1650.7,
   "quoteAssetVolume" : 2.92734418,
-  "usdVolume" : 1.5526310876500001E7,
+  "usdVolume" : 27543.904892689996,
   "numberOfTrades" : 187,
   "rsi" : 0.0
 }, {
@@ -3280,7 +1960,7 @@
   "close" : 0.0017408,
   "volume" : 3472.91,
   "quoteAssetVolume" : 6.06278834,
-  "usdVolume" : 3.259345136005E7,
+  "usdVolume" : 57275.26153840525,
   "numberOfTrades" : 344,
   "rsi" : 0.0
 }, {
@@ -3295,7 +1975,7 @@
   "close" : 0.0017233,
   "volume" : 2187.1,
   "quoteAssetVolume" : 3.77799854,
-  "usdVolume" : 2.0729946188E7,
+  "usdVolume" : 35880.6354183228,
   "numberOfTrades" : 247,
   "rsi" : 0.0
 }, {
@@ -3310,7 +1990,7 @@
   "close" : 0.0017326,
   "volume" : 1777.99,
   "quoteAssetVolume" : 3.08296014,
-  "usdVolume" : 1.68742985734E7,
+  "usdVolume" : 29162.711060880243,
   "numberOfTrades" : 290,
   "rsi" : 0.0
 }, {
@@ -3325,7 +2005,7 @@
   "close" : 0.0017213,
   "volume" : 1752.23,
   "quoteAssetVolume" : 3.02848095,
-  "usdVolume" : 1.650757484585E7,
+  "usdVolume" : 28518.07822947411,
   "numberOfTrades" : 259,
   "rsi" : 0.0
 }, {
@@ -3340,7 +2020,7 @@
   "close" : 0.0017184,
   "volume" : 1493.67,
   "quoteAssetVolume" : 2.57100107,
-  "usdVolume" : 1.39477859031E7,
+  "usdVolume" : 23991.68391173796,
   "numberOfTrades" : 200,
   "rsi" : 0.0
 }, {
@@ -3355,7 +2035,7 @@
   "close" : 0.0017176,
   "volume" : 1852.77,
   "quoteAssetVolume" : 3.17392897,
-  "usdVolume" : 1.727727479085E7,
+  "usdVolume" : 29634.99734400658,
   "numberOfTrades" : 163,
   "rsi" : 0.0
 }, {
@@ -3370,7 +2050,7 @@
   "close" : 0.0017163,
   "volume" : 1280.93,
   "quoteAssetVolume" : 2.20394973,
-  "usdVolume" : 1.193894008825E7,
+  "usdVolume" : 20508.186726749227,
   "numberOfTrades" : 156,
   "rsi" : 0.0
 }, {
@@ -3385,7 +2065,7 @@
   "close" : 0.0017014,
   "volume" : 1601.55,
   "quoteAssetVolume" : 2.73794228,
-  "usdVolume" : 1.5192487478249999E7,
+  "usdVolume" : 25990.46776420807,
   "numberOfTrades" : 147,
   "rsi" : 0.0
 }, {
@@ -3400,7 +2080,7 @@
   "close" : 0.0017007,
   "volume" : 2605.93,
   "quoteAssetVolume" : 4.42770896,
-  "usdVolume" : 2.51651272391E7,
+  "usdVolume" : 42846.32056555477,
   "numberOfTrades" : 204,
   "rsi" : 0.0
 }, {
@@ -3415,7 +2095,7 @@
   "close" : 0.0017217,
   "volume" : 5619.95,
   "quoteAssetVolume" : 9.69446983,
-  "usdVolume" : 5.31441017835E7,
+  "usdVolume" : 91011.32078655645,
   "numberOfTrades" : 385,
   "rsi" : 0.0
 }, {
@@ -3430,7 +2110,7 @@
   "close" : 0.0017196,
   "volume" : 1626.52,
   "quoteAssetVolume" : 2.80458545,
-  "usdVolume" : 1.5065698428199999E7,
+  "usdVolume" : 25909.99603080168,
   "numberOfTrades" : 244,
   "rsi" : 0.0
 }, {
@@ -3445,7 +2125,7 @@
   "close" : 0.0017195,
   "volume" : 1344.68,
   "quoteAssetVolume" : 2.30620894,
-  "usdVolume" : 1.23699869794E7,
+  "usdVolume" : 21270.81427076144,
   "numberOfTrades" : 296,
   "rsi" : 0.0
 }, {
@@ -3460,7 +2140,7 @@
   "close" : 0.0016789,
   "volume" : 1766.69,
   "quoteAssetVolume" : 2.98196815,
-  "usdVolume" : 1.6040935691949999E7,
+  "usdVolume" : 27263.45458564003,
   "numberOfTrades" : 311,
   "rsi" : 0.0
 }, {
@@ -3475,7 +2155,7 @@
   "close" : 0.0016879,
   "volume" : 1784.6,
   "quoteAssetVolume" : 2.99806908,
-  "usdVolume" : 1.6167360625E7,
+  "usdVolume" : 27219.007323669997,
   "numberOfTrades" : 377,
   "rsi" : 0.0
 }, {
@@ -3490,7 +2170,7 @@
   "close" : 0.001684,
   "volume" : 2452.89,
   "quoteAssetVolume" : 4.13738848,
-  "usdVolume" : 2.2444372755749997E7,
+  "usdVolume" : 37819.804894474844,
   "numberOfTrades" : 353,
   "rsi" : 0.0
 }, {
@@ -3505,7 +2185,7 @@
   "close" : 0.0016855,
   "volume" : 1413.46,
   "quoteAssetVolume" : 2.38185389,
-  "usdVolume" : 1.2953922727400001E7,
+  "usdVolume" : 21835.135803099543,
   "numberOfTrades" : 248,
   "rsi" : 0.0
 }, {
@@ -3520,7 +2200,7 @@
   "close" : 0.0017133,
   "volume" : 1495.08,
   "quoteAssetVolume" : 2.54797245,
-  "usdVolume" : 1.37381555628E7,
+  "usdVolume" : 23334.71615765784,
   "numberOfTrades" : 345,
   "rsi" : 0.0
 }, {
@@ -3535,7 +2215,7 @@
   "close" : 0.0016878,
   "volume" : 4368.65,
   "quoteAssetVolume" : 7.45714312,
-  "usdVolume" : 4.003114132874999E7,
+  "usdVolume" : 68079.09006943686,
   "numberOfTrades" : 440,
   "rsi" : 0.0
 }, {
@@ -3550,7 +2230,7 @@
   "close" : 0.0016868,
   "volume" : 992.21,
   "quoteAssetVolume" : 1.677469,
-  "usdVolume" : 9006483.65095,
+  "usdVolume" : 15204.313491865581,
   "numberOfTrades" : 152,
   "rsi" : 0.0
 }, {
@@ -3565,7 +2245,7 @@
   "close" : 0.0017019,
   "volume" : 789.1,
   "quoteAssetVolume" : 1.33840047,
-  "usdVolume" : 7180802.109000001,
+  "usdVolume" : 12185.972130646602,
   "numberOfTrades" : 177,
   "rsi" : 0.0
 }, {
@@ -3580,7 +2260,7 @@
   "close" : 0.0017053,
   "volume" : 1456.33,
   "quoteAssetVolume" : 2.47542549,
-  "usdVolume" : 1.3263692952949999E7,
+  "usdVolume" : 22617.244553648194,
   "numberOfTrades" : 200,
   "rsi" : 0.0
 }, {
@@ -3595,7 +2275,7 @@
   "close" : 0.0017484,
   "volume" : 4219.01,
   "quoteAssetVolume" : 7.29665629,
-  "usdVolume" : 3.885980336145E7,
+  "usdVolume" : 67155.62406313616,
   "numberOfTrades" : 477,
   "rsi" : 0.0
 }, {
@@ -3610,7 +2290,7 @@
   "close" : 0.0018131,
   "volume" : 34773.95,
   "quoteAssetVolume" : 62.20047644,
-  "usdVolume" : 3.2352518152675E8,
+  "usdVolume" : 576134.0932029755,
   "numberOfTrades" : 2554,
   "rsi" : 0.0
 }, {
@@ -3625,7 +2305,7 @@
   "close" : 0.0018265,
   "volume" : 14433.0,
   "quoteAssetVolume" : 26.32889963,
-  "usdVolume" : 1.34920622145E8,
+  "usdVolume" : 245056.05798115348,
   "numberOfTrades" : 966,
   "rsi" : 0.0
 }, {
@@ -3640,7 +2320,7 @@
   "close" : 0.0018229,
   "volume" : 3488.02,
   "quoteAssetVolume" : 6.32714861,
-  "usdVolume" : 3.25688286668E7,
+  "usdVolume" : 59512.904614786465,
   "numberOfTrades" : 402,
   "rsi" : 0.0
 }, {
@@ -3655,7 +2335,7 @@
   "close" : 0.0018596,
   "volume" : 12784.01,
   "quoteAssetVolume" : 23.65046322,
-  "usdVolume" : 1.1839827765435E8,
+  "usdVolume" : 217894.5272877241,
   "numberOfTrades" : 1069,
   "rsi" : 0.0
 }, {
@@ -3670,7 +2350,7 @@
   "close" : 0.0019096,
   "volume" : 2179.78,
   "quoteAssetVolume" : 4.11313212,
-  "usdVolume" : 2.01890351688E7,
+  "usdVolume" : 38063.089195369044,
   "numberOfTrades" : 495,
   "rsi" : 0.0
 }, {
@@ -3685,7 +2365,7 @@
   "close" : 0.0019649,
   "volume" : 5518.71,
   "quoteAssetVolume" : 10.82993586,
-  "usdVolume" : 5.1149804918850005E7,
+  "usdVolume" : 99010.82810290677,
   "numberOfTrades" : 788,
   "rsi" : 0.0
 }, {
@@ -3700,7 +2380,7 @@
   "close" : 0.0019892,
   "volume" : 26634.09,
   "quoteAssetVolume" : 52.36364294,
-  "usdVolume" : 2.4688749383444998E8,
+  "usdVolume" : 487429.90621980146,
   "numberOfTrades" : 1958,
   "rsi" : 0.0
 }, {
@@ -3715,7 +2395,7 @@
   "close" : 0.0019552,
   "volume" : 5327.13,
   "quoteAssetVolume" : 10.52873892,
-  "usdVolume" : 4.925317901924999E7,
+  "usdVolume" : 96922.04181682556,
   "numberOfTrades" : 575,
   "rsi" : 0.0
 }, {
@@ -3730,7 +2410,7 @@
   "close" : 0.0019128,
   "volume" : 5663.79,
   "quoteAssetVolume" : 10.894018,
-  "usdVolume" : 5.225103977445E7,
+  "usdVolume" : 100934.19556397496,
   "numberOfTrades" : 556,
   "rsi" : 0.0
 }, {
@@ -3745,7 +2425,7 @@
   "close" : 0.0018779,
   "volume" : 4571.36,
   "quoteAssetVolume" : 8.52803481,
-  "usdVolume" : 4.18817489072E7,
+  "usdVolume" : 79435.47070378048,
   "numberOfTrades" : 684,
   "rsi" : 0.0
 }, {
@@ -3760,7 +2440,7 @@
   "close" : 0.0018658,
   "volume" : 3456.14,
   "quoteAssetVolume" : 6.5315229,
-  "usdVolume" : 3.1604361177399997E7,
+  "usdVolume" : 59131.53080055268,
   "numberOfTrades" : 434,
   "rsi" : 0.0
 }, {
@@ -3775,7 +2455,7 @@
   "close" : 0.001868,
   "volume" : 23447.06,
   "quoteAssetVolume" : 43.89900286,
-  "usdVolume" : 2.1491329001870003E8,
+  "usdVolume" : 400974.92481678,
   "numberOfTrades" : 917,
   "rsi" : 0.0
 }, {
@@ -3790,7 +2470,7 @@
   "close" : 0.0019547,
   "volume" : 7889.73,
   "quoteAssetVolume" : 15.30570941,
-  "usdVolume" : 7.253884824704999E7,
+  "usdVolume" : 138686.74762574167,
   "numberOfTrades" : 679,
   "rsi" : 0.0
 }, {
@@ -3805,7 +2485,7 @@
   "close" : 0.001912,
   "volume" : 4519.06,
   "quoteAssetVolume" : 8.77858781,
-  "usdVolume" : 4.151179142110001E7,
+  "usdVolume" : 80311.46257517293,
   "numberOfTrades" : 513,
   "rsi" : 0.0
 }, {
@@ -3820,7 +2500,7 @@
   "close" : 0.0018898,
   "volume" : 23286.59,
   "quoteAssetVolume" : 43.99800005,
-  "usdVolume" : 2.1600361444920003E8,
+  "usdVolume" : 410571.05942978914,
   "numberOfTrades" : 898,
   "rsi" : 0.0
 }, {
@@ -3835,7 +2515,7 @@
   "close" : 0.0019005,
   "volume" : 3896.23,
   "quoteAssetVolume" : 7.3550903,
-  "usdVolume" : 3.6876161052250005E7,
+  "usdVolume" : 69843.40249249415,
   "numberOfTrades" : 336,
   "rsi" : 0.0
 }, {
@@ -3850,7 +2530,7 @@
   "close" : 0.0019502,
   "volume" : 8459.19,
   "quoteAssetVolume" : 16.23250304,
-  "usdVolume" : 8.097969898215E7,
+  "usdVolume" : 155853.86259603035,
   "numberOfTrades" : 606,
   "rsi" : 0.0
 }, {
@@ -3865,7 +2545,7 @@
   "close" : 0.0020094,
   "volume" : 7665.01,
   "quoteAssetVolume" : 15.12937963,
-  "usdVolume" : 7.34659015458E7,
+  "usdVolume" : 145444.69505920215,
   "numberOfTrades" : 929,
   "rsi" : 0.0
 }, {
@@ -3880,7 +2560,7 @@
   "close" : 0.0020418,
   "volume" : 21707.11,
   "quoteAssetVolume" : 44.41692385,
-  "usdVolume" : 2.090153744079E8,
+  "usdVolume" : 423583.9292159657,
   "numberOfTrades" : 1057,
   "rsi" : 0.0
 }, {
@@ -3895,7 +2575,7 @@
   "close" : 0.001968,
   "volume" : 18797.6,
   "quoteAssetVolume" : 37.27073849,
-  "usdVolume" : 1.8471837592E8,
+  "usdVolume" : 370134.83176963514,
   "numberOfTrades" : 1236,
   "rsi" : 0.0
 }, {
@@ -3910,7 +2590,7 @@
   "close" : 0.0017912,
   "volume" : 18293.38,
   "quoteAssetVolume" : 33.52795725,
-  "usdVolume" : 1.9193450882760003E8,
+  "usdVolume" : 359223.3526061126,
   "numberOfTrades" : 1940,
   "rsi" : 0.0
 }, {
@@ -3925,7 +2605,7 @@
   "close" : 0.0018457,
   "volume" : 13080.38,
   "quoteAssetVolume" : 23.98872687,
-  "usdVolume" : 1.437501715069E8,
+  "usdVolume" : 261409.77404640976,
   "numberOfTrades" : 1456,
   "rsi" : 0.0
 }, {
@@ -3940,7 +2620,7 @@
   "close" : 0.001791,
   "volume" : 5847.31,
   "quoteAssetVolume" : 10.56557867,
-  "usdVolume" : 6.4461417880650006E7,
+  "usdVolume" : 117262.31718843401,
   "numberOfTrades" : 720,
   "rsi" : 0.0
 }, {
@@ -3955,7 +2635,7 @@
   "close" : 0.0018008,
   "volume" : 3346.75,
   "quoteAssetVolume" : 6.00322711,
-  "usdVolume" : 3.720581975E7,
+  "usdVolume" : 66845.822164825,
   "numberOfTrades" : 438,
   "rsi" : 0.0
 }, {
@@ -3970,7 +2650,7 @@
   "close" : 0.0018252,
   "volume" : 5439.21,
   "quoteAssetVolume" : 9.9260972,
-  "usdVolume" : 6.110256216120001E7,
+  "usdVolume" : 110762.336244168,
   "numberOfTrades" : 860,
   "rsi" : 0.0
 }, {
@@ -3985,7 +2665,7 @@
   "close" : 0.00183,
   "volume" : 7907.67,
   "quoteAssetVolume" : 14.35316725,
-  "usdVolume" : 9.161913446370001E7,
+  "usdVolume" : 167514.89621285078,
   "numberOfTrades" : 873,
   "rsi" : 0.0
 }, {
@@ -4000,7 +2680,7 @@
   "close" : 0.001896,
   "volume" : 10422.35,
   "quoteAssetVolume" : 19.08416015,
-  "usdVolume" : 1.191723808285E8,
+  "usdVolume" : 222037.25027638648,
   "numberOfTrades" : 1106,
   "rsi" : 0.0
 }, {
@@ -4015,7 +2695,7 @@
   "close" : 0.001966,
   "volume" : 6295.76,
   "quoteAssetVolume" : 12.25580644,
-  "usdVolume" : 7.021639092840001E7,
+  "usdVolume" : 135390.3685994616,
   "numberOfTrades" : 701,
   "rsi" : 0.0
 }, {
@@ -4030,7 +2710,7 @@
   "close" : 0.0019923,
   "volume" : 3261.52,
   "quoteAssetVolume" : 6.40098488,
-  "usdVolume" : 3.6570934532E7,
+  "usdVolume" : 72360.07034905464,
   "numberOfTrades" : 521,
   "rsi" : 0.0
 }, {
@@ -4045,7 +2725,7 @@
   "close" : 0.0019821,
   "volume" : 7297.45,
   "quoteAssetVolume" : 14.79706789,
-  "usdVolume" : 8.378490594275E7,
+  "usdVolume" : 166564.4948975352,
   "numberOfTrades" : 946,
   "rsi" : 0.0
 }, {
@@ -4060,7 +2740,7 @@
   "close" : 0.0019327,
   "volume" : 5012.39,
   "quoteAssetVolume" : 9.76801801,
-  "usdVolume" : 5.89832492011E7,
+  "usdVolume" : 115185.05945364876,
   "numberOfTrades" : 573,
   "rsi" : 0.0
 }, {
@@ -4075,7 +2755,7 @@
   "close" : 0.0019184,
   "volume" : 6946.34,
   "quoteAssetVolume" : 13.42604567,
-  "usdVolume" : 8.11759017276E7,
+  "usdVolume" : 156300.24391949284,
   "numberOfTrades" : 389,
   "rsi" : 0.0
 }, {
@@ -4090,7 +2770,7 @@
   "close" : 0.0019472,
   "volume" : 8832.92,
   "quoteAssetVolume" : 16.87488724,
-  "usdVolume" : 1.0323943394759999E8,
+  "usdVolume" : 199608.29333961318,
   "numberOfTrades" : 981,
   "rsi" : 0.0
 }, {
@@ -4105,7 +2785,7 @@
   "close" : 0.0019188,
   "volume" : 6561.57,
   "quoteAssetVolume" : 12.64898472,
-  "usdVolume" : 7.696836437474999E7,
+  "usdVolume" : 148532.438247124,
   "numberOfTrades" : 487,
   "rsi" : 0.0
 }, {
@@ -4120,7 +2800,7 @@
   "close" : 0.0019023,
   "volume" : 7203.26,
   "quoteAssetVolume" : 13.6064182,
-  "usdVolume" : 8.49764260244E7,
+  "usdVolume" : 162303.39102072333,
   "numberOfTrades" : 570,
   "rsi" : 0.0
 }, {
@@ -4135,7 +2815,7 @@
   "close" : 0.0018687,
   "volume" : 5558.25,
   "quoteAssetVolume" : 10.38962978,
-  "usdVolume" : 6.4727127438750006E7,
+  "usdVolume" : 122245.48876246088,
   "numberOfTrades" : 644,
   "rsi" : 0.0
 }, {
@@ -4150,7 +2830,7 @@
   "close" : 0.0018616,
   "volume" : 4256.63,
   "quoteAssetVolume" : 7.98721832,
-  "usdVolume" : 4.884855380125E7,
+  "usdVolume" : 90783.79412488468,
   "numberOfTrades" : 627,
   "rsi" : 0.0
 }, {
@@ -4165,7 +2845,7 @@
   "close" : 0.0018486,
   "volume" : 20016.57,
   "quoteAssetVolume" : 36.83791174,
-  "usdVolume" : 2.3374289567790002E8,
+  "usdVolume" : 433729.259961255,
   "numberOfTrades" : 1410,
   "rsi" : 0.0
 }, {
@@ -4180,7 +2860,7 @@
   "close" : 0.0019574,
   "volume" : 8202.73,
   "quoteAssetVolume" : 15.76424855,
-  "usdVolume" : 9.666913203634998E7,
+  "usdVolume" : 183768.69113206447,
   "numberOfTrades" : 1079,
   "rsi" : 0.0
 }, {
@@ -4195,7 +2875,7 @@
   "close" : 0.0019472,
   "volume" : 5000.58,
   "quoteAssetVolume" : 9.74888097,
-  "usdVolume" : 5.90908037382E7,
+  "usdVolume" : 115624.02906671526,
   "numberOfTrades" : 724,
   "rsi" : 0.0
 }, {
@@ -4210,7 +2890,7 @@
   "close" : 0.0019724,
   "volume" : 4820.07,
   "quoteAssetVolume" : 9.46596456,
-  "usdVolume" : 5.729773861275E7,
+  "usdVolume" : 112359.80385943613,
   "numberOfTrades" : 655,
   "rsi" : 0.0
 }, {
@@ -4225,7 +2905,7 @@
   "close" : 0.0019152,
   "volume" : 5656.6,
   "quoteAssetVolume" : 10.89104706,
-  "usdVolume" : 6.848083597600001E7,
+  "usdVolume" : 133231.0852423488,
   "numberOfTrades" : 594,
   "rsi" : 0.0
 }, {
@@ -4240,7 +2920,7 @@
   "close" : 0.0019199,
   "volume" : 3775.2,
   "quoteAssetVolume" : 7.21303331,
-  "usdVolume" : 4.5777282408E7,
+  "usdVolume" : 87667.30890866519,
   "numberOfTrades" : 405,
   "rsi" : 0.0
 }, {
@@ -4255,7 +2935,7 @@
   "close" : 0.001904,
   "volume" : 2483.2,
   "quoteAssetVolume" : 4.73362079,
-  "usdVolume" : 2.9429768959999997E7,
+  "usdVolume" : 56452.859848652806,
   "numberOfTrades" : 294,
   "rsi" : 0.0
 }, {
@@ -4270,7 +2950,7 @@
   "close" : 0.0019442,
   "volume" : 3252.1,
   "quoteAssetVolume" : 6.30444054,
-  "usdVolume" : 3.8410276671500005E7,
+  "usdVolume" : 73920.3091934509,
   "numberOfTrades" : 378,
   "rsi" : 0.0
 }, {
@@ -4285,7 +2965,7 @@
   "close" : 0.0019163,
   "volume" : 4001.13,
   "quoteAssetVolume" : 7.70815573,
-  "usdVolume" : 4.6783852705800004E7,
+  "usdVolume" : 90425.49695640846,
   "numberOfTrades" : 487,
   "rsi" : 0.0
 }, {
@@ -4300,7 +2980,7 @@
   "close" : 0.0018996,
   "volume" : 2682.94,
   "quoteAssetVolume" : 5.09274334,
-  "usdVolume" : 3.1121124726899996E7,
+  "usdVolume" : 59230.53643788007,
   "numberOfTrades" : 306,
   "rsi" : 0.0
 }, {
@@ -4315,7 +2995,7 @@
   "close" : 0.001876,
   "volume" : 2114.08,
   "quoteAssetVolume" : 3.97986812,
-  "usdVolume" : 2.4657286679199997E7,
+  "usdVolume" : 46536.004244086085,
   "numberOfTrades" : 235,
   "rsi" : 0.0
 }, {
@@ -4330,7 +3010,7 @@
   "close" : 0.001922,
   "volume" : 1479.44,
   "quoteAssetVolume" : 2.82991069,
-  "usdVolume" : 1.73128285204E7,
+  "usdVolume" : 32857.2261641898,
   "numberOfTrades" : 310,
   "rsi" : 0.0
 }, {
@@ -4345,7 +3025,7 @@
   "close" : 0.0018899,
   "volume" : 3254.78,
   "quoteAssetVolume" : 6.17439403,
-  "usdVolume" : 3.75513407462E7,
+  "usdVolume" : 71616.58402718195,
   "numberOfTrades" : 331,
   "rsi" : 0.0
 }, {
@@ -4360,7 +3040,7 @@
   "close" : 0.001939,
   "volume" : 2997.01,
   "quoteAssetVolume" : 5.82553032,
-  "usdVolume" : 3.413332151625E7,
+  "usdVolume" : 65390.58794150428,
   "numberOfTrades" : 312,
   "rsi" : 0.0
 }, {
@@ -4375,7 +3055,7 @@
   "close" : 0.0020419,
   "volume" : 4665.67,
   "quoteAssetVolume" : 9.26721216,
-  "usdVolume" : 5.3131600184250005E7,
+  "usdVolume" : 105822.69867283989,
   "numberOfTrades" : 564,
   "rsi" : 0.0
 }, {
@@ -4390,7 +3070,7 @@
   "close" : 0.0020016,
   "volume" : 3230.24,
   "quoteAssetVolume" : 6.52064009,
-  "usdVolume" : 3.691923667119999E7,
+  "usdVolume" : 74609.12338620832,
   "numberOfTrades" : 506,
   "rsi" : 0.0
 }, {
@@ -4405,7 +3085,7 @@
   "close" : 0.0019989,
   "volume" : 12277.12,
   "quoteAssetVolume" : 24.70029744,
-  "usdVolume" : 1.412436002944E8,
+  "usdVolume" : 282246.8827908787,
   "numberOfTrades" : 559,
   "rsi" : 0.0
 }, {
@@ -4420,7 +3100,7 @@
   "close" : 0.0020205,
   "volume" : 10423.98,
   "quoteAssetVolume" : 20.91166606,
-  "usdVolume" : 1.2087496060289998E8,
+  "usdVolume" : 243007.9150015585,
   "numberOfTrades" : 661,
   "rsi" : 0.0
 }, {
@@ -4435,7 +3115,7 @@
   "close" : 0.0019902,
   "volume" : 3564.12,
   "quoteAssetVolume" : 7.11996063,
-  "usdVolume" : 4.1645067063599996E7,
+  "usdVolume" : 83424.97043949433,
   "numberOfTrades" : 411,
   "rsi" : 0.0
 }, {
@@ -4450,7 +3130,7 @@
   "close" : 0.0020748,
   "volume" : 7439.33,
   "quoteAssetVolume" : 15.0252959,
-  "usdVolume" : 8.77002527509E7,
+  "usdVolume" : 178099.05177822566,
   "numberOfTrades" : 1038,
   "rsi" : 0.0
 }, {
@@ -4465,7 +3145,7 @@
   "close" : 0.0021668,
   "volume" : 12692.72,
   "quoteAssetVolume" : 27.11607921,
-  "usdVolume" : 1.480247853296E8,
+  "usdVolume" : 313779.2415369324,
   "numberOfTrades" : 1123,
   "rsi" : 0.0
 }, {
@@ -4480,7 +3160,7 @@
   "close" : 0.0020079,
   "volume" : 22556.82,
   "quoteAssetVolume" : 47.90654922,
-  "usdVolume" : 2.432192500023E8,
+  "usdVolume" : 509589.3966044739,
   "numberOfTrades" : 1765,
   "rsi" : 0.0
 }, {
@@ -4495,7 +3175,7 @@
   "close" : 0.0020062,
   "volume" : 13577.54,
   "quoteAssetVolume" : 27.18989754,
-  "usdVolume" : 1.400576882283E8,
+  "usdVolume" : 280494.0295329516,
   "numberOfTrades" : 1102,
   "rsi" : 0.0
 }, {
@@ -4510,7 +3190,7 @@
   "close" : 0.0019142,
   "volume" : 13574.79,
   "quoteAssetVolume" : 25.74746902,
-  "usdVolume" : 1.4005246590899998E8,
+  "usdVolume" : 274200.0648664212,
   "numberOfTrades" : 1174,
   "rsi" : 0.0
 }, {
@@ -4525,7 +3205,7 @@
   "close" : 0.0022608,
   "volume" : 24243.02,
   "quoteAssetVolume" : 51.72786519,
-  "usdVolume" : 2.4752220392080003E8,
+  "usdVolume" : 516949.12923993013,
   "numberOfTrades" : 2110,
   "rsi" : 0.0
 }, {
@@ -4540,7 +3220,7 @@
   "close" : 0.0021622,
   "volume" : 12695.91,
   "quoteAssetVolume" : 27.24749764,
-  "usdVolume" : 1.309277145069E8,
+  "usdVolume" : 289588.49710480514,
   "numberOfTrades" : 1164,
   "rsi" : 0.0
 }, {
@@ -4555,7 +3235,7 @@
   "close" : 0.0022917,
   "volume" : 13877.67,
   "quoteAssetVolume" : 30.93711514,
-  "usdVolume" : 1.4217832508205003E8,
+  "usdVolume" : 316244.84490919276,
   "numberOfTrades" : 1296,
   "rsi" : 0.0
 }, {
@@ -4570,7 +3250,7 @@
   "close" : 0.002395,
   "volume" : 15371.95,
   "quoteAssetVolume" : 35.69891756,
-  "usdVolume" : 1.5638015396575E8,
+  "usdVolume" : 366252.6576861433,
   "numberOfTrades" : 1227,
   "rsi" : 0.0
 }, {
@@ -4585,7 +3265,7 @@
   "close" : 0.0023587,
   "volume" : 11412.73,
   "quoteAssetVolume" : 27.36276757,
-  "usdVolume" : 1.173362172941E8,
+  "usdVolume" : 279017.8410193018,
   "numberOfTrades" : 1266,
   "rsi" : 0.0
 }, {
@@ -4600,7 +3280,7 @@
   "close" : 0.0024467,
   "volume" : 11226.66,
   "quoteAssetVolume" : 26.3422659,
-  "usdVolume" : 1.1639767408020002E8,
+  "usdVolume" : 279904.4517429763,
   "numberOfTrades" : 1123,
   "rsi" : 0.0
 }, {
@@ -4615,7 +3295,7 @@
   "close" : 0.0027317,
   "volume" : 17680.73,
   "quoteAssetVolume" : 45.86468126,
-  "usdVolume" : 1.8421384620064998E8,
+  "usdVolume" : 477237.67932565336,
   "numberOfTrades" : 2011,
   "rsi" : 0.0
 }, {
@@ -4630,7 +3310,7 @@
   "close" : 0.0030163,
   "volume" : 61319.94,
   "quoteAssetVolume" : 179.2475674,
-  "usdVolume" : 6.368409962673E8,
+  "usdVolume" : 1827582.0431907235,
   "numberOfTrades" : 4320,
   "rsi" : 0.0
 }, {
@@ -4645,7 +3325,7 @@
   "close" : 0.002923,
   "volume" : 23934.14,
   "quoteAssetVolume" : 70.86960071,
-  "usdVolume" : 2.513109830847E8,
+  "usdVolume" : 745239.033784389,
   "numberOfTrades" : 2732,
   "rsi" : 0.0
 }, {
@@ -4660,7 +3340,7 @@
   "close" : 0.0025122,
   "volume" : 14504.64,
   "quoteAssetVolume" : 38.37339018,
-  "usdVolume" : 1.55624271336E8,
+  "usdVolume" : 421206.344672063,
   "numberOfTrades" : 2165,
   "rsi" : 0.0
 }, {
@@ -4675,7 +3355,7 @@
   "close" : 0.0025432,
   "volume" : 8670.56,
   "quoteAssetVolume" : 21.78156336,
-  "usdVolume" : 9.42177298312E7,
+  "usdVolume" : 238104.07242414757,
   "numberOfTrades" : 1131,
   "rsi" : 0.0
 }, {
@@ -4690,7 +3370,7 @@
   "close" : 0.0024759,
   "volume" : 5934.42,
   "quoteAssetVolume" : 14.81396298,
-  "usdVolume" : 6.4963947379499994E7,
+  "usdVolume" : 162631.72423315755,
   "numberOfTrades" : 1008,
   "rsi" : 0.0
 }, {
@@ -4705,7 +3385,7 @@
   "close" : 0.0025285,
   "volume" : 6370.99,
   "quoteAssetVolume" : 16.08847671,
-  "usdVolume" : 6.96886918556E7,
+  "usdVolume" : 174436.80982719094,
   "numberOfTrades" : 888,
   "rsi" : 0.0
 }, {
@@ -4720,7 +3400,7 @@
   "close" : 0.0024553,
   "volume" : 2277.9,
   "quoteAssetVolume" : 5.6573135,
-  "usdVolume" : 2.5074246208500005E7,
+  "usdVolume" : 62380.377592091565,
   "numberOfTrades" : 558,
   "rsi" : 0.0
 }, {
@@ -4735,7 +3415,7 @@
   "close" : 0.0024119,
   "volume" : 3033.07,
   "quoteAssetVolume" : 7.30515153,
-  "usdVolume" : 3.33578555135E7,
+  "usdVolume" : 81099.46518168385,
   "numberOfTrades" : 583,
   "rsi" : 0.0
 }, {
@@ -4750,7 +3430,7 @@
   "close" : 0.0022116,
   "volume" : 10086.71,
   "quoteAssetVolume" : 22.74923371,
-  "usdVolume" : 1.0756452413935E8,
+  "usdVolume" : 248584.56141229463,
   "numberOfTrades" : 1324,
   "rsi" : 0.0
 }, {
@@ -4765,7 +3445,7 @@
   "close" : 0.0022824,
   "volume" : 4394.89,
   "quoteAssetVolume" : 9.99657147,
-  "usdVolume" : 4.603025398065E7,
+  "usdVolume" : 103390.84164563946,
   "numberOfTrades" : 774,
   "rsi" : 0.0
 }, {
@@ -4780,7 +3460,7 @@
   "close" : 0.0022274,
   "volume" : 3154.31,
   "quoteAssetVolume" : 7.13862352,
-  "usdVolume" : 3.2749702432750005E7,
+  "usdVolume" : 73845.16517735775,
   "numberOfTrades" : 579,
   "rsi" : 0.0
 }, {
@@ -4795,7 +3475,7 @@
   "close" : 0.0022885,
   "volume" : 1939.57,
   "quoteAssetVolume" : 4.40656937,
-  "usdVolume" : 2.03526256509E7,
+  "usdVolume" : 45850.13072817093,
   "numberOfTrades" : 477,
   "rsi" : 0.0
 }, {
@@ -4810,7 +3490,7 @@
   "close" : 0.0023055,
   "volume" : 4676.31,
   "quoteAssetVolume" : 10.75549391,
-  "usdVolume" : 5.0108438647800006E7,
+  "usdVolume" : 115178.47267627,
   "numberOfTrades" : 619,
   "rsi" : 0.0
 }, {
@@ -4825,7 +3505,7 @@
   "close" : 0.0024341,
   "volume" : 1492.67,
   "quoteAssetVolume" : 3.5450539,
-  "usdVolume" : 1.6009699255150001E7,
+  "usdVolume" : 37980.283331377046,
   "numberOfTrades" : 490,
   "rsi" : 0.0
 }, {
@@ -4840,7 +3520,7 @@
   "close" : 0.0024316,
   "volume" : 4722.85,
   "quoteAssetVolume" : 11.51913752,
-  "usdVolume" : 5.078109861275E7,
+  "usdVolume" : 123641.49767295811,
   "numberOfTrades" : 688,
   "rsi" : 0.0
 }, {
@@ -4855,7 +3535,7 @@
   "close" : 0.0025196,
   "volume" : 5126.79,
   "quoteAssetVolume" : 12.71620888,
-  "usdVolume" : 5.503293767414999E7,
+  "usdVolume" : 135989.48961389516,
   "numberOfTrades" : 870,
   "rsi" : 0.0
 }, {
@@ -4870,7 +3550,7 @@
   "close" : 0.0026615,
   "volume" : 5567.39,
   "quoteAssetVolume" : 14.45198873,
-  "usdVolume" : 5.990881871435001E7,
+  "usdVolume" : 155265.32417177423,
   "numberOfTrades" : 913,
   "rsi" : 0.0
 }, {
@@ -4885,7 +3565,7 @@
   "close" : 0.0027136,
   "volume" : 1580.78,
   "quoteAssetVolume" : 4.22999453,
-  "usdVolume" : 1.70877259504E7,
+  "usdVolume" : 45920.00201691932,
   "numberOfTrades" : 564,
   "rsi" : 0.0
 }, {
@@ -4900,7 +3580,7 @@
   "close" : 0.0025857,
   "volume" : 3400.69,
   "quoteAssetVolume" : 8.85011339,
-  "usdVolume" : 3.6383625237550005E7,
+  "usdVolume" : 96433.90432425903,
   "numberOfTrades" : 799,
   "rsi" : 0.0
 }, {
@@ -4915,7 +3595,7 @@
   "close" : 0.0025826,
   "volume" : 5081.16,
   "quoteAssetVolume" : 13.04960754,
-  "usdVolume" : 5.3786111063999996E7,
+  "usdVolume" : 138681.85417081462,
   "numberOfTrades" : 996,
   "rsi" : 0.0
 }, {
@@ -4930,7 +3610,7 @@
   "close" : 0.0026755,
   "volume" : 1247.46,
   "quoteAssetVolume" : 3.2817768,
-  "usdVolume" : 1.31758409271E7,
+  "usdVolume" : 34639.07281413399,
   "numberOfTrades" : 486,
   "rsi" : 0.0
 }, {
@@ -4945,7 +3625,7 @@
   "close" : 0.0027157,
   "volume" : 1409.44,
   "quoteAssetVolume" : 3.80887917,
-  "usdVolume" : 1.4955419848800002E7,
+  "usdVolume" : 40294.03467618504,
   "numberOfTrades" : 616,
   "rsi" : 0.0
 }, {
@@ -4960,7 +3640,7 @@
   "close" : 0.00265,
   "volume" : 2486.27,
   "quoteAssetVolume" : 6.66713965,
-  "usdVolume" : 2.66776771E7,
+  "usdVolume" : 71528.44889887,
   "numberOfTrades" : 471,
   "rsi" : 0.0
 }, {
@@ -4975,7 +3655,7 @@
   "close" : 0.0026144,
   "volume" : 3487.4,
   "quoteAssetVolume" : 9.14547109,
-  "usdVolume" : 3.7321126017E7,
+  "usdVolume" : 98257.8352028448,
   "numberOfTrades" : 725,
   "rsi" : 0.0
 }, {
@@ -4990,7 +3670,7 @@
   "close" : 0.0025888,
   "volume" : 13575.51,
   "quoteAssetVolume" : 35.05325732,
-  "usdVolume" : 1.44417632931E8,
+  "usdVolume" : 375055.87015537,
   "numberOfTrades" : 1565,
   "rsi" : 0.0
 }, {
@@ -5005,7 +3685,7 @@
   "close" : 0.0025418,
   "volume" : 2623.06,
   "quoteAssetVolume" : 6.67753978,
-  "usdVolume" : 2.8320614862099998E7,
+  "usdVolume" : 72715.89748242775,
   "numberOfTrades" : 457,
   "rsi" : 0.0
 }, {
@@ -5020,7 +3700,7 @@
   "close" : 0.0025698,
   "volume" : 1250.59,
   "quoteAssetVolume" : 3.20751851,
-  "usdVolume" : 1.374831739435E7,
+  "usdVolume" : 35076.886760293455,
   "numberOfTrades" : 257,
   "rsi" : 0.0
 }, {
@@ -5035,7 +3715,7 @@
   "close" : 0.0025152,
   "volume" : 4812.65,
   "quoteAssetVolume" : 12.31975268,
-  "usdVolume" : 5.380509011449999E7,
+  "usdVolume" : 136698.2453363573,
   "numberOfTrades" : 459,
   "rsi" : 0.0
 }, {
@@ -5050,7 +3730,7 @@
   "close" : 0.0025169,
   "volume" : 1904.3,
   "quoteAssetVolume" : 4.76399636,
-  "usdVolume" : 2.1588154079E7,
+  "usdVolume" : 54282.50468921185,
   "numberOfTrades" : 268,
   "rsi" : 0.0
 }, {
@@ -5065,7 +3745,7 @@
   "close" : 0.0026605,
   "volume" : 7048.99,
   "quoteAssetVolume" : 18.66307596,
-  "usdVolume" : 8.074981067985E7,
+  "usdVolume" : 208707.07685546187,
   "numberOfTrades" : 800,
   "rsi" : 0.0
 }, {
@@ -5080,7 +3760,7 @@
   "close" : 0.0026841,
   "volume" : 7846.38,
   "quoteAssetVolume" : 21.2381239,
-  "usdVolume" : 9.00721661229E7,
+  "usdVolume" : 240454.91500978256,
   "numberOfTrades" : 1099,
   "rsi" : 0.0
 }, {
@@ -5095,7 +3775,7 @@
   "close" : 0.0027029,
   "volume" : 2492.65,
   "quoteAssetVolume" : 6.73163057,
-  "usdVolume" : 2.84807945615E7,
+  "usdVolume" : 76600.55262591595,
   "numberOfTrades" : 396,
   "rsi" : 0.0
 }, {
@@ -5110,7 +3790,7 @@
   "close" : 0.0027189,
   "volume" : 3040.24,
   "quoteAssetVolume" : 8.27174888,
-  "usdVolume" : 3.4849267840799995E7,
+  "usdVolume" : 94423.49393973804,
   "numberOfTrades" : 453,
   "rsi" : 0.0
 }, {
@@ -5125,7 +3805,7 @@
   "close" : 0.0026475,
   "volume" : 3480.54,
   "quoteAssetVolume" : 9.31178544,
-  "usdVolume" : 3.97374295962E7,
+  "usdVolume" : 106564.56065412717,
   "numberOfTrades" : 496,
   "rsi" : 0.0
 }, {
@@ -5140,7 +3820,7 @@
   "close" : 0.0026592,
   "volume" : 1104.07,
   "quoteAssetVolume" : 2.94744667,
-  "usdVolume" : 1.2527137042750001E7,
+  "usdVolume" : 33217.12108677776,
   "numberOfTrades" : 177,
   "rsi" : 0.0
 }, {
@@ -5155,7 +3835,7 @@
   "close" : 0.0026649,
   "volume" : 1755.65,
   "quoteAssetVolume" : 4.72158481,
-  "usdVolume" : 2.00830383585E7,
+  "usdVolume" : 53474.39029276402,
   "numberOfTrades" : 303,
   "rsi" : 0.0
 }, {
@@ -5170,7 +3850,7 @@
   "close" : 0.0025483,
   "volume" : 2586.16,
   "quoteAssetVolume" : 6.75957731,
-  "usdVolume" : 3.0093708601199996E7,
+  "usdVolume" : 78309.08457167172,
   "numberOfTrades" : 523,
   "rsi" : 0.0
 }, {
@@ -5185,7 +3865,7 @@
   "close" : 0.0024115,
   "volume" : 6452.8,
   "quoteAssetVolume" : 15.878387,
-  "usdVolume" : 7.641328326400001E7,
+  "usdVolume" : 189449.858199784,
   "numberOfTrades" : 783,
   "rsi" : 0.0
 }, {
@@ -5200,7 +3880,7 @@
   "close" : 0.0023267,
   "volume" : 6506.15,
   "quoteAssetVolume" : 15.38448848,
-  "usdVolume" : 8.0471446398E7,
+  "usdVolume" : 190460.1008949338,
   "numberOfTrades" : 825,
   "rsi" : 0.0
 }, {
@@ -5215,7 +3895,7 @@
   "close" : 0.0023612,
   "volume" : 5789.34,
   "quoteAssetVolume" : 13.67713729,
-  "usdVolume" : 7.465602871620001E7,
+  "usdVolume" : 174895.20071546003,
   "numberOfTrades" : 843,
   "rsi" : 0.0
 }, {
@@ -5230,7 +3910,7 @@
   "close" : 0.0023683,
   "volume" : 5366.3,
   "quoteAssetVolume" : 12.77162574,
-  "usdVolume" : 6.95638566985E7,
+  "usdVolume" : 164800.34802483057,
   "numberOfTrades" : 415,
   "rsi" : 0.0
 }, {
@@ -5245,7 +3925,7 @@
   "close" : 0.0023377,
   "volume" : 784.91,
   "quoteAssetVolume" : 1.84748535,
-  "usdVolume" : 1.0227251714399999E7,
+  "usdVolume" : 24073.725634978182,
   "numberOfTrades" : 156,
   "rsi" : 0.0
 }, {
@@ -5260,7 +3940,7 @@
   "close" : 0.0023114,
   "volume" : 1975.65,
   "quoteAssetVolume" : 4.60023634,
-  "usdVolume" : 2.5836760439999998E7,
+  "usdVolume" : 60085.977051332855,
   "numberOfTrades" : 279,
   "rsi" : 0.0
 }, {
@@ -5275,7 +3955,7 @@
   "close" : 0.0023801,
   "volume" : 2415.45,
   "quoteAssetVolume" : 5.69758147,
-  "usdVolume" : 3.1540994408999998E7,
+  "usdVolume" : 73911.24508293689,
   "numberOfTrades" : 377,
   "rsi" : 0.0
 }, {
@@ -5290,7 +3970,7 @@
   "close" : 0.0023095,
   "volume" : 3572.69,
   "quoteAssetVolume" : 8.3770415,
-  "usdVolume" : 4.771872330225E7,
+  "usdVolume" : 111761.06922413812,
   "numberOfTrades" : 702,
   "rsi" : 0.0
 }, {
@@ -5305,7 +3985,7 @@
   "close" : 0.0022871,
   "volume" : 3491.04,
   "quoteAssetVolume" : 8.01602423,
-  "usdVolume" : 4.70041305888E7,
+  "usdVolume" : 108053.3667613092,
   "numberOfTrades" : 599,
   "rsi" : 0.0
 }, {
@@ -5320,7 +4000,7 @@
   "close" : 0.0022178,
   "volume" : 2916.07,
   "quoteAssetVolume" : 6.5343436,
-  "usdVolume" : 3.898434203565E7,
+  "usdVolume" : 87793.05882056874,
   "numberOfTrades" : 1899,
   "rsi" : 0.0
 }, {
@@ -5335,7 +4015,7 @@
   "close" : 0.0021022,
   "volume" : 3684.09,
   "quoteAssetVolume" : 7.82405649,
-  "usdVolume" : 4.978040036385E7,
+  "usdVolume" : 107507.79815779752,
   "numberOfTrades" : 1818,
   "rsi" : 0.0
 }, {
@@ -5350,7 +4030,7 @@
   "close" : 0.0020647,
   "volume" : 2213.73,
   "quoteAssetVolume" : 4.6015324,
-  "usdVolume" : 3.030342897915E7,
+  "usdVolume" : 63078.277173492104,
   "numberOfTrades" : 1676,
   "rsi" : 0.0
 }, {
@@ -5365,7 +4045,7 @@
   "close" : 0.00207,
   "volume" : 979.89,
   "quoteAssetVolume" : 2.01912616,
-  "usdVolume" : 1.35053437239E7,
+  "usdVolume" : 27881.00439154717,
   "numberOfTrades" : 675,
   "rsi" : 0.0
 }, {
@@ -5380,7 +4060,7 @@
   "close" : 0.0020532,
   "volume" : 3002.48,
   "quoteAssetVolume" : 6.30690826,
-  "usdVolume" : 4.1033843291999996E7,
+  "usdVolume" : 84616.4844548868,
   "numberOfTrades" : 695,
   "rsi" : 0.0
 }, {
@@ -5395,7 +4075,7 @@
   "close" : 0.0019187,
   "volume" : 4373.67,
   "quoteAssetVolume" : 8.57608295,
-  "usdVolume" : 6.033536809545E7,
+  "usdVolume" : 119655.38462413957,
   "numberOfTrades" : 1701,
   "rsi" : 0.0
 }, {
@@ -5410,7 +4090,7 @@
   "close" : 0.0019027,
   "volume" : 7333.25,
   "quoteAssetVolume" : 14.00074577,
-  "usdVolume" : 1.03359078785E8,
+  "usdVolume" : 197036.71743828198,
   "numberOfTrades" : 1972,
   "rsi" : 0.0
 }, {
@@ -5425,7 +4105,7 @@
   "close" : 0.0017769,
   "volume" : 3831.48,
   "quoteAssetVolume" : 7.07336765,
-  "usdVolume" : 5.70166753428E7,
+  "usdVolume" : 104829.7457384082,
   "numberOfTrades" : 2296,
   "rsi" : 0.0
 }, {
@@ -5440,7 +4120,7 @@
   "close" : 0.0018627,
   "volume" : 4452.8,
   "quoteAssetVolume" : 8.20176858,
-  "usdVolume" : 6.9474077288E7,
+  "usdVolume" : 126433.9017079864,
   "numberOfTrades" : 1761,
   "rsi" : 0.0
 }, {
@@ -5455,7 +4135,7 @@
   "close" : 0.0018718,
   "volume" : 3351.38,
   "quoteAssetVolume" : 6.27305687,
-  "usdVolume" : 5.100988037280001E7,
+  "usdVolume" : 95239.72829196973,
   "numberOfTrades" : 1575,
   "rsi" : 0.0
 }, {
@@ -5470,7 +4150,7 @@
   "close" : 0.0018338,
   "volume" : 1163.71,
   "quoteAssetVolume" : 2.15346323,
-  "usdVolume" : 1.7645486012300003E7,
+  "usdVolume" : 32686.28235348434,
   "numberOfTrades" : 928,
   "rsi" : 0.0
 }, {
@@ -5482,10 +4162,1330 @@
   "open" : 0.0018349,
   "high" : 0.0018606,
   "low" : 0.0018081,
-  "close" : 0.0018264,
-  "volume" : 2321.92,
-  "quoteAssetVolume" : 4.26364341,
-  "usdVolume" : 3.58043314688E7,
-  "numberOfTrades" : 941,
+  "close" : 0.00183,
+  "volume" : 3578.56,
+  "quoteAssetVolume" : 6.54694899,
+  "usdVolume" : 101024.37206702304,
+  "numberOfTrades" : 1151,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BNBBTC",
+  "openTime" : 1604966400000,
+  "openDate" : null,
+  "closeTime" : 1605052799999,
+  "closeDate" : null,
+  "open" : 0.0018312,
+  "high" : 0.0018508,
+  "low" : 0.0018182,
+  "close" : 0.0018417,
+  "volume" : 4031.75,
+  "quoteAssetVolume" : 7.40943222,
+  "usdVolume" : 113504.09108351513,
+  "numberOfTrades" : 629,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BNBBTC",
+  "openTime" : 1605052800000,
+  "openDate" : null,
+  "closeTime" : 1605139199999,
+  "closeDate" : null,
+  "open" : 0.001843,
+  "high" : 0.0018532,
+  "low" : 0.0017658,
+  "close" : 0.0017835,
+  "volume" : 3447.3,
+  "quoteAssetVolume" : 6.19737072,
+  "usdVolume" : 96934.304550381,
+  "numberOfTrades" : 562,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BNBBTC",
+  "openTime" : 1605139200000,
+  "openDate" : null,
+  "closeTime" : 1605225599999,
+  "closeDate" : null,
+  "open" : 0.0017813,
+  "high" : 0.0017935,
+  "low" : 0.0016878,
+  "close" : 0.0016903,
+  "volume" : 4572.06,
+  "quoteAssetVolume" : 7.96017394,
+  "usdVolume" : 126982.02172374241,
+  "numberOfTrades" : 819,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BNBBTC",
+  "openTime" : 1605225600000,
+  "openDate" : null,
+  "closeTime" : 1605311999999,
+  "closeDate" : null,
+  "open" : 0.0016927,
+  "high" : 0.0017532,
+  "low" : 0.0016818,
+  "close" : 0.0017271,
+  "volume" : 1615.04,
+  "quoteAssetVolume" : 2.77775953,
+  "usdVolume" : 45087.283214709125,
+  "numberOfTrades" : 412,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BNBBTC",
+  "openTime" : 1605312000000,
+  "openDate" : null,
+  "closeTime" : 1605398399999,
+  "closeDate" : null,
+  "open" : 0.0017263,
+  "high" : 0.0017532,
+  "low" : 0.0017186,
+  "close" : 0.00174,
+  "volume" : 1178.44,
+  "quoteAssetVolume" : 2.04535778,
+  "usdVolume" : 33107.928070853144,
+  "numberOfTrades" : 243,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BNBBTC",
+  "openTime" : 1605398400000,
+  "openDate" : null,
+  "closeTime" : 1605484799999,
+  "closeDate" : null,
+  "open" : 0.0017424,
+  "high" : 0.0017686,
+  "low" : 0.0017133,
+  "close" : 0.0017303,
+  "volume" : 1416.73,
+  "quoteAssetVolume" : 2.4740794,
+  "usdVolume" : 39427.43390400815,
+  "numberOfTrades" : 400,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BNBBTC",
+  "openTime" : 1605484800000,
+  "openDate" : null,
+  "closeTime" : 1605571199999,
+  "closeDate" : null,
+  "open" : 0.0017295,
+  "high" : 0.0017424,
+  "low" : 0.0016651,
+  "close" : 0.00167,
+  "volume" : 2464.49,
+  "quoteAssetVolume" : 4.19389242,
+  "usdVolume" : 68427.47406813447,
+  "numberOfTrades" : 352,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BNBBTC",
+  "openTime" : 1605571200000,
+  "openDate" : null,
+  "closeTime" : 1605657599999,
+  "closeDate" : null,
+  "open" : 0.001669,
+  "high" : 0.0017217,
+  "low" : 0.0015966,
+  "close" : 0.0016168,
+  "volume" : 3975.31,
+  "quoteAssetVolume" : 6.52546719,
+  "usdVolume" : 112272.24382274789,
+  "numberOfTrades" : 608,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BNBBTC",
+  "openTime" : 1605657600000,
+  "openDate" : null,
+  "closeTime" : 1605743999999,
+  "closeDate" : null,
+  "open" : 0.0016168,
+  "high" : 0.0016237,
+  "low" : 0.0015439,
+  "close" : 0.0015721,
+  "volume" : 7723.51,
+  "quoteAssetVolume" : 12.2133334,
+  "usdVolume" : 218405.62916127255,
+  "numberOfTrades" : 819,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BNBBTC",
+  "openTime" : 1605744000000,
+  "openDate" : null,
+  "closeTime" : 1605830399999,
+  "closeDate" : null,
+  "open" : 0.0015805,
+  "high" : 0.0015933,
+  "low" : 0.001549,
+  "close" : 0.001573,
+  "volume" : 3037.34,
+  "quoteAssetVolume" : 4.77435133,
+  "usdVolume" : 85307.69957436541,
+  "numberOfTrades" : 534,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BNBBTC",
+  "openTime" : 1605830400000,
+  "openDate" : null,
+  "closeTime" : 1605916799999,
+  "closeDate" : null,
+  "open" : 0.0015783,
+  "high" : 0.0015971,
+  "low" : 0.0015353,
+  "close" : 0.00155,
+  "volume" : 5881.43,
+  "quoteAssetVolume" : 9.18766862,
+  "usdVolume" : 167886.44318051226,
+  "numberOfTrades" : 825,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BNBBTC",
+  "openTime" : 1605916800000,
+  "openDate" : null,
+  "closeTime" : 1606003199999,
+  "closeDate" : null,
+  "open" : 0.0015521,
+  "high" : 0.0016349,
+  "low" : 0.0015209,
+  "close" : 0.0016294,
+  "volume" : 4967.39,
+  "quoteAssetVolume" : 7.86857168,
+  "usdVolume" : 147696.2889965021,
+  "numberOfTrades" : 735,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BNBBTC",
+  "openTime" : 1606003200000,
+  "openDate" : null,
+  "closeTime" : 1606089599999,
+  "closeDate" : null,
+  "open" : 0.0016337,
+  "high" : 0.0016642,
+  "low" : 0.0016133,
+  "close" : 0.0016278,
+  "volume" : 2747.12,
+  "quoteAssetVolume" : 4.49169765,
+  "usdVolume" : 83218.47170699452,
+  "numberOfTrades" : 675,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BNBBTC",
+  "openTime" : 1606089600000,
+  "openDate" : null,
+  "closeTime" : 1606175999999,
+  "closeDate" : null,
+  "open" : 0.0016316,
+  "high" : 0.001686,
+  "low" : 0.0016313,
+  "close" : 0.001686,
+  "volume" : 3694.37,
+  "quoteAssetVolume" : 6.11744012,
+  "usdVolume" : 112843.15947231711,
+  "numberOfTrades" : 642,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BNBBTC",
+  "openTime" : 1606176000000,
+  "openDate" : null,
+  "closeTime" : 1606262399999,
+  "closeDate" : null,
+  "open" : 0.0016876,
+  "high" : 0.0018921,
+  "low" : 0.0016709,
+  "close" : 0.00177,
+  "volume" : 14109.54,
+  "quoteAssetVolume" : 24.9744521,
+  "usdVolume" : 458597.1398606744,
+  "numberOfTrades" : 2069,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BNBBTC",
+  "openTime" : 1606262400000,
+  "openDate" : null,
+  "closeTime" : 1606348799999,
+  "closeDate" : null,
+  "open" : 0.0017712,
+  "high" : 0.0018441,
+  "low" : 0.0016536,
+  "close" : 0.0016699,
+  "volume" : 6797.51,
+  "quoteAssetVolume" : 11.91051647,
+  "usdVolume" : 221696.59147986793,
+  "numberOfTrades" : 1271,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BNBBTC",
+  "openTime" : 1606348800000,
+  "openDate" : null,
+  "closeTime" : 1606435199999,
+  "closeDate" : null,
+  "open" : 0.00166,
+  "high" : 0.00169,
+  "low" : 0.001603,
+  "close" : 0.001649,
+  "volume" : 13804.29,
+  "quoteAssetVolume" : 22.77515228,
+  "usdVolume" : 409831.3223712541,
+  "numberOfTrades" : 1803,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BNBBTC",
+  "openTime" : 1606435200000,
+  "openDate" : null,
+  "closeTime" : 1606521599999,
+  "closeDate" : null,
+  "open" : 0.0016425,
+  "high" : 0.0016772,
+  "low" : 0.0016336,
+  "close" : 0.0016604,
+  "volume" : 2511.55,
+  "quoteAssetVolume" : 4.14710959,
+  "usdVolume" : 71145.96623707366,
+  "numberOfTrades" : 422,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BNBBTC",
+  "openTime" : 1606521600000,
+  "openDate" : null,
+  "closeTime" : 1606607999999,
+  "closeDate" : null,
+  "open" : 0.0016612,
+  "high" : 0.0017045,
+  "low" : 0.0016382,
+  "close" : 0.0016446,
+  "volume" : 3034.81,
+  "quoteAssetVolume" : 5.05642441,
+  "usdVolume" : 87492.69039938806,
+  "numberOfTrades" : 454,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BNBBTC",
+  "openTime" : 1606608000000,
+  "openDate" : null,
+  "closeTime" : 1606694399999,
+  "closeDate" : null,
+  "open" : 0.0016441,
+  "high" : 0.0016715,
+  "low" : 0.0016147,
+  "close" : 0.0016594,
+  "volume" : 3584.12,
+  "quoteAssetVolume" : 5.8907421,
+  "usdVolume" : 106359.81800358156,
+  "numberOfTrades" : 470,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BNBBTC",
+  "openTime" : 1606694400000,
+  "openDate" : null,
+  "closeTime" : 1606780799999,
+  "closeDate" : null,
+  "open" : 0.0016522,
+  "high" : 0.0016641,
+  "low" : 0.0015627,
+  "close" : 0.001591,
+  "volume" : 10001.25,
+  "quoteAssetVolume" : 16.08622538,
+  "usdVolume" : 307018.8261567,
+  "numberOfTrades" : 1118,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BNBBTC",
+  "openTime" : 1606780800000,
+  "openDate" : null,
+  "closeTime" : 1606867199999,
+  "closeDate" : null,
+  "open" : 0.0015977,
+  "high" : 0.0016384,
+  "low" : 0.0015728,
+  "close" : 0.0016068,
+  "volume" : 10672.73,
+  "quoteAssetVolume" : 17.11008041,
+  "usdVolume" : 329087.6150824267,
+  "numberOfTrades" : 1347,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BNBBTC",
+  "openTime" : 1606867200000,
+  "openDate" : null,
+  "closeTime" : 1606953599999,
+  "closeDate" : null,
+  "open" : 0.001602,
+  "high" : 0.0016254,
+  "low" : 0.0015715,
+  "close" : 0.001574,
+  "volume" : 4730.04,
+  "quoteAssetVolume" : 7.55435202,
+  "usdVolume" : 142782.8311149912,
+  "numberOfTrades" : 666,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BNBBTC",
+  "openTime" : 1606953600000,
+  "openDate" : null,
+  "closeTime" : 1607039999999,
+  "closeDate" : null,
+  "open" : 0.001573,
+  "high" : 0.001591,
+  "low" : 0.001555,
+  "close" : 0.0015799,
+  "volume" : 4563.86,
+  "quoteAssetVolume" : 7.18530464,
+  "usdVolume" : 139148.74880155284,
+  "numberOfTrades" : 666,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BNBBTC",
+  "openTime" : 1607040000000,
+  "openDate" : null,
+  "closeTime" : 1607126399999,
+  "closeDate" : null,
+  "open" : 0.0015813,
+  "high" : 0.0016056,
+  "low" : 0.0015411,
+  "close" : 0.0015546,
+  "volume" : 9103.65,
+  "quoteAssetVolume" : 14.22310686,
+  "usdVolume" : 271937.24682740745,
+  "numberOfTrades" : 1057,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BNBBTC",
+  "openTime" : 1607126400000,
+  "openDate" : null,
+  "closeTime" : 1607212799999,
+  "closeDate" : null,
+  "open" : 0.0015534,
+  "high" : 0.0015741,
+  "low" : 0.001535,
+  "close" : 0.0015531,
+  "volume" : 3791.05,
+  "quoteAssetVolume" : 5.87551869,
+  "usdVolume" : 111323.32904303189,
+  "numberOfTrades" : 362,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BNBBTC",
+  "openTime" : 1607212800000,
+  "openDate" : null,
+  "closeTime" : 1607299199999,
+  "closeDate" : null,
+  "open" : 0.0015514,
+  "high" : 0.0015668,
+  "low" : 0.0015146,
+  "close" : 0.0015253,
+  "volume" : 5270.84,
+  "quoteAssetVolume" : 8.13423361,
+  "usdVolume" : 156191.21059487134,
+  "numberOfTrades" : 716,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BNBBTC",
+  "openTime" : 1607299200000,
+  "openDate" : null,
+  "closeTime" : 1607385599999,
+  "closeDate" : null,
+  "open" : 0.001518,
+  "high" : 0.001543,
+  "low" : 0.0015146,
+  "close" : 0.0015293,
+  "volume" : 2421.23,
+  "quoteAssetVolume" : 3.70347157,
+  "usdVolume" : 71127.20294196188,
+  "numberOfTrades" : 342,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BNBBTC",
+  "openTime" : 1607385600000,
+  "openDate" : null,
+  "closeTime" : 1607471999999,
+  "closeDate" : null,
+  "open" : 0.0015263,
+  "high" : 0.0015356,
+  "low" : 0.0014761,
+  "close" : 0.001511,
+  "volume" : 20681.44,
+  "quoteAssetVolume" : 30.8847418,
+  "usdVolume" : 588934.379565119,
+  "numberOfTrades" : 2683,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BNBBTC",
+  "openTime" : 1607472000000,
+  "openDate" : null,
+  "closeTime" : 1607558399999,
+  "closeDate" : null,
+  "open" : 0.0015118,
+  "high" : 0.001541,
+  "low" : 0.0015046,
+  "close" : 0.0015199,
+  "volume" : 4187.81,
+  "quoteAssetVolume" : 6.38547253,
+  "usdVolume" : 116983.91965575717,
+  "numberOfTrades" : 401,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BNBBTC",
+  "openTime" : 1607558400000,
+  "openDate" : null,
+  "closeTime" : 1607644799999,
+  "closeDate" : null,
+  "open" : 0.0015172,
+  "high" : 0.0015335,
+  "low" : 0.0015048,
+  "close" : 0.0015182,
+  "volume" : 3264.11,
+  "quoteAssetVolume" : 4.95736183,
+  "usdVolume" : 91148.92829454975,
+  "numberOfTrades" : 279,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BNBBTC",
+  "openTime" : 1607644800000,
+  "openDate" : null,
+  "closeTime" : 1607731199999,
+  "closeDate" : null,
+  "open" : 0.0015161,
+  "high" : 0.0015254,
+  "low" : 0.0015057,
+  "close" : 0.0015147,
+  "volume" : 2716.67,
+  "quoteAssetVolume" : 4.11796866,
+  "usdVolume" : 74689.80727200619,
+  "numberOfTrades" : 322,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BNBBTC",
+  "openTime" : 1607731200000,
+  "openDate" : null,
+  "closeTime" : 1607817599999,
+  "closeDate" : null,
+  "open" : 0.0015102,
+  "high" : 0.0015269,
+  "low" : 0.0014886,
+  "close" : 0.001498,
+  "volume" : 1362.56,
+  "quoteAssetVolume" : 2.0517745,
+  "usdVolume" : 37766.457906113275,
+  "numberOfTrades" : 204,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BNBBTC",
+  "openTime" : 1607817600000,
+  "openDate" : null,
+  "closeTime" : 1607903999999,
+  "closeDate" : null,
+  "open" : 0.0015,
+  "high" : 0.0015218,
+  "low" : 0.001488,
+  "close" : 0.00152,
+  "volume" : 3087.66,
+  "quoteAssetVolume" : 4.64659662,
+  "usdVolume" : 88567.33856659199,
+  "numberOfTrades" : 452,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BNBBTC",
+  "openTime" : 1607904000000,
+  "openDate" : null,
+  "closeTime" : 1607990399999,
+  "closeDate" : null,
+  "open" : 0.0015204,
+  "high" : 0.00157,
+  "low" : 0.0014959,
+  "close" : 0.0015554,
+  "volume" : 10486.73,
+  "quoteAssetVolume" : 16.17476695,
+  "usdVolume" : 309921.48830645485,
+  "numberOfTrades" : 813,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BNBBTC",
+  "openTime" : 1607990400000,
+  "openDate" : null,
+  "closeTime" : 1608076799999,
+  "closeDate" : null,
+  "open" : 0.001556,
+  "high" : 0.0015621,
+  "low" : 0.0015087,
+  "close" : 0.0015193,
+  "volume" : 5163.16,
+  "quoteAssetVolume" : 7.96681017,
+  "usdVolume" : 153644.81694986788,
+  "numberOfTrades" : 497,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BNBBTC",
+  "openTime" : 1608076800000,
+  "openDate" : null,
+  "closeTime" : 1608163199999,
+  "closeDate" : null,
+  "open" : 0.0015121,
+  "high" : 0.0015141,
+  "low" : 0.0014181,
+  "close" : 0.0014315,
+  "volume" : 20407.72,
+  "quoteAssetVolume" : 30.02611411,
+  "usdVolume" : 611742.1541207914,
+  "numberOfTrades" : 1292,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BNBBTC",
+  "openTime" : 1608163200000,
+  "openDate" : null,
+  "closeTime" : 1608249599999,
+  "closeDate" : null,
+  "open" : 0.0014304,
+  "high" : 0.0014594,
+  "low" : 0.0012962,
+  "close" : 0.0013233,
+  "volume" : 16162.07,
+  "quoteAssetVolume" : 21.91613608,
+  "usdVolume" : 491135.7746888925,
+  "numberOfTrades" : 1578,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BNBBTC",
+  "openTime" : 1608249600000,
+  "openDate" : null,
+  "closeTime" : 1608335999999,
+  "closeDate" : null,
+  "open" : 0.0013219,
+  "high" : 0.001354,
+  "low" : 0.0013047,
+  "close" : 0.0013379,
+  "volume" : 4857.53,
+  "quoteAssetVolume" : 6.46538944,
+  "usdVolume" : 148420.67626140104,
+  "numberOfTrades" : 605,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BNBBTC",
+  "openTime" : 1608336000000,
+  "openDate" : null,
+  "closeTime" : 1608422399999,
+  "closeDate" : null,
+  "open" : 0.0013361,
+  "high" : 0.0014522,
+  "low" : 0.0013361,
+  "close" : 0.0013941,
+  "volume" : 28138.83,
+  "quoteAssetVolume" : 39.7418995,
+  "usdVolume" : 902614.9481074914,
+  "numberOfTrades" : 1814,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BNBBTC",
+  "openTime" : 1608422400000,
+  "openDate" : null,
+  "closeTime" : 1608508799999,
+  "closeDate" : null,
+  "open" : 0.0013966,
+  "high" : 0.00151,
+  "low" : 0.0013948,
+  "close" : 0.0014611,
+  "volume" : 24236.37,
+  "quoteAssetVolume" : 35.39078965,
+  "usdVolume" : 819488.38006709,
+  "numberOfTrades" : 2619,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BNBBTC",
+  "openTime" : 1608508800000,
+  "openDate" : null,
+  "closeTime" : 1608595199999,
+  "closeDate" : null,
+  "open" : 0.0014602,
+  "high" : 0.0014987,
+  "low" : 0.0013875,
+  "close" : 0.001412,
+  "volume" : 26675.48,
+  "quoteAssetVolume" : 38.34470777,
+  "usdVolume" : 885186.60612945,
+  "numberOfTrades" : 2969,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BNBBTC",
+  "openTime" : 1608595200000,
+  "openDate" : null,
+  "closeTime" : 1608681599999,
+  "closeDate" : null,
+  "open" : 0.001411,
+  "high" : 0.00144,
+  "low" : 0.0013598,
+  "close" : 0.0014075,
+  "volume" : 7808.38,
+  "quoteAssetVolume" : 11.0303109,
+  "usdVolume" : 256008.7440164005,
+  "numberOfTrades" : 1381,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BNBBTC",
+  "openTime" : 1608681600000,
+  "openDate" : null,
+  "closeTime" : 1608767999999,
+  "closeDate" : null,
+  "open" : 0.001407,
+  "high" : 0.0014568,
+  "low" : 0.001312,
+  "close" : 0.0013388,
+  "volume" : 25806.58,
+  "quoteAssetVolume" : 35.99533324,
+  "usdVolume" : 833365.3445526081,
+  "numberOfTrades" : 2906,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BNBBTC",
+  "openTime" : 1608768000000,
+  "openDate" : null,
+  "closeTime" : 1608854399999,
+  "closeDate" : null,
+  "open" : 0.0013437,
+  "high" : 0.0013838,
+  "low" : 0.00133,
+  "close" : 0.0013701,
+  "volume" : 9953.53,
+  "quoteAssetVolume" : 13.48984598,
+  "usdVolume" : 317032.06710787426,
+  "numberOfTrades" : 1328,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BNBBTC",
+  "openTime" : 1608854400000,
+  "openDate" : null,
+  "closeTime" : 1608940799999,
+  "closeDate" : null,
+  "open" : 0.0013708,
+  "high" : 0.0013939,
+  "low" : 0.001319,
+  "close" : 0.0013454,
+  "volume" : 6158.44,
+  "quoteAssetVolume" : 8.37018892,
+  "usdVolume" : 202494.7243655551,
+  "numberOfTrades" : 1100,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BNBBTC",
+  "openTime" : 1608940800000,
+  "openDate" : null,
+  "closeTime" : 1609027199999,
+  "closeDate" : null,
+  "open" : 0.0013427,
+  "high" : 0.0013746,
+  "low" : 0.0012541,
+  "close" : 0.0012691,
+  "volume" : 13750.08,
+  "quoteAssetVolume" : 18.01410337,
+  "usdVolume" : 458999.7025450614,
+  "numberOfTrades" : 1619,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BNBBTC",
+  "openTime" : 1609027200000,
+  "openDate" : null,
+  "closeTime" : 1609113599999,
+  "closeDate" : null,
+  "open" : 0.0012652,
+  "high" : 0.0012923,
+  "low" : 0.0011627,
+  "close" : 0.00128,
+  "volume" : 22148.36,
+  "quoteAssetVolume" : 27.4649816,
+  "usdVolume" : 742878.0867689459,
+  "numberOfTrades" : 2113,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BNBBTC",
+  "openTime" : 1609113600000,
+  "openDate" : null,
+  "closeTime" : 1609199999999,
+  "closeDate" : null,
+  "open" : 0.0012805,
+  "high" : 0.0013457,
+  "low" : 0.0012563,
+  "close" : 0.0013266,
+  "volume" : 12472.88,
+  "quoteAssetVolume" : 16.2458017,
+  "usdVolume" : 433371.3770870584,
+  "numberOfTrades" : 1534,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BNBBTC",
+  "openTime" : 1609200000000,
+  "openDate" : null,
+  "closeTime" : 1609286399999,
+  "closeDate" : null,
+  "open" : 0.0013281,
+  "high" : 0.0014987,
+  "low" : 0.0013217,
+  "close" : 0.0014268,
+  "volume" : 18169.43,
+  "quoteAssetVolume" : 25.8884598,
+  "usdVolume" : 681031.4905723049,
+  "numberOfTrades" : 2641,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BNBBTC",
+  "openTime" : 1609286400000,
+  "openDate" : null,
+  "closeTime" : 1609372799999,
+  "closeDate" : null,
+  "open" : 0.001427,
+  "high" : 0.001427,
+  "low" : 0.0012912,
+  "close" : 0.0013245,
+  "volume" : 16864.16,
+  "quoteAssetVolume" : 22.74971071,
+  "usdVolume" : 652059.545396906,
+  "numberOfTrades" : 1717,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BNBBTC",
+  "openTime" : 1609372800000,
+  "openDate" : null,
+  "closeTime" : 1609459199999,
+  "closeDate" : null,
+  "open" : 0.0013203,
+  "high" : 0.0013226,
+  "low" : 0.0012704,
+  "close" : 0.0012905,
+  "volume" : 14520.37,
+  "quoteAssetVolume" : 18.81584006,
+  "usdVolume" : 548282.514278292,
+  "numberOfTrades" : 1368,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BNBBTC",
+  "openTime" : 1609459200000,
+  "openDate" : null,
+  "closeTime" : 1609545599999,
+  "closeDate" : null,
+  "open" : 0.0012863,
+  "high" : 0.0013297,
+  "low" : 0.001277,
+  "close" : 0.001285,
+  "volume" : 11899.5,
+  "quoteAssetVolume" : 15.4826022,
+  "usdVolume" : 446697.1484937105,
+  "numberOfTrades" : 1135,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BNBBTC",
+  "openTime" : 1609545600000,
+  "openDate" : null,
+  "closeTime" : 1609631999999,
+  "closeDate" : null,
+  "open" : 0.001284,
+  "high" : 0.001284,
+  "low" : 0.0011443,
+  "close" : 0.00119,
+  "volume" : 21463.94,
+  "quoteAssetVolume" : 26.02937697,
+  "usdVolume" : 816827.9109667535,
+  "numberOfTrades" : 2055,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BNBBTC",
+  "openTime" : 1609632000000,
+  "openDate" : null,
+  "closeTime" : 1609718399999,
+  "closeDate" : null,
+  "open" : 0.0011853,
+  "high" : 0.0012633,
+  "low" : 0.0010946,
+  "close" : 0.001248,
+  "volume" : 34830.29,
+  "quoteAssetVolume" : 41.32350538,
+  "usdVolume" : 1384345.3021590442,
+  "numberOfTrades" : 2524,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BNBBTC",
+  "openTime" : 1609718400000,
+  "openDate" : null,
+  "closeTime" : 1609804799999,
+  "closeDate" : null,
+  "open" : 0.0012503,
+  "high" : 0.0014029,
+  "low" : 0.0012233,
+  "close" : 0.0012825,
+  "volume" : 40137.42,
+  "quoteAssetVolume" : 51.3949424,
+  "usdVolume" : 1654464.3686332044,
+  "numberOfTrades" : 4874,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BNBBTC",
+  "openTime" : 1609804800000,
+  "openDate" : null,
+  "closeTime" : 1609891199999,
+  "closeDate" : null,
+  "open" : 0.001284,
+  "high" : 0.0012974,
+  "low" : 0.001172,
+  "close" : 0.0012303,
+  "volume" : 23586.21,
+  "quoteAssetVolume" : 29.32559069,
+  "usdVolume" : 978768.5672007691,
+  "numberOfTrades" : 2660,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BNBBTC",
+  "openTime" : 1609891200000,
+  "openDate" : null,
+  "closeTime" : 1609977599999,
+  "closeDate" : null,
+  "open" : 0.0012279,
+  "high" : 0.0012294,
+  "low" : 0.001129,
+  "close" : 0.0011476,
+  "volume" : 27012.02,
+  "quoteAssetVolume" : 31.85272084,
+  "usdVolume" : 1135872.7535303526,
+  "numberOfTrades" : 2586,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BNBBTC",
+  "openTime" : 1609977600000,
+  "openDate" : null,
+  "closeTime" : 1610063999999,
+  "closeDate" : null,
+  "open" : 0.0011486,
+  "high" : 0.0011921,
+  "low" : 0.0010868,
+  "close" : 0.0011059,
+  "volume" : 35716.96,
+  "quoteAssetVolume" : 40.38800015,
+  "usdVolume" : 1535603.0810277748,
+  "numberOfTrades" : 3094,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BNBBTC",
+  "openTime" : 1610064000000,
+  "openDate" : null,
+  "closeTime" : 1610150399999,
+  "closeDate" : null,
+  "open" : 0.0010993,
+  "high" : 0.001115,
+  "low" : 0.0010234,
+  "close" : 0.0010413,
+  "volume" : 20211.31,
+  "quoteAssetVolume" : 21.6394847,
+  "usdVolume" : 866021.4387779427,
+  "numberOfTrades" : 2046,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BNBBTC",
+  "openTime" : 1610150400000,
+  "openDate" : null,
+  "closeTime" : 1610236799999,
+  "closeDate" : null,
+  "open" : 0.0010421,
+  "high" : 0.0010961,
+  "low" : 0.0010308,
+  "close" : 0.0010937,
+  "volume" : 15871.13,
+  "quoteAssetVolume" : 16.91489879,
+  "usdVolume" : 685324.137607009,
+  "numberOfTrades" : 1612,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BNBBTC",
+  "openTime" : 1610236800000,
+  "openDate" : null,
+  "closeTime" : 1610323199999,
+  "closeDate" : null,
+  "open" : 0.0010937,
+  "high" : 0.0011404,
+  "low" : 0.001065,
+  "close" : 0.001112,
+  "volume" : 20436.06,
+  "quoteAssetVolume" : 22.43066321,
+  "usdVolume" : 883564.8414252654,
+  "numberOfTrades" : 2158,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BNBBTC",
+  "openTime" : 1610323200000,
+  "openDate" : null,
+  "closeTime" : 1610409599999,
+  "closeDate" : null,
+  "open" : 0.0011115,
+  "high" : 0.0011694,
+  "low" : 0.0010758,
+  "close" : 0.0010758,
+  "volume" : 37779.88,
+  "quoteAssetVolume" : 42.73953409,
+  "usdVolume" : 1522681.9511239033,
+  "numberOfTrades" : 4535,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BNBBTC",
+  "openTime" : 1610409600000,
+  "openDate" : null,
+  "closeTime" : 1610495999999,
+  "closeDate" : null,
+  "open" : 0.0010763,
+  "high" : 0.0011392,
+  "low" : 0.0010729,
+  "close" : 0.0011282,
+  "volume" : 11967.34,
+  "quoteAssetVolume" : 13.25727964,
+  "usdVolume" : 458337.4655894442,
+  "numberOfTrades" : 1862,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BNBBTC",
+  "openTime" : 1610496000000,
+  "openDate" : null,
+  "closeTime" : 1610582399999,
+  "closeDate" : null,
+  "open" : 0.0011282,
+  "high" : 0.0011485,
+  "low" : 0.0010636,
+  "close" : 0.0010769,
+  "volume" : 24190.49,
+  "quoteAssetVolume" : 26.94818593,
+  "usdVolume" : 951767.5378911709,
+  "numberOfTrades" : 2146,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BNBBTC",
+  "openTime" : 1610582400000,
+  "openDate" : null,
+  "closeTime" : 1610668799999,
+  "closeDate" : null,
+  "open" : 0.0010732,
+  "high" : 0.0010942,
+  "low" : 0.0010394,
+  "close" : 0.0010683,
+  "volume" : 15196.06,
+  "quoteAssetVolume" : 16.10946511,
+  "usdVolume" : 622561.006860968,
+  "numberOfTrades" : 1478,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BNBBTC",
+  "openTime" : 1610668800000,
+  "openDate" : null,
+  "closeTime" : 1610755199999,
+  "closeDate" : null,
+  "open" : 0.0010696,
+  "high" : 0.0011444,
+  "low" : 0.0010573,
+  "close" : 0.0011131,
+  "volume" : 17488.1,
+  "quoteAssetVolume" : 19.33406882,
+  "usdVolume" : 723528.7296839748,
+  "numberOfTrades" : 1906,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BNBBTC",
+  "openTime" : 1610755200000,
+  "openDate" : null,
+  "closeTime" : 1610841599999,
+  "closeDate" : null,
+  "open" : 0.0011125,
+  "high" : 0.0011968,
+  "low" : 0.0010992,
+  "close" : 0.0011948,
+  "volume" : 19145.94,
+  "quoteAssetVolume" : 22.01631834,
+  "usdVolume" : 803351.7653597156,
+  "numberOfTrades" : 2059,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BNBBTC",
+  "openTime" : 1610841600000,
+  "openDate" : null,
+  "closeTime" : 1610927999999,
+  "closeDate" : null,
+  "open" : 0.0011972,
+  "high" : 0.0013052,
+  "low" : 0.001184,
+  "close" : 0.00128,
+  "volume" : 23265.31,
+  "quoteAssetVolume" : 28.51550516,
+  "usdVolume" : 1034703.0209516993,
+  "numberOfTrades" : 2568,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BNBBTC",
+  "openTime" : 1610928000000,
+  "openDate" : null,
+  "closeTime" : 1611014399999,
+  "closeDate" : null,
+  "open" : 0.0012811,
+  "high" : 0.0013076,
+  "low" : 0.0011993,
+  "close" : 0.0012398,
+  "volume" : 19336.68,
+  "quoteAssetVolume" : 24.18039347,
+  "usdVolume" : 882390.1237597433,
+  "numberOfTrades" : 1779,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BNBBTC",
+  "openTime" : 1611014400000,
+  "openDate" : null,
+  "closeTime" : 1611100799999,
+  "closeDate" : null,
+  "open" : 0.0012347,
+  "high" : 0.001273,
+  "low" : 0.0011531,
+  "close" : 0.0011837,
+  "volume" : 16766.93,
+  "quoteAssetVolume" : 20.29523246,
+  "usdVolume" : 735730.3892723166,
+  "numberOfTrades" : 2349,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BNBBTC",
+  "openTime" : 1611100800000,
+  "openDate" : null,
+  "closeTime" : 1611187199999,
+  "closeDate" : null,
+  "open" : 0.001185,
+  "high" : 0.0012241,
+  "low" : 0.0011637,
+  "close" : 0.0012005,
+  "volume" : 14591.1,
+  "quoteAssetVolume" : 17.39748543,
+  "usdVolume" : 621442.7027105399,
+  "numberOfTrades" : 1526,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BNBBTC",
+  "openTime" : 1611187200000,
+  "openDate" : null,
+  "closeTime" : 1611273599999,
+  "closeDate" : null,
+  "open" : 0.0011999,
+  "high" : 0.0012852,
+  "low" : 0.001195,
+  "close" : 0.0012528,
+  "volume" : 26170.27,
+  "quoteAssetVolume" : 32.52386289,
+  "usdVolume" : 1062853.8055592503,
+  "numberOfTrades" : 3298,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BNBBTC",
+  "openTime" : 1611273600000,
+  "openDate" : null,
+  "closeTime" : 1611359999999,
+  "closeDate" : null,
+  "open" : 0.0012536,
+  "high" : 0.0012846,
+  "low" : 0.0012083,
+  "close" : 0.0012382,
+  "volume" : 24117.24,
+  "quoteAssetVolume" : 30.49066964,
+  "usdVolume" : 958747.4038343695,
+  "numberOfTrades" : 3989,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BNBBTC",
+  "openTime" : 1611360000000,
+  "openDate" : null,
+  "closeTime" : 1611446399999,
+  "closeDate" : null,
+  "open" : 0.00124,
+  "high" : 0.0012758,
+  "low" : 0.0012288,
+  "close" : 0.0012758,
+  "volume" : 11768.89,
+  "quoteAssetVolume" : 14.81228407,
+  "usdVolume" : 481870.3941476328,
+  "numberOfTrades" : 1421,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BNBBTC",
+  "openTime" : 1611446400000,
+  "openDate" : null,
+  "closeTime" : 1611532799999,
+  "closeDate" : null,
+  "open" : 0.0012759,
+  "high" : 0.0013049,
+  "low" : 0.0012646,
+  "close" : 0.001297,
+  "volume" : 12959.72,
+  "quoteAssetVolume" : 16.69001209,
+  "usdVolume" : 536798.0684578981,
+  "numberOfTrades" : 1295,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BNBBTC",
+  "openTime" : 1611532800000,
+  "openDate" : null,
+  "closeTime" : 1611619199999,
+  "closeDate" : null,
+  "open" : 0.0012989,
+  "high" : 0.0013114,
+  "low" : 0.0012358,
+  "close" : 0.0012994,
+  "volume" : 14567.01,
+  "quoteAssetVolume" : 18.46815372,
+  "usdVolume" : 611108.4904882456,
+  "numberOfTrades" : 1715,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BNBBTC",
+  "openTime" : 1611619200000,
+  "openDate" : null,
+  "closeTime" : 1611705599999,
+  "closeDate" : null,
+  "open" : 0.001297,
+  "high" : 0.0013156,
+  "low" : 0.0012619,
+  "close" : 0.0012876,
+  "volume" : 13746.78,
+  "quoteAssetVolume" : 17.62925638,
+  "usdVolume" : 575454.2770964075,
+  "numberOfTrades" : 1715,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BNBBTC",
+  "openTime" : 1611705600000,
+  "openDate" : null,
+  "closeTime" : 1611791999999,
+  "closeDate" : null,
+  "open" : 0.0012865,
+  "high" : 0.0013566,
+  "low" : 0.0012816,
+  "close" : 0.0013473,
+  "volume" : 16827.8,
+  "quoteAssetVolume" : 22.27886713,
+  "usdVolume" : 696765.888867246,
+  "numberOfTrades" : 2205,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BNBBTC",
+  "openTime" : 1611792000000,
+  "openDate" : null,
+  "closeTime" : 1611878399999,
+  "closeDate" : null,
+  "open" : 0.001345,
+  "high" : 0.0013637,
+  "low" : 0.0012664,
+  "close" : 0.0012728,
+  "volume" : 14674.37,
+  "quoteAssetVolume" : 19.34930648,
+  "usdVolume" : 612519.2756415138,
+  "numberOfTrades" : 1815,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BNBBTC",
+  "openTime" : 1611878400000,
+  "openDate" : null,
+  "closeTime" : 1611964799999,
+  "closeDate" : null,
+  "open" : 0.0012728,
+  "high" : 0.0013228,
+  "low" : 0.0011395,
+  "close" : 0.0012483,
+  "volume" : 35231.59,
+  "quoteAssetVolume" : 42.77341136,
+  "usdVolume" : 1503286.5541525492,
+  "numberOfTrades" : 4939,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BNBBTC",
+  "openTime" : 1611964800000,
+  "openDate" : null,
+  "closeTime" : 1612051199999,
+  "closeDate" : null,
+  "open" : 0.0012521,
+  "high" : 0.0013268,
+  "low" : 0.0012362,
+  "close" : 0.001305,
+  "volume" : 19853.8,
+  "quoteAssetVolume" : 25.71073326,
+  "usdVolume" : 870084.9289009745,
+  "numberOfTrades" : 2471,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BNBBTC",
+  "openTime" : 1612051200000,
+  "openDate" : null,
+  "closeTime" : 1612137599999,
+  "closeDate" : null,
+  "open" : 0.0013069,
+  "high" : 0.0013564,
+  "low" : 0.0013011,
+  "close" : 0.0013407,
+  "volume" : 10479.92,
+  "quoteAssetVolume" : 13.87610301,
+  "usdVolume" : 467716.29344888,
+  "numberOfTrades" : 1560,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BNBBTC",
+  "openTime" : 1612137600000,
+  "openDate" : null,
+  "closeTime" : 1612223999999,
+  "closeDate" : null,
+  "open" : 0.0013396,
+  "high" : 0.0015549,
+  "low" : 0.0013142,
+  "close" : 0.0015351,
+  "volume" : 31819.78,
+  "quoteAssetVolume" : 45.1919295,
+  "usdVolume" : 1525494.5039679834,
+  "numberOfTrades" : 4813,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BNBBTC",
+  "openTime" : 1612224000000,
+  "openDate" : null,
+  "closeTime" : 1612310399999,
+  "closeDate" : null,
+  "open" : 0.0015353,
+  "high" : 0.0015423,
+  "low" : 0.001395,
+  "close" : 0.0014361,
+  "volume" : 27659.57,
+  "quoteAssetVolume" : 40.36484843,
+  "usdVolume" : 1417317.2572423308,
+  "numberOfTrades" : 3320,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BNBBTC",
+  "openTime" : 1612310400000,
+  "openDate" : null,
+  "closeTime" : 1612396799999,
+  "closeDate" : null,
+  "open" : 0.0014361,
+  "high" : 0.0014491,
+  "low" : 0.0013652,
+  "close" : 0.0013869,
+  "volume" : 19260.37,
+  "quoteAssetVolume" : 26.94833935,
+  "usdVolume" : 994197.4930129094,
+  "numberOfTrades" : 1971,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BNBBTC",
+  "openTime" : 1612396800000,
+  "openDate" : null,
+  "closeTime" : 1612483199999,
+  "closeDate" : null,
+  "open" : 0.0013846,
+  "high" : 0.0015211,
+  "low" : 0.0013644,
+  "close" : 0.001512,
+  "volume" : 29123.75,
+  "quoteAssetVolume" : 41.50908782,
+  "usdVolume" : 1574538.91049931,
+  "numberOfTrades" : 4488,
+  "rsi" : 0.0
+}, {
+  "symbol" : "BNBBTC",
+  "openTime" : 1612483200000,
+  "openDate" : null,
+  "closeTime" : 1612569599999,
+  "closeDate" : null,
+  "open" : 0.0015155,
+  "high" : 0.0016557,
+  "low" : 0.0015105,
+  "close" : 0.001654,
+  "volume" : 17553.82,
+  "quoteAssetVolume" : 27.47580796,
+  "usdVolume" : 1037605.3486074178,
+  "numberOfTrades" : 2760,
   "rsi" : 0.0
 } ]

@@ -1,0 +1,16 @@
+[ {
+  "symbol" : "BTCUSD",
+  "openTime" : 1612310400000,
+  "openDate" : null,
+  "closeTime" : 1612569599999,
+  "closeDate" : null,
+  "open" : 35500.12,
+  "high" : 38747.61,
+  "low" : 35388.21,
+  "close" : 37594.76,
+  "volume" : 3446.47545,
+  "quoteAssetVolume" : 1.286252217997E8,
+  "usdVolume" : null,
+  "numberOfTrades" : 155645,
+  "rsi" : 0.0
+} ]
