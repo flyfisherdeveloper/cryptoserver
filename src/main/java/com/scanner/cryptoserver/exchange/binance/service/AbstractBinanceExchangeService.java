@@ -37,7 +37,6 @@ public abstract class AbstractBinanceExchangeService implements ExchangeService 
     private static final String COIN_CACHE = "CoinCache";
     private static final int ALL_24_HOUR_MAX_COUNT = 6;
     private static final int ALL_24_HOUR_DELAY = 151;
-    private static final String TRADING = "TRADING";
     private static final List<String> nonUsaMarkets = Arrays.asList("NGN", "RUB", "TRY", "EUR", "ZAR", "BKRW", "IDRT", "UAH", "BIDR", "GBP", "AUD");
 
     private final RestOperations restTemplate;
@@ -122,95 +121,31 @@ public abstract class AbstractBinanceExchangeService implements ExchangeService 
         return callCoinTicker(symbol, interval, null, null);
     }
 
-    public CoinDataFor24Hr get24HourCoinData(String symbol) {
+    public Optional<CoinDataFor24Hr> get24HourCoinData(String symbol) {
         String url = getUrlExtractor().getTickerUrl() + "/24hr?symbol={symbol}";
         Map<String, Object> params = new HashMap<>();
         params.put("symbol", symbol);
         ResponseEntity<LinkedHashMap> info = restTemplate.getForEntity(url, LinkedHashMap.class, params);
         LinkedHashMap body = info.getBody();
         if (body == null) {
-            return new CoinDataFor24Hr();
+            return Optional.empty();
         }
-        CoinDataFor24Hr coin = get24HrCoinTicker(body);
-        coinMarketCapService.setMarketCapDataFor24HrData(getExchangeVisitor(), coin);
-        return coin;
+        final Optional<CoinDataFor24Hr> ticker = get24HrCoinTicker(body);
+        ticker.ifPresent(c -> coinMarketCapService.setMarketCapDataFor24HrData(getExchangeVisitor(), c));
+        return ticker;
     }
 
     /**
-     * The symbol will be the coin/quote(market), such as "BTCUSD".
-     * We need to split this into coin and quote(market). So, this method determines the offset
-     * to split the string, such as for "BTCUSD", the offset would be 3; for "BTCUSDT",
-     * the offset would be 4.
-     *
-     * @param symbol the symbold, such as "BTCUSDT".
-     * @return the offset where the coin/quote are split.
-     */
-    private int getQuoteOffset(String symbol) {
-        //get the set of markets for the exchange
-        Set<String> markets = getMarkets();
-
-        //note: this is a special case
-        //There are coins whose market is "BUSD". But how do we determine the difference
-        //between a market of "BUSD" or "USD"? We really can't, except to assume that
-        //the symbol is longer than 6 characters (such as "ZILBUSD") to differentiate
-        //between "BNBUSD" which is only 6 charachters long, and the market for that is "USD" and not "BUSD".
-        //This really is a hack, without much of an alternative, until the exchange gives better information for symbols,
-        //such as "ZIL-BUSD" instead of "ZILBUSD", or "BNB-USD" instead of "BNBUSD".
-        if (symbol.endsWith("BUSD") && symbol.length() > 6) {
-            return 4;
-        }
-        //stream through the markets and find which one matches this symbol
-        int offset = markets.stream()
-                .filter(symbol::endsWith)
-                .findFirst()
-                .map(String::length)
-                .orElse(3);
-        return offset;
-    }
-
-    private int getStartOfQuote(String str) {
-        int end = str.length();
-        int offset = this.getQuoteOffset(str);
-        return end - offset;
-    }
-
-    /**
-     * Get a "quote" from a symbol string. i.e. "BTCUSD" returns "USD".
+     * Get a coin from a symbol string. i.e. "BTCUSD" returns the coin for the BTC/USD pair.
      *
      * @param str the symbol, such as "ETHUSDT".
-     * @return the "quote" such as "USDT" from the string "LTCUSDT".
+     * @return the coin from the symbol.
      */
-    public String getQuote(String str) {
+    public Optional<Coin> getCoin(String str) {
         ExchangeInfo exchangeInfo = retrieveExchangeInfoFromCache();
-        Supplier<String> parseQuote = () -> {
-            int start = this.getStartOfQuote(str);
-            return str.substring(start);
-        };
-        String quote = exchangeInfo.getCoins().stream()
+        final Optional<Coin> coin = exchangeInfo.getCoins().stream()
                 .filter(sym -> sym.getSymbol() != null && sym.getSymbol().equals(str))
-                .findFirst()
-                .map(Coin::getQuoteAsset)
-                .orElseGet(parseQuote);
-        return quote;
-    }
-
-    /**
-     * Get a "coin symbol" from a symbol string. i.e. "BTCUSD" returns "BTC".
-     *
-     * @param str the symbol, such as "ETHUSDT".
-     * @return the "coin" such as "LTC" from the string "LTCUSDT".
-     */
-    public String getCoin(String str) {
-        ExchangeInfo exchangeInfo = retrieveExchangeInfoFromCache();
-        Supplier<String> parseCoin = () -> {
-            int offset = this.getStartOfQuote(str);
-            return str.substring(0, offset);
-        };
-        String coin = exchangeInfo.getCoins().stream()
-                .filter(sym -> sym.getSymbol() != null && sym.getSymbol().equals(str))
-                .findFirst()
-                .map(Coin::getBaseAsset)
-                .orElseGet(parseCoin);
+                .findFirst();
         return coin;
     }
 
@@ -223,43 +158,27 @@ public abstract class AbstractBinanceExchangeService implements ExchangeService 
     private boolean isCoinTrading(String symbol) {
         ExchangeInfo info = retrieveExchangeInfoFromCache();
         boolean trading = info.getCoins().stream()
-                .anyMatch(s -> s.getSymbol().equals(symbol) && s.getStatus().equals(TRADING));
+                .anyMatch(coin -> coin.getSymbol().equals(symbol) && coin.isTrading());
         return trading;
-    }
-
-    /**
-     * Returns true if the symbol is a leveraged token, such as ETHBULL or ETHDOWN.
-     * A leveraged token is a trading pair based on a regular coin (such as ETH), but is subject
-     * to leveraged trading, and is not an ordinary coin. Therefore, we don't return these to the
-     * client. Unfortunately, it appears there isn't anything definitive from the exchange api
-     * to determine these tokens, other than checking their name for "BULL" or "BEAR", which is
-     * somewhat of a "hack", but is the best available method now due to api limitations.
-     * This will break of course if ever a coin is introduced that includes the name "BULL" or "BEAR".
-     * No such coin exists on the exchanges as of now, however.
-     *
-     * @param symbol the trading symbol, such as ETHBTC or BTCUSDT
-     * @return true if the symbol represents a leveraged token; false otherwise.
-     */
-    private boolean isLeveragedToken(String symbol) {
-        return symbol.endsWith("DOWN") || symbol.endsWith("UP") || symbol.contains("BULL") || symbol.contains("BEAR");
     }
 
     private boolean isCoinInUsaMarket(String currency) {
         return !nonUsaMarkets.contains(currency);
     }
 
-    private CoinDataFor24Hr get24HrCoinTicker(LinkedHashMap map) {
+    private Optional<CoinDataFor24Hr> get24HrCoinTicker(LinkedHashMap map) {
         CoinDataFor24Hr data = new CoinDataFor24Hr();
         String symbol = (String) map.get("symbol");
-        String coin = getCoin(symbol);
-        String currency = getQuote(symbol);
-        if (!isCoinTrading(symbol) || !isCoinInUsaMarket(currency) || isLeveragedToken(symbol) || isLeveragedToken(coin)) {
-            return null;
+        final Optional<Coin> coin = getCoin(symbol);
+        String baseAsset = coin.map(Coin::getBaseAsset).orElse("");
+        String quoteAsset = coin.map(Coin::getQuoteAsset).orElse("");
+        if (!isCoinTrading(symbol) || !isCoinInUsaMarket(quoteAsset)) {
+            return Optional.empty();
         }
 
         data.setSymbol(symbol);
-        data.setCoin(coin);
-        data.setCurrency(currency);
+        data.setCoin(baseAsset);
+        data.setCurrency(quoteAsset);
 
         String priceChangeStr = (String) map.get("priceChange");
         double priceChange = Double.parseDouble(priceChangeStr);
@@ -299,10 +218,10 @@ public abstract class AbstractBinanceExchangeService implements ExchangeService 
         data.setCloseTime(closeTime);
 
         data.setupLinks(getUrlExtractor().getTradeUrl());
-        byte[] iconBytes = cacheUtil.getIconBytes(getExchangeVisitor().getSymbol(coin), null);
+        byte[] iconBytes = cacheUtil.getIconBytes(getExchangeVisitor().getSymbol(baseAsset), null);
         data.setIcon(iconBytes);
 
-        return data;
+        return Optional.of(data);
     }
 
     private List<CoinTicker> callCoinTicker(String symbol, String interval,
@@ -332,6 +251,9 @@ public abstract class AbstractBinanceExchangeService implements ExchangeService 
     public List<CoinTicker> callCoinTicker(String symbol, String interval, Long startTime, Long endTime) {
         if (interval.equals("24h")) {
             interval = "1d";
+        }
+        if (interval.equals("72h")) {
+            interval = "3d";
         }
         String url = getUrlExtractor().getKlinesUrl() + "?symbol={symbol}&interval={interval}";
         Map<String, Object> params = new HashMap<>();
@@ -477,29 +399,36 @@ public abstract class AbstractBinanceExchangeService implements ExchangeService 
                 double coinOpen = coinTicker.getOpen();
                 double coinClose = coinTicker.getClose();
                 //the USD volume is computed as the coin price * the usd price at open + the coin price * the usd price at close divided by 2
-                double avg = (usdOpen*coinOpen + usdClose*coinClose) / 2.0;
+                double avg = (usdOpen * coinOpen + usdClose * coinClose) / 2.0;
                 double vol = coinTicker.getVolume() * avg;
                 coins.get(index).setUsdVolume(vol);
             }
         }
     }
 
+    @Override
     public List<CoinTicker> getTickerData(String symbol, String interval, String daysOrMonths) {
+        final Optional<Coin> coin = getCoin(symbol);
+        return coin.map(theCoin -> getTickerData(theCoin, interval, daysOrMonths))
+                .orElse(Collections.emptyList());
+    }
+
+    private List<CoinTicker> getTickerData(Coin coin, String interval, String daysOrMonths) {
         //Attempt to get the data out of the cache if it is in there.
         //If not in the cache, then call the service and add the data to the cache.
         //The data in the cache will expire according to the setup in the CachingConfig configuration.
-        String name = getExchangeName() + "-" + symbol + interval + daysOrMonths;
-        Supplier<List<CoinTicker>> coinTickerSupplier = () -> callCoinTicker(symbol, interval, daysOrMonths);
+        String name = getExchangeName() + "-" + coin.getSymbol() + interval + daysOrMonths;
+        Supplier<List<CoinTicker>> coinTickerSupplier = () -> callCoinTicker(coin.getSymbol(), interval, daysOrMonths);
         List<CoinTicker> coins = cacheUtil.retrieveFromCache(COIN_CACHE, name, coinTickerSupplier);
         if (coins == null || coins.isEmpty()) {
             return new ArrayList<>();
         }
         //Here, we want the USD volume.
-        if ((symbol.endsWith("USD") && !symbol.endsWith("BUSD") && !symbol.endsWith("TUSD")) || symbol.endsWith("USDT")) {
+        String quote = coin.getQuoteAsset();
+        if (quote.equals("USD") || quote.equals("USDT")) {
             return coins;
         }
         //Find the USD volume, and add it to the list.
-        final String quote = getQuote(symbol);
         final ExchangeInfo exchangeInfo = getExchangeInfo();
         final String usdSymbol = quote + getUsdQuote();
         //We need the USD or USDT pair of the quote coin in order to get the USD price in order to compute the USD volume for the tickers.
@@ -582,10 +511,7 @@ public abstract class AbstractBinanceExchangeService implements ExchangeService 
             pageSize = data.length;
         }
         for (int index = lastIndex - pageSize; index < (Math.min(lastIndex, data.length)); index++) {
-            CoinDataFor24Hr coin = get24HrCoinTicker(data[index]);
-            if (coin != null) {
-                list.add(coin);
-            }
+            get24HrCoinTicker(data[index]).ifPresent(list::add);
         }
 
         coinMarketCapService.setMarketCapDataFor24HrData(getExchangeVisitor(), list);

@@ -1,0 +1,16 @@
+[ {
+  "symbol" : "ETHUSD",
+  "openTime" : 1612396800000,
+  "openDate" : null,
+  "closeTime" : 1612655999999,
+  "closeDate" : null,
+  "open" : 1667.45,
+  "high" : 1764.0,
+  "low" : 1556.45,
+  "close" : 1715.86,
+  "volume" : 49867.44776,
+  "quoteAssetVolume" : 8.24108419445E7,
+  "usdVolume" : null,
+  "numberOfTrades" : 75095,
+  "rsi" : 0.0
+} ]

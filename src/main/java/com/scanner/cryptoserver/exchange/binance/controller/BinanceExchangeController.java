@@ -30,7 +30,7 @@ public class BinanceExchangeController {
 
     @GetMapping(value = "/24HourTicker/{symbol}", produces = MediaType.APPLICATION_JSON_VALUE)
     public CoinDataFor24Hr get24HourTicker(@PathVariable String symbol) {
-        CoinDataFor24Hr data = binanceService.get24HourCoinData(symbol);
+        final CoinDataFor24Hr data = binanceService.get24HourCoinData(symbol).orElse(null);
         return data;
     }
 

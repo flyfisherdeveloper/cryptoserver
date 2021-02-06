@@ -107,19 +107,13 @@ class BinanceExchangeServiceImplTest extends Specification {
 
           //the following represents exchange information - metadata about coins on an exchange
           def exchangeInfo = new ExchangeInfo()
-          def exchangeSymbol = new Coin(symbol: symbol, quoteAsset: currency, status: status)
+          def exchangeSymbol = new Coin(symbol: symbol, baseAsset: coin, quoteAsset: currency, status: status, permissions: permissions)
           def exchangeSymbols = [exchangeSymbol]
           exchangeInfo.setCoins(exchangeSymbols)
           def exchangeInfoResponse = ResponseEntity.of(Optional.of(exchangeInfo)) as ResponseEntity<ExchangeInfo>
 
-          //the following represents coin market cap data for certain coins
-          def coinMarketCapMap = new CoinMarketCapListing()
-          def data = new CoinMarketCapData(symbol: coin, marketCap: marketCap)
-          coinMarketCapMap.setData(coin: data)
-
         when: "mocks are called"
           cacheUtil.retrieveFromCache(_, "binance-ExchangeInfo", _) >>> [exchangeInfo, exchangeInfo]
-          coinMarketCapService.getCoinMarketCapListing() >> coinMarketCapMap
           restTemplate.getForEntity(*_,) >>> [linkedHashMapResponse, exchangeInfoResponse]
           //here, we mock the call to the market cap service that sets the market cap
           //this ensures that the service makes the call to set the market cap
@@ -152,21 +146,21 @@ class BinanceExchangeServiceImplTest extends Specification {
           }
 
         where:
-          symbol        | coin      | currency | status    | priceChange | priceChangePercent | lastPrice | highPrice | lowPrice  | volume        | quoteVolume   | marketCap | isCoinValid
-          "LTCUSD"      | "LTC"     | "USD"    | "TRADING" | "13.2"      | "1.2"              | "14.3"    | "16.3"    | "11.17"   | "23987.23"    | "54.23"       | 20000.0   | true
-          "BTCBUSD"     | "BTC"     | "BUSD"   | "TRADING" | "439.18"    | "4.32"             | "8734.56" | "8902.87" | "8651.23" | "88922330.09" | "10180.18"    | 50000.0   | true
-          "BTCUSDT"     | "BTC"     | "USDT"   | "TRADING" | "439.18"    | "4.32"             | "8734.56" | "8902.87" | "8651.23" | "88922330.09" | "10180.18"    | 50000.0   | true
+          symbol        | coin      | currency | status    | priceChange | priceChangePercent | lastPrice | highPrice | lowPrice  | volume        | quoteVolume   | marketCap | permissions           | isCoinValid
+          "LTCUSD"      | "LTC"     | "USD"    | "TRADING" | "13.2"      | "1.2"              | "14.3"    | "16.3"    | "11.17"   | "23987.23"    | "54.23"       | 20000.0   | ["SPOT"]              | true
+          "BTCBUSD"     | "BTC"     | "BUSD"   | "TRADING" | "439.18"    | "4.32"             | "8734.56" | "8902.87" | "8651.23" | "88922330.09" | "10180.18"    | 50000.0   | ["SPOT"]              | true
+          "BTCUSDT"     | "BTC"     | "USDT"   | "TRADING" | "439.18"    | "4.32"             | "8734.56" | "8902.87" | "8651.23" | "88922330.09" | "10180.18"    | 50000.0   | ["SPOT"]              | true
           //verify that coins that are not trading (status is "BREAK") do not get returned from the service
-          "BTCUSDT"     | "BTC"     | "USDT"   | "BREAK"   | "439.18"    | "4.32"             | "8734.56" | "8902.87" | "8651.23" | "88922330.09" | "10180.18"    | 50000.0   | false
+          "BTCUSDT"     | "BTC"     | "USDT"   | "BREAK"   | "439.18"    | "4.32"             | "8734.56" | "8902.87" | "8651.23" | "88922330.09" | "10180.18"    | 50000.0   | ["SPOT"]              | false
           //verify that non-USA currencies (EUR) do not get returned from the service
-          "BTCEUR"      | "BTC"     | "EUR"    | "TRADING" | "439.18"    | "4.32"             | "8823.22" | "8734.56" | "8902.87" | "8651.23"     | "88922330.09" | 50000.0   | false
+          "BTCEUR"      | "BTC"     | "EUR"    | "TRADING" | "439.18"    | "4.32"             | "8823.22" | "8734.56" | "8902.87" | "8651.23"     | "88922330.09" | 50000.0   | ["SPOT"]              | false
           //verify that leveraged tokens do not get returned from the service
-          "XRPBEAR"     | "XRP"     | "USD"    | "TRADING" | "439.18"    | "4.32"             | "0.25"    | "0.28"    | "0.21"    | "8651.23"     | "88922330.09" | 10000.0   | false
-          "XRPBULL"     | "XRP"     | "USD"    | "TRADING" | "439.18"    | "4.32"             | "0.25"    | "0.28"    | "0.21"    | "8651.23"     | "88922330.09" | 10000.0   | false
-          "ADADOWNUSDT" | "ADADOWN" | "USDT"   | "TRADING" | "23.18"     | "5.32"             | "22.23"   | "35.28"   | "17.21"   | "765.90"      | "789923.09"   | 10000.0   | false
-          "ADAUPUSDT"   | "ADAUP"   | "USDT"   | "TRADING" | "33.19"     | "2.12"             | "35.29"   | "36.28"   | "18.21"   | "768.23"      | "789923.09"   | 10000.0   | false
+          "XRPBEAR"     | "XRP"     | "USD"    | "TRADING" | "439.18"    | "4.32"             | "0.25"    | "0.28"    | "0.21"    | "8651.23"     | "88922330.09" | 10000.0   | ["MARGIN"]            | false
+          "XRPBULL"     | "XRP"     | "USD"    | "TRADING" | "439.18"    | "4.32"             | "0.25"    | "0.28"    | "0.21"    | "8651.23"     | "88922330.09" | 10000.0   | ["LEVERAGED"]         | false
+          "ADADOWNUSDT" | "ADADOWN" | "USDT"   | "TRADING" | "23.18"     | "5.32"             | "22.23"   | "35.28"   | "17.21"   | "765.90"      | "789923.09"   | 10000.0   | ["MARGIN, LEVERAGED"] | false
+          "ADAUPUSDT"   | "ADAUP"   | "USDT"   | "TRADING" | "33.19"     | "2.12"             | "35.29"   | "36.28"   | "18.21"   | "768.23"      | "789923.09"   | 10000.0   | ["MARGIN, LEVERAGED"] | false
           //verify that the service handles the case of no data being returned
-          null          | null      | null     | null      | null        | null               | null      | null      | null      | null          | null          | null      | false
+          null          | null      | null     | null      | null        | null               | null      | null      | null      | null          | null          | null      | null                  | false
     }
 
     @Unroll("Test call of coin ticker for #symbol for #interval and #daysOrMonths")
@@ -229,6 +223,7 @@ class BinanceExchangeServiceImplTest extends Specification {
           "BTCUSD" | "1h"     | "1m"         | [expected: false]
           "BTCUSD" | "4h"     | "1m"         | [expected: false]
           "BTCUSD" | "24h"    | "1m"         | [expected: false]
+          "BTCUSD" | "72h"    | "1m"         | [expected: false]
           "BTCUSD" | "1h"     | "12m"        | [expected: true, type: RuntimeException]
     }
 
@@ -358,17 +353,8 @@ class BinanceExchangeServiceImplTest extends Specification {
                        new Coin(symbol: symbolLtc, id: idLtc, marketCap: marketCapLtc)]
           exchangeInfo.setCoins(coins)
 
-          def coinMarketCapListing = new CoinMarketCapListing()
-          def dataBtc = new CoinMarketCapData(symbol: symbolBtc)
-          def dataLtc = new CoinMarketCapData(symbol: symbolLtc)
-          def dataMap = [:] as HashMap<String, CoinMarketCapData>
-          dataMap.put(symbolBtc, dataBtc)
-          dataMap.put(symbolLtc, dataLtc)
-          coinMarketCapListing.setData(dataMap)
-
         when:
           cacheUtil.retrieveFromCache(*_) >> exchangeInfo
-          coinMarketCapService.getCoinMarketCapListing() >> coinMarketCapListing
 
         then:
           def info = service.getExchangeInfoWithoutMarketCap()
@@ -392,8 +378,6 @@ class BinanceExchangeServiceImplTest extends Specification {
         given:
           def baseAssetBtc = "BTC"
           def baseAssetLtc = "LTC"
-          def nameBtc = "Bitcoin"
-          def nameLtc = "Litecoin"
           def symbolBtc = "BTCUSD"
           def symbolLtc = "LTCETH"
           def marketCapBtc = 10000000
@@ -406,17 +390,8 @@ class BinanceExchangeServiceImplTest extends Specification {
                        new Coin(symbol: symbolLtc, baseAsset: baseAssetLtc, id: idLtc, marketCap: marketCapLtc)]
           exchangeInfo.setCoins(coins)
 
-          def coinMarketCapListing = new CoinMarketCapListing()
-          def dataBtc = new CoinMarketCapData(symbol: baseAssetBtc, name: nameBtc, id: idBtc, marketCap: marketCapBtc)
-          def dataLtc = new CoinMarketCapData(symbol: baseAssetLtc, name: nameLtc, id: idLtc, marketCap: marketCapLtc)
-          def dataMap = [:] as HashMap<String, CoinMarketCapData>
-          dataMap.put(symbolBtc, dataBtc)
-          dataMap.put(symbolLtc, dataLtc)
-          coinMarketCapListing.setData(dataMap)
-
         when:
           cacheUtil.retrieveFromCache(*_) >> exchangeInfo
-          coinMarketCapService.getCoinMarketCapListing() >> coinMarketCapListing
 
         then:
           def info = service.getExchangeInfo()
@@ -441,66 +416,27 @@ class BinanceExchangeServiceImplTest extends Specification {
         given:
           //the following represents exchange information - metadata about coins on an exchange
           def exchangeInfo = new ExchangeInfo()
-          def coin1 = new Coin(symbol: symbol, quoteAsset: currency)
-          def coin2 = new Coin(symbol: "XRPUSD", quoteAsset: "USD")
-          def coins
-          if (exchangeHasCoin) {
-              coins = [coin1, coin2]
-          } else {
-              //test the rare case when the exchange doesn't have the symbol
-              // (if a coin is added just recently since the exchange information was called before being put in the cache)
-              coins = [coin2]
-          }
+          def coin1 = new Coin(symbol: symbol, baseAsset: expectedCoin, quoteAsset: currency)
+          def coin2 = new Coin(symbol: "XRPUSD", baseAsset: "XRP", quoteAsset: "USD")
+          def coins = [coin1, coin2]
           exchangeInfo.setCoins(coins)
 
         when:
           cacheUtil.retrieveFromCache(_, _, _) >> exchangeInfo
 
         then:
-          def coin = service.getCoin(symbol)
+          def coin = service.getCoin(symbol).orElse(new Coin())
 
         expect:
-          coin == expectedCoin
+          coin.getBaseAsset() == expectedCoin
 
         where:
-          symbol    | currency | expectedCoin | exchangeHasCoin
-          "BTCUSD"  | "USD"    | "BTC"        | true
-          "LTCUSDT" | "USDT"   | "LTC"        | true
-          "ETHUSD"  | "USD"    | "ETH"        | false
-
-    }
-
-    @Unroll("test that #symbol has #expectedQuote for quote")
-    def "test getQuote"() {
-        given:
-          //the following represents exchange information - metadata about coins on an exchange
-          def exchangeInfo = new ExchangeInfo()
-          def coin1 = new Coin(symbol: symbol, quoteAsset: currency)
-          def coin2 = new Coin(symbol: "XRPUSD", quoteAsset: "USD")
-          def coins
-          if (exchangeHasCoin) {
-              coins = [coin1, coin2]
-          } else {
-              //test the rare case when the exchange doesn't have the symbol
-              // (if a coin is added just recently since the exchange information was called before being put in the cache)
-              coins = [coin2]
-          }
-          exchangeInfo.setCoins(coins)
-
-        when:
-          cacheUtil.retrieveFromCache(_, _, _) >> exchangeInfo
-
-        then:
-          def quote = service.getQuote(symbol)
-
-        expect:
-          quote == expectedQuote
-
-        where:
-          symbol    | currency | expectedQuote | exchangeHasCoin
-          "BTCUSD"  | "USD"    | "USD"         | true
-          "LTCUSDT" | "USDT"   | "USDT"        | true
-          "ETHUSD"  | "USD"    | "USD"         | false
+          symbol    | currency | expectedCoin
+          "BTCUSD"  | "USD"    | "BTC"
+          "LTCUSDT" | "USDT"   | "LTC"
+          //test when the coin is not in the exchange info -
+          // happens when a new coin is added but the exchange info cache isn't updated yet, since it updates on a schedule
+          "ETHUSD"  | "USD"    | null
 
     }
 
@@ -526,13 +462,15 @@ class BinanceExchangeServiceImplTest extends Specification {
         given:
           def coinTicker1 = new CoinTicker(symbol: "BTC", open: 9999.0, close: 10000.0, volume: 10.0)
           def coinTicker2 = new CoinTicker(symbol: "LTC", open: 170.0, close: 175.0, volume: 10.0)
-          def symbols = ["BTC"]
+          def symbols = ["BTCUSD"]
           def coinTickerList = [coinTicker1, coinTicker2]
+          def coins = [new Coin(symbol: "BTCUSD", quoteAsset: "USD"), new Coin(symbol: "LTCBTC", quoteAsset: "BTC")]
+          def exchangeInfo = new ExchangeInfo(coins: coins)
 
         when:
           cacheUtil.retrieveFromCache("CoinCache", _, _) >> coinTickerList
           //here, the exchange info isn't needed for the test, but is used to avoid null pointer errors
-          cacheUtil.retrieveFromCache("ExchangeInfo", _, _) >> new ExchangeInfo(coins: new ArrayList<Coin>())
+          cacheUtil.retrieveFromCache("ExchangeInfo", _, _) >> exchangeInfo
 
         then:
           def tickerData = service.getRsiTickerData(symbols)

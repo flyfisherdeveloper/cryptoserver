@@ -85,7 +85,7 @@ class BittrexServiceImplTest extends Specification {
           }
 
         then:
-          def coin = service.get24HourCoinData(symbol)
+          def coin = service.get24HourCoinData(symbol).orElse(new CoinDataFor24Hr())
 
         expect:
           assert coin

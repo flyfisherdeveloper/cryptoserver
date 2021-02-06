@@ -15,6 +15,7 @@ import org.slf4j.LoggerFactory;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.Optional;
 import java.util.function.Supplier;
 
 public abstract class AbstractSandboxExchangeService implements ExchangeService {
@@ -75,8 +76,8 @@ public abstract class AbstractSandboxExchangeService implements ExchangeService 
 
 
     @Override
-    public CoinDataFor24Hr get24HourCoinData(String symbol) {
-        return getData(getDataName("24HourTicker-" + symbol), CoinDataFor24Hr.class);
+    public Optional<CoinDataFor24Hr> get24HourCoinData(String symbol) {
+        return Optional.of(getData(getDataName("24HourTicker-" + symbol), CoinDataFor24Hr.class));
     }
 
     @Override

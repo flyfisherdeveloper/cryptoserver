@@ -5,6 +5,7 @@ import com.scanner.cryptoserver.exchange.binance.dto.CoinTicker;
 import com.scanner.cryptoserver.exchange.coinmarketcap.dto.ExchangeInfo;
 
 import java.util.List;
+import java.util.Optional;
 import java.util.function.Supplier;
 
 public interface ExchangeService {
@@ -27,7 +28,7 @@ public interface ExchangeService {
      */
     ExchangeInfo retrieveExchangeInfoFromCache();
 
-    CoinDataFor24Hr get24HourCoinData(String symbol);
+    Optional<CoinDataFor24Hr> get24HourCoinData(String symbol);
 
     List<CoinDataFor24Hr> get24HrAllCoinTicker();
 

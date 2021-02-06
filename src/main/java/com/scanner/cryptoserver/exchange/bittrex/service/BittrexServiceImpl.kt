@@ -15,6 +15,7 @@ import com.scanner.cryptoserver.util.UrlReader
 import org.slf4j.LoggerFactory
 import org.springframework.beans.factory.annotation.Value
 import org.springframework.stereotype.Service
+import java.util.*
 import java.util.function.Supplier
 
 @Service(value = "bittrexService")
@@ -99,8 +100,8 @@ class BittrexServiceImpl(
         TODO("Not yet implemented")
     }
 
-    override fun get24HourCoinData(symbol: String?): CoinDataFor24Hr {
-        return getCoinDataFor24Hour().find { it.symbol == symbol }!!
+    override fun get24HourCoinData(symbol: String?): Optional<CoinDataFor24Hr> {
+        return Optional.of(getCoinDataFor24Hour().find { it.symbol == symbol }!!)
     }
 
     override fun getRsiTickerData(symbols: MutableList<String>?): MutableList<CoinTicker> {

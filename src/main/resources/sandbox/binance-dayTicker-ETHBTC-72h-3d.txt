@@ -1,0 +1,16 @@
+[ {
+  "symbol" : "ETHBTC",
+  "openTime" : 1612483200000,
+  "openDate" : null,
+  "closeTime" : 1612742399999,
+  "closeDate" : null,
+  "open" : 0.0432,
+  "high" : 0.04618,
+  "low" : 0.0431,
+  "close" : 0.045592,
+  "volume" : 361149.419,
+  "quoteAssetVolume" : 16115.51203546,
+  "usdVolume" : 5.857907644231391E8,
+  "numberOfTrades" : 421659,
+  "rsi" : 0.0
+} ]

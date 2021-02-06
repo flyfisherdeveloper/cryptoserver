@@ -1,1325 +1,5 @@
 [ {
   "symbol" : "LTCBTC",
-  "openTime" : 1573344000000,
-  "openDate" : null,
-  "closeTime" : 1573430399999,
-  "closeDate" : null,
-  "open" : 0.007044,
-  "high" : 0.00753,
-  "low" : 0.006915,
-  "close" : 0.007041,
-  "volume" : 227605.46,
-  "quoteAssetVolume" : 1623.37608411,
-  "usdVolume" : 2.0312250968145E9,
-  "numberOfTrades" : 48916,
-  "rsi" : 0.0
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1573430400000,
-  "openDate" : null,
-  "closeTime" : 1573516799999,
-  "closeDate" : null,
-  "open" : 0.007041,
-  "high" : 0.007178,
-  "low" : 0.006959,
-  "close" : 0.00708,
-  "volume" : 137252.7,
-  "quoteAssetVolume" : 968.88145223,
-  "usdVolume" : 1.2197256278805E9,
-  "numberOfTrades" : 28250,
-  "rsi" : 0.0
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1573516800000,
-  "openDate" : null,
-  "closeTime" : 1573603199999,
-  "closeDate" : null,
-  "open" : 0.00708,
-  "high" : 0.007108,
-  "low" : 0.00691,
-  "close" : 0.00697,
-  "volume" : 104808.88,
-  "quoteAssetVolume" : 735.0240952,
-  "usdVolume" : 9.199756655320002E8,
-  "numberOfTrades" : 20925,
-  "rsi" : 0.0
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1573603200000,
-  "openDate" : null,
-  "closeTime" : 1573689599999,
-  "closeDate" : null,
-  "open" : 0.006966,
-  "high" : 0.00704,
-  "low" : 0.006901,
-  "close" : 0.006944,
-  "volume" : 70568.43,
-  "quoteAssetVolume" : 491.8762217,
-  "usdVolume" : 6.209679583114499E8,
-  "numberOfTrades" : 13108,
-  "rsi" : 0.0
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1573689600000,
-  "openDate" : null,
-  "closeTime" : 1573775999999,
-  "closeDate" : null,
-  "open" : 0.006944,
-  "high" : 0.006953,
-  "low" : 0.006785,
-  "close" : 0.006824,
-  "volume" : 101744.3,
-  "quoteAssetVolume" : 697.55787075,
-  "usdVolume" : 8.86407533473E8,
-  "numberOfTrades" : 18627,
-  "rsi" : 0.0
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1573776000000,
-  "openDate" : null,
-  "closeTime" : 1573862399999,
-  "closeDate" : null,
-  "open" : 0.006821,
-  "high" : 0.006989,
-  "low" : 0.006619,
-  "close" : 0.0068,
-  "volume" : 148526.35,
-  "quoteAssetVolume" : 1012.27141832,
-  "usdVolume" : 1.27124519859925E9,
-  "numberOfTrades" : 27765,
-  "rsi" : 0.0
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1573862400000,
-  "openDate" : null,
-  "closeTime" : 1573948799999,
-  "closeDate" : null,
-  "open" : 0.0068,
-  "high" : 0.006916,
-  "low" : 0.006767,
-  "close" : 0.006866,
-  "volume" : 61297.96,
-  "quoteAssetVolume" : 419.17684998,
-  "usdVolume" : 5.1988761410719997E8,
-  "numberOfTrades" : 13693,
-  "rsi" : 0.0
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1573948800000,
-  "openDate" : null,
-  "closeTime" : 1574035199999,
-  "closeDate" : null,
-  "open" : 0.006863,
-  "high" : 0.007017,
-  "low" : 0.006834,
-  "close" : 0.006965,
-  "volume" : 85384.54,
-  "quoteAssetVolume" : 592.74010064,
-  "usdVolume" : 7.254757210278E8,
-  "numberOfTrades" : 16756,
-  "rsi" : 0.0
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1574035200000,
-  "openDate" : null,
-  "closeTime" : 1574121599999,
-  "closeDate" : null,
-  "open" : 0.006966,
-  "high" : 0.006986,
-  "low" : 0.006624,
-  "close" : 0.006817,
-  "volume" : 154664.26,
-  "quoteAssetVolume" : 1055.25644057,
-  "usdVolume" : 1.2906763429852002E9,
-  "numberOfTrades" : 26478,
-  "rsi" : 0.0
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1574121600000,
-  "openDate" : null,
-  "closeTime" : 1574207999999,
-  "closeDate" : null,
-  "open" : 0.006818,
-  "high" : 0.0069,
-  "low" : 0.006729,
-  "close" : 0.006779,
-  "volume" : 126368.13,
-  "quoteAssetVolume" : 860.69264667,
-  "usdVolume" : 1.0311727865691E9,
-  "numberOfTrades" : 23461,
-  "rsi" : 0.0
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1574208000000,
-  "openDate" : null,
-  "closeTime" : 1574294399999,
-  "closeDate" : null,
-  "open" : 0.006778,
-  "high" : 0.006902,
-  "low" : 0.006732,
-  "close" : 0.006791,
-  "volume" : 95320.92,
-  "quoteAssetVolume" : 649.49766667,
-  "usdVolume" : 7.736169610464E8,
-  "numberOfTrades" : 19202,
-  "rsi" : 0.0
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1574294400000,
-  "openDate" : null,
-  "closeTime" : 1574380799999,
-  "closeDate" : null,
-  "open" : 0.00679,
-  "high" : 0.006809,
-  "low" : 0.006482,
-  "close" : 0.006639,
-  "volume" : 192790.6,
-  "quoteAssetVolume" : 1278.39309836,
-  "usdVolume" : 1.5159414063899999E9,
-  "numberOfTrades" : 34128,
-  "rsi" : 0.0
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1574380800000,
-  "openDate" : null,
-  "closeTime" : 1574467199999,
-  "closeDate" : null,
-  "open" : 0.006635,
-  "high" : 0.00676,
-  "low" : 0.006375,
-  "close" : 0.00651,
-  "volume" : 296947.05,
-  "quoteAssetVolume" : 1951.86967964,
-  "usdVolume" : 2.2116645978705E9,
-  "numberOfTrades" : 53932,
-  "rsi" : 0.0
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1574467200000,
-  "openDate" : null,
-  "closeTime" : 1574553599999,
-  "closeDate" : null,
-  "open" : 0.006512,
-  "high" : 0.00666,
-  "low" : 0.006471,
-  "close" : 0.006584,
-  "volume" : 116307.19,
-  "quoteAssetVolume" : 763.48985678,
-  "usdVolume" : 8.478677843809999E8,
-  "numberOfTrades" : 22534,
-  "rsi" : 0.0
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1574553600000,
-  "openDate" : null,
-  "closeTime" : 1574639999999,
-  "closeDate" : null,
-  "open" : 0.006578,
-  "high" : 0.006593,
-  "low" : 0.00628,
-  "close" : 0.006354,
-  "volume" : 162100.07,
-  "quoteAssetVolume" : 1045.61478314,
-  "usdVolume" : 1.1520759965033002E9,
-  "numberOfTrades" : 28120,
-  "rsi" : 0.0
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1574640000000,
-  "openDate" : null,
-  "closeTime" : 1574726399999,
-  "closeDate" : null,
-  "open" : 0.006356,
-  "high" : 0.006759,
-  "low" : 0.0063,
-  "close" : 0.006397,
-  "volume" : 215512.41,
-  "quoteAssetVolume" : 1399.86209452,
-  "usdVolume" : 1.509642880809E9,
-  "numberOfTrades" : 38844,
-  "rsi" : 0.0
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1574726400000,
-  "openDate" : null,
-  "closeTime" : 1574812799999,
-  "closeDate" : null,
-  "open" : 0.006391,
-  "high" : 0.006611,
-  "low" : 0.006389,
-  "close" : 0.006554,
-  "volume" : 96785.84,
-  "quoteAssetVolume" : 629.55598318,
-  "usdVolume" : 6.903796877996E8,
-  "numberOfTrades" : 18095,
-  "rsi" : 0.0
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1574812800000,
-  "openDate" : null,
-  "closeTime" : 1574899199999,
-  "closeDate" : null,
-  "open" : 0.006556,
-  "high" : 0.006563,
-  "low" : 0.006314,
-  "close" : 0.006349,
-  "volume" : 123720.92,
-  "quoteAssetVolume" : 797.79032923,
-  "usdVolume" : 9.070766273042E8,
-  "numberOfTrades" : 23749,
-  "rsi" : 0.0
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1574899200000,
-  "openDate" : null,
-  "closeTime" : 1574985599999,
-  "closeDate" : null,
-  "open" : 0.00635,
-  "high" : 0.006389,
-  "low" : 0.006228,
-  "close" : 0.006304,
-  "volume" : 84399.68,
-  "quoteAssetVolume" : 532.05192465,
-  "usdVolume" : 6.299334696176E8,
-  "numberOfTrades" : 15599,
-  "rsi" : 0.0
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1574985600000,
-  "openDate" : null,
-  "closeTime" : 1575071999999,
-  "closeDate" : null,
-  "open" : 0.006307,
-  "high" : 0.006435,
-  "low" : 0.006256,
-  "close" : 0.006275,
-  "volume" : 119099.0,
-  "quoteAssetVolume" : 755.34752708,
-  "usdVolume" : 9.026632309000001E8,
-  "numberOfTrades" : 18474,
-  "rsi" : 0.0
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1575072000000,
-  "openDate" : null,
-  "closeTime" : 1575158399999,
-  "closeDate" : null,
-  "open" : 0.006272,
-  "high" : 0.006345,
-  "low" : 0.0062,
-  "close" : 0.006259,
-  "volume" : 90859.66,
-  "quoteAssetVolume" : 568.96080426,
-  "usdVolume" : 6.942986403104001E8,
-  "numberOfTrades" : 14091,
-  "rsi" : 0.0
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1575158400000,
-  "openDate" : null,
-  "closeTime" : 1575244799999,
-  "closeDate" : null,
-  "open" : 0.006258,
-  "high" : 0.006487,
-  "low" : 0.006185,
-  "close" : 0.006419,
-  "volume" : 113003.35,
-  "quoteAssetVolume" : 719.15865637,
-  "usdVolume" : 8.436558902960001E8,
-  "numberOfTrades" : 19010,
-  "rsi" : 0.0
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1575244800000,
-  "openDate" : null,
-  "closeTime" : 1575331199999,
-  "closeDate" : null,
-  "open" : 0.006419,
-  "high" : 0.00643,
-  "low" : 0.006158,
-  "close" : 0.006231,
-  "volume" : 124684.27,
-  "quoteAssetVolume" : 783.55029123,
-  "usdVolume" : 9.155428793403E8,
-  "numberOfTrades" : 20805,
-  "rsi" : 0.0
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1575331200000,
-  "openDate" : null,
-  "closeTime" : 1575417599999,
-  "closeDate" : null,
-  "open" : 0.006229,
-  "high" : 0.006293,
-  "low" : 0.006101,
-  "close" : 0.006138,
-  "volume" : 112088.38,
-  "quoteAssetVolume" : 694.82978759,
-  "usdVolume" : 8.175238852747E8,
-  "numberOfTrades" : 20340,
-  "rsi" : 0.0
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1575417600000,
-  "openDate" : null,
-  "closeTime" : 1575503999999,
-  "closeDate" : null,
-  "open" : 0.006136,
-  "high" : 0.006253,
-  "low" : 0.006037,
-  "close" : 0.006209,
-  "volume" : 143881.68,
-  "quoteAssetVolume" : 887.15089822,
-  "usdVolume" : 1.0422091073051999E9,
-  "numberOfTrades" : 24999,
-  "rsi" : 0.0
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1575504000000,
-  "openDate" : null,
-  "closeTime" : 1575590399999,
-  "closeDate" : null,
-  "open" : 0.006208,
-  "high" : 0.006211,
-  "low" : 0.005998,
-  "close" : 0.006062,
-  "volume" : 134285.33,
-  "quoteAssetVolume" : 815.71742591,
-  "usdVolume" : 9.791810978673499E8,
-  "numberOfTrades" : 22266,
-  "rsi" : 0.0
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1575590400000,
-  "openDate" : null,
-  "closeTime" : 1575676799999,
-  "closeDate" : null,
-  "open" : 0.006062,
-  "high" : 0.006138,
-  "low" : 0.00598,
-  "close" : 0.006011,
-  "volume" : 105472.28,
-  "quoteAssetVolume" : 637.44965977,
-  "usdVolume" : 7.866370502258E8,
-  "numberOfTrades" : 18005,
-  "rsi" : 0.0
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1575676800000,
-  "openDate" : null,
-  "closeTime" : 1575763199999,
-  "closeDate" : null,
-  "open" : 0.006011,
-  "high" : 0.006136,
-  "low" : 0.005989,
-  "close" : 0.006029,
-  "volume" : 79199.0,
-  "quoteAssetVolume" : 479.83358471,
-  "usdVolume" : 5.94626487995E8,
-  "numberOfTrades" : 14181,
-  "rsi" : 0.0
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1575763200000,
-  "openDate" : null,
-  "closeTime" : 1575849599999,
-  "closeDate" : null,
-  "open" : 0.006028,
-  "high" : 0.006119,
-  "low" : 0.006013,
-  "close" : 0.006066,
-  "volume" : 51167.28,
-  "quoteAssetVolume" : 311.06881072,
-  "usdVolume" : 3.836885942088E8,
-  "numberOfTrades" : 10122,
-  "rsi" : 0.0
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1575849600000,
-  "openDate" : null,
-  "closeTime" : 1575935999999,
-  "closeDate" : null,
-  "open" : 0.006063,
-  "high" : 0.006122,
-  "low" : 0.00598,
-  "close" : 0.006056,
-  "volume" : 96412.84,
-  "quoteAssetVolume" : 582.06891363,
-  "usdVolume" : 7.15805078975E8,
-  "numberOfTrades" : 16280,
-  "rsi" : 0.0
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1575936000000,
-  "openDate" : null,
-  "closeTime" : 1576022399999,
-  "closeDate" : null,
-  "open" : 0.006056,
-  "high" : 0.006107,
-  "low" : 0.00601,
-  "close" : 0.006105,
-  "volume" : 61340.59,
-  "quoteAssetVolume" : 371.37562969,
-  "usdVolume" : 4.4664445191714996E8,
-  "numberOfTrades" : 12081,
-  "rsi" : 0.0
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1576022400000,
-  "openDate" : null,
-  "closeTime" : 1576108799999,
-  "closeDate" : null,
-  "open" : 0.006104,
-  "high" : 0.006154,
-  "low" : 0.006012,
-  "close" : 0.006065,
-  "volume" : 73597.61,
-  "quoteAssetVolume" : 448.12566769,
-  "usdVolume" : 5.3115947119075E8,
-  "numberOfTrades" : 11839,
-  "rsi" : 0.0
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1576108800000,
-  "openDate" : null,
-  "closeTime" : 1576195199999,
-  "closeDate" : null,
-  "open" : 0.006061,
-  "high" : 0.006101,
-  "low" : 0.006002,
-  "close" : 0.006063,
-  "volume" : 56624.17,
-  "quoteAssetVolume" : 343.03465618,
-  "usdVolume" : 4.079227856468E8,
-  "numberOfTrades" : 11223,
-  "rsi" : 0.0
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1576195200000,
-  "openDate" : null,
-  "closeTime" : 1576281599999,
-  "closeDate" : null,
-  "open" : 0.006065,
-  "high" : 0.006131,
-  "low" : 0.006024,
-  "close" : 0.006125,
-  "volume" : 55374.54,
-  "quoteAssetVolume" : 336.25158656,
-  "usdVolume" : 4.002538200648E8,
-  "numberOfTrades" : 10673,
-  "rsi" : 0.0
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1576281600000,
-  "openDate" : null,
-  "closeTime" : 1576367999999,
-  "closeDate" : null,
-  "open" : 0.006125,
-  "high" : 0.006184,
-  "low" : 0.006084,
-  "close" : 0.006121,
-  "volume" : 48235.71,
-  "quoteAssetVolume" : 295.61720832,
-  "usdVolume" : 3.454019309541E8,
-  "numberOfTrades" : 10640,
-  "rsi" : 0.0
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1576368000000,
-  "openDate" : null,
-  "closeTime" : 1576454399999,
-  "closeDate" : null,
-  "open" : 0.006125,
-  "high" : 0.006153,
-  "low" : 0.006095,
-  "close" : 0.006107,
-  "volume" : 38600.42,
-  "quoteAssetVolume" : 236.31241624,
-  "usdVolume" : 2.7372966737329996E8,
-  "numberOfTrades" : 8498,
-  "rsi" : 0.0
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1576454400000,
-  "openDate" : null,
-  "closeTime" : 1576540799999,
-  "closeDate" : null,
-  "open" : 0.006107,
-  "high" : 0.006125,
-  "low" : 0.005665,
-  "close" : 0.005801,
-  "volume" : 153835.59,
-  "quoteAssetVolume" : 903.11827397,
-  "usdVolume" : 1.0777198394394E9,
-  "numberOfTrades" : 26897,
-  "rsi" : 0.0
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1576540800000,
-  "openDate" : null,
-  "closeTime" : 1576627199999,
-  "closeDate" : null,
-  "open" : 0.005804,
-  "high" : 0.005817,
-  "low" : 0.00551,
-  "close" : 0.005575,
-  "volume" : 211336.27,
-  "quoteAssetVolume" : 1200.39401944,
-  "usdVolume" : 1.4281323182400997E9,
-  "numberOfTrades" : 32002,
-  "rsi" : 0.0
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1576627200000,
-  "openDate" : null,
-  "closeTime" : 1576713599999,
-  "closeDate" : null,
-  "open" : 0.005575,
-  "high" : 0.005816,
-  "low" : 0.005538,
-  "close" : 0.005608,
-  "volume" : 175008.99,
-  "quoteAssetVolume" : 991.56152623,
-  "usdVolume" : 1.21645861300665E9,
-  "numberOfTrades" : 35117,
-  "rsi" : 0.0
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1576713600000,
-  "openDate" : null,
-  "closeTime" : 1576799999999,
-  "closeDate" : null,
-  "open" : 0.005604,
-  "high" : 0.005659,
-  "low" : 0.005501,
-  "close" : 0.005547,
-  "volume" : 87024.66,
-  "quoteAssetVolume" : 484.4143348,
-  "usdVolume" : 6.278015538429E8,
-  "numberOfTrades" : 18397,
-  "rsi" : 0.0
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1576800000000,
-  "openDate" : null,
-  "closeTime" : 1576886399999,
-  "closeDate" : null,
-  "open" : 0.005548,
-  "high" : 0.005645,
-  "low" : 0.005541,
-  "close" : 0.005588,
-  "volume" : 49842.01,
-  "quoteAssetVolume" : 278.23853448,
-  "usdVolume" : 3.573457796357E8,
-  "numberOfTrades" : 11554,
-  "rsi" : 0.0
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1576886400000,
-  "openDate" : null,
-  "closeTime" : 1576972799999,
-  "closeDate" : null,
-  "open" : 0.005588,
-  "high" : 0.005604,
-  "low" : 0.005538,
-  "close" : 0.005559,
-  "volume" : 34638.31,
-  "quoteAssetVolume" : 192.92017843,
-  "usdVolume" : 2.480234621578E8,
-  "numberOfTrades" : 8245,
-  "rsi" : 0.0
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1576972800000,
-  "openDate" : null,
-  "closeTime" : 1577059199999,
-  "closeDate" : null,
-  "open" : 0.005558,
-  "high" : 0.00575,
-  "low" : 0.005555,
-  "close" : 0.005578,
-  "volume" : 70382.04,
-  "quoteAssetVolume" : 399.54750102,
-  "usdVolume" : 5.149512513905999E8,
-  "numberOfTrades" : 15565,
-  "rsi" : 0.0
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1577059200000,
-  "openDate" : null,
-  "closeTime" : 1577145599999,
-  "closeDate" : null,
-  "open" : 0.005578,
-  "high" : 0.00563,
-  "low" : 0.0055,
-  "close" : 0.005542,
-  "volume" : 82429.25,
-  "quoteAssetVolume" : 458.53110735,
-  "usdVolume" : 6.107100703249999E8,
-  "numberOfTrades" : 16618,
-  "rsi" : 0.0
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1577145600000,
-  "openDate" : null,
-  "closeTime" : 1577231999999,
-  "closeDate" : null,
-  "open" : 0.005546,
-  "high" : 0.005627,
-  "low" : 0.00549,
-  "close" : 0.005559,
-  "volume" : 64544.79,
-  "quoteAssetVolume" : 358.44527934,
-  "usdVolume" : 4.7030787140265E8,
-  "numberOfTrades" : 14382,
-  "rsi" : 0.0
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1577232000000,
-  "openDate" : null,
-  "closeTime" : 1577318399999,
-  "closeDate" : null,
-  "open" : 0.00556,
-  "high" : 0.005603,
-  "low" : 0.005486,
-  "close" : 0.005568,
-  "volume" : 43989.8,
-  "quoteAssetVolume" : 244.04517443,
-  "usdVolume" : 3.1805505196000004E8,
-  "numberOfTrades" : 9858,
-  "rsi" : 0.0
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1577318400000,
-  "openDate" : null,
-  "closeTime" : 1577404799999,
-  "closeDate" : null,
-  "open" : 0.005569,
-  "high" : 0.005638,
-  "low" : 0.005508,
-  "close" : 0.005557,
-  "volume" : 61416.46,
-  "quoteAssetVolume" : 341.50071655,
-  "usdVolume" : 4.424137766923E8,
-  "numberOfTrades" : 13283,
-  "rsi" : 0.0
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1577404800000,
-  "openDate" : null,
-  "closeTime" : 1577491199999,
-  "closeDate" : null,
-  "open" : 0.005552,
-  "high" : 0.005701,
-  "low" : 0.005541,
-  "close" : 0.005647,
-  "volume" : 81728.01,
-  "quoteAssetVolume" : 460.46761133,
-  "usdVolume" : 5.907602956437E8,
-  "numberOfTrades" : 14808,
-  "rsi" : 0.0
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1577491200000,
-  "openDate" : null,
-  "closeTime" : 1577577599999,
-  "closeDate" : null,
-  "open" : 0.005647,
-  "high" : 0.005951,
-  "low" : 0.005644,
-  "close" : 0.005857,
-  "volume" : 133778.85,
-  "quoteAssetVolume" : 777.7168966,
-  "usdVolume" : 9.7463979162675E8,
-  "numberOfTrades" : 24023,
-  "rsi" : 0.0
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1577577600000,
-  "openDate" : null,
-  "closeTime" : 1577663999999,
-  "closeDate" : null,
-  "open" : 0.005855,
-  "high" : 0.005895,
-  "low" : 0.005772,
-  "close" : 0.005833,
-  "volume" : 124016.34,
-  "quoteAssetVolume" : 722.4486529,
-  "usdVolume" : 9.11743328412E8,
-  "numberOfTrades" : 22772,
-  "rsi" : 0.0
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1577664000000,
-  "openDate" : null,
-  "closeTime" : 1577750399999,
-  "closeDate" : null,
-  "open" : 0.00583,
-  "high" : 0.005967,
-  "low" : 0.005791,
-  "close" : 0.00585,
-  "volume" : 103361.64,
-  "quoteAssetVolume" : 605.71126496,
-  "usdVolume" : 7.563193426326001E8,
-  "numberOfTrades" : 18277,
-  "rsi" : 0.0
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1577750400000,
-  "openDate" : null,
-  "closeTime" : 1577836799999,
-  "closeDate" : null,
-  "open" : 0.00585,
-  "high" : 0.005884,
-  "low" : 0.005728,
-  "close" : 0.005741,
-  "volume" : 65655.54,
-  "quoteAssetVolume" : 381.12428268,
-  "usdVolume" : 4.740733769570999E8,
-  "numberOfTrades" : 14307,
-  "rsi" : 0.0
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1577836800000,
-  "openDate" : null,
-  "closeTime" : 1577923199999,
-  "closeDate" : null,
-  "open" : 0.005739,
-  "high" : 0.005812,
-  "low" : 0.005729,
-  "close" : 0.005779,
-  "volume" : 39694.2,
-  "quoteAssetVolume" : 229.24386156,
-  "usdVolume" : 2.85720637839E8,
-  "numberOfTrades" : 10082,
-  "rsi" : 0.0
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1577923200000,
-  "openDate" : null,
-  "closeTime" : 1578009599999,
-  "closeDate" : null,
-  "open" : 0.005777,
-  "high" : 0.005806,
-  "low" : 0.005626,
-  "close" : 0.00566,
-  "volume" : 66450.4,
-  "quoteAssetVolume" : 379.91420804,
-  "usdVolume" : 4.7068413129599994E8,
-  "numberOfTrades" : 12912,
-  "rsi" : 0.0
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1578009600000,
-  "openDate" : null,
-  "closeTime" : 1578095999999,
-  "closeDate" : null,
-  "open" : 0.00566,
-  "high" : 0.005754,
-  "low" : 0.005585,
-  "close" : 0.00575,
-  "volume" : 108705.05,
-  "quoteAssetVolume" : 616.45702754,
-  "usdVolume" : 7.7780909138625E8,
-  "numberOfTrades" : 21123,
-  "rsi" : 0.0
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1578096000000,
-  "openDate" : null,
-  "closeTime" : 1578182399999,
-  "closeDate" : null,
-  "open" : 0.005747,
-  "high" : 0.005828,
-  "low" : 0.005713,
-  "close" : 0.005818,
-  "volume" : 101700.57,
-  "quoteAssetVolume" : 587.57130304,
-  "usdVolume" : 7.4745393274635E8,
-  "numberOfTrades" : 15947,
-  "rsi" : 0.0
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1578182400000,
-  "openDate" : null,
-  "closeTime" : 1578268799999,
-  "closeDate" : null,
-  "open" : 0.005817,
-  "high" : 0.00597,
-  "low" : 0.00574,
-  "close" : 0.005884,
-  "volume" : 106032.33,
-  "quoteAssetVolume" : 620.57841613,
-  "usdVolume" : 7.800236546751E8,
-  "numberOfTrades" : 19204,
-  "rsi" : 0.0
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1578268800000,
-  "openDate" : null,
-  "closeTime" : 1578355199999,
-  "closeDate" : null,
-  "open" : 0.005884,
-  "high" : 0.006,
-  "low" : 0.005852,
-  "close" : 0.005905,
-  "volume" : 134768.38,
-  "quoteAssetVolume" : 799.09333063,
-  "usdVolume" : 1.0185551577316E9,
-  "numberOfTrades" : 22939,
-  "rsi" : 0.0
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1578355200000,
-  "openDate" : null,
-  "closeTime" : 1578441599999,
-  "closeDate" : null,
-  "open" : 0.005905,
-  "high" : 0.005905,
-  "low" : 0.005672,
-  "close" : 0.005684,
-  "volume" : 193631.12,
-  "quoteAssetVolume" : 1114.55960212,
-  "usdVolume" : 1.5397720930408E9,
-  "numberOfTrades" : 32004,
-  "rsi" : 0.0
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1578441600000,
-  "openDate" : null,
-  "closeTime" : 1578527999999,
-  "closeDate" : null,
-  "open" : 0.005684,
-  "high" : 0.005775,
-  "low" : 0.005467,
-  "close" : 0.00563,
-  "volume" : 235937.7,
-  "quoteAssetVolume" : 1334.54787365,
-  "usdVolume" : 1.911319510815E9,
-  "numberOfTrades" : 36989,
-  "rsi" : 0.0
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1578528000000,
-  "openDate" : null,
-  "closeTime" : 1578614399999,
-  "closeDate" : null,
-  "open" : 0.005629,
-  "high" : 0.00575,
-  "low" : 0.005612,
-  "close" : 0.005724,
-  "volume" : 97007.84,
-  "quoteAssetVolume" : 551.69357562,
-  "usdVolume" : 7.698775001215999E8,
-  "numberOfTrades" : 18777,
-  "rsi" : 0.0
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1578614400000,
-  "openDate" : null,
-  "closeTime" : 1578700799999,
-  "closeDate" : null,
-  "open" : 0.005724,
-  "high" : 0.00614,
-  "low" : 0.005695,
-  "close" : 0.005983,
-  "volume" : 326899.92,
-  "quoteAssetVolume" : 1943.38567059,
-  "usdVolume" : 2.6176118814096E9,
-  "numberOfTrades" : 48388,
-  "rsi" : 0.0
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1578700800000,
-  "openDate" : null,
-  "closeTime" : 1578787199999,
-  "closeDate" : null,
-  "open" : 0.005983,
-  "high" : 0.006342,
-  "low" : 0.005946,
-  "close" : 0.006148,
-  "volume" : 331533.45,
-  "quoteAssetVolume" : 2034.38589607,
-  "usdVolume" : 2.6885489631007504E9,
-  "numberOfTrades" : 51672,
-  "rsi" : 0.0
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1578787200000,
-  "openDate" : null,
-  "closeTime" : 1578873599999,
-  "closeDate" : null,
-  "open" : 0.006152,
-  "high" : 0.006385,
-  "low" : 0.006126,
-  "close" : 0.006285,
-  "volume" : 272708.95,
-  "quoteAssetVolume" : 1701.04135051,
-  "usdVolume" : 2.2096229038302503E9,
-  "numberOfTrades" : 39677,
-  "rsi" : 0.0
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1578873600000,
-  "openDate" : null,
-  "closeTime" : 1578959999999,
-  "closeDate" : null,
-  "open" : 0.006285,
-  "high" : 0.006296,
-  "low" : 0.006061,
-  "close" : 0.006118,
-  "volume" : 181972.91,
-  "quoteAssetVolume" : 1120.52469787,
-  "usdVolume" : 1.48265249002605E9,
-  "numberOfTrades" : 26447,
-  "rsi" : 0.0
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1578960000000,
-  "openDate" : null,
-  "closeTime" : 1579046399999,
-  "closeDate" : null,
-  "open" : 0.006115,
-  "high" : 0.006869,
-  "low" : 0.006113,
-  "close" : 0.006625,
-  "volume" : 616103.77,
-  "quoteAssetVolume" : 4000.52802195,
-  "usdVolume" : 5.21234571235975E9,
-  "numberOfTrades" : 100588,
-  "rsi" : 0.0
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1579046400000,
-  "openDate" : null,
-  "closeTime" : 1579132799999,
-  "closeDate" : null,
-  "open" : 0.006621,
-  "high" : 0.006823,
-  "low" : 0.00645,
-  "close" : 0.006591,
-  "volume" : 387650.49,
-  "quoteAssetVolume" : 2571.07978083,
-  "usdVolume" : 3.4183117120822496E9,
-  "numberOfTrades" : 66860,
-  "rsi" : 0.0
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1579132800000,
-  "openDate" : null,
-  "closeTime" : 1579219199999,
-  "closeDate" : null,
-  "open" : 0.006594,
-  "high" : 0.006706,
-  "low" : 0.006351,
-  "close" : 0.006599,
-  "volume" : 202915.24,
-  "quoteAssetVolume" : 1324.07465965,
-  "usdVolume" : 1.7795686839524E9,
-  "numberOfTrades" : 39451,
-  "rsi" : 0.0
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1579219200000,
-  "openDate" : null,
-  "closeTime" : 1579305599999,
-  "closeDate" : null,
-  "open" : 0.006603,
-  "high" : 0.007066,
-  "low" : 0.00654,
-  "close" : 0.00685,
-  "volume" : 317275.69,
-  "quoteAssetVolume" : 2158.45444383,
-  "usdVolume" : 2.79732933515835E9,
-  "numberOfTrades" : 60777,
-  "rsi" : 0.0
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1579305600000,
-  "openDate" : null,
-  "closeTime" : 1579391999999,
-  "closeDate" : null,
-  "open" : 0.00685,
-  "high" : 0.00696,
-  "low" : 0.006545,
-  "close" : 0.006652,
-  "volume" : 277795.81,
-  "quoteAssetVolume" : 1874.22957118,
-  "usdVolume" : 2.4764426947631497E9,
-  "numberOfTrades" : 51271,
-  "rsi" : 0.0
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1579392000000,
-  "openDate" : null,
-  "closeTime" : 1579478399999,
-  "closeDate" : null,
-  "open" : 0.006653,
-  "high" : 0.006867,
-  "low" : 0.006433,
-  "close" : 0.006622,
-  "volume" : 201021.53,
-  "quoteAssetVolume" : 1334.39769915,
-  "usdVolume" : 1.7706770397443502E9,
-  "numberOfTrades" : 42272,
-  "rsi" : 0.0
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1579478400000,
-  "openDate" : null,
-  "closeTime" : 1579564799999,
-  "closeDate" : null,
-  "open" : 0.006621,
-  "high" : 0.006706,
-  "low" : 0.006516,
-  "close" : 0.006618,
-  "volume" : 83659.16,
-  "quoteAssetVolume" : 552.98279142,
-  "usdVolume" : 7.254951635906E8,
-  "numberOfTrades" : 19159,
-  "rsi" : 0.0
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1579564800000,
-  "openDate" : null,
-  "closeTime" : 1579651199999,
-  "closeDate" : null,
-  "open" : 0.006616,
-  "high" : 0.006686,
-  "low" : 0.006549,
-  "close" : 0.00659,
-  "volume" : 84127.91,
-  "quoteAssetVolume" : 557.50222626,
-  "usdVolume" : 7.310033942929001E8,
-  "numberOfTrades" : 18211,
-  "rsi" : 0.0
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1579651200000,
-  "openDate" : null,
-  "closeTime" : 1579737599999,
-  "closeDate" : null,
-  "open" : 0.00659,
-  "high" : 0.006776,
-  "low" : 0.006561,
-  "close" : 0.006718,
-  "volume" : 99804.15,
-  "quoteAssetVolume" : 667.84943308,
-  "usdVolume" : 8.692143031800001E8,
-  "numberOfTrades" : 20878,
-  "rsi" : 0.0
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1579737600000,
-  "openDate" : null,
-  "closeTime" : 1579823999999,
-  "closeDate" : null,
-  "open" : 0.006719,
-  "high" : 0.00673,
-  "low" : 0.0063,
-  "close" : 0.006486,
-  "volume" : 165590.92,
-  "quoteAssetVolume" : 1080.00286194,
-  "usdVolume" : 1.4147500357034001E9,
-  "numberOfTrades" : 34909,
-  "rsi" : 0.0
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1579824000000,
-  "openDate" : null,
-  "closeTime" : 1579910399999,
-  "closeDate" : null,
-  "open" : 0.006487,
-  "high" : 0.0065,
-  "low" : 0.006122,
-  "close" : 0.006444,
-  "volume" : 206015.81,
-  "quoteAssetVolume" : 1306.73393969,
-  "usdVolume" : 1.7350157080256E9,
-  "numberOfTrades" : 38960,
-  "rsi" : 0.0
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1579910400000,
-  "openDate" : null,
-  "closeTime" : 1579996799999,
-  "closeDate" : null,
-  "open" : 0.006447,
-  "high" : 0.006492,
-  "low" : 0.00625,
-  "close" : 0.006387,
-  "volume" : 97323.17,
-  "quoteAssetVolume" : 621.92587025,
-  "usdVolume" : 8.1652047181845E8,
-  "numberOfTrades" : 21534,
-  "rsi" : 0.0
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1579996800000,
-  "openDate" : null,
-  "closeTime" : 1580083199999,
-  "closeDate" : null,
-  "open" : 0.006385,
-  "high" : 0.006596,
-  "low" : 0.006334,
-  "close" : 0.006529,
-  "volume" : 116804.34,
-  "quoteAssetVolume" : 754.38153185,
-  "usdVolume" : 9.902093763717E8,
-  "numberOfTrades" : 23294,
-  "rsi" : 0.0
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1580083200000,
-  "openDate" : null,
-  "closeTime" : 1580169599999,
-  "closeDate" : null,
-  "open" : 0.006526,
-  "high" : 0.006785,
-  "low" : 0.006474,
-  "close" : 0.006573,
-  "volume" : 160943.14,
-  "quoteAssetVolume" : 1065.84965842,
-  "usdVolume" : 1.4100196306772E9,
-  "numberOfTrades" : 33501,
-  "rsi" : 0.0
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1580169600000,
-  "openDate" : null,
-  "closeTime" : 1580255999999,
-  "closeDate" : null,
-  "open" : 0.006573,
-  "high" : 0.00675,
-  "low" : 0.006432,
-  "close" : 0.006455,
-  "volume" : 219052.56,
-  "quoteAssetVolume" : 1441.55846544,
-  "usdVolume" : 2.0023353551783998E9,
-  "numberOfTrades" : 42212,
-  "rsi" : 0.0
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1580256000000,
-  "openDate" : null,
-  "closeTime" : 1580342399999,
-  "closeDate" : null,
-  "open" : 0.006456,
-  "high" : 0.006671,
-  "low" : 0.006408,
-  "close" : 0.006432,
-  "volume" : 161395.49,
-  "quoteAssetVolume" : 1051.96529435,
-  "usdVolume" : 1.5071812926581502E9,
-  "numberOfTrades" : 34737,
-  "rsi" : 0.0
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1580342400000,
-  "openDate" : null,
-  "closeTime" : 1580428799999,
-  "closeDate" : null,
-  "open" : 0.006429,
-  "high" : 0.007347,
-  "low" : 0.006319,
-  "close" : 0.007148,
-  "volume" : 454450.99,
-  "quoteAssetVolume" : 3158.09826357,
-  "usdVolume" : 4.2751976988160996E9,
-  "numberOfTrades" : 83494,
-  "rsi" : 0.0
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1580428800000,
-  "openDate" : null,
-  "closeTime" : 1580515199999,
-  "closeDate" : null,
-  "open" : 0.007145,
-  "high" : 0.007447,
-  "low" : 0.007085,
-  "close" : 0.007274,
-  "volume" : 396602.96,
-  "quoteAssetVolume" : 2872.804056,
-  "usdVolume" : 3.7408404223268003E9,
-  "numberOfTrades" : 70589,
-  "rsi" : 0.0
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1580515200000,
-  "openDate" : null,
-  "closeTime" : 1580601599999,
-  "closeDate" : null,
-  "open" : 0.007271,
-  "high" : 0.007729,
-  "low" : 0.007234,
-  "close" : 0.007535,
-  "volume" : 406653.73,
-  "quoteAssetVolume" : 3071.59241185,
-  "usdVolume" : 3.8095972072367997E9,
-  "numberOfTrades" : 74666,
-  "rsi" : 0.0
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1580601600000,
-  "openDate" : null,
-  "closeTime" : 1580687999999,
-  "closeDate" : null,
-  "open" : 0.007535,
-  "high" : 0.007781,
-  "low" : 0.007311,
-  "close" : 0.007496,
-  "volume" : 290797.78,
-  "quoteAssetVolume" : 2196.4247293,
-  "usdVolume" : 2.7212739933288E9,
-  "numberOfTrades" : 55122,
-  "rsi" : 0.0
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1580688000000,
-  "openDate" : null,
-  "closeTime" : 1580774399999,
-  "closeDate" : null,
-  "open" : 0.007497,
-  "high" : 0.007638,
-  "low" : 0.007389,
-  "close" : 0.007496,
-  "volume" : 216676.59,
-  "quoteAssetVolume" : 1626.88640039,
-  "usdVolume" : 2.0176739885698502E9,
-  "numberOfTrades" : 43005,
-  "rsi" : 0.0
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1580774400000,
-  "openDate" : null,
-  "closeTime" : 1580860799999,
-  "closeDate" : null,
-  "open" : 0.007497,
-  "high" : 0.00755,
-  "low" : 0.007255,
-  "close" : 0.0074,
-  "volume" : 166444.41,
-  "quoteAssetVolume" : 1230.12821344,
-  "usdVolume" : 1.5386429182558503E9,
-  "numberOfTrades" : 34749,
-  "rsi" : 0.0
-}, {
-  "symbol" : "LTCBTC",
-  "openTime" : 1580860800000,
-  "openDate" : null,
-  "closeTime" : 1580947199999,
-  "closeDate" : null,
-  "open" : 0.007399,
-  "high" : 0.007693,
-  "low" : 0.007357,
-  "close" : 0.007549,
-  "volume" : 205046.27,
-  "quoteAssetVolume" : 1546.15146187,
-  "usdVolume" : 1.9283637976031E9,
-  "numberOfTrades" : 45253,
-  "rsi" : 0.0
-}, {
-  "symbol" : "LTCBTC",
   "openTime" : 1580947200000,
   "openDate" : null,
   "closeTime" : 1581033599999,
@@ -1330,7 +10,7 @@
   "close" : 0.00753,
   "volume" : 212011.03,
   "quoteAssetVolume" : 1602.14433712,
-  "usdVolume" : 2.0548140829254498E9,
+  "usdVolume" : 1.5492109680045202E7,
   "numberOfTrades" : 47444,
   "rsi" : 0.0
 }, {
@@ -1345,7 +25,7 @@
   "close" : 0.00757,
   "volume" : 159517.58,
   "quoteAssetVolume" : 1204.2364215,
-  "usdVolume" : 1.5621341260666997E9,
+  "usdVolume" : 1.1794179218489718E7,
   "numberOfTrades" : 35261,
   "rsi" : 0.0
 }, {
@@ -1360,7 +40,7 @@
   "close" : 0.007737,
   "volume" : 234981.43,
   "quoteAssetVolume" : 1805.49547377,
-  "usdVolume" : 2.3156151026777997E9,
+  "usdVolume" : 1.772335660268089E7,
   "numberOfTrades" : 54343,
   "rsi" : 0.0
 }, {
@@ -1375,7 +55,7 @@
   "close" : 0.007582,
   "volume" : 185123.89,
   "quoteAssetVolume" : 1412.22617395,
-  "usdVolume" : 1.8555698734065502E9,
+  "usdVolume" : 1.4210895923147649E7,
   "numberOfTrades" : 38978,
   "rsi" : 0.0
 }, {
@@ -1390,7 +70,7 @@
   "close" : 0.007512,
   "volume" : 213796.75,
   "quoteAssetVolume" : 1602.29833045,
-  "usdVolume" : 2.1383469892312498E9,
+  "usdVolume" : 1.6138141546735542E7,
   "numberOfTrades" : 45417,
   "rsi" : 0.0
 }, {
@@ -1405,7 +85,7 @@
   "close" : 0.00748,
   "volume" : 196554.46,
   "quoteAssetVolume" : 1476.511621,
-  "usdVolume" : 1.9728977023486E9,
+  "usdVolume" : 1.4785352663386052E7,
   "numberOfTrades" : 38370,
   "rsi" : 0.0
 }, {
@@ -1420,7 +100,7 @@
   "close" : 0.007859,
   "volume" : 293433.5,
   "quoteAssetVolume" : 2267.70865653,
-  "usdVolume" : 3.014961722795E9,
+  "usdVolume" : 2.3123123394789115E7,
   "numberOfTrades" : 59372,
   "rsi" : 0.0
 }, {
@@ -1435,7 +115,7 @@
   "close" : 0.007873,
   "volume" : 392563.88,
   "quoteAssetVolume" : 3083.43087339,
-  "usdVolume" : 4.0345674254224E9,
+  "usdVolume" : 3.1741855906511605E7,
   "numberOfTrades" : 80096,
   "rsi" : 0.0
 }, {
@@ -1450,7 +130,7 @@
   "close" : 0.008039,
   "volume" : 250110.94,
   "quoteAssetVolume" : 1989.79994905,
-  "usdVolume" : 2.5726586366058E9,
+  "usdVolume" : 2.046672408740132E7,
   "numberOfTrades" : 53380,
   "rsi" : 0.0
 }, {
@@ -1465,7 +145,7 @@
   "close" : 0.007747,
   "volume" : 268992.25,
   "quoteAssetVolume" : 2111.93692953,
-  "usdVolume" : 2.723422794815E9,
+  "usdVolume" : 2.149765269975044E7,
   "numberOfTrades" : 60763,
   "rsi" : 0.0
 }, {
@@ -1480,7 +160,7 @@
   "close" : 0.007533,
   "volume" : 401584.35,
   "quoteAssetVolume" : 3028.23779375,
-  "usdVolume" : 3.9800482789627495E9,
+  "usdVolume" : 3.0397349941136897E7,
   "numberOfTrades" : 84799,
   "rsi" : 0.0
 }, {
@@ -1495,7 +175,7 @@
   "close" : 0.007564,
   "volume" : 297081.34,
   "quoteAssetVolume" : 2180.9974298,
-  "usdVolume" : 2.913877761189E9,
+  "usdVolume" : 2.1999351409124866E7,
   "numberOfTrades" : 64912,
   "rsi" : 0.0
 }, {
@@ -1510,7 +190,7 @@
   "close" : 0.0076,
   "volume" : 215360.79,
   "quoteAssetVolume" : 1628.00411899,
-  "usdVolume" : 2.13968590173045E9,
+  "usdVolume" : 1.622607789207984E7,
   "numberOfTrades" : 55838,
   "rsi" : 0.0
 }, {
@@ -1525,7 +205,7 @@
   "close" : 0.007359,
   "volume" : 170958.52,
   "quoteAssetVolume" : 1283.64263616,
-  "usdVolume" : 1.6889479422582E9,
+  "usdVolume" : 1.2637498596469166E7,
   "numberOfTrades" : 44815,
   "rsi" : 0.0
 }, {
@@ -1540,7 +220,7 @@
   "close" : 0.007233,
   "volume" : 251330.83,
   "quoteAssetVolume" : 1823.73018088,
-  "usdVolume" : 2.41165377584405E9,
+  "usdVolume" : 1.7590589072911642E7,
   "numberOfTrades" : 54526,
   "rsi" : 0.0
 }, {
@@ -1555,7 +235,7 @@
   "close" : 0.007572,
   "volume" : 215889.65,
   "quoteAssetVolume" : 1618.52544434,
-  "usdVolume" : 2.0805566227044997E9,
+  "usdVolume" : 1.539967329647159E7,
   "numberOfTrades" : 47459,
   "rsi" : 0.0
 }, {
@@ -1570,7 +250,7 @@
   "close" : 0.007748,
   "volume" : 273423.66,
   "quoteAssetVolume" : 2125.14289738,
-  "usdVolume" : 2.6423539461752996E9,
+  "usdVolume" : 2.0240116145213958E7,
   "numberOfTrades" : 59337,
   "rsi" : 0.0
 }, {
@@ -1585,7 +265,7 @@
   "close" : 0.008008,
   "volume" : 209659.5,
   "quoteAssetVolume" : 1664.48384801,
-  "usdVolume" : 2.0533265206875E9,
+  "usdVolume" : 1.6179997767540751E7,
   "numberOfTrades" : 48137,
   "rsi" : 0.0
 }, {
@@ -1600,7 +280,7 @@
   "close" : 0.007825,
   "volume" : 227464.77,
   "quoteAssetVolume" : 1769.8541501,
-  "usdVolume" : 2.2283051650840497E9,
+  "usdVolume" : 1.763990420143921E7,
   "numberOfTrades" : 51515,
   "rsi" : 0.0
 }, {
@@ -1615,7 +295,7 @@
   "close" : 0.007622,
   "volume" : 208673.18,
   "quoteAssetVolume" : 1603.68385351,
-  "usdVolume" : 1.9794070100624E9,
+  "usdVolume" : 1.5290539885053927E7,
   "numberOfTrades" : 49033,
   "rsi" : 0.0
 }, {
@@ -1630,7 +310,7 @@
   "close" : 0.006885,
   "volume" : 475359.6,
   "quoteAssetVolume" : 3389.11941393,
-  "usdVolume" : 4.302415566054E9,
+  "usdVolume" : 3.1247456073960125E7,
   "numberOfTrades" : 97181,
   "rsi" : 0.0
 }, {
@@ -1645,7 +325,7 @@
   "close" : 0.006995,
   "volume" : 353361.92,
   "quoteAssetVolume" : 2467.0552305,
-  "usdVolume" : 3.1112121276415997E9,
+  "usdVolume" : 2.160148766573875E7,
   "numberOfTrades" : 65559,
   "rsi" : 0.0
 }, {
@@ -1660,7 +340,7 @@
   "close" : 0.006889,
   "volume" : 267365.23,
   "quoteAssetVolume" : 1841.78277338,
-  "usdVolume" : 2.3416060735583997E9,
+  "usdVolume" : 1.6257532359953282E7,
   "numberOfTrades" : 49414,
   "rsi" : 0.0
 }, {
@@ -1675,7 +355,7 @@
   "close" : 0.006814,
   "volume" : 154467.41,
   "quoteAssetVolume" : 1060.73204741,
-  "usdVolume" : 1.32953266368905E9,
+  "usdVolume" : 9108434.826266408,
   "numberOfTrades" : 31746,
   "rsi" : 0.0
 }, {
@@ -1690,7 +370,7 @@
   "close" : 0.006763,
   "volume" : 158843.97,
   "quoteAssetVolume" : 1083.80307582,
-  "usdVolume" : 1.35458087094765E9,
+  "usdVolume" : 9192170.683394985,
   "numberOfTrades" : 32487,
   "rsi" : 0.0
 }, {
@@ -1705,7 +385,7 @@
   "close" : 0.006892,
   "volume" : 181704.37,
   "quoteAssetVolume" : 1245.8174731,
-  "usdVolume" : 1.5849654275049E9,
+  "usdVolume" : 1.0825932180756876E7,
   "numberOfTrades" : 33588,
   "rsi" : 0.0
 }, {
@@ -1720,7 +400,7 @@
   "close" : 0.006967,
   "volume" : 125795.96,
   "quoteAssetVolume" : 871.73681324,
-  "usdVolume" : 1.111485929075E9,
+  "usdVolume" : 7701124.83103788,
   "numberOfTrades" : 28870,
   "rsi" : 0.0
 }, {
@@ -1735,7 +415,7 @@
   "close" : 0.006898,
   "volume" : 112705.01,
   "quoteAssetVolume" : 776.99906632,
-  "usdVolume" : 9.867853339047E8,
+  "usdVolume" : 6840413.561690944,
   "numberOfTrades" : 22458,
   "rsi" : 0.0
 }, {
@@ -1750,7 +430,7 @@
   "close" : 0.006852,
   "volume" : 131421.97,
   "quoteAssetVolume" : 902.03391755,
-  "usdVolume" : 1.1700281142849498E9,
+  "usdVolume" : 8042334.230675983,
   "numberOfTrades" : 26603,
   "rsi" : 0.0
 }, {
@@ -1765,7 +445,7 @@
   "close" : 0.006919,
   "volume" : 120205.66,
   "quoteAssetVolume" : 825.9213682,
-  "usdVolume" : 1.0930613198516E9,
+  "usdVolume" : 7526429.236314929,
   "numberOfTrades" : 22629,
   "rsi" : 0.0
 }, {
@@ -1780,7 +460,7 @@
   "close" : 0.006802,
   "volume" : 117991.08,
   "quoteAssetVolume" : 813.91159593,
-  "usdVolume" : 1.062955091727E9,
+  "usdVolume" : 7294862.3482747255,
   "numberOfTrades" : 25314,
   "rsi" : 0.0
 }, {
@@ -1795,7 +475,7 @@
   "close" : 0.006346,
   "volume" : 284090.22,
   "quoteAssetVolume" : 1850.27229282,
-  "usdVolume" : 2.4031987162416E9,
+  "usdVolume" : 1.5824957425969705E7,
   "numberOfTrades" : 51778,
   "rsi" : 0.0
 }, {
@@ -1810,7 +490,7 @@
   "close" : 0.006354,
   "volume" : 387616.7,
   "quoteAssetVolume" : 2436.92554444,
-  "usdVolume" : 3.0940785986605005E9,
+  "usdVolume" : 1.9650432194419343E7,
   "numberOfTrades" : 65073,
   "rsi" : 0.0
 }, {
@@ -1825,7 +505,7 @@
   "close" : 0.006364,
   "volume" : 169306.07,
   "quoteAssetVolume" : 1069.58684584,
-  "usdVolume" : 1.33958602664505E9,
+  "usdVolume" : 8519083.8855052,
   "numberOfTrades" : 28617,
   "rsi" : 0.0
 }, {
@@ -1840,7 +520,7 @@
   "close" : 0.006121,
   "volume" : 225493.16,
   "quoteAssetVolume" : 1388.96941984,
-  "usdVolume" : 1.7846757620122E9,
+  "usdVolume" : 1.1142071352453973E7,
   "numberOfTrades" : 35241,
   "rsi" : 0.0
 }, {
@@ -1855,7 +535,7 @@
   "close" : 0.006226,
   "volume" : 956967.83,
   "quoteAssetVolume" : 5492.05928146,
-  "usdVolume" : 6.0932916942807E9,
+  "usdVolume" : 3.753439778494988E7,
   "numberOfTrades" : 146269,
   "rsi" : 0.0
 }, {
@@ -1870,7 +550,7 @@
   "close" : 0.006731,
   "volume" : 1143685.14,
   "quoteAssetVolume" : 7267.59295915,
-  "usdVolume" : 5.9349310154277E9,
+  "usdVolume" : 3.852344348659691E7,
   "numberOfTrades" : 222456,
   "rsi" : 0.0
 }, {
@@ -1885,7 +565,7 @@
   "close" : 0.006646,
   "volume" : 308469.48,
   "quoteAssetVolume" : 2050.19972191,
-  "usdVolume" : 1.6577319513414E9,
+  "usdVolume" : 1.1092108342726944E7,
   "numberOfTrades" : 59641,
   "rsi" : 0.0
 }, {
@@ -1900,7 +580,7 @@
   "close" : 0.006786,
   "volume" : 247994.62,
   "quoteAssetVolume" : 1662.33999729,
-  "usdVolume" : 1.3061603841318E9,
+  "usdVolume" : 8773812.061874364,
   "numberOfTrades" : 44969,
   "rsi" : 0.0
 }, {
@@ -1915,7 +595,7 @@
   "close" : 0.006604,
   "volume" : 349887.09,
   "quoteAssetVolume" : 2310.02848095,
-  "usdVolume" : 1.8175409720685E9,
+  "usdVolume" : 1.2169960993137809E7,
   "numberOfTrades" : 60113,
   "rsi" : 0.0
 }, {
@@ -1930,7 +610,7 @@
   "close" : 0.006407,
   "volume" : 175783.88,
   "quoteAssetVolume" : 1149.79746997,
-  "usdVolume" : 9.0893449751E8,
+  "usdVolume" : 5910616.589040085,
   "numberOfTrades" : 31894,
   "rsi" : 0.0
 }, {
@@ -1945,7 +625,7 @@
   "close" : 0.006435,
   "volume" : 166755.35,
   "quoteAssetVolume" : 1070.20639935,
-  "usdVolume" : 8.92614707694E8,
+  "usdVolume" : 5733344.710299402,
   "numberOfTrades" : 29142,
   "rsi" : 0.0
 }, {
@@ -1960,7 +640,7 @@
   "close" : 0.006313,
   "volume" : 221795.87,
   "quoteAssetVolume" : 1412.02904168,
-  "usdVolume" : 1.2814955046240501E9,
+  "usdVolume" : 8163049.491115636,
   "numberOfTrades" : 42084,
   "rsi" : 0.0
 }, {
@@ -1975,7 +655,7 @@
   "close" : 0.00614,
   "volume" : 286934.75,
   "quoteAssetVolume" : 1788.76388061,
-  "usdVolume" : 1.77475025037375E9,
+  "usdVolume" : 1.1049907730189368E7,
   "numberOfTrades" : 51210,
   "rsi" : 0.0
 }, {
@@ -1990,7 +670,7 @@
   "close" : 0.006196,
   "volume" : 116625.94,
   "quoteAssetVolume" : 720.77838349,
-  "usdVolume" : 7.225880834035E8,
+  "usdVolume" : 4455085.543607439,
   "numberOfTrades" : 25862,
   "rsi" : 0.0
 }, {
@@ -2005,7 +685,7 @@
   "close" : 0.006086,
   "volume" : 112116.21,
   "quoteAssetVolume" : 684.32647312,
-  "usdVolume" : 6.7287832767915E8,
+  "usdVolume" : 4133289.213430819,
   "numberOfTrades" : 25811,
   "rsi" : 0.0
 }, {
@@ -2020,7 +700,7 @@
   "close" : 0.006021,
   "volume" : 161883.98,
   "quoteAssetVolume" : 991.71400849,
-  "usdVolume" : 9.942396022864001E8,
+  "usdVolume" : 6018799.268971241,
   "numberOfTrades" : 30299,
   "rsi" : 0.0
 }, {
@@ -2035,7 +715,7 @@
   "close" : 0.006012,
   "volume" : 178891.58,
   "quoteAssetVolume" : 1065.06269185,
-  "usdVolume" : 1.1815762025263E9,
+  "usdVolume" : 7108262.444738496,
   "numberOfTrades" : 26276,
   "rsi" : 0.0
 }, {
@@ -2050,7 +730,7 @@
   "close" : 0.005864,
   "volume" : 174117.1,
   "quoteAssetVolume" : 1032.81074554,
-  "usdVolume" : 1.168510305126E9,
+  "usdVolume" : 6939047.503135591,
   "numberOfTrades" : 25754,
   "rsi" : 0.0
 }, {
@@ -2065,7 +745,7 @@
   "close" : 0.005998,
   "volume" : 106423.79,
   "quoteAssetVolume" : 627.2602408,
-  "usdVolume" : 7.138258648080999E8,
+  "usdVolume" : 4233914.902082923,
   "numberOfTrades" : 20024,
   "rsi" : 0.0
 }, {
@@ -2080,7 +760,7 @@
   "close" : 0.00598,
   "volume" : 116840.17,
   "quoteAssetVolume" : 699.36882379,
-  "usdVolume" : 7.650916327923001E8,
+  "usdVolume" : 4583119.801819313,
   "numberOfTrades" : 21062,
   "rsi" : 0.0
 }, {
@@ -2095,7 +775,7 @@
   "close" : 0.006229,
   "volume" : 139432.02,
   "quoteAssetVolume" : 848.30037963,
-  "usdVolume" : 8.781261301175998E8,
+  "usdVolume" : 5358571.388638404,
   "numberOfTrades" : 27562,
   "rsi" : 0.0
 }, {
@@ -2110,7 +790,7 @@
   "close" : 0.006307,
   "volume" : 77656.67,
   "quoteAssetVolume" : 485.53708951,
-  "usdVolume" : 4.7052448151344997E8,
+  "usdVolume" : 2948709.523538064,
   "numberOfTrades" : 14503,
   "rsi" : 0.0
 }, {
@@ -2125,7 +805,7 @@
   "close" : 0.006087,
   "volume" : 101025.24,
   "quoteAssetVolume" : 621.70096935,
-  "usdVolume" : 6.200363489856001E8,
+  "usdVolume" : 3840401.0562812774,
   "numberOfTrades" : 19600,
   "rsi" : 0.0
 }, {
@@ -2140,7 +820,7 @@
   "close" : 0.006093,
   "volume" : 86480.77,
   "quoteAssetVolume" : 521.94346671,
-  "usdVolume" : 5.5368837348265E8,
+  "usdVolume" : 3371411.2717908807,
   "numberOfTrades" : 15550,
   "rsi" : 0.0
 }, {
@@ -2155,7 +835,7 @@
   "close" : 0.005908,
   "volume" : 120503.78,
   "quoteAssetVolume" : 729.00752814,
-  "usdVolume" : 7.865920390634E8,
+  "usdVolume" : 4719818.354928152,
   "numberOfTrades" : 21101,
   "rsi" : 0.0
 }, {
@@ -2170,7 +850,7 @@
   "close" : 0.005866,
   "volume" : 140249.58,
   "quoteAssetVolume" : 830.78268843,
-  "usdVolume" : 9.422983593855E8,
+  "usdVolume" : 5545225.01670133,
   "numberOfTrades" : 23117,
   "rsi" : 0.0
 }, {
@@ -2185,7 +865,7 @@
   "close" : 0.006011,
   "volume" : 94101.25,
   "quoteAssetVolume" : 558.75012449,
-  "usdVolume" : 6.364989729749999E8,
+  "usdVolume" : 3781243.576269975,
   "numberOfTrades" : 17598,
   "rsi" : 0.0
 }, {
@@ -2200,7 +880,7 @@
   "close" : 0.005942,
   "volume" : 85957.09,
   "quoteAssetVolume" : 512.66970244,
-  "usdVolume" : 5.840767074081999E8,
+  "usdVolume" : 3490550.549954401,
   "numberOfTrades" : 15721,
   "rsi" : 0.0
 }, {
@@ -2215,7 +895,7 @@
   "close" : 0.005957,
   "volume" : 50216.89,
   "quoteAssetVolume" : 299.99462558,
-  "usdVolume" : 3.4223287595454997E8,
+  "usdVolume" : 2035754.2007301876,
   "numberOfTrades" : 10974,
   "rsi" : 0.0
 }, {
@@ -2230,7 +910,7 @@
   "close" : 0.006141,
   "volume" : 174906.27,
   "quoteAssetVolume" : 1059.84762965,
-  "usdVolume" : 1.2333235779018E9,
+  "usdVolume" : 7464856.736660537,
   "numberOfTrades" : 26887,
   "rsi" : 0.0
 }, {
@@ -2245,7 +925,7 @@
   "close" : 0.006221,
   "volume" : 154796.23,
   "quoteAssetVolume" : 970.01065895,
-  "usdVolume" : 1.1243794441903E9,
+  "usdVolume" : 6951080.848186192,
   "numberOfTrades" : 32050,
   "rsi" : 0.0
 }, {
@@ -2260,7 +940,7 @@
   "close" : 0.006321,
   "volume" : 102300.26,
   "quoteAssetVolume" : 644.91249524,
-  "usdVolume" : 7.446742826179999E8,
+  "usdVolume" : 4671376.186624172,
   "numberOfTrades" : 23278,
   "rsi" : 0.0
 }, {
@@ -2275,7 +955,7 @@
   "close" : 0.006341,
   "volume" : 90096.29,
   "quoteAssetVolume" : 569.39749704,
-  "usdVolume" : 6.596760257509999E8,
+  "usdVolume" : 4177700.6223316076,
   "numberOfTrades" : 17459,
   "rsi" : 0.0
 }, {
@@ -2290,7 +970,7 @@
   "close" : 0.00616,
   "volume" : 158293.72,
   "quoteAssetVolume" : 979.72507246,
-  "usdVolume" : 1.1193313016756E9,
+  "usdVolume" : 7002304.111968994,
   "numberOfTrades" : 28759,
   "rsi" : 0.0
 }, {
@@ -2305,7 +985,7 @@
   "close" : 0.006185,
   "volume" : 64587.36,
   "quoteAssetVolume" : 399.36081981,
-  "usdVolume" : 4.4357791506E8,
+  "usdVolume" : 2737991.91045546,
   "numberOfTrades" : 14166,
   "rsi" : 0.0
 }, {
@@ -2320,7 +1000,7 @@
   "close" : 0.006081,
   "volume" : 92671.44,
   "quoteAssetVolume" : 568.67739114,
-  "usdVolume" : 6.385354131036E8,
+  "usdVolume" : 3915435.4670209214,
   "numberOfTrades" : 17481,
   "rsi" : 0.0
 }, {
@@ -2335,7 +1015,7 @@
   "close" : 0.006028,
   "volume" : 127837.63,
   "quoteAssetVolume" : 768.14467346,
-  "usdVolume" : 8.783531800855001E8,
+  "usdVolume" : 5317659.637497454,
   "numberOfTrades" : 23246,
   "rsi" : 0.0
 }, {
@@ -2350,7 +1030,7 @@
   "close" : 0.005998,
   "volume" : 70103.47,
   "quoteAssetVolume" : 420.94676027,
-  "usdVolume" : 4.804450181939E8,
+  "usdVolume" : 2887701.3482769975,
   "numberOfTrades" : 12179,
   "rsi" : 0.0
 }, {
@@ -2365,7 +1045,7 @@
   "close" : 0.005925,
   "volume" : 84539.62,
   "quoteAssetVolume" : 506.52935659,
-  "usdVolume" : 5.702117056360999E8,
+  "usdVolume" : 3399989.008910398,
   "numberOfTrades" : 15012,
   "rsi" : 0.0
 }, {
@@ -2380,7 +1060,7 @@
   "close" : 0.005989,
   "volume" : 175246.79,
   "quoteAssetVolume" : 1048.93666095,
-  "usdVolume" : 1.20247249803005E9,
+  "usdVolume" : 7163316.148028482,
   "numberOfTrades" : 30372,
   "rsi" : 0.0
 }, {
@@ -2395,7 +1075,7 @@
   "close" : 0.006004,
   "volume" : 73575.52,
   "quoteAssetVolume" : 439.3270442,
-  "usdVolume" : 5.197941264304001E8,
+  "usdVolume" : 3117447.4731407706,
   "numberOfTrades" : 14845,
   "rsi" : 0.0
 }, {
@@ -2410,7 +1090,7 @@
   "close" : 0.006087,
   "volume" : 92487.09,
   "quoteAssetVolume" : 557.26143903,
-  "usdVolume" : 6.601441774221001E8,
+  "usdVolume" : 3991977.2073803796,
   "numberOfTrades" : 17032,
   "rsi" : 0.0
 }, {
@@ -2425,7 +1105,7 @@
   "close" : 0.005932,
   "volume" : 104376.85,
   "quoteAssetVolume" : 626.01299988,
-  "usdVolume" : 7.499132228895E8,
+  "usdVolume" : 4508633.82795586,
   "numberOfTrades" : 18186,
   "rsi" : 0.0
 }, {
@@ -2440,7 +1120,7 @@
   "close" : 0.00589,
   "volume" : 104717.75,
   "quoteAssetVolume" : 620.71291117,
-  "usdVolume" : 7.3031363104125E8,
+  "usdVolume" : 4316834.895022388,
   "numberOfTrades" : 18991,
   "rsi" : 0.0
 }, {
@@ -2455,7 +1135,7 @@
   "close" : 0.005933,
   "volume" : 74386.99,
   "quoteAssetVolume" : 440.36820931,
-  "usdVolume" : 5.0844809437325E8,
+  "usdVolume" : 3005192.830409663,
   "numberOfTrades" : 13833,
   "rsi" : 0.0
 }, {
@@ -2470,7 +1150,7 @@
   "close" : 0.005867,
   "volume" : 76504.6,
   "quoteAssetVolume" : 451.67111039,
-  "usdVolume" : 5.3425074795000005E8,
+  "usdVolume" : 3151721.1900610984,
   "numberOfTrades" : 12532,
   "rsi" : 0.0
 }, {
@@ -2485,7 +1165,7 @@
   "close" : 0.005744,
   "volume" : 122741.25,
   "quoteAssetVolume" : 710.24713354,
-  "usdVolume" : 8.964720183937501E8,
+  "usdVolume" : 5202682.5879009,
   "numberOfTrades" : 22143,
   "rsi" : 0.0
 }, {
@@ -2500,7 +1180,7 @@
   "close" : 0.005932,
   "volume" : 165299.48,
   "quoteAssetVolume" : 969.91068911,
-  "usdVolume" : 1.2388336468704E9,
+  "usdVolume" : 7231237.197082837,
   "numberOfTrades" : 25835,
   "rsi" : 0.0
 }, {
@@ -2515,7 +1195,7 @@
   "close" : 0.005884,
   "volume" : 113814.75,
   "quoteAssetVolume" : 675.01179361,
-  "usdVolume" : 8.5609577006625E8,
+  "usdVolume" : 5058194.9136891905,
   "numberOfTrades" : 20145,
   "rsi" : 0.0
 }, {
@@ -2530,7 +1210,7 @@
   "close" : 0.005788,
   "volume" : 81146.71,
   "quoteAssetVolume" : 475.47760163,
-  "usdVolume" : 6.180186178961501E8,
+  "usdVolume" : 3606762.4832158447,
   "numberOfTrades" : 15627,
   "rsi" : 0.0
 }, {
@@ -2545,7 +1225,7 @@
   "close" : 0.005721,
   "volume" : 106817.78,
   "quoteAssetVolume" : 612.52648343,
-  "usdVolume" : 8.261137560308001E8,
+  "usdVolume" : 4753725.75367336,
   "numberOfTrades" : 17192,
   "rsi" : 0.0
 }, {
@@ -2560,7 +1240,7 @@
   "close" : 0.005898,
   "volume" : 145449.59,
   "quoteAssetVolume" : 840.19647124,
-  "usdVolume" : 1.12814265518955E9,
+  "usdVolume" : 6553722.515259026,
   "numberOfTrades" : 20310,
   "rsi" : 0.0
 }, {
@@ -2575,7 +1255,7 @@
   "close" : 0.005559,
   "volume" : 273246.63,
   "quoteAssetVolume" : 1558.28231716,
-  "usdVolume" : 2.25662778735225E9,
+  "usdVolume" : 1.2910409446626632E7,
   "numberOfTrades" : 41545,
   "rsi" : 0.0
 }, {
@@ -2590,7 +1270,7 @@
   "close" : 0.005372,
   "volume" : 271391.71,
   "quoteAssetVolume" : 1462.33230412,
-  "usdVolume" : 2.3609151888859005E9,
+  "usdVolume" : 1.2905593958508018E7,
   "numberOfTrades" : 35018,
   "rsi" : 0.0
 }, {
@@ -2605,7 +1285,7 @@
   "close" : 0.005332,
   "volume" : 118351.13,
   "quoteAssetVolume" : 636.61459374,
-  "usdVolume" : 1.0324337155324E9,
+  "usdVolume" : 5524320.119290157,
   "numberOfTrades" : 18844,
   "rsi" : 0.0
 }, {
@@ -2620,7 +1300,7 @@
   "close" : 0.005482,
   "volume" : 109139.44,
   "quoteAssetVolume" : 590.04481532,
-  "usdVolume" : 9.712165970384E8,
+  "usdVolume" : 5252930.462539074,
   "numberOfTrades" : 19653,
   "rsi" : 0.0
 }, {
@@ -2635,7 +1315,7 @@
   "close" : 0.005406,
   "volume" : 104221.83,
   "quoteAssetVolume" : 564.34017836,
-  "usdVolume" : 9.310521694670999E8,
+  "usdVolume" : 5068803.2990211565,
   "numberOfTrades" : 17840,
   "rsi" : 0.0
 }, {
@@ -2650,7 +1330,7 @@
   "close" : 0.005294,
   "volume" : 114955.96,
   "quoteAssetVolume" : 610.89658379,
-  "usdVolume" : 1.0211601152578001E9,
+  "usdVolume" : 5461744.387738846,
   "numberOfTrades" : 18819,
   "rsi" : 0.0
 }, {
@@ -2665,7 +1345,7 @@
   "close" : 0.005159,
   "volume" : 86742.08,
   "quoteAssetVolume" : 454.04255852,
-  "usdVolume" : 7.76070547E8,
+  "usdVolume" : 4054154.7080057818,
   "numberOfTrades" : 16232,
   "rsi" : 0.0
 }, {
@@ -2680,7 +1360,7 @@
   "close" : 0.004916,
   "volume" : 123453.31,
   "quoteAssetVolume" : 627.52721094,
-  "usdVolume" : 1.1212202448834E9,
+  "usdVolume" : 5648905.884429092,
   "numberOfTrades" : 20805,
   "rsi" : 0.0
 }, {
@@ -2695,7 +1375,7 @@
   "close" : 0.004742,
   "volume" : 202714.93,
   "quoteAssetVolume" : 984.17541191,
-  "usdVolume" : 1.9389480339569998E9,
+  "usdVolume" : 9352039.390755862,
   "numberOfTrades" : 30152,
   "rsi" : 0.0
 }, {
@@ -2710,7 +1390,7 @@
   "close" : 0.004866,
   "volume" : 158642.72,
   "quoteAssetVolume" : 760.23514477,
-  "usdVolume" : 1.5694770185815997E9,
+  "usdVolume" : 7539643.564041802,
   "numberOfTrades" : 24142,
   "rsi" : 0.0
 }, {
@@ -2725,7 +1405,7 @@
   "close" : 0.004923,
   "volume" : 136551.2,
   "quoteAssetVolume" : 674.68436598,
-  "usdVolume" : 1.320410504152E9,
+  "usdVolume" : 6461572.981700601,
   "numberOfTrades" : 22853,
   "rsi" : 0.0
 }, {
@@ -2740,7 +1420,7 @@
   "close" : 0.00482,
   "volume" : 287858.49,
   "quoteAssetVolume" : 1394.7232502,
-  "usdVolume" : 2.62841716138815E9,
+  "usdVolume" : 1.281313104129373E7,
   "numberOfTrades" : 41296,
   "rsi" : 0.0
 }, {
@@ -2755,7 +1435,7 @@
   "close" : 0.004845,
   "volume" : 220315.37,
   "quoteAssetVolume" : 1048.02342058,
-  "usdVolume" : 1.90399737326865E9,
+  "usdVolume" : 9201806.14988691,
   "numberOfTrades" : 30504,
   "rsi" : 0.0
 }, {
@@ -2770,7 +1450,7 @@
   "close" : 0.004789,
   "volume" : 148154.06,
   "quoteAssetVolume" : 710.56620815,
-  "usdVolume" : 1.2869276490949001E9,
+  "usdVolume" : 6198614.539176185,
   "numberOfTrades" : 21937,
   "rsi" : 0.0
 }, {
@@ -2785,7 +1465,7 @@
   "close" : 0.004641,
   "volume" : 108091.96,
   "quoteAssetVolume" : 509.52347213,
-  "usdVolume" : 9.793326141528001E8,
+  "usdVolume" : 4615560.053502535,
   "numberOfTrades" : 16507,
   "rsi" : 0.0
 }, {
@@ -2800,7 +1480,7 @@
   "close" : 0.004492,
   "volume" : 157573.44,
   "quoteAssetVolume" : 714.85194816,
-  "usdVolume" : 1.5049311383376002E9,
+  "usdVolume" : 6870902.099339131,
   "numberOfTrades" : 22129,
   "rsi" : 0.0
 }, {
@@ -2815,7 +1495,7 @@
   "close" : 0.004587,
   "volume" : 135549.22,
   "quoteAssetVolume" : 616.56383465,
-  "usdVolume" : 1.2950636799779E9,
+  "usdVolume" : 5877410.640009866,
   "numberOfTrades" : 19362,
   "rsi" : 0.0
 }, {
@@ -2830,7 +1510,7 @@
   "close" : 0.00461,
   "volume" : 143247.96,
   "quoteAssetVolume" : 659.00389822,
-  "usdVolume" : 1.3391700275753999E9,
+  "usdVolume" : 6156892.673804574,
   "numberOfTrades" : 17946,
   "rsi" : 0.0
 }, {
@@ -2845,7 +1525,7 @@
   "close" : 0.004516,
   "volume" : 106495.8,
   "quoteAssetVolume" : 486.4078202,
-  "usdVolume" : 1.0149502347149999E9,
+  "usdVolume" : 4630968.561088845,
   "numberOfTrades" : 15323,
   "rsi" : 0.0
 }, {
@@ -2860,7 +1540,7 @@
   "close" : 0.004657,
   "volume" : 203884.48,
   "quoteAssetVolume" : 946.15748561,
-  "usdVolume" : 1.9792126672896001E9,
+  "usdVolume" : 9073103.941861054,
   "numberOfTrades" : 23836,
   "rsi" : 0.0
 }, {
@@ -2875,7 +1555,7 @@
   "close" : 0.004676,
   "volume" : 110259.07,
   "quoteAssetVolume" : 512.79268325,
-  "usdVolume" : 1.0755474579011E9,
+  "usdVolume" : 5019600.626522338,
   "numberOfTrades" : 14747,
   "rsi" : 0.0
 }, {
@@ -2890,7 +1570,7 @@
   "close" : 0.004651,
   "volume" : 130848.26,
   "quoteAssetVolume" : 609.32154681,
-  "usdVolume" : 1.2618064086927998E9,
+  "usdVolume" : 5885289.370603272,
   "numberOfTrades" : 16749,
   "rsi" : 0.0
 }, {
@@ -2905,7 +1585,7 @@
   "close" : 0.004712,
   "volume" : 126825.24,
   "quoteAssetVolume" : 593.69574756,
-  "usdVolume" : 1.1782115526096E9,
+  "usdVolume" : 5514337.864729146,
   "numberOfTrades" : 19018,
   "rsi" : 0.0
 }, {
@@ -2920,7 +1600,7 @@
   "close" : 0.004825,
   "volume" : 110767.65,
   "quoteAssetVolume" : 529.53704438,
-  "usdVolume" : 1.01006306227575E9,
+  "usdVolume" : 4816304.229359558,
   "numberOfTrades" : 19294,
   "rsi" : 0.0
 }, {
@@ -2935,7 +1615,7 @@
   "close" : 0.004776,
   "volume" : 90054.43,
   "quoteAssetVolume" : 432.12189024,
-  "usdVolume" : 8.2621112211725E8,
+  "usdVolume" : 3965390.5986248357,
   "numberOfTrades" : 12107,
   "rsi" : 0.0
 }, {
@@ -2950,7 +1630,7 @@
   "close" : 0.004829,
   "volume" : 132754.12,
   "quoteAssetVolume" : 636.42885794,
-  "usdVolume" : 1.1881062289109998E9,
+  "usdVolume" : 5705073.367443156,
   "numberOfTrades" : 16891,
   "rsi" : 0.0
 }, {
@@ -2965,7 +1645,7 @@
   "close" : 0.00483,
   "volume" : 120021.89,
   "quoteAssetVolume" : 582.684232,
-  "usdVolume" : 1.0573022343730499E9,
+  "usdVolume" : 5105723.424381746,
   "numberOfTrades" : 17516,
   "rsi" : 0.0
 }, {
@@ -2980,7 +1660,7 @@
   "close" : 0.004781,
   "volume" : 95379.44,
   "quoteAssetVolume" : 457.48035441,
-  "usdVolume" : 8.460885980716E8,
+  "usdVolume" : 4065523.4369516154,
   "numberOfTrades" : 15273,
   "rsi" : 0.0
 }, {
@@ -2995,7 +1675,7 @@
   "close" : 0.004766,
   "volume" : 95323.63,
   "quoteAssetVolume" : 455.24773902,
-  "usdVolume" : 8.6006078800205E8,
+  "usdVolume" : 4105370.387213995,
   "numberOfTrades" : 13510,
   "rsi" : 0.0
 }, {
@@ -3010,7 +1690,7 @@
   "close" : 0.004675,
   "volume" : 97970.66,
   "quoteAssetVolume" : 461.58047446,
-  "usdVolume" : 9.199425379868E8,
+  "usdVolume" : 4341309.161654669,
   "numberOfTrades" : 15791,
   "rsi" : 0.0
 }, {
@@ -3025,7 +1705,7 @@
   "close" : 0.004718,
   "volume" : 85282.64,
   "quoteAssetVolume" : 402.51296603,
-  "usdVolume" : 8.103104454808002E8,
+  "usdVolume" : 3805486.5890896334,
   "numberOfTrades" : 13939,
   "rsi" : 0.0
 }, {
@@ -3040,7 +1720,7 @@
   "close" : 0.004924,
   "volume" : 180490.55,
   "quoteAssetVolume" : 882.4197798,
-  "usdVolume" : 1.7258795175879998E9,
+  "usdVolume" : 8324686.698303051,
   "numberOfTrades" : 25846,
   "rsi" : 0.0
 }, {
@@ -3055,7 +1735,7 @@
   "close" : 0.004826,
   "volume" : 140673.35,
   "quoteAssetVolume" : 687.19737553,
-  "usdVolume" : 1.34666527618325E9,
+  "usdVolume" : 6565852.950088703,
   "numberOfTrades" : 22520,
   "rsi" : 0.0
 }, {
@@ -3070,7 +1750,7 @@
   "close" : 0.004732,
   "volume" : 191602.25,
   "quoteAssetVolume" : 923.72000018,
-  "usdVolume" : 1.88240013717E9,
+  "usdVolume" : 8993507.164142298,
   "numberOfTrades" : 29574,
   "rsi" : 0.0
 }, {
@@ -3085,7 +1765,7 @@
   "close" : 0.004832,
   "volume" : 244420.64,
   "quoteAssetVolume" : 1181.07849048,
-  "usdVolume" : 2.4100791681400003E9,
+  "usdVolume" : 1.1515827389239892E7,
   "numberOfTrades" : 34471,
   "rsi" : 0.0
 }, {
@@ -3100,7 +1780,7 @@
   "close" : 0.004879,
   "volume" : 135409.11,
   "quoteAssetVolume" : 660.24227669,
-  "usdVolume" : 1.2988617863043E9,
+  "usdVolume" : 6307503.6431839485,
   "numberOfTrades" : 20922,
   "rsi" : 0.0
 }, {
@@ -3115,7 +1795,7 @@
   "close" : 0.004847,
   "volume" : 147152.98,
   "quoteAssetVolume" : 720.62117055,
-  "usdVolume" : 1.4314585720161998E9,
+  "usdVolume" : 6961038.543260658,
   "numberOfTrades" : 21655,
   "rsi" : 0.0
 }, {
@@ -3130,7 +1810,7 @@
   "close" : 0.004865,
   "volume" : 78811.58,
   "quoteAssetVolume" : 382.48055538,
-  "usdVolume" : 7.64838799847E8,
+  "usdVolume" : 3713226.5734690432,
   "numberOfTrades" : 15408,
   "rsi" : 0.0
 }, {
@@ -3145,7 +1825,7 @@
   "close" : 0.004842,
   "volume" : 65850.1,
   "quoteAssetVolume" : 319.30522201,
-  "usdVolume" : 6.350409141235001E8,
+  "usdVolume" : 3082153.988762083,
   "numberOfTrades" : 13413,
   "rsi" : 0.0
 }, {
@@ -3160,7 +1840,7 @@
   "close" : 0.004784,
   "volume" : 80318.81,
   "quoteAssetVolume" : 386.60744435,
-  "usdVolume" : 7.796482631652E8,
+  "usdVolume" : 3751189.1129146507,
   "numberOfTrades" : 14191,
   "rsi" : 0.0
 }, {
@@ -3175,7 +1855,7 @@
   "close" : 0.004747,
   "volume" : 74132.34,
   "quoteAssetVolume" : 353.42556308,
-  "usdVolume" : 7.2386523393E8,
+  "usdVolume" : 3449194.474645529,
   "numberOfTrades" : 13701,
   "rsi" : 0.0
 }, {
@@ -3190,7 +1870,7 @@
   "close" : 0.004695,
   "volume" : 79044.98,
   "quoteAssetVolume" : 374.50322873,
-  "usdVolume" : 7.728397641307E8,
+  "usdVolume" : 3648972.9694441766,
   "numberOfTrades" : 14277,
   "rsi" : 0.0
 }, {
@@ -3205,7 +1885,7 @@
   "close" : 0.004718,
   "volume" : 90881.75,
   "quoteAssetVolume" : 429.01643249,
-  "usdVolume" : 8.932512738600001E8,
+  "usdVolume" : 4204590.00913281,
   "numberOfTrades" : 15707,
   "rsi" : 0.0
 }, {
@@ -3220,7 +1900,7 @@
   "close" : 0.004657,
   "volume" : 129623.01,
   "quoteAssetVolume" : 608.19186826,
-  "usdVolume" : 1.2421526764580998E9,
+  "usdVolume" : 5823786.249378193,
   "numberOfTrades" : 20159,
   "rsi" : 0.0
 }, {
@@ -3235,7 +1915,7 @@
   "close" : 0.004723,
   "volume" : 88283.41,
   "quoteAssetVolume" : 414.88520881,
-  "usdVolume" : 8.2739255993705E8,
+  "usdVolume" : 3881151.9976428105,
   "numberOfTrades" : 14512,
   "rsi" : 0.0
 }, {
@@ -3250,7 +1930,7 @@
   "close" : 0.00476,
   "volume" : 46863.57,
   "quoteAssetVolume" : 222.18599916,
-  "usdVolume" : 4.437581738655E8,
+  "usdVolume" : 2104748.3567361576,
   "numberOfTrades" : 9675,
   "rsi" : 0.0
 }, {
@@ -3265,7 +1945,7 @@
   "close" : 0.004715,
   "volume" : 60224.2,
   "quoteAssetVolume" : 284.33410073,
-  "usdVolume" : 5.66572410824E8,
+  "usdVolume" : 2683940.4521373757,
   "numberOfTrades" : 9889,
   "rsi" : 0.0
 }, {
@@ -3280,7 +1960,7 @@
   "close" : 0.004642,
   "volume" : 137135.45,
   "quoteAssetVolume" : 640.86361221,
-  "usdVolume" : 1.2868872909270003E9,
+  "usdVolume" : 6020492.162174878,
   "numberOfTrades" : 16548,
   "rsi" : 0.0
 }, {
@@ -3295,7 +1975,7 @@
   "close" : 0.004607,
   "volume" : 82214.49,
   "quoteAssetVolume" : 378.81906889,
-  "usdVolume" : 7.790497086318E8,
+  "usdVolume" : 3602643.7708023316,
   "numberOfTrades" : 12991,
   "rsi" : 0.0
 }, {
@@ -3310,7 +1990,7 @@
   "close" : 0.004655,
   "volume" : 96360.9,
   "quoteAssetVolume" : 450.3784917,
-  "usdVolume" : 9.150484062494999E8,
+  "usdVolume" : 4237517.673408071,
   "numberOfTrades" : 16888,
   "rsi" : 0.0
 }, {
@@ -3325,7 +2005,7 @@
   "close" : 0.004626,
   "volume" : 82915.16,
   "quoteAssetVolume" : 385.48074356,
-  "usdVolume" : 7.815354964909999E8,
+  "usdVolume" : 3627155.248292928,
   "numberOfTrades" : 12368,
   "rsi" : 0.0
 }, {
@@ -3340,7 +2020,7 @@
   "close" : 0.004605,
   "volume" : 80666.5,
   "quoteAssetVolume" : 373.6481181,
-  "usdVolume" : 7.540926252875E8,
+  "usdVolume" : 3480546.736062877,
   "numberOfTrades" : 12141,
   "rsi" : 0.0
 }, {
@@ -3355,7 +2035,7 @@
   "close" : 0.004656,
   "volume" : 59285.49,
   "quoteAssetVolume" : 274.11749923,
-  "usdVolume" : 5.534057420991E8,
+  "usdVolume" : 2562858.0965243424,
   "numberOfTrades" : 9794,
   "rsi" : 0.0
 }, {
@@ -3370,7 +2050,7 @@
   "close" : 0.004628,
   "volume" : 47726.05,
   "quoteAssetVolume" : 220.82302729,
-  "usdVolume" : 4.45132277661E8,
+  "usdVolume" : 2066325.5010341734,
   "numberOfTrades" : 8224,
   "rsi" : 0.0
 }, {
@@ -3385,7 +2065,7 @@
   "close" : 0.004576,
   "volume" : 91674.9,
   "quoteAssetVolume" : 423.71170684,
-  "usdVolume" : 8.70012219231E8,
+  "usdVolume" : 4002904.204496221,
   "numberOfTrades" : 12708,
   "rsi" : 0.0
 }, {
@@ -3400,7 +2080,7 @@
   "close" : 0.004591,
   "volume" : 75810.04,
   "quoteAssetVolume" : 347.1668163,
-  "usdVolume" : 7.319679211116E8,
+  "usdVolume" : 3353856.2729064063,
   "numberOfTrades" : 10550,
   "rsi" : 0.0
 }, {
@@ -3415,7 +2095,7 @@
   "close" : 0.004585,
   "volume" : 104984.18,
   "quoteAssetVolume" : 481.00808166,
-  "usdVolume" : 9.931933863138E8,
+  "usdVolume" : 4556822.883428071,
   "numberOfTrades" : 13790,
   "rsi" : 0.0
 }, {
@@ -3430,7 +2110,7 @@
   "close" : 0.00458,
   "volume" : 96408.11,
   "quoteAssetVolume" : 444.14807161,
-  "usdVolume" : 8.940801354101E8,
+  "usdVolume" : 4097128.106231899,
   "numberOfTrades" : 12942,
   "rsi" : 0.0
 }, {
@@ -3445,7 +2125,7 @@
   "close" : 0.004702,
   "volume" : 178549.44,
   "quoteAssetVolume" : 829.84613909,
-  "usdVolume" : 1.6436993622239997E9,
+  "usdVolume" : 7628759.179960218,
   "numberOfTrades" : 22457,
   "rsi" : 0.0
 }, {
@@ -3460,7 +2140,7 @@
   "close" : 0.004556,
   "volume" : 111418.58,
   "quoteAssetVolume" : 511.992343,
-  "usdVolume" : 1.0124723354109E9,
+  "usdVolume" : 4688366.151793834,
   "numberOfTrades" : 17903,
   "rsi" : 0.0
 }, {
@@ -3475,7 +2155,7 @@
   "close" : 0.004536,
   "volume" : 46178.91,
   "quoteAssetVolume" : 210.25094419,
-  "usdVolume" : 4.1857372154925E8,
+  "usdVolume" : 1902812.0443165982,
   "numberOfTrades" : 9497,
   "rsi" : 0.0
 }, {
@@ -3490,7 +2170,7 @@
   "close" : 0.004557,
   "volume" : 91516.83,
   "quoteAssetVolume" : 415.20334383,
-  "usdVolume" : 8.377780078788E8,
+  "usdVolume" : 3809828.70228645,
   "numberOfTrades" : 13745,
   "rsi" : 0.0
 }, {
@@ -3505,7 +2185,7 @@
   "close" : 0.004507,
   "volume" : 45665.35,
   "quoteAssetVolume" : 206.10462222,
-  "usdVolume" : 4.1855672510899997E8,
+  "usdVolume" : 1897140.0183986383,
   "numberOfTrades" : 8515,
   "rsi" : 0.0
 }, {
@@ -3520,7 +2200,7 @@
   "close" : 0.004524,
   "volume" : 49032.26,
   "quoteAssetVolume" : 221.78795017,
-  "usdVolume" : 4.5036326939040005E8,
+  "usdVolume" : 2033858.9450064835,
   "numberOfTrades" : 10045,
   "rsi" : 0.0
 }, {
@@ -3535,7 +2215,7 @@
   "close" : 0.004515,
   "volume" : 60907.94,
   "quoteAssetVolume" : 274.68969964,
-  "usdVolume" : 5.578719630641E8,
+  "usdVolume" : 2521322.2699529147,
   "numberOfTrades" : 11616,
   "rsi" : 0.0
 }, {
@@ -3550,7 +2230,7 @@
   "close" : 0.00454,
   "volume" : 67239.95,
   "quoteAssetVolume" : 305.56367693,
-  "usdVolume" : 6.100277223800001E8,
+  "usdVolume" : 2762194.117661924,
   "numberOfTrades" : 10805,
   "rsi" : 0.0
 }, {
@@ -3565,7 +2245,7 @@
   "close" : 0.004608,
   "volume" : 81998.84,
   "quoteAssetVolume" : 375.94468831,
-  "usdVolume" : 7.45912697915E8,
+  "usdVolume" : 3411912.9507115576,
   "numberOfTrades" : 11940,
   "rsi" : 0.0
 }, {
@@ -3580,7 +2260,7 @@
   "close" : 0.004584,
   "volume" : 63013.21,
   "quoteAssetVolume" : 288.67568818,
-  "usdVolume" : 5.7355915512805E8,
+  "usdVolume" : 2636390.4880238567,
   "numberOfTrades" : 9267,
   "rsi" : 0.0
 }, {
@@ -3595,7 +2275,7 @@
   "close" : 0.004716,
   "volume" : 105331.81,
   "quoteAssetVolume" : 490.08457978,
-  "usdVolume" : 9.6976943496705E8,
+  "usdVolume" : 4509427.731452158,
   "numberOfTrades" : 16167,
   "rsi" : 0.0
 }, {
@@ -3610,7 +2290,7 @@
   "close" : 0.004688,
   "volume" : 84998.47,
   "quoteAssetVolume" : 399.89586361,
-  "usdVolume" : 7.904798211071E8,
+  "usdVolume" : 3716886.7405343778,
   "numberOfTrades" : 12133,
   "rsi" : 0.0
 }, {
@@ -3625,7 +2305,7 @@
   "close" : 0.004807,
   "volume" : 177131.11,
   "quoteAssetVolume" : 850.53742252,
-  "usdVolume" : 1.6555966597702997E9,
+  "usdVolume" : 7861706.504790705,
   "numberOfTrades" : 25728,
   "rsi" : 0.0
 }, {
@@ -3640,7 +2320,7 @@
   "close" : 0.004804,
   "volume" : 141291.41,
   "quoteAssetVolume" : 678.92194162,
-  "usdVolume" : 1.31884863733545E9,
+  "usdVolume" : 6338415.32220399,
   "numberOfTrades" : 18576,
   "rsi" : 0.0
 }, {
@@ -3655,7 +2335,7 @@
   "close" : 0.00477,
   "volume" : 100169.82,
   "quoteAssetVolume" : 480.5858484,
-  "usdVolume" : 9.276105977316002E8,
+  "usdVolume" : 4440424.318622327,
   "numberOfTrades" : 12671,
   "rsi" : 0.0
 }, {
@@ -3670,7 +2350,7 @@
   "close" : 0.004839,
   "volume" : 64146.79,
   "quoteAssetVolume" : 307.77020766,
-  "usdVolume" : 5.9407528934615E8,
+  "usdVolume" : 2853876.723306019,
   "numberOfTrades" : 10274,
   "rsi" : 0.0
 }, {
@@ -3685,7 +2365,7 @@
   "close" : 0.004807,
   "volume" : 104314.24,
   "quoteAssetVolume" : 502.98323478,
-  "usdVolume" : 9.668245373024001E8,
+  "usdVolume" : 4662937.387267754,
   "numberOfTrades" : 13585,
   "rsi" : 0.0
 }, {
@@ -3700,7 +2380,7 @@
   "close" : 0.004753,
   "volume" : 183509.9,
   "quoteAssetVolume" : 880.7699659,
-  "usdVolume" : 1.7016808798535E9,
+  "usdVolume" : 8135892.2076012185,
   "numberOfTrades" : 23525,
   "rsi" : 0.0
 }, {
@@ -3715,7 +2395,7 @@
   "close" : 0.004741,
   "volume" : 95425.65,
   "quoteAssetVolume" : 450.95785479,
-  "usdVolume" : 8.826137847494999E8,
+  "usdVolume" : 4188881.8638321124,
   "numberOfTrades" : 12732,
   "rsi" : 0.0
 }, {
@@ -3730,7 +2410,7 @@
   "close" : 0.004711,
   "volume" : 67681.14,
   "quoteAssetVolume" : 318.41782786,
-  "usdVolume" : 6.244752664665E8,
+  "usdVolume" : 2951612.9007585505,
   "numberOfTrades" : 10769,
   "rsi" : 0.0
 }, {
@@ -3745,7 +2425,7 @@
   "close" : 0.004609,
   "volume" : 131605.81,
   "quoteAssetVolume" : 606.18230465,
-  "usdVolume" : 1.2062541084846E9,
+  "usdVolume" : 5620753.294707349,
   "numberOfTrades" : 20540,
   "rsi" : 0.0
 }, {
@@ -3760,7 +2440,7 @@
   "close" : 0.004577,
   "volume" : 79935.15,
   "quoteAssetVolume" : 367.40765964,
-  "usdVolume" : 7.30928610303E8,
+  "usdVolume" : 3356411.828530701,
   "numberOfTrades" : 9544,
   "rsi" : 0.0
 }, {
@@ -3775,7 +2455,7 @@
   "close" : 0.004631,
   "volume" : 71761.3,
   "quoteAssetVolume" : 331.67784342,
-  "usdVolume" : 6.574982001835E8,
+  "usdVolume" : 3027465.6476154085,
   "numberOfTrades" : 9794,
   "rsi" : 0.0
 }, {
@@ -3790,7 +2470,7 @@
   "close" : 0.00463,
   "volume" : 59942.95,
   "quoteAssetVolume" : 276.99476865,
-  "usdVolume" : 5.5085443075275E8,
+  "usdVolume" : 2550730.8618024243,
   "numberOfTrades" : 9055,
   "rsi" : 0.0
 }, {
@@ -3805,7 +2485,7 @@
   "close" : 0.00458,
   "volume" : 81481.87,
   "quoteAssetVolume" : 375.28137577,
-  "usdVolume" : 7.4840160553495E8,
+  "usdVolume" : 3446438.4965003533,
   "numberOfTrades" : 13053,
   "rsi" : 0.0
 }, {
@@ -3820,7 +2500,7 @@
   "close" : 0.004663,
   "volume" : 111324.08,
   "quoteAssetVolume" : 518.60191608,
-  "usdVolume" : 1.0325742583912E9,
+  "usdVolume" : 4772061.519843705,
   "numberOfTrades" : 17098,
   "rsi" : 0.0
 }, {
@@ -3835,7 +2515,7 @@
   "close" : 0.004724,
   "volume" : 126215.13,
   "quoteAssetVolume" : 590.16965099,
-  "usdVolume" : 1.1932479362304E9,
+  "usdVolume" : 5600755.868596059,
   "numberOfTrades" : 16081,
   "rsi" : 0.0
 }, {
@@ -3850,7 +2530,7 @@
   "close" : 0.00468,
   "volume" : 155506.22,
   "quoteAssetVolume" : 735.06796888,
-  "usdVolume" : 1.4867506501473E9,
+  "usdVolume" : 6989075.837431422,
   "numberOfTrades" : 20145,
   "rsi" : 0.0
 }, {
@@ -3865,7 +2545,7 @@
   "close" : 0.004626,
   "volume" : 135673.33,
   "quoteAssetVolume" : 631.63247866,
-  "usdVolume" : 1.29846635333155E9,
+  "usdVolume" : 6041232.4024361605,
   "numberOfTrades" : 14892,
   "rsi" : 0.0
 }, {
@@ -3880,7 +2560,7 @@
   "close" : 0.005068,
   "volume" : 415434.71,
   "quoteAssetVolume" : 2050.53434551,
-  "usdVolume" : 3.9961744885146003E9,
+  "usdVolume" : 1.937889036124905E7,
   "numberOfTrades" : 53899,
   "rsi" : 0.0
 }, {
@@ -3895,7 +2575,7 @@
   "close" : 0.004841,
   "volume" : 356124.42,
   "quoteAssetVolume" : 1771.09774046,
-  "usdVolume" : 3.4957101842316E9,
+  "usdVolume" : 1.731137060206902E7,
   "numberOfTrades" : 46112,
   "rsi" : 0.0
 }, {
@@ -3910,7 +2590,7 @@
   "close" : 0.004831,
   "volume" : 563161.65,
   "quoteAssetVolume" : 2703.22371921,
-  "usdVolume" : 5.9023564632375E9,
+  "usdVolume" : 2.8542249386167567E7,
   "numberOfTrades" : 71991,
   "rsi" : 0.0
 }, {
@@ -3925,7 +2605,7 @@
   "close" : 0.005111,
   "volume" : 553174.11,
   "quoteAssetVolume" : 2776.02210219,
-  "usdVolume" : 6.067277253502649E9,
+  "usdVolume" : 3.0152594935611892E7,
   "numberOfTrades" : 71718,
   "rsi" : 0.0
 }, {
@@ -3940,7 +2620,7 @@
   "close" : 0.00497,
   "volume" : 263146.85,
   "quoteAssetVolume" : 1324.49627525,
-  "usdVolume" : 2.89551004929E9,
+  "usdVolume" : 1.4593016461971639E7,
   "numberOfTrades" : 33408,
   "rsi" : 0.0
 }, {
@@ -3955,7 +2635,7 @@
   "close" : 0.005111,
   "volume" : 365066.83,
   "quoteAssetVolume" : 1870.84344781,
-  "usdVolume" : 4.0522655423439503E9,
+  "usdVolume" : 2.042543275575344E7,
   "numberOfTrades" : 41298,
   "rsi" : 0.0
 }, {
@@ -3970,7 +2650,7 @@
   "close" : 0.005128,
   "volume" : 210970.47,
   "quoteAssetVolume" : 1082.9265666,
-  "usdVolume" : 2.36658761853375E9,
+  "usdVolume" : 1.211712748453546E7,
   "numberOfTrades" : 30194,
   "rsi" : 0.0
 }, {
@@ -3985,7 +2665,7 @@
   "close" : 0.005225,
   "volume" : 369270.85,
   "quoteAssetVolume" : 1914.05712406,
-  "usdVolume" : 4.271841513117749E9,
+  "usdVolume" : 2.2117357940997202E7,
   "numberOfTrades" : 47185,
   "rsi" : 0.0
 }, {
@@ -4000,7 +2680,7 @@
   "close" : 0.005128,
   "volume" : 623529.34,
   "quoteAssetVolume" : 3218.6306811,
-  "usdVolume" : 7.1308436498684E9,
+  "usdVolume" : 3.692016827210889E7,
   "numberOfTrades" : 91472,
   "rsi" : 0.0
 }, {
@@ -4015,7 +2695,7 @@
   "close" : 0.005212,
   "volume" : 237193.01,
   "quoteAssetVolume" : 1227.89718981,
-  "usdVolume" : 2.64365485436085E9,
+  "usdVolume" : 1.3668435034394618E7,
   "numberOfTrades" : 30518,
   "rsi" : 0.0
 }, {
@@ -4030,7 +2710,7 @@
   "close" : 0.00515,
   "volume" : 187870.24,
   "quoteAssetVolume" : 969.02557984,
-  "usdVolume" : 2.105241032148E9,
+  "usdVolume" : 1.0909442322740542E7,
   "numberOfTrades" : 24415,
   "rsi" : 0.0
 }, {
@@ -4045,7 +2725,7 @@
   "close" : 0.005013,
   "volume" : 194074.73,
   "quoteAssetVolume" : 988.6880281,
-  "usdVolume" : 2.2257363372685003E9,
+  "usdVolume" : 1.1306403905689761E7,
   "numberOfTrades" : 25202,
   "rsi" : 0.0
 }, {
@@ -4060,7 +2740,7 @@
   "close" : 0.00502,
   "volume" : 186668.47,
   "quoteAssetVolume" : 938.90342943,
-  "usdVolume" : 2.1940423958119497E9,
+  "usdVolume" : 1.1008611816026019E7,
   "numberOfTrades" : 24872,
   "rsi" : 0.0
 }, {
@@ -4075,7 +2755,7 @@
   "close" : 0.004931,
   "volume" : 245895.02,
   "quoteAssetVolume" : 1229.94792235,
-  "usdVolume" : 2.8716481068169994E9,
+  "usdVolume" : 1.4288805624132149E7,
   "numberOfTrades" : 33279,
   "rsi" : 0.0
 }, {
@@ -4090,7 +2770,7 @@
   "close" : 0.00497,
   "volume" : 91162.83,
   "quoteAssetVolume" : 449.68287598,
-  "usdVolume" : 1.0645890450145501E9,
+  "usdVolume" : 5270396.547664356,
   "numberOfTrades" : 16000,
   "rsi" : 0.0
 }, {
@@ -4105,7 +2785,7 @@
   "close" : 0.004877,
   "volume" : 88564.92,
   "quoteAssetVolume" : 435.10577326,
-  "usdVolume" : 1.038100425042E9,
+  "usdVolume" : 5111250.814416789,
   "numberOfTrades" : 16009,
   "rsi" : 0.0
 }, {
@@ -4120,7 +2800,7 @@
   "close" : 0.004903,
   "volume" : 263672.02,
   "quoteAssetVolume" : 1287.40124004,
-  "usdVolume" : 3.1079825197061005E9,
+  "usdVolume" : 1.5196856474328274E7,
   "numberOfTrades" : 31866,
   "rsi" : 0.0
 }, {
@@ -4135,7 +2815,7 @@
   "close" : 0.004751,
   "volume" : 213834.83,
   "quoteAssetVolume" : 1038.34877527,
-  "usdVolume" : 2.4895698699266996E9,
+  "usdVolume" : 1.2019951728874631E7,
   "numberOfTrades" : 30993,
   "rsi" : 0.0
 }, {
@@ -4150,7 +2830,7 @@
   "close" : 0.004718,
   "volume" : 159234.86,
   "quoteAssetVolume" : 752.07744103,
-  "usdVolume" : 1.8277311624005997E9,
+  "usdVolume" : 8652259.909906149,
   "numberOfTrades" : 21476,
   "rsi" : 0.0
 }, {
@@ -4165,7 +2845,7 @@
   "close" : 0.00485,
   "volume" : 240648.42,
   "quoteAssetVolume" : 1135.3867644,
-  "usdVolume" : 2.8088892684714003E9,
+  "usdVolume" : 1.343248155185631E7,
   "numberOfTrades" : 32687,
   "rsi" : 0.0
 }, {
@@ -4180,7 +2860,7 @@
   "close" : 0.004828,
   "volume" : 193403.3,
   "quoteAssetVolume" : 934.06589919,
-  "usdVolume" : 2.2763868185115E9,
+  "usdVolume" : 1.1014317146881552E7,
   "numberOfTrades" : 24025,
   "rsi" : 0.0
 }, {
@@ -4195,7 +2875,7 @@
   "close" : 0.00505,
   "volume" : 348674.19,
   "quoteAssetVolume" : 1733.9480179,
-  "usdVolume" : 4.1166131073802495E9,
+  "usdVolume" : 2.0335779865175165E7,
   "numberOfTrades" : 38329,
   "rsi" : 0.0
 }, {
@@ -4210,7 +2890,7 @@
   "close" : 0.005365,
   "volume" : 535507.2,
   "quoteAssetVolume" : 2789.88196451,
-  "usdVolume" : 6.36273589824E9,
+  "usdVolume" : 3.3136418421935998E7,
   "numberOfTrades" : 63454,
   "rsi" : 0.0
 }, {
@@ -4225,7 +2905,7 @@
   "close" : 0.005472,
   "volume" : 675811.38,
   "quoteAssetVolume" : 3631.36013123,
-  "usdVolume" : 8.1746550011628E9,
+  "usdVolume" : 4.429703470655327E7,
   "numberOfTrades" : 74124,
   "rsi" : 0.0
 }, {
@@ -4240,7 +2920,7 @@
   "close" : 0.005477,
   "volume" : 491657.1,
   "quoteAssetVolume" : 2686.12679382,
-  "usdVolume" : 5.955481784868E9,
+  "usdVolume" : 3.2603078449237872E7,
   "numberOfTrades" : 57685,
   "rsi" : 0.0
 }, {
@@ -4255,7 +2935,7 @@
   "close" : 0.005282,
   "volume" : 426209.47,
   "quoteAssetVolume" : 2254.496936,
-  "usdVolume" : 5.05051615703215E9,
+  "usdVolume" : 2.7168118913863175E7,
   "numberOfTrades" : 54407,
   "rsi" : 0.0
 }, {
@@ -4270,7 +2950,7 @@
   "close" : 0.005297,
   "volume" : 233739.32,
   "quoteAssetVolume" : 1239.44215154,
-  "usdVolume" : 2.7590507524038E9,
+  "usdVolume" : 1.4596833340359485E7,
   "numberOfTrades" : 29485,
   "rsi" : 0.0
 }, {
@@ -4285,7 +2965,7 @@
   "close" : 0.005127,
   "volume" : 251863.25,
   "quoteAssetVolume" : 1318.4070715,
-  "usdVolume" : 2.94489593883E9,
+  "usdVolume" : 1.5347768315933228E7,
   "numberOfTrades" : 37337,
   "rsi" : 0.0
 }, {
@@ -4300,7 +2980,7 @@
   "close" : 0.005163,
   "volume" : 159489.16,
   "quoteAssetVolume" : 818.66921617,
-  "usdVolume" : 1.8496109399902E9,
+  "usdVolume" : 9521035.137279166,
   "numberOfTrades" : 22903,
   "rsi" : 0.0
 }, {
@@ -4315,7 +2995,7 @@
   "close" : 0.005199,
   "volume" : 180087.51,
   "quoteAssetVolume" : 924.39278112,
-  "usdVolume" : 2.0990676008082001E9,
+  "usdVolume" : 1.0875244312074149E7,
   "numberOfTrades" : 24800,
   "rsi" : 0.0
 }, {
@@ -4330,7 +3010,7 @@
   "close" : 0.005281,
   "volume" : 201053.38,
   "quoteAssetVolume" : 1060.91219019,
-  "usdVolume" : 2.3519546077808E9,
+  "usdVolume" : 1.2324654633927936E7,
   "numberOfTrades" : 26972,
   "rsi" : 0.0
 }, {
@@ -4345,7 +3025,7 @@
   "close" : 0.005154,
   "volume" : 227014.59,
   "quoteAssetVolume" : 1174.79026536,
-  "usdVolume" : 2.61822850591995E9,
+  "usdVolume" : 1.3662371383285224E7,
   "numberOfTrades" : 30772,
   "rsi" : 0.0
 }, {
@@ -4360,7 +3040,7 @@
   "close" : 0.00507,
   "volume" : 183754.88,
   "quoteAssetVolume" : 935.6602029,
-  "usdVolume" : 2.0929543015839999E9,
+  "usdVolume" : 1.0697590627749799E7,
   "numberOfTrades" : 21712,
   "rsi" : 0.0
 }, {
@@ -4375,7 +3055,7 @@
   "close" : 0.004951,
   "volume" : 204590.17,
   "quoteAssetVolume" : 1022.79475186,
-  "usdVolume" : 2.331489118303E9,
+  "usdVolume" : 1.1682723809759516E7,
   "numberOfTrades" : 29262,
   "rsi" : 0.0
 }, {
@@ -4390,7 +3070,7 @@
   "close" : 0.004979,
   "volume" : 146247.76,
   "quoteAssetVolume" : 728.78046441,
-  "usdVolume" : 1.6714137310852E9,
+  "usdVolume" : 8300427.412038876,
   "numberOfTrades" : 20372,
   "rsi" : 0.0
 }, {
@@ -4405,7 +3085,7 @@
   "close" : 0.004967,
   "volume" : 86555.86,
   "quoteAssetVolume" : 433.04080938,
-  "usdVolume" : 9.950781922282E8,
+  "usdVolume" : 4948040.844881956,
   "numberOfTrades" : 14402,
   "rsi" : 0.0
 }, {
@@ -4420,7 +3100,7 @@
   "close" : 0.00537,
   "volume" : 248169.36,
   "quoteAssetVolume" : 1291.26139796,
-  "usdVolume" : 2.8759106283599997E9,
+  "usdVolume" : 1.4870277834098727E7,
   "numberOfTrades" : 36282,
   "rsi" : 0.0
 }, {
@@ -4435,7 +3115,7 @@
   "close" : 0.00523,
   "volume" : 181311.65,
   "quoteAssetVolume" : 960.76346511,
-  "usdVolume" : 2.117781717961E9,
+  "usdVolume" : 1.1224634393865164E7,
   "numberOfTrades" : 28988,
   "rsi" : 0.0
 }, {
@@ -4450,7 +3130,7 @@
   "close" : 0.005259,
   "volume" : 257087.05,
   "quoteAssetVolume" : 1356.86724113,
-  "usdVolume" : 3.029961128667E9,
+  "usdVolume" : 1.5892636441421915E7,
   "numberOfTrades" : 36843,
   "rsi" : 0.0
 }, {
@@ -4465,7 +3145,7 @@
   "close" : 0.005098,
   "volume" : 221875.36,
   "quoteAssetVolume" : 1146.98608701,
-  "usdVolume" : 2.5860138990168E9,
+  "usdVolume" : 1.3395114168040382E7,
   "numberOfTrades" : 34559,
   "rsi" : 0.0
 }, {
@@ -4480,7 +3160,7 @@
   "close" : 0.004663,
   "volume" : 346978.86,
   "quoteAssetVolume" : 1704.73059346,
-  "usdVolume" : 3.7351215993476996E9,
+  "usdVolume" : 1.8272389656344566E7,
   "numberOfTrades" : 50265,
   "rsi" : 0.0
 }, {
@@ -4495,7 +3175,7 @@
   "close" : 0.004818,
   "volume" : 365947.45,
   "quoteAssetVolume" : 1740.39762106,
-  "usdVolume" : 3.7664299612115E9,
+  "usdVolume" : 1.785727320603389E7,
   "numberOfTrades" : 53691,
   "rsi" : 0.0
 }, {
@@ -4510,7 +3190,7 @@
   "close" : 0.004705,
   "volume" : 252617.48,
   "quoteAssetVolume" : 1193.61556135,
-  "usdVolume" : 2.6035944790956006E9,
+  "usdVolume" : 1.2400329629120449E7,
   "numberOfTrades" : 38053,
   "rsi" : 0.0
 }, {
@@ -4525,7 +3205,7 @@
   "close" : 0.004673,
   "volume" : 141526.28,
   "quoteAssetVolume" : 665.32780915,
-  "usdVolume" : 1.4451878242746E9,
+  "usdVolume" : 6775664.93697721,
   "numberOfTrades" : 22976,
   "rsi" : 0.0
 }, {
@@ -4540,7 +3220,7 @@
   "close" : 0.004706,
   "volume" : 166393.43,
   "quoteAssetVolume" : 779.08973706,
-  "usdVolume" : 1.71629248865095E9,
+  "usdVolume" : 8047861.735439724,
   "numberOfTrades" : 26582,
   "rsi" : 0.0
 }, {
@@ -4555,7 +3235,7 @@
   "close" : 0.004687,
   "volume" : 158382.13,
   "quoteAssetVolume" : 746.28772771,
-  "usdVolume" : 1.6234247516065E9,
+  "usdVolume" : 7625421.501844152,
   "numberOfTrades" : 22870,
   "rsi" : 0.0
 }, {
@@ -4570,7 +3250,7 @@
   "close" : 0.004679,
   "volume" : 102434.06,
   "quoteAssetVolume" : 480.58412115,
-  "usdVolume" : 1.0420545219958E9,
+  "usdVolume" : 4879403.710561487,
   "numberOfTrades" : 14931,
   "rsi" : 0.0
 }, {
@@ -4585,7 +3265,7 @@
   "close" : 0.004708,
   "volume" : 150926.56,
   "quoteAssetVolume" : 713.00538077,
-  "usdVolume" : 1.5512352578048003E9,
+  "usdVolume" : 7281622.521750205,
   "numberOfTrades" : 22169,
   "rsi" : 0.0
 }, {
@@ -4600,7 +3280,7 @@
   "close" : 0.004713,
   "volume" : 123379.34,
   "quoteAssetVolume" : 582.91740558,
-  "usdVolume" : 1.2785029883325E9,
+  "usdVolume" : 6021120.841635419,
   "numberOfTrades" : 17212,
   "rsi" : 0.0
 }, {
@@ -4615,7 +3295,7 @@
   "close" : 0.004865,
   "volume" : 120520.77,
   "quoteAssetVolume" : 576.22765374,
-  "usdVolume" : 1.25515210969185E9,
+  "usdVolume" : 6011166.319538727,
   "numberOfTrades" : 16951,
   "rsi" : 0.0
 }, {
@@ -4630,7 +3310,7 @@
   "close" : 0.004662,
   "volume" : 158138.54,
   "quoteAssetVolume" : 747.05237648,
-  "usdVolume" : 1.642545480345E9,
+  "usdVolume" : 7826781.941186625,
   "numberOfTrades" : 20131,
   "rsi" : 0.0
 }, {
@@ -4645,7 +3325,7 @@
   "close" : 0.004598,
   "volume" : 160700.81,
   "quoteAssetVolume" : 740.36123661,
-  "usdVolume" : 1.68772892036705E9,
+  "usdVolume" : 7813313.440090909,
   "numberOfTrades" : 18595,
   "rsi" : 0.0
 }, {
@@ -4660,7 +3340,7 @@
   "close" : 0.004479,
   "volume" : 181490.73,
   "quoteAssetVolume" : 828.69216941,
-  "usdVolume" : 1.9471305564342003E9,
+  "usdVolume" : 8837407.401930308,
   "numberOfTrades" : 19414,
   "rsi" : 0.0
 }, {
@@ -4675,7 +3355,7 @@
   "close" : 0.004358,
   "volume" : 142068.82,
   "quoteAssetVolume" : 626.961186,
-  "usdVolume" : 1.5442340872484E9,
+  "usdVolume" : 6821706.846200244,
   "numberOfTrades" : 16811,
   "rsi" : 0.0
 }, {
@@ -4690,7 +3370,7 @@
   "close" : 0.004466,
   "volume" : 110784.89,
   "quoteAssetVolume" : 493.42975132,
-  "usdVolume" : 1.21276219083E9,
+  "usdVolume" : 5350664.8494297,
   "numberOfTrades" : 13481,
   "rsi" : 0.0
 }, {
@@ -4705,7 +3385,7 @@
   "close" : 0.004437,
   "volume" : 81537.37,
   "quoteAssetVolume" : 361.41475764,
-  "usdVolume" : 8.917493467921499E8,
+  "usdVolume" : 3969180.1153059695,
   "numberOfTrades" : 11209,
   "rsi" : 0.0
 }, {
@@ -4720,7 +3400,7 @@
   "close" : 0.004378,
   "volume" : 68617.84,
   "quoteAssetVolume" : 301.60581964,
-  "usdVolume" : 7.55278280326E8,
+  "usdVolume" : 3329115.100022908,
   "numberOfTrades" : 8764,
   "rsi" : 0.0
 }, {
@@ -4735,7 +3415,7 @@
   "close" : 0.004312,
   "volume" : 108690.9,
   "quoteAssetVolume" : 471.01261974,
-  "usdVolume" : 1.195649897814E9,
+  "usdVolume" : 5195386.3956017755,
   "numberOfTrades" : 13581,
   "rsi" : 0.0
 }, {
@@ -4750,7 +3430,7 @@
   "close" : 0.004143,
   "volume" : 260359.79,
   "quoteAssetVolume" : 1094.28122129,
-  "usdVolume" : 2.7777135095625E9,
+  "usdVolume" : 1.174831762285467E7,
   "numberOfTrades" : 24930,
   "rsi" : 0.0
 }, {
@@ -4765,7 +3445,7 @@
   "close" : 0.004222,
   "volume" : 76972.95,
   "quoteAssetVolume" : 322.0500006,
-  "usdVolume" : 8.0616964912425E8,
+  "usdVolume" : 3371975.4145117234,
   "numberOfTrades" : 11127,
   "rsi" : 0.0
 }, {
@@ -4780,7 +3460,7 @@
   "close" : 0.004198,
   "volume" : 114212.83,
   "quoteAssetVolume" : 483.59140329,
-  "usdVolume" : 1.18616134341405E9,
+  "usdVolume" : 4995740.643170281,
   "numberOfTrades" : 14077,
   "rsi" : 0.0
 }, {
@@ -4795,7 +3475,7 @@
   "close" : 0.004184,
   "volume" : 91321.03,
   "quoteAssetVolume" : 385.67449287,
-  "usdVolume" : 9.578562383567E8,
+  "usdVolume" : 4014217.3260157593,
   "numberOfTrades" : 13277,
   "rsi" : 0.0
 }, {
@@ -4810,7 +3490,7 @@
   "close" : 0.004305,
   "volume" : 144813.7,
   "quoteAssetVolume" : 619.61844014,
-  "usdVolume" : 1.5511719475500002E9,
+  "usdVolume" : 6584509.173899491,
   "numberOfTrades" : 16952,
   "rsi" : 0.0
 }, {
@@ -4825,7 +3505,7 @@
   "close" : 0.004288,
   "volume" : 72969.91,
   "quoteAssetVolume" : 312.78808395,
-  "usdVolume" : 7.8133151376735E8,
+  "usdVolume" : 3356977.814468821,
   "numberOfTrades" : 11003,
   "rsi" : 0.0
 }, {
@@ -4840,7 +3520,7 @@
   "close" : 0.004274,
   "volume" : 104093.69,
   "quoteAssetVolume" : 444.84737018,
-  "usdVolume" : 1.1191549805398E9,
+  "usdVolume" : 4791644.225739083,
   "numberOfTrades" : 12429,
   "rsi" : 0.0
 }, {
@@ -4855,7 +3535,7 @@
   "close" : 0.004228,
   "volume" : 122357.9,
   "quoteAssetVolume" : 521.88821408,
-  "usdVolume" : 1.313535304501E9,
+  "usdVolume" : 5585926.005207751,
   "numberOfTrades" : 14090,
   "rsi" : 0.0
 }, {
@@ -4870,7 +3550,7 @@
   "close" : 0.004217,
   "volume" : 65011.01,
   "quoteAssetVolume" : 275.43869219,
-  "usdVolume" : 7.0005773392795E8,
+  "usdVolume" : 2955967.971002106,
   "numberOfTrades" : 10008,
   "rsi" : 0.0
 }, {
@@ -4885,7 +3565,7 @@
   "close" : 0.004292,
   "volume" : 75440.45,
   "quoteAssetVolume" : 322.96963609,
-  "usdVolume" : 8.154045162632499E8,
+  "usdVolume" : 3467412.3635801594,
   "numberOfTrades" : 12578,
   "rsi" : 0.0
 }, {
@@ -4900,7 +3580,7 @@
   "close" : 0.004356,
   "volume" : 181765.55,
   "quoteAssetVolume" : 793.70129528,
-  "usdVolume" : 1.944502406723E9,
+  "usdVolume" : 8407570.473814202,
   "numberOfTrades" : 22808,
   "rsi" : 0.0
 }, {
@@ -4915,7 +3595,7 @@
   "close" : 0.004248,
   "volume" : 143052.09,
   "quoteAssetVolume" : 612.9000513,
-  "usdVolume" : 1.5156032763088498E9,
+  "usdVolume" : 6518034.876635284,
   "numberOfTrades" : 17831,
   "rsi" : 0.0
 }, {
@@ -4930,7 +3610,7 @@
   "close" : 0.004318,
   "volume" : 66400.35,
   "quoteAssetVolume" : 286.10368508,
-  "usdVolume" : 7.009373666805E8,
+  "usdVolume" : 3002432.7493688194,
   "numberOfTrades" : 10596,
   "rsi" : 0.0
 }, {
@@ -4945,7 +3625,7 @@
   "close" : 0.004379,
   "volume" : 76785.28,
   "quoteAssetVolume" : 334.29924174,
-  "usdVolume" : 8.142579839679999E8,
+  "usdVolume" : 3540946.699995619,
   "numberOfTrades" : 10960,
   "rsi" : 0.0
 }, {
@@ -4960,7 +3640,7 @@
   "close" : 0.004294,
   "volume" : 82033.33,
   "quoteAssetVolume" : 354.34862554,
-  "usdVolume" : 8.801696414019501E8,
+  "usdVolume" : 3816199.2112346464,
   "numberOfTrades" : 12478,
   "rsi" : 0.0
 }, {
@@ -4975,7 +3655,7 @@
   "close" : 0.004335,
   "volume" : 162280.86,
   "quoteAssetVolume" : 710.53962018,
-  "usdVolume" : 1.7357447188997998E9,
+  "usdVolume" : 7490301.690233439,
   "numberOfTrades" : 19203,
   "rsi" : 0.0
 }, {
@@ -4990,7 +3670,7 @@
   "close" : 0.004366,
   "volume" : 98709.5,
   "quoteAssetVolume" : 427.61382457,
-  "usdVolume" : 1.04958008769E9,
+  "usdVolume" : 4568864.942882765,
   "numberOfTrades" : 13041,
   "rsi" : 0.0
 }, {
@@ -5005,7 +3685,7 @@
   "close" : 0.004323,
   "volume" : 85619.9,
   "quoteAssetVolume" : 371.56026005,
-  "usdVolume" : 9.243511561015E8,
+  "usdVolume" : 4015148.4259553445,
   "numberOfTrades" : 11012,
   "rsi" : 0.0
 }, {
@@ -5020,7 +3700,7 @@
   "close" : 0.004322,
   "volume" : 79853.17,
   "quoteAssetVolume" : 344.55909546,
-  "usdVolume" : 8.774298260868001E8,
+  "usdVolume" : 3791379.2773295045,
   "numberOfTrades" : 10884,
   "rsi" : 0.0
 }, {
@@ -5035,7 +3715,7 @@
   "close" : 0.004327,
   "volume" : 149246.76,
   "quoteAssetVolume" : 648.42437452,
-  "usdVolume" : 1.6673743554468002E9,
+  "usdVolume" : 7210605.655478488,
   "numberOfTrades" : 18160,
   "rsi" : 0.0
 }, {
@@ -5050,7 +3730,7 @@
   "close" : 0.00444,
   "volume" : 126861.84,
   "quoteAssetVolume" : 560.84476249,
-  "usdVolume" : 1.4374867324608E9,
+  "usdVolume" : 6302211.086677364,
   "numberOfTrades" : 16376,
   "rsi" : 0.0
 }, {
@@ -5065,7 +3745,7 @@
   "close" : 0.004386,
   "volume" : 137485.01,
   "quoteAssetVolume" : 607.25910223,
-  "usdVolume" : 1.5740156974613502E9,
+  "usdVolume" : 6945835.734432017,
   "numberOfTrades" : 17396,
   "rsi" : 0.0
 }, {
@@ -5080,7 +3760,7 @@
   "close" : 0.00437,
   "volume" : 79547.91,
   "quoteAssetVolume" : 347.09636407,
-  "usdVolume" : 9.127645385040001E8,
+  "usdVolume" : 3996575.9361452963,
   "numberOfTrades" : 12068,
   "rsi" : 0.0
 }, {
@@ -5095,7 +3775,7 @@
   "close" : 0.004362,
   "volume" : 60333.11,
   "quoteAssetVolume" : 265.41616051,
-  "usdVolume" : 6.889576597053E8,
+  "usdVolume" : 3007989.4656588095,
   "numberOfTrades" : 13251,
   "rsi" : 0.0
 }, {
@@ -5110,7 +3790,7 @@
   "close" : 0.004307,
   "volume" : 63620.43,
   "quoteAssetVolume" : 276.59493477,
-  "usdVolume" : 7.2918587654715E8,
+  "usdVolume" : 3160579.8747546244,
   "numberOfTrades" : 11469,
   "rsi" : 0.0
 }, {
@@ -5125,7 +3805,7 @@
   "close" : 0.004205,
   "volume" : 135347.9,
   "quoteAssetVolume" : 564.8548002,
-  "usdVolume" : 1.5446206880774996E9,
+  "usdVolume" : 6572211.155009873,
   "numberOfTrades" : 21726,
   "rsi" : 0.0
 }, {
@@ -5140,7 +3820,7 @@
   "close" : 0.00413,
   "volume" : 45382.93,
   "quoteAssetVolume" : 188.28407064,
-  "usdVolume" : 5.146297189796001E8,
+  "usdVolume" : 2144684.4997572433,
   "numberOfTrades" : 9891,
   "rsi" : 0.0
 }, {
@@ -5155,7 +3835,7 @@
   "close" : 0.004133,
   "volume" : 48949.24,
   "quoteAssetVolume" : 202.8842569,
-  "usdVolume" : 5.595742506389999E8,
+  "usdVolume" : 2311886.26007999,
   "numberOfTrades" : 8587,
   "rsi" : 0.0
 }, {
@@ -5170,7 +3850,7 @@
   "close" : 0.004084,
   "volume" : 65139.5,
   "quoteAssetVolume" : 267.9320253,
-  "usdVolume" : 7.573968340475E8,
+  "usdVolume" : 3111566.735556725,
   "numberOfTrades" : 10089,
   "rsi" : 0.0
 }, {
@@ -5185,7 +3865,7 @@
   "close" : 0.003935,
   "volume" : 88212.96,
   "quoteAssetVolume" : 351.68260367,
-  "usdVolume" : 1.043623271196E9,
+  "usdVolume" : 4183886.586939919,
   "numberOfTrades" : 15127,
   "rsi" : 0.0
 }, {
@@ -5200,7 +3880,7 @@
   "close" : 0.004145,
   "volume" : 301936.09,
   "quoteAssetVolume" : 1236.28359039,
-  "usdVolume" : 3.7275459603732004E9,
+  "usdVolume" : 1.5076687887229316E7,
   "numberOfTrades" : 39354,
   "rsi" : 0.0
 }, {
@@ -5215,7 +3895,7 @@
   "close" : 0.004191,
   "volume" : 289467.88,
   "quoteAssetVolume" : 1234.64049787,
-  "usdVolume" : 3.7267932992238E9,
+  "usdVolume" : 1.5533899535078818E7,
   "numberOfTrades" : 39490,
   "rsi" : 0.0
 }, {
@@ -5230,7 +3910,7 @@
   "close" : 0.004287,
   "volume" : 201487.37,
   "quoteAssetVolume" : 861.89083095,
-  "usdVolume" : 2.60844642508835E9,
+  "usdVolume" : 1.1058289594835093E7,
   "numberOfTrades" : 30605,
   "rsi" : 0.0
 }, {
@@ -5245,7 +3925,7 @@
   "close" : 0.004518,
   "volume" : 237750.85,
   "quoteAssetVolume" : 1058.0160259,
-  "usdVolume" : 3.0948967260357504E9,
+  "usdVolume" : 1.3627873296525603E7,
   "numberOfTrades" : 33380,
   "rsi" : 0.0
 }, {
@@ -5260,7 +3940,7 @@
   "close" : 0.004515,
   "volume" : 208956.87,
   "quoteAssetVolume" : 935.63832457,
-  "usdVolume" : 2.7311247988236E9,
+  "usdVolume" : 1.232965857365801E7,
   "numberOfTrades" : 32612,
   "rsi" : 0.0
 }, {
@@ -5275,7 +3955,7 @@
   "close" : 0.004351,
   "volume" : 192764.43,
   "quoteAssetVolume" : 847.54536511,
-  "usdVolume" : 2.51382454665345E9,
+  "usdVolume" : 1.1143605994960986E7,
   "numberOfTrades" : 28436,
   "rsi" : 0.0
 }, {
@@ -5290,7 +3970,7 @@
   "close" : 0.004246,
   "volume" : 170344.62,
   "quoteAssetVolume" : 734.3743744,
-  "usdVolume" : 2.2731058644192E9,
+  "usdVolume" : 9769445.76751637,
   "numberOfTrades" : 25986,
   "rsi" : 0.0
 }, {
@@ -5305,7 +3985,7 @@
   "close" : 0.004202,
   "volume" : 236182.74,
   "quoteAssetVolume" : 1011.02778883,
-  "usdVolume" : 3.1769601669071994E9,
+  "usdVolume" : 1.3420440385245379E7,
   "numberOfTrades" : 34151,
   "rsi" : 0.0
 }, {
@@ -5320,7 +4000,7 @@
   "close" : 0.004079,
   "volume" : 129677.65,
   "quoteAssetVolume" : 539.8543697,
-  "usdVolume" : 1.7326295655324998E9,
+  "usdVolume" : 7174918.2213045675,
   "numberOfTrades" : 21456,
   "rsi" : 0.0
 }, {
@@ -5335,7 +4015,7 @@
   "close" : 0.003984,
   "volume" : 116118.58,
   "quoteAssetVolume" : 467.12394894,
-  "usdVolume" : 1.5685175861891E9,
+  "usdVolume" : 6321628.249508363,
   "numberOfTrades" : 19996,
   "rsi" : 0.0
 }, {
@@ -5350,7 +4030,7 @@
   "close" : 0.004041,
   "volume" : 132715.46,
   "quoteAssetVolume" : 533.12041823,
-  "usdVolume" : 1.8149569090029998E9,
+  "usdVolume" : 7282951.274370462,
   "numberOfTrades" : 21757,
   "rsi" : 0.0
 }, {
@@ -5365,7 +4045,7 @@
   "close" : 0.00404,
   "volume" : 70311.16,
   "quoteAssetVolume" : 281.94239701,
-  "usdVolume" : 9.6862411795E8,
+  "usdVolume" : 3913726.2671217807,
   "numberOfTrades" : 12955,
   "rsi" : 0.0
 }, {
@@ -5380,7 +4060,7 @@
   "close" : 0.003969,
   "volume" : 118774.09,
   "quoteAssetVolume" : 478.80792193,
-  "usdVolume" : 1.6219112718087E9,
+  "usdVolume" : 6497025.396299214,
   "numberOfTrades" : 17849,
   "rsi" : 0.0
 }, {
@@ -5395,7 +4075,7 @@
   "close" : 0.003848,
   "volume" : 111910.53,
   "quoteAssetVolume" : 436.51739576,
-  "usdVolume" : 1.5428634746873999E9,
+  "usdVolume" : 6028677.600210651,
   "numberOfTrades" : 18836,
   "rsi" : 0.0
 }, {
@@ -5410,7 +4090,7 @@
   "close" : 0.003865,
   "volume" : 165203.96,
   "quoteAssetVolume" : 637.45249487,
-  "usdVolume" : 2.3266945757292E9,
+  "usdVolume" : 8971823.850990748,
   "numberOfTrades" : 19240,
   "rsi" : 0.0
 }, {
@@ -5425,7 +4105,7 @@
   "close" : 0.003781,
   "volume" : 246465.26,
   "quoteAssetVolume" : 948.9288527,
-  "usdVolume" : 3.6642027173989E9,
+  "usdVolume" : 1.4004248779875223E7,
   "numberOfTrades" : 34511,
   "rsi" : 0.0
 }, {
@@ -5440,7 +4120,7 @@
   "close" : 0.004055,
   "volume" : 324398.05,
   "quoteAssetVolume" : 1278.41249084,
-  "usdVolume" : 5.0557338773085E9,
+  "usdVolume" : 1.9808140896503806E7,
   "numberOfTrades" : 45897,
   "rsi" : 0.0
 }, {
@@ -5455,7 +4135,7 @@
   "close" : 0.003976,
   "volume" : 358708.86,
   "quoteAssetVolume" : 1448.5785414,
-  "usdVolume" : 5.452057214658899E9,
+  "usdVolume" : 2.1903720172115568E7,
   "numberOfTrades" : 51855,
   "rsi" : 0.0
 }, {
@@ -5470,7 +4150,7 @@
   "close" : 0.003941,
   "volume" : 116756.24,
   "quoteAssetVolume" : 462.91340682,
-  "usdVolume" : 1.7684717404080002E9,
+  "usdVolume" : 6998094.257302597,
   "numberOfTrades" : 20746,
   "rsi" : 0.0
 }, {
@@ -5481,11 +4161,1331 @@
   "closeDate" : null,
   "open" : 0.00394,
   "high" : 0.003965,
-  "low" : 0.00384,
-  "close" : 0.003855,
-  "volume" : 119991.36,
-  "quoteAssetVolume" : 467.05254129,
-  "usdVolume" : 1.8491550512496002E9,
-  "numberOfTrades" : 19855,
+  "low" : 0.003831,
+  "close" : 0.003864,
+  "volume" : 133788.27,
+  "quoteAssetVolume" : 520.17308087,
+  "usdVolume" : 8040733.240952042,
+  "numberOfTrades" : 22116,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1604966400000,
+  "openDate" : null,
+  "closeTime" : 1605052799999,
+  "closeDate" : null,
+  "open" : 0.003864,
+  "high" : 0.00388,
+  "low" : 0.003777,
+  "close" : 0.003786,
+  "volume" : 118799.35,
+  "quoteAssetVolume" : 453.49435464,
+  "usdVolume" : 6958328.198150678,
+  "numberOfTrades" : 19054,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1605052800000,
+  "openDate" : null,
+  "closeTime" : 1605139199999,
+  "closeDate" : null,
+  "open" : 0.00379,
+  "high" : 0.003898,
+  "low" : 0.003685,
+  "close" : 0.003777,
+  "volume" : 155992.74,
+  "quoteAssetVolume" : 596.03574919,
+  "usdVolume" : 9142406.936284618,
+  "numberOfTrades" : 24921,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1605139200000,
+  "openDate" : null,
+  "closeTime" : 1605225599999,
+  "closeDate" : null,
+  "open" : 0.003777,
+  "high" : 0.003781,
+  "low" : 0.003633,
+  "close" : 0.003725,
+  "volume" : 174743.59,
+  "quoteAssetVolume" : 645.71987241,
+  "usdVolume" : 1.0478201502057897E7,
+  "numberOfTrades" : 26316,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1605225600000,
+  "openDate" : null,
+  "closeTime" : 1605311999999,
+  "closeDate" : null,
+  "open" : 0.003727,
+  "high" : 0.004107,
+  "low" : 0.003695,
+  "close" : 0.004041,
+  "volume" : 504333.62,
+  "quoteAssetVolume" : 1979.57003884,
+  "usdVolume" : 3.194239186168156E7,
+  "numberOfTrades" : 69732,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1605312000000,
+  "openDate" : null,
+  "closeTime" : 1605398399999,
+  "closeDate" : null,
+  "open" : 0.004041,
+  "high" : 0.004062,
+  "low" : 0.00392,
+  "close" : 0.003972,
+  "volume" : 177501.05,
+  "quoteAssetVolume" : 703.8526237,
+  "usdVolume" : 1.1518141562382247E7,
+  "numberOfTrades" : 29867,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1605398400000,
+  "openDate" : null,
+  "closeTime" : 1605484799999,
+  "closeDate" : null,
+  "open" : 0.003971,
+  "high" : 0.004005,
+  "low" : 0.003866,
+  "close" : 0.003904,
+  "volume" : 114368.29,
+  "quoteAssetVolume" : 448.24710235,
+  "usdVolume" : 7211398.2155706985,
+  "numberOfTrades" : 19470,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1605484800000,
+  "openDate" : null,
+  "closeTime" : 1605571199999,
+  "closeDate" : null,
+  "open" : 0.003904,
+  "high" : 0.004451,
+  "low" : 0.0039,
+  "close" : 0.00442,
+  "volume" : 476283.09,
+  "quoteAssetVolume" : 2009.97668208,
+  "usdVolume" : 3.2427759759051938E7,
+  "numberOfTrades" : 72222,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1605571200000,
+  "openDate" : null,
+  "closeTime" : 1605657599999,
+  "closeDate" : null,
+  "open" : 0.004419,
+  "high" : 0.004523,
+  "low" : 0.004115,
+  "close" : 0.004322,
+  "volume" : 615832.45,
+  "quoteAssetVolume" : 2654.14848214,
+  "usdVolume" : 4.6242532550267786E7,
+  "numberOfTrades" : 90083,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1605657600000,
+  "openDate" : null,
+  "closeTime" : 1605743999999,
+  "closeDate" : null,
+  "open" : 0.004321,
+  "high" : 0.004356,
+  "low" : 0.003911,
+  "close" : 0.004131,
+  "volume" : 515916.33,
+  "quoteAssetVolume" : 2115.15878242,
+  "usdVolume" : 3.8626483491616495E7,
+  "numberOfTrades" : 75156,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1605744000000,
+  "openDate" : null,
+  "closeTime" : 1605830399999,
+  "closeDate" : null,
+  "open" : 0.004129,
+  "high" : 0.00464,
+  "low" : 0.004081,
+  "close" : 0.004581,
+  "volume" : 534410.07,
+  "quoteAssetVolume" : 2340.6910621,
+  "usdVolume" : 4.1405837889831536E7,
+  "numberOfTrades" : 79714,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1605830400000,
+  "openDate" : null,
+  "closeTime" : 1605916799999,
+  "closeDate" : null,
+  "open" : 0.004577,
+  "high" : 0.004694,
+  "low" : 0.004342,
+  "close" : 0.004421,
+  "volume" : 523303.19,
+  "quoteAssetVolume" : 2350.07542762,
+  "usdVolume" : 4.290044220531061E7,
+  "numberOfTrades" : 67171,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1605916800000,
+  "openDate" : null,
+  "closeTime" : 1606003199999,
+  "closeDate" : null,
+  "open" : 0.004426,
+  "high" : 0.004692,
+  "low" : 0.004336,
+  "close" : 0.004658,
+  "volume" : 498132.47,
+  "quoteAssetVolume" : 2248.83618526,
+  "usdVolume" : 4.226461020472207E7,
+  "numberOfTrades" : 71951,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1606003200000,
+  "openDate" : null,
+  "closeTime" : 1606089599999,
+  "closeDate" : null,
+  "open" : 0.004657,
+  "high" : 0.0047,
+  "low" : 0.004404,
+  "close" : 0.004502,
+  "volume" : 357803.1,
+  "quoteAssetVolume" : 1632.87707062,
+  "usdVolume" : 3.041422249460271E7,
+  "numberOfTrades" : 53215,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1606089600000,
+  "openDate" : null,
+  "closeTime" : 1606175999999,
+  "closeDate" : null,
+  "open" : 0.0045,
+  "high" : 0.004879,
+  "low" : 0.004481,
+  "close" : 0.004849,
+  "volume" : 485262.48,
+  "quoteAssetVolume" : 2287.76713288,
+  "usdVolume" : 4.171532025778608E7,
+  "numberOfTrades" : 81467,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1606176000000,
+  "openDate" : null,
+  "closeTime" : 1606262399999,
+  "closeDate" : null,
+  "open" : 0.004848,
+  "high" : 0.005062,
+  "low" : 0.004528,
+  "close" : 0.00466,
+  "volume" : 669451.51,
+  "quoteAssetVolume" : 3203.88273938,
+  "usdVolume" : 5.96929021500411E7,
+  "numberOfTrades" : 115182,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1606262400000,
+  "openDate" : null,
+  "closeTime" : 1606348799999,
+  "closeDate" : null,
+  "open" : 0.004661,
+  "high" : 0.004728,
+  "low" : 0.004207,
+  "close" : 0.004369,
+  "volume" : 373065.52,
+  "quoteAssetVolume" : 1698.58174121,
+  "usdVolume" : 3.1913619732485093E7,
+  "numberOfTrades" : 60652,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1606348800000,
+  "openDate" : null,
+  "closeTime" : 1606435199999,
+  "closeDate" : null,
+  "open" : 0.004366,
+  "high" : 0.004466,
+  "low" : 0.00395,
+  "close" : 0.004139,
+  "volume" : 679001.46,
+  "quoteAssetVolume" : 2869.6337414,
+  "usdVolume" : 5.184450060023472E7,
+  "numberOfTrades" : 109509,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1606435200000,
+  "openDate" : null,
+  "closeTime" : 1606521599999,
+  "closeDate" : null,
+  "open" : 0.00414,
+  "high" : 0.004226,
+  "low" : 0.003963,
+  "close" : 0.004036,
+  "volume" : 370233.58,
+  "quoteAssetVolume" : 1508.06312976,
+  "usdVolume" : 2.594854398697605E7,
+  "numberOfTrades" : 62043,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1606521600000,
+  "openDate" : null,
+  "closeTime" : 1606607999999,
+  "closeDate" : null,
+  "open" : 0.004036,
+  "high" : 0.004204,
+  "low" : 0.004004,
+  "close" : 0.004102,
+  "volume" : 329401.02,
+  "quoteAssetVolume" : 1356.27263611,
+  "usdVolume" : 2.3364738442969568E7,
+  "numberOfTrades" : 56726,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1606608000000,
+  "openDate" : null,
+  "closeTime" : 1606694399999,
+  "closeDate" : null,
+  "open" : 0.004104,
+  "high" : 0.004435,
+  "low" : 0.004075,
+  "close" : 0.004337,
+  "volume" : 397034.99,
+  "quoteAssetVolume" : 1683.33653807,
+  "usdVolume" : 3.0093371286749702E7,
+  "numberOfTrades" : 64539,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1606694400000,
+  "openDate" : null,
+  "closeTime" : 1606780799999,
+  "closeDate" : null,
+  "open" : 0.004337,
+  "high" : 0.004538,
+  "low" : 0.004152,
+  "close" : 0.004451,
+  "volume" : 532371.57,
+  "quoteAssetVolume" : 2312.9402344,
+  "usdVolume" : 4.43291598326684E7,
+  "numberOfTrades" : 84134,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1606780800000,
+  "openDate" : null,
+  "closeTime" : 1606867199999,
+  "closeDate" : null,
+  "open" : 0.004449,
+  "high" : 0.004823,
+  "low" : 0.004284,
+  "close" : 0.004535,
+  "volume" : 899139.12,
+  "quoteAssetVolume" : 4111.49911147,
+  "usdVolume" : 7.765236046578263E7,
+  "numberOfTrades" : 151078,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1606867200000,
+  "openDate" : null,
+  "closeTime" : 1606953599999,
+  "closeDate" : null,
+  "open" : 0.004534,
+  "high" : 0.004713,
+  "low" : 0.004477,
+  "close" : 0.004632,
+  "volume" : 388494.57,
+  "quoteAssetVolume" : 1784.353319,
+  "usdVolume" : 3.380556857983639E7,
+  "numberOfTrades" : 80491,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1606953600000,
+  "openDate" : null,
+  "closeTime" : 1607039999999,
+  "closeDate" : null,
+  "open" : 0.004629,
+  "high" : 0.004684,
+  "low" : 0.004524,
+  "close" : 0.004583,
+  "volume" : 295675.79,
+  "quoteAssetVolume" : 1357.92931274,
+  "usdVolume" : 2.6301286101652086E7,
+  "numberOfTrades" : 56526,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1607040000000,
+  "openDate" : null,
+  "closeTime" : 1607126399999,
+  "closeDate" : null,
+  "open" : 0.004583,
+  "high" : 0.0046,
+  "low" : 0.004187,
+  "close" : 0.004264,
+  "volume" : 343895.18,
+  "quoteAssetVolume" : 1531.03514031,
+  "usdVolume" : 2.8979771960377388E7,
+  "numberOfTrades" : 61192,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1607126400000,
+  "openDate" : null,
+  "closeTime" : 1607212799999,
+  "closeDate" : null,
+  "open" : 0.004263,
+  "high" : 0.0044,
+  "low" : 0.004236,
+  "close" : 0.004343,
+  "volume" : 271213.88,
+  "quoteAssetVolume" : 1174.12511387,
+  "usdVolume" : 2.2058558698711876E7,
+  "numberOfTrades" : 44215,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1607212800000,
+  "openDate" : null,
+  "closeTime" : 1607299199999,
+  "closeDate" : null,
+  "open" : 0.004341,
+  "high" : 0.004417,
+  "low" : 0.004252,
+  "close" : 0.004318,
+  "volume" : 192703.04,
+  "quoteAssetVolume" : 834.46684218,
+  "usdVolume" : 1.6063135864500515E7,
+  "numberOfTrades" : 33464,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1607299200000,
+  "openDate" : null,
+  "closeTime" : 1607385599999,
+  "closeDate" : null,
+  "open" : 0.004315,
+  "high" : 0.004517,
+  "low" : 0.004281,
+  "close" : 0.00435,
+  "volume" : 230739.41,
+  "quoteAssetVolume" : 1008.82234438,
+  "usdVolume" : 1.9256204717829064E7,
+  "numberOfTrades" : 39027,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1607385600000,
+  "openDate" : null,
+  "closeTime" : 1607471999999,
+  "closeDate" : null,
+  "open" : 0.00435,
+  "high" : 0.004416,
+  "low" : 0.004107,
+  "close" : 0.004189,
+  "volume" : 242275.92,
+  "quoteAssetVolume" : 1029.1883721,
+  "usdVolume" : 1.9398513449388552E7,
+  "numberOfTrades" : 47626,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1607472000000,
+  "openDate" : null,
+  "closeTime" : 1607558399999,
+  "closeDate" : null,
+  "open" : 0.004187,
+  "high" : 0.004221,
+  "low" : 0.004081,
+  "close" : 0.004175,
+  "volume" : 230520.95,
+  "quoteAssetVolume" : 961.18128758,
+  "usdVolume" : 1.776543041074217E7,
+  "numberOfTrades" : 41160,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1607558400000,
+  "openDate" : null,
+  "closeTime" : 1607644799999,
+  "closeDate" : null,
+  "open" : 0.004174,
+  "high" : 0.004186,
+  "low" : 0.00406,
+  "close" : 0.004093,
+  "volume" : 146689.47,
+  "quoteAssetVolume" : 604.02248687,
+  "usdVolume" : 1.1156287583192812E7,
+  "numberOfTrades" : 28209,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1607644800000,
+  "openDate" : null,
+  "closeTime" : 1607731199999,
+  "closeDate" : null,
+  "open" : 0.004094,
+  "high" : 0.004105,
+  "low" : 0.003948,
+  "close" : 0.004005,
+  "volume" : 269717.71,
+  "quoteAssetVolume" : 1079.53653046,
+  "usdVolume" : 1.982040750501787E7,
+  "numberOfTrades" : 45163,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1607731200000,
+  "openDate" : null,
+  "closeTime" : 1607817599999,
+  "closeDate" : null,
+  "open" : 0.004001,
+  "high" : 0.004127,
+  "low" : 0.003995,
+  "close" : 0.004077,
+  "volume" : 192121.82,
+  "quoteAssetVolume" : 784.82105786,
+  "usdVolume" : 1.429839610543855E7,
+  "numberOfTrades" : 32249,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1607817600000,
+  "openDate" : null,
+  "closeTime" : 1607903999999,
+  "closeDate" : null,
+  "open" : 0.004076,
+  "high" : 0.004352,
+  "low" : 0.004024,
+  "close" : 0.004289,
+  "volume" : 248759.85,
+  "quoteAssetVolume" : 1043.66104485,
+  "usdVolume" : 1.9764685584237557E7,
+  "numberOfTrades" : 43358,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1607904000000,
+  "openDate" : null,
+  "closeTime" : 1607990399999,
+  "closeDate" : null,
+  "open" : 0.004289,
+  "high" : 0.004297,
+  "low" : 0.00415,
+  "close" : 0.004273,
+  "volume" : 238312.08,
+  "quoteAssetVolume" : 1009.78619588,
+  "usdVolume" : 1.961256696695185E7,
+  "numberOfTrades" : 42381,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1607990400000,
+  "openDate" : null,
+  "closeTime" : 1608076799999,
+  "closeDate" : null,
+  "open" : 0.004275,
+  "high" : 0.004349,
+  "low" : 0.004181,
+  "close" : 0.004187,
+  "volume" : 290903.66,
+  "quoteAssetVolume" : 1236.09842921,
+  "usdVolume" : 2.3815335339703497E7,
+  "numberOfTrades" : 45161,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1608076800000,
+  "openDate" : null,
+  "closeTime" : 1608163199999,
+  "closeDate" : null,
+  "open" : 0.004187,
+  "high" : 0.004377,
+  "low" : 0.004057,
+  "close" : 0.004358,
+  "volume" : 605521.66,
+  "quoteAssetVolume" : 2570.80011899,
+  "usdVolume" : 5.2776861753139816E7,
+  "numberOfTrades" : 80721,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1608163200000,
+  "openDate" : null,
+  "closeTime" : 1608249599999,
+  "closeDate" : null,
+  "open" : 0.004357,
+  "high" : 0.00467,
+  "low" : 0.003997,
+  "close" : 0.00443,
+  "volume" : 1062713.79,
+  "quoteAssetVolume" : 4652.47198077,
+  "usdVolume" : 1.0305681826762073E8,
+  "numberOfTrades" : 160169,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1608249600000,
+  "openDate" : null,
+  "closeTime" : 1608335999999,
+  "closeDate" : null,
+  "open" : 0.00443,
+  "high" : 0.00489,
+  "low" : 0.00439,
+  "close" : 0.004732,
+  "volume" : 758743.62,
+  "quoteAssetVolume" : 3568.30996533,
+  "usdVolume" : 7.97953760270272E7,
+  "numberOfTrades" : 131246,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1608336000000,
+  "openDate" : null,
+  "closeTime" : 1608422399999,
+  "closeDate" : null,
+  "open" : 0.004731,
+  "high" : 0.005175,
+  "low" : 0.0046,
+  "close" : 0.005031,
+  "volume" : 700499.4,
+  "quoteAssetVolume" : 3439.31542771,
+  "usdVolume" : 8.02658768452254E7,
+  "numberOfTrades" : 114915,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1608422400000,
+  "openDate" : null,
+  "closeTime" : 1608508799999,
+  "closeDate" : null,
+  "open" : 0.005032,
+  "high" : 0.005227,
+  "low" : 0.004738,
+  "close" : 0.004884,
+  "volume" : 579990.11,
+  "quoteAssetVolume" : 2884.25971632,
+  "usdVolume" : 6.79826855134334E7,
+  "numberOfTrades" : 114713,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1608508800000,
+  "openDate" : null,
+  "closeTime" : 1608595199999,
+  "closeDate" : null,
+  "open" : 0.004885,
+  "high" : 0.004946,
+  "low" : 0.004509,
+  "close" : 0.004596,
+  "volume" : 668791.89,
+  "quoteAssetVolume" : 3142.15663837,
+  "usdVolume" : 7.323274541465826E7,
+  "numberOfTrades" : 108524,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1608595200000,
+  "openDate" : null,
+  "closeTime" : 1608681599999,
+  "closeDate" : null,
+  "open" : 0.004598,
+  "high" : 0.004829,
+  "low" : 0.004391,
+  "close" : 0.004802,
+  "volume" : 726483.4,
+  "quoteAssetVolume" : 3356.49218718,
+  "usdVolume" : 7.947925339111389E7,
+  "numberOfTrades" : 106661,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1608681600000,
+  "openDate" : null,
+  "closeTime" : 1608767999999,
+  "closeDate" : null,
+  "open" : 0.004801,
+  "high" : 0.004894,
+  "low" : 0.004195,
+  "close" : 0.00441,
+  "volume" : 994655.89,
+  "quoteAssetVolume" : 4564.29645884,
+  "usdVolume" : 1.0780681028976583E8,
+  "numberOfTrades" : 171356,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1608768000000,
+  "openDate" : null,
+  "closeTime" : 1608854399999,
+  "closeDate" : null,
+  "open" : 0.004408,
+  "high" : 0.004724,
+  "low" : 0.004318,
+  "close" : 0.004685,
+  "volume" : 569605.27,
+  "quoteAssetVolume" : 2573.77593134,
+  "usdVolume" : 6.0828054826225206E7,
+  "numberOfTrades" : 96810,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1608854400000,
+  "openDate" : null,
+  "closeTime" : 1608940799999,
+  "closeDate" : null,
+  "open" : 0.004685,
+  "high" : 0.0052,
+  "low" : 0.004608,
+  "close" : 0.00517,
+  "volume" : 762746.19,
+  "quoteAssetVolume" : 3750.36687116,
+  "usdVolume" : 9.112291824870251E7,
+  "numberOfTrades" : 118613,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1608940800000,
+  "openDate" : null,
+  "closeTime" : 1609027199999,
+  "closeDate" : null,
+  "open" : 0.00517,
+  "high" : 0.005358,
+  "low" : 0.004872,
+  "close" : 0.004894,
+  "volume" : 940275.54,
+  "quoteAssetVolume" : 4843.51743775,
+  "usdVolume" : 1.2102386170874955E8,
+  "numberOfTrades" : 142851,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1609027200000,
+  "openDate" : null,
+  "closeTime" : 1609113599999,
+  "closeDate" : null,
+  "open" : 0.004894,
+  "high" : 0.005084,
+  "low" : 0.004518,
+  "close" : 0.004864,
+  "volume" : 1020549.39,
+  "quoteAssetVolume" : 4969.86150001,
+  "usdVolume" : 1.3139200581393439E8,
+  "numberOfTrades" : 168122,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1609113600000,
+  "openDate" : null,
+  "closeTime" : 1609199999999,
+  "closeDate" : null,
+  "open" : 0.004865,
+  "high" : 0.005125,
+  "low" : 0.004731,
+  "close" : 0.004795,
+  "volume" : 530780.55,
+  "quoteAssetVolume" : 2592.66523837,
+  "usdVolume" : 6.839252370784186E7,
+  "numberOfTrades" : 96514,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1609200000000,
+  "openDate" : null,
+  "closeTime" : 1609286399999,
+  "closeDate" : null,
+  "open" : 0.004796,
+  "high" : 0.00485,
+  "low" : 0.004544,
+  "close" : 0.004703,
+  "volume" : 249370.63,
+  "quoteAssetVolume" : 1180.19796105,
+  "usdVolume" : 3.2251671310038496E7,
+  "numberOfTrades" : 72358,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1609286400000,
+  "openDate" : null,
+  "closeTime" : 1609372799999,
+  "closeDate" : null,
+  "open" : 0.004703,
+  "high" : 0.004812,
+  "low" : 0.004409,
+  "close" : 0.004503,
+  "volume" : 308594.39,
+  "quoteAssetVolume" : 1403.03899098,
+  "usdVolume" : 3.993492406788241E7,
+  "numberOfTrades" : 68509,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1609372800000,
+  "openDate" : null,
+  "closeTime" : 1609459199999,
+  "closeDate" : null,
+  "open" : 0.004506,
+  "high" : 0.004507,
+  "low" : 0.004253,
+  "close" : 0.004294,
+  "volume" : 184585.4,
+  "quoteAssetVolume" : 804.89823214,
+  "usdVolume" : 2.34710761040387E7,
+  "numberOfTrades" : 45332,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1609459200000,
+  "openDate" : null,
+  "closeTime" : 1609545599999,
+  "closeDate" : null,
+  "open" : 0.004295,
+  "high" : 0.004569,
+  "low" : 0.004258,
+  "close" : 0.004303,
+  "volume" : 275214.63,
+  "quoteAssetVolume" : 1207.90049515,
+  "usdVolume" : 3.446254837955711E7,
+  "numberOfTrades" : 60863,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1609545600000,
+  "openDate" : null,
+  "closeTime" : 1609631999999,
+  "closeDate" : null,
+  "open" : 0.004303,
+  "high" : 0.004364,
+  "low" : 0.004002,
+  "close" : 0.004255,
+  "volume" : 514779.41,
+  "quoteAssetVolume" : 2169.20450465,
+  "usdVolume" : 6.772775079169321E7,
+  "numberOfTrades" : 109988,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1609632000000,
+  "openDate" : null,
+  "closeTime" : 1609718399999,
+  "closeDate" : null,
+  "open" : 0.004255,
+  "high" : 0.004925,
+  "low" : 0.004024,
+  "close" : 0.004885,
+  "volume" : 866143.61,
+  "quoteAssetVolume" : 3837.89359518,
+  "usdVolume" : 1.2910565110918039E8,
+  "numberOfTrades" : 195209,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1609718400000,
+  "openDate" : null,
+  "closeTime" : 1609804799999,
+  "closeDate" : null,
+  "open" : 0.004883,
+  "high" : 0.005261,
+  "low" : 0.0047,
+  "close" : 0.004855,
+  "volume" : 686459.04,
+  "quoteAssetVolume" : 3383.33533556,
+  "usdVolume" : 1.0861307022744904E8,
+  "numberOfTrades" : 206341,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1609804800000,
+  "openDate" : null,
+  "closeTime" : 1609891199999,
+  "closeDate" : null,
+  "open" : 0.004855,
+  "high" : 0.004995,
+  "low" : 0.004554,
+  "close" : 0.004669,
+  "volume" : 505173.92,
+  "quoteAssetVolume" : 2413.40902264,
+  "usdVolume" : 7.926698927321467E7,
+  "numberOfTrades" : 117642,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1609891200000,
+  "openDate" : null,
+  "closeTime" : 1609977599999,
+  "closeDate" : null,
+  "open" : 0.00467,
+  "high" : 0.004861,
+  "low" : 0.004558,
+  "close" : 0.004596,
+  "volume" : 528291.05,
+  "quoteAssetVolume" : 2469.39461277,
+  "usdVolume" : 8.651724360391963E7,
+  "numberOfTrades" : 118861,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1609977600000,
+  "openDate" : null,
+  "closeTime" : 1610063999999,
+  "closeDate" : null,
+  "open" : 0.004596,
+  "high" : 0.00466,
+  "low" : 0.004276,
+  "close" : 0.004295,
+  "volume" : 699016.13,
+  "quoteAssetVolume" : 3122.35016723,
+  "usdVolume" : 1.1825731941737466E8,
+  "numberOfTrades" : 157025,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1610064000000,
+  "openDate" : null,
+  "closeTime" : 1610150399999,
+  "closeDate" : null,
+  "open" : 0.004297,
+  "high" : 0.004435,
+  "low" : 0.004077,
+  "close" : 0.004243,
+  "volume" : 674547.61,
+  "quoteAssetVolume" : 2848.89420581,
+  "usdVolume" : 1.1522427646460812E8,
+  "numberOfTrades" : 130618,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1610150400000,
+  "openDate" : null,
+  "closeTime" : 1610236799999,
+  "closeDate" : null,
+  "open" : 0.004242,
+  "high" : 0.004456,
+  "low" : 0.004151,
+  "close" : 0.004424,
+  "volume" : 437553.66,
+  "quoteAssetVolume" : 1860.12941196,
+  "usdVolume" : 7.646691472615036E7,
+  "numberOfTrades" : 87671,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1610236800000,
+  "openDate" : null,
+  "closeTime" : 1610323199999,
+  "closeDate" : null,
+  "open" : 0.004423,
+  "high" : 0.004614,
+  "low" : 0.004294,
+  "close" : 0.004458,
+  "volume" : 585515.91,
+  "quoteAssetVolume" : 2598.87340363,
+  "usdVolume" : 1.0169913264756039E8,
+  "numberOfTrades" : 119767,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1610323200000,
+  "openDate" : null,
+  "closeTime" : 1610409599999,
+  "closeDate" : null,
+  "open" : 0.004459,
+  "high" : 0.004535,
+  "low" : 0.003663,
+  "close" : 0.003922,
+  "volume" : 1232906.84,
+  "quoteAssetVolume" : 4945.03926135,
+  "usdVolume" : 1.904639305801192E8,
+  "numberOfTrades" : 252086,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1610409600000,
+  "openDate" : null,
+  "closeTime" : 1610495999999,
+  "closeDate" : null,
+  "open" : 0.003922,
+  "high" : 0.004078,
+  "low" : 0.003841,
+  "close" : 0.003918,
+  "volume" : 623934.42,
+  "quoteAssetVolume" : 2469.94936721,
+  "usdVolume" : 8.4946247129316E7,
+  "numberOfTrades" : 118225,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1610496000000,
+  "openDate" : null,
+  "closeTime" : 1610582399999,
+  "closeDate" : null,
+  "open" : 0.003919,
+  "high" : 0.004039,
+  "low" : 0.003853,
+  "close" : 0.003943,
+  "volume" : 381866.28,
+  "quoteAssetVolume" : 1511.85534033,
+  "usdVolume" : 5.36128744214431E7,
+  "numberOfTrades" : 85337,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1610582400000,
+  "openDate" : null,
+  "closeTime" : 1610668799999,
+  "closeDate" : null,
+  "open" : 0.003946,
+  "high" : 0.003973,
+  "low" : 0.003807,
+  "close" : 0.003894,
+  "volume" : 380993.45,
+  "quoteAssetVolume" : 1477.37714387,
+  "usdVolume" : 5.712923412555372E7,
+  "numberOfTrades" : 79833,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1610668800000,
+  "openDate" : null,
+  "closeTime" : 1610755199999,
+  "closeDate" : null,
+  "open" : 0.003894,
+  "high" : 0.004005,
+  "low" : 0.00379,
+  "close" : 0.00391,
+  "volume" : 518554.59,
+  "quoteAssetVolume" : 2026.14100361,
+  "usdVolume" : 7.677032899129012E7,
+  "numberOfTrades" : 103145,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1610755200000,
+  "openDate" : null,
+  "closeTime" : 1610841599999,
+  "closeDate" : null,
+  "open" : 0.00391,
+  "high" : 0.004062,
+  "low" : 0.003876,
+  "close" : 0.003988,
+  "volume" : 422530.14,
+  "quoteAssetVolume" : 1672.49197271,
+  "usdVolume" : 6.0673496761191316E7,
+  "numberOfTrades" : 85441,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1610841600000,
+  "openDate" : null,
+  "closeTime" : 1610927999999,
+  "closeDate" : null,
+  "open" : 0.003987,
+  "high" : 0.004102,
+  "low" : 0.003944,
+  "close" : 0.003985,
+  "volume" : 400756.51,
+  "quoteAssetVolume" : 1603.15002394,
+  "usdVolume" : 5.736608946622358E7,
+  "numberOfTrades" : 75375,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1610928000000,
+  "openDate" : null,
+  "closeTime" : 1611014399999,
+  "closeDate" : null,
+  "open" : 0.003986,
+  "high" : 0.004192,
+  "low" : 0.00388,
+  "close" : 0.004151,
+  "volume" : 387144.2,
+  "quoteAssetVolume" : 1567.50354988,
+  "usdVolume" : 5.707566513652371E7,
+  "numberOfTrades" : 74988,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1611014400000,
+  "openDate" : null,
+  "closeTime" : 1611100799999,
+  "closeDate" : null,
+  "open" : 0.004149,
+  "high" : 0.004469,
+  "low" : 0.00411,
+  "close" : 0.004231,
+  "volume" : 513199.2,
+  "quoteAssetVolume" : 2218.31735373,
+  "usdVolume" : 7.79558516339257E7,
+  "numberOfTrades" : 110382,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1611100800000,
+  "openDate" : null,
+  "closeTime" : 1611187199999,
+  "closeDate" : null,
+  "open" : 0.00423,
+  "high" : 0.004304,
+  "low" : 0.004094,
+  "close" : 0.00422,
+  "volume" : 430819.77,
+  "quoteAssetVolume" : 1812.10959499,
+  "usdVolume" : 6.495494160085727E7,
+  "numberOfTrades" : 91159,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1611187200000,
+  "openDate" : null,
+  "closeTime" : 1611273599999,
+  "closeDate" : null,
+  "open" : 0.004222,
+  "high" : 0.004264,
+  "low" : 0.004082,
+  "close" : 0.004207,
+  "volume" : 415626.97,
+  "quoteAssetVolume" : 1734.91807704,
+  "usdVolume" : 5.809080254037914E7,
+  "numberOfTrades" : 87376,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1611273600000,
+  "openDate" : null,
+  "closeTime" : 1611359999999,
+  "closeDate" : null,
+  "open" : 0.004207,
+  "high" : 0.004462,
+  "low" : 0.004133,
+  "close" : 0.004178,
+  "volume" : 428668.54,
+  "quoteAssetVolume" : 1848.23388938,
+  "usdVolume" : 5.732139474414684E7,
+  "numberOfTrades" : 92984,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1611360000000,
+  "openDate" : null,
+  "closeTime" : 1611446399999,
+  "closeDate" : null,
+  "open" : 0.004176,
+  "high" : 0.004363,
+  "low" : 0.004162,
+  "close" : 0.004291,
+  "volume" : 229290.02,
+  "quoteAssetVolume" : 983.97553192,
+  "usdVolume" : 3.155556872866898E7,
+  "numberOfTrades" : 54232,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1611446400000,
+  "openDate" : null,
+  "closeTime" : 1611532799999,
+  "closeDate" : null,
+  "open" : 0.004291,
+  "high" : 0.0044,
+  "low" : 0.004269,
+  "close" : 0.004373,
+  "volume" : 222412.35,
+  "quoteAssetVolume" : 961.52708217,
+  "usdVolume" : 3.0995300657151323E7,
+  "numberOfTrades" : 47242,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1611532800000,
+  "openDate" : null,
+  "closeTime" : 1611619199999,
+  "closeDate" : null,
+  "open" : 0.004373,
+  "high" : 0.0045,
+  "low" : 0.004164,
+  "close" : 0.004249,
+  "volume" : 353144.02,
+  "quoteAssetVolume" : 1513.82005391,
+  "usdVolume" : 4.910797269519851E7,
+  "numberOfTrades" : 68497,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1611619200000,
+  "openDate" : null,
+  "closeTime" : 1611705599999,
+  "closeDate" : null,
+  "open" : 0.00425,
+  "high" : 0.004288,
+  "low" : 0.004125,
+  "close" : 0.004148,
+  "volume" : 256807.35,
+  "quoteAssetVolume" : 1079.982221,
+  "usdVolume" : 3.489454838743317E7,
+  "numberOfTrades" : 55292,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1611705600000,
+  "openDate" : null,
+  "closeTime" : 1611791999999,
+  "closeDate" : null,
+  "open" : 0.004148,
+  "high" : 0.004173,
+  "low" : 0.003995,
+  "close" : 0.004034,
+  "volume" : 295778.66,
+  "quoteAssetVolume" : 1202.93785715,
+  "usdVolume" : 3.803088921225527E7,
+  "numberOfTrades" : 62468,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1611792000000,
+  "openDate" : null,
+  "closeTime" : 1611878399999,
+  "closeDate" : null,
+  "open" : 0.004034,
+  "high" : 0.004171,
+  "low" : 0.003986,
+  "close" : 0.003994,
+  "volume" : 264330.74,
+  "quoteAssetVolume" : 1076.2264794,
+  "usdVolume" : 3.380001471719486E7,
+  "numberOfTrades" : 57116,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1611878400000,
+  "openDate" : null,
+  "closeTime" : 1611964799999,
+  "closeDate" : null,
+  "open" : 0.003995,
+  "high" : 0.004145,
+  "low" : 0.00373,
+  "close" : 0.00393,
+  "volume" : 689379.3,
+  "quoteAssetVolume" : 2693.24459577,
+  "usdVolume" : 9.234822561076021E7,
+  "numberOfTrades" : 132408,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1611964800000,
+  "openDate" : null,
+  "closeTime" : 1612051199999,
+  "closeDate" : null,
+  "open" : 0.003933,
+  "high" : 0.003965,
+  "low" : 0.003798,
+  "close" : 0.003891,
+  "volume" : 362106.12,
+  "quoteAssetVolume" : 1405.45939334,
+  "usdVolume" : 4.8523575320091076E7,
+  "numberOfTrades" : 65780,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1612051200000,
+  "openDate" : null,
+  "closeTime" : 1612137599999,
+  "closeDate" : null,
+  "open" : 0.003892,
+  "high" : 0.003956,
+  "low" : 0.003825,
+  "close" : 0.003909,
+  "volume" : 235610.49,
+  "quoteAssetVolume" : 917.1534526,
+  "usdVolume" : 3.0948807547742043E7,
+  "numberOfTrades" : 48726,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1612137600000,
+  "openDate" : null,
+  "closeTime" : 1612223999999,
+  "closeDate" : null,
+  "open" : 0.00391,
+  "high" : 0.003989,
+  "low" : 0.003811,
+  "close" : 0.003939,
+  "volume" : 313288.55,
+  "quoteAssetVolume" : 1218.57881953,
+  "usdVolume" : 4.095525412547786E7,
+  "numberOfTrades" : 59733,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1612224000000,
+  "openDate" : null,
+  "closeTime" : 1612310399999,
+  "closeDate" : null,
+  "open" : 0.003937,
+  "high" : 0.004194,
+  "low" : 0.003925,
+  "close" : 0.004,
+  "volume" : 467082.57,
+  "quoteAssetVolume" : 1889.30136286,
+  "usdVolume" : 6.394868179822838E7,
+  "numberOfTrades" : 81557,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1612310400000,
+  "openDate" : null,
+  "closeTime" : 1612396799999,
+  "closeDate" : null,
+  "open" : 0.004003,
+  "high" : 0.004278,
+  "low" : 0.004002,
+  "close" : 0.004146,
+  "volume" : 465504.1,
+  "quoteAssetVolume" : 1937.1471197,
+  "usdVolume" : 6.935198625910346E7,
+  "numberOfTrades" : 90282,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1612396800000,
+  "openDate" : null,
+  "closeTime" : 1612483199999,
+  "closeDate" : null,
+  "open" : 0.004144,
+  "high" : 0.004175,
+  "low" : 0.003901,
+  "close" : 0.003927,
+  "volume" : 498771.28,
+  "quoteAssetVolume" : 1984.3893153,
+  "usdVolume" : 7.50522645200427E7,
+  "numberOfTrades" : 89204,
+  "rsi" : 0.0
+}, {
+  "symbol" : "LTCBTC",
+  "openTime" : 1612483200000,
+  "openDate" : null,
+  "closeTime" : 1612569599999,
+  "closeDate" : null,
+  "open" : 0.003927,
+  "high" : 0.004172,
+  "low" : 0.003896,
+  "close" : 0.00402,
+  "volume" : 377043.94,
+  "quoteAssetVolume" : 1520.53444364,
+  "usdVolume" : 5.579604208561806E7,
+  "numberOfTrades" : 68613,
   "rsi" : 0.0
 } ]

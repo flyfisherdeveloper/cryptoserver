@@ -5,10 +5,14 @@ import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapData;
 import com.scanner.cryptoserver.exchange.coinmarketcap.dto.CoinMarketCapListing;
 import com.scanner.cryptoserver.exchange.service.ExchangeVisitor;
 
+import java.util.Arrays;
 import java.util.Optional;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Coin {
+    private static final String TRADING = "TRADING";
+    private static final String SPOT = "SPOT";
+
     //the market cap id
     private Integer id;
     //the symbol of the coin, such as BTCUSDT, or LTCUSD
@@ -21,6 +25,9 @@ public class Coin {
     private String status;
     //the market cap in $USD
     private Double marketCap = 0.0;
+    //Permissions include the type of trading for the coin.
+    //Values include "SPOT", "MARGIN", "LEVERAGED", etc.
+    private String[] permissions;
 
     public Integer getId() {
         return id;
@@ -70,6 +77,10 @@ public class Coin {
         this.marketCap = marketCap;
     }
 
+    public String[] getPermissions() {
+        return permissions == null ? new String[0] : permissions;
+    }
+
     /**
      * Add the market cap and id value from the coin market cap to the symbol.
      *
@@ -83,5 +94,14 @@ public class Coin {
             setMarketCap(d.getMarketCap());
             setId(d.getId());
         });
+    }
+
+    /**
+     * Determine if a coin is a tradeable coin.
+     *
+     * @return true if a coin has "TRADING" as status and is a "SPOT" coin.
+     */
+    public boolean isTrading() {
+        return getStatus().equals(TRADING) && Arrays.asList(getPermissions()).contains(SPOT);
     }
 }
